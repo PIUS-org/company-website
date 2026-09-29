@@ -15,6 +15,9 @@ pius-handoff/
 ├─ README.md                  ← 이 문서
 ├─ site/                      ← ★ 수정 기준 원본 (파일별로 분리)
 │  ├─ index.html
+│  ├─ robots.txt              검색엔진 수집 허용 + sitemap 위치
+│  ├─ sitemap.xml             검색엔진 제출용 사이트맵
+│  ├─ google4fcd0ab38f628a81.html  구글 서치 콘솔 소유 확인 파일 (삭제 금지)
 │  └─ assets/
 │     ├─ css/style.css
 │     ├─ img/
@@ -180,4 +183,7 @@ window.PIUS_CONFIG = {
 - [ ] **개인정보 수집·이용 동의**: 전문 또는 개인정보처리방침 페이지 링크를 추가해야 합니다. 현재는 동의 문구만 있습니다.
 - [x] **파비콘, OG 이미지, 공유용 메타태그 추가**: 이미지는 `site/assets/img/`에 있고, 대표 URL은 `https://pius.co.kr/`입니다. 이미지를 바꾼 뒤에는 카카오·페이스북 공유 디버거에서 캐시를 초기화해 주세요.
 - [ ] **도메인, 애널리틱스, 검색엔진 등록**: `www.pius.co.kr` → `pius.co.kr` 리다이렉트는 Vercel에 설정되어 있습니다. canonical·OG URL은 www 없는 주소 기준입니다.
+  - 검색엔진 등록: 구글은 `site/google4fcd0ab38f628a81.html` 파일로 소유 확인합니다(삭제하지 마세요). 네이버는 서치어드바이저에서 "HTML 태그" 방식으로 코드를 받아 `index.html` `<head>`의 주석을 풀고 값을 넣어 주세요. 확인 후 두 곳 모두 `https://pius.co.kr/sitemap.xml`을 제출합니다.
+  - 구조화 데이터(JSON-LD)는 `index.html` `<head>`에 있습니다. 대표자·주소가 바뀌면 푸터와 함께 수정해 주세요.
+  - 영어·일본어는 브라우저 안에서만 전환되어 검색엔진에는 한국어만 색인됩니다.
 - [ ] **실기기 테스트**: 특히 iOS Safari와 저사양 안드로이드에서 3D 성능을 확인해야 합니다. 개발 단계 점검은 헤드리스 브라우저(소프트웨어 렌더링)로만 했습니다.
