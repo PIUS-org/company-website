@@ -17,6 +17,9 @@ pius-handoff/
 │  ├─ index.html
 │  └─ assets/
 │     ├─ css/style.css
+│     ├─ img/
+│     │  ├─ favicon.png       파비콘 / 애플 터치 아이콘 (512×512)
+│     │  └─ og-image.png      공유 미리보기 이미지 (1200×630)
 │     └─ js/
 │        ├─ config.js         사이트 설정 (문의 폼 API 주소)
 │        ├─ logo-data.js      로고 벡터 데이터 (원본 .ai에서 추출)
@@ -28,7 +31,7 @@ pius-handoff/
 │        └─ sections.js       섹션별 인터랙션 전부 + 부팅 순서
 ├─ dist/
 │  └─ index.html              ← site/와 동일한 내용을 한 파일로 묶은 즉시 배포본
-└─ assets/logo/               ← 로고 SVG (흰색 / 검정)
+└─ assets/logo/               ← 로고 SVG (흰색 / 검정) + 파비콘·OG 이미지 원본(png)
    ├─ pius-lockup-*.svg       심볼 + 워드마크 + 태그라인
    ├─ pius-symbol-*.svg       심볼(큐브)만
    └─ pius-wordmark-*.svg     워드마크(PiUS)만
@@ -175,6 +178,6 @@ window.PIUS_CONFIG = {
 - [ ] **영어·일본어 번역 원어민 검수**: `i18n.js` 전체와 `sections.js` 내 목업 문구가 대상입니다.
 - [ ] **문의 폼 백엔드 연결**: 6장을 참고해 주세요.
 - [ ] **개인정보 수집·이용 동의**: 전문 또는 개인정보처리방침 페이지 링크를 추가해야 합니다. 현재는 동의 문구만 있습니다.
-- [ ] **파비콘, OG 이미지, 공유용 메타태그 추가**: 로고 SVG는 `assets/logo/`에 있습니다.
-- [ ] **도메인, 애널리틱스, 검색엔진 등록**
+- [x] **파비콘, OG 이미지, 공유용 메타태그 추가**: 이미지는 `site/assets/img/`에 있고, 대표 URL은 `https://pius.co.kr/`입니다. 이미지를 바꾼 뒤에는 카카오·페이스북 공유 디버거에서 캐시를 초기화해 주세요.
+- [ ] **도메인, 애널리틱스, 검색엔진 등록**: 호스팅에서 `www.pius.co.kr` → `pius.co.kr` 리다이렉트를 설정해 주세요(canonical·OG URL 기준).
 - [ ] **실기기 테스트**: 특히 iOS Safari와 저사양 안드로이드에서 3D 성능을 확인해야 합니다. 개발 단계 점검은 헤드리스 브라우저(소프트웨어 렌더링)로만 했습니다.
