@@ -30,7 +30,7 @@ export default function Contact() {
           <div className={c('fld')}><input id="f-tel" name="phone" type="tel" inputMode="tel" autoComplete="tel" placeholder=" " required /><label htmlFor="f-tel"><span>{t('f.phone')}</span><i>*</i></label><span className={c('bar')}></span><span className={c('err')}>{t('e.phone')}</span></div>
           <div className={c('fld')}><input id="f-mail" name="email" type="email" inputMode="email" autoComplete="email" placeholder=" " required /><label htmlFor="f-mail"><span>{t('f.email')}</span><i>*</i></label><span className={c('bar')}></span><span className={c('err')}>{t('e.email')}</span></div>
         </div>
-        <div className={c('fld')}><textarea id="f-msg" name="message" rows="4" placeholder=" " required></textarea><label htmlFor="f-msg"><span>{t('f.msg')}</span><i>*</i></label><span className={c('bar')}></span><span className={c('err')}>{t('e.msg')}</span></div>
+        <div className={c('fld')}><textarea id="f-msg" name="message" rows={4} placeholder=" " required></textarea><label htmlFor="f-msg"><span>{t('f.msg')}</span><i>*</i></label><span className={c('bar')}></span><span className={c('err')}>{t('e.msg')}</span></div>
         <label className={c('agree')} id="agree"><input type="checkbox" name="agree" required /><span className={c('box')}><svg viewBox="0 0 12 12"><path d="M2 6.5l2.6 2.5L10 3.5"/></svg></span><span>{t('f.agree')}</span></label>
         <button className={c('btn btn--solid form__send')} type="submit"><span className={c('lbl')}>{t('f.send')}</span><span className={c('spin')} aria-hidden="true"></span></button>
       </div>

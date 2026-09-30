@@ -21,7 +21,7 @@ export default function Footer() {
       <div className={c('ftr__logo')}><svg viewBox={LOCKUP_VB} role="img" aria-label="PIUS"><LockupPaths /></svg></div>
       <dl className={c('ftr__info')}>
         <div><dt>{t('ft.ceo')}</dt><dd>{t('ft.ceo.v')}</dd></div>
-        <div><dt>{t('ft.founded')}</dt><dd><time datetime="2023-01-30">{t('ft.founded.v')}</time></dd></div>
+        <div><dt>{t('ft.founded')}</dt><dd><time dateTime="2023-01-30">{t('ft.founded.v')}</time></dd></div>
         <div><dt>{t('ft.addr')}</dt><dd>{t('ft.addr.v')}</dd></div>
         <div><dt>{t('ft.reg')}</dt><dd>690-04-02624</dd></div>
       </dl>

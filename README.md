@@ -150,4 +150,4 @@ public/
 - [ ] 개인정보 수집·이용 동의 전문 또는 처리방침 링크 추가
 - [x] 파비콘·OG 이미지·robots·sitemap·구조화 데이터
 - [ ] 네이버 서치어드바이저 소유 확인 코드 추가
-- [ ] `package-lock.json` 생성·커밋 (Node 설치 후 `npm install`)
+- [x] `package-lock.json` 생성·커밋, 로컬 `npm run build` 통과
