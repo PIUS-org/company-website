@@ -1,0 +1,59 @@
+.ind{ height:420svh; }
+.ind :global(.pin){ display:flex; align-items:center; padding-top:var(--hdr); }
+.ind__grid{ display:grid; grid-template-columns:1.2fr minmax(260px,.8fr); gap:clamp(20px,4vw,64px); align-items:center; height:100%; max-height:820px; }
+.ind__graph{ order:-1; }
+.ind__side{ display:grid; gap:clamp(14px,2.4svh,26px); align-content:center; }
+.ind__cap{ color:var(--ink-3); font-size:var(--t-sm); }
+.ind__name{ position:relative; height:calc(var(--t-d2) * 1.25 + 1.8em); }
+.ind__en{ display:block; font-family:var(--f-disp); font-weight:300; font-size:var(--t-d2); letter-spacing:-.035em; line-height:1.2; white-space:nowrap; }
+.ind__ko{ display:block; margin-top:6px; color:var(--ink-2); font-size:var(--t-body); }
+.ind__tabs{ display:flex; gap:6px; flex-wrap:wrap; }
+.ind__tabs button{
+  position:relative; padding:8px 14px 10px; border-radius:10px; font-size:var(--t-sm); color:var(--ink-3);
+  border:1px solid transparent; transition:color .3s, border-color .3s, background .3s;
+}
+.ind__tabs button i{ position:absolute; left:14px; right:14px; bottom:5px; height:1px; background:var(--line-2); overflow:hidden; }
+.ind__tabs button i::after{ content:""; position:absolute; inset:0; background:var(--ice); transform-origin:0 50%; transform:scaleX(var(--f,0)); }
+.ind__tabs button:global(.is-on){ color:var(--ink); border-color:var(--line); background:var(--glass); }
+.ind__note{ color:var(--ink-2); max-width:24em; font-size:var(--t-sm); }
+.ind__graph{ position:relative; width:100%; height:min(72svh,640px); }
+.ind__bgword{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none; overflow:hidden; line-height:1;
+  font-family:var(--f-disp); font-weight:500; font-size:clamp(3rem,11vw,11rem); letter-spacing:-.05em;
+  color:transparent; -webkit-text-stroke:1px rgba(255,255,255,.06); white-space:nowrap;
+}
+.ind__links{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+.ind__links path{ fill:none; stroke:rgba(255,255,255,.16); stroke-width:1; }
+.ind__links path.flow{ stroke:rgba(var(--ice-rgb),.75); stroke-width:1.2; stroke-dasharray:3 14; animation:flow 1.6s linear infinite; }
+.ind__links circle{ fill:#fff; filter:drop-shadow(0 0 6px rgba(var(--ice-rgb),.9)); }
+.node{
+  position:absolute; left:0; top:0; will-change:transform;
+  display:flex; flex-direction:column; align-items:flex-start; gap:2px;
+  padding:12px 16px 12px 14px; border-radius:14px; min-width:120px;
+  background:linear-gradient(160deg, rgba(255,255,255,.10), rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.16);
+  -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14), 0 20px 40px -20px rgba(0,0,0,.9);
+}
+.node::before{ content:""; position:absolute; left:-4px; top:50%; width:7px; height:7px; margin-top:-3.5px; border-radius:50%; background:#000; border:1px solid rgba(var(--ice-rgb),.8); box-shadow:0 0 10px rgba(var(--ice-rgb),.6); }
+.node b{ font-family:var(--f-disp); font-weight:400; font-size:.8rem; letter-spacing:-.01em; white-space:nowrap; }
+.node span{ font-size:.76rem; color:var(--ink-3); white-space:nowrap; }
+.node:global(.is-hub){ border-color:rgba(var(--ice-rgb),.5); box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 0 40px rgba(var(--ice-rgb),.15); }
+@media (max-width:899px){
+  .ind{ height:340svh; }
+  .ind__grid{ display:flex; flex-direction:column; align-items:stretch; gap:8px; padding-top:16px; padding-bottom:16px; max-height:none; }
+  .ind__side{ flex:none; gap:10px; }
+  .ind__graph{ flex:1; height:auto; min-height:220px; order:0; }
+  .ind__name{ height:auto; }
+  .node{ padding:8px 11px 9px 11px; min-width:0; border-radius:11px; }
+  .node b{ font-size:.7rem; }
+  .node span{ font-size:.68rem; }
+  .ind__tabs button{ padding:6px 10px 9px; font-size:.78rem; }
+  .ind__tabs button i{ left:10px; right:10px; }
+}
+@media (max-width:899px) and (max-height:700px){
+  .ind__note{ display:none; }
+  .ind__cap{ display:none; }
+}
+
+@keyframes flow{ to{ stroke-dashoffset:-34; } }

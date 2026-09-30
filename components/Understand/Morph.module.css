@@ -1,0 +1,31 @@
+.morph{ height:380svh; }
+.morph :global(.pin){ padding-top:var(--hdr); }
+.morph__cv{ position:absolute; inset:0; width:100%; height:100%; }
+.morph__grid{ position:relative; height:100%; display:flex; flex-direction:column; justify-content:center; pointer-events:none; }
+.morph__steps{ display:grid; gap:clamp(10px,2.2svh,22px); max-width:360px; }
+.morph__steps li{ display:grid; grid-template-columns:auto 1fr; column-gap:14px; align-items:baseline; color:var(--ink-4); transition:color .5s; }
+.morph__steps li .n{ font-family:var(--f-disp); font-size:var(--t-xs); }
+.morph__steps li .t{ font-family:var(--f-disp); font-weight:300; font-size:clamp(1.3rem,1rem + 1.6vw,2.4rem); letter-spacing:-.03em; line-height:1.2; }
+.morph__steps li .d{ grid-column:2; font-size:var(--t-sm); max-height:0; overflow:hidden; opacity:0; transition:max-height .6s var(--e-out), opacity .5s; }
+.morph__steps li:global(.is-on){ color:var(--ink); }
+.morph__steps li:global(.is-on) .d{ max-height:3em; opacity:1; color:var(--ink-2); }
+.morph__steps li:global(.is-past){ color:var(--ink-3); }
+.morph__arrow{ display:block; width:1px; height:14px; margin-left:4px; background:var(--line-2); }
+.morph__end{
+  position:absolute; left:0; right:0; bottom:clamp(28px,7svh,64px); text-align:center; font-size:var(--t-h3); font-weight:500; letter-spacing:-.02em;
+  opacity:0; transform:translateY(14px); transition:opacity .8s, transform 1s var(--e-out); padding-inline:var(--gut);
+}
+.morph__end:global(.is-on){ opacity:1; transform:none; }
+@media (max-width:899px){
+  .morph{ height:320svh; }
+  .morph__grid{ justify-content:flex-start; padding-top:24px; }
+  .morph__steps{ grid-template-columns:repeat(4,auto); gap:4px 14px; max-width:none; }
+  .morph__steps li{ grid-template-columns:1fr; }
+  .morph__steps li .n{ display:none; }
+  .morph__steps{ gap:4px 10px; justify-content:space-between; }
+  .morph__steps li .t{ font-size:clamp(.74rem,3.4vw,.95rem); letter-spacing:-.02em; }
+  .morph__steps li .d{ display:none; }
+  .morph__mdesc{ display:block!important; margin-top:14px; color:var(--ink-2); font-size:var(--t-sm); min-height:1.7em; }
+  .morph__end{ font-size:1.1rem; }
+}
+.morph__mdesc{ display:none; }

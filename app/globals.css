@@ -1,0 +1,132 @@
+:root{
+  /* PIUS mark as a mask (contact glass logo) — generated from the original vectors */
+  --logo-mask:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22103.914 199.402 189.59 194.9%22%3E%3Cg fill=%22%23fff%22%3E%3Cpath d=%22M 169.63 275.55 L 191.73 284.03 L 191.73 358.21 C 191.73 383.19 174.09 393.10 147.79 383.00 C 121.34 372.85 103.91 349.48 103.91 324.5 L 103.91 250.32 L 125.96 258.78 L 125.96 330.95 C 125.96 344.22 134.62 357.03 147.79 362.09 C 161.02 367.16 169.63 360.99 169.63 347.71 Z M 169.63 275.55%22/%3E%3Cpath d=%22M 293.50 234.70 L 202.68 279.00 L 184.33 271.59 L 275.16 227.29 Z M 293.50 234.70%22/%3E%3Cpath d=%22M 270.44 286.02 C 269.68 277.41 263.58 275.92 253.75 282.07 C 243.58 288.42 237.90 297.49 237.90 305.02 C 237.76 313.47 245 312.63 253.37 309.69 L 262.12 306.73 C 278.67 300.79 291.01 303.06 291.11 322.07 C 291.01 343 277.20 364.95 253.60 379.70 C 230.24 394.30 215.29 390.87 214.73 366.80 L 234.26 354.59 C 234.92 365.66 242.67 366.56 253.37 359.88 C 263.91 353.29 270.73 343.29 270.77 334.67 C 270.73 326.95 264.76 327.05 254.22 330.57 L 243.62 334.12 C 227.30 339.64 217.23 336.34 217.28 319.46 C 217.18 298.83 232.75 275.33 253.89 262.12 C 275.36 248.71 289.50 253.87 289.78 273.94 Z M 270.44 286.02%22/%3E%3Cpath d=%22M 169.65 227.05 L 183.37 232.32 C 194.93 236.76 206.98 236.17 216.37 232.18 C 225.80 228.18 226.47 223.37 214.86 218.91 L 201.19 213.67 Z M 103.91 239.19 L 197.67 199.40 L 234.46 213.52 C 255.84 221.73 254.96 232.01 236.41 239.88 C 217.78 247.79 192.44 248.5 170.83 240.20 L 153.94 233.72 L 123.41 246.68 Z M 103.91 239.19%22/%3E%3C/g%3E%3C/svg%3E");
+  --logo-line:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22103.914 199.402 189.59 194.9%22%3E%3Cg fill=%22none%22 stroke=%22%23fff%22 stroke-width=%22.7%22%3E%3Cpath d=%22M 169.63 275.55 L 191.73 284.03 L 191.73 358.21 C 191.73 383.19 174.09 393.10 147.79 383.00 C 121.34 372.85 103.91 349.48 103.91 324.5 L 103.91 250.32 L 125.96 258.78 L 125.96 330.95 C 125.96 344.22 134.62 357.03 147.79 362.09 C 161.02 367.16 169.63 360.99 169.63 347.71 Z M 169.63 275.55%22/%3E%3Cpath d=%22M 293.50 234.70 L 202.68 279.00 L 184.33 271.59 L 275.16 227.29 Z M 293.50 234.70%22/%3E%3Cpath d=%22M 270.44 286.02 C 269.68 277.41 263.58 275.92 253.75 282.07 C 243.58 288.42 237.90 297.49 237.90 305.02 C 237.76 313.47 245 312.63 253.37 309.69 L 262.12 306.73 C 278.67 300.79 291.01 303.06 291.11 322.07 C 291.01 343 277.20 364.95 253.60 379.70 C 230.24 394.30 215.29 390.87 214.73 366.80 L 234.26 354.59 C 234.92 365.66 242.67 366.56 253.37 359.88 C 263.91 353.29 270.73 343.29 270.77 334.67 C 270.73 326.95 264.76 327.05 254.22 330.57 L 243.62 334.12 C 227.30 339.64 217.23 336.34 217.28 319.46 C 217.18 298.83 232.75 275.33 253.89 262.12 C 275.36 248.71 289.50 253.87 289.78 273.94 Z M 270.44 286.02%22/%3E%3Cpath d=%22M 169.65 227.05 L 183.37 232.32 C 194.93 236.76 206.98 236.17 216.37 232.18 C 225.80 228.18 226.47 223.37 214.86 218.91 L 201.19 213.67 Z M 103.91 239.19 L 197.67 199.40 L 234.46 213.52 C 255.84 221.73 254.96 232.01 236.41 239.88 C 217.78 247.79 192.44 248.5 170.83 240.20 L 153.94 233.72 L 123.41 246.68 Z M 103.91 239.19%22/%3E%3C/g%3E%3C/svg%3E");
+
+  --black:#000000;
+  --graphite:#07090c;
+  --ink:#eef1f5;
+  --ink-2:rgba(238,241,245,.72);
+  --ink-3:rgba(238,241,245,.48);
+  --ink-4:rgba(238,241,245,.24);
+  --line:rgba(238,241,245,.10);
+  --line-2:rgba(238,241,245,.18);
+  --ice:#bfd6ff;
+  --ice-rgb:191,214,255;
+  --glass:rgba(255,255,255,.035);
+  --glass-2:rgba(255,255,255,.065);
+
+  --f-disp:"Unbounded","IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+
+  --t-hero:clamp(2.9rem,1.1rem + 8.4vw,10.5rem);
+  --t-d1:clamp(1.9rem,.9rem + 4.4vw,5.4rem);
+  --t-d2:clamp(1.55rem,.95rem + 2.5vw,3.3rem);
+  --t-h3:clamp(1.3rem,1rem + 1.1vw,2rem);
+  --t-body:clamp(.98rem,.93rem + .22vw,1.12rem);
+  --t-sm:.84rem;
+  --t-xs:.74rem;
+
+  --gut:clamp(20px,5.2vw,84px);
+  --maxw:1480px;
+  --hdr:64px;
+  --e-out:cubic-bezier(.16,1,.3,1);
+  --e-io:cubic-bezier(.65,0,.35,1);
+
+  color-scheme:dark only;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  background:var(--black);
+}
+@media (max-width:899px){
+  :root{ --hdr:56px; }
+}
+*,
+*::before,
+*::after{ box-sizing:border-box; }
+html[lang="ja"]{
+  --f-body:"IBM Plex Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;
+  --f-disp:"Unbounded","IBM Plex Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+}
+html[lang="ja"] body{ word-break:normal; line-break:strict; overflow-wrap:break-word; }
+html[lang="ja"] :is(h1,h2,h3,p,li,label,b,span,small,dd){ word-break:auto-phrase; }
+h2,
+h3{ text-wrap:balance; }
+html[lang="en"] body{ word-break:normal; }
+html{
+  scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--hdr));
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+  background:var(--black);
+  overflow-x:clip;
+}
+html.is-locked{ overflow:hidden; }
+body{
+  margin:0;
+  background:var(--black);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:var(--t-body);
+  line-height:1.7;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:clip;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+img,
+svg,
+canvas{ display:block; max-width:100%; }
+a{ color:inherit; text-decoration:none; }
+button{ font:inherit; color:inherit; background:none; border:0; padding:0; cursor:pointer; }
+p{ margin:0; }
+h1,
+h2,
+h3,
+h4{ margin:0; font-weight:inherit; }
+ol,
+ul{ margin:0; padding:0; list-style:none; }
+::selection{ background:rgba(var(--ice-rgb),.28); color:#fff; }
+:focus-visible{ outline:1.5px solid var(--ice); outline-offset:3px; border-radius:6px; }
+.sr{ position:absolute!important; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.skip{ position:fixed; left:12px; top:-60px; z-index:200; padding:10px 16px; background:#fff; color:#000; border-radius:8px; }
+.skip:focus{ top:12px; }
+.wrap{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:var(--gut); }
+.disp{ font-family:var(--f-disp); font-weight:300; letter-spacing:-.035em; line-height:1.02; }
+main{ position:relative; z-index:2; }
+.btn{
+  position:relative; isolation:isolate; overflow:hidden;
+  display:inline-flex; align-items:center; gap:12px; height:52px; padding:0 26px; border-radius:999px;
+  font-size:.95rem; font-weight:500; letter-spacing:-.01em;
+  transition:transform .5s var(--e-out), background .4s, border-color .4s;
+}
+.btn--solid{ background:var(--ink); color:#000; }
+.btn--glass{
+  color:var(--ink); border:1px solid var(--line-2);
+  background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+  -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14);
+}
+.btn::before{
+  content:""; position:absolute; z-index:-1; width:180px; height:180px; border-radius:50%;
+  left:var(--mx,50%); top:var(--my,50%); transform:translate(-50%,-50%) scale(0);
+  background:radial-gradient(circle, rgba(var(--ice-rgb),.55), transparent 65%);
+  transition:transform .5s var(--e-out);
+}
+.btn:hover::before{ transform:translate(-50%,-50%) scale(1); }
+.btn:active{ transform:scale(.97); }
+.btn__arr{ width:18px; height:18px; transition:transform .5s var(--e-out); }
+.btn:hover .btn__arr{ transform:translateX(3px); }
+.sec{ position:relative; }
+.sec-head{ display:grid; gap:18px; }
+.sec-idx{ display:flex; align-items:center; gap:14px; font-family:var(--f-disp); font-size:var(--t-xs); color:var(--ink-3); }
+.sec-idx::before{ content:""; width:28px; height:1px; background:currentColor; }
+.pin-scene{ position:relative; }
+.pin{ position:sticky; top:0; height:100svh; overflow:hidden; }
+@media (prefers-reduced-motion:reduce){
+  *,
+*::before,
+*::after{ animation-duration:.001ms!important; animation-iteration-count:1!important; transition-duration:.001ms!important; }
+}

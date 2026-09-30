@@ -1,189 +1,153 @@
-# PIUS 원페이지 웹사이트 — 개발 인수인계 문서
+# PIUS 웹사이트 — Next.js (App Router · TypeScript · CSS Modules)
 
-PIUS 회사소개 원페이지 사이트의 디자인·인터랙션 구현본입니다.
-프레임워크나 빌드 도구 없이 **순수 HTML / CSS / JavaScript**로 작성되어 있으며, 정적 파일 호스팅만으로 바로 배포할 수 있습니다.
+기존 단일 HTML 사이트를 **화면과 동작이 동일하도록** Next.js로 옮긴 프로젝트입니다.
 
-- 확인용 링크(게시본): https://claude.ai/artifact/2Tqac8VgnqznfaCRUtFr1e
-- 지원 언어: 한국어(기본) · English · 日本語 (헤더에서 전환, 선택 언어는 브라우저에 저장)
+- 확인용 원본 게시본: https://claude.ai/artifact/2Tqac8VgnqznfaCRUtFr1e
+- 지원 언어: 한국어(기본) · English · 日本語
 
 ---
 
-## 1. 전달물 구성
+## 1. 시작하기
 
-```
-pius-handoff/
-├─ README.md                  ← 이 문서
-├─ site/                      ← ★ 수정 기준 원본 (파일별로 분리)
-│  ├─ index.html
-│  ├─ robots.txt              검색엔진 수집 허용 + sitemap 위치
-│  ├─ sitemap.xml             검색엔진 제출용 사이트맵
-│  ├─ google4fcd0ab38f628a81.html  구글 서치 콘솔 소유 확인 파일 (삭제 금지)
-│  └─ assets/
-│     ├─ css/style.css
-│     ├─ img/
-│     │  ├─ favicon.png       파비콘 / 애플 터치 아이콘 (512×512)
-│     │  └─ og-image.png      공유 미리보기 이미지 (1200×630)
-│     └─ js/
-│        ├─ config.js         사이트 설정 (문의 폼 API 주소)
-│        ├─ logo-data.js      로고 벡터 데이터 (원본 .ai에서 추출)
-│        ├─ glass.js          3D 유리 로고 렌더러 (WebGL2)
-│        ├─ i18n.js           한/영/일 문구 사전
-│        ├─ core.js           공통 유틸, 스크롤 엔진, 헤더, 메뉴, 언어 전환, 스플래시
-│        ├─ gl.js             히어로~About 3D 로고플레이 연출 (P·I·U·S 조각 안무)
-│        ├─ bg.js             히어로 배경 셰이더 (빛 번짐, 아이소메트릭 격자, 빛줄기)
-│        └─ sections.js       섹션별 인터랙션 전부 + 부팅 순서
-├─ dist/
-│  └─ index.html              ← site/와 동일한 내용을 한 파일로 묶은 즉시 배포본
-└─ assets/logo/               ← 로고 SVG (흰색 / 검정) + 파비콘·OG 이미지 원본(png)
-   ├─ pius-lockup-*.svg       심볼 + 워드마크 + 태그라인
-   ├─ pius-symbol-*.svg       심볼(큐브)만
-   └─ pius-wordmark-*.svg     워드마크(PiUS)만
+```bash
+npm install
+cp .env.example .env.local     # 값 채우기 (아래 2장)
+npm run dev                    # http://localhost:3000
+npm run build && npm start     # 운영 빌드
+npm run typecheck              # 타입 검사
 ```
 
-**수정은 `site/` 기준으로 진행해 주세요.** `dist/index.html`은 같은 코드를 한 파일로 합친 것이며, 확인·임시 배포용입니다.
+권장 버전은 Node 20 이상, Next 15, React 19입니다.
 
----
+## 2. 환경변수 (`.env.local`)
 
-## 2. 실행과 배포
-
-- **로컬 확인**: `site/index.html`을 브라우저로 열면 됩니다. 로컬 서버를 쓸 경우 예시는 `npx serve site`, `python3 -m http.server -d site`입니다.
-- **배포**: `site/` 폴더를 그대로 정적 호스팅에 올리면 됩니다. 예: S3+CloudFront, Netlify, Vercel, Nginx.
-- **외부 의존성은 Google Fonts 하나뿐**입니다. 사용 서체는 Unbounded(가변 200–900), IBM Plex Sans KR, IBM Plex Sans JP이며 모두 OFL 라이선스라 상업 사용이 가능합니다. 폰트를 자체 호스팅하려면 `index.html`의 Google Fonts `<link>`를 교체하세요.
-- JS 파일 로드 순서가 중요합니다. `index.html`에 적힌 순서를 유지해 주세요. 모든 스크립트는 전역 스코프를 공유합니다.
-
----
-
-## 3. 페이지 흐름과 인터랙션
-
-| 순서 | 섹션 (id) | 핵심 인터랙션 | 코드 위치 |
-|---|---|---|---|
-| 0 | 스플래시 | 로고 4조각이 아이소메트릭 축을 따라 조립되고 빛이 통과한 뒤, 히어로 위치로 날아가 3D 유리로 전환됩니다. 클릭·키 입력 시 건너뜁니다. | `core.js` Splash |
-| 1 | 히어로 `#top` | 3D 유리 큐브가 마우스를 따라 회전하고, 제목 글자는 커서 아래에서 볼록 렌즈처럼 부풉니다. 배경 셰이더와 'We build' 문구가 순환합니다. | `gl.js`, `bg.js`, `sections.js` (Hero headline) |
-| 2 | About `#about` | 문장이 스크롤에 따라 단어 단위로 켜지고, 유리판 5장이 펼쳐집니다. 배경에서는 P·I·U·S 조각이 흩어져 떠다닙니다. | `sections.js` ABOUT, `gl.js` |
-| 3 | Understand `#understand` | 제목이 줄 단위로 올라오고, 3D 조각이 다시 큐브로 모여 회전한 뒤 사라집니다. | `gl.js` 안무 anchors |
-| 3-1 | 산업 그래프 `#ind` | 스크롤 고정 구간입니다. 제조→물류→커머스→금융 순으로 업무 흐름 그래프가 재배치되며, 탭을 클릭하면 해당 위치로 이동합니다. | `sections.js` industry |
-| 3-2 | 입자 변형 `#morph` | 스크롤 고정 구간입니다. 입자가 구름 → 흐름 → 표 → PIUS 심볼로 변합니다. | `sections.js` morph |
-| 4 | What We Build `#business` | 5개 영역이 모두 다른 시각 표현을 씁니다. | 아래 표 참고 |
-| 5 | How We Work `#process` | 스크롤 고정 구간입니다. 6단계가 하나씩 도킹하며 하나의 막(유기체)으로 합쳐집니다. | `sections.js` HOW WE WORK |
-| 6 | Contact `#contact` | 제목이 한 글자씩 점등되고, 유리 폼(검증 → 전송 중 → 완료)이 동작합니다. | `sections.js` CONTACT |
-| 7 | Footer | 12겹 압출 워드마크의 입체 방향이 마우스를 따라가고, 빛이 지나갑니다. | `sections.js` FOOTER |
-
-What We Build 세부:
-
-| 영역 | 표현 |
+| 변수 | 용도 |
 |---|---|
-| 01 ERP | 업무 관리 화면 목업입니다. 7개 메뉴(인사·회계·영업·재고·생산·물류·업무관리)가 2.8초마다 전환되며, 메뉴마다 KPI·차트 종류·표 구성이 다릅니다. 데이터는 `MODS` 배열에 있습니다. |
-| 02 Platform | 참여자(고객·파트너·공급사 등)가 공통 코어 주위를 공전하고, 데이터 패킷이 오갑니다. |
-| 03 Web | 브라우저 창 4장이 순서대로 교체됩니다. 커서가 각 화면의 버튼을 누른 뒤 다음 창으로 넘어갑니다. |
-| 04 Mobile | 현장 업무 앱(앞)과 배송 지도(뒤) 목업입니다. 업무 완료 체크와 차량 이동, 도착 예정 시간 카운트다운이 움직입니다. |
-| 05 Integration | 기존 시스템 → 연동 허브 → 신규 시스템 → 통합 데이터 순으로 흐름선이 스크롤에 따라 그려집니다. 모바일에서는 세로 배치로 바뀝니다. |
+| `NEXT_PUBLIC_SITE_URL` | 실제 사이트 주소입니다. OG 이미지 같은 공유 미리보기의 절대경로에 쓰입니다. |
+| `NEXT_PUBLIC_FORM_ENDPOINT` | 문의 폼 접수 API입니다. 비워두면 전송을 흉내만 냅니다(UI 미리보기). |
 
-> 목업 속 수치·코드·지명은 모두 예시용 가상 데이터입니다.
-
----
-
-## 4. 디자인 토큰 (`style.css` `:root`)
-
-| 토큰 | 값 | 용도 |
-|---|---|---|
-| `--black` | `#000000` | 기본 배경, 헤더(항상 검정 고정) |
-| `--ink` | `#eef1f5` | 본문 텍스트 |
-| `--ink-2/3/4` | 72% / 48% / 24% | 보조 텍스트 단계 |
-| `--line`, `--line-2` | 10% / 18% | 구분선 |
-| `--ice` | `#bfd6ff` | 유일한 포인트 색입니다. "빛"으로만 사용합니다. |
-| `--f-disp` | Unbounded | 영문 디스플레이 |
-| `--f-body` | IBM Plex Sans KR (일본어일 때 JP) | 본문 |
-
-- **반응형 기준점**: 899px(태블릿·모바일 레이아웃), 519px(소형), 359px(초소형).
-- **검증 폭**: 320 / 375 / 390 / 430 / 768 / 1024 / 1440 / 1920 / 2560px에서 가로 스크롤이 없는 것을 확인했습니다.
-- **다크 모드 대응**: `color-scheme: dark only`와 입력창 자동완성 색상 고정으로 브라우저 강제 다크모드가 색을 바꾸지 않게 했습니다.
+폼은 `POST` + `application/json`으로 아래 값을 보냅니다.
+- 보내는 필드: `name, company, phone, email, message, agree, lang, sentAt`
+- 응답이 `2xx`면 완료 화면을 띄우고, 실패하면 3개 언어로 재시도 안내를 보여줍니다.
+- 서버 쪽에서 해주셔야 할 것: 입력값 재검증, 스팸 방지, CORS 허용, 알림 발송
 
 ---
 
-## 5. 다국어 (`i18n.js`)
+## 3. 구조
 
-- **정적 문구**: HTML 요소에 `data-i18n="키"`가 붙어 있습니다. `I18N.ko / en / ja`에서 같은 키의 값을 수정하면 됩니다.
-- **동적 문구**: ERP·모바일 앱·그래프 라벨처럼 JS가 그리는 문구는 `sections.js` 안에 `{ ko, en, ja }` 형태로 함께 들어 있습니다.
-- **언어 선택 저장**: `localStorage`의 `pius-lang` 키에 저장합니다. 기본값은 `ko`입니다.
-- **언어 변경 이벤트**: `pius:lang` 이벤트가 발생하면 각 모듈이 스스로 다시 그립니다.
-- **영문 디스플레이 문구**: "Build Your Growth", "Every business works differently." 등은 브랜드 문구라 모든 언어에서 영문을 유지합니다.
-- **일본어 줄바꿈**: 일본어는 `word-break: auto-phrase`로 구문 단위로 줄바꿈합니다. 이 속성은 Chromium 계열만 지원하며, 그 외 브라우저에서는 일반 줄바꿈으로 자연스럽게 대체됩니다.
-
----
-
-## 6. 문의 폼 연동
-
-`site/assets/js/config.js`:
-
-```js
-window.PIUS_CONFIG = {
-  formEndpoint: 'https://api.your-domain.com/inquiry'   // 비워두면 전송을 흉내만 냅니다
-};
+```
+app/
+  layout.tsx          메타데이터(canonical·OG·트위터), 구조화 데이터(JSON-LD), 뷰포트, 폰트, globals.css
+  page.tsx            <Site />
+  icon.png            파비콘 (512×512, Next가 <link rel="icon"> 자동 생성)
+  apple-icon.png      iOS 홈 화면 아이콘
+  robots.ts           /robots.txt
+  sitemap.ts          /sitemap.xml
+  globals.css         디자인 토큰 · 리셋 · 공용 유틸(.wrap .btn .disp .sec-idx .pin …)
+components/
+  Site.tsx            페이지 구성 + 부팅 순서(최상단 시작 → 3D 준비 → 스플래시 → 인트로)
+  LangProvider.tsx    언어 Context (ko/en/ja, localStorage 'pius-lang')
+  Logo.tsx            로고 SVG 조각
+  Splash/ Header/ Hero/ About/ Understand/ Build/ Process/ Contact/ Footer/ Atmosphere/
+     ├─ 컴포넌트.tsx          마크업 + 초기화
+     ├─ 컴포넌트.module.css   해당 컴포넌트 스타일
+     └─ *.controller.ts      섹션 애니메이션·인터랙션 (DOM/Canvas/SVG 직접 제어)
+lib/
+  core.ts             공용 런타임: 스크롤·프레임 엔진, 포인터, 스크램블, 부드러운 스크롤, 이벤트, CSS Modules 헬퍼
+  i18n.ts             한/영/일 문구 사전
+  logo.ts             로고 벡터(원본 .ai 추출)
+  stage.ts            히어로~About 3D 로고플레이 안무 (P·I·U·S)
+  heroBg.ts           히어로 배경 셰이더
+  glass/              3D 유리 렌더러 (WebGL2 레이마칭) — index.ts가 타입이 붙은 공개 API
+  site.ts             사이트 주소(SITE_URL). 환경변수가 없으면 https://pius.co.kr
+public/
+  og/og-image.png     OG 이미지 1200×630
+  logo/               로고 SVG (흰색/검정)
+  google4fcd0ab38f628a81.html   구글 서치 콘솔 소유 확인 파일 (삭제 금지)
 ```
 
-값을 넣으면 `POST` + `Content-Type: application/json`으로 아래 형태를 전송합니다. 이 연동은 가짜 서버로 수신까지 검증했습니다.
+### 동작 방식
 
-```json
-{
-  "name": "홍길동", "company": "", "phone": "010-1234-5678",
-  "email": "a@b.co", "message": "ERP 구축 문의",
-  "agree": true, "lang": "ko", "sentAt": "2026-09-29T12:50:59.485Z"
-}
-```
+- **React가 맡는 것**: 마크업, 문구(다국어), 상태(언어, 메뉴, 토스트)입니다.
+- **controller / lib가 맡는 것**: 매 프레임 계산(스크롤·마우스), WebGL, 요소 직접 조정입니다. 각 컴포넌트가 `useEffect`에서 초기화하고, 해제될 때 정리 함수로 풀어줍니다.
+  - 매 프레임 작업은 React 리렌더링 없이 돌아가므로 원본과 같은 성능과 결과를 냅니다.
+- **프레임 루프는 하나**입니다(`Engine`). 각 섹션은 필요한 장면만 등록합니다.
+  - `pin`: 스크롤 고정 구간(`[data-pin]` 자식 기준)
+  - `pass`: 화면 통과 구간
+- **컴포넌트 간 통신**은 window 이벤트로 합니다.
+  - `pius:resize`: 레이아웃 재측정
+  - `pius:lang`: 언어 변경. JS로 그리는 화면이 다시 그려집니다.
+  - `pius:intro`: 스플래시 종료
+  - `pius:toast`: 토스트 표시
+  - `pius:navigate`: 앵커 이동. 모바일 메뉴가 닫힙니다.
 
-- 응답이 `2xx`이면 완료 화면을 띄우고, 실패하면 하단 토스트로 재시도를 안내합니다(3개 언어).
-- 프런트 검증 항목: 이름·문의 내용 필수, 연락처 숫자 9자리 이상, 이메일 형식, 개인정보 동의.
-- **서버 측에서 해주셔야 할 것**
-  - 입력값 재검증
-  - 스팸 방지(예: reCAPTCHA / Turnstile, rate limit)
-  - CORS 허용
-  - 알림 메일 발송
-  - 개인정보 보관 기간 정책
+### CSS Modules 규칙
 
----
-
-## 7. 3D 렌더링과 성능 장치
-
-- **히어로 배경** (`bg.js`)
-  - WebGL1 전체화면 셰이더입니다.
-  - 히어로가 화면 밖으로 나가면 렌더링을 멈춥니다.
-  - 픽셀 수 상한은 약 240만입니다.
-- **3D 유리 로고** (`glass.js` + `gl.js`)
-  - WebGL2 레이마칭 방식입니다. 로고 조각별 거리장(SDF)을 두께 방향으로 압출해 굴절·반사를 계산합니다.
-  - 투명 캔버스라 배경 위에 조각만 그려집니다.
-  - 히어로부터 산업 섹션 직전까지만 렌더링하고, 그 이후에는 완전히 멈춥니다.
-  - 프레임 시간을 재서 해상도를 자동으로 조절합니다.
-  - 픽셀 상한은 데스크톱 약 320만, 모바일 약 160만입니다.
-  - 이 렌더러는 이전 PIUS 시안에서 쓰던 렌더러를 가져와, 포인트 색과 투명 배경만 바꿔 사용했습니다.
-- **폴백**: WebGL2가 없으면 3D 대신 SVG 유리 로고를 보여줍니다(`.hero.no-gl`).
-- **동작 줄이기(`prefers-reduced-motion`)**: 스플래시를 짧게 보여주고, 반복 애니메이션과 빛의 움직임, 제목 렌즈 효과를 끕니다.
-- **탭이 숨겨졌을 때**: 3D 렌더링을 멈춥니다.
-- **디버그용 파라미터**: `?glq=0.3`을 붙이면 3D 해상도를 강제로 낮춥니다. 저사양 기기를 시험할 때 씁니다.
+- **구조 클래스는 모듈 범위(해시)입니다.** JSX에서 `cxm(styles)('hero__title disp')`처럼 씁니다. 모듈에 없는 이름(전역 유틸)은 그대로 통과합니다.
+- **상태 클래스는 `:global()`입니다.** 대상은 `is-on`, `is-in`, `on`, `done`, `invalid` 등이며, controller가 이름 그대로 켜고 끕니다.
+- **문자열로 만드는 마크업**(ERP·웹·앱 목업 화면 등)은 `innerHTML` 직후 `adopt(el)`로 클래스명을 모듈 이름으로 변환합니다. 선택자는 `sel('.x')`로 변환해서 찾습니다.
+- **동적 요소는 id로 찾습니다.** 예: `#erpMain`, `#indGraph`. 해시 클래스명에 의존하지 않기 위해서입니다.
 
 ---
 
-## 8. 접근성
+## 4. 알아두실 점
 
-- 본문 건너뛰기 링크를 두었습니다.
-- 모든 버튼과 폼에 레이블이 있습니다.
-- 키보드 포커스 표시는 아이스 컬러 외곽선입니다.
-- 장식용 그래픽에는 모두 `aria-hidden`을 적용했습니다.
-- 산업 탭은 `role="tab"`이고, 폼 오류는 `aria-invalid`로 표시합니다.
-- 모바일 메뉴는 ESC로 닫힙니다.
-- 첫 진입과 새로고침 시에는 항상 히어로(최상단)에서 시작합니다. 이를 위해 `scrollRestoration = manual` 설정과 URL 해시 제거를 적용했습니다.
+- **`reactStrictMode: false`**
+  - controller가 DOM을 직접 만들기 때문에, 개발 모드의 이중 마운트에서 요소가 중복될 수 있어 꺼두었습니다.
+  - 운영 빌드에는 영향이 없습니다.
+- **`*.controller.ts`와 `lib/glass/renderer.ts`는 `// @ts-nocheck`입니다.**
+  - 원본에서 검증된 애니메이션 로직을 결과물이 바뀌지 않도록 그대로 옮겼기 때문입니다.
+  - 외부에 노출되는 함수(`init…(host, styles)`, `createGlass`)는 타입이 붙어 있습니다.
+  - 내부는 점진적 타입화 대상입니다.
+  - 그 외 컴포넌트와 `lib/*.ts`는 strict 모드로 작성했습니다.
+- **폰트는 Google Fonts `<link>`로 불러옵니다.**
+  - 사용 서체: Unbounded(가변 200–900), IBM Plex Sans KR / JP
+  - `next/font`로 바꾸려면 생성되는 font-family 이름을 `globals.css`의 `--f-disp`, `--f-body` 변수에 연결해 주세요.
+  - Unbounded는 가변 굵기 축(`wght`)이 필요합니다. 히어로 제목 렌즈 효과가 이 축을 씁니다.
+- **3D 유리 로고는 WebGL2가 필요합니다.** 없으면 SVG 로고로 대체되고, 히어로 배경은 WebGL1로 그립니다.
+- **디버그 파라미터**: `?glq=0.3`을 붙이면 3D 해상도를 강제로 낮춥니다. 저사양 시험용입니다.
 
 ---
 
-## 9. 운영 전 확인·보완이 필요한 항목
+## 5. 이전 과정에서 한 검증
 
-- [ ] **대표자 영문·일문 표기**: 현재 "Si-on Choi" / 「チェ・シオン（최시온）」입니다. 공식 표기로 바꿔 주세요.
-- [ ] **영문·일문 주소**: 현재 "#703, 9 Gangnamseo-ro, Yongin-si, Gyeonggi-do, Korea"입니다. 확인이 필요합니다.
-- [ ] **영어·일본어 번역 원어민 검수**: `i18n.js` 전체와 `sections.js` 내 목업 문구가 대상입니다.
-- [ ] **문의 폼 백엔드 연결**: 6장을 참고해 주세요.
-- [ ] **개인정보 수집·이용 동의**: 전문 또는 개인정보처리방침 페이지 링크를 추가해야 합니다. 현재는 동의 문구만 있습니다.
-- [x] **파비콘, OG 이미지, 공유용 메타태그 추가**: 이미지는 `site/assets/img/`에 있고, 대표 URL은 `https://pius.co.kr/`입니다. 이미지를 바꾼 뒤에는 카카오·페이스북 공유 디버거에서 캐시를 초기화해 주세요.
-- [ ] **도메인, 애널리틱스, 검색엔진 등록**: `www.pius.co.kr` → `pius.co.kr` 리다이렉트는 Vercel에 설정되어 있습니다. canonical·OG URL은 www 없는 주소 기준입니다.
-  - 검색엔진 등록: 구글은 `site/google4fcd0ab38f628a81.html` 파일로 소유 확인합니다(삭제하지 마세요). 네이버는 서치어드바이저에서 "HTML 태그" 방식으로 코드를 받아 `index.html` `<head>`의 주석을 풀고 값을 넣어 주세요. 확인 후 두 곳 모두 `https://pius.co.kr/sitemap.xml`을 제출합니다.
-  - 구조화 데이터(JSON-LD)는 `index.html` `<head>`에 있습니다. 대표자·주소가 바뀌면 푸터와 함께 수정해 주세요.
-  - 영어·일본어는 브라우저 안에서만 전환되어 검색엔진에는 한국어만 색인됩니다.
-- [ ] **실기기 테스트**: 특히 iOS Safari와 저사양 안드로이드에서 3D 성능을 확인해야 합니다. 개발 단계 점검은 헤드리스 브라우저(소프트웨어 렌더링)로만 했습니다.
+작업 환경에서 Next.js를 설치할 수 없어서, 같은 컴포넌트를 esbuild로 묶어 브라우저에서 원본과 비교했습니다. 이때 CSS Modules는 로컬 스코프로 처리했습니다.
+
+| 항목 | 결과 |
+|---|---|
+| 문서 전체 높이 (1440px / 390px) | 원본과 동일 (20,634px / 19,374px) |
+| 주요 요소 29개 위치·크기 | 원본과 동일 |
+| 섹션별 화면 비교 (히어로 ~ 푸터) | 동일 (애니메이션 시점 차이만 있음) |
+| 언어 전환 EN/JP/KO · 새로고침 후 유지 | 정상 |
+| 문의 폼 검증 · 환경변수 API로 JSON 전송 | 정상 (가짜 서버로 수신 확인) |
+| 모바일 메뉴 열기 · 이동 · 닫기 | 정상 |
+| ERP 메뉴 7개 전환 중 왼쪽 글 위치 | 고정 |
+| TypeScript strict 검사 (lib · 컴포넌트) | 통과 (임시 React 타입 정의로 확인) |
+
+**설치 후 한 번 확인해 주세요**
+- `npm run build`: 실제 Next.js 빌드와 `@types/react` 기준 타입 검사입니다.
+- 실기기 성능: 특히 iOS Safari와 저사양 안드로이드에서 3D를 확인해 주세요.
+
+## 6. 배포와 SEO
+
+- **배포**: Vercel(Framework Preset: Next.js, Root Directory: 저장소 루트). main에 머지하면 운영에 자동 배포됩니다.
+- **도메인**: 대표 주소는 `https://pius.co.kr`입니다. `www.pius.co.kr`은 Vercel에서 대표 주소로 리다이렉트합니다. 대표 도메인을 바꾸면 `NEXT_PUBLIC_SITE_URL`도 같이 바꿔 주세요.
+- **환경변수**(Vercel → Settings → Environment Variables): `NEXT_PUBLIC_SITE_URL=https://pius.co.kr`, `NEXT_PUBLIC_FORM_ENDPOINT`
+- **검색엔진 등록**
+  - 구글: `public/google4fcd0ab38f628a81.html` 파일로 소유 확인합니다. 지우면 확인이 풀립니다.
+  - 네이버: 서치어드바이저에서 "HTML 태그" 코드를 받아 `app/layout.tsx`의 `verification` 주석을 풀고 값을 넣어 주세요.
+  - 두 곳 모두 `https://pius.co.kr/sitemap.xml`을 제출합니다.
+- **구조화 데이터**(JSON-LD)는 `app/layout.tsx`에 있습니다. 대표자·주소가 바뀌면 푸터 문구(`lib/i18n.ts`)와 함께 수정해 주세요.
+- 영어·일본어는 브라우저 안에서만 전환되어 검색엔진에는 한국어만 색인됩니다.
+- OG 이미지를 바꾼 뒤에는 카카오·페이스북 공유 디버거에서 캐시를 초기화해 주세요.
+
+## 7. 운영 전 체크리스트
+
+- [ ] Vercel 환경변수 `NEXT_PUBLIC_SITE_URL` 설정 (`NEXT_PUBLIC_FORM_ENDPOINT`는 문의 폼 백엔드 준비 후)
+- [ ] 대표자 영문·일문 표기 확인: 현재 "Si-on Choi" / 「チェ・シオン（최시온）」(`lib/i18n.ts`)
+- [ ] 영문·일문 주소 확인
+- [ ] 영어·일본어 번역 원어민 검수: `lib/i18n.ts`와 각 controller 안의 목업 문구
+- [ ] 개인정보 수집·이용 동의 전문 또는 처리방침 링크 추가
+- [x] 파비콘·OG 이미지·robots·sitemap·구조화 데이터
+- [ ] 네이버 서치어드바이저 소유 확인 코드 추가
+- [ ] `package-lock.json` 생성·커밋 (Node 설치 후 `npm install`)
