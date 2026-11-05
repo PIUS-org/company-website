@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION, images: ['/og/og-image.png'] },
   /* Search engine ownership. Google is verified by public/google4fcd0ab38f628a81.html (do not delete).
-     Naver: paste the code from Search Advisor ("HTML 태그") and uncomment. */
-  // verification: { other: { 'naver-site-verification': '네이버_코드' } },
+     Naver is verified by this meta tag (Search Advisor "HTML 태그"; do not remove). */
+  verification: { other: { 'naver-site-verification': '3263912a3ed55ef315838bad0d49f6ae54818532' } },
 };
 
 export const viewport: Viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover', themeColor: '#000000' };
