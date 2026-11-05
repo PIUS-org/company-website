@@ -135,7 +135,7 @@ public/
 - **환경변수**(Vercel → Settings → Environment Variables): `NEXT_PUBLIC_SITE_URL=https://pius.co.kr`, `NEXT_PUBLIC_FORM_ENDPOINT`
 - **검색엔진 등록**
   - 구글: `public/google4fcd0ab38f628a81.html` 파일로 소유 확인합니다. 지우면 확인이 풀립니다.
-  - 네이버: 서치어드바이저에서 "HTML 태그" 코드를 받아 `app/layout.tsx`의 `verification` 주석을 풀고 값을 넣어 주세요.
+  - 네이버: `app/layout.tsx`의 `verification` 메타 태그로 소유 확인합니다. 지우면 확인이 풀립니다.
   - 두 곳 모두 `https://pius.co.kr/sitemap.xml`을 제출합니다.
 - **구조화 데이터**(JSON-LD)는 `app/layout.tsx`에 있습니다. 대표자·주소가 바뀌면 푸터 문구(`lib/i18n.ts`)와 함께 수정해 주세요.
 - 영어·일본어는 브라우저 안에서만 전환되어 검색엔진에는 한국어만 색인됩니다.
