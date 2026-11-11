@@ -1,0 +1,350 @@
+{
+  "id": "metaverse-live-app",
+  "slug": "metaverse-live-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 50,
+  "includeInPdf": true,
+  "title": {
+    "ko": "메타버스 라이브",
+    "en": "Metaverse Live",
+    "ja": "メタバースライブ"
+  },
+  "subtitle": {
+    "ko": "실시간 영상 송출과 3D 인터랙션을 결합한 iOS 앱",
+    "en": "An iOS app combining live video streaming with 3D metaverse interaction",
+    "ja": "リアルタイム映像配信と3Dインタラクションを組み合わせたiOSアプリ"
+  },
+  "summary": {
+    "ko": "메타버스 공간 안에서 끊김 없는 라이브 방송과 3D 캐릭터 인터랙션을 제공하는 iOS 앱을 개발했습니다.",
+    "en": "Developed an iOS app that delivers uninterrupted live broadcasts and 3D character interaction inside a metaverse space.",
+    "ja": "メタバース空間の中で途切れないライブ配信と3Dキャラクターのインタラクションを提供するiOSアプリを開発しました。"
+  },
+  "overview": {
+    "ko": "실시간 영상과 3D 환경이 동시에 돌아가는 고부하 조건에서도, 많은 사용자가 함께 라이브 이벤트에 참여할 수 있도록 iOS 클라이언트를 설계하고 최적화한 프로젝트입니다.",
+    "en": "A project that designed and optimized the iOS client so that many users could join live events together, even under the heavy load of real-time video and a 3D environment running at once.",
+    "ja": "リアルタイム映像と3D環境が同時に動く高負荷の条件でも、多くのユーザーが共にライブイベントに参加できるよう、iOSクライアントを設計・最適化したプロジェクトです。"
+  },
+  "industry": {
+    "ko": "메타버스 · 라이브 스트리밍",
+    "en": "Metaverse · Live streaming",
+    "ja": "メタバース・ライブ配信"
+  },
+  "categories": [
+    "mobile",
+    "platform"
+  ],
+  "platforms": [
+    {
+      "type": "app",
+      "label": {
+        "ko": "iOS 앱",
+        "en": "iOS app",
+        "ja": "iOSアプリ"
+      }
+    }
+  ],
+  "period": "2022.12 – 2024.06",
+  "year": 2024,
+  "stack": [
+    "Swift",
+    "UIKit",
+    "REST API"
+  ],
+  "scope": [
+    {
+      "key": "app",
+      "label": {
+        "ko": "iOS 앱 개발",
+        "en": "iOS app development",
+        "ja": "iOSアプリ開発"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#4B3F72",
+    "accentInk": "#1B1D22",
+    "cover": "dark",
+    "layout": "stage"
+  },
+  "thumbnail": [
+    "metaverse-app"
+  ],
+  "images": [
+    {
+      "id": "metaverse-app",
+      "kind": "mobile",
+      "file": "metaverse-app.webp",
+      "alt": {
+        "ko": "메타버스 앱 홈 화면",
+        "en": "Metaverse app home",
+        "ja": "メタバースアプリのホーム画面"
+      },
+      "caption": {
+        "ko": "3D 아바타와 배경 변경·보관함·가상월드 진입 메뉴를 보여주는 메타버스 앱의 홈 화면입니다.",
+        "en": "The metaverse app home, showing the 3D avatar and menus for backgrounds, the wardrobe and the virtual world.",
+        "ja": "3Dアバターと背景変更・保管箱・仮想ワールドへのメニューを表示するメタバースアプリのホーム画面です。"
+      }
+    },
+    {
+      "id": "metaverse-live-room",
+      "kind": "mobile",
+      "file": "metaverse-live-room.webp",
+      "alt": {
+        "ko": "3D 아바타 배경의 메타버스 라이브룸 모바일 시연 화면",
+        "en": "Mobile live-room UI demo over an existing 3D-avatar scene",
+        "ja": "3Dアバター背景のメタバースライブ配信ルームのモバイルデモUI"
+      },
+      "caption": {
+        "ko": "기존 아바타·공간 분위기를 활용한 라이브 참여·채팅 UI 재구성 시안입니다.",
+        "en": "Illustrative live participation and chat screen composed over the original avatar-and-world visual direction.",
+        "ja": "既存のアバター・空間の雰囲気を活用したライブ参加・チャットUI再構成デモです。"
+      }
+    },
+    {
+      "id": "metaverse-avatar-interaction",
+      "kind": "mobile",
+      "file": "metaverse-avatar-interaction.webp",
+      "alt": {
+        "ko": "공항 월드의 친구 아바타 선택과 손 흔들기 제스처 화면",
+        "en": "Friend avatar selection and waving gesture in an airport-themed world",
+        "ja": "空港ワールドでの友達アバター選択と手を振るジェスチャー画面"
+      },
+      "caption": {
+        "ko": "기존 하늘광장 아바타를 유지하고 제스처 선택·친구 대상·실행 상태를 강조한 모바일 인터랙션 UI입니다.",
+        "en": "The original airport avatar scene with larger gesture selection, target friend, and action state controls.",
+        "ja": "元の空港アバターを使い、ジェスチャー選択・相手・実行状態を見やすくしたモバイルUIです。"
+      }
+    },
+    {
+      "id": "metaverse-live-event",
+      "kind": "mobile",
+      "file": "metaverse-live-event.webp",
+      "alt": {
+        "ko": "하늘광장 라이브 이벤트의 미션 달성도와 보상 대기 화면",
+        "en": "Sky Plaza live event mission progress and reward state",
+        "ja": "空港広場ライブイベントのミッション進捗と報酬待機画面"
+      },
+      "caption": {
+        "ko": "참여 24명과 3/5 단계 진행 정보를 유지하며 완료·진행·대기 미션의 차이를 보여주는 이벤트 UI입니다.",
+        "en": "A live-event mission view showing 24 participants, stage 3 of 5, and completed, active, and pending tasks.",
+        "ja": "参加者24人・全5段階中3段階の進捗と、完了・進行中・待機のミッションを示すUIです。"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "iOS · LIVE",
+        "en": "iOS · LIVE",
+        "ja": "iOS · LIVE"
+      },
+      "headline": {
+        "ko": "메타버스 안에서도\n라이브는 끊기지 않게.",
+        "en": "Inside the metaverse,\nthe live stream never drops.",
+        "ja": "メタバースの中でも、\nライブは途切れずに。"
+      },
+      "sub": {
+        "ko": "라이브 스트리밍 · 3D 인터랙션 · 다수 사용자 이벤트 · 성능 최적화",
+        "en": "Live streaming · 3D interaction · Multi-user events · Performance tuning",
+        "ja": "ライブ配信・3Dインタラクション・多人数イベント・パフォーマンス最適化"
+      },
+      "images": [
+        "metaverse-app"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "실시간 영상 처리와 3D 렌더링을 한 앱 안에서 안정적으로 돌리는 것이 핵심 과제였습니다.",
+        "en": "The core challenge was running real-time video processing and 3D rendering reliably inside a single app.",
+        "ja": "リアルタイム映像処理と3Dレンダリングを一つのアプリの中で安定して動かすことが、核心の課題でした。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "라이브 영상",
+            "en": "Live video",
+            "ja": "ライブ映像"
+          },
+          "body": {
+            "ko": "iOS 클라이언트의 영상 처리 파이프라인으로 메타버스 공간 안의 라이브 방송을 구현했습니다.",
+            "en": "The iOS client’s video pipeline carries live broadcasts inside the metaverse space.",
+            "ja": "iOSクライアントの映像処理パイプラインでメタバース空間内のライブ配信を実装しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "3D 인터랙션",
+            "en": "3D interaction",
+            "ja": "3Dインタラクション"
+          },
+          "body": {
+            "ko": "3D 캐릭터 환경에서 참여자끼리 상호작용하는 UI를 설계했습니다.",
+            "en": "UI for participants interacting in a 3D character environment.",
+            "ja": "3Dキャラクター環境で参加者同士がやり取りするUIを設計しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "고부하 안정성",
+            "en": "Stability under load",
+            "ja": "高負荷時の安定性"
+          },
+          "body": {
+            "ko": "영상과 3D가 동시에 돌아가는 조건에서 메모리와 렌더링을 최적화했습니다.",
+            "en": "Memory and rendering tuned for video and 3D running at the same time.",
+            "ja": "映像と3Dが同時に動く条件でメモリとレンダリングを最適化しました。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "02",
+        "label": "LIVE EXPERIENCE"
+      },
+      "layout": "phones",
+      "surface": "accent",
+      "heading": {
+        "ko": "라이브 참여와 아바타 상호작용",
+        "en": "Live participation and avatar interaction",
+        "ja": "ライブ参加とアバター交流"
+      },
+      "body": {
+        "ko": "기존 iOS 프로젝트의 화면 분위기를 참고하여 재구성한 추가 UI 시안입니다. 실제 구현 범위를 새로 주장하지 않습니다.",
+        "en": "Additional illustrative UI views based on the original iOS project’s visual direction; not claims of new implemented functionality.",
+        "ja": "既存iOSプロジェクトの画面の雰囲気を基に再構成した追加UIです。新たな実装実績を主張しません。"
+      },
+      "images": [
+        "metaverse-live-room",
+        "metaverse-avatar-interaction",
+        "metaverse-live-event"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "03",
+        "label": "KEY FEATURES"
+      },
+      "heading": {
+        "ko": "주요 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "라이브 스트리밍",
+            "en": "Live streaming",
+            "ja": "ライブ配信"
+          },
+          "body": {
+            "ko": "iOS 클라이언트 영상 처리 파이프라인을 설계해 메타버스 공간에서 끊김 없는 라이브 방송을 구현했습니다.",
+            "en": "Designed the iOS client video pipeline for uninterrupted live broadcasts in the metaverse.",
+            "ja": "iOSクライアントの映像処理パイプラインを設計し、メタバース空間で途切れないライブ配信を実現しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "3D 인터랙션 UI",
+            "en": "3D interaction UI",
+            "ja": "3DインタラクションUI"
+          },
+          "body": {
+            "ko": "3D 캐릭터 환경에서 참여자끼리 자연스럽게 상호작용할 수 있는 UI/UX를 설계했습니다.",
+            "en": "Designed UI/UX for natural interaction between participants in a 3D character environment.",
+            "ja": "3Dキャラクター環境で参加者同士が自然に交流できるUI/UXを設計しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "다수 사용자 라이브 이벤트",
+            "en": "Multi-user live events",
+            "ja": "多人数ライブイベント"
+          },
+          "body": {
+            "ko": "많은 사용자가 동시에 참여하는 라이브 이벤트를 지원합니다.",
+            "en": "Supports live events joined by many users at the same time.",
+            "ja": "多くのユーザーが同時に参加するライブイベントに対応します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일 성능 최적화",
+            "en": "Mobile performance",
+            "ja": "モバイルパフォーマンス最適化"
+          },
+          "body": {
+            "ko": "실시간 영상과 3D 환경이 겹치는 고부하 상황에서 메모리와 렌더링을 최적화해 안정성을 확보했습니다.",
+            "en": "Optimized memory and rendering for stable operation under the combined load of live video and 3D.",
+            "ja": "リアルタイム映像と3D環境が重なる高負荷の状況で、メモリとレンダリングを最適化して安定性を確保しました。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "04",
+        "label": "TECHNOLOGY"
+      },
+      "heading": {
+        "ko": "기술 선택",
+        "en": "Technology choices",
+        "ja": "技術選定"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "Swift 네이티브",
+            "en": "Native Swift",
+            "ja": "Swiftネイティブ"
+          },
+          "body": {
+            "ko": "영상 처리 성능과 안정성을 위해 네이티브로 개발했습니다.",
+            "en": "Built natively for video-processing performance and stability.",
+            "ja": "映像処理の性能と安定性のためにネイティブで開発しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "실서비스 운영",
+            "en": "Production operation",
+            "ja": "実サービス運用"
+          },
+          "body": {
+            "ko": "실제 사용자 트래픽을 받는 서비스로 운영했습니다.",
+            "en": "Operated as a live service handling real user traffic.",
+            "ja": "実際のユーザートラフィックを受けるサービスとして運用しました。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "PROJECT SCOPE"
+      },
+      "heading": {
+        "ko": "수행 범위",
+        "en": "Scope of work",
+        "ja": "担当範囲"
+      }
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "id": "contracta",
+  "slug": "contracta",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 140,
+  "includeInPdf": true,
+  "title": {
+    "ko": "CONTRACTA — 기업 계약 검토·승인",
+    "en": "CONTRACTA — Contract Collaboration",
+    "ja": "CONTRACTA — 企業契約レビュー・承認"
+  },
+  "subtitle": {
+    "ko": "조항 비교·검토 의견·승인·갱신을 하나로",
+    "en": "Review clauses, approvals, and renewal milestones together",
+    "ja": "条項比較・コメント・承認・更新を一元化"
+  },
+  "summary": {
+    "ko": "계약 문서 버전 비교와 담당자 의견, 내부 승인, 갱신 기한 관리를 연결한 협업형 계약 UI 구성안.",
+    "en": "A contract workflow UI concept connecting versions, clause comments, internal approvals, and renewal dates.",
+    "ja": "契約の版管理・条項コメント・社内承認・更新期限をつなぐ協業UI構想。"
+  },
+  "overview": {
+    "ko": "기업 법무·사업 담당자가 계약 초안을 함께 검토하고 문서 수정 이력과 승인 의견을 관리하는 워크스페이스를 구상했습니다. 거래 상품 발주나 결제보다는 법률 문서의 조항·버전·검토 이력을 중심으로 합니다.",
+    "en": "This independent UI concept helps business and legal teams review agreement drafts, compare versions, and track internal sign-off. It focuses on contract clauses and review history rather than ordering or payments.",
+    "ja": "法務・事業担当者が契約草案を共同で確認し、条項、版、承認コメントを管理する自主制作UI構想です。商品発注や決済ではなく契約文書の検討履歴を中心とします。"
+  },
+  "industry": {
+    "ko": "기업 계약·법무 협업",
+    "en": "Contract Operations and Legal Collaboration",
+    "ja": "企業契約管理・法務協業"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "계약 검토 WEB",
+        "en": "Contract review workspace",
+        "ja": "契約レビューWeb"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "계약 승인·갱신 관리",
+        "en": "Approval and renewal management",
+        "ja": "承認・更新管理"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#6B608A",
+    "accentInk": "#2A243C",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "contracta-contract-workspace"
+  ],
+  "images": [
+    {
+      "id": "contracta-contract-workspace",
+      "kind": "desktop",
+      "file": "contracta-contract-workspace.webp",
+      "alt": {
+        "ko": "계약 문서 작업 공간",
+        "en": "Contract document workspace",
+        "ja": "契約書の作業スペース"
+      },
+      "caption": {
+        "ko": "계약 문서를 검토하고 편집하는 메인 작업 화면입니다.",
+        "en": "The main workspace for reviewing and editing contract documents.",
+        "ja": "契約書を確認・編集するメインの作業画面です。"
+      }
+    },
+    {
+      "id": "contracta-clause-version-diff",
+      "kind": "desktop",
+      "file": "contracta-clause-version-diff.webp",
+      "alt": {
+        "ko": "조항 버전 비교 화면",
+        "en": "Clause version comparison",
+        "ja": "条項バージョン比較画面"
+      },
+      "caption": {
+        "ko": "계약서 조항의 변경 전후를 나란히 비교하는 화면입니다.",
+        "en": "A side-by-side view of contract clauses before and after revision.",
+        "ja": "契約条項の変更前後を並べて比較する画面です。"
+      }
+    },
+    {
+      "id": "contracta-inline-review-comments",
+      "kind": "desktop",
+      "file": "contracta-inline-review-comments.webp",
+      "alt": {
+        "ko": "검토 의견 관리 화면",
+        "en": "Review comment management",
+        "ja": "レビューコメント管理画面"
+      },
+      "caption": {
+        "ko": "문서 본문과 연결된 검토 의견을 처리하는 협업 화면입니다.",
+        "en": "A collaboration view for resolving review comments anchored to the document text.",
+        "ja": "本文に紐づいたレビューコメントを処理する共同作業画面です。"
+      }
+    },
+    {
+      "id": "contracta-approval-renewal",
+      "kind": "desktop",
+      "file": "contracta-approval-renewal.webp",
+      "alt": {
+        "ko": "승인 및 갱신 관리 화면",
+        "en": "Approval and renewal management",
+        "ja": "承認・更新管理画面"
+      },
+      "caption": {
+        "ko": "계약 승인 흐름과 갱신 일정을 정리하는 운영 화면입니다.",
+        "en": "An operations view of the contract approval route and renewal schedule.",
+        "ja": "契約の承認フローと更新スケジュールを整理する運用画面です。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·정적 UI 데모를 위한 1차 텍스트 등록본. 실제 고객 프로젝트·서비스 개발 실적이 아님.",
+    "고도화 시 우선 검토할 화면: Contract Library, Clause Version Diff, Comment Review, Approval & Renewal Timeline",
+    "3차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "계약의 모든 수정과 결정을 하나의 기록으로.",
+        "en": "Keep every contract revision and decision in view.",
+        "ja": "契約の修正と判断を一つの履歴へ。"
+      },
+      "images": [
+        "contracta-contract-workspace"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "가상의 브랜드 협력 서비스 계약을 대상으로 두 버전의 조항을 비교하고, 의견을 정리한 뒤 내부 승인 요청까지 이어지는 흐름을 구성했습니다.",
+        "en": "A fictional brand-services agreement moves through clause comparison, comments, revision review, and internal approval.",
+        "ja": "架空のブランド支援契約について、条項比較からコメント整理、修正版の確認、社内承認依頼までを表現します。"
+      },
+      "body": {
+        "ko": "문서 CTR-261109-014는 v1.1에서 v1.2로 개정되었고 변경 조항은 2개(제4조 산출물 승인, 제7조 계약 종료)입니다. 검토 의견 3건 중 해결 2건·미해결 1건입니다. 11:45 내부 승인 대기 상태이며 전자서명·체결은 완료되지 않았습니다. 계약 예정 기간은 2027-01-01~2027-12-31입니다.",
+        "en": "Contract CTR-261109-014 moves from v1.1 to v1.2, changing two clauses (Article 4 deliverable approval; Article 7 termination). Of three comments, two are resolved and one remains open. The agreement is awaiting internal approval at 11:45; it is not signed. Proposed term: Jan 1–Dec 31, 2027.",
+        "ja": "契約CTR-261109-014はv1.1からv1.2へ改訂され、第4条（成果物の承認）と第7条（終了）の2条項を変更しました。コメント3件中2件解決・1件未解決。11:45時点で社内承認待ちで、署名・締結は未完了です。契約予定期間は2027年1月1日～12月31日です。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "수정 이력 비교",
+            "en": "Traceable changes",
+            "ja": "変更履歴の追跡"
+          },
+          "body": {
+            "ko": "조항 단위로 이전 버전과 수정 버전을 비교합니다.",
+            "en": "Compare original and revised wording clause by clause.",
+            "ja": "条項単位で旧版と新版を比較します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "검토·승인 단계 구분",
+            "en": "Distinct review and approval",
+            "ja": "レビューと承認の分離"
+          },
+          "body": {
+            "ko": "댓글 해결과 내부 승인, 계약 체결을 서로 다른 단계로 유지합니다.",
+            "en": "Keep comment resolution, approval, and signing as separate stages.",
+            "ja": "コメント解決、社内承認、契約締結を別段階で管理します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "초안부터 갱신 일정까지",
+        "en": "From draft to renewal date",
+        "ja": "草案から更新日程まで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "초안 등록",
+            "en": "Register draft",
+            "ja": "草案登録"
+          },
+          "body": {
+            "ko": "브랜드 협력 서비스 계약 초안을 등록합니다.",
+            "en": "Register the proposed brand-services agreement.",
+            "ja": "ブランド支援契約の草案を登録します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "조항 수정",
+            "en": "Revise clauses",
+            "ja": "条項修正"
+          },
+          "body": {
+            "ko": "제4조와 제7조를 수정하고 v1.2로 저장합니다.",
+            "en": "Revise Articles 4 and 7 and save v1.2.",
+            "ja": "第4条と第7条を修正してv1.2を保存します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "검토 의견",
+            "en": "Review comments",
+            "ja": "レビューコメント"
+          },
+          "body": {
+            "ko": "의견 3건 중 2건을 해결하고 1건은 유지합니다.",
+            "en": "Resolve two of three comments; one remains open.",
+            "ja": "3件中2件を解決し、1件を未解決として残します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "내부 승인 요청",
+            "en": "Request approval",
+            "ja": "社内承認依頼"
+          },
+          "body": {
+            "ko": "11:45에 계약 초안을 내부 승인 대기로 전환합니다.",
+            "en": "Move the draft to internal approval pending at 11:45.",
+            "ja": "11:45に社内承認待ちへ進めます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "갱신 일정 확인",
+            "en": "Review renewal date",
+            "ja": "更新日程の確認"
+          },
+          "body": {
+            "ko": "예정 계약 종료일 2027-12-31과 검토 일정을 확인합니다.",
+            "en": "Review the proposed Dec 31, 2027 end date and review milestones.",
+            "ja": "契約予定終了日2027年12月31日と確認日程を表示します。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "데모 사례: 계약 CTR-261109-014가 v1.2로 개정되고, 의견 정리 후 내부 승인 대기 상태가 되기까지(서명 전).",
+        "en": "Demo case: contract CTR-261109-014 is revised to v1.2, comments are worked through and it waits for internal approval (not signed).",
+        "ja": "デモ事例：契約CTR-261109-014がv1.2に改訂され、意見の整理後に社内承認待ちになるまで(署名前)。"
+      }
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "VERSION DIFF"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "바뀐 조항만 나란히",
+        "en": "Only the changed clauses, side by side",
+        "ja": "変更された条項だけを並べて"
+      },
+      "body": {
+        "ko": "v1.1과 v1.2 사이에서 바뀐 제4조와 제7조를 변경 전후로 나란히 놓고, 오른쪽에 변경 사항을 요약합니다.",
+        "en": "Articles 4 and 7, the two clauses changed between v1.1 and v1.2, are shown before and after, with a summary of the changes on the right.",
+        "ja": "v1.1とv1.2の間で変わった第4条と第7条を変更前後で並べ、右側に変更点をまとめます。"
+      },
+      "images": [
+        "contracta-clause-version-diff"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "04",
+        "label": "REVIEW & APPROVAL"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "검토 의견과 내부 승인",
+        "en": "Review comments and internal approval",
+        "ja": "レビューコメントと社内承認"
+      },
+      "images": [
+        "contracta-inline-review-comments",
+        "contracta-approval-renewal"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "05",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "계약 문서 중심의 협업",
+        "en": "Document-led contract collaboration",
+        "ja": "契約文書を中心とした協業"
+      },
+      "intro": {
+        "ko": "문서 편집자, 검토자, 승인자의 활동을 동일한 계약 이력에 연결합니다.",
+        "en": "Editors, reviewers, and approvers share one contract history.",
+        "ja": "編集者・確認担当者・承認者が同じ契約履歴を共有します。"
+      },
+      "note": {
+        "ko": "자체 정적 UI 구성안입니다. 법률 자문·전자서명·법적 효력 검증·실제 계약 체결 기능은 제공하지 않습니다.",
+        "en": "Independent static UI concept; no legal advice, e-signature, legal validity checks, or contract execution is provided.",
+        "ja": "自主制作静的UI構想です。法的助言、電子署名、法的効力の判定、実際の締結機能は提供しません。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "문서 검토 WEB",
+            "en": "Document review workspace",
+            "ja": "契約レビューWeb"
+          },
+          "audience": {
+            "ko": "사업 담당자·법무 검토자",
+            "en": "Business staff and legal reviewers",
+            "ja": "事業担当者・法務確認者"
+          },
+          "items": [
+            {
+              "ko": "조항별 수정 이력과 버전 비교",
+              "en": "Clause-level changes and version diff",
+              "ja": "条項単位の変更履歴・版比較"
+            },
+            {
+              "ko": "댓글 작성·해결·미해결 추적",
+              "en": "Create and resolve review comments",
+              "ja": "コメント作成・解決・未解決管理"
+            },
+            {
+              "ko": "계약 상대·기한·문서 파일 확인",
+              "en": "View parties, terms, and document versions",
+              "ja": "契約相手・期間・文書版の確認"
+            }
+          ]
+        },
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "승인·갱신 WEB",
+            "en": "Approval and renewal workspace",
+            "ja": "承認・更新Web"
+          },
+          "audience": {
+            "ko": "승인권자·계약 운영자",
+            "en": "Approvers and contract administrators",
+            "ja": "承認者・契約管理者"
+          },
+          "items": [
+            {
+              "ko": "내부 승인 요청과 검토 대기 표시",
+              "en": "Track internal approval requests",
+              "ja": "社内承認依頼・審査待ち"
+            },
+            {
+              "ko": "미해결 코멘트와 승인 조건 확인",
+              "en": "Review open comments before approval",
+              "ja": "未解決コメントと承認条件の確認"
+            },
+            {
+              "ko": "계약 기간·갱신 예정일 관리",
+              "en": "Track terms and renewal milestones",
+              "ja": "契約期間・更新予定日の管理"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "06",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "문서 버전과 의사결정 기록",
+        "en": "Versions and decisions on record",
+        "ja": "文書バージョンと意思決定の記録"
+      },
+      "intro": {
+        "ko": "어떤 조항이 왜 바뀌었고 누가 확인했는지를 문서 옆에서 바로 볼 수 있게 했습니다.",
+        "en": "What changed, why, and who checked it sit right next to the document.",
+        "ja": "どの条項がなぜ変わり、誰が確認したかを文書の横で確認できます。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "문서 버전 비교",
+            "en": "Version comparison",
+            "ja": "文書バージョン比較"
+          },
+          "body": {
+            "ko": "v1.1과 v1.2의 변경 조항 2개를 나란히 보여줍니다.",
+            "en": "Compare the two changed clauses between v1.1 and v1.2.",
+            "ja": "v1.1とv1.2の変更条項2件を並べて表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "조항별 댓글",
+            "en": "Clause comments",
+            "ja": "条項別コメント"
+          },
+          "body": {
+            "ko": "의견 3건 중 해결 2·미해결 1을 관리합니다.",
+            "en": "Track two resolved and one open comment.",
+            "ja": "解決2件・未解決1件のコメントを管理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "내부 승인",
+            "en": "Internal sign-off",
+            "ja": "社内承認"
+          },
+          "body": {
+            "ko": "초안 검토와 실제 계약 체결을 구분합니다.",
+            "en": "Separate internal review from signed execution.",
+            "ja": "社内確認と正式な契約締結を区別します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "계약 일정",
+            "en": "Contract calendar",
+            "ja": "契約カレンダー"
+          },
+          "body": {
+            "ko": "예정 시작·종료·갱신 검토일을 확인합니다.",
+            "en": "View proposed start, end, and renewal review dates.",
+            "ja": "開始予定日・終了予定日・更新確認日を表示します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "문서의 변화와 의사결정을 놓치지 않도록.",
+        "en": "Keep decisions attached to the document.",
+        "ja": "文書の変更と判断を見失わないために。"
+      },
+      "sub": {
+        "ko": "계약 검토·승인·갱신 관리의 자체 UI 데모.",
+        "en": "An independent UI concept for contract review, approval, and renewals.",
+        "ja": "契約レビュー・承認・更新管理の自主制作UIデモ。"
+      }
+    }
+  ]
+}

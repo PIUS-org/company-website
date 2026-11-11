@@ -1,0 +1,487 @@
+{
+  "id": "subscripta",
+  "slug": "subscripta",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 180,
+  "includeInPdf": true,
+  "title": {
+    "ko": "SUBSCRIPTA — SaaS 구독·정기 청구 플랫폼",
+    "en": "SUBSCRIPTA — SaaS Subscription and Billing",
+    "ja": "SUBSCRIPTA — SaaSサブスクリプション・定期請求管理"
+  },
+  "subtitle": {
+    "ko": "요금제·좌석 수·청구서·다음 결제 예정액을 한곳에서",
+    "en": "Plans, seats and recurring invoices in one place",
+    "ja": "プラン・利用席数・定期請求を一元管理"
+  },
+  "summary": {
+    "ko": "팀 단위 SaaS 요금제, 좌석 수 변경, 청구 기간, 세금 포함 청구액과 상태를 관리하는 구독 커머스 UI 구상.",
+    "en": "A SaaS billing UI concept for team plans, seat changes, monthly invoicing and upcoming charges.",
+    "ja": "チーム向けSaaSプラン、席数変更、月次請求、次回請求予定額を管理するUI構想。"
+  },
+  "overview": {
+    "ko": "구독형 SaaS 구매자가 현재 이용 인원과 월별 비용을 확인하고, 다음 청구 주기에 적용할 좌석 수를 변경하는 과정을 다룹니다. B2B 상품 발주나 일반 쇼핑몰 결제와 달리 계속 갱신되는 이용 권한·청구 주기·과금 상태가 핵심입니다. 실제 결제 대행과 자동 카드 청구는 구현하지 않습니다.",
+    "en": "This independent concept follows a SaaS customer reviewing active seats and monthly spend, then changing the seat count effective next billing cycle. Unlike wholesale purchasing, it centers on recurring entitlements, billing periods and invoice states. No payment processor or automated card charging is implemented.",
+    "ja": "SaaS契約者が現在の利用席数と月額費用を確認し、次回請求期間からの席数を変更するUI構想です。一般的な商品発注ではなく、継続利用権・請求期間・支払状態に焦点を当てます。実際の決済連携や自動課金はありません。"
+  },
+  "industry": {
+    "ko": "SaaS 구독·반복 청구",
+    "en": "SaaS Subscription Operations",
+    "ja": "SaaSサブスクリプション運用"
+  },
+  "categories": [
+    "platform",
+    "web",
+    "commerce"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "고객 구독·요금제 WEB",
+        "en": "Subscriber plans and billing web",
+        "ja": "契約者向けプラン・請求Web"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "구독·청구 관리 WEB",
+        "en": "Subscription operations web",
+        "ja": "サブスクリプション管理Web"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#5F687E",
+    "accentInk": "#2D3647",
+    "cover": "light",
+    "layout": "stage"
+  },
+  "thumbnail": [
+    "subscripta-subscription-overview"
+  ],
+  "images": [
+    {
+      "id": "subscripta-subscription-overview",
+      "kind": "desktop",
+      "file": "subscripta-subscription-overview.webp",
+      "alt": {
+        "ko": "구독 현황 대시보드",
+        "en": "Subscription overview",
+        "ja": "サブスクリプション状況ダッシュボード"
+      },
+      "caption": {
+        "ko": "플랜, 좌석 수, 결제 상태를 확인하는 구독 운영 화면입니다.",
+        "en": "A subscription operations view of plan, seat count and payment status.",
+        "ja": "プラン・席数・支払い状況を確認するサブスクリプション運用画面です。"
+      }
+    },
+    {
+      "id": "subscripta-seat-change-preview",
+      "kind": "desktop",
+      "file": "subscripta-seat-change-preview.webp",
+      "alt": {
+        "ko": "좌석 수 변경 미리보기 화면",
+        "en": "Seat change preview",
+        "ja": "席数変更のプレビュー画面"
+      },
+      "caption": {
+        "ko": "좌석 수 변경에 따른 예상 청구 금액을 미리 확인하는 화면입니다.",
+        "en": "A preview of the expected charge after a change in seat count.",
+        "ja": "席数変更後の請求見込み額を事前に確認する画面です。"
+      }
+    },
+    {
+      "id": "subscripta-billing-operations",
+      "kind": "desktop",
+      "file": "subscripta-billing-operations.webp",
+      "alt": {
+        "ko": "ORBIT WORKSPACE의 좌석 변경과 차기 청구 미리보기 타임라인",
+        "en": "ORBIT WORKSPACE seat change and next-invoice preview timeline",
+        "ja": "ORBIT WORKSPACEの席数変更と次回請求プレビューの時系列画面"
+      },
+      "caption": {
+        "ko": "Team 6석에서 8석으로 변경 시 예상금액 158,400원의 계산과 미청구 상태를 보여줍니다. 실제 결제는 실행하지 않았습니다.",
+        "en": "A preview of the Team plan changing from 6 to 8 seats, totaling ₩158,400; no payment was executed.",
+        "ja": "Teamプランの6席から8席への変更と予想請求額158,400ウォンを表示。実決済は行っていません。"
+      }
+    },
+    {
+      "id": "subscripta-invoice-details",
+      "kind": "desktop",
+      "file": "subscripta-invoice-details.webp",
+      "alt": {
+        "ko": "11월 청구서 상세 화면",
+        "en": "November invoice detail",
+        "ja": "11月の請求書詳細画面"
+      },
+      "caption": {
+        "ko": "결제 완료된 11월 청구서의 항목·금액과 다음 청구 예정 안내를 확인하는 화면입니다.",
+        "en": "A view of the paid November invoice’s line items and amounts, with a note on the next scheduled charge.",
+        "ja": "支払い済みの11月請求書の明細・金額と、次回請求予定の案内を確認する画面です。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 정적 UI 구상·30개 포트폴리오 1차 확보용 텍스트 등록. 실제 고객사 수행·서비스 구현 실적이 아님.",
+    "고도화 우선 화면: Subscription Overview, Seat Adjustment, Invoice History, Upcoming Billing Preview",
+    "3차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결. 실제 구현·고객 실적 아님.",
+    "v28(2026-11-11): subscripta-billing-operations를 다른 3장과 같은 상단 탭 셸(구독 현황·좌석 변경·청구서·청구 운영·결제 수단)로 재렌더링. 작업 영역(ORBIT WORKSPACE 6→8석, ₩158,400, 미청구·결제 미실행)은 그대로."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "구독의 변화가 다음 청구서까지 명확하게.",
+        "en": "See every seat change before the next invoice.",
+        "ja": "席数変更から次回請求まで、明確に。"
+      },
+      "images": [
+        "subscripta-subscription-overview"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "가상 팀 ORBIT WORKSPACE의 현재 6석 이용 현황에서 다음 청구 주기의 8석 요금으로 변경하는 과정을 보여줍니다.",
+        "en": "Follow fictional team ORBIT WORKSPACE increasing planned billable seats from six to eight for the next cycle.",
+        "ja": "架空チームORBIT WORKSPACEの利用6席から、次回請求期間の8席へ変更する流れを示します。"
+      },
+      "body": {
+        "ko": "조직 ORB-001은 Team 플랜을 1석당 월 ₩18,000(부가세 별도)으로 이용합니다. 11월 청구 기간(11/01–11/30)은 6석 × ₩18,000 = ₩108,000, VAT ₩10,800, 합계 ₩118,800으로 결제 완료입니다. 11/09 14:10에 다음 주기(12/01 시작)의 좌석을 8석으로 요청합니다. 다음 청구 예정액은 공급가 ₩144,000, VAT ₩14,400, 총 ₩158,400이며 아직 청구·결제되지 않았습니다. 중도 일할 계산은 적용하지 않습니다.",
+        "en": "Organization ORB-001 uses the Team plan at ₩18,000 per seat per month before tax. The paid November invoice (Nov 1–30) covers 6 seats: ₩108,000 plus ₩10,800 VAT = ₩118,800. On Nov 9 at 14:10 it requests 8 seats effective Dec 1. The December preview is ₩144,000 plus ₩14,400 VAT = ₩158,400, not yet invoiced or paid. No mid-cycle proration is applied.",
+        "ja": "組織ORB-001はTeamプランを1席月₩18,000（税別）で利用。11月分（11/01–11/30）は6席で₩108,000＋VAT₩10,800＝₩118,800、支払済みです。11/09 14:10に12/01から8席へ変更申請。次回請求見込は₩144,000＋VAT₩14,400＝₩158,400で、未請求・未決済です。月中の日割り計算は行いません。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "현재 청구와 예정 청구 구분",
+            "en": "Current versus upcoming invoices",
+            "ja": "現行請求と予定請求の区別"
+          },
+          "body": {
+            "ko": "이미 결제한 11월 청구서와 12월 예상 금액을 분리합니다.",
+            "en": "Separate the paid November invoice from the December preview.",
+            "ja": "支払済みの11月請求と12月の見込額を分けます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "좌석 수·금액 정합성",
+            "en": "Seat and amount accuracy",
+            "ja": "席数と金額の整合性"
+          },
+          "body": {
+            "ko": "좌석 수·단가·부가세·유효일의 연결을 명확히 합니다.",
+            "en": "Link quantities, unit price, VAT and effective dates precisely.",
+            "ja": "席数・単価・VAT・適用日を正確に紐付けます。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "현재 구독부터 다음 청구까지",
+        "en": "From current plan to next invoice",
+        "ja": "現在の契約から次回請求まで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "현 구독 현황 확인",
+            "en": "Review current subscription",
+            "ja": "現行契約の確認"
+          },
+          "body": {
+            "ko": "Team 플랜의 11월 유료 6석을 확인합니다.",
+            "en": "View six paid Team seats for November.",
+            "ja": "11月分のTeamプラン6席を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "기존 청구서 확인",
+            "en": "Review paid invoice",
+            "ja": "支払済み請求の確認"
+          },
+          "body": {
+            "ko": "11월 청구 ₩118,800이 Paid 상태입니다.",
+            "en": "November invoice ₩118,800 is Paid.",
+            "ja": "11月分請求₩118,800は支払済みです。"
+          }
+        },
+        {
+          "title": {
+            "ko": "다음 좌석 수 예약",
+            "en": "Schedule seat adjustment",
+            "ja": "次回席数の予約"
+          },
+          "body": {
+            "ko": "12월 1일부터 8석으로 변경 요청합니다.",
+            "en": "Request eight seats effective December 1.",
+            "ja": "12月1日から8席に変更します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "다음 청구 예상액 계산",
+            "en": "Preview next invoice",
+            "ja": "次回請求額の試算"
+          },
+          "body": {
+            "ko": "8석의 총 ₩158,400을 미청구 미리보기로 표시합니다.",
+            "en": "Show ₩158,400 for eight seats as a non-issued preview.",
+            "ja": "8席分₩158,400を未請求の見込額として表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "변경 이력 기록",
+            "en": "Record scheduled change",
+            "ja": "予約変更の記録"
+          },
+          "body": {
+            "ko": "현재 6석은 유지하고 다음 주기 변경만 예약합니다.",
+            "en": "Keep six seats active until the next cycle.",
+            "ja": "次回期間まで現行の6席を維持します。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "데모 사례: Team 플랜 조직이 11월 6석 청구를 확인하고, 12월부터 8석으로 변경을 예약해 다음 청구 예상액을 보기까지.",
+        "en": "Demo case: a Team-plan organisation checks its 6-seat November invoice, books 8 seats from December and previews the next bill.",
+        "ja": "デモ事例：Teamプランの組織が11月の6席分の請求を確認し、12月から8席への変更を予約して次回の請求見込額を確認するまで。"
+      }
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SEAT CHANGE"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "좌석 변경과 다음 청구 미리보기",
+        "en": "Seat change and next-invoice preview",
+        "ja": "席数変更と次回請求のプレビュー"
+      },
+      "body": {
+        "ko": "11월의 6석은 그대로 두고, 12월 1일부터 적용할 8석 기준 예상 청구액 ₩158,400을 미리 계산합니다. 청구서는 아직 발행되지 않은 상태입니다.",
+        "en": "November stays at 6 seats; the expected ₩158,400 charge for 8 seats from December 1 is calculated in advance. No invoice has been issued yet.",
+        "ja": "11月の6席はそのままに、12月1日から適用する8席分の請求見込み額₩158,400を事前に計算します。請求書はまだ発行されていません。"
+      },
+      "images": [
+        "subscripta-seat-change-preview"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "04",
+        "label": "BILLING"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "정기 청구 운영과 청구서 상세",
+        "en": "Recurring billing and invoice detail",
+        "ja": "定期請求の運用と請求書詳細"
+      },
+      "images": [
+        "subscripta-billing-operations",
+        "subscripta-invoice-details"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "05",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "팀 고객과 구독 운영자의 역할 분리",
+        "en": "Separate customer and billing operations",
+        "ja": "契約者と運営担当の役割分離"
+      },
+      "intro": {
+        "ko": "조직 관리자는 좌석·플랜·청구서를 확인하고 운영 담당자는 청구 상태와 변경 예약을 검토합니다.",
+        "en": "Workspace owners manage seats and invoices; billing operators review recurring status and scheduled changes.",
+        "ja": "組織管理者は席数・プラン・請求書を管理し、運営側は請求状態と予約変更を確認します。"
+      },
+      "note": {
+        "ko": "자체 정적 UI 데모이며 실제 결제 API·구독 권한 부여·정기 결제 실행·세금계산서 발행은 구현되지 않았습니다.",
+        "en": "Independent static UI concept; no payment API, entitlement provisioning, live recurring charges or tax-invoice issuance is implemented.",
+        "ja": "自主制作の静的UIデモであり、決済API・権限付与・継続課金・税務書類発行は実装していません。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "고객 구독 워크스페이스",
+            "en": "Customer subscription workspace",
+            "ja": "契約者向け管理画面"
+          },
+          "audience": {
+            "ko": "조직 소유자·재무 담당자",
+            "en": "Workspace owners and finance staff",
+            "ja": "組織オーナー・経理担当者"
+          },
+          "items": [
+            {
+              "ko": "현재 플랜·사용 중 좌석·다음 갱신일",
+              "en": "Current plan, active seats and next renewal",
+              "ja": "現行プラン・利用席数・次回更新日"
+            },
+            {
+              "ko": "다음 청구 주기의 좌석 수 변경",
+              "en": "Schedule seats for the next billing cycle",
+              "ja": "次回請求期間の席数変更"
+            },
+            {
+              "ko": "청구서 금액·결제 완료 상태 확인",
+              "en": "Review invoice totals and paid status",
+              "ja": "請求額・支払済み状態の確認"
+            }
+          ]
+        },
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "구독 운영 WEB",
+            "en": "Subscription operations web",
+            "ja": "サブスクリプション運営Web"
+          },
+          "audience": {
+            "ko": "구독 운영 담당자",
+            "en": "Subscription operations staff",
+            "ja": "契約管理担当者"
+          },
+          "items": [
+            {
+              "ko": "조직별 플랜·좌석·갱신 상태 확인",
+              "en": "Inspect plans, seats and renewal states by account",
+              "ja": "組織別プラン・席数・更新状態を確認"
+            },
+            {
+              "ko": "좌석 변경 예약과 다음 청구 계산 검토",
+              "en": "Review scheduled seat changes and previews",
+              "ja": "予約済み席数変更と次回請求額の確認"
+            },
+            {
+              "ko": "발행 전 청구 초안·이력 구분",
+              "en": "Distinguish invoice drafts from issued records",
+              "ja": "請求草案と発行履歴を区分"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "06",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "요금·좌석·청구 데이터",
+        "en": "Plans, seats and invoices",
+        "ja": "料金・席数・請求データ"
+      },
+      "intro": {
+        "ko": "이미 청구된 금액과 아직 청구되지 않은 예상액이 섞이지 않도록 화면을 나눴습니다.",
+        "en": "Billed amounts and not-yet-billed estimates are kept on separate screens.",
+        "ja": "請求済みの金額とまだ請求されていない見込額が混ざらないよう画面を分けました。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "구독 요금제",
+            "en": "Subscription plan",
+            "ja": "契約プラン"
+          },
+          "body": {
+            "ko": "좌석당 과금·청구 주기·갱신일을 표시.",
+            "en": "Display per-seat pricing, billing cadence and renewal.",
+            "ja": "席単価・請求周期・更新日を表示。"
+          }
+        },
+        {
+          "title": {
+            "ko": "좌석 변경",
+            "en": "Seat management",
+            "ja": "席数の変更"
+          },
+          "body": {
+            "ko": "다음 적용일을 명시한 6석→8석 변경 UI.",
+            "en": "A scheduled 6-to-8 seat change with effective date.",
+            "ja": "適用日を明示した6席→8席の変更画面。"
+          }
+        },
+        {
+          "title": {
+            "ko": "청구서 목록",
+            "en": "Invoice history",
+            "ja": "請求書履歴"
+          },
+          "body": {
+            "ko": "Paid와 Draft 상태를 기간별로 구분.",
+            "en": "Distinguish Paid and Draft invoices by period.",
+            "ja": "支払済みと下書きを期間別に区分。"
+          }
+        },
+        {
+          "title": {
+            "ko": "다음 결제 예상액",
+            "en": "Upcoming invoice preview",
+            "ja": "次回請求見込"
+          },
+          "body": {
+            "ko": "공급가·VAT·총액을 검산 가능한 표로 표현.",
+            "en": "A reconciled preview of subtotal, VAT and total.",
+            "ja": "税抜額・VAT・合計を照合できる表示。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "현재 구독부터 다음 청구까지, 숫자의 맥락을 잃지 않게.",
+        "en": "Recurring revenue, clearly accounted for.",
+        "ja": "現在の契約から次回請求まで、数字を明確に。"
+      },
+      "sub": {
+        "ko": "좌석 기반 SaaS 구독의 정적 업무 UI 데모.",
+        "en": "An independent static UI concept for seat-based SaaS billing.",
+        "ja": "席数課金型SaaSの自主制作静的UIデモ。"
+      }
+    }
+  ]
+}

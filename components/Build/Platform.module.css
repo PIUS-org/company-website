@@ -1,5 +1,4 @@
 .plat{ grid-column:1/-1; position:relative; height:clamp(360px,62svh,620px); margin-top:clamp(20px,4svh,40px); }
-.plat__sky{ position:absolute; inset:0; }
 .plat__beams{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
 .plat__beams line{ stroke:rgba(var(--ice-rgb),.0); stroke-width:1; }
 .plat__beams circle{ fill:#fff; }

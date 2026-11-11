@@ -10,7 +10,6 @@
 .morph__steps li:global(.is-on){ color:var(--ink); }
 .morph__steps li:global(.is-on) .d{ max-height:3em; opacity:1; color:var(--ink-2); }
 .morph__steps li:global(.is-past){ color:var(--ink-3); }
-.morph__arrow{ display:block; width:1px; height:14px; margin-left:4px; background:var(--line-2); }
 .morph__end{
   position:absolute; left:0; right:0; bottom:clamp(28px,7svh,64px); text-align:center; font-size:var(--t-h3); font-weight:500; letter-spacing:-.02em;
   opacity:0; transform:translateY(14px); transition:opacity .8s, transform 1s var(--e-out); padding-inline:var(--gut);

@@ -1,0 +1,565 @@
+{
+  "id": "hireloom",
+  "slug": "hireloom",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 90,
+  "includeInPdf": true,
+  "title": {
+    "ko": "HIRELOOM — 협업형 채용·면접 평가 플랫폼",
+    "en": "HIRELOOM — Collaborative Recruiting Workspace",
+    "ja": "HIRELOOM — 採用・面接評価ワークスペース"
+  },
+  "subtitle": {
+    "ko": "지원자 관리부터 면접 평가와 오퍼 승인까지",
+    "en": "From candidate pipelines to structured interviews and offers",
+    "ja": "応募者管理から面接評価・オファー承認まで"
+  },
+  "summary": {
+    "ko": "지원자 파이프라인, 이력서 검토, 면접 평가, 채용 결정을 연결하는 HR SaaS UI 구성안.",
+    "en": "An HR SaaS UI concept for pipelines, resume reviews, interviews, and offer decisions.",
+    "ja": "応募者管理、履歴書確認、面接評価、採用判断をつなぐHR SaaSのUI構想。"
+  },
+  "overview": {
+    "ko": "채용 담당자와 면접관이 공고·서류·일정·평가를 연결해 협업하고, 지원자는 모바일에서 자신의 지원 및 면접 정보를 확인하는 구조를 제안합니다. 지원자 정보를 다루는 화면과 내부 평가 화면의 권한을 분리한 자체 UI 데모입니다.",
+    "en": "This independent UI concept connects job openings, applications, interview scheduling, scorecards, and offer reviews for recruiting teams. Candidate-facing mobile pages are kept separate from internal hiring feedback.",
+    "ja": "求人、応募書類、面接日程、評価シート、オファー検討を採用チームで共有する自主制作UIデモです。応募者向けの画面と社内評価画面を権限で分離します。"
+  },
+  "industry": {
+    "ko": "HR Tech·채용 관리 SaaS",
+    "en": "HR Tech and Recruiting SaaS",
+    "ja": "HR Tech・採用管理SaaS"
+  },
+  "categories": [
+    "platform",
+    "web",
+    "mobile"
+  ],
+  "platforms": [
+    {
+      "type": "admin",
+      "label": {
+        "ko": "채용 담당자 WEB",
+        "en": "Recruiter workspace",
+        "ja": "採用担当者Web"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "지원자 모바일 WEB",
+        "en": "Candidate mobile web",
+        "ja": "応募者モバイルWeb"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#4666B0",
+    "accentInk": "#1B2540",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "hireloom-candidate-pipeline"
+  ],
+  "images": [
+    {
+      "id": "hireloom-candidate-pipeline",
+      "kind": "desktop",
+      "file": "hireloom-candidate-pipeline.webp",
+      "alt": {
+        "ko": "지원자 채용 파이프라인 — 자체 UI 시연 화면",
+        "en": "Candidate hiring pipeline — static UI demo",
+        "ja": "応募者の採用パイプライン — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "서류·전화·실무면접·오퍼·채용 완료 단계의 가상 지원자 12명을 칸반으로 관리하는 채용팀 시연 화면입니다.",
+        "en": "A recruiter demo kanban organizing 12 fictional applicants across screening, interviews, offer and hired stages.",
+        "ja": "架空の応募者12名を書類選考・面接・オファー・採用決定の段階別に管理する採用チーム向けデモ画面です。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "hireloom-candidate-review",
+      "kind": "desktop",
+      "file": "hireloom-candidate-review.webp",
+      "alt": {
+        "ko": "지원서와 이력서 검토 — 자체 UI 시연 화면",
+        "en": "Application and résumé review — static UI demo",
+        "ja": "応募書類・履歴書の確認 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "지원자 목록, 이력서 문서 보기, 담당자 검토 의견과 평가 기록을 한 작업영역에서 확인하는 데모입니다.",
+        "en": "Illustrative review workspace combining applicant list, résumé document, reviewer comments and notes.",
+        "ja": "応募者一覧、履歴書、担当者のコメントと評価記録を一画面で確認するデモです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "hireloom-interview-scorecard",
+      "kind": "desktop",
+      "file": "hireloom-interview-scorecard.webp",
+      "alt": {
+        "ko": "구조화된 면접 평가표 — 자체 UI 시연 화면",
+        "en": "Structured interview scorecard — static UI demo",
+        "ja": "構造化面接の評価シート — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "면접 역량별 근거와 면접관 점수를 비교하며 최종 판단을 사람이 검토하는 가상 평가 화면입니다.",
+        "en": "Fictional interview scorecard comparing competency evidence and interviewer ratings for human review.",
+        "ja": "面接項目ごとの根拠と面接官の評価を比較し、最終判断を人が行うデモ画面です。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "hireloom-offer-approval",
+      "kind": "desktop",
+      "file": "hireloom-offer-approval.webp",
+      "alt": {
+        "ko": "채용 오퍼 검토와 승인 — 자체 UI 시연 화면",
+        "en": "Offer review and approval — static UI demo",
+        "ja": "採用オファーの確認・承認 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "채용 제안서 내용과 검토 담당자·결재 단계를 확인하는 오퍼 승인 업무 시연 화면입니다.",
+        "en": "Illustrative offer approval page showing proposal details, reviewer responsibilities and approval stages.",
+        "ja": "採用条件と確認担当者・承認段階を表示するオファー承認業務のデモ画面です。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "hireloom-candidate-interview-mobile",
+      "kind": "mobile",
+      "file": "hireloom-candidate-interview-mobile.webp",
+      "alt": {
+        "ko": "지원자 면접 일정 모바일 화면 — 자체 UI 시연 화면",
+        "en": "Candidate interview schedule on mobile — static UI demo",
+        "ja": "応募者向け面接日程のモバイル画面 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "지원자 본인이 면접 일시와 공고 정보를 확인하는 모바일 웹 시연 UI입니다. 내부 면접 평가 정보는 노출하지 않습니다.",
+        "en": "A candidate-facing mobile web demo for checking interview time and job details without disclosing internal evaluations.",
+        "ja": "応募者本人が面接日時と応募職種を確認するモバイルWebデモです。内部評価は表示しません。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·UI 데모를 위한 1차 텍스트 등록본. 실제 구현 실적이나 고객 성과가 아님.",
+    "2차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결, External PDF 대표 장면은 presentation.external로 지정. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "지원자 한 명의 여정을 팀의 일관된 판단으로 연결합니다.",
+        "en": "One candidate journey, one coordinated hiring workflow.",
+        "ja": "応募者一人のプロセスを、チームで共有する採用判断へ。"
+      },
+      "images": [
+        "hireloom-candidate-pipeline"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "가상 기업 NORTHSTAR DIGITAL의 Product Designer 채용을 중심으로 서류 검토, 면접 일정, 구조화된 평가 및 내부 오퍼 승인을 연결합니다.",
+        "en": "The example follows a fictional Product Designer opening at NORTHSTAR DIGITAL from screening to scheduling, structured interviews, and internal offer approval.",
+        "ja": "架空企業NORTHSTAR DIGITALのProduct Designer採用を例に、書類確認、面接調整、構造化評価、社内オファー承認を連携します。"
+      },
+      "body": {
+        "ko": "전체 지원자 12명은 서류 5·전화 3·실무 2·오퍼 1·채용 완료 1명으로 구분합니다. 대표 지원자 최하윤의 면접관 3명 평가 합계는 44/48이며, 최종 판단은 자동 점수가 아닌 담당자의 검토로 표현합니다.",
+        "en": "Across openings, 12 applicants are grouped into screening 5, phone interview 3, panel interview 2, offer 1, and hired 1. Three interviewers score candidate Ha-yoon Choi 44/48 in total; decisions remain human-led.",
+        "ja": "全求人の応募者12名は書類5・電話面接3・実務面接2・オファー1・採用済み1に分かれます。代表応募者チェ・ハユンの面接評価は3名合計44/48で、最終判断は人が行います。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "역할별 정보 분리",
+            "en": "Role-based information",
+            "ja": "役割別の情報分離"
+          },
+          "body": {
+            "ko": "내부 평가와 지원자에게 공개되는 일정 정보를 분리합니다.",
+            "en": "Separate confidential evaluations from candidate-facing schedules.",
+            "ja": "社内評価と応募者に公開する日程情報を分離します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "평가의 근거 관리",
+            "en": "Evidence-based reviews",
+            "ja": "評価根拠の管理"
+          },
+          "body": {
+            "ko": "면접관별 항목 점수와 근거 메모를 비교합니다.",
+            "en": "Compare criterion scores with interview notes from each reviewer.",
+            "ja": "面接官ごとの項目別スコアと根拠メモを比較します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "지원부터 오퍼 검토까지",
+        "en": "From application to offer review",
+        "ja": "応募からオファー検討まで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "공고 게시",
+            "en": "Publish the opening",
+            "ja": "求人掲載"
+          },
+          "body": {
+            "ko": "Product Designer 공고와 지원 조건을 관리합니다.",
+            "en": "Manage a Product Designer role and its requirements.",
+            "ja": "Product Designerの求人と応募条件を管理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "서류 검토",
+            "en": "Review applications",
+            "ja": "書類確認"
+          },
+          "body": {
+            "ko": "이력서와 지원자 이력을 검토하고 다음 단계로 이동합니다.",
+            "en": "Review resumes and progress eligible applicants.",
+            "ja": "履歴書と応募情報を確認し、次のステージへ進めます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "면접 조율",
+            "en": "Schedule interviews",
+            "ja": "面接調整"
+          },
+          "body": {
+            "ko": "면접관 3명과 지원자 최하윤의 시간을 확정합니다.",
+            "en": "Coordinate a panel of three interviewers for Ha-yoon Choi.",
+            "ja": "面接官3名とチェ・ハユンの面接日程を確定します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "구조화된 평가",
+            "en": "Structured scorecards",
+            "ja": "構造化された評価"
+          },
+          "body": {
+            "ko": "네 가지 역량을 면접관별로 기록하고 근거를 비교합니다.",
+            "en": "Record four criteria per interviewer and compare evidence.",
+            "ja": "4項目の評価を面接官別に記録し根拠を比較します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "오퍼 검토",
+            "en": "Review the offer",
+            "ja": "オファー検討"
+          },
+          "body": {
+            "ko": "채용 책임자가 판단한 뒤 내부 오퍼 승인을 요청합니다.",
+            "en": "A hiring lead reviews the evidence before requesting offer approval.",
+            "ja": "採用責任者が評価を確認してから社内オファー承認を依頼します。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "데모 사례: Product Designer 대표 지원자 1명이 서류·면접 평가를 거쳐 오퍼 승인 요청 단계에 이르기까지.",
+        "en": "Demo case: one Product Designer candidate moves from screening and interviews to an offer approval request.",
+        "ja": "デモ事例：Product Designerの候補者1名が書類・面接評価を経てオファー承認依頼に至るまで。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "CANDIDATE REVIEW"
+      },
+      "layout": "imageLeft",
+      "surface": "light",
+      "heading": {
+        "ko": "지원서와 이력서 검토",
+        "en": "Application and résumé review",
+        "ja": "応募書類・履歴書の確認"
+      },
+      "body": {
+        "ko": "지원자 목록, 이력서 문서 보기, 담당자 검토 의견과 평가 기록을 한 작업영역에서 확인하는 데모입니다.",
+        "en": "Illustrative review workspace combining applicant list, résumé document, reviewer comments and notes.",
+        "ja": "応募者一覧、履歴書、担当者のコメントと評価記録を一画面で確認するデモです。"
+      },
+      "images": [
+        "hireloom-candidate-review"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "INTERVIEW SCORECARD"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "구조화된 면접 평가표",
+        "en": "Structured interview scorecard",
+        "ja": "構造化面接の評価シート"
+      },
+      "body": {
+        "ko": "면접 역량별 근거와 면접관 점수를 비교하며 최종 판단을 사람이 검토하는 가상 평가 화면입니다.",
+        "en": "Fictional interview scorecard comparing competency evidence and interviewer ratings for human review.",
+        "ja": "面接項目ごとの根拠と面接官の評価を比較し、最終判断を人が行うデモ画面です。"
+      },
+      "images": [
+        "hireloom-interview-scorecard"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "OFFER APPROVAL"
+      },
+      "layout": "full",
+      "surface": "light",
+      "heading": {
+        "ko": "채용 오퍼 검토와 승인",
+        "en": "Offer review and approval",
+        "ja": "採用オファーの確認・承認"
+      },
+      "body": {
+        "ko": "채용 제안서 내용과 검토 담당자·결재 단계를 확인하는 오퍼 승인 업무 시연 화면입니다.",
+        "en": "Illustrative offer approval page showing proposal details, reviewer responsibilities and approval stages.",
+        "ja": "採用条件と確認担当者・承認段階を表示するオファー承認業務のデモ画面です。"
+      },
+      "images": [
+        "hireloom-offer-approval"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "06",
+        "label": "CANDIDATE MOBILE"
+      },
+      "layout": "phones",
+      "surface": "accent",
+      "heading": {
+        "ko": "지원자 면접 일정 모바일 화면",
+        "en": "Candidate interview schedule on mobile",
+        "ja": "応募者向け面接日程のモバイル画面"
+      },
+      "body": {
+        "ko": "지원자 본인이 면접 일시와 공고 정보를 확인하는 모바일 웹 시연 UI입니다. 내부 면접 평가 정보는 노출하지 않습니다.",
+        "en": "A candidate-facing mobile web demo for checking interview time and job details without disclosing internal evaluations.",
+        "ja": "応募者本人が面接日時と応募職種を確認するモバイルWebデモです。内部評価は表示しません。"
+      },
+      "images": [
+        "hireloom-candidate-interview-mobile"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "07",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "채용 팀과 지원자를 잇는 워크스페이스",
+        "en": "Workspace for recruiters and candidates",
+        "ja": "採用チームと応募者をつなぐワークスペース"
+      },
+      "intro": {
+        "ko": "채용 팀의 검토 업무와 지원자 경험을 서로 다른 권한의 UI로 구성합니다.",
+        "en": "Recruiter collaboration and applicant journeys use separate interface permissions.",
+        "ja": "採用チームの協業と応募者の体験を別権限のUIで構成します。"
+      },
+      "note": {
+        "ko": "실제 채용 자동화·이력서 분석 AI·캘린더·메일 연동을 구현하지 않은 자체 정적 UI 데모입니다.",
+        "en": "Independent static UI concept; no live hiring automation, AI screening, calendars, or email integration is implemented.",
+        "ja": "実際の採用自動化、AI書類審査、カレンダー、メール連携を実装していない静的UIデモです。"
+      },
+      "columns": [
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "채용 담당자·면접관 WEB",
+            "en": "Recruiter and interviewer workspace",
+            "ja": "採用担当者・面接官Web"
+          },
+          "audience": {
+            "ko": "채용 담당자·면접관·승인권자",
+            "en": "Recruiters, interviewers, and approvers",
+            "ja": "採用担当者・面接官・承認者"
+          },
+          "items": [
+            {
+              "ko": "단계별 지원자 파이프라인",
+              "en": "Candidate pipeline by stage",
+              "ja": "ステージ別応募者パイプライン"
+            },
+            {
+              "ko": "이력서·일정·평가표 협업",
+              "en": "Collaborative resumes, schedules, and scorecards",
+              "ja": "履歴書・日程・評価シートの共同管理"
+            },
+            {
+              "ko": "면접 결과 비교·오퍼 승인",
+              "en": "Interview comparison and offer approval",
+              "ja": "評価比較とオファー承認"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "지원자 모바일 WEB",
+            "en": "Candidate mobile experience",
+            "ja": "応募者モバイルWeb"
+          },
+          "audience": {
+            "ko": "채용 공고 조회·지원자",
+            "en": "Applicants viewing and applying for jobs",
+            "ja": "求人を閲覧・応募する人"
+          },
+          "items": [
+            {
+              "ko": "모바일 채용 공고 조회",
+              "en": "Mobile job detail",
+              "ja": "モバイル求人詳細"
+            },
+            {
+              "ko": "지원서 입력·임시 저장",
+              "en": "Application entry and draft saving",
+              "ja": "応募フォーム入力と下書き保存"
+            },
+            {
+              "ko": "본인 면접 일정 확인",
+              "en": "Personal interview schedule review",
+              "ja": "本人の面接日程確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "08",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "채용 담당자의 작업 화면",
+        "en": "The recruiter’s workspace",
+        "ja": "採用担当の作業画面"
+      },
+      "intro": {
+        "ko": "점수는 판단의 근거로만 보여 주고, 다음 단계 결정은 담당자가 내리도록 했습니다.",
+        "en": "Scores are shown as evidence; the next step is always the recruiter’s call.",
+        "ja": "スコアは判断の根拠として示し、次の段階の決定は担当者が行います。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "지원자 칸반",
+            "en": "Candidate pipeline",
+            "ja": "応募者カンバン"
+          },
+          "body": {
+            "ko": "12명의 지원자 단계를 하나의 보드로 관리합니다.",
+            "en": "Show 12 applicants across hiring stages in one board.",
+            "ja": "12名の応募者を採用ステージ別のボードで管理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "이력서 검토",
+            "en": "Resume review",
+            "ja": "履歴書確認"
+          },
+          "body": {
+            "ko": "문서와 평가 메모를 분리해 읽기 쉽게 배치합니다.",
+            "en": "Pair readable documents with recruiter notes.",
+            "ja": "書類と採用担当者のメモを見やすく配置します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "면접 평가표",
+            "en": "Interview scorecard",
+            "ja": "面接評価シート"
+          },
+          "body": {
+            "ko": "네 가지 역량을 4점 척도로 기록합니다.",
+            "en": "Record four competencies on a four-point scale.",
+            "ja": "4項目の能力を4段階で評価します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "채용 의사결정",
+            "en": "Human-led hiring decision",
+            "ja": "人による採用判断"
+          },
+          "body": {
+            "ko": "면접관의 근거를 종합하고 내부 승인 상태를 표시합니다.",
+            "en": "Compare interviewer evidence and track offer approval.",
+            "ja": "面接官の根拠をまとめ、オファー承認状態を表示します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "09",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "더 명확한 협업이 더 일관된 채용 경험을 만듭니다.",
+        "en": "Clearer collaboration builds a more consistent hiring experience.",
+        "ja": "明確な協業が、一貫した採用体験をつくります。"
+      },
+      "sub": {
+        "ko": "사람의 판단을 중심에 둔 자체 채용 워크스페이스 UI 구성안.",
+        "en": "An independent recruiting UI concept built around human decisions.",
+        "ja": "人の判断を中心にした自主制作の採用管理UI構想。"
+      }
+    }
+  ]
+}

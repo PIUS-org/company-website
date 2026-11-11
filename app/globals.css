@@ -49,11 +49,25 @@ html[lang="ja"]{
   --f-body:"IBM Plex Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;
   --f-disp:"Unbounded","IBM Plex Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
 }
-html[lang="ja"] body{ word-break:normal; line-break:strict; overflow-wrap:break-word; }
+html[lang="ja"] body{ word-break:normal; line-break:strict; overflow-wrap:anywhere; }
 html[lang="ja"] :is(h1,h2,h3,p,li,label,b,span,small,dd){ word-break:auto-phrase; }
+/* line breaks: never inside a word (ko keep-all · ja phrases · en words), short display lines are balanced,
+   paragraphs avoid a lone last word. Long unbroken strings (IDs, URLs) may still wrap as a last resort (overflow-wrap). */
+h1,
 h2,
-h3{ text-wrap:balance; }
-html[lang="en"] body{ word-break:normal; }
+h3,
+h4,
+dt,
+figcaption,
+button,
+label,
+:where([class*="title"],[class*="name"],[class*="msg"],[class*="sub"],[class*="lead"],[class*="text"],[class*="head"]){ text-wrap:balance; }
+p,
+li,
+dd,
+blockquote{ text-wrap:pretty; }
+/* keep-all only affects CJK runs: Korean quoted inside English copy is never split mid-word */
+html[lang="en"] body{ word-break:keep-all; }
 html{
   scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--hdr));
   -webkit-text-size-adjust:100%;
@@ -130,3 +144,16 @@ main{ position:relative; z-index:2; }
 *::before,
 *::after{ animation-duration:.001ms!important; animation-iteration-count:1!important; transition-duration:.001ms!important; }
 }
+
+/* ---- moving between pages (lib/nav.ts) ----
+   is-leaving : the content fades out, header + atmosphere stay
+   is-return  : arrived from inside the site → header already in place, no splash
+   is-arriving: content fades in on a sub page */
+html.is-leaving main,
+html.is-leaving footer,
+html.is-leaving #heroGL,
+html.is-leaving #bgGL{ opacity:0; transform:translateY(14px); transition:opacity .34s var(--e-io), transform .34s var(--e-io); }
+html.is-return #hdr{ transform:none; transition:none; }
+html.is-return [data-splash]{ display:none; }
+html.is-arriving main{ animation:piusArrive .8s var(--e-out) both; }
+@keyframes piusArrive{ from{ opacity:0; transform:translateY(18px); } to{ opacity:1; transform:none; } }

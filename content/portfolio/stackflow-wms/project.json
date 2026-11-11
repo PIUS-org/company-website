@@ -1,0 +1,711 @@
+{
+  "id": "stackflow-wms",
+  "slug": "stackflow-wms",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 16,
+  "includeInPdf": true,
+  "title": {
+    "ko": "STACKFLOW WMS",
+    "en": "STACKFLOW WMS",
+    "ja": "STACKFLOW WMS"
+  },
+  "subtitle": {
+    "ko": "입고부터 출고까지, 현장과 재고를 하나의 흐름으로",
+    "en": "One connected flow from receiving to shipping and inventory.",
+    "ja": "入荷から出荷まで、現場作業と在庫をひとつにつなぐ。"
+  },
+  "summary": {
+    "ko": "3PL 물류센터의 입고, 로케이션 적치, 웨이브 피킹, 출고, 재고 실사를 WEB과 PDA로 연결한 물류 관리 데모.",
+    "en": "A 3PL warehouse-management UI demo connecting receiving, putaway, wave picking, shipping, and cycle counting across manager web and warehouse PDA screens.",
+    "ja": "3PL物流センターの入荷、ロケーション格納、ウェーブピッキング、出荷、棚卸しを管理者WEBと現場PDAでつなぐWMS画面デモ。"
+  },
+  "overview": {
+    "ko": "STACKFLOW WMS는 여러 화주사의 상품을 취급하는 3PL 물류센터를 위한 인터페이스 데모입니다. 입고 예정과 실제 스캔 수량을 대조하고, SKU를 창고 위치에 적치하며, 주문을 웨이브로 묶어 피킹과 포장을 처리하는 과정을 보여줍니다. 현장 PDA의 작업 기록이 관리자 WEB의 입고·출고·재고 현황으로 이어지고, 재고 실사 차이는 조정 승인 전까지 별도로 관리됩니다. 실제 고객 구축이 아닌 업무 프로세스와 UI 구성 데모입니다.",
+    "en": "STACKFLOW WMS is an interface demonstration for a multi-client 3PL fulfillment center. It shows how expected inbound quantities are verified against barcode scans, how products are assigned to physical storage locations, and how outbound orders are grouped into picking waves before packing and shipping. PDA task records connect to web-based operational views, while cycle-count variances remain separate from system inventory until approved. This is a PIUS concept and workflow demo, not a deployed customer system.",
+    "ja": "STACKFLOW WMSは、複数荷主の商品を扱う3PLフルフィルメントセンター向けのインターフェースデモです。入荷予定数と実際のバーコードスキャン数を照合し、SKUを倉庫ロケーションへ格納し、出荷注文をウェーブにまとめてピッキング・梱包・出荷を処理する業務を表現します。現場PDAの記録は管理者WEBの運用画面につながり、棚卸差異は承認までシステム在庫と分けて管理します。顧客向け導入実績ではなく、PIUSによるUI・業務フローのデモです。"
+  },
+  "industry": {
+    "ko": "물류 / 3PL 풀필먼트",
+    "en": "Logistics / 3PL fulfillment",
+    "ja": "物流 / 3PLフルフィルメント"
+  },
+  "categories": [
+    "erp",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "admin",
+      "label": {
+        "ko": "관리자 WEB",
+        "en": "Manager web",
+        "ja": "管理者WEB"
+      }
+    },
+    {
+      "type": "app",
+      "label": {
+        "ko": "현장 PDA",
+        "en": "Warehouse PDA",
+        "ja": "現場PDA"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#2463EB",
+    "accentInk": "#16243F",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "wms-dashboard"
+  ],
+  "images": [
+    {
+      "id": "wms-dashboard",
+      "kind": "desktop",
+      "file": "wms-dashboard.webp",
+      "alt": {
+        "ko": "STACKFLOW WMS 물류 운영 대시보드의 입고·출고·재고·실사 예외 현황",
+        "en": "Warehouse operations dashboard showing receiving, shipping, inventory, and cycle-count exceptions",
+        "ja": "入荷・出荷・システム在庫・棚卸差異を表示するWMS運用ダッシュボード"
+      },
+      "caption": {
+        "ko": "13:00 기준 입고 198 EA, 대표 주문 출고 24 EA, 시스템 재고 594 EA와 조정 승인 대기를 확인합니다.",
+        "en": "At 13:00, the dashboard shows 198 units received, 24 units shipped, 594 units in system inventory, and a pending count adjustment.",
+        "ja": "13:00時点の入荷198点、出荷24点、システム在庫594点、在庫調整の承認待ちを表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "wms-inbound",
+      "kind": "desktop",
+      "file": "wms-inbound.webp",
+      "alt": {
+        "ko": "ASN-261106-008의 입고 예정 200개와 스캔 실적 198개 비교 화면",
+        "en": "ASN-261106-008 planned 200 units versus 198 scanned units",
+        "ja": "ASN-261106-008の予定200個とスキャン実績198個の照合画面"
+      },
+      "caption": {
+        "ko": "스테인리스 텀블러 입고에서 부족한 2개를 차이 기록으로 처리하고 적치 작업으로 연결합니다.",
+        "en": "The receiving review records a two-unit shortfall for tumblers and links to putaway.",
+        "ja": "タンブラーの入荷不足2個を差異として記録し、棚入れ作業に連携します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "wms-location-map",
+      "kind": "desktop",
+      "file": "wms-location-map.webp",
+      "alt": {
+        "ko": "A-02-03 로케이션의 수량 198개와 점유율 82.5%를 나타내는 랙 지도",
+        "en": "Rack map highlighting location A-02-03 with 198 units and 82.5% occupancy",
+        "ja": "198個・使用率82.5%のA-02-03ロケーションを示すラックマップ"
+      },
+      "caption": {
+        "ko": "A/B 구역의 랙 위치와 빈 셀을 구분하고 A-02-03의 198/240개 적치 상태를 표시합니다.",
+        "en": "Zone A/B rack locations, vacant cells, and the selected A-02-03 capacity of 198/240 units.",
+        "ja": "A/Bゾーンの棚位置・空きセルとA-02-03の198/240個の保管状況を示します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "wms-outbound-wave",
+      "kind": "desktop",
+      "file": "wms-outbound-wave.webp",
+      "alt": {
+        "ko": "3개 주문과 총 47 EA를 묶어 작업자에게 배정하는 출고 웨이브 화면",
+        "en": "Outbound wave screen assigning three orders totaling 47 units",
+        "ja": "3件の注文と合計47点をまとめて割り当てる出荷ウェーブ画面"
+      },
+      "caption": {
+        "ko": "WAVE-261106-004에서 주문 021·022·023의 피킹 위치, 수량, 담당자와 작업 순서를 표시합니다.",
+        "en": "WAVE-261106-004 organizes the locations, quantities, assigned picker, and sequence for orders 021, 022, and 023.",
+        "ja": "WAVE-261106-004で注文021・022・023の保管場所、数量、担当者、作業順を表示します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "wms-packing-shipping",
+      "kind": "desktop",
+      "file": "wms-packing-shipping.webp",
+      "alt": {
+        "ko": "주문 021의 피킹·포장 24 EA 일치 여부와 출고 확정 화면",
+        "en": "Packing and shipping screen verifying 24 units for outbound order 021",
+        "ja": "注文021の24点を照合して出荷確定する梱包管理画面"
+      },
+      "caption": {
+        "ko": "24 EA의 수량 및 바코드 검증 후 12:10 출고 확정하고 시스템 재고를 594 EA로 반영합니다.",
+        "en": "A 24-unit quantity and barcode check is completed before dispatch at 12:10, leaving 594 units in system inventory.",
+        "ja": "24点の数量とバーコードを照合し、12:10に出荷確定。システム在庫は594点です。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "wms-pda-inbound",
+      "kind": "mobile",
+      "file": "wms-pda-inbound.webp",
+      "alt": {
+        "ko": "PDA 입고 스캔에서 예정 200 EA 대비 실제 198 EA를 확인하는 화면",
+        "en": "Receiving PDA showing 198 scanned units against 200 expected units",
+        "ja": "予定200点に対し198点をスキャンする現場PDA入荷画面"
+      },
+      "caption": {
+        "ko": "10:23 바코드 스캔으로 수량 차이 -2 EA를 확인하고 입고 확정 전 차이를 기록합니다.",
+        "en": "At 10:23, the operator detects a two-unit shortage and records it before receiving confirmation.",
+        "ja": "10:23に不足2点を確認し、入荷確定前に差異を記録します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "wms-pda-putaway",
+      "kind": "mobile",
+      "file": "wms-pda-putaway.webp",
+      "alt": {
+        "ko": "PDA에서 A-02-03 위치를 스캔하고 텀블러 198 EA 적치를 완료하는 화면",
+        "en": "PDA putaway task confirming location A-02-03 and 198 units placed",
+        "ja": "PDAでA-02-03をスキャンし198点の格納を完了する画面"
+      },
+      "caption": {
+        "ko": "10:40 적치 위치 검증 후 198 EA 적치를 완료하고 점유율 82.5%를 확인합니다.",
+        "en": "At 10:40, a location scan confirms 198 units placed in bin A-02-03 with 82.5% occupancy.",
+        "ja": "10:40に保管場所を照合し、198点の格納完了と使用率82.5%を確認します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "wms-pda-picking",
+      "kind": "mobile",
+      "file": "wms-pda-picking.webp",
+      "alt": {
+        "ko": "김도윤 작업자가 A-02-03에서 주문 021의 텀블러 24 EA를 피킹하는 PDA 화면",
+        "en": "Picking PDA showing order 021, bin A-02-03, and 24 picked units",
+        "ja": "A-02-03で注文021の24点をピッキングする現場PDA画面"
+      },
+      "caption": {
+        "ko": "WAVE-261106-004의 대표 주문 021을 11:30에 24 EA 피킹 완료합니다.",
+        "en": "At 11:30, 24 units for order 021 are picked under WAVE-261106-004.",
+        "ja": "WAVE-261106-004の注文021について、11:30に24点のピッキングを完了します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "wms-pda-cycle-count",
+      "kind": "mobile",
+      "file": "wms-pda-cycle-count.webp",
+      "alt": {
+        "ko": "시스템 재고 174 EA와 실제 실사 172 EA를 비교하는 PDA 재고 실사 화면",
+        "en": "Cycle-count PDA comparing 174 system units against 172 physically counted units",
+        "ja": "システム174点と実棚卸172点を比較するPDA棚卸画面"
+      },
+      "caption": {
+        "ko": "12:40 실사 차이 -2 EA를 기록했지만 승인 전이므로 시스템 재고는 174 EA, 전체 594 EA를 유지합니다.",
+        "en": "A two-unit variance is recorded at 12:40; pending approval, system inventory remains 174 units in the bin and 594 overall.",
+        "ja": "12:40に差異マイナス2点を記録。承認前のためシステム在庫はロケーション174点、全体594点のままです。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "wms-workflow",
+      "kind": "graphic",
+      "file": "wms-workflow.webp",
+      "alt": {
+        "ko": "입고·적치·웨이브 피킹·패킹·출고·재고 실사를 연결한 WMS 업무 흐름도",
+        "en": "End-to-end WMS workflow connecting receiving, putaway, picking, shipping, and cycle counting",
+        "ja": "入荷・格納・ピッキング・梱包・出荷・棚卸しをつなぐWMS業務フロー図"
+      },
+      "caption": {
+        "ko": "관리자 WEB과 현장 PDA의 역할 및 ASN·SKU·로케이션·주문·재고의 데이터 연결 구조를 시각화했습니다.",
+        "en": "The workflow separates manager web and warehouse PDA roles while connecting ASN, SKU, location, order, wave, and inventory records.",
+        "ja": "管理者WEBと現場PDAの役割を分け、ASN・SKU・保管場所・注文・在庫のつながりを示します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DEMO · PoC",
+        "en": "DEMO · PoC",
+        "ja": "DEMO · PoC"
+      },
+      "headline": {
+        "ko": "입고부터 출고까지, 창고의 모든 흐름을 연결하다.",
+        "en": "Connect every warehouse operation, from receiving to dispatch.",
+        "ja": "入荷から出荷まで、倉庫のすべての流れをつなぐ。"
+      },
+      "sub": {
+        "ko": "PIUS 자체 데모·PoC — 화면의 모든 데이터는 시연용 가상 데이터입니다.",
+        "en": "A PIUS self-initiated demo and PoC — all screen data is fictional.",
+        "ja": "PIUS独自のデモ・PoC — 画面のデータはすべて架空のデモデータです。"
+      },
+      "images": [
+        "wms-dashboard"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "현장의 작업이 정확한 재고 데이터가 되는 물류 운영",
+        "en": "Turning warehouse-floor actions into traceable inventory data",
+        "ja": "現場の作業を追跡可能な在庫データへ"
+      },
+      "lead": {
+        "ko": "수기 확인 과정의 입고 수량 차이, 복잡한 보관 위치 검색, 분산된 피킹 업무, 출고 후 재고 반영 누락, 재고 실사 차이의 승인 상태를 연결된 업무 데이터로 관리하는 과정을 시각화합니다.",
+        "en": "The experience addresses receiving discrepancies, difficult SKU location lookup, fragmented picking assignments, missed inventory deductions after shipping, and unclear cycle-count approval states through a connected workflow.",
+        "ja": "入荷数量の不一致、SKUの保管場所を探す負担、分散したピッキング指示、出荷後の在庫反映漏れ、棚卸調整の承認状況の不明確さを、連携した業務画面で可視化します。"
+      }
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "02",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "관리자 WEB과 현장 PDA",
+        "en": "Manager web and warehouse PDA",
+        "ja": "管理者WEBと現場PDA"
+      },
+      "columns": [
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "물류 관리자 WEB",
+            "en": "Warehouse manager web",
+            "ja": "倉庫管理者WEB"
+          },
+          "audience": {
+            "ko": "물류 관리자",
+            "en": "Warehouse managers",
+            "ja": "倉庫管理者"
+          },
+          "items": [
+            {
+              "ko": "입고 현황",
+              "en": "Inbound monitoring",
+              "ja": "入荷状況"
+            },
+            {
+              "ko": "로케이션 맵",
+              "en": "Bin map",
+              "ja": "ロケーションマップ"
+            },
+            {
+              "ko": "웨이브 할당",
+              "en": "Wave assignments",
+              "ja": "ウェーブ割当"
+            },
+            {
+              "ko": "출고 검증",
+              "en": "Packing verification",
+              "ja": "梱包検証"
+            },
+            {
+              "ko": "재고 차이 조회",
+              "en": "Inventory exceptions",
+              "ja": "在庫差異の確認"
+            }
+          ]
+        },
+        {
+          "platform": "app",
+          "title": {
+            "ko": "입고·적치 PDA",
+            "en": "Receiving and putaway PDA",
+            "ja": "入荷・格納PDA"
+          },
+          "audience": {
+            "ko": "현장 작업자",
+            "en": "Floor operators",
+            "ja": "現場作業者"
+          },
+          "items": [
+            {
+              "ko": "상품 바코드 스캔",
+              "en": "Barcode validation",
+              "ja": "バーコード照合"
+            },
+            {
+              "ko": "수량 대조",
+              "en": "Quantity comparison",
+              "ja": "数量比較"
+            },
+            {
+              "ko": "로케이션 검증",
+              "en": "Bin scanning",
+              "ja": "ロケーションスキャン"
+            },
+            {
+              "ko": "적치 완료",
+              "en": "Putaway completion",
+              "ja": "格納完了"
+            }
+          ]
+        },
+        {
+          "platform": "app",
+          "title": {
+            "ko": "피킹 PDA",
+            "en": "Picking PDA",
+            "ja": "ピッキングPDA"
+          },
+          "audience": {
+            "ko": "현장 작업자",
+            "en": "Floor operators",
+            "ja": "現場作業者"
+          },
+          "items": [
+            {
+              "ko": "할당 작업과 이동 위치 안내",
+              "en": "Assigned orders and location guidance",
+              "ja": "割当注文と保管場所への案内"
+            },
+            {
+              "ko": "상품·위치 스캔",
+              "en": "Item validation",
+              "ja": "商品照合"
+            },
+            {
+              "ko": "수량 확인",
+              "en": "Picked-quantity confirmation",
+              "ja": "数量の確定"
+            }
+          ]
+        },
+        {
+          "platform": "app",
+          "title": {
+            "ko": "재고 실사 PDA",
+            "en": "Cycle-count PDA",
+            "ja": "棚卸PDA"
+          },
+          "audience": {
+            "ko": "현장 작업자",
+            "en": "Floor operators",
+            "ja": "現場作業者"
+          },
+          "items": [
+            {
+              "ko": "실사 수량 입력",
+              "en": "Physical count entry",
+              "ja": "実数量入力"
+            },
+            {
+              "ko": "시스템 재고 비교",
+              "en": "System stock comparison",
+              "ja": "システム在庫との比較"
+            },
+            {
+              "ko": "조정 승인 대기 표시",
+              "en": "Pending adjustment approval",
+              "ja": "調整承認待ちの表示"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "WORKFLOW"
+      },
+      "pdf": {
+        "skip": true
+      },
+      "heading": {
+        "ko": "하나의 SKU가 이동하는 전체 창고 업무",
+        "en": "The complete warehouse journey of a single SKU",
+        "ja": "ひとつのSKUを追う倉庫業務全体"
+      },
+      "intro": {
+        "ko": "입고 예정 200 EA에서 실제 198 EA를 입고 확정하고, A-02-03에 적치한 후 출고 웨이브에 주문을 할당합니다. 피킹·포장·출고 24 EA를 처리하면 시스템 재고는 594 EA가 됩니다. 이후 실사 차이 2 EA는 승인 대기로 유지합니다.",
+        "en": "Of 200 expected units, 198 are received and put away at A-02-03. Outbound orders are allocated to a picking wave; after 24 units are picked, packed, and shipped, system inventory becomes 594 units. A subsequent two-unit cycle-count variance remains pending approval.",
+        "ja": "入荷予定200点のうち198点を入荷確定し、A-02-03に格納します。出荷注文をウェーブに割り当て、24点のピッキング・梱包・出荷が完了するとシステム在庫は594点になります。その後の棚卸差異2点は承認待ちの状態を維持します。"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "입고 예정",
+            "en": "Expected receipt",
+            "ja": "入荷予定"
+          }
+        },
+        {
+          "title": {
+            "ko": "상품 바코드 스캔",
+            "en": "Item barcode scan",
+            "ja": "商品バーコードスキャン"
+          }
+        },
+        {
+          "title": {
+            "ko": "입고 확정",
+            "en": "Receiving confirmed",
+            "ja": "入荷確定"
+          }
+        },
+        {
+          "title": {
+            "ko": "로케이션 적치",
+            "en": "Putaway to location",
+            "ja": "ロケーション格納"
+          }
+        },
+        {
+          "title": {
+            "ko": "주문 재고 할당",
+            "en": "Order allocation",
+            "ja": "注文在庫の引当"
+          }
+        },
+        {
+          "title": {
+            "ko": "웨이브·피킹",
+            "en": "Wave picking",
+            "ja": "ウェーブ・ピッキング"
+          }
+        },
+        {
+          "title": {
+            "ko": "패킹 검증",
+            "en": "Packing check",
+            "ja": "梱包検証"
+          }
+        },
+        {
+          "title": {
+            "ko": "출고 확정",
+            "en": "Shipment confirmed",
+            "ja": "出荷確定"
+          }
+        },
+        {
+          "title": {
+            "ko": "재고 실사·조정",
+            "en": "Cycle count & adjustment",
+            "ja": "棚卸・調整"
+          }
+        },
+        {
+          "title": {
+            "ko": "운영 모니터링",
+            "en": "Operations monitoring",
+            "ja": "運用モニタリング"
+          }
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "INBOUND"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "입고 예정과 실물 수량을 대조하는 검증 과정",
+        "en": "Validate planned receipts against physical quantities",
+        "ja": "入荷予定と実数量を照合"
+      },
+      "body": {
+        "ko": "ASN-261106-008의 입고 예정 200 EA와 실제 스캔 198 EA를 비교합니다. 부족 2 EA를 기록하고 실제 수량만 입고 확정합니다.",
+        "en": "ASN-261106-008 compares 200 expected units with 198 scanned units. A two-unit shortage is recorded, and only 198 units are posted as received.",
+        "ja": "ASN-261106-008の予定200点に対し、スキャン済みは198点です。不足2点を記録し、実数量198点のみ入荷確定します。"
+      },
+      "images": [
+        "wms-inbound"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "OUTBOUND WAVES"
+      },
+      "layout": "full",
+      "surface": "light",
+      "heading": {
+        "ko": "여러 출고 주문을 하나의 피킹 작업으로",
+        "en": "Turn multiple outbound orders into one picking wave",
+        "ja": "複数注文を一つのピッキング作業に"
+      },
+      "body": {
+        "ko": "WAVE-261106-004에 3개 주문과 총 47 EA를 묶고, 담당자 김도윤에게 작업 순서와 상품별 피킹 위치를 배정합니다.",
+        "en": "WAVE-261106-004 groups three orders totaling 47 units, assigning picker Kim Doyun a sequence of SKU locations and quantities.",
+        "ja": "3件の注文をWAVE-261106-004にまとめ、合計47点を作業者キム・ドユンに割り当てます。商品ごとの場所と数量、作業順を表示します。"
+      },
+      "images": [
+        "wms-outbound-wave"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "PACKING & SHIPPING"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "포장 검증부터 출고 확정까지",
+        "en": "Verify packing before confirming shipment",
+        "ja": "梱包検証から出荷確定まで"
+      },
+      "body": {
+        "ko": "주문 ORD-261106-021의 피킹 24 EA와 포장 24 EA, 바코드를 검증한 후 출고를 확정합니다. 시스템 재고는 594 EA가 됩니다. 운송장 정보는 가상 데이터이며 외부 API 연동을 의미하지 않습니다.",
+        "en": "Order ORD-261106-021 passes a 24-unit pick-to-pack and barcode check before dispatch is confirmed. System inventory becomes 594 units. The tracking reference is demo-only, with no courier API integration.",
+        "ja": "ORD-261106-021のピッキング24点と梱包24点、バーコードを照合して出荷確定します。システム在庫は594点になります。送り状は外部配送APIと連携していないデモデータです。"
+      },
+      "images": [
+        "wms-packing-shipping"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "07",
+        "label": "WAREHOUSE PDA"
+      },
+      "layout": "phones",
+      "surface": "accent",
+      "heading": {
+        "ko": "스캔 중심의 현장 PDA 작업",
+        "en": "Scan-first warehouse PDA tasks",
+        "ja": "スキャン中心の現場PDA"
+      },
+      "body": {
+        "ko": "현장 PDA 중 피킹과 재고 실사 화면입니다. 같은 SKU와 위치 정보를 쓰면서 작업 상태와 시간을 남깁니다. 입고·적치 PDA 화면은 아래 보조 화면에 있습니다.",
+        "en": "The picking and cycle-count PDA screens. They use the same SKU and location data and record status and time. The receiving and put-away PDA screens are among the supporting screens below.",
+        "ja": "現場PDAのうちピッキングと棚卸の画面です。同じSKUとロケーション情報を使い、作業状態と時刻を記録します。入荷・格納のPDA画面は下の補助画面にあります。"
+      },
+      "images": [
+        "wms-pda-picking",
+        "wms-pda-cycle-count"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "08",
+        "label": "MORE SCREENS"
+      },
+      "heading": {
+        "ko": "흐름도·로케이션·입고와 적치 PDA",
+        "en": "Process map, locations, receiving and put-away PDA",
+        "ja": "フロー図・ロケーション・入荷と格納のPDA"
+      },
+      "intro": {
+        "ko": "핵심 화면 사이의 단계를 보여 주는 보조 화면입니다.",
+        "en": "Supporting screens for the steps between the core screens.",
+        "ja": "主要画面の間の段階を示す補助画面です。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "입고에서 출고·실사까지, 하나의 물류 데이터 흐름",
+            "en": "From receiving to shipping and counting, one logistics data flow",
+            "ja": "入荷から出荷・棚卸まで、ひとつの物流データフロー"
+          },
+          "body": {
+            "ko": "관리자 WEB과 현장 PDA의 역할 및 ASN·SKU·로케이션·주문·재고의 데이터 연결 구조를 시각화했습니다.",
+            "en": "The workflow separates manager web and warehouse PDA roles while connecting ASN, SKU, location, order, wave, and inventory records.",
+            "ja": "管理者WEBと現場PDAの役割を分け、ASN・SKU・保管場所・注文・在庫のつながりを示します。"
+          },
+          "image": "wms-workflow"
+        },
+        {
+          "title": {
+            "ko": "SKU를 보관 위치와 연결하는 로케이션 맵",
+            "en": "Connect every SKU to a physical storage location",
+            "ja": "SKUと実際の保管場所を結び付ける"
+          },
+          "body": {
+            "ko": "창고 구역·랙·셀별 위치와 점유 상태를 표시합니다. A-02-03에는 출고 이전 시점에 198/240 EA가 보관되며 점유율은 82.5%입니다.",
+            "en": "The warehouse map displays zones, racks, bins, and occupancy. Before outbound picking, A-02-03 contains 198 of 240 units, representing 82.5% utilization.",
+            "ja": "倉庫のゾーン・ラック・セルと使用状況を表示します。出荷前のA-02-03には198/240点が保管され、使用率は82.5%です。"
+          },
+          "image": "wms-location-map"
+        },
+        {
+          "title": {
+            "ko": "PDA 입고 스캔",
+            "en": "PDA receiving scan",
+            "ja": "PDA入荷スキャン"
+          },
+          "body": {
+            "ko": "10:23 바코드 스캔으로 수량 차이 -2 EA를 확인하고 입고 확정 전 차이를 기록합니다.",
+            "en": "At 10:23, the operator detects a two-unit shortage and records it before receiving confirmation.",
+            "ja": "10:23に不足2点を確認し、入荷確定前に差異を記録します。"
+          },
+          "image": "wms-pda-inbound"
+        },
+        {
+          "title": {
+            "ko": "PDA 적치",
+            "en": "PDA put-away",
+            "ja": "PDA格納"
+          },
+          "body": {
+            "ko": "10:40 적치 위치 검증 후 198 EA 적치를 완료하고 점유율 82.5%를 확인합니다.",
+            "en": "At 10:40, a location scan confirms 198 units placed in bin A-02-03 with 82.5% occupancy.",
+            "ja": "10:40に保管場所を照合し、198点の格納完了と使用率82.5%を確認します。"
+          },
+          "image": "wms-pda-putaway"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "창고의 물리적인 이동을 데이터로 연결하고, 관리자와 현장 작업자가 같은 업무 상태를 확인하도록 설계한 물류 관리 경험.",
+        "en": "An operational experience that connects the physical movement of goods to traceable data shared by warehouse managers and floor operators.",
+        "ja": "倉庫内の物理的な商品移動をデータにつなぎ、管理者と現場作業者が同じ業務状況を把握できるように設計した物流管理体験。"
+      },
+      "sub": {
+        "ko": "STACKFLOW WMS — PIUS 자체 데모·PoC",
+        "en": "STACKFLOW WMS — a PIUS demo and PoC",
+        "ja": "STACKFLOW WMS — PIUS独自のデモ・PoC"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "등록 프롬프트(2026-11-06) 기준. PIUS 자체 데모·PoC, 화면 데이터는 모두 가상.",
+    "status review — 사용자 승인 전 approved 불가. scope·results 블록 미사용(프롬프트 지시).",
+    "projectState·year·stack 미기재(확인 안 됨).",
+    "v28(2026-11-11): wms-inbound·wms-location-map을 대시보드·출고·패킹 화면과 같은 남색 사이드바 셸로 재렌더링. 작업 영역(ASN-261106-008 200/198/차이 2, A-02-03 198/240·82.5%)은 그대로."
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "id": "reelshift-studio",
+  "slug": "reelshift-studio",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 20,
+  "includeInPdf": true,
+  "title": {
+    "ko": "REELSHIFT STUDIO — 영상 제작·협업 워크스페이스",
+    "en": "REELSHIFT STUDIO — Creative Video Workspace",
+    "ja": "REELSHIFT STUDIO — 映像制作・コラボレーションワークスペース"
+  },
+  "subtitle": {
+    "ko": "편집부터 검수까지, 하나의 크리에이티브 워크스페이스.",
+    "en": "From editing to review. One creative workspace.",
+    "ja": "編集からレビューまで、ひとつのクリエイティブワークスペースで。"
+  },
+  "summary": {
+    "ko": "멀티트랙 영상 편집, 모션그래픽, 색보정, 자막, 프레임별 피드백과 버전 관리를 통합한 전문 영상 제작 UI 데모",
+    "en": "A professional video production UI demo bringing multitrack editing, motion graphics, color grading, captions, frame-based feedback and version management into one workspace.",
+    "ja": "マルチトラック編集、モーショングラフィックス、カラーグレーディング、字幕、フレーム単位のフィードバック、バージョン管理をまとめた専門的な映像制作UIデモ。"
+  },
+  "overview": {
+    "ko": "본 사례는 PIUS가 기획·시각화한 자체 정적 UI 데모이며, 실제 고객사 수행 또는 영상 편집·인코딩 서비스 운영 실적이 아닙니다.",
+    "en": "This case is a static UI demonstration conceived and visualized by PIUS, not a delivered client project or a production video-editing/encoding service.",
+    "ja": "本事例はPIUSが企画・可視化した自社の静的UIデモです。実際の受託案件や映像編集・エンコードサービスの運用実績ではありません。"
+  },
+  "industry": {
+    "ko": "디지털 미디어 / 전문 영상 제작 / 크리에이티브 협업",
+    "en": "Digital Media / Professional Video Production / Creative Collaboration",
+    "ja": "デジタルメディア/プロフェッショナル映像制作/クリエイティブコラボレーション"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "Desktop WEB",
+        "en": "Desktop WEB",
+        "ja": "Desktop WEB"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "Mobile WEB",
+        "en": "Mobile WEB",
+        "ja": "Mobile WEB"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#827AFF",
+    "accentInk": "#0E0F15",
+    "cover": "dark",
+    "layout": "stage"
+  },
+  "thumbnail": [
+    "reelshift-editing-workspace"
+  ],
+  "images": [
+    {
+      "id": "reelshift-editing-workspace",
+      "kind": "desktop",
+      "file": "reelshift-editing-workspace.webp",
+      "alt": {
+        "ko": "REELSHIFT STUDIO 편집 화면, AFTERLIGHT 인물 실루엣 프리뷰와 30초 멀티트랙 타임라인",
+        "en": "REELSHIFT STUDIO editor with the AFTERLIGHT silhouette preview and a 30-second multitrack timeline",
+        "ja": "AFTERLIGHTの人物シルエットと30秒のマルチトラックタイムラインを表示したREELSHIFT STUDIO編集画面"
+      },
+      "caption": {
+        "ko": "영상·타이틀·자막·오디오를 하나의 시간축에 구성한 메인 편집 워크스페이스",
+        "en": "Main editing workspace aligning video, titles, captions and audio on one timeline",
+        "ja": "映像・タイトル・字幕・音声を共通の時間軸にまとめたメイン編集ワークスペース"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "reelshift-project-library",
+      "kind": "desktop",
+      "file": "reelshift-project-library.webp",
+      "alt": {
+        "ko": "AFTERLIGHT 프로젝트 썸네일, V2 검수 상태와 최근 작업이 표시된 미디어 프로젝트 라이브러리",
+        "en": "Project library showing the AFTERLIGHT thumbnail, V2 review status and recent activity",
+        "ja": "AFTERLIGHTのサムネイル、V2レビュー状態、最近の作業を表示したプロジェクトライブラリ"
+      },
+      "caption": {
+        "ko": "프로젝트 자산, 협업자, 최신 검수 활동을 종합하는 작업 시작 화면",
+        "en": "A starting point for assets, collaborators and recent review activity",
+        "ja": "素材・担当者・最新レビュー履歴をまとめた制作の起点"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "reelshift-motion-editor",
+      "kind": "desktop",
+      "file": "reelshift-motion-editor.webp",
+      "alt": {
+        "ko": "FEEL THE LIGHT 타이틀과 위치·투명도 키프레임 그래프를 보여주는 모션그래픽 편집 화면",
+        "en": "Motion editor showing the FEEL THE LIGHT title and position and opacity keyframe curves",
+        "ja": "「FEEL THE LIGHT」タイトルと位置・不透明度のキーフレームカーブを示すモーション編集画面"
+      },
+      "caption": {
+        "ko": "00:00:04:12의 타이틀 모션과 이징 그래프 편집 상태",
+        "en": "Title motion and easing curves at 00:00:04:12",
+        "ja": "00:00:04:12におけるタイトルモーションとイージングカーブ"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "reelshift-color-grading",
+      "kind": "desktop",
+      "file": "reelshift-color-grading.webp",
+      "alt": {
+        "ko": "유리 오브제 장면과 컬러 휠, 밝기·대비 조정, RGB 분석 그래프가 있는 영상 색보정 화면",
+        "en": "Color grading workspace showing a glass reflection with color wheels, tonal controls and RGB analysis",
+        "ja": "ガラスのシーンとカラーホイール、明暗設定、RGB解析グラフを備えたカラーグレーディング画面"
+      },
+      "caption": {
+        "ko": "00:00:14:00의 유리 반사 장면에 적용할 색보정 인터페이스",
+        "en": "Color correction interface for the glass-reflection shot at 00:00:14:00",
+        "ja": "00:00:14:00のガラスのシーンに対する色補正インターフェース"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "reelshift-subtitle-editor",
+      "kind": "desktop",
+      "file": "reelshift-subtitle-editor.webp",
+      "alt": {
+        "ko": "네 개의 한국어 자막 목록과 순간은 감각이 된다 문장을 프리뷰에 표시한 자막 편집 화면",
+        "en": "Subtitle editor with four Korean caption cues and “순간은 감각이 된다” in the preview",
+        "ja": "4つの韓国語字幕と「순간은 감각이 된다」のプレビューを表示する字幕編集画面"
+      },
+      "caption": {
+        "ko": "선택된 자막 구간 00:13–00:15와 영상 프레임 00:00:14:00의 연계",
+        "en": "Linking the 00:13–00:15 caption cue to the frame at 00:00:14:00",
+        "ja": "00:13〜00:15の字幕区間と00:00:14:00の映像フレームを連携"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "reelshift-review-annotation",
+      "kind": "desktop",
+      "file": "reelshift-review-annotation.webp",
+      "alt": {
+        "ko": "AFTERLIGHT 엔드 타이틀의 25초 프레임과 검수 코멘트가 연결된 화면",
+        "en": "Review workspace linking the 25-second AFTERLIGHT end-title frame to a feedback thread",
+        "ja": "AFTERLIGHTの25秒地点のエンドタイトルとレビューコメントを紐づけた画面"
+      },
+      "caption": {
+        "ko": "V2 엔드 타이틀 수정에 대한 프레임 코멘트와 최종 승인 대기 상태",
+        "en": "Frame-based feedback on the revised V2 end title, awaiting final approval",
+        "ja": "V2のエンドタイトル修正に対するフレームコメントと最終承認待ち状態"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "reelshift-version-comparison",
+      "kind": "desktop",
+      "file": "reelshift-version-comparison.webp",
+      "alt": {
+        "ko": "같은 25초 프레임에서 엔드 타이틀 대비가 다른 V1과 V2를 나란히 비교하는 화면",
+        "en": "Side-by-side V1 and V2 comparison of the same 25-second end-title frame with different text contrast",
+        "ja": "同じ25秒地点でエンドタイトルのコントラストだけが異なるV1・V2を並べた比較画面"
+      },
+      "caption": {
+        "ko": "영상 길이와 컷은 유지하고 타이틀 대비만 개선한 버전 비교",
+        "en": "Version comparison preserving the footage and runtime while improving title contrast",
+        "ja": "尺とカットを維持し、タイトルのコントラストだけを改善したバージョン比較"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "reelshift-export-workspace",
+      "kind": "desktop",
+      "file": "reelshift-export-workspace.webp",
+      "alt": {
+        "ko": "AFTERLIGHT_V2의 MP4 H.264 4K 30fps 영상 출력 옵션을 설정하는 화면",
+        "en": "Export settings workspace for AFTERLIGHT_V2 with MP4, H.264, 4K and 30fps selected",
+        "ja": "AFTERLIGHT_V2のMP4・H.264・4K・30fps書き出し条件を設定する画面"
+      },
+      "caption": {
+        "ko": "실제 인코딩을 시작하기 전의 영상 내보내기 설정 UI",
+        "en": "Video export configuration UI before any encoding has begun",
+        "ja": "実際のエンコード開始前の映像書き出し設定UI"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "reelshift-mobile-review",
+      "kind": "mobile",
+      "file": "reelshift-mobile-review.webp",
+      "alt": {
+        "ko": "모바일에서 AFTERLIGHT V2의 25초 엔드 타이틀과 한국어 코멘트를 확인하는 검수 화면",
+        "en": "Mobile review screen showing the V2 end title at 25 seconds and a Korean feedback comment",
+        "ja": "AFTERLIGHT V2の25秒地点のエンドタイトルと韓国語コメントを確認するモバイルレビュー画面"
+      },
+      "caption": {
+        "ko": "영상 프레임과 수정 코멘트를 함께 읽고 회신하는 모바일 검수 UX",
+        "en": "Mobile frame review with timecoded feedback and a reply field",
+        "ja": "映像フレーム・修正コメント・返信欄を備えたモバイルレビューUX"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "reelshift-mobile-approval",
+      "kind": "mobile",
+      "file": "reelshift-mobile-approval.webp",
+      "alt": {
+        "ko": "AFTERLIGHT V2의 승인 대기 상태, V1 수정 요청과 V2 반영 이력을 보여주는 모바일 화면",
+        "en": "Mobile approval screen showing AFTERLIGHT V2 awaiting approval alongside the V1 revision history",
+        "ja": "AFTERLIGHT V2の承認待ち状態とV1の修正依頼・V2の対応履歴を示すモバイル画面"
+      },
+      "caption": {
+        "ko": "수정 요청과 최종 승인 판단을 분리한 모바일 프로젝트 승인 UX",
+        "en": "Mobile project approval UX separating change requests from final approval decisions",
+        "ja": "修正依頼と最終承認判断を区別したモバイルプロジェクト承認UX"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DEMO · PoC",
+        "en": "DEMO · PoC",
+        "ja": "DEMO · PoC"
+      },
+      "headline": {
+        "ko": "복잡한 영상 제작 과정을 하나의 화면 언어로 연결한 전문가용 웹 인터페이스 콘셉트.",
+        "en": "A professional web interface concept connecting the many stages of video production through one coherent design language.",
+        "ja": "複雑な映像制作工程を、一貫したデザイン言語でつなぐプロフェッショナル向けWeb UIコンセプト。"
+      },
+      "images": [
+        "reelshift-editing-workspace"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프레임 단위의 정교함, 프로젝트 단위의 연결",
+        "en": "Precision at the frame level. Continuity at the project level.",
+        "ja": "フレーム単位の精度と、プロジェクト全体の一貫性"
+      },
+      "lead": {
+        "ko": "영상 작업은 원본 자산, 멀티트랙 편집, 모션, 색보정, 자막, 검수, 버전 비교, 출력 설정으로 이어집니다. REELSHIFT STUDIO는 이러한 전문 작업을 웹 기반 화면에서 어떻게 조직할 수 있는지 보여주는 자체 UI 데모입니다. 단일 AFTERLIGHT 프로젝트의 30초 영상과 V2 검수 상태를 모든 화면에 일관되게 적용했습니다. 실제 미디어 처리 엔진이나 온라인 협업 기능은 구현하지 않았습니다.",
+        "en": "Video production moves through asset management, multitrack editing, motion graphics, color grading, captions, reviews, version comparison and export configuration. REELSHIFT STUDIO is an in-house UI demo exploring how these specialist tasks can be organized in a web-based workspace. Every screen uses the same 30-second AFTERLIGHT project and its V2 review state. The actual media processing engine and online collaboration features were not implemented.",
+        "ja": "映像制作には、素材管理、マルチトラック編集、モーション、カラーグレーディング、字幕、レビュー、バージョン比較、書き出し設定など多くの工程があります。REELSHIFT STUDIOは、これらの専門作業をWeb上でどのように整理できるかを示す自社UIデモです。全画面で30秒の架空作品AFTERLIGHTとV2のレビュー状態を統一しています。実際の映像処理エンジンやオンライン共同作業機能は実装していません。"
+      }
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "02",
+        "label": "SERVICES"
+      },
+      "heading": {
+        "ko": "8 KEY FEATURES",
+        "en": "8 KEY FEATURES",
+        "ja": "8 KEY FEATURES"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "Edit",
+            "en": "Edit",
+            "ja": "Edit"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "Timeline Editing — 영상·타이틀·자막·오디오 트랙을 30초 시퀀스의 같은 시간축에서 확인합니다.",
+              "en": "Timeline Editing — Video, titles, captions and audio aligned to the same 30-second sequence.",
+              "ja": "Timeline Editing — 映像・タイトル・字幕・音声を30秒の共通時間軸で確認します。"
+            },
+            {
+              "ko": "Motion Graphics — 텍스트 레이어의 위치·투명도·이징과 키프레임 변화를 편집 화면에 표현합니다.",
+              "en": "Motion Graphics — A property and keyframe UI for title position, opacity and easing.",
+              "ja": "Motion Graphics — テキストの位置・不透明度・イージングとキーフレームを視覚化します。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "Finish",
+            "en": "Finish",
+            "ja": "Finish"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "Color Grading — 컬러 휠, 명암 설정, RGB 스코프를 통해 영상 톤 조정 경험을 시각화합니다.",
+              "en": "Color Grading — Color wheels, tonal adjustments and RGB scopes organized around the preview.",
+              "ja": "Color Grading — カラーホイール、明暗調整、RGBスコープをプレビューとともに配置します。"
+            },
+            {
+              "ko": "Caption Editing — 자막 문장과 시작·종료 시점, 영상 프리뷰를 동기화된 UI로 보여줍니다.",
+              "en": "Caption Editing — Caption text, in/out times and the film preview shown in a connected UI.",
+              "ja": "Caption Editing — 字幕テキスト、開始・終了時間、映像プレビューを連動させて表示します。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "Review",
+            "en": "Review",
+            "ja": "Review"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "Frame-based Review — 코멘트를 영상 시간코드에 고정하고 수정·회신 과정을 검토합니다.",
+              "en": "Frame-based Review — Feedback attached to an exact timecode, with revision and reply states.",
+              "ja": "Frame-based Review — コメントを特定のタイムコードに紐づけ、修正と返信の状態を示します。"
+            },
+            {
+              "ko": "Version Comparison — 동일한 프레임의 V1·V2 화면을 나란히 배치하여 엔드 타이틀 대비 수정을 확인합니다.",
+              "en": "Version Comparison — V1 and V2 side by side at the same frame, highlighting a title-contrast revision.",
+              "ja": "Version Comparison — 同一フレームのV1・V2を並べ、エンドタイトルのコントラスト修正を確認します。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "Deliver",
+            "en": "Deliver",
+            "ja": "Deliver"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "Export Configuration — 포맷, 코덱, 해상도, 프레임레이트, 품질과 출력 대기를 정리합니다.",
+              "en": "Export Configuration — Format, codec, resolution, frame rate, quality and pending export settings.",
+              "ja": "Export Configuration — 形式、コーデック、解像度、フレームレート、品質、書き出し待機を整理します。"
+            },
+            {
+              "ko": "Mobile Approval — 모바일에서 프레임 코멘트를 확인하고 버전 승인 여부를 판단하는 화면입니다.",
+              "en": "Mobile Approval — Purpose-built mobile layouts for frame comments and version decisions.",
+              "ja": "Mobile Approval — フレームコメントの確認とバージョン承認判断に特化したモバイル画面です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "EDIT"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "움직임을 수치와 곡선으로 편집",
+        "en": "Motion shaped through values and curves",
+        "ja": "数値とカーブで動きを設計"
+      },
+      "body": {
+        "ko": "FEEL THE LIGHT 타이틀을 선택한 00:00:04:12 프레임에서 투명도와 위치의 키프레임, 이징 곡선, 속성 패널이 연결되는 화면을 표현했습니다.",
+        "en": "At 00:00:04:12, the FEEL THE LIGHT title is connected to opacity and position keyframes, easing curves and editable property controls.",
+        "ja": "00:00:04:12の「FEEL THE LIGHT」タイトルについて、不透明度と位置のキーフレーム、イージングカーブ、プロパティを連携させています。"
+      },
+      "images": [
+        "reelshift-motion-editor"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "EDIT"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "영상 프리뷰와 분석 도구의 균형",
+        "en": "Preview and analysis in balance",
+        "ja": "プレビューと解析ツールのバランス"
+      },
+      "body": {
+        "ko": "유리 오브제 장면의 색감을 살펴보며 Lift·Gamma·Gain, 밝기·대비 설정, RGB 파형과 히스토그램을 한 화면에 구성했습니다.",
+        "en": "The glass-reflection shot is surrounded by Lift, Gamma and Gain controls, tonal settings, RGB waveforms and a histogram.",
+        "ja": "ガラスのシーンを中心に、Lift・Gamma・Gain、明暗設定、RGB波形、ヒストグラムをひとつの画面に配置しました。"
+      },
+      "images": [
+        "reelshift-color-grading"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "REVIEW"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "피드백을 정확한 프레임에 연결",
+        "en": "Feedback linked to a specific frame",
+        "ja": "フィードバックを正確なフレームに紐づける"
+      },
+      "body": {
+        "ko": "00:00:25:00 엔드 타이틀 화면과 코멘트 마커를 연결해 V1의 수정 요청 및 V2의 반영·최종 확인 대기 상황을 보여줍니다.",
+        "en": "The end-title frame at 00:00:25:00 is connected to an annotation marker, the V1 change request and the V2 response awaiting final approval.",
+        "ja": "00:00:25:00のエンドタイトルに注釈マーカーを紐づけ、V1での修正依頼とV2の対応・最終確認待ちを示します。"
+      },
+      "images": [
+        "reelshift-review-annotation"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "REVIEW"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "바뀐 내용만 선명하게 비교",
+        "en": "Compare only what changed",
+        "ja": "変更箇所を明確に比較"
+      },
+      "body": {
+        "ko": "동일한 프레임에서 V1과 V2를 나란히 비교합니다. 영상 순서·자막·길이는 그대로이며 엔드 타이틀의 대비만 조정된 상태입니다.",
+        "en": "V1 and V2 are synchronized to the same frame. Shot order, captions and duration remain unchanged; only the end-title contrast differs.",
+        "ja": "同一フレームでV1とV2を比較します。カット順、字幕、尺は維持し、エンドタイトルのコントラストだけを調整しています。"
+      },
+      "images": [
+        "reelshift-version-comparison"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "07",
+        "label": "MORE SCREENS"
+      },
+      "heading": {
+        "ko": "자막 편집과 모바일 승인",
+        "en": "Subtitles and mobile approval",
+        "ja": "字幕編集とモバイル承認"
+      },
+      "intro": {
+        "ko": "편집·검수 흐름을 보조하는 화면입니다. 실제 인코딩·실시간 편집은 구현하지 않은 정적 UI 시안입니다.",
+        "en": "Screens that support editing and review. Static UI only — no real encoding or live editing.",
+        "ja": "編集・レビューを補助する画面です。実際のエンコード・リアルタイム編集は実装していない静的UI案です。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "영상 시간에 맞춰 흐르는 자막",
+            "en": "Captions aligned with the film timeline",
+            "ja": "映像の時間軸に合わせた字幕"
+          },
+          "body": {
+            "ko": "네 개의 한국어 자막 구간 중 00:13–00:15를 선택하고 00:00:14:00의 유리 오브제 화면에 ‘순간은 감각이 된다’를 표시합니다.",
+            "en": "Of four Korean caption cues, the 00:13–00:15 segment is selected, displaying “순간은 감각이 된다” on the glass shot at 00:00:14:00.",
+            "ja": "4つの韓国語字幕のうち00:13〜00:15を選択し、00:00:14:00のガラスのシーンに「순간은 감각이 된다」を表示しています。"
+          },
+          "image": "reelshift-subtitle-editor"
+        },
+        {
+          "title": {
+            "ko": "모바일 승인 대기",
+            "en": "Mobile approval",
+            "ja": "モバイル承認待ち"
+          },
+          "body": {
+            "ko": "수정 요청과 최종 승인 판단을 분리한 모바일 프로젝트 승인 UX",
+            "en": "Mobile project approval UX separating change requests from final approval decisions",
+            "ja": "修正依頼と最終承認判断を区別したモバイルプロジェクト承認UX"
+          },
+          "image": "reelshift-mobile-approval"
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "08",
+        "label": "MOBILE REVIEW & APPROVAL"
+      },
+      "layout": "phones",
+      "surface": "accent",
+      "heading": {
+        "ko": "검수와 승인에 최적화한 모바일 경험",
+        "en": "Mobile UX dedicated to review and approval",
+        "ja": "レビューと承認に特化したモバイルUX"
+      },
+      "body": {
+        "ko": "모바일은 데스크톱 편집기를 축소하지 않습니다. RS-09에서 타임코드가 붙은 프레임 코멘트를 확인하고 회신합니다.",
+        "en": "The mobile view does not shrink the desktop editor: RS-09 is for checking and answering timecoded frame comments.",
+        "ja": "モバイルはデスクトップの編集画面を縮小しません。RS-09でタイムコード付きのフレームコメントを確認・返信します。"
+      },
+      "images": [
+        "reelshift-mobile-review"
+      ]
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "프레임의 디테일부터 팀의 의사결정까지, 정교한 제작 경험을 하나의 인터페이스로 설계합니다.",
+        "en": "Designing a coherent creative workspace, from frame-level detail to team-level decisions.",
+        "ja": "フレームの細部からチームの意思決定まで、一貫した制作体験をデザインします。"
+      },
+      "sub": {
+        "ko": "본 사례는 PIUS가 기획·시각화한 자체 정적 UI 데모이며, 실제 고객사 수행 또는 영상 편집·인코딩 서비스 운영 실적이 아닙니다.",
+        "en": "This case is a static UI demonstration conceived and visualized by PIUS, not a delivered client project or a production video-editing/encoding service.",
+        "ja": "本事例はPIUSが企画・可視化した自社の静的UIデモです。実際の受託案件や映像編集・エンコードサービスの運用実績ではありません。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "등록 프롬프트(2026-11-06) 원고 그대로. PIUS 자체 정적 UI 데모·PoC 10장. AFTERLIGHT(AL-2026-014)·인명·검수 정보는 모두 데모 데이터.",
+    "status review — 사용자 승인 전 approved 불가. scope·results 블록 미사용. 영상 편집·인코딩·실시간 협업 미구현.",
+    "서비스 8항목은 렌더러 칸 수 한계(최대 6칸)로 4칸×2항목으로 묶음(문구는 원고 그대로). 서비스 블록 제목·칸 제목은 원고에 없어 기능명으로 구성.",
+    "산업 영문·일문 표기는 원고(한국어)에 맞춰 번역."
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "id": "civera-twin",
+  "slug": "civera-twin",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 19,
+  "includeInPdf": true,
+  "title": {
+    "ko": "CIVERA TWIN — 스마트시티 재난 대응 운영 UI",
+    "en": "CIVERA TWIN — Smart City Response UI",
+    "ja": "CIVERA TWIN — スマートシティ災害対応UI"
+  },
+  "subtitle": {
+    "ko": "도시 공간, 시나리오, 현장 대응을 하나의 화면으로",
+    "en": "City space, scenarios and field response on one screen",
+    "ja": "都市空間・シナリオ・現場対応を一つの画面に"
+  },
+  "summary": {
+    "ko": "가상 도시의 침수 시나리오를 지도·타임라인·시나리오 비교·대응 과업·모바일 현장 화면으로 연결한 스마트시티 운영 UI 데모.",
+    "en": "A smart-city operations UI demo connecting a fictional city's flood scenario to maps, timelines, scenario comparison, response tasks and mobile field screens.",
+    "ja": "架空都市の浸水シナリオを、マップ・タイムライン・シナリオ比較・対応タスク・モバイル現場画面へつなげたスマートシティ運用UIデモ。"
+  },
+  "overview": {
+    "ko": "가상의 도시와 사건을 바탕으로 한 PIUS 자체 정적 UI 콘셉트 사례.",
+    "en": "A PIUS-produced static UI concept based on a fictional city and incident.",
+    "ja": "架空の都市と事案をもとにしたPIUS独自の静的UIコンセプト事例。"
+  },
+  "industry": {
+    "ko": "스마트시티·공공 인프라·재난 대응",
+    "en": "Smart City, Public Infrastructure & Emergency Response",
+    "ja": "スマートシティ・公共インフラ・災害対応"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "Desktop WEB",
+        "en": "Desktop WEB",
+        "ja": "Desktop WEB"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "Mobile WEB",
+        "en": "Mobile WEB",
+        "ja": "Mobile WEB"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#2A7A68",
+    "accentInk": "#132F2E",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "civera-command-center"
+  ],
+  "images": [
+    {
+      "id": "civera-command-center",
+      "kind": "desktop",
+      "file": "civera-command-center.webp",
+      "alt": {
+        "ko": "가상 도시 Aurora City 리버프런트 지구의 3D 도시 뷰 위에 침수 범위, 시설 마커, 영향 건물·도로·시설·대응 과업 수를 표시한 통합 상황 화면",
+        "en": "Urban command screen for the fictional Aurora City Riverfront District, showing a flood extent, facility markers and counts of affected buildings, roads, facilities and response tasks over a 3D city view.",
+        "ja": "架空都市Aurora City・リバーフロント地区の3D都市ビューに、浸水範囲、施設マーカー、影響建物・道路・施設・対応タスク数を重ねた統合状況画面。"
+      },
+      "caption": {
+        "ko": "도시 지도·침수 범위·대응 현황을 한 화면에 모은 통합 상황판.",
+        "en": "A single command view combining the city map, flood extent and response status.",
+        "ja": "都市マップ、浸水範囲、対応状況を一画面にまとめた統合ダッシュボード。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "civera-layer-explorer",
+      "kind": "desktop",
+      "file": "civera-layer-explorer.webp",
+      "alt": {
+        "ko": "도시 건물·도로·하천·배수망·센서·침수 위험 레이어를 선택하고 속성을 설정하는 GIS 웹",
+        "en": "GIS interface for selecting city layers and editing flood-risk layer opacity and attributes",
+        "ja": "建物・道路・河川・排水網・センサー・浸水リスクのレイヤーと属性を設定するGIS画面"
+      },
+      "caption": {
+        "ko": "지도 자체보다 6개 활성 레이어, 표시 설정, 불투명도 65%와 위험 영역 속성 편집을 중심으로 구성했습니다. 3D 통합 상황판과 별도로 레이어를 2D 평면에서 점검하는 화면입니다.",
+        "en": "The layer workflow prioritizes six visible layers, a 65% opacity setting and editable risk-area properties. Unlike the 3D command center, this screen checks layers on a 2D plane.",
+        "ja": "6つの表示中レイヤー、不透明度65%、リスク領域の属性設定を中心に構成しています。 3D統合ダッシュボードとは別に、レイヤーを2D平面で点検する画面です。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "civera-flood-timeline",
+      "kind": "desktop",
+      "file": "civera-flood-timeline.webp",
+      "alt": {
+        "ko": "시간당 80mm 강우 시나리오에서 T+00·T+30·T+60 시점별 침수 건물과 도로 수 변화를 보여주는 침수 시뮬레이션 타임라인",
+        "en": "Flood simulation timeline for an 80 mm/h rainfall scenario, showing affected buildings and roads at T+00, T+30 and T+60.",
+        "ja": "時間雨量80mmのシナリオで、T+00・T+30・T+60ごとの浸水建物数と道路数の推移を示す浸水シミュレーションのタイムライン。"
+      },
+      "caption": {
+        "ko": "시점별 침수 확산을 하나의 시간축으로 읽는 화면 구성(가상 수치).",
+        "en": "Read the spread of flooding along one timeline (fictional values).",
+        "ja": "時点ごとの浸水拡大を一つの時間軸で読む画面構成(架空の数値)。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "civera-scenario-comparison",
+      "kind": "desktop",
+      "file": "civera-scenario-comparison.webp",
+      "alt": {
+        "ko": "시간당 40·80·120mm 강우 시나리오 A·B·C의 침수 범위와 영향 건물·도로·시설 수, 위험 등급을 나란히 비교하는 화면",
+        "en": "Side-by-side comparison of rainfall scenarios A, B and C at 40, 80 and 120 mm/h, with flood extents, affected buildings, roads, facilities and risk levels.",
+        "ja": "時間雨量40・80・120mmのシナリオA・B・Cについて、浸水範囲、影響建物・道路・施設数、リスク等級を並べて比較する画面。"
+      },
+      "caption": {
+        "ko": "조건이 다른 시나리오를 같은 기준으로 비교하는 카드 구성(가상 수치).",
+        "en": "Compare scenarios with different conditions on the same basis (fictional values).",
+        "ja": "条件の異なるシナリオを同じ基準で比較するカード構成(架空の数値)。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "civera-impact-analysis",
+      "kind": "desktop",
+      "file": "civera-impact-analysis.webp",
+      "alt": {
+        "ko": "영향 건물·도로 구간·공공시설 수와 검토가 필요한 우선 시설(진료소·변전소·도로 구간)을 정리한 인프라 영향 화면",
+        "en": "Infrastructure impact screen summarizing affected buildings, road sections and public facilities, with priority facilities (clinic, substation, road sections) marked for review.",
+        "ja": "影響建物・道路区間・公共施設数と、確認が必要な優先施設(診療所・変電所・道路区間)をまとめたインフラ影響画面。"
+      },
+      "caption": {
+        "ko": "영향 범위와 우선 검토 시설을 지도와 함께 정리.",
+        "en": "Summarize impact scope and priority facilities alongside the map.",
+        "ja": "影響範囲と優先確認施設をマップとあわせて整理。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "civera-sensor-network",
+      "kind": "desktop",
+      "file": "civera-sensor-network.webp",
+      "alt": {
+        "ko": "강우계·수위계·배수펌프 센서 위치와 연결선, 강우량 80mm/h·하천 수위 3.24m·펌프 가동률 72%·배수 고유량 상태 카드를 보여주는 센서 네트워크 화면",
+        "en": "Sensor network screen showing rain gauge, water level and pump station locations with links, and status cards for 80 mm/h rainfall, 3.24 m river level, 72% pump load and high drain flow.",
+        "ja": "雨量計・水位計・排水ポンプの位置と接続線、雨量80mm/h・河川水位3.24m・ポンプ稼働率72%・排水高流量の状態カードを示すセンサーネットワーク画面。"
+      },
+      "caption": {
+        "ko": "센서 상태를 지도 위 위치와 연결해 보여주는 화면 시안(가상 데이터).",
+        "en": "A screen concept tying sensor readings to their map locations (fictional data).",
+        "ja": "センサーの状態を地図上の位置と結びつけて示す画面案(架空データ)。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "civera-response-center",
+      "kind": "desktop",
+      "file": "civera-response-center.webp",
+      "alt": {
+        "ko": "사건 FLD-027의 대응 과업 5건(수위 확인·펌프 가동·지하차도 점검·교통 통제 준비·안내판 설치)과 완료·진행·대기 상태를 보여주는 대응 운영 화면",
+        "en": "Response operations screen for incident FLD-027, listing five tasks (water level check, pump operation, underpass inspection, traffic control prep, signage) with completed, in-progress and pending states.",
+        "ja": "インシデントFLD-027の対応タスク5件(水位確認・ポンプ稼働・地下道点検・交通規制準備・案内板設置)と完了・進行中・待機の状態を示す対応運用画面。"
+      },
+      "caption": {
+        "ko": "사건별 대응 과업과 진행 상태를 한눈에 관리하는 구성.",
+        "en": "Track response tasks and their status for each incident at a glance.",
+        "ja": "インシデントごとの対応タスクと進捗をひと目で管理する構成。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "civera-incident-report",
+      "kind": "desktop",
+      "file": "civera-incident-report.webp",
+      "alt": {
+        "ko": "사건 FLD-027의 영향 건물·도로·시설·과업 수, 검토 상태, 14:00–15:00 영향 확산 그래프를 담은 사건 리포트 화면",
+        "en": "Incident report for FLD-027 with counts of affected buildings, roads, facilities and tasks, review status and an impact progression chart from 14:00 to 15:00.",
+        "ja": "インシデントFLD-027の影響建物・道路・施設・タスク数、確認状況、14:00〜15:00の影響推移グラフをまとめたレポート画面。"
+      },
+      "caption": {
+        "ko": "사건 경과를 요약 지표와 추이 그래프로 기록하는 리포트(가상 수치).",
+        "en": "A report recording the incident through summary figures and a trend chart (fictional values).",
+        "ja": "インシデントの経過を要約指標と推移グラフで記録するレポート(架空の数値)。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "civera-mobile-inspection",
+      "kind": "mobile",
+      "file": "civera-mobile-inspection.webp",
+      "alt": {
+        "ko": "현장 담당자용 모바일 화면: 지하차도 점검 과업 TASK-003, 점검 체크리스트 4항목 중 2항목 완료, 사진 첨부와 보고 제출 버튼",
+        "en": "Mobile field screen for underpass inspection task TASK-003, with a four-item checklist (two done), photo evidence and a submit-report button.",
+        "ja": "現場担当者向けモバイル画面:地下道点検タスクTASK-003、点検チェックリスト4項目中2項目完了、写真添付と報告送信ボタン。"
+      },
+      "caption": {
+        "ko": "현장 점검 체크리스트와 보고 제출 흐름.",
+        "en": "Field inspection checklist and report submission flow.",
+        "ja": "現場点検のチェックリストと報告送信の流れ。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "civera-mobile-response",
+      "kind": "mobile",
+      "file": "civera-mobile-response.webp",
+      "alt": {
+        "ko": "현장 담당자용 모바일 화면: 통제 준비 과업 TASK-004, 준비 점검 4항목 중 2항목 완료, 인원·장비 현황과 업데이트 제출 버튼",
+        "en": "Mobile field screen for closure preparation task TASK-004, with four readiness checks (two done), crew and equipment status and a submit-update button.",
+        "ja": "現場担当者向けモバイル画面:規制準備タスクTASK-004、準備チェック4項目中2項目完了、人員・機材の状況と更新送信ボタン。"
+      },
+      "caption": {
+        "ko": "통제 준비 상태와 인원·장비 현황을 현장에서 갱신.",
+        "en": "Update closure readiness and crew and equipment status from the field.",
+        "ja": "規制準備と人員・機材の状況を現場から更新。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DEMO · PoC",
+        "en": "DEMO · PoC",
+        "ja": "DEMO · PoC"
+      },
+      "headline": {
+        "ko": "도시를 한 화면에서 읽다",
+        "en": "Read the city on one screen",
+        "ja": "都市を一画面で読む"
+      },
+      "sub": {
+        "ko": "가상 도시의 침수 시나리오를 지도·시간·현장 대응으로 연결한 스마트시티 운영 UI 데모.",
+        "en": "A smart-city operations UI demo linking a fictional city's flood scenario to the map, the timeline and field response.",
+        "ja": "架空都市の浸水シナリオを、マップ・時間軸・現場対応へつなげたスマートシティ運用UIデモ。"
+      },
+      "images": [
+        "civera-command-center"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "도시 위기 대응을 위한 하나의 화면",
+        "en": "One screen for urban emergency response",
+        "ja": "都市の危機対応のための一つの画面"
+      },
+      "lead": {
+        "ko": "CIVERA TWIN은 가상 도시 Aurora City의 리버프런트 지구를 배경으로, 집중호우 상황에서 운영자가 도시 공간·영향 범위·대응 과업을 함께 파악하도록 설계한 Desktop·Mobile WEB UI 콘셉트 데모입니다. 지도와 시간축, 현장 화면을 하나의 시각 체계로 연결했습니다. 정적 화면 디자인 사례이며, 화면 속 도시·사건·인물·수치는 모두 가상입니다.",
+        "en": "CIVERA TWIN is a desktop and mobile web UI concept demo set in the Riverfront District of the fictional Aurora City. It is designed to help operators read city space, impact scope and response tasks together during heavy rainfall, connecting the map, the timeline and field screens in one visual system. It is a static design case; the city, incidents, people and figures shown are all fictional.",
+        "ja": "CIVERA TWINは、架空都市Aurora Cityのリバーフロント地区を舞台に、集中豪雨の際に運用者が都市空間・影響範囲・対応タスクをあわせて把握できるよう設計したデスクトップ・モバイルWeb UIコンセプトデモです。マップ、時間軸、現場画面を一つのビジュアル体系でつなぎました。静的な画面デザイン事例であり、画面内の都市・事案・人物・数値はすべて架空です。"
+      }
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "02",
+        "label": "SERVICES"
+      },
+      "heading": {
+        "ko": "분석에서 대응까지",
+        "en": "From analysis to response",
+        "ja": "分析から対応まで"
+      },
+      "intro": {
+        "ko": "상황판·시나리오 비교·시간축·현장 대응 화면을 분석·모니터링·대응의 세 흐름으로 묶었습니다(가상 데이터 지도 시안).",
+        "en": "The command view, scenario comparison, timeline and field response screens, grouped into analysis, monitoring and response (map mock-ups with sample data).",
+        "ja": "状況ボード・シナリオ比較・時間軸・現場対応の画面を、分析・モニタリング・対応の3つの流れにまとめました(仮想データの地図案)。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "분석",
+            "en": "Analyze",
+            "ja": "分析"
+          },
+          "audience": {
+            "ko": "도시 공간·시나리오",
+            "en": "City space & scenarios",
+            "ja": "都市空間・シナリオ"
+          },
+          "items": [
+            {
+              "ko": "통합 상황판 — 지도·침수 범위·핵심 지표를 한 화면에",
+              "en": "Command view — map, flood extent and key figures on one screen",
+              "ja": "統合ダッシュボード — マップ・浸水範囲・主要指標を一画面に"
+            },
+            {
+              "ko": "시나리오 비교 — 강우 조건별 영향 범위 나란히 보기",
+              "en": "Scenario comparison — impact by rainfall condition, side by side",
+              "ja": "シナリオ比較 — 降雨条件ごとの影響範囲を並べて表示"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "모니터링",
+            "en": "Monitor",
+            "ja": "モニタリング"
+          },
+          "audience": {
+            "ko": "시간·기록",
+            "en": "Timeline · records",
+            "ja": "時間・記録"
+          },
+          "items": [
+            {
+              "ko": "시간축 타임라인 — 시점별 침수 확산 표시",
+              "en": "Timeline — flood spread by time step",
+              "ja": "タイムライン — 時点ごとの浸水拡大を表示"
+            },
+            {
+              "ko": "사건 리포트 — 요약 지표와 영향 추이 기록",
+              "en": "Incident report — summary figures and impact trend",
+              "ja": "インシデントレポート — 要約指標と影響推移を記録"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "대응",
+            "en": "Respond",
+            "ja": "対応"
+          },
+          "audience": {
+            "ko": "운영·현장",
+            "en": "Operations · field",
+            "ja": "運用・現場"
+          },
+          "items": [
+            {
+              "ko": "대응 운영 — 사건별 과업과 진행 상태",
+              "en": "Response operations — tasks and status per incident",
+              "ja": "対応運用 — インシデントごとのタスクと進捗"
+            },
+            {
+              "ko": "모바일 현장 화면 — 점검·통제 준비 체크리스트",
+              "en": "Mobile field screens — inspection and closure checklists",
+              "ja": "モバイル現場画面 — 点検・規制準備のチェックリスト"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "LAYER EXPLORER"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "공간 레이어 탐색",
+        "en": "Spatial layer explorer",
+        "ja": "空間レイヤー探索"
+      },
+      "body": {
+        "ko": "여섯 개 활성 레이어의 표시를 관리하고 위험 영역의 불투명도와 속성을 확인하는 조작 중심 GIS UI입니다.",
+        "en": "Six active layers, opacity controls and selected risk-area properties put GIS configuration at the center of the screen.",
+        "ja": "6つの表示中レイヤー、不透明度、選択した危険領域の属性を扱う操作中心のGIS UIです。"
+      },
+      "images": [
+        "civera-layer-explorer"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "SCENARIO COMPARISON"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "조건을 바꾸면 무엇이 달라지는가",
+        "en": "What changes when conditions change",
+        "ja": "条件が変わると何が変わるか"
+      },
+      "body": {
+        "ko": "강우 조건이 다른 세 시나리오를 같은 지도 범위와 같은 지표로 나란히 배치해, 영향 범위와 위험 등급의 차이를 한 번에 비교하도록 설계했습니다.",
+        "en": "Three scenarios with different rainfall conditions sit side by side with the same map extent and the same metrics, so differences in impact and risk level read at once.",
+        "ja": "降雨条件の異なる3つのシナリオを同じ地図範囲・同じ指標で並べ、影響範囲とリスク等級の違いを一度に比較できるよう設計しました。"
+      },
+      "images": [
+        "civera-scenario-comparison"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "RESPONSE OPERATIONS"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "사건에서 과업으로",
+        "en": "From incident to tasks",
+        "ja": "インシデントからタスクへ"
+      },
+      "body": {
+        "ko": "사건 하나에 연결된 대응 과업을 순서대로 나열하고 완료·진행·대기 상태와 집계를 함께 표시해, 운영자가 남은 일을 바로 파악하도록 구성했습니다.",
+        "en": "Response tasks linked to one incident are listed in order with completed, in-progress and pending states and totals, so operators can see at once what remains.",
+        "ja": "一つのインシデントに紐づく対応タスクを順に並べ、完了・進行中・待機の状態と集計を表示し、残りの作業をすぐ把握できる構成です。"
+      },
+      "images": [
+        "civera-response-center"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "06",
+        "label": "MORE SCREENS"
+      },
+      "heading": {
+        "ko": "시간축과 사건 리포트",
+        "en": "Timeline and incident report",
+        "ja": "時間軸と事案レポート"
+      },
+      "intro": {
+        "ko": "모든 수치는 가상 시나리오 값입니다. 실제 센서·GIS·예측 모델과 연결되지 않은 화면 시안입니다.",
+        "en": "All figures are sample scenario values. These screens are not connected to real sensors, GIS or forecasting models.",
+        "ja": "数値はすべて仮想シナリオの値です。実際のセンサー・GIS・予測モデルとは接続していない画面案です。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "시간에 따라 번지는 범위를 읽다",
+            "en": "Reading how the flood spreads over time",
+            "ja": "時間とともに広がる範囲を読む"
+          },
+          "body": {
+            "ko": "하나의 강우 시나리오를 T+00·T+30·T+60 세 시점으로 나누어, 시점마다 침수 건물과 도로 수가 어떻게 늘어나는지 타임라인으로 보여줍니다. 화면의 수치는 디자인 시연용 가상 값입니다.",
+            "en": "One rainfall scenario is split into T+00, T+30 and T+60, and a timeline shows how affected buildings and roads grow at each step. All figures are fictional values for the design demo.",
+            "ja": "一つの降雨シナリオをT+00・T+30・T+60の3時点に分け、浸水建物と道路の数がどう増えるかをタイムラインで示します。画面の数値はデザイン用の架空の値です。"
+          },
+          "image": "civera-flood-timeline"
+        },
+        {
+          "title": {
+            "ko": "경과를 한 장으로 남기다",
+            "en": "One page for the whole incident",
+            "ja": "経過を一枚に残す"
+          },
+          "body": {
+            "ko": "사건의 영향 건물·도로·시설·과업 수와 검토 상태를 요약하고, 시간대별 영향 추이를 그래프로 정리한 리포트 화면입니다. 수치는 모두 가상 시나리오 값이며 실제 예측 결과가 아닙니다.",
+            "en": "A report screen summarizing affected buildings, roads, facilities, tasks and review status, with a chart of impact over time. All figures are fictional scenario values, not real forecasts.",
+            "ja": "影響建物・道路・施設・タスク数と確認状況を要約し、時間帯ごとの影響推移をグラフにまとめたレポート画面です。数値はすべて架空のシナリオ値で、実際の予測結果ではありません。"
+          },
+          "image": "civera-incident-report"
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "07",
+        "label": "FIELD MOBILE"
+      },
+      "layout": "phones",
+      "surface": "accent",
+      "heading": {
+        "ko": "현장에서 이어지는 대응",
+        "en": "Response that continues in the field",
+        "ja": "現場へつながる対応"
+      },
+      "body": {
+        "ko": "현장 담당자를 위한 모바일 화면 두 가지입니다. 지하차도 점검과 통제 준비 과업마다 체크리스트·사진 첨부·인원과 장비 현황을 두고, 상황판의 과업과 같은 ID로 연결되도록 구성했습니다.",
+        "en": "Two mobile screens for field staff. Each task, underpass inspection and closure preparation, has a checklist, photo evidence or crew and equipment status, and carries the same ID as the task on the command screen.",
+        "ja": "現場担当者向けのモバイル画面2種です。地下道点検と規制準備の各タスクにチェックリスト、写真添付、人員・機材の状況を置き、ダッシュボードのタスクと同じIDでつながる構成です。"
+      },
+      "images": [
+        "civera-mobile-inspection",
+        "civera-mobile-response"
+      ]
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "SEE THE CITY. ACT TOGETHER.",
+        "en": "SEE THE CITY. ACT TOGETHER.",
+        "ja": "SEE THE CITY. ACT TOGETHER."
+      },
+      "sub": {
+        "ko": "CIVERA TWIN은 도시 공간 정보와 시나리오, 현장 대응을 하나의 운영 화면으로 엮어 본 PIUS 자체 UI 콘셉트 데모입니다. 3D·GIS·IoT 연동이나 시뮬레이션 엔진 구현, 실제 예측 결과를 의미하지 않습니다.",
+        "en": "CIVERA TWIN is a PIUS-made UI concept demo that weaves city spatial information, scenarios and field response into one operations screen. It does not represent implemented 3D, GIS or IoT integration, a simulation engine or real forecasts.",
+        "ja": "CIVERA TWINは、都市空間情報、シナリオ、現場対応を一つの運用画面に編み上げたPIUS独自のUIコンセプトデモです。3D・GIS・IoT連携やシミュレーションエンジンの実装、実際の予測結果を示すものではありません。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "등록 프롬프트(2026-11-06) 기준. PIUS 자체 데모·PoC, 정적 UI 시안 10장. 도시(Aurora City)·사건(FLD-027)·인물·수치는 모두 가상.",
+    "status review — 사용자 승인 전 approved 불가. scope·results 블록 미사용.",
+    "3D·GIS·IoT·시뮬레이션 구현 주장 금지. 화면 수치는 실제 예측으로 표기하지 않음.",
+    "서비스 9항목은 렌더러 칸 수 한계(최대 6칸)로 분석·모니터링·대응 3칸×3항목으로 묶음.",
+    "B실 재디자인 반영(2026-11-10): civera-layer-explorer만 2D 레이어 화면으로 교체·노출. B실이 제안한 command-center·flood-timeline 교체본은 사건 기준(2027-07-15, T+00 24·T+30 71·T+60 126동)과 맞지 않아 반영하지 않고 기존 화면을 유지."
+  ]
+}

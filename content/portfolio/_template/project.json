@@ -1,0 +1,30 @@
+{
+ "id": "__SLUG__",
+ "slug": "__SLUG__",
+ "status": "draft",
+ "visible": true,
+ "featured": false,
+ "order": 100,
+ "includeInPdf": true,
+
+ "title": { "ko": "프로젝트명", "en": "", "ja": "" },
+ "subtitle": { "ko": "한 줄 부제목", "en": "", "ja": "" },
+ "summary": { "ko": "목록 카드에 나오는 한 줄 설명", "en": "", "ja": "" },
+ "overview": { "ko": "프로젝트 개요 2~3문장", "en": "", "ja": "" },
+ "categories": ["web"],
+ "platforms": [{ "type": "web" }],
+ "scope": [],
+ "theme": { "accent": "#bfd6ff", "accentInk": "#0b1220", "cover": "dark" },
+ "thumbnail": ["main"],
+ "reviewNotes": ["상태·연도·수행 범위·공개 승인 여부 확인 필요"],
+
+ "images": [
+  { "id": "main", "file": null, "kind": "desktop", "alt": { "ko": "대표 화면", "en": "", "ja": "" }, "placeholder": { "ko": "대표 화면", "en": "", "ja": "" } }
+ ],
+
+ "blocks": [
+  { "type": "cover", "headline": { "ko": "핵심 메시지", "en": "", "ja": "" }, "images": ["main"] },
+  { "type": "overview", "section": { "index": "02", "label": "OVERVIEW" }, "lead": { "ko": "프로젝트를 한 문장으로", "en": "", "ja": "" } },
+  { "type": "scope", "section": { "index": "03", "label": "PROJECT SCOPE" } }
+ ]
+}

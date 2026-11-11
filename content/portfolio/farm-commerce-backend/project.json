@@ -1,0 +1,384 @@
+{
+  "id": "farm-commerce-backend",
+  "slug": "farm-commerce-backend",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 40,
+  "includeInPdf": true,
+  "title": {
+    "ko": "농수산물 커머스",
+    "en": "Farm Commerce",
+    "ja": "農水産物コマース"
+  },
+  "subtitle": {
+    "ko": "농수산물 커머스 백엔드 API 서버",
+    "en": "Backend API server for a farm-produce commerce platform",
+    "ja": "農水産物コマースのバックエンドAPIサーバー"
+  },
+  "summary": {
+    "ko": "상품·주문·회원·결제·관리자 도메인을 나눈 API 서버를 설계하고, PortOne으로 여러 PG 결제를 하나로 통합했습니다.",
+    "en": "Designed an API server split into product, order, member, payment and admin domains, and unified multiple payment gateways through PortOne.",
+    "ja": "商品・注文・会員・決済・管理者のドメインに分けたAPIサーバーを設計し、PortOneで複数のPG決済を一つに統合しました。"
+  },
+  "overview": {
+    "ko": "온라인 판매의 기반이 되는 커머스 백엔드를 구축한 프로젝트입니다. 도메인별로 나눈 API와 DB를 설계하고, 주문 생성부터 결제 검증·정산까지의 흐름을 모듈로 만들었습니다.",
+    "en": "A project that built the commerce backend behind online sales. We designed APIs and a database split by domain, and turned the flow from order creation through payment verification to settlement into modules.",
+    "ja": "オンライン販売の基盤となるコマースバックエンドを構築したプロジェクトです。ドメイン別に分けたAPIとDBを設計し、注文作成から決済検証・精算までの流れをモジュール化しました。"
+  },
+  "industry": {
+    "ko": "농수산물 유통",
+    "en": "Farm & seafood retail",
+    "ja": "農水産物流通"
+  },
+  "categories": [
+    "commerce",
+    "integration"
+  ],
+  "platforms": [
+    {
+      "type": "api"
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "관리자 기능",
+        "en": "Admin functions",
+        "ja": "管理者機能"
+      }
+    }
+  ],
+  "period": "2025.10 – 2026.01",
+  "year": 2026,
+  "stack": [
+    "Django",
+    "Django ORM",
+    "REST API",
+    "MariaDB",
+    "PortOne"
+  ],
+  "scope": [
+    {
+      "key": "backend"
+    },
+    {
+      "key": "api"
+    }
+  ],
+  "theme": {
+    "accent": "#5A6B2F",
+    "accentInk": "#1B1D22",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "commerce-app"
+  ],
+  "images": [
+    {
+      "id": "commerce-app",
+      "kind": "mobile",
+      "file": "commerce-app.webp",
+      "alt": {
+        "ko": "커머스 고객 앱 홈",
+        "en": "Commerce customer app home",
+        "ja": "コマース顧客アプリのホーム"
+      },
+      "caption": {
+        "ko": "기획전 배너와 특가·실시간 인기 상품을 보여주는 농수산물 커머스 고객 앱의 홈 화면입니다.",
+        "en": "The home screen of the produce-commerce customer app, with a feature banner, deals and trending products.",
+        "ja": "特集バナーと特価・人気商品を表示する農水産物コマース顧客アプリのホーム画面です。"
+      }
+    },
+    {
+      "id": "farm-commerce-admin-orders",
+      "kind": "desktop",
+      "file": "farm-commerce-admin-orders.webp",
+      "alt": {
+        "ko": "농수산물 커머스 주문 운영 목록 및 결제 검증 상태 시연 화면",
+        "en": "Order operations table and payment-verification statuses for a produce-commerce UI demo",
+        "ja": "農水産物コマースの注文管理一覧と決済検証状態を示すデモUI"
+      },
+      "caption": {
+        "ko": "주문 4건의 결제 검증·배송 단계를 보여주는 관리자 주문 목록 시연 UI입니다.",
+        "en": "Illustrative admin order list showing verification and fulfillment stages across four sample orders.",
+        "ja": "4件のサンプル注文の決済検証と配送段階を示す管理画面デモです。"
+      }
+    },
+    {
+      "id": "farm-commerce-admin-catalog",
+      "kind": "desktop",
+      "file": "farm-commerce-admin-catalog.webp",
+      "alt": {
+        "ko": "경북 햇사과 상품정보와 판매가·재고 편집 화면",
+        "en": "Produce catalog editor for apple product, price, and inventory",
+        "ja": "りんごの商品情報・販売価格・在庫編集画面"
+      },
+      "caption": {
+        "ko": "FC-PD-00042 경북 햇사과 5kg의 판매가 29,800원, 재고 64개, 안전재고 20개를 연결한 관리자 편집 UI입니다.",
+        "en": "An illustrative catalog editor for FC-PD-00042: ₩29,800 price, 64 units on hand, and a 20-unit safety threshold.",
+        "ja": "FC-PD-00042の販売価格29,800ウォン、在庫64個、安全在庫20個を示す商品編集UIです。"
+      }
+    },
+    {
+      "id": "farm-commerce-admin-order-detail",
+      "kind": "desktop",
+      "file": "farm-commerce-admin-order-detail.webp",
+      "alt": {
+        "ko": "주문 처리 상세 및 PortOne 결제 검증 시연 화면",
+        "en": "Order fulfillment detail and PortOne verification UI demo",
+        "ja": "注文処理詳細とPortOne決済検証のデモUI"
+      },
+      "caption": {
+        "ko": "주문 FC-261110-1042의 결제 검증과 상품 준비·출고 단계를 분리해 표현한 시연 UI입니다.",
+        "en": "Illustrative detail view separating verified payment, product preparation, and shipment for order FC-261110-1042.",
+        "ja": "注文FC-261110-1042の決済検証と商品準備・出荷段階を分けて表したデモUIです。"
+      }
+    },
+    {
+      "id": "farm-commerce-admin-payments",
+      "kind": "desktop",
+      "file": "farm-commerce-admin-payments.webp",
+      "alt": {
+        "ko": "PortOne 거래 대사 및 정산 검토 시연 화면",
+        "en": "PortOne transaction reconciliation and settlement review UI demo",
+        "ja": "PortOne取引照合・精算確認のデモUI"
+      },
+      "caption": {
+        "ko": "결제 검증 완료 131,400원과 검증 대기 36,300원을 구분하는 거래 대사 시연 UI입니다.",
+        "en": "Illustrative payment reconciliation distinguishing KRW 131,400 verified and KRW 36,300 pending.",
+        "ja": "検証完了131,400ウォンと検証待ち36,300ウォンを区別した取引照合デモUIです。"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "COMMERCE API",
+        "en": "COMMERCE API",
+        "ja": "COMMERCE API"
+      },
+      "headline": {
+        "ko": "주문부터 결제 검증, 정산까지\n하나의 흐름으로.",
+        "en": "From order to payment verification\nand settlement, in one flow.",
+        "ja": "注文から決済検証、精算まで、\n一つの流れで。"
+      },
+      "sub": {
+        "ko": "API·DB 설계 · PortOne 결제 · 주문·정산 · 관리자 기능",
+        "en": "API & DB design · PortOne payments · Orders & settlement · Admin",
+        "ja": "API・DB設計・PortOne決済・注文・精算・管理者機能"
+      },
+      "images": [
+        "commerce-app"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "농수산물 온라인 판매에 필요한 상품·주문·결제·정산을 도메인 단위 API로 나누어 설계했습니다.",
+        "en": "Products, orders, payments and settlement for online farm-produce sales were designed as domain-level APIs.",
+        "ja": "農水産物のオンライン販売に必要な商品・注文・決済・精算を、ドメイン単位のAPIに分けて設計しました。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "도메인별 API",
+            "en": "APIs by domain",
+            "ja": "ドメイン別API"
+          },
+          "body": {
+            "ko": "회원·상품·주문·결제·관리자 기능을 모듈로 나눈 API 서버를 설계했습니다.",
+            "en": "An API server split into member, product, order, payment and admin modules.",
+            "ja": "会員・商品・注文・決済・管理者機能をモジュールに分けたAPIサーバーを設計しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "결제 통합",
+            "en": "One payment layer",
+            "ja": "決済の統合"
+          },
+          "body": {
+            "ko": "여러 PG·카드·간편결제를 PortOne으로 통합하고 결제 검증을 구현했습니다.",
+            "en": "Several PGs, cards and easy-pay methods go through PortOne, with payment verification.",
+            "ja": "複数のPG・カード・簡易決済をPortOneで統合し、決済検証を実装しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "주문 상태 흐름",
+            "en": "Order state flow",
+            "ja": "注文状態の流れ"
+          },
+          "body": {
+            "ko": "주문 생성 → 결제 검증 → 정산으로 이어지는 상태 전이를 설계했습니다.",
+            "en": "The state flow from order creation to payment verification to settlement.",
+            "ja": "注文作成 → 決済検証 → 精算へとつながる状態遷移を設計しました。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "02",
+        "label": "ADMIN DEMO"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주문 운영·결제 검증",
+        "en": "Order operations and payment verification",
+        "ja": "注文管理・決済検証"
+      },
+      "body": {
+        "ko": "실제 백엔드 API 업무를 설명하기 위해 재구성한 관리자 WEB 시연 UI입니다. 당시 개발된 화면을 의미하지 않습니다.",
+        "en": "Illustrative administrator UI reconstructed to explain existing backend API workflows; not a claim about a delivered frontend.",
+        "ja": "既存のバックエンドAPI業務を説明するために再構成した管理Webデモです。実際に納品したフロント画面を示すものではありません。"
+      },
+      "images": [
+        "farm-commerce-admin-orders"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "03",
+        "label": "OPERATIONS SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "상품·출고·결제 검토",
+        "en": "Catalog, fulfillment, and payment review",
+        "ja": "商品・出荷・決済の確認"
+      },
+      "images": [
+        "farm-commerce-admin-catalog",
+        "farm-commerce-admin-order-detail",
+        "farm-commerce-admin-payments"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "04",
+        "label": "KEY FEATURES"
+      },
+      "heading": {
+        "ko": "주요 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "API · DB 설계",
+            "en": "API & DB design",
+            "ja": "API・DB設計"
+          },
+          "body": {
+            "ko": "상품·주문·회원·결제·관리자 도메인을 나눈 모듈형 API 서버를 Django ORM으로 빠르게 구축했습니다.",
+            "en": "Built a modular API server split into product, order, member, payment and admin domains, quickly, with Django ORM.",
+            "ja": "商品・注文・会員・決済・管理者のドメインに分けたモジュール型APIサーバーを、Django ORMで素早く構築しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "PortOne 결제 연동",
+            "en": "PortOne payment integration",
+            "ja": "PortOne決済連携"
+          },
+          "body": {
+            "ko": "카드·간편결제 등 여러 PG를 PortOne으로 통합하고 결제 검증을 구현해 결제를 자동화했습니다.",
+            "en": "Unified several gateways, including cards and easy-pay, through PortOne, and implemented payment verification to automate payments.",
+            "ja": "カード・簡易決済など複数のPGをPortOneで統合し、決済検証を実装して決済を自動化しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "주문 관리 · 정산",
+            "en": "Order management & settlement",
+            "ja": "注文管理・精算"
+          },
+          "body": {
+            "ko": "주문 생성, 결제 검증, 정산으로 이어지는 흐름을 모듈화하고 주문 상태 전이 로직을 설계했습니다.",
+            "en": "Modularized the flow from order creation through payment verification to settlement, with order state-transition logic.",
+            "ja": "注文作成から決済検証、精算へ続く流れをモジュール化し、注文ステータスの遷移ロジックを設計しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "관리자 기능",
+            "en": "Admin functions",
+            "ja": "管理者機能"
+          },
+          "body": {
+            "ko": "상품 등록·수정 API와 관리자 전용 운영 기능으로 온라인 판매의 기반을 마련했습니다.",
+            "en": "Product create/update APIs and admin-only operations laid the groundwork for online sales.",
+            "ja": "商品登録・修正APIと管理者専用の運営機能で、オンライン販売の基盤を整えました。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "05",
+        "label": "TECHNOLOGY"
+      },
+      "heading": {
+        "ko": "기술 선택",
+        "en": "Technology choices",
+        "ja": "技術選定"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "Django ORM",
+            "en": "Django ORM",
+            "ja": "Django ORM"
+          },
+          "body": {
+            "ko": "커머스 도메인 개발의 생산성을 위해 선택했습니다.",
+            "en": "Chosen for productivity in the commerce domain.",
+            "ja": "コマースドメイン開発の生産性のために選定しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "PortOne",
+            "en": "PortOne",
+            "ja": "PortOne"
+          },
+          "body": {
+            "ko": "여러 PG를 연동하는 부담을 줄이고 결제 안정성을 높였습니다.",
+            "en": "Reduces the burden of integrating multiple gateways and strengthens payment reliability.",
+            "ja": "複数PG連携の負担を減らし、決済の安定性を高めました。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "PROJECT SCOPE"
+      },
+      "heading": {
+        "ko": "수행 범위",
+        "en": "Scope of work",
+        "ja": "担当範囲"
+      }
+    }
+  ]
+}

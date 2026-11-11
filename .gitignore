@@ -5,3 +5,16 @@ out
 .env
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude 미리보기·전달 산출물
+.preview-build
+preview-dist
+preview-files.json
+dist-handoff
+
+# 포트폴리오: 빌드 때 content/portfolio에서 자동 생성 (공개 단계에 해당하는 것만 복사됨)
+/public/portfolio
+/.portfolio
+# 포트폴리오 PDF·PNG 출력 (로컬 전용)
+/exports
+/.export-build

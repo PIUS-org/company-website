@@ -1,0 +1,491 @@
+{
+  "id": "fieldnest",
+  "slug": "fieldnest",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 130,
+  "includeInPdf": true,
+  "title": {
+    "ko": "FIELDNEST — 다지점 시설 유지보수",
+    "en": "FIELDNEST — Multi-Site Maintenance",
+    "ja": "FIELDNEST — 複数拠点の設備保守管理"
+  },
+  "subtitle": {
+    "ko": "시설 접수·작업지시·현장 점검·완료 보고",
+    "en": "From service requests to verified field work",
+    "ja": "設備依頼から現場作業・完了報告まで"
+  },
+  "summary": {
+    "ko": "다지점 상업시설의 고장 접수와 기술자 배정, 점검 이력, 완료 확인을 연결한 시설 유지보수 UI 구성안.",
+    "en": "A facilities maintenance UI concept connecting issues, technician dispatch, inspections, and closure.",
+    "ja": "複数施設の故障受付・技術者割当・点検・完了確認をつなぐ保守管理UI構想。"
+  },
+  "overview": {
+    "ko": "여러 지점의 시설 관리자가 고장 접수를 하나의 작업지시로 전환하고, 현장 기술자가 모바일에서 점검 결과와 사진을 기록하는 과정을 다룹니다. 생산 설비의 제조 실적이나 건설 공정이 아닌, 운영 중인 건물의 유지보수 업무에 집중합니다.",
+    "en": "This independent concept follows building managers converting site issues into work orders and field technicians recording checks and photos on mobile. It concerns operating facilities, not factory production or construction schedules.",
+    "ja": "稼働中の施設で故障連絡を作業指示に変換し、現場技術者がモバイルで点検結果や写真を記録する流れを想定します。製造実績や建設工程ではなく、既存施設の維持保守に特化します。"
+  },
+  "industry": {
+    "ko": "시설 관리·현장 서비스",
+    "en": "Facilities Maintenance and Field Service",
+    "ja": "施設保守・フィールドサービス"
+  },
+  "categories": [
+    "erp",
+    "web",
+    "mobile"
+  ],
+  "platforms": [
+    {
+      "type": "admin",
+      "label": {
+        "ko": "시설 운영 WEB",
+        "en": "Facilities operations web",
+        "ja": "施設運用Web"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "현장 기술자 모바일 WEB",
+        "en": "Technician mobile web",
+        "ja": "現場技術者向けモバイルWeb"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#5B776B",
+    "accentInk": "#24382D",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "fieldnest-work-order-board"
+  ],
+  "images": [
+    {
+      "id": "fieldnest-work-order-board",
+      "kind": "desktop",
+      "file": "fieldnest-work-order-board.webp",
+      "alt": {
+        "ko": "시설 작업지시 보드",
+        "en": "Facility work-order board",
+        "ja": "施設作業指示ボード"
+      },
+      "caption": {
+        "ko": "작업 상태별로 시설 유지보수 요청을 관리하는 보드 화면입니다.",
+        "en": "A board that organizes facility maintenance requests by work status.",
+        "ja": "施設保守の依頼を作業状態ごとに管理するボード画面です。"
+      }
+    },
+    {
+      "id": "fieldnest-work-order-detail",
+      "kind": "desktop",
+      "file": "fieldnest-work-order-detail.webp",
+      "alt": {
+        "ko": "시설 작업 상세 화면",
+        "en": "Facility work-order detail",
+        "ja": "施設作業の詳細画面"
+      },
+      "caption": {
+        "ko": "작업 내용과 체크리스트, 일정 정보를 확인하는 상세 화면입니다.",
+        "en": "A detail view of the job, its checklist and its schedule.",
+        "ja": "作業内容・チェックリスト・日程を確認する詳細画面です。"
+      }
+    },
+    {
+      "id": "fieldnest-asset-maintenance-history",
+      "kind": "desktop",
+      "file": "fieldnest-asset-maintenance-history.webp",
+      "alt": {
+        "ko": "설비 이력 관리 화면",
+        "en": "Equipment history",
+        "ja": "設備履歴の管理画面"
+      },
+      "caption": {
+        "ko": "설비별 점검 및 유지보수 이력을 조회하는 화면입니다.",
+        "en": "A view of inspection and maintenance history for each piece of equipment.",
+        "ja": "設備ごとの点検・保守履歴を確認する画面です。"
+      }
+    },
+    {
+      "id": "fieldnest-technician-inspection-mobile",
+      "kind": "mobile",
+      "file": "fieldnest-technician-inspection-mobile.webp",
+      "alt": {
+        "ko": "현장 기술자 점검 모바일 화면",
+        "en": "Technician inspection on mobile",
+        "ja": "現場技術者の点検モバイル画面"
+      },
+      "caption": {
+        "ko": "현장에서 점검 항목과 사진을 등록하는 모바일 점검 화면입니다.",
+        "en": "A mobile screen for recording checklist items and photos on site.",
+        "ja": "現場で点検項目と写真を登録するモバイル点検画面です。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·정적 UI 데모를 위한 1차 텍스트 등록본. 실제 고객 프로젝트·서비스 개발 실적이 아님.",
+    "고도화 시 우선 검토할 화면: Multi-Site Work Order Board, Asset Work Detail, Technician Mobile Checklist, Completion Verification",
+    "3차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "현장의 문제를 접수부터 해결까지 연결합니다.",
+        "en": "Every site issue, tracked through resolution.",
+        "ja": "現場の問題を受付から解決までつなぐ。"
+      },
+      "images": [
+        "fieldnest-work-order-board"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "가상 공유오피스 세 지점의 냉방·조명·출입 설비를 관리하며, 강남 지점 4층 회의실 냉방 이상을 대표 작업으로 추적합니다.",
+        "en": "The demo tracks HVAC, lighting, and access systems across three fictional coworking locations, focusing on a cooling issue in a Gangnam meeting room.",
+        "ja": "架空のシェアオフィス3拠点で空調・照明・入退室設備を管理し、江南拠点4階会議室の冷房不調を代表事例として扱います。"
+      },
+      "body": {
+        "ko": "접수번호 SR-261109-018을 작업지시 WO-261109-034로 전환합니다. 09:05 접수, 09:20 배정, 10:10 현장 도착, 10:45 조치 완료, 11:00 관리자 확인으로 시점을 구분합니다. 가상 기술자 김도현이 냉방 필터 막힘을 점검하고 교체 부품 없이 청소 후 정상 동작을 보고합니다.",
+        "en": "Service request SR-261109-018 becomes work order WO-261109-034: reported 09:05, assigned 09:20, technician arrived 10:10, work completed 10:45, manager confirmed 11:00. Fictional technician Kim Do-hyeon cleans a blocked air filter and reports normal operation without replacing a part.",
+        "ja": "依頼SR-261109-018を作業指示WO-261109-034に変換します。09:05受付、09:20割当、10:10到着、10:45作業完了、11:00管理者確認です。架空の技術者キム・ドヒョンがフィルターの詰まりを清掃し、部品交換なしで正常稼働を報告します。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "시설별 작업 추적",
+            "en": "Asset-specific tracking",
+            "ja": "設備別作業の追跡"
+          },
+          "body": {
+            "ko": "지점·층·시설 자산과 작업지시를 정확하게 연결합니다.",
+            "en": "Bind every work order to its site, floor, and asset.",
+            "ja": "拠点・階・設備資産と作業指示を紐付けます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장·관리자 상태 일치",
+            "en": "Field-to-office consistency",
+            "ja": "現場と管理側の状態一致"
+          },
+          "body": {
+            "ko": "기술자 조치 완료와 관리자 최종 확인을 구분합니다.",
+            "en": "Separate technician completion from manager verification.",
+            "ja": "技術者の作業完了と管理者の最終確認を分けます。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "접수부터 관리자 확인까지",
+        "en": "From fault report to sign-off",
+        "ja": "受付から管理者確認まで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "고장 접수",
+            "en": "Log issue",
+            "ja": "故障受付"
+          },
+          "body": {
+            "ko": "강남 지점 회의실 냉방 이상을 09:05에 접수합니다.",
+            "en": "Log the cooling problem at 09:05.",
+            "ja": "江南拠点の冷房不調を09:05に受け付けます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "작업 배정",
+            "en": "Assign work order",
+            "ja": "作業割当"
+          },
+          "body": {
+            "ko": "WO-261109-034를 김도현에게 09:20에 배정합니다.",
+            "en": "Assign WO-261109-034 to Kim Do-hyeon at 09:20.",
+            "ja": "09:20にWO-261109-034を技術者へ割り当てます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장 점검",
+            "en": "Inspect on site",
+            "ja": "現場点検"
+          },
+          "body": {
+            "ko": "10:10 도착 후 필터 상태와 송풍 상태를 확인합니다.",
+            "en": "Check the filter and airflow after arriving at 10:10.",
+            "ja": "10:10到着後にフィルターと送風状態を点検します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "조치 완료",
+            "en": "Complete work",
+            "ja": "作業完了"
+          },
+          "body": {
+            "ko": "10:45 필터 청소와 시험 작동 결과를 기록합니다.",
+            "en": "Record filter cleaning and a successful test at 10:45.",
+            "ja": "10:45に清掃と動作確認の結果を記録します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "관리자 검수",
+            "en": "Manager verifies",
+            "ja": "管理者確認"
+          },
+          "body": {
+            "ko": "11:00 관리자 확인 후 Closed 상태로 변경합니다.",
+            "en": "Close the case after manager verification at 11:00.",
+            "ja": "11:00に管理者確認後、案件を終了します。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "데모 사례: 강남 지점 냉방 이상 접수가 작업지시로 바뀌고, 기술자 조치 후 관리자 확인으로 종료되기까지(09:05–11:00).",
+        "en": "Demo case: a cooling fault at the Gangnam site becomes a work order, is fixed by a technician and closed by the manager (09:05–11:00).",
+        "ja": "デモ事例：江南支店の冷房異常の受付が作業指示になり、技術者の対応後に管理者確認で完了するまで(09:05–11:00)。"
+      }
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "WORK ORDER"
+      },
+      "layout": "desktopPhones",
+      "surface": "light",
+      "heading": {
+        "ko": "사무실의 작업 상세와 현장의 점검 화면",
+        "en": "Office work order, on-site inspection",
+        "ja": "事務所の作業詳細と現場の点検画面"
+      },
+      "body": {
+        "ko": "관리자가 보는 작업 상세(WO-261109-034)와 기술자가 현장에서 체크리스트·사진을 등록하는 모바일 화면이 같은 작업지시를 기준으로 이어집니다.",
+        "en": "The detail view managers use for WO-261109-034 and the mobile screen where the technician logs checklist items and photos on site share one work order.",
+        "ja": "管理者が見る作業詳細（WO-261109-034）と、技術者が現場でチェックリストと写真を登録するモバイル画面が、同じ作業指示でつながります。"
+      },
+      "images": [
+        "fieldnest-work-order-detail",
+        "fieldnest-technician-inspection-mobile"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "ASSET HISTORY"
+      },
+      "layout": "desktop",
+      "heading": {
+        "ko": "설비별 정비 이력",
+        "en": "Maintenance history per asset",
+        "ja": "設備ごとの整備履歴"
+      },
+      "body": {
+        "ko": "완료된 작업은 해당 설비(HVAC-GL-04-021)의 이력으로 남아, 이전 점검·정비 기록과 함께 조회됩니다.",
+        "en": "Completed work is added to the asset’s record (HVAC-GL-04-021) and listed alongside earlier inspections and maintenance.",
+        "ja": "完了した作業は該当設備（HVAC-GL-04-021）の履歴に残り、過去の点検・整備記録と一緒に確認できます。"
+      },
+      "images": [
+        "fieldnest-asset-maintenance-history"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "05",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "시설 운영자와 기술자의 협업",
+        "en": "Coordinated facilities and field work",
+        "ja": "施設管理者と技術者の協業"
+      },
+      "intro": {
+        "ko": "사무실의 작업지시와 현장의 점검 결과가 하나의 기록으로 연결됩니다.",
+        "en": "Office work orders and field inspection records share one job history.",
+        "ja": "管理画面の作業指示と現場の点検記録を一つの履歴につなぎます。"
+      },
+      "note": {
+        "ko": "자체 정적 UI 데모이며 실제 IoT 센서, GPS 추적, 현장 사진 서버, 자동 배정 기능은 구현하지 않았습니다.",
+        "en": "Independent static UI concept; no live IoT, GPS tracking, photo backend, or dispatch automation is implemented.",
+        "ja": "自主制作静的UIデモであり、実際のIoT・GPS追跡・写真サーバー・自動割当は実装していません。"
+      },
+      "columns": [
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "다지점 시설 운영",
+            "en": "Multi-site operations",
+            "ja": "複数拠点の施設運用"
+          },
+          "audience": {
+            "ko": "시설 관리자·지점 담당자",
+            "en": "Facilities and site managers",
+            "ja": "設備管理者・拠点担当者"
+          },
+          "items": [
+            {
+              "ko": "지점별 시설 목록·고장 접수",
+              "en": "Sites, assets, and fault tickets",
+              "ja": "拠点別設備一覧と故障受付"
+            },
+            {
+              "ko": "작업 우선순위·기술자 배정",
+              "en": "Job priority and technician assignment",
+              "ja": "優先順位と技術者の割当"
+            },
+            {
+              "ko": "완료 근거 확인·작업 종료",
+              "en": "Verify evidence and close jobs",
+              "ja": "作業証跡の確認と完了処理"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "현장 작업 모바일",
+            "en": "Field technician mobile",
+            "ja": "現場技術者モバイル"
+          },
+          "audience": {
+            "ko": "유지보수 기술자",
+            "en": "Maintenance technicians",
+            "ja": "保守技術者"
+          },
+          "items": [
+            {
+              "ko": "배정된 작업·위치·자산 정보",
+              "en": "Assigned jobs, locations, and assets",
+              "ja": "割当作業・場所・設備情報"
+            },
+            {
+              "ko": "점검 체크리스트·조치 메모",
+              "en": "Inspection checklist and repair notes",
+              "ja": "点検チェックリスト・作業メモ"
+            },
+            {
+              "ko": "전후 사진·완료 보고",
+              "en": "Before-and-after evidence and reports",
+              "ja": "作業前後の写真・完了報告"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "06",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "사무실과 현장의 역할 분리",
+        "en": "Office and field, each with its own screen",
+        "ja": "事務所と現場の役割分担"
+      },
+      "intro": {
+        "ko": "관리자는 웹에서 배정·확인하고, 기술자는 모바일 체크리스트로 조치를 기록합니다.",
+        "en": "Managers assign and sign off on the web; technicians log the work on a mobile checklist.",
+        "ja": "管理者はWebで割り当て・確認し、技術者はモバイルのチェックリストで対応を記録します。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "지점·자산 목록",
+            "en": "Site and asset register",
+            "ja": "拠点・設備台帳"
+          },
+          "body": {
+            "ko": "건물·층·기기별 작업 이력을 통합 조회합니다.",
+            "en": "Filter work history by building, floor, and asset.",
+            "ja": "建物・階・機器ごとの作業履歴を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "작업지시 보드",
+            "en": "Work-order board",
+            "ja": "作業指示ボード"
+          },
+          "body": {
+            "ko": "접수·배정·진행·확인·종료 상태를 구분합니다.",
+            "en": "Track reported, assigned, in progress, verified, and closed work.",
+            "ja": "受付・割当・進行・確認・終了を区別します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일 체크리스트",
+            "en": "Mobile checklist",
+            "ja": "モバイル点検表"
+          },
+          "body": {
+            "ko": "기술자가 현장에서 점검 항목과 조치 메모를 입력합니다.",
+            "en": "Technicians enter checks and service notes on mobile.",
+            "ja": "技術者が現場で点検項目と作業メモを入力します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "완료 확인",
+            "en": "Verification record",
+            "ja": "完了確認"
+          },
+          "body": {
+            "ko": "사진·조치 메모·관리자 확인을 한 기록에 남깁니다.",
+            "en": "Consolidate evidence, repair notes, and manager confirmation.",
+            "ja": "写真・作業メモ・管理者確認を一つの記録に集約します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "현장 대응을 더 명확하고 추적 가능한 업무로.",
+        "en": "Make field service clear and traceable.",
+        "ja": "現場対応を、明確で追跡可能な業務へ。"
+      },
+      "sub": {
+        "ko": "시설 유지보수와 모바일 현장 업무를 표현한 자체 UI 데모.",
+        "en": "An independent UI concept for maintenance operations and field work.",
+        "ja": "設備保守・現場モバイル業務を表現した自主制作UIデモ。"
+      }
+    }
+  ]
+}

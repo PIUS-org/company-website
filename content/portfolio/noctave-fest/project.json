@@ -1,0 +1,565 @@
+{
+  "id": "noctave-fest",
+  "slug": "noctave-fest",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 18,
+  "includeInPdf": true,
+  "title": {
+    "ko": "녹테이브 페스트 — 인터랙티브 음악·아트 페스티벌 플랫폼",
+    "en": "NOCTAVE FEST — Interactive Music & Art Festival",
+    "ja": "NOCTAVE FEST — インタラクティブ音楽・アートフェスティバル"
+  },
+  "subtitle": {
+    "ko": "공연을 발견하는 순간부터 나만의 페스티벌 일정까지",
+    "en": "From discovering artists to shaping a personal festival journey",
+    "ja": "アーティストとの出会いから、自分だけのフェス体験へ"
+  },
+  "summary": {
+    "ko": "강렬한 페스티벌 브랜딩과 아티스트 탐색·공연 일정·행사장 지도·모바일 티켓 경험을 결합한 반응형 UI 데모.",
+    "en": "A responsive UI concept uniting bold festival branding with artist discovery, timetables, venue maps and a mobile ticket experience.",
+    "ja": "印象的なフェスのブランディングとアーティスト検索、タイムテーブル、会場マップ、モバイルチケットを融合したレスポンシブUIデモ。"
+  },
+  "overview": {
+    "ko": "가상의 음악·아트 페스티벌을 위한 PIUS 자체 정적 프론트 디자인 사례.",
+    "en": "A PIUS-produced static front-end design concept for a fictional music and art festival.",
+    "ja": "架空の音楽・アートフェスティバルを想定したPIUS独自の静的フロントデザイン事例。"
+  },
+  "industry": {
+    "ko": "문화·공연·이벤트",
+    "en": "Culture, Live Entertainment & Events",
+    "ja": "文化・公演・イベント"
+  },
+  "categories": [
+    "web",
+    "platform",
+    "mobile"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "Desktop WEB",
+        "en": "Desktop WEB",
+        "ja": "Desktop WEB"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "Mobile WEB",
+        "en": "Mobile WEB",
+        "ja": "Mobile WEB"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#FF6F7A",
+    "accentInk": "#0A0B1D",
+    "cover": "dark",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "noctave-landing"
+  ],
+  "images": [
+    {
+      "id": "noctave-landing",
+      "kind": "desktop",
+      "file": "noctave-landing.webp",
+      "alt": {
+        "ko": "강렬한 페스티벌 타이포그래피, 공연 비주얼, 행사 일정과 라인업 탐색 버튼을 담은 데스크톱 랜딩 화면",
+        "en": "Desktop festival landing page with bold typography, live-show imagery, event dates and lineup buttons.",
+        "ja": "力強いタイポグラフィ、ライブビジュアル、開催日程、ラインアップへの導線を配置したデスクトップのトップ画面。"
+      },
+      "caption": {
+        "ko": "NOCTAVE FEST의 음악·아트 세계관을 소개하고 라인업과 티켓 탐색으로 연결하는 메인 화면.",
+        "en": "A festival introduction that connects the NOCTAVE identity to lineup and ticket exploration.",
+        "ja": "NOCTAVE FESTの音楽とアートの世界観を伝えるメインビジュアル。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "noctave-lineup",
+      "kind": "desktop",
+      "file": "noctave-lineup.webp",
+      "alt": {
+        "ko": "가상 아티스트의 포스터형 카드와 날짜·장르 필터로 구성한 라인업 탐색 화면",
+        "en": "Artist lineup screen with editorial posters, fictional performers and date and genre filters.",
+        "ja": "架空のアーティストのポスターと日付・ジャンル別フィルターを組み合わせたラインアップ画面。"
+      },
+      "caption": {
+        "ko": "포스터형 그리드와 필터를 결합해 아티스트를 찾아보는 경험.",
+        "en": "Discover performers through an editorial lineup with visual cards and filters.",
+        "ja": "ビジュアル重視のカードと絞り込み機能を組み合わせたアーティスト探索体験。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "noctave-artist-detail",
+      "kind": "desktop",
+      "file": "noctave-artist-detail.webp",
+      "alt": {
+        "ko": "NEON HAZE 아티스트 비주얼과 6월 19일 19:00 공연 정보, 일정 저장 상태를 보여주는 상세 화면",
+        "en": "NEON HAZE detail page showing an artist visual, June 19 performance at 19:00 and a saved-schedule state.",
+        "ja": "NEON HAZEのビジュアル、6月19日19:00の公演情報、予定への保存状態を示す詳細画面。"
+      },
+      "caption": {
+        "ko": "대형 아티스트 비주얼에서 공연 시간·스테이지 확인과 개인 일정 저장 상태까지.",
+        "en": "Artist storytelling paired with show details and a visible saved-schedule state.",
+        "ja": "アーティスト紹介から公演情報の確認、マイスケジュールへの保存までを表現。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "noctave-timetable",
+      "kind": "desktop",
+      "file": "noctave-timetable.webp",
+      "alt": {
+        "ko": "6월 19일 ORBIT·PRISM·GARDEN 3개 스테이지의 공연을 실제 시간 비율에 맞춰 배치한 타임테이블",
+        "en": "Saturday timetable with proportionally placed performances across ORBIT, PRISM and GARDEN stages.",
+        "ja": "6月19日のORBIT・PRISM・GARDEN各ステージの公演を時間軸に沿って配置したタイムテーブル。"
+      },
+      "caption": {
+        "ko": "시간축과 스테이지별 컬러로 동시 진행 공연을 비교하는 일정 UI.",
+        "en": "Compare overlapping festival sets through a time-scaled, color-coded timetable.",
+        "ja": "時間とステージごとの色分けで同時開催の公演を比較できるUI。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "noctave-venue-map",
+      "kind": "desktop",
+      "file": "noctave-venue-map.webp",
+      "alt": {
+        "ko": "NOCTAVE PARK의 2D 일러스트 지도와 ORBIT STAGE의 공연 상세 패널을 결합한 화면",
+        "en": "Illustrated NOCTAVE PARK map with venue markers and the selected ORBIT STAGE details.",
+        "ja": "NOCTAVE PARKの2Dイラストマップと、選択中のORBIT STAGEの公演情報パネル。"
+      },
+      "caption": {
+        "ko": "스테이지와 편의시설을 지도에서 찾아보고 선택 장소의 공연 정보를 확인.",
+        "en": "Locate stages and facilities, then inspect the selected stage schedule.",
+        "ja": "会場内のステージや施設を探し、選んだ場所の公演情報を確認。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "noctave-tickets",
+      "kind": "desktop",
+      "file": "noctave-tickets.webp",
+      "alt": {
+        "ko": "1일권·3일권·VIP 3일권 가격과 토요일 1일권 선택 상태를 보여주는 티켓 화면",
+        "en": "Ticket selection showing One Day, Three Day and VIP Three Day passes with a Saturday one-day selection.",
+        "ja": "1日券・3日通し券・VIP 3日通し券の料金と土曜日の1日券選択状態を示す画面。"
+      },
+      "caption": {
+        "ko": "브랜드 경험을 반영한 패스 비교와 날짜·수량 선택의 정적 UI.",
+        "en": "Compare fictional pass options and view date and quantity selection states.",
+        "ja": "架空のパスを比較し、日付と枚数を選ぶ画面の静的デザイン。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "noctave-mobile-home",
+      "kind": "mobile",
+      "file": "noctave-mobile-home.webp",
+      "alt": {
+        "ko": "모바일 세로 화면에 맞춰 재구성한 행사 비주얼, 헤드라이너 및 라인업 탐색 홈",
+        "en": "Mobile festival home with a portrait-format hero, headliners and lineup navigation.",
+        "ja": "縦長のモバイル画面に最適化したフェスティバルビジュアルとラインアップ導線。"
+      },
+      "caption": {
+        "ko": "데스크톱을 축소하지 않고 터치 탐색에 맞춘 모바일 페스티벌 홈.",
+        "en": "A portrait-first mobile home designed for browsing rather than a scaled desktop page.",
+        "ja": "デスクトップの縮小ではなく、タッチ操作を前提に設計したモバイルホーム。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "noctave-mobile-schedule",
+      "kind": "mobile",
+      "file": "noctave-mobile-schedule.webp",
+      "alt": {
+        "ko": "6월 19일 저장한 공연 4개와 NEON HAZE·MIRA SOL 사이 45분 중복 안내가 표시된 모바일 일정",
+        "en": "Mobile personal schedule with four saved Saturday shows and a 45-minute NEON HAZE/MIRA SOL overlap alert.",
+        "ja": "6月19日に保存した4公演とNEON HAZE・MIRA SOLの45分間の重複警告を示すモバイル画面。"
+      },
+      "caption": {
+        "ko": "나의 공연을 시간순으로 관리하고 19:30–20:15 일정 충돌을 확인.",
+        "en": "View four saved sets and the 19:30–20:15 schedule conflict.",
+        "ja": "保存した公演を時系列で確認し、19:30〜20:15の時間重複を把握。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "noctave-mobile-map",
+      "kind": "mobile",
+      "file": "noctave-mobile-map.webp",
+      "alt": {
+        "ko": "공연장 마커와 ORBIT STAGE 공연 정보 바텀시트를 표시한 모바일 행사장 지도",
+        "en": "Mobile venue map with stage markers and a bottom sheet for ORBIT STAGE.",
+        "ja": "ステージのマーカーとORBIT STAGEの詳細ボトムシートを備えたモバイル会場マップ。"
+      },
+      "caption": {
+        "ko": "지도 탐색과 선택된 스테이지 정보를 바텀시트로 연결.",
+        "en": "Explore the venue and inspect selected-stage details in a mobile bottom sheet.",
+        "ja": "マップ上の選択操作をボトムシート内の公演情報へつなぐUI。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "noctave-mobile-ticket",
+      "kind": "mobile",
+      "file": "noctave-mobile-ticket.webp",
+      "alt": {
+        "ko": "가상 토요일 패스, 티켓 ID, 입장 불가 데모 표시 및 비기능적 패턴을 담은 모바일 티켓 월렛",
+        "en": "Mobile ticket wallet with a fictional Saturday Pass, ticket ID and a clearly invalid demo pattern.",
+        "ja": "架空の土曜日パス、チケットID、入場不可の表示、無効な装飾パターンを含むモバイルチケット画面。"
+      },
+      "caption": {
+        "ko": "실제 발권 없이 브랜드 전용 티켓의 보관 상태를 시각화.",
+        "en": "A branded wallet visual for a demo pass, with no functional admission code.",
+        "ja": "実際の発券機能を持たないデモ用パスのウォレットUI。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DEMO · PoC",
+        "en": "DEMO · PoC",
+        "ja": "DEMO · PoC"
+      },
+      "headline": {
+        "ko": "FIND YOUR FREQUENCY.",
+        "en": "FIND YOUR FREQUENCY.",
+        "ja": "FIND YOUR FREQUENCY."
+      },
+      "sub": {
+        "ko": "음악과 디지털 아트가 만나는 밤. 세 개의 스테이지, 사흘의 경험을 하나의 화면에서 탐색합니다.",
+        "en": "Where music meets digital art. Explore three stages and three days through one cohesive experience.",
+        "ja": "音楽とデジタルアートが交わる夜。3つのステージと3日間の体験をひとつにつなぎます。"
+      },
+      "images": [
+        "noctave-landing"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "A DIGITAL FESTIVAL EXPERIENCE",
+        "en": "A DIGITAL FESTIVAL EXPERIENCE",
+        "ja": "A DIGITAL FESTIVAL EXPERIENCE"
+      },
+      "lead": {
+        "ko": "NOCTAVE FEST는 가상의 도심형 음악·아트 페스티벌을 위한 관람객 중심 Desktop·Mobile WEB UI 데모입니다. 개별적으로 흩어지기 쉬운 아티스트 정보, 공연 시간, 개인 일정, 행사장 공간, 티켓 정보를 하나의 시각 언어로 연결하도록 설계했습니다. 본 포트폴리오는 정적 화면 디자인 사례이며 실제 개최 행사나 운영 서비스가 아닙니다.",
+        "en": "NOCTAVE FEST is a visitor-centered desktop and mobile web UI demo for a fictional urban music and art festival. It unifies artist discovery, showtimes, saved schedules, venue navigation and ticket information within one visual system. This portfolio presents static interface concepts, not a real festival or operational service.",
+        "ja": "NOCTAVE FESTは、架空の都市型音楽・アートフェスティバルを想定した来場者向けデスクトップ・モバイルWeb UIデモです。アーティスト情報、公演時間、保存した予定、会場マップ、チケット情報を一貫したビジュアルでつなぎます。実在のイベントや稼働中のサービスではなく、静的な画面デザインの事例です。"
+      }
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "02",
+        "label": "SERVICES"
+      },
+      "heading": {
+        "ko": "ONE FESTIVAL, CONNECTED",
+        "en": "ONE FESTIVAL, CONNECTED",
+        "ja": "ONE FESTIVAL, CONNECTED"
+      },
+      "intro": {
+        "ko": "아티스트 탐색·상세 확인·시간표 비교·개인 일정 저장 상태·행사장 탐색·티켓 선택 경험을 연결했습니다. 브랜드 포스터의 실험적인 표현과 실제 서비스형 UI의 정보 구조를 함께 보여줍니다.",
+        "en": "The concept connects artist discovery, profiles, schedule comparison, saved-set states, venue exploration and ticket selection. Expressive festival-poster aesthetics remain grounded in clear, product-oriented information architecture.",
+        "ja": "アーティスト検索、詳細表示、タイムテーブル比較、予定保存状態、会場探索、チケット選択を連携させました。実験的なポスター表現と実用的な情報設計の両立を目指しています。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "아티스트 탐색",
+            "en": "Artist discovery",
+            "ja": "アーティスト検索"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile web",
+            "ja": "Desktop・Mobile Web"
+          },
+          "items": [
+            {
+              "ko": "날짜·장르별 라인업을 포스터형 카드로 살펴봅니다.",
+              "en": "Browse poster-style lineup cards by day and genre.",
+              "ja": "日付・ジャンル別にポスター型のラインアップを閲覧。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "공연 일정",
+            "en": "Timetable",
+            "ja": "公演スケジュール"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile web",
+            "ja": "Desktop・Mobile Web"
+          },
+          "items": [
+            {
+              "ko": "세 스테이지의 공연 시간을 같은 시간축에서 비교합니다.",
+              "en": "Compare sets across three stages on a shared timeline.",
+              "ja": "3ステージの公演を共通の時間軸で比較。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "개인 일정",
+            "en": "My schedule",
+            "ja": "マイスケジュール"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile web",
+            "ja": "Desktop・Mobile Web"
+          },
+          "items": [
+            {
+              "ko": "저장 상태와 공연 시간 충돌을 시각화합니다.",
+              "en": "Visualize saved sets and conflicting times.",
+              "ja": "保存状態と時間の重複を可視化。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "행사장 지도",
+            "en": "Venue map",
+            "ja": "会場マップ"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile web",
+            "ja": "Desktop・Mobile Web"
+          },
+          "items": [
+            {
+              "ko": "선택한 스테이지와 주요 편의시설을 찾아봅니다.",
+              "en": "Find selected stages and essential facilities.",
+              "ja": "選択したステージと主要施設を確認。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "티켓 경험",
+            "en": "Tickets",
+            "ja": "チケット体験"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile web",
+            "ja": "Desktop・Mobile Web"
+          },
+          "items": [
+            {
+              "ko": "가상의 패스 종류와 모바일 월렛 상태를 확인합니다.",
+              "en": "Explore fictional pass options and a mobile wallet state.",
+              "ja": "架空の券種とモバイルウォレットの状態を表示。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "ARTIST LINEUP"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "DISCOVER THE SOUND",
+        "en": "DISCOVER THE SOUND",
+        "ja": "DISCOVER THE SOUND"
+      },
+      "body": {
+        "ko": "포스터형 아티스트 카드, 날짜 선택, 장르 필터를 배치했습니다. 헤드라이너와 참여 아티스트를 시각적으로 구분하면서 탐색 동선을 유지합니다.",
+        "en": "Editorial artist cards and date and genre controls make the fictional lineup easy to scan while highlighting featured performers.",
+        "ja": "ポスター風のアーティストカードと日付・ジャンルの選択UIを配置。注目アーティストを際立たせながら、一覧の探しやすさを確保しました。"
+      },
+      "images": [
+        "noctave-lineup"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "STAGE TIMETABLE"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "SEE THE WHOLE NIGHT",
+        "en": "SEE THE WHOLE NIGHT",
+        "ja": "SEE THE WHOLE NIGHT"
+      },
+      "body": {
+        "ko": "6월 19일 공연을 실제 시간 간격에 맞춰 ORBIT·PRISM·GARDEN 세 열로 배치했습니다. 다른 스테이지에서 겹치는 공연을 같은 시간축 위에서 비교할 수 있도록 구성했습니다.",
+        "en": "June 19 shows are arranged to scale across ORBIT, PRISM and GARDEN. A shared timeline makes simultaneous performances visible at a glance.",
+        "ja": "6月19日の公演をORBIT・PRISM・GARDENの3列に時間比率どおり配置。同時刻の公演を共通の時間軸で見比べられます。"
+      },
+      "images": [
+        "noctave-timetable"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "heading": {
+        "ko": "아티스트 상세와 행사장 안내",
+        "en": "Artist pages and venue guide",
+        "ja": "アーティスト詳細と会場案内"
+      },
+      "intro": {
+        "ko": "라인업 탐색·타임테이블·티켓 사이를 잇는 보조 화면입니다.",
+        "en": "Supporting screens between the line-up, the timetable and tickets.",
+        "ja": "ラインナップ・タイムテーブル・チケットの間をつなぐ補助画面です。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "FROM ARTIST TO SET",
+            "en": "FROM ARTIST TO SET",
+            "ja": "FROM ARTIST TO SET"
+          },
+          "body": {
+            "ko": "NEON HAZE의 이미지, 장르, 6월 19일 19:00–20:15 ORBIT STAGE 공연 정보와 일정 저장 상태를 하나의 상세 화면에서 보여줍니다.",
+            "en": "The NEON HAZE profile brings together visual storytelling, genre, the June 19 19:00–20:15 ORBIT STAGE set and a saved-schedule state.",
+            "ja": "NEON HAZEのビジュアルやジャンル、6月19日19:00〜20:15のORBIT STAGE公演、予定保存状態を1画面にまとめています。"
+          },
+          "image": "noctave-artist-detail"
+        },
+        {
+          "title": {
+            "ko": "FIND YOUR PLACE",
+            "en": "FIND YOUR PLACE",
+            "ja": "FIND YOUR PLACE"
+          },
+          "body": {
+            "ko": "NOCTAVE PARK의 가상 2D 공간도를 기반으로 세 스테이지와 편의시설을 구분했습니다. ORBIT STAGE 선택 상태에서는 NEON HAZE와 ASTER VIOLET의 공연 정보를 함께 보여줍니다.",
+            "en": "An original illustrated NOCTAVE PARK map distinguishes stages and facilities. Selecting ORBIT STAGE reveals NEON HAZE and ASTER VIOLET set details.",
+            "ja": "架空のNOCTAVE PARKを描いた2Dマップでステージと施設を区分。ORBIT STAGEの選択状態ではNEON HAZEとASTER VIOLETの公演情報を表示します。"
+          },
+          "image": "noctave-venue-map"
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "TICKET EXPERIENCE"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "PICK YOUR PASS",
+        "en": "PICK YOUR PASS",
+        "ja": "PICK YOUR PASS"
+      },
+      "body": {
+        "ko": "1일권 ₩129,000, 3일권 ₩299,000, VIP 3일권 ₩429,000의 가상 가격과 토요일 1일권 선택 상태를 시각화했습니다. 결제·예매·발권은 실제 작동하지 않습니다.",
+        "en": "Fictional pass options are priced at ₩129,000 for one day, ₩299,000 for three days and ₩429,000 for VIP three days. The UI shows a Saturday one-day selection; purchasing and issuance do not function.",
+        "ja": "架空の料金として1日券₩129,000、3日券₩299,000、VIP 3日券₩429,000を表示し、土曜日の1日券が選択された状態を表現しました。決済・予約・発券機能はありません。"
+      },
+      "images": [
+        "noctave-tickets"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "07",
+        "label": "MOBILE EXPERIENCE"
+      },
+      "layout": "phones",
+      "surface": "accent",
+      "heading": {
+        "ko": "FESTIVAL, IN YOUR POCKET",
+        "en": "FESTIVAL, IN YOUR POCKET",
+        "ja": "FESTIVAL, IN YOUR POCKET"
+      },
+      "body": {
+        "ko": "모바일에서는 개인 일정과 티켓 화면을 따로 구성했습니다. 개인 일정에는 6월 19일 저장 공연 4개와 NEON HAZE·MIRA SOL의 45분 충돌을 표시하고, 티켓은 입장에 사용할 수 없는 데모 시안으로 표시했습니다(실제 QR 발권·입장 기능 아님).",
+        "en": "On mobile, the personal schedule and the ticket have their own screens. The schedule shows four saved June 19 sets and a 45-minute NEON HAZE/MIRA SOL conflict; the ticket is marked as a demo that cannot be used for entry (no real QR issuing or admission).",
+        "ja": "モバイルではマイスケジュールとチケットを別画面で構成しました。6月19日の保存済み4公演とNEON HAZE・MIRA SOLの45分間の重複を示し、チケットは入場に使えないデモ案として表示しています(実際のQR発券・入場機能ではありません)。"
+      },
+      "images": [
+        "noctave-mobile-schedule",
+        "noctave-mobile-ticket"
+      ]
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "DESIGNED FOR THE EXPERIENCE",
+        "en": "DESIGNED FOR THE EXPERIENCE",
+        "ja": "DESIGNED FOR THE EXPERIENCE"
+      },
+      "sub": {
+        "ko": "NOCTAVE FEST는 문화 콘텐츠의 강한 비주얼을 아티스트 탐색, 일정 비교, 공간 탐색, 모바일 정보 확인이라는 실제 사용자 화면 구조로 연결한 PIUS 자체 프론트 UI 데모입니다. 정적 시안 외의 기능 개발 및 실서비스 운영 실적을 의미하지 않습니다.",
+        "en": "NOCTAVE FEST is a PIUS-made front-end UI concept connecting expressive music culture visuals with artist discovery, schedule comparison, venue exploration and mobile information access. It does not claim developed functionality or live operation beyond these static designs.",
+        "ja": "NOCTAVE FESTは、音楽カルチャーの表現力をアーティスト検索、スケジュール比較、会場探索、モバイルでの情報確認へと結びつけたPIUS独自のフロントUIデモです。静的デザイン以外の実装や運用実績を示すものではありません。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "등록 프롬프트(2026-11-06) 기준. PIUS 자체 데모·PoC, 정적 UI 시안 10장. 행사·아티스트·공연장·가격·티켓 데이터는 모두 가상.",
+    "status review — 사용자 승인 전 approved 불가. scope·results 블록 미사용.",
+    "projectState·year·stack 미기재. accent는 ORBIT STAGE Coral(#FF6F7A) — 라임(#D9FF48)은 밝은 섹션 가독성 문제로 제외."
+  ]
+}
