@@ -1,0 +1,526 @@
+{
+  "id": "helio-desk",
+  "slug": "helio-desk",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 150,
+  "includeInPdf": true,
+  "title": {
+    "ko": "HELIO DESK — 고객지원·상담 티켓",
+    "en": "HELIO DESK — Customer Support Workspace",
+    "ja": "HELIO DESK — カスタマーサポート管理"
+  },
+  "subtitle": {
+    "ko": "문의 접수부터 응답·이관·해결까지",
+    "en": "From incoming tickets to resolution",
+    "ja": "問い合わせ受付から対応・引継ぎ・解決まで"
+  },
+  "summary": {
+    "ko": "상담 인박스, 담당자 배정, SLA 대응, 내부 협업을 연결하는 고객지원 UI 구성안.",
+    "en": "A customer support UI concept for shared inboxes, ticket ownership, SLA response, and escalation.",
+    "ja": "共有受信箱、担当割当、SLA、エスカレーションを扱う顧客対応UI構想。"
+  },
+  "overview": {
+    "ko": "여러 채널에서 접수된 고객 문의를 티켓으로 통합하고, 상담 담당자가 응답 기한과 해결 단계를 관리하는 워크스페이스를 설계했습니다. 자동으로 답변하거나 AI가 고객을 평가하는 기능보다 사람이 처리하는 티켓과 내부 협업을 중심으로 합니다.",
+    "en": "This independent concept organizes incoming customer requests into tickets, with assigned agents managing reply deadlines and resolutions. The focus is human-led support and collaboration rather than automated responses or customer scoring.",
+    "ja": "複数の受付経路からの問い合わせをチケットにまとめ、担当者が返信期限・解決段階を管理する自主制作UI構想です。自動回答よりも人による対応と社内連携を中心にします。"
+  },
+  "industry": {
+    "ko": "고객지원·헬프데스크 SaaS",
+    "en": "Customer Support and Help Desk SaaS",
+    "ja": "カスタマーサポート・ヘルプデスクSaaS"
+  },
+  "categories": [
+    "platform",
+    "web",
+    "integration"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "고객지원 상담 WEB",
+        "en": "Customer support workspace",
+        "ja": "顧客サポートWeb"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "상담 운영·SLA 관리",
+        "en": "Support operations and SLA",
+        "ja": "サポート運営・SLA管理"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#5A708B",
+    "accentInk": "#253346",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "helio-desk-shared-inbox"
+  ],
+  "images": [
+    {
+      "id": "helio-desk-shared-inbox",
+      "kind": "desktop",
+      "file": "helio-desk-shared-inbox.webp",
+      "alt": {
+        "ko": "공유 고객지원 티켓 인박스 — 자체 UI 시연 화면",
+        "en": "Shared support ticket inbox — static UI demo",
+        "ja": "共有カスタマーサポート受信箱 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "상담 티켓 목록·대화·고객 문맥을 한눈에 확인하는 3열 상담 인박스 데모입니다.",
+        "en": "A three-column support inbox demo combining ticket queue, conversation and customer context.",
+        "ja": "チケット一覧・会話・顧客情報を同時に確認できる3列のサポート受信箱デモです。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "helio-desk-ticket-conversation",
+      "kind": "desktop",
+      "file": "helio-desk-ticket-conversation.webp",
+      "alt": {
+        "ko": "고객 응대와 내부 메모 분리 — 자체 UI 시연 화면",
+        "en": "Customer conversation and private notes — static UI demo",
+        "ja": "顧客対応と内部メモの分離 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "고객에게 보이는 답변과 담당자 전용 내부 메모의 권한·표시 영역을 구분한 상담 시연 화면입니다.",
+        "en": "An illustrative support conversation separating customer-visible replies from private agent notes.",
+        "ja": "顧客に見える返信と担当者専用メモを権限・表示領域で区別する相談デモです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "helio-desk-sla-operations",
+      "kind": "desktop",
+      "file": "helio-desk-sla-operations.webp",
+      "alt": {
+        "ko": "첫 응답·해결 기한 SLA 운영 — 자체 UI 시연 화면",
+        "en": "SLA response and resolution monitoring — static UI demo",
+        "ja": "初回応答・解決期限のSLA運用 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "첫 응답과 최종 해결 기한을 별도로 추적하고 초과 위험 티켓을 검토하는 SLA 데모 화면입니다.",
+        "en": "A support SLA demo tracking first-response and resolution clocks separately, with at-risk ticket review.",
+        "ja": "初回応答と最終解決の期限を別々に追跡し、超過リスクを確認するSLAデモです。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "helio-desk-escalation-resolution",
+      "kind": "desktop",
+      "file": "helio-desk-escalation-resolution.webp",
+      "alt": {
+        "ko": "기술팀 이관 및 티켓 해결 이력 — 자체 UI 시연 화면",
+        "en": "Technical escalation and resolution log — static UI demo",
+        "ja": "技術部門へのエスカレーション・解決履歴 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "기술팀 이관 사유와 처리 이력, 해결·고객 안내 단계를 기록한 상담 티켓 완료 시점의 데모입니다.",
+        "en": "An illustrative resolved-ticket view showing technical escalation reasons, action history and customer notification.",
+        "ja": "技術担当へのエスカレーション理由、対応履歴、解決と顧客通知を示すチケット完了時点のデモです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·정적 UI 데모를 위한 1차 텍스트 등록본. 실제 고객 프로젝트·서비스 개발 실적이 아님.",
+    "고도화 시 우선 검토할 화면: Shared Ticket Inbox, Ticket Conversation, SLA and Escalation, Resolution History",
+    "2차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결, External PDF 대표 장면은 presentation.external로 지정. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "고객 문의가 해결될 때까지 맥락을 잃지 않습니다.",
+        "en": "Keep every conversation connected to resolution.",
+        "ja": "問い合わせの文脈を、解決までつなぐ。"
+      },
+      "images": [
+        "helio-desk-shared-inbox"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "가상 소프트웨어 서비스의 로그인 오류 문의를 대표 티켓으로 삼아 접수·첫 응답·기술팀 이관·해결 과정을 서로 다른 시점으로 구성했습니다.",
+        "en": "A fictional login issue demonstrates the distinct stages of intake, first response, technical escalation, and resolution.",
+        "ja": "架空サービスへのログイン不具合を代表チケットとし、受付、初回返信、技術チームへの引継ぎ、解決を時刻別に表現します。"
+      },
+      "body": {
+        "ko": "티켓 HEL-261109-042는 09:10 접수, 09:14 상담사 배정, 09:22 첫 응답, 10:05 기술팀 이관, 11:10 해결입니다. 첫 응답 소요 12분(목표 30분 이내), 해결 소요 2시간(목표 4시간 이내)입니다. 09:30 기준 인박스 12건은 Open 6·In Progress 4·Waiting on Customer 1·Resolved 1이며 대표 티켓은 In Progress에 포함됩니다.",
+        "en": "Ticket HEL-261109-042 arrives at 09:10, is assigned 09:14, receives a first response at 09:22, escalates at 10:05, and resolves at 11:10. First reply: 12 minutes against a 30-minute target; resolution: two hours against a four-hour target. At 09:30 the fictional inbox has 12 tickets: six open, four in progress, one waiting on a customer, and one resolved, with the example ticket among the four in progress.",
+        "ja": "HEL-261109-042は09:10受付、09:14担当割当、09:22初回返信、10:05技術担当へ引継ぎ、11:10解決です。初回返信12分（目標30分以内）、解決2時間（目標4時間以内）。09:30時点の12件は未着手6・対応中4・顧客待ち1・解決済み1で、代表チケットは対応中4件に含まれます。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "상담 맥락 유지",
+            "en": "Preserve conversation context",
+            "ja": "会話の文脈維持"
+          },
+          "body": {
+            "ko": "고객 메시지·내부 메모·담당 변경을 하나의 타임라인으로 묶습니다.",
+            "en": "Keep replies, private notes, and ownership changes on one timeline.",
+            "ja": "顧客返信・社内メモ・担当変更を同じ時系列で管理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "기한과 해결 상태 구분",
+            "en": "SLA and status clarity",
+            "ja": "SLAと状態の明確化"
+          },
+          "body": {
+            "ko": "첫 응답 시간과 최종 해결 시간을 각각 계산합니다.",
+            "en": "Calculate first-response and resolution times separately.",
+            "ja": "初回返信時間と解決時間を分けて算出します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "접수부터 해결까지",
+        "en": "From ticket to resolution",
+        "ja": "受付から解決まで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "문의 접수",
+            "en": "Ticket intake",
+            "ja": "問い合わせ受付"
+          },
+          "body": {
+            "ko": "09:10 고객 로그인 오류가 HEL-261109-042로 접수됩니다.",
+            "en": "Log the login issue as HEL-261109-042 at 09:10.",
+            "ja": "09:10にログイン不具合を受付番号で登録します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "담당 배정",
+            "en": "Assign owner",
+            "ja": "担当割当"
+          },
+          "body": {
+            "ko": "09:14 담당 상담사가 배정됩니다.",
+            "en": "Assign a support agent at 09:14.",
+            "ja": "09:14にサポート担当者を割り当てます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "첫 응답",
+            "en": "First response",
+            "ja": "初回返信"
+          },
+          "body": {
+            "ko": "09:22에 문제 확인 요청을 발송한 상태로 표시합니다.",
+            "en": "Show a first troubleshooting reply at 09:22.",
+            "ja": "09:22の初回確認返信を表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "기술팀 이관",
+            "en": "Technical escalation",
+            "ja": "技術チームへ引継ぎ"
+          },
+          "body": {
+            "ko": "10:05에 기술 담당자에게 내부 메모와 함께 전달합니다.",
+            "en": "Escalate with private notes at 10:05.",
+            "ja": "10:05に社内メモ付きで技術担当へ引き継ぎます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "해결 처리",
+            "en": "Resolve ticket",
+            "ja": "問題解決"
+          },
+          "body": {
+            "ko": "11:10에 문제 해결 안내 후 Resolved로 전환합니다.",
+            "en": "Mark resolved after a customer update at 11:10.",
+            "ja": "11:10に解決案内後、解決済みに切り替えます。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "데모 사례: 로그인 오류 문의 HEL-261109-042가 배정·첫 응답·기술팀 이관을 거쳐 2시간 만에 해결되기까지(가상 SLA 기준).",
+        "en": "Demo case: login-error ticket HEL-261109-042 is assigned, answered, escalated and resolved in two hours (against a sample SLA).",
+        "ja": "デモ事例：ログインエラーの問い合わせHEL-261109-042が割り当て・初回応答・技術チームへの移管を経て2時間で解決するまで(仮想SLA基準)。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "CONVERSATION"
+      },
+      "layout": "imageLeft",
+      "surface": "light",
+      "heading": {
+        "ko": "고객 응대와 내부 메모 분리",
+        "en": "Customer conversation and private notes",
+        "ja": "顧客対応と内部メモの分離"
+      },
+      "body": {
+        "ko": "고객에게 보이는 답변과 담당자 전용 내부 메모의 권한·표시 영역을 구분한 상담 시연 화면입니다.",
+        "en": "An illustrative support conversation separating customer-visible replies from private agent notes.",
+        "ja": "顧客に見える返信と担当者専用メモを権限・表示領域で区別する相談デモです。"
+      },
+      "images": [
+        "helio-desk-ticket-conversation"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "SLA"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "첫 응답·해결 기한 SLA 운영",
+        "en": "SLA response and resolution monitoring",
+        "ja": "初回応答・解決期限のSLA運用"
+      },
+      "body": {
+        "ko": "첫 응답과 최종 해결 기한을 별도로 추적하고 초과 위험 티켓을 검토하는 SLA 데모 화면입니다.",
+        "en": "A support SLA demo tracking first-response and resolution clocks separately, with at-risk ticket review.",
+        "ja": "初回応答と最終解決の期限を別々に追跡し、超過リスクを確認するSLAデモです。"
+      },
+      "images": [
+        "helio-desk-sla-operations"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "RESOLUTION"
+      },
+      "layout": "imageRight",
+      "surface": "light",
+      "heading": {
+        "ko": "기술팀 이관 및 티켓 해결 이력",
+        "en": "Technical escalation and resolution log",
+        "ja": "技術部門へのエスカレーション・解決履歴"
+      },
+      "body": {
+        "ko": "기술팀 이관 사유와 처리 이력, 해결·고객 안내 단계를 기록한 상담 티켓 완료 시점의 데모입니다.",
+        "en": "An illustrative resolved-ticket view showing technical escalation reasons, action history and customer notification.",
+        "ja": "技術担当へのエスカレーション理由、対応履歴、解決と顧客通知を示すチケット完了時点のデモです。"
+      },
+      "images": [
+        "helio-desk-escalation-resolution"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "06",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "공유 인박스부터 해결 관리까지",
+        "en": "Shared inbox through resolution",
+        "ja": "共有受信箱から解決管理まで"
+      },
+      "intro": {
+        "ko": "상담사와 기술 담당자가 같은 고객 문의를 서로 다른 권한으로 처리합니다.",
+        "en": "Support agents and technical specialists handle a common ticket with distinct roles.",
+        "ja": "サポート担当者と技術担当者が役割別に同じ問い合わせを処理します。"
+      },
+      "note": {
+        "ko": "자체 정적 UI 데모이며 실제 이메일 연동·자동 답변·SLA 타이머 서버·고객 CRM 연동은 구현하지 않았습니다.",
+        "en": "Independent static UI concept; no live email, automatic replies, SLA timer backend, or CRM integration is implemented.",
+        "ja": "自主制作静的UIデモであり、メール連携・自動返信・SLAタイマー・CRM連携は実装していません。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "상담 인박스",
+            "en": "Shared support inbox",
+            "ja": "共有サポート受信箱"
+          },
+          "audience": {
+            "ko": "1차 상담 담당자",
+            "en": "Frontline support agents",
+            "ja": "一次サポート担当者"
+          },
+          "items": [
+            {
+              "ko": "문의 목록·우선순위·담당자 필터",
+              "en": "Tickets, priorities, and assignee filters",
+              "ja": "問い合わせ・優先度・担当者フィルター"
+            },
+            {
+              "ko": "고객 대화와 내부 메모 분리",
+              "en": "Separate customer replies from private notes",
+              "ja": "顧客返信と社内メモの区別"
+            },
+            {
+              "ko": "템플릿 응답·상태 변경 UI",
+              "en": "Reply templates and status controls",
+              "ja": "定型返信・状態変更UI"
+            }
+          ]
+        },
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "운영·기술 이관",
+            "en": "Operations and escalation",
+            "ja": "運営・技術引継ぎ"
+          },
+          "audience": {
+            "ko": "팀 리더·기술 지원 담당자",
+            "en": "Team leads and technical support",
+            "ja": "チームリーダー・技術サポート"
+          },
+          "items": [
+            {
+              "ko": "첫 응답·해결 기한 검토",
+              "en": "First reply and resolution targets",
+              "ja": "初回返信・解決期限の確認"
+            },
+            {
+              "ko": "기술팀 이관과 책임자 변경",
+              "en": "Escalation and ownership changes",
+              "ja": "技術チームへの引継ぎ・担当変更"
+            },
+            {
+              "ko": "해결 요약과 티켓 종료 이력",
+              "en": "Resolution notes and closure history",
+              "ja": "解決メモ・完了履歴"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "07",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "상담사가 쓰는 화면",
+        "en": "The agent’s screens",
+        "ja": "担当者が使う画面"
+      },
+      "intro": {
+        "ko": "고객과의 대화, 내부 메모, SLA 기한이 한 티켓 안에서 구분됩니다.",
+        "en": "Customer conversation, internal notes and SLA deadlines stay distinct within one ticket.",
+        "ja": "顧客との会話・社内メモ・SLA期限が1件のチケットの中で区別されます。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "통합 상담 인박스",
+            "en": "Shared inbox",
+            "ja": "共有受信箱"
+          },
+          "body": {
+            "ko": "12건의 문의를 상태·담당자·우선순위로 정리합니다.",
+            "en": "Organize 12 tickets by status, owner, and priority.",
+            "ja": "12件を状態・担当者・優先度別に表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "대화·내부 메모",
+            "en": "Conversation and notes",
+            "ja": "会話・社内メモ"
+          },
+          "body": {
+            "ko": "공개 답변과 비공개 기술 이관 메모를 분리합니다.",
+            "en": "Separate public customer replies from internal handoff notes.",
+            "ja": "顧客への返信と社内引継ぎメモを分けます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "SLA 검토",
+            "en": "SLA review",
+            "ja": "SLA管理"
+          },
+          "body": {
+            "ko": "첫 응답 12분·해결 120분을 목표와 비교합니다.",
+            "en": "Compare 12-minute first reply and 120-minute resolution against targets.",
+            "ja": "初回返信12分・解決120分を目標と比較します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "에스컬레이션",
+            "en": "Escalation history",
+            "ja": "エスカレーション履歴"
+          },
+          "body": {
+            "ko": "기술팀 배정과 해결 근거를 남깁니다.",
+            "en": "Track technical ownership and the resolution rationale.",
+            "ja": "技術担当への引継ぎと解決理由を記録します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "08",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "문의가 쌓이는 대신 해결의 과정이 보이도록.",
+        "en": "Turn incoming requests into visible progress.",
+        "ja": "問い合わせを、解決まで見える業務に。"
+      },
+      "sub": {
+        "ko": "상담·SLA·기술 이관을 표현한 자체 UI 데모.",
+        "en": "An independent UI concept for support, SLAs, and escalation.",
+        "ja": "対応・SLA・技術引継ぎの自主制作UIデモ。"
+      }
+    }
+  ]
+}

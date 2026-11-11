@@ -1,0 +1,48 @@
+/* Frames are deliberately thin: the UI itself stays as large as possible. */
+.fig{ position:relative; margin:0; min-width:0; container-type:inline-size; }
+.shell{ display:block; position:relative; }
+.view{ position:relative; display:block; width:100%; overflow:hidden; background:#f3f4f6; }
+.view img{ display:block; width:100%; height:100%; object-fit:cover; }
+
+/* phone: thin graphite bezel, radius relative to the width */
+.phone .shell{
+  padding:2.3cqw; border-radius:13cqw;
+  background:linear-gradient(160deg,#2a2e35,#0d0f12 55%,#1b1e23);
+  box-shadow:0 0 0 1px rgba(255,255,255,.08) inset, 0 30px 60px -28px rgba(0,0,0,.55), 0 10px 22px -12px rgba(0,0,0,.35);
+}
+.phone .view{ border-radius:10.8cqw; }
+
+/* browser: three dots, no address bar */
+.browser .shell{
+  border-radius:clamp(6px,1cqw,12px); overflow:hidden; background:#fff;
+  box-shadow:0 0 0 1px rgba(15,18,24,.08), 0 40px 80px -40px rgba(10,14,20,.45), 0 12px 28px -16px rgba(10,14,20,.25);
+}
+.bar{ display:flex; align-items:center; gap:clamp(4px,.6cqw,7px); height:clamp(12px,2.6cqw,30px); padding:0 clamp(8px,1.4cqw,16px); background:#eceef1; border-bottom:1px solid rgba(15,18,24,.06); }
+.bar i{ width:clamp(4px,.8cqw,9px); aspect-ratio:1; border-radius:50%; background:#c9cdd3; }
+
+.tablet .shell{ padding:1.8cqw; border-radius:4.5cqw; background:#16191e; box-shadow:0 30px 60px -30px rgba(0,0,0,.5); }
+.tablet .view{ border-radius:3%; }
+.plain .view{ border-radius:12px; }
+
+/* missing screen: same ratio, quiet panel, label + "coming soon" */
+.ph{
+  position:absolute; inset:0; display:grid; place-items:center; text-align:center;
+  background:
+    radial-gradient(80% 60% at 50% 35%, color-mix(in srgb, var(--pf-accent,#bfd6ff) 8%, #fff), transparent 75%),
+    linear-gradient(180deg,#fbfbfc,#eef0f3);
+  color:#2a2f37;
+}
+.ph__grid{
+  position:absolute; inset:0; opacity:.5;
+  background-image:linear-gradient(rgba(20,24,32,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(20,24,32,.05) 1px, transparent 1px);
+  background-size:22px 22px;
+  -webkit-mask-image:radial-gradient(70% 60% at 50% 50%, #000, transparent);
+          mask-image:radial-gradient(70% 60% at 50% 50%, #000, transparent);
+}
+.ph__txt{ position:relative; display:grid; gap:6px; padding:0 10%; }
+.ph__txt b{ font-weight:500; font-size:clamp(.5rem,1.7cqw,1rem); line-height:1.35; letter-spacing:-.01em; }
+.ph__txt small{ font-family:var(--f-disp); font-size:clamp(.42rem,1.1cqw,.7rem); letter-spacing:.08em; text-transform:uppercase; color:rgba(42,47,55,.55); }
+.ph__txt small::before{ content:""; display:inline-block; width:6px; height:6px; margin-right:7px; border-radius:50%; background:var(--pf-accent,#bfd6ff); vertical-align:1px; }
+.phone .ph__txt b{ font-size:clamp(.5rem,6.2cqw,.86rem); }
+.phone .ph__txt small{ font-size:clamp(.42rem,4cqw,.64rem); }
+.cap{ margin-top:12px; font-size:var(--t-xs); color:var(--ink-3); }

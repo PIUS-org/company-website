@@ -1,0 +1,419 @@
+{
+  "id": "sitelog",
+  "slug": "sitelog",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 190,
+  "includeInPdf": true,
+  "title": {
+    "ko": "SITELOG — 공정과 도면, 현장 기록의 연결",
+    "en": "SITELOG — Connecting schedules, drawings, and field records",
+    "ja": "SITELOG — 工程・図面・現場記録をつなぐ"
+  },
+  "subtitle": {
+    "ko": "건설 프로젝트를 위한 2D 공정·이슈·RFI 워크스페이스",
+    "en": "A 2D construction workspace for schedules, issues, and RFIs",
+    "ja": "2D工程管理・課題・RFIの建設プロジェクトワークスペース"
+  },
+  "summary": {
+    "ko": "간트 일정, 2D 도면 이슈, 태블릿 현장일지, 기술질의 처리를 연결한 건설 관리 UI 데모입니다.",
+    "en": "A construction-management UI concept spanning Gantt plans, 2D drawing issues, tablet field logs, and technical queries.",
+    "ja": "ガントチャート、2D図面上の課題、タブレット現場日報、技術照会をつなぐ建設管理UIデモです。"
+  },
+  "overview": {
+    "ko": "현장 프로젝트는 공정 일정의 변화가 도면 검토와 작업일지, 기술질의에 영향을 줍니다. SITELOG는 복잡한 3D 구현 대신 실제 실무 흐름을 표현하는 공정 간트·도면 마커·태블릿 기록·RFI 단계 화면에 집중했습니다.",
+    "en": "Changes to a field schedule affect drawing reviews, daily reports, and technical inquiries. Instead of speculative 3D interfaces, SITELOG focuses on the operational workflow using a Gantt view, marked-up plans, portrait tablet reporting, and RFI approval steps.",
+    "ja": "工事現場では工程の変更が図面確認、日報、技術照会に影響します。SITELOGは過度な3D表現ではなく、工程表、図面マーカー、縦型タブレット日報、RFI承認の実務フローに焦点を当てました。"
+  },
+  "industry": {
+    "ko": "건설 공정·현장 협업",
+    "en": "Construction Project Coordination",
+    "ja": "建設工程・現場協業"
+  },
+  "categories": [
+    "erp",
+    "web",
+    "mobile"
+  ],
+  "platforms": [
+    {
+      "type": "admin",
+      "label": {
+        "ko": "프로젝트 운영 WEB",
+        "en": "Project operations web",
+        "ja": "プロジェクト運営Web"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "현장 관리 태블릿",
+        "en": "Site manager tablet",
+        "ja": "現場管理タブレット"
+      }
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#947654",
+    "accentInk": "#48392C",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "s01"
+  ],
+  "images": [
+    {
+      "id": "s01",
+      "kind": "desktop",
+      "file": "sitelog-project-schedule.webp",
+      "alt": {
+        "ko": "서해 물류센터 공정률 48%와 6개 작업의 주간 간트 일정표를 보여주는 화면",
+        "en": "Construction schedule with 48% overall progress and a weekly Gantt plan for six tasks.",
+        "ja": "全体進捗48%と6工種の週間ガントチャートを表示した工程管理画面。"
+      },
+      "caption": {
+        "ko": "작업별 일정, 진도, 지연 상태를 같은 시간축에서 비교하도록 디자인했습니다.",
+        "en": "Planned periods, status, and progress are compared on a shared timeline.",
+        "ja": "工種別の期間、進捗、遅延状況を共通の時間軸で比較します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "s02",
+      "kind": "desktop",
+      "file": "sitelog-drawing-issues.webp",
+      "alt": {
+        "ko": "A-102 평면도의 건설 이슈 마커 SL-021과 검토 상세 화면",
+        "en": "Construction drawing A-102 with issue markers and SL-021 review detail",
+        "ja": "図面A-102の施工課題マーカーとSL-021の確認詳細画面"
+      },
+      "caption": {
+        "ko": "2층 평면도 A-102/Rev.03을 확대하고 SL-021, SL-018, SL-014 이슈 마커와 상태를 연결했습니다.",
+        "en": "An enlarged A-102 Rev.03 floor plan linked to issues SL-021, SL-018, and SL-014.",
+        "ja": "A-102 Rev.03の2階平面図を拡大し、SL-021・SL-018・SL-014の課題と状態を連動表示します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "s03",
+      "kind": "tablet",
+      "file": "sitelog-field-diary.webp",
+      "alt": {
+        "ko": "세로 태블릿에서 작업 인원·일지·안전 체크·첨부 썸네일을 입력하는 현장 기록 화면",
+        "en": "Portrait tablet diary for crews, daily work, safety checks, and illustrative file thumbnails.",
+        "ja": "人員、作業日報、安全チェック、添付サムネイルを入力する縦型タブレット画面。"
+      },
+      "caption": {
+        "ko": "현장 팀이 태블릿에서 작업 내용을 검토하고 점검 항목을 확인하는 사용성을 구성했습니다.",
+        "en": "A touch-oriented field form collects activity records and checklist confirmations.",
+        "ja": "現場担当者が作業記録と確認項目をタッチ操作で扱う構成です。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "s04",
+      "kind": "desktop",
+      "file": "sitelog-rfi-workflow.webp",
+      "alt": {
+        "ko": "RFI-014 기술질의 본문, 배관 간섭 개략도, 우측 검토 워크플로를 배치한 화면",
+        "en": "RFI-014 review with technical question text, a schematic clash illustration, and workflow stages.",
+        "ja": "RFI-014の質問本文、配管干渉の模式図、確認フローを並べた画面。"
+      },
+      "caption": {
+        "ko": "기술질의의 발의·검토·답변·승인 단계를 읽기 쉬운 문서 중심 구조로 표현했습니다.",
+        "en": "The document-centered layout connects the inquiry to review, response, and approval.",
+        "ja": "技術照会の起票、検討、回答、承認を文書中心のUIで表現しました。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 정적 UI 구상·30개 포트폴리오 1차 확보용 텍스트 등록. 실제 고객사 수행·서비스 구현 실적이 아님.",
+    "4차 승인 UI 이미지·콘텐츠 반영(2026-11-10): 전달 원문으로 제목·개요·기능·흐름·범위·마무리 문장 교체, 자체 정적 UI 데모 화면 4장 연결. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "간트 일정, 2D 도면 이슈, 태블릿 현장일지, 기술질의 처리를 연결한 건설 관리 UI 데모입니다.",
+        "en": "A construction-management UI concept spanning Gantt plans, 2D drawing issues, tablet field logs, and technical queries.",
+        "ja": "ガントチャート、2D図面上の課題、タブレット現場日報、技術照会をつなぐ建設管理UIデモです。"
+      },
+      "images": [
+        "s01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "현장 프로젝트는 공정 일정의 변화가 도면 검토와 작업일지, 기술질의에 영향을 줍니다. SITELOG는 복잡한 3D 구현 대신 실제 실무 흐름을 표현하는 공정 간트·도면 마커·태블릿 기록·RFI 단계 화면에 집중했습니다.",
+        "en": "Changes to a field schedule affect drawing reviews, daily reports, and technical inquiries. Instead of speculative 3D interfaces, SITELOG focuses on the operational workflow using a Gantt view, marked-up plans, portrait tablet reporting, and RFI approval steps.",
+        "ja": "工事現場では工程の変更が図面確認、日報、技術照会に影響します。SITELOGは過度な3D表現ではなく、工程表、図面マーカー、縦型タブレット日報、RFI承認の実務フローに焦点を当てました。"
+      },
+      "body": {
+        "ko": "공정 지연, 도면 간섭, 현장 작업, 기술질의가 따로 기록되면 원인과 조치 내역이 분리됩니다. 동일한 현장과 이슈 식별자를 화면 간 일관되게 사용합니다.",
+        "en": "When delays, clashes, daily logs, and technical questions are captured independently, causes and resolutions lose their connection. The demo reuses one project and related issue identifiers across screens.",
+        "ja": "工程遅延、図面の干渉、現場作業、技術的な質問を別々に記録すると、原因と対応が分断されます。同一プロジェクトと課題IDを画面間で統一しています。"
+      }
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "주요 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "공정 간트 일정",
+            "en": "Construction schedule Gantt",
+            "ja": "工程ガントチャート"
+          },
+          "body": {
+            "ko": "공정별 계획 기간·진도·지연 상태를 주간 기준으로 표시합니다.",
+            "en": "Show planned periods, task progress, and delays by week.",
+            "ja": "工種別の予定期間、進捗、遅延を週単位で表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "2D 도면 이슈",
+            "en": "2D drawing issues",
+            "ja": "2D図面上の課題"
+          },
+          "body": {
+            "ko": "평면도 위에 마커를 연결하고 담당자 및 검토 상태를 정리합니다.",
+            "en": "Attach review markers to a floor plan with owners and status.",
+            "ja": "平面図にマーカーを配置し、担当者と確認状況を表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "태블릿 현장일지",
+            "en": "Tablet field diary",
+            "ja": "タブレット現場日報"
+          },
+          "body": {
+            "ko": "작업 구역·인원·안전 점검·첨부·이슈를 입력하는 세로 작업 화면입니다.",
+            "en": "Record crews, work zones, safety checks, attachments, and site issues.",
+            "ja": "作業範囲、人員、安全確認、添付、課題を記録する縦型画面です。"
+          }
+        },
+        {
+          "title": {
+            "ko": "RFI 기술질의",
+            "en": "RFI workflow",
+            "ja": "RFI技術照会"
+          },
+          "body": {
+            "ko": "질의 내용과 관련 도면, 검토자, 기한, 승인 단계 이력을 표시합니다.",
+            "en": "Show the question, related drawing, reviewers, deadlines, and approval milestones.",
+            "ja": "質問、関連図面、確認者、期限、承認段階を管理します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "공정 계획과 진행 상태 확인",
+            "en": "Review schedule and progress",
+            "ja": "工程予定と進捗の確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "도면 이슈 등록 및 검토",
+            "en": "Raise and review drawing issues",
+            "ja": "図面課題の登録と検討"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장일지와 안전 점검 기록",
+            "en": "Record field work and safety checks",
+            "ja": "現場日報と安全確認の記録"
+          }
+        },
+        {
+          "title": {
+            "ko": "RFI 답변 검토 후 종결",
+            "en": "Review and close RFI responses",
+            "ja": "RFI回答の確認と終了"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCHEDULE"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "공정 간트 일정",
+        "en": "Construction schedule Gantt",
+        "ja": "工程ガントチャート"
+      },
+      "body": {
+        "ko": "작업별 일정, 진도, 지연 상태를 같은 시간축에서 비교하도록 디자인했습니다.",
+        "en": "Planned periods, status, and progress are compared on a shared timeline.",
+        "ja": "工種別の期間、進捗、遅延状況を共通の時間軸で比較します。"
+      },
+      "images": [
+        "s01"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "DRAWING ISSUES"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "2D 도면 이슈",
+        "en": "2D drawing issues",
+        "ja": "2D図面上の課題"
+      },
+      "body": {
+        "ko": "A-102 Rev.03 도면에서 SL-021 배관 간섭 이슈와 담당자·상태를 확인합니다.",
+        "en": "Issue SL-021 is shown against plan A-102 Rev.03 with its review status and owner.",
+        "ja": "A-102 Rev.03上で配管干渉課題SL-021と担当者・状態を確認できます。"
+      },
+      "images": [
+        "s02"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "FIELD DIARY"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "태블릿 현장일지",
+        "en": "Tablet field diary",
+        "ja": "タブレット現場日報"
+      },
+      "body": {
+        "ko": "현장 팀이 태블릿에서 작업 내용을 검토하고 점검 항목을 확인하는 사용성을 구성했습니다.",
+        "en": "A touch-oriented field form collects activity records and checklist confirmations.",
+        "ja": "現場担当者が作業記録と確認項目をタッチ操作で扱う構成です。"
+      },
+      "images": [
+        "s03"
+      ],
+      "surface": "light"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "07",
+        "label": "RFI"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "RFI 기술질의",
+        "en": "RFI workflow",
+        "ja": "RFI技術照会"
+      },
+      "body": {
+        "ko": "기술질의의 발의·검토·답변·승인 단계를 읽기 쉬운 문서 중심 구조로 표현했습니다.",
+        "en": "The document-centered layout connects the inquiry to review, response, and approval.",
+        "ja": "技術照会の起票、検討、回答、承認を文書中心のUIで表現しました。"
+      },
+      "images": [
+        "s04"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "08",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "정적 UI 이미지 4종의 자체 데모로, 실제 건설사 시스템·BIM·3D·구조 해석 또는 안전 인증의 구현 실적이 아닙니다. 도면과 현장 사진 썸네일은 시각적 예시이며 실측 도면·실제 사진이 아닙니다.",
+        "en": "Four static UI screenshots were built as an in-house demonstration. These are not implementations of a contractor ERP, BIM, 3D engine, structural analysis, or certified safety workflow. Floor plans and image thumbnails are illustrative, not measured drawings or real photographs.",
+        "ja": "静的フロントエンドUI画像4点を制作した自社デモです。施工会社向けERP、BIM、3D、構造解析、安全認証機能の実装実績ではありません。図面と画像サムネイルは説明用の模式表現であり、実測図面や実際の現場写真ではありません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "09",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "현장 상황을 과도한 3D가 아닌 정확한 2D 업무 흐름으로 전달합니다.",
+        "en": "A practical 2D operational view of real construction workflows.",
+        "ja": "過度な3Dではなく、実務を伝える明確な2D操作画面として構成しました。"
+      }
+    }
+  ]
+}

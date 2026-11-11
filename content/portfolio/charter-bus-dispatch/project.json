@@ -1,0 +1,380 @@
+{
+  "id": "charter-bus-dispatch",
+  "slug": "charter-bus-dispatch",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 60,
+  "includeInPdf": true,
+  "title": {
+    "ko": "전세버스 배차",
+    "en": "Charter Dispatch",
+    "ja": "貸切バス配車"
+  },
+  "subtitle": {
+    "ko": "기사·차량·노선을 통합한 전세버스 배차 관리 시스템",
+    "en": "Charter bus dispatch system that brings drivers, vehicles and routes together",
+    "ja": "乗務員・車両・路線を統合した貸切バス配車管理システム"
+  },
+  "summary": {
+    "ko": "수기로 하던 배차 업무를 전산화해 기사·차량 매칭, 노선 캘린더, 운행 이력 조회, 관리자 대시보드를 하나의 시스템으로 묶었습니다.",
+    "en": "Computerized manual dispatch, bringing driver-vehicle matching, a route calendar, operation history search and an admin dashboard into one system.",
+    "ja": "手作業だった配車業務をシステム化し、乗務員・車両のマッチング、路線カレンダー、運行履歴の照会、管理者ダッシュボードを一つのシステムにまとめました。"
+  },
+  "overview": {
+    "ko": "수작업 배차의 시간과 오류를 줄이기 위해 기사·차량·노선 정보를 통합한 풀스택 시스템입니다. 빠르게 MVP를 내기 위해 서버 렌더링 구조로 시작했습니다.",
+    "en": "A full-stack system that brings driver, vehicle and route information together to cut the time and errors of manual dispatch. It started with a server-rendered architecture to ship an MVP quickly.",
+    "ja": "手作業の配車にかかる時間とミスを減らすため、乗務員・車両・路線の情報を統合したフルスタックシステムです。MVPを素早く出すため、サーバーレンダリング構造で始めました。"
+  },
+  "industry": {
+    "ko": "전세버스 운송",
+    "en": "Charter bus transport",
+    "ja": "貸切バス輸送"
+  },
+  "categories": [
+    "erp",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "배차 관리 WEB",
+        "en": "Dispatch Web",
+        "ja": "配車管理Web"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "관리자 대시보드",
+        "en": "Admin dashboard",
+        "ja": "管理者ダッシュボード"
+      }
+    }
+  ],
+  "period": "2021.01 – 2022.10",
+  "year": 2022,
+  "stack": [
+    "Django",
+    "Django Admin",
+    "JavaScript",
+    "MariaDB"
+  ],
+  "scope": [
+    {
+      "key": "frontend"
+    },
+    {
+      "key": "backend"
+    },
+    {
+      "key": "admin"
+    }
+  ],
+  "theme": {
+    "accent": "#6B4E2E",
+    "accentInk": "#1B1D22",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "dispatch-calendar"
+  ],
+  "images": [
+    {
+      "id": "dispatch-calendar",
+      "kind": "desktop",
+      "file": "dispatch-calendar.webp",
+      "alt": {
+        "ko": "2026년 11월 월간 운행 캘린더의 출근·퇴근 배차와 선택일 차량·기사 배정 상세(재구성 UI)",
+        "en": "Monthly dispatch calendar for November 2026 with commute runs and selected-day vehicle and driver assignments (reconstructed UI)",
+        "ja": "2026年11月の月間運行カレンダーの通勤配車と、選択日の車両・運転手割当詳細(再構成UI)"
+      },
+      "caption": {
+        "ko": "실제 배차 운영 흐름을 기준으로 재구성한 캘린더 화면으로, 일정 관리와 차량 배정 구조를 설명하기 위한 UI입니다. 운영정보는 비식별화했습니다.",
+        "en": "A reconstructed scheduling calendar screen based on the actual dispatch process, illustrating how schedules and vehicle assignments are organized. Operational information was anonymized.",
+        "ja": "実際の配車業務フローを基に再構成したカレンダー画面で、日程管理と車両割当の構成を説明するためのUIです。運営情報は匿名化しています。"
+      }
+    },
+    {
+      "id": "charter-vehicle-driver-assignment",
+      "kind": "desktop",
+      "file": "charter-vehicle-driver-assignment.webp",
+      "alt": {
+        "ko": "전세버스 예약별 차량·기사 후보 배정 화면",
+        "en": "Charter booking vehicle and driver assignment UI demo",
+        "ja": "貸切バス予約の車両・運転手割当デモUI"
+      },
+      "caption": {
+        "ko": "예약 CB-261110-042의 탑승 인원과 왕복 운행 조건을 확인하고 차량·기사 후보를 비교하는 시안입니다.",
+        "en": "Illustrative charter dispatch view matching booking CB-261110-042 to available vehicles and drivers.",
+        "ja": "予約CB-261110-042の人数と往復運行条件に合わせ車両・運転手候補を比較するデモUIです。"
+      }
+    },
+    {
+      "id": "charter-dispatch-trip-detail",
+      "kind": "desktop",
+      "file": "charter-dispatch-trip-detail.webp",
+      "alt": {
+        "ko": "전세버스 왕복 운행 상세·시간표와 배정 검토 시연 화면",
+        "en": "Charter return-trip details, timetable and assignment review UI demo",
+        "ja": "貸切バス往復運行詳細・時刻表・配車検討のデモUI"
+      },
+      "caption": {
+        "ko": "왕복 운행의 출발·도착 시간과 탑승 인원, 차량 배정 후보를 한 화면에 정리한 시연 UI입니다.",
+        "en": "Illustrative return-trip detail showing departure, arrival, passenger count, and assignment candidates.",
+        "ja": "往復運行の出発・到着時刻、乗車人数、配車候補をまとめたデモUIです。"
+      }
+    },
+    {
+      "id": "charter-dispatch-history",
+      "kind": "desktop",
+      "file": "charter-dispatch-history.webp",
+      "alt": {
+        "ko": "전세버스 운행 기록 검색·상세 조회 시연 화면",
+        "en": "Charter trip history search and detail UI demo",
+        "ja": "貸切バス運行履歴の検索・詳細確認デモUI"
+      },
+      "caption": {
+        "ko": "운행 번호·일자·고객사별 이력과 선택 운행의 처리 상태를 확인하는 시연 UI입니다.",
+        "en": "Illustrative search table of charter trip records and the selected trip’s processing state.",
+        "ja": "運行番号・日付・依頼元別の履歴と選択した運行の処理状態を示すデモUIです。"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DISPATCH",
+        "en": "DISPATCH",
+        "ja": "DISPATCH"
+      },
+      "headline": {
+        "ko": "손으로 하던 배차를\n하나의 시스템으로.",
+        "en": "Dispatch once done by hand,\nnow one system.",
+        "ja": "手作業だった配車を、\n一つのシステムに。"
+      },
+      "sub": {
+        "ko": "기사·차량 배차 · 노선 캘린더 · 운행 이력 조회 · 관리자 대시보드",
+        "en": "Driver & vehicle dispatch · Route calendar · Operation history · Admin dashboard",
+        "ja": "乗務員・車両配車・路線カレンダー・運行履歴照会・管理者ダッシュボード"
+      },
+      "images": [
+        "dispatch-calendar"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "기사와 차량을 수작업으로 맞추고 일정 변경을 따로 챙기던 배차 업무를 하나의 시스템으로 옮겼습니다.",
+        "en": "Dispatch work, where drivers and vehicles were matched by hand and schedule changes tracked separately, moved into one system.",
+        "ja": "乗務員と車両を手作業で組み合わせ、日程変更を別に管理していた配車業務を一つのシステムに移しました。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "배차: 기사·차량 매칭",
+            "en": "Dispatch: driver–vehicle matching",
+            "ja": "配車：乗務員・車両のマッチング"
+          },
+          "body": {
+            "ko": "수작업으로 맞추던 기사와 차량을 시스템에서 매칭해 시간과 오류를 줄였습니다.",
+            "en": "Drivers and vehicles once matched by hand are matched in the system, saving time and errors.",
+            "ja": "手作業で合わせていた乗務員と車両をシステムでマッチングし、時間と誤りを減らしました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "일정: 노선 캘린더",
+            "en": "Schedule: route calendar",
+            "ja": "日程：路線カレンダー"
+          },
+          "body": {
+            "ko": "노선 캘린더와 변경 이력으로 일정 변경 누락을 막습니다.",
+            "en": "A route calendar with change history keeps schedule changes from slipping.",
+            "ja": "路線カレンダーと変更履歴で日程変更の漏れを防ぎます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "조회: 운행 이력",
+            "en": "Lookup: trip history",
+            "ja": "照会：運行履歴"
+          },
+          "body": {
+            "ko": "날짜·기사·차량별 조건 검색으로 기록 추적과 고객 응대를 빠르게 합니다.",
+            "en": "Search by date, driver and vehicle speeds up record checks and customer replies.",
+            "ja": "日付・乗務員・車両別の条件検索で記録の追跡と顧客対応を速めます。"
+          }
+        }
+      ],
+      "body": {
+        "ko": "대표 이미지의 배차 캘린더는 운영정보 보호를 위해 실제 배차 운영 흐름을 기준으로 재구성한 UI입니다.",
+        "en": "The dispatch calendar shown as the lead image is a reconstructed UI based on the actual dispatch process, with operational information anonymized.",
+        "ja": "メイン画像の配車カレンダーは、運営情報を保護するため実際の配車業務フローを基に再構成したUIです。"
+      }
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "02",
+        "label": "VEHICLE & DRIVER"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "차량·기사 배정",
+        "en": "Vehicle and driver assignments",
+        "ja": "車両・運転手の割当"
+      },
+      "body": {
+        "ko": "기존 배차 업무를 토대로 재구성한 시연 UI이며, 실제 수행 당시의 캡처로 소개하지 않습니다.",
+        "en": "Illustrative UI based on the charter dispatch workflow; not an original delivery screenshot.",
+        "ja": "貸切バス配車業務を基に再構成したデモUIで、実際の納品時の画面ではありません。"
+      },
+      "images": [
+        "charter-vehicle-driver-assignment"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "03",
+        "label": "TRIP RECORDS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "운행 상세·이력 관리",
+        "en": "Trip details and history",
+        "ja": "運行詳細・履歴管理"
+      },
+      "images": [
+        "charter-dispatch-trip-detail",
+        "charter-dispatch-history"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "04",
+        "label": "KEY FEATURES"
+      },
+      "heading": {
+        "ko": "주요 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "기사 · 차량 배차",
+            "en": "Driver & vehicle dispatch",
+            "ja": "乗務員・車両配車"
+          },
+          "body": {
+            "ko": "매칭 시스템으로 수작업 배차의 시간과 오류를 줄였습니다.",
+            "en": "A matching system cut the time and errors of manual dispatch.",
+            "ja": "マッチングシステムで手作業の配車にかかる時間とミスを減らしました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "노선 캘린더 · 변경 관리",
+            "en": "Route calendar & change management",
+            "ja": "路線カレンダー・変更管理"
+          },
+          "body": {
+            "ko": "노선 캘린더와 변경 이력으로 일정 변경 누락을 막았습니다.",
+            "en": "A route calendar and change history prevent missed schedule updates.",
+            "ja": "路線カレンダーと変更履歴で日程変更の漏れを防ぎました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "운행 이력 조회",
+            "en": "Operation history search",
+            "ja": "運行履歴照会"
+          },
+          "body": {
+            "ko": "날짜·기사·차량별 다중 조건 검색으로 기록 추적과 고객 응대를 빠르게 했습니다.",
+            "en": "Multi-criteria search by date, driver and vehicle speeds up record tracking and customer service.",
+            "ja": "日付・乗務員・車両別の複数条件検索で、記録の追跡と顧客対応を迅速にしました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "관리자 대시보드",
+            "en": "Admin dashboard",
+            "ja": "管理者ダッシュボード"
+          },
+          "body": {
+            "ko": "전체 운행 현황을 요약해 관리 판단을 빠르게 했습니다.",
+            "en": "Summarizes overall operations to speed up management decisions.",
+            "ja": "全体の運行状況を要約し、管理判断を迅速にしました。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "05",
+        "label": "TECHNOLOGY"
+      },
+      "heading": {
+        "ko": "기술 선택",
+        "en": "Technology choices",
+        "ja": "技術選定"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "Django · 서버 렌더링",
+            "en": "Django · Server rendering",
+            "ja": "Django・サーバーレンダリング"
+          },
+          "body": {
+            "ko": "빠른 MVP와 초기 개발 속도를 위해 선택했습니다.",
+            "en": "Chosen for a fast MVP and early development speed.",
+            "ja": "素早いMVPと初期の開発スピードのために選定しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "MariaDB",
+            "en": "MariaDB",
+            "ja": "MariaDB"
+          },
+          "body": {
+            "ko": "안정적인 운영 환경을 위해 사용했습니다.",
+            "en": "Used for a stable operating environment.",
+            "ja": "安定した運用環境のために使用しました。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "PROJECT SCOPE"
+      },
+      "heading": {
+        "ko": "수행 범위",
+        "en": "Scope of work",
+        "ja": "担当範囲"
+      }
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "id": "tavora-os",
+  "slug": "tavora-os",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 100,
+  "includeInPdf": true,
+  "title": {
+    "ko": "TAVORA OS — 레스토랑 운영 플랫폼",
+    "en": "TAVORA OS — Restaurant Operations Platform",
+    "ja": "TAVORA OS — レストラン運営プラットフォーム"
+  },
+  "subtitle": {
+    "ko": "테이블 주문부터 주방·정산까지 하나로",
+    "en": "From tables and orders to kitchen and checkout",
+    "ja": "テーブル注文から厨房・会計まで一元化"
+  },
+  "summary": {
+    "ko": "테이블·POS·주방 주문·결제를 하나의 주문 상태로 연결하는 외식 운영 UI 구성안.",
+    "en": "A restaurant operations UI concept connecting tables, POS, kitchen tickets, and settlement.",
+    "ja": "テーブル管理、POS、厨房伝票、会計をつなぐ飲食店運営UI構想。"
+  },
+  "overview": {
+    "ko": "홀 직원의 테이블 주문, 주방 조리 순서, 서빙과 정산 및 좌석 정리까지 한 매장 안에서 이어지는 운영 과정을 다룹니다. 테이블 상태와 주문 상태를 별도로 관리하는 레스토랑 운영 UI 데모입니다.",
+    "en": "This independent UI concept follows dine-in service from table seating and order entry through kitchen preparation, serving, payment, and table reset. Table status and ticket status are intentionally separated.",
+    "ja": "ホールでの注文入力、厨房の調理順、配膳、会計、テーブル清掃までをつなぐレストラン運営の自主制作UIデモです。席の状態と注文状態を分けて表現します。"
+  },
+  "industry": {
+    "ko": "외식·레스토랑 운영",
+    "en": "Food Service and Restaurant Operations",
+    "ja": "外食・レストラン運営"
+  },
+  "categories": [
+    "platform",
+    "web",
+    "mobile"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "매장 운영 WEB",
+        "en": "Restaurant operations web",
+        "ja": "店舗運営Web"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "주방 태블릿 KDS",
+        "en": "Kitchen display tablet",
+        "ja": "キッチン表示タブレット"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "직원 모바일 WEB",
+        "en": "Staff mobile web",
+        "ja": "スタッフ向けモバイルWeb"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#87674D",
+    "accentInk": "#36271E",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "tavora-os-table-floorplan"
+  ],
+  "images": [
+    {
+      "id": "tavora-os-table-floorplan",
+      "kind": "desktop",
+      "file": "tavora-os-table-floorplan.webp",
+      "alt": {
+        "ko": "레스토랑 테이블 운영 평면도 — 자체 UI 시연 화면",
+        "en": "Restaurant table floor plan — static UI demo",
+        "ja": "レストランのテーブル配置図 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "8개 테이블의 착석·예약·청소·이용 가능 상태를 2D 평면으로 표시하고 T04의 주문을 조회하는 시연 화면입니다.",
+        "en": "An illustrative 2D floor plan showing seating, reservations, cleaning and availability for eight tables with T04 selected.",
+        "ja": "8卓の着席・予約・清掃・空席状況を2D平面図に表示し、T04の注文を確認するデモ画面です。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "tavora-os-pos-order",
+      "kind": "desktop",
+      "file": "tavora-os-pos-order.webp",
+      "alt": {
+        "ko": "홀 직원용 POS 주문 입력 — 자체 UI 시연 화면",
+        "en": "Front-of-house POS order entry — static UI demo",
+        "ja": "ホールスタッフ向けPOS注文入力 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "메뉴·수량·옵션을 선택하고 테이블 주문 합계 65,000원을 확인하는 가상 POS 화면입니다.",
+        "en": "A demo POS order-entry interface for choosing dishes, quantities and options, totaling KRW 65,000.",
+        "ja": "メニュー・数量・オプションを選び、合計65,000ウォンを確認するPOSのデモ画面です。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "tavora-os-kitchen-kds",
+      "kind": "tablet",
+      "file": "tavora-os-kitchen-kds.webp",
+      "alt": {
+        "ko": "주방 태블릿 KDS 주문 티켓 — 자체 UI 시연 화면",
+        "en": "Kitchen KDS tickets on tablet — static UI demo",
+        "ja": "厨房タブレットKDSの注文チケット — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "새 주문·조리 중·완료 3개 작업 열과 경과 시간을 보여주는 가로형 주방 KDS 시연 화면입니다.",
+        "en": "Landscape kitchen-display demo with new, cooking and ready ticket columns and elapsed-time indicators.",
+        "ja": "新規・調理中・提供可能の3列と経過時間を示す横向き厨房KDSデモです。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "tavora-os-settlement-checkout",
+      "kind": "desktop",
+      "file": "tavora-os-settlement-checkout.webp",
+      "alt": {
+        "ko": "테이블 결제 및 마감 처리 — 자체 UI 시연 화면",
+        "en": "Table payment and closeout — static UI demo",
+        "ja": "テーブル会計・締め処理 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "테이블 T04의 주문·결제 확인 및 청소 상태 전환을 분리해 보여주는 정산 시연 화면입니다.",
+        "en": "An illustrative closeout view separating table T04 payment confirmation from the subsequent cleaning state.",
+        "ja": "テーブルT04の会計確認と、その後の清掃状態への切り替えを分けて示すデモです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "tavora-os-floor-runner-tablet",
+      "kind": "tablet",
+      "file": "tavora-os-floor-runner-tablet.webp",
+      "alt": {
+        "ko": "홀 직원 태블릿 서빙 업무 — 자체 UI 시연 화면",
+        "en": "Floor-runner tasks on tablet — static UI demo",
+        "ja": "ホールスタッフ用タブレットの配膳業務 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "테이블별 준비 완료 티켓과 서빙 체크를 큰 터치 영역으로 제공하는 홀 업무 시연 화면입니다.",
+        "en": "An illustrative staff tablet with ready-to-serve tickets and large touch targets for table-level task completion.",
+        "ja": "テーブル別の調理完了通知と配膳確認を大きなタッチ領域で表示するホール業務デモです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·UI 데모를 위한 1차 텍스트 등록본. 실제 구현 실적이나 고객 성과가 아님.",
+    "2차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결, External PDF 대표 장면은 presentation.external로 지정. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "홀과 주방의 상태를 하나의 주문 흐름으로 연결합니다.",
+        "en": "A connected operating flow from dining room to kitchen.",
+        "ja": "ホールと厨房を一つの注文フローでつなぎます。"
+      },
+      "images": [
+        "tavora-os-table-floorplan"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "가상 레스토랑의 8개 테이블 중 T04에서 발생한 주문을 기준으로 홀 POS, 주방 KDS, 서빙, 결제, 테이블 정리 상태를 분리해 표현합니다.",
+        "en": "A fictional eight-table restaurant uses table T04 to demonstrate how POS, kitchen display, serving, payment, and table reset interact without conflating states.",
+        "ja": "架空の8テーブルのレストランでT04の注文を例に、POS、厨房表示、配膳、決済、清掃の状態を区別します。"
+      },
+      "body": {
+        "ko": "T04 주문은 머시룸 리소토 2개 ₩36,000, 마르게리타 피자 1개 ₩21,000, 탄산수 2개 ₩8,000으로 합계 ₩65,000입니다. 메뉴 가격은 부가세 포함이며 가상의 매장 데이터입니다.",
+        "en": "The T04 ticket includes two mushroom risottos for ₩36,000, one Margherita pizza for ₩21,000, and two sparkling waters for ₩8,000: ₩65,000 in total. Prices include VAT and are fictional.",
+        "ja": "T04の注文はマッシュルームリゾット2点₩36,000、マルゲリータピザ1点₩21,000、炭酸水2点₩8,000で合計₩65,000です。価格は税込みの架空データです。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "주문 상태 추적",
+            "en": "Ticket lifecycle tracking",
+            "ja": "伝票状態の追跡"
+          },
+          "body": {
+            "ko": "주문 접수·조리·준비 완료·서빙 시점을 분리합니다.",
+            "en": "Separate order entry, cooking, ready, and served states.",
+            "ja": "注文受付・調理・準備完了・提供済みを区別します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "테이블 상태 일치",
+            "en": "Table state consistency",
+            "ja": "テーブル状態の整合性"
+          },
+          "body": {
+            "ko": "결제 완료 후 청소 중을 거쳐 다시 이용 가능으로 바뀝니다.",
+            "en": "Move tables from paid to cleaning and then available.",
+            "ja": "会計後に清掃中を経て利用可能へ切り替わります。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "착석부터 테이블 리셋까지",
+        "en": "From seating to table reset",
+        "ja": "着席からテーブルリセットまで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "테이블 배정",
+            "en": "Seat guests",
+            "ja": "席案内"
+          },
+          "body": {
+            "ko": "8개 테이블 중 T04에 손님 3명을 배정합니다.",
+            "en": "Seat three guests at T04 in an eight-table venue.",
+            "ja": "8席のうちT04に3名を案内します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "주문 등록",
+            "en": "Enter the order",
+            "ja": "注文入力"
+          },
+          "body": {
+            "ko": "리소토 2·피자 1·탄산수 2로 합계 ₩65,000을 등록합니다.",
+            "en": "Enter two risottos, one pizza, and two waters totaling ₩65,000.",
+            "ja": "リゾット2・ピザ1・炭酸水2で合計₩65,000を入力します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "주방 처리",
+            "en": "Prepare in kitchen",
+            "ja": "厨房調理"
+          },
+          "body": {
+            "ko": "주방 티켓을 신규 → 조리 중 → 준비 완료로 전환합니다.",
+            "en": "Move the ticket from new to preparing to ready.",
+            "ja": "厨房伝票を新規→調理中→準備完了へ進めます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "서빙·결제",
+            "en": "Serve and settle",
+            "ja": "配膳・会計"
+          },
+          "body": {
+            "ko": "서빙 완료 후 ₩65,000 결제를 기록합니다.",
+            "en": "Record service and a ₩65,000 payment.",
+            "ja": "提供後に₩65,000の会計を記録します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "테이블 리셋",
+            "en": "Reset the table",
+            "ja": "席のリセット"
+          },
+          "body": {
+            "ko": "결제 완료 → 청소 중 → 이용 가능 순으로 변경합니다.",
+            "en": "Change the table from paid to cleaning to available.",
+            "ja": "会計済み→清掃中→利用可能へ切り替えます。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "데모 사례: T04 테이블 3명의 ₩65,000 주문이 주방 티켓, 서빙, 결제를 거쳐 다시 이용 가능 상태가 되기까지.",
+        "en": "Demo case: a ₩65,000 order for three guests at T04 runs through the kitchen ticket, serving and payment until the table is available again.",
+        "ja": "デモ事例：T04テーブル3名の₩65,000の注文が厨房チケット・配膳・決済を経て、再び利用可能になるまで。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "POINT OF SALE"
+      },
+      "layout": "imageLeft",
+      "surface": "light",
+      "heading": {
+        "ko": "홀 직원용 POS 주문 입력",
+        "en": "Front-of-house POS order entry",
+        "ja": "ホールスタッフ向けPOS注文入力"
+      },
+      "body": {
+        "ko": "메뉴·수량·옵션을 선택하고 테이블 주문 합계 65,000원을 확인하는 가상 POS 화면입니다.",
+        "en": "A demo POS order-entry interface for choosing dishes, quantities and options, totaling KRW 65,000.",
+        "ja": "メニュー・数量・オプションを選び、合計65,000ウォンを確認するPOSのデモ画面です。"
+      },
+      "images": [
+        "tavora-os-pos-order"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "KITCHEN DISPLAY"
+      },
+      "layout": "focus",
+      "surface": "light",
+      "heading": {
+        "ko": "주방 태블릿 KDS 주문 티켓",
+        "en": "Kitchen KDS tickets on tablet",
+        "ja": "厨房タブレットKDSの注文チケット"
+      },
+      "body": {
+        "ko": "새 주문·조리 중·완료 3개 작업 열과 경과 시간을 보여주는 가로형 주방 KDS 시연 화면입니다.",
+        "en": "Landscape kitchen-display demo with new, cooking and ready ticket columns and elapsed-time indicators.",
+        "ja": "新規・調理中・提供可能の3列と経過時間を示す横向き厨房KDSデモです。"
+      },
+      "images": [
+        "tavora-os-kitchen-kds"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "FLOOR SERVICE"
+      },
+      "layout": "focus",
+      "heading": {
+        "ko": "홀 직원 태블릿 서빙 업무",
+        "en": "Floor-runner tasks on tablet",
+        "ja": "ホールスタッフ用タブレットの配膳業務"
+      },
+      "body": {
+        "ko": "테이블별 준비 완료 티켓과 서빙 체크를 큰 터치 영역으로 제공하는 홀 업무 시연 화면입니다.",
+        "en": "An illustrative staff tablet with ready-to-serve tickets and large touch targets for table-level task completion.",
+        "ja": "テーブル別の調理完了通知と配膳確認を大きなタッチ領域で表示するホール業務デモです。"
+      },
+      "images": [
+        "tavora-os-floor-runner-tablet"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "CHECKOUT"
+      },
+      "layout": "imageRight",
+      "surface": "light",
+      "heading": {
+        "ko": "테이블 결제 및 마감 처리",
+        "en": "Table payment and closeout",
+        "ja": "テーブル会計・締め処理"
+      },
+      "body": {
+        "ko": "테이블 T04의 주문·결제 확인 및 청소 상태 전환을 분리해 보여주는 정산 시연 화면입니다.",
+        "en": "An illustrative closeout view separating table T04 payment confirmation from the subsequent cleaning state.",
+        "ja": "テーブルT04の会計確認と、その後の清掃状態への切り替えを分けて示すデモです。"
+      },
+      "images": [
+        "tavora-os-settlement-checkout"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "07",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "홀 POS와 주방 KDS를 연결",
+        "en": "Connect POS and kitchen display",
+        "ja": "ホールPOSと厨房KDSの連携"
+      },
+      "intro": {
+        "ko": "매장 직원과 주방 담당자가 같은 주문을 서로 다른 화면에서 처리하는 구조입니다.",
+        "en": "Dining-room and kitchen teams view the same ticket through role-specific interfaces.",
+        "ja": "ホール担当と厨房担当が同じ注文を役割別の画面で扱います。"
+      },
+      "note": {
+        "ko": "실제 POS 단말기·카드 결제·프린터·주방 기기 연동은 구현하지 않은 자체 정적 UI 데모입니다.",
+        "en": "Independent static UI concept; no POS hardware, card processor, printers, or kitchen integrations are implemented.",
+        "ja": "実際のPOS端末、カード決済、プリンター、厨房機器との連携は実装していない静的UIデモです。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "매장 운영 WEB",
+            "en": "Front-of-house operations",
+            "ja": "ホール運営Web"
+          },
+          "audience": {
+            "ko": "홀 매니저·서빙 직원",
+            "en": "Floor managers and servers",
+            "ja": "ホール責任者・サービススタッフ"
+          },
+          "items": [
+            {
+              "ko": "테이블·좌석 상태 그리드",
+              "en": "Table and seating status grid",
+              "ja": "テーブル・座席状態グリッド"
+            },
+            {
+              "ko": "메뉴 선택·수량 조절·POS 주문",
+              "en": "POS item selection and quantity entry",
+              "ja": "POSメニュー選択・数量入力"
+            },
+            {
+              "ko": "결제 요약·테이블 정리 상태",
+              "en": "Payment review and table reset states",
+              "ja": "会計概要・清掃状態"
+            }
+          ]
+        },
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "주방 KDS·직원 모바일",
+            "en": "Kitchen KDS and staff view",
+            "ja": "厨房KDS・スタッフ画面"
+          },
+          "audience": {
+            "ko": "조리 담당자·매장 직원",
+            "en": "Kitchen crew and floor staff",
+            "ja": "厨房スタッフ・ホールスタッフ"
+          },
+          "items": [
+            {
+              "ko": "신규·조리 중·준비 완료 티켓",
+              "en": "New, preparing, and ready kitchen tickets",
+              "ja": "新規・調理中・準備完了の伝票"
+            },
+            {
+              "ko": "메뉴별 조리 진행과 서빙 대기",
+              "en": "Per-item cooking and pickup queue",
+              "ja": "メニュー別調理状況と提供待ち"
+            },
+            {
+              "ko": "직원 모바일 주문 상태 확인",
+              "en": "Mobile order-status review",
+              "ja": "スタッフ用モバイルの注文状態確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "08",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "홀과 주방이 함께 보는 상태",
+        "en": "One state for floor and kitchen",
+        "ja": "ホールと厨房が共有する状態"
+      },
+      "intro": {
+        "ko": "테이블·주문·주방 티켓·결제가 하나의 주문 상태로 이어집니다.",
+        "en": "Table, order, kitchen ticket and payment are stages of one order.",
+        "ja": "テーブル・注文・厨房チケット・決済が一つの注文の状態としてつながります。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "테이블 상태 관리",
+            "en": "Table state grid",
+            "ja": "テーブル状態管理"
+          },
+          "body": {
+            "ko": "테이블별 착석·예약·청소·이용 가능을 구분합니다.",
+            "en": "Show occupied, reserved, cleaning, and available tables.",
+            "ja": "利用中・予約・清掃中・空席を区別します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "홀 POS",
+            "en": "Front-of-house POS",
+            "ja": "ホールPOS"
+          },
+          "body": {
+            "ko": "메뉴·옵션·수량·합계가 일치하는 주문을 작성합니다.",
+            "en": "Build tickets with consistent menu quantities and totals.",
+            "ja": "メニュー、数量、合計が一致する注文票を作成します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "주방 KDS",
+            "en": "Kitchen display",
+            "ja": "厨房KDS"
+          },
+          "body": {
+            "ko": "조리 대기·진행·완료 상태를 분리한 티켓 보드입니다.",
+            "en": "Organize kitchen tickets by new, in-progress, and ready stages.",
+            "ja": "伝票を調理待ち・進行中・完了の段階で管理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "정산·정리",
+            "en": "Settlement and table reset",
+            "ja": "会計・清掃"
+          },
+          "body": {
+            "ko": "결제 후 테이블 청소·다음 손님 준비를 연결합니다.",
+            "en": "Connect payment to cleaning and table availability.",
+            "ja": "会計から清掃と次の案内準備までをつなぎます。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "09",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "한 장의 주문서로 홀과 주방의 운영을 연결합니다.",
+        "en": "One ticket, a coordinated restaurant workflow.",
+        "ja": "一枚の伝票で、ホールと厨房の動きをつなぎます。"
+      },
+      "sub": {
+        "ko": "매장·주방 운영 경험을 표현한 자체 정적 UI 데모.",
+        "en": "An independent static UI concept for front- and back-of-house operations.",
+        "ja": "ホール・厨房の業務体験を表現した自主制作の静的UIデモ。"
+      }
+    }
+  ]
+}

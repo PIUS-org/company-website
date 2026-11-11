@@ -1,0 +1,1029 @@
+{
+  "id": "fity",
+  "slug": "fity",
+  "status": "approved",
+  "visible": true,
+  "featured": true,
+  "order": 10,
+  "includeInPdf": true,
+  "title": {
+    "ko": "FITY",
+    "en": "FITY",
+    "ja": "FITY"
+  },
+  "subtitle": {
+    "ko": "개인 맞춤형 뷰티 컨설팅 플랫폼",
+    "en": "Personalized Beauty Consulting Platform",
+    "ja": "パーソナライズド・ビューティーコンサルティングプラットフォーム"
+  },
+  "summary": {
+    "ko": "뷰티 컨설팅의 탐색부터 신청, 진행, 결과 확인까지 하나의 경험으로 연결하는 플랫폼",
+    "en": "A platform that connects every step of beauty consulting, from discovery and booking to sessions and results, in one experience",
+    "ja": "ビューティーコンサルティングの検索から申込、進行、結果確認までを一つの体験でつなぐプラットフォーム"
+  },
+  "overview": {
+    "ko": "FITY는 사용자가 외모와 스타일에 관한 고민에 맞춰 적합한 전문가의 컨설팅을 이용할 수 있도록 설계한 뷰티 컨설팅 플랫폼입니다. 퍼스널컬러, 체형, 메이크업 등 다양한 컨설팅을 탐색하고, 자신의 사진과 필요한 정보를 제공해 상담을 진행합니다.",
+    "en": "FITY is a beauty consulting platform designed to match people with the right expert for their appearance and style concerns. Users explore consultations such as personal color, body type and makeup, then share their photos and details to start a session.",
+    "ja": "FITYは、外見やスタイルの悩みに合わせて最適な専門家のコンサルティングを受けられるよう設計したビューティーコンサルティングプラットフォームです。パーソナルカラー、骨格、メイクなど多様なコンサルティングを探し、自分の写真と必要な情報を提供して相談を進めます。"
+  },
+  "industry": {
+    "ko": "뷰티테크",
+    "en": "BeautyTech",
+    "ja": "ビューティーテック"
+  },
+  "categories": [
+    "platform",
+    "mobile",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "app",
+      "label": {
+        "ko": "고객용 APP",
+        "en": "Customer App",
+        "ja": "顧客向けアプリ"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "전문가용 WEB",
+        "en": "Expert Web",
+        "ja": "専門家向けWeb"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "관리자용 WEB",
+        "en": "Admin Web",
+        "ja": "管理者向けWeb"
+      }
+    }
+  ],
+  "scope": [
+    {
+      "key": "planning",
+      "label": {
+        "ko": "서비스 기획 · 정책 설계",
+        "en": "Service planning & policy design",
+        "ja": "サービス企画・ポリシー設計"
+      }
+    },
+    {
+      "key": "ux"
+    },
+    {
+      "key": "ui",
+      "label": {
+        "ko": "BI · UI 디자인 시스템",
+        "en": "Brand identity & UI design system",
+        "ja": "BI・UIデザインシステム"
+      }
+    },
+    {
+      "key": "app"
+    },
+    {
+      "key": "frontend"
+    },
+    {
+      "key": "backend"
+    },
+    {
+      "key": "admin"
+    },
+    {
+      "key": "infra",
+      "label": {
+        "ko": "인프라 설계 (AWS)",
+        "en": "Infrastructure design (AWS)",
+        "ja": "インフラ設計（AWS）"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#2E211B",
+    "accentInk": "#2E211B",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "expert-dashboard",
+    "app-home"
+  ],
+  "images": [
+    {
+      "id": "app-home",
+      "file": "app-home.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "FITY 고객 앱 홈 화면",
+        "en": "FITY customer app home screen",
+        "ja": "FITY顧客アプリのホーム画面"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      },
+      "caption": {
+        "ko": "추천 기획전과 진행 중인 핏 요청, 분야별 바로가기, 추천 전문가를 모은 고객 앱 홈입니다.",
+        "en": "The customer app home, gathering featured content, the user’s open Fit Request, category shortcuts and recommended experts.",
+        "ja": "おすすめ特集、進行中のフィットリクエスト、分野別ショートカット、おすすめ専門家をまとめた顧客アプリのホームです。"
+      }
+    },
+    {
+      "id": "app-expert",
+      "file": "app-expert.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "전문가 상세 화면",
+        "en": "Expert profile screen",
+        "ja": "専門家の詳細画面"
+      },
+      "presentation": {
+        "tier": "core"
+      },
+      "caption": {
+        "ko": "전문가의 소개·판매 상품·포트폴리오·후기를 탭으로 나눠 보여주는 전문가 상세 화면입니다.",
+        "en": "An expert’s page, with tabs for introduction, products, portfolio and reviews.",
+        "ja": "専門家の紹介・販売商品・ポートフォリオ・レビューをタブで表示する詳細画面です。"
+      }
+    },
+    {
+      "id": "app-product",
+      "file": "app-product.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "컨설팅 상품 상세 화면",
+        "en": "Consulting product detail screen",
+        "ja": "コンサル商品の詳細画面"
+      },
+      "presentation": {
+        "tier": "core"
+      },
+      "caption": {
+        "ko": "상품 설명과 가격, 분야·진행 방식을 확인하고 바로 구매로 이어지는 컨설팅 상품 상세 화면입니다.",
+        "en": "A consulting product page showing description, price, field and format, leading straight to purchase.",
+        "ja": "商品説明、価格、分野・進行方式を確認し、そのまま購入へ進めるコンサル商品の詳細画面です。"
+      }
+    },
+    {
+      "id": "app-search",
+      "file": "app-search.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "컨설팅·전문가 검색 화면",
+        "en": "Search for consultations and experts",
+        "ja": "コンサル・専門家の検索画面"
+      },
+      "presentation": {
+        "tier": "support"
+      },
+      "caption": {
+        "ko": "인기 검색어와 상품·전문가 결과를 분야·가격·작업 기간 필터로 좁혀 보는 검색 화면입니다.",
+        "en": "A search screen with popular keywords and product and expert results, filtered by field, price and turnaround.",
+        "ja": "人気キーワードと商品・専門家の検索結果を、分野・価格・作業期間で絞り込む検索画面です。"
+      }
+    },
+    {
+      "id": "app-fitnote",
+      "file": "app-fitnote.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "핏노트 — 내 사진과 기본 정보",
+        "en": "Fit Note — my photos and profile",
+        "ja": "フィットノート — 写真と基本情報"
+      },
+      "presentation": {
+        "tier": "hidden"
+      },
+      "caption": {
+        "ko": "기본 정보와 얼굴·상반신 사진을 한곳에 모아 핏 요청과 주문에 다시 쓰는 핏노트 화면입니다.",
+        "en": "Fit Note keeps profile details and face and upper-body photos in one place for reuse in Fit Requests and orders.",
+        "ja": "基本情報と顔・上半身の写真をまとめ、フィットリクエストや注文で再利用するフィットノート画面です。"
+      }
+    },
+    {
+      "id": "app-photos",
+      "file": "app-photos.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "주문 단계의 필요한 사진 등록 화면",
+        "en": "Required photos step during an order",
+        "ja": "注文時の必要写真の登録画面"
+      },
+      "presentation": {
+        "tier": "support"
+      },
+      "caption": {
+        "ko": "주문한 상품에 필요한 사진을 핏노트에서 불러오거나 새로 올리는 주문 단계 화면입니다.",
+        "en": "An order step where the photos a product needs are pulled from Fit Note or newly uploaded.",
+        "ja": "注文した商品に必要な写真をフィットノートから読み込むか、新たにアップロードする注文ステップです。"
+      }
+    },
+    {
+      "id": "app-consult",
+      "file": "app-consult.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "진행 중인 컨설팅 주문 상세",
+        "en": "Order detail of a consultation in progress",
+        "ja": "進行中のコンサル注文の詳細"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      },
+      "caption": {
+        "ko": "결제·일정 확정·작업 중·결과물 단계와 완료 예정일, 보낸 사진을 확인하는 진행 중 주문 상세입니다.",
+        "en": "An in-progress order showing the payment, scheduling, work and delivery stages, the expected completion date and the photos sent.",
+        "ja": "決済・日程確定・作業中・結果物の段階、完了予定日、送った写真を確認する進行中の注文詳細です。"
+      }
+    },
+    {
+      "id": "app-result",
+      "file": "app-result.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "결과물이 도착한 주문 상세",
+        "en": "Order detail with the delivered result",
+        "ja": "結果物が届いた注文の詳細"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      },
+      "caption": {
+        "ko": "도착한 리포트 결과물과 첨부 파일을 확인하고 저장·공유하는 주문 상세 화면입니다.",
+        "en": "An order page where the delivered report and attached files can be viewed, saved and shared.",
+        "ja": "届いたレポートと添付ファイルを確認し、保存・共有する注文詳細画面です。"
+      }
+    },
+    {
+      "id": "app-fit",
+      "file": "app-fit.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "핏 요청과 받은 제안",
+        "en": "A Fit Request and the proposals received",
+        "ja": "フィットリクエストと届いた提案"
+      },
+      "presentation": {
+        "tier": "hidden"
+      },
+      "caption": {
+        "ko": "작성한 핏 요청의 내용과 공개 사진, 전문가들에게서 받은 제안을 함께 보는 화면입니다.",
+        "en": "A Fit Request with its details, shared photo and the proposals received from experts.",
+        "ja": "作成したフィットリクエストの内容と公開写真、専門家から届いた提案をまとめて確認する画面です。"
+      }
+    },
+    {
+      "id": "app-fitnew",
+      "file": "app-fitnew.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "핏 요청 작성 화면",
+        "en": "Writing a Fit Request",
+        "ja": "フィットリクエストの作成画面"
+      },
+      "presentation": {
+        "tier": "hidden"
+      },
+      "caption": {
+        "ko": "제목·분야·내용과 공개할 사진을 입력해 전문가에게 제안을 받는 핏 요청 작성 화면입니다.",
+        "en": "Writing a Fit Request: title, fields, details and the photos to share, so experts can send proposals.",
+        "ja": "タイトル・分野・内容と公開する写真を入力し、専門家から提案を受けるフィットリクエストの作成画面です。"
+      }
+    },
+    {
+      "id": "app-consults",
+      "file": "app-consults.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "내 컨설팅 목록",
+        "en": "My consultations",
+        "ja": "マイコンサル一覧"
+      },
+      "presentation": {
+        "tier": "support"
+      },
+      "caption": {
+        "ko": "사진 보완·후기 작성 등 지금 해야 할 일과 진행 중인 컨설팅을 함께 보여주는 목록 화면입니다.",
+        "en": "A list of the user’s consultations, with pending to-dos such as photo resubmission and reviews at the top.",
+        "ja": "写真の再送やレビュー作成など今やるべきことと、進行中のコンサルをまとめた一覧画面です。"
+      }
+    },
+    {
+      "id": "app-post",
+      "file": "app-post.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "커뮤니티 게시글",
+        "en": "Community post",
+        "ja": "コミュニティ投稿"
+      },
+      "presentation": {
+        "tier": "hidden"
+      },
+      "caption": {
+        "ko": "사진과 본문, 좋아요·댓글로 구성된 커뮤니티 게시글 화면입니다.",
+        "en": "A community post with photos, text, likes and comments.",
+        "ja": "写真・本文・いいね・コメントで構成されたコミュニティ投稿画面です。"
+      }
+    },
+    {
+      "id": "app-review",
+      "file": "app-review.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "후기 작성 화면",
+        "en": "Writing a review",
+        "ja": "レビュー作成画面"
+      },
+      "presentation": {
+        "tier": "support"
+      },
+      "caption": {
+        "ko": "받은 결과물에 별점과 후기를 남기는 화면으로, 작성 기한과 후기 규정을 함께 안내합니다.",
+        "en": "A review screen for rating a delivered result, with the writing deadline and review rules shown below.",
+        "ja": "受け取った結果物に星評価とレビューを残す画面で、作成期限とレビューの規定も案内します。"
+      }
+    },
+    {
+      "id": "app-my",
+      "file": "app-my.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "마이 화면",
+        "en": "My page",
+        "ja": "マイページ"
+      },
+      "presentation": {
+        "tier": "hidden"
+      },
+      "caption": {
+        "ko": "찜·후기·작성 글 수와 핏 프로필 진행 상황, 설정·고객센터로 이어지는 마이 화면입니다.",
+        "en": "My page, with saved items, reviews and posts, Fit Profile progress, and links to settings and support.",
+        "ja": "お気に入り・レビュー・投稿数、フィットプロフィールの進捗、設定・カスタマーセンターへの導線をまとめたマイページです。"
+      }
+    },
+    {
+      "id": "expert-dashboard",
+      "file": "expert-dashboard.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "전문가 WEB 대시보드",
+        "en": "Expert web dashboard",
+        "ja": "専門家Webのダッシュボード"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      },
+      "caption": {
+        "ko": "처리할 의뢰와 핏 요청·후기·광고 현황, 이번 달 정산 예정 금액을 요약한 전문가 WEB 대시보드입니다.",
+        "en": "The expert web dashboard, summarizing orders to handle, Fit Requests, reviews, ads and this month’s expected settlement.",
+        "ja": "対応すべき依頼、フィットリクエスト・レビュー・広告の状況、今月の精算予定額をまとめた専門家Webのダッシュボードです。"
+      }
+    },
+    {
+      "id": "expert-profile",
+      "file": "expert-profile.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "전문가 WEB 프로필 관리와 앱 미리보기",
+        "en": "Expert web profile editor with live app preview",
+        "ja": "専門家Webのプロフィール管理とアプリプレビュー"
+      },
+      "presentation": {
+        "tier": "hidden"
+      },
+      "caption": {
+        "ko": "전문가 프로필을 편집하면 고객 앱에 보이는 모습을 오른쪽에서 바로 미리 보는 프로필 관리 화면입니다.",
+        "en": "Profile editing for experts, with a live preview of how the profile appears in the customer app.",
+        "ja": "プロフィールを編集すると、顧客アプリでの見え方を右側ですぐにプレビューできるプロフィール管理画面です。"
+      }
+    },
+    {
+      "id": "expert-orders",
+      "file": "expert-orders.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "전문가 WEB 의뢰 관리",
+        "en": "Expert web order management",
+        "ja": "専門家Webの依頼管理"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      },
+      "caption": {
+        "ko": "결제된 의뢰의 상태와 다음 기한을 확인하고 일정 확정·연장·결과물 제출로 이어지는 의뢰 관리 화면입니다.",
+        "en": "Order management for experts: status and next deadline for each paid order, with scheduling, extensions and delivery.",
+        "ja": "決済済み依頼の状態と次の期限を確認し、日程確定・延長・結果物の提出へ進む依頼管理画面です。"
+      }
+    },
+    {
+      "id": "admin-sales",
+      "file": "admin-sales.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "관리자 WEB 거래액 현황",
+        "en": "Admin web transaction overview",
+        "ja": "管理者Webの取引額"
+      },
+      "presentation": {
+        "tier": "support"
+      },
+      "caption": {
+        "ko": "월별 거래액·환불액·실 거래액과 최근 6개월 추이를 확인하는 관리자 WEB 거래액 화면입니다.",
+        "en": "The admin web transaction view: monthly gross, refunds and net amounts with a six-month trend.",
+        "ja": "月別の取引額・返金額・実取引額と直近6か月の推移を確認する管理者Webの取引額画面です。"
+      }
+    },
+    {
+      "id": "admin-consult",
+      "file": "admin-consult.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "관리자 WEB 컨설팅 관리",
+        "en": "Admin web consultation management",
+        "ja": "管理者Webのコンサル管理"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      },
+      "caption": {
+        "ko": "전체 컨설팅 의뢰를 기간·분야·상태로 검색하고 전문가·상품·가격별로 살펴보는 관리자 WEB 화면입니다.",
+        "en": "The admin web view for searching all consultation orders by period, field and status, with expert, product and price columns.",
+        "ja": "すべてのコンサル依頼を期間・分野・状態で検索し、専門家・商品・価格ごとに確認する管理者Web画面です。"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "BeautyTech Platform",
+        "en": "BeautyTech Platform",
+        "ja": "BeautyTech Platform"
+      },
+      "headline": {
+        "ko": "나에게 맞는 아름다움을,\n더 정확하고 편리하게.",
+        "en": "The beauty that fits you,\nmore precise and effortless.",
+        "ja": "自分に合う美しさを、\nもっと正確に、もっと手軽に。"
+      },
+      "sub": {
+        "ko": "뷰티 컨설팅의 탐색부터 신청, 진행, 결과 확인까지 하나의 경험으로 연결하는 플랫폼.",
+        "en": "One platform that connects discovering, booking, running and reviewing beauty consultations.",
+        "ja": "ビューティーコンサルティングの検索から申込、進行、結果確認までを一つの体験でつなぐプラットフォーム。"
+      },
+      "images": [
+        "app-expert",
+        "app-home",
+        "app-product"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "02",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "전문가를 소개하는 서비스가 아니라, 컨설팅 업무를 잇는 플랫폼",
+        "en": "Not a directory of experts, but a platform that runs the consulting workflow",
+        "ja": "専門家を紹介するサービスではなく、コンサル業務をつなぐプラットフォーム"
+      },
+      "lead": {
+        "ko": "FITY는 고객, 전문가, 관리자의 업무 흐름을 하나의 플랫폼 안에서 연결하는 것을 목표로 합니다.",
+        "en": "FITY aims to connect the workflows of customers, experts and administrators within a single platform.",
+        "ja": "FITYは、顧客・専門家・管理者の業務フローを一つのプラットフォームの中でつなぐことを目指しています。"
+      },
+      "body": {
+        "ko": "고객은 자신에게 맞는 컨설팅을 찾아 신청하고 결과를 받아보며, 전문가는 상품과 상담을 관리하고, 관리자는 플랫폼 전체의 운영을 맡습니다.",
+        "en": "Customers find, request and receive the consultations that suit them; experts manage their products and sessions; administrators run the platform as a whole.",
+        "ja": "顧客は自分に合うコンサルティングを探して申し込み、結果を受け取ります。専門家は商品と相談を管理し、管理者はプラットフォーム全体の運営を担います。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "복잡한 컨설팅 이용 경험 개선",
+            "en": "A simpler consulting journey",
+            "ja": "複雑なコンサル体験の改善"
+          },
+          "body": {
+            "ko": "탐색, 신청, 진행 현황과 결과 관리를 하나의 일관된 경험으로 연결합니다.",
+            "en": "Browsing, requesting, tracking and reviewing results become one consistent experience.",
+            "ja": "検索、申込、進行状況と結果の管理を一貫した体験としてつなぎます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "사용자 정보와 사진의 체계적인 관리",
+            "en": "Organised photos and personal details",
+            "ja": "写真とユーザー情報の体系的な管理"
+          },
+          "body": {
+            "ko": "상담에 필요한 사진과 정보를 미리 저장해 두고, 필요한 항목만 선택해 등록하고 활용합니다.",
+            "en": "Photos and details for consultations are saved in advance, and users register only the items they need.",
+            "ja": "相談に必要な写真と情報をあらかじめ保存し、必要な項目だけを選んで登録・活用します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "전문가의 업무 효율화",
+            "en": "Efficient work for experts",
+            "ja": "専門家の業務効率化"
+          },
+          "body": {
+            "ko": "컨설팅 상품, 고객 요청과 상담 진행, 완료된 컨설팅과 후기를 한 곳에서 관리합니다.",
+            "en": "Products, customer requests, ongoing sessions, completed consultations and reviews are managed in one place.",
+            "ja": "コンサル商品、顧客の依頼と相談の進行、完了したコンサルとレビューを一か所で管理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "플랫폼 운영 관리",
+            "en": "Platform operations",
+            "ja": "プラットフォーム運営管理"
+          },
+          "body": {
+            "ko": "전문가 승인, 상품과 주문, 컨설팅 운영, 결제·환불·정산 업무를 관리하도록 설계합니다.",
+            "en": "Designed to handle expert approval, products and orders, consulting operations, payments, refunds and settlement.",
+            "ja": "専門家の承認、商品と注文、コンサル運営、決済・返金・精算業務を管理できるよう設計します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "03",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "세 개의 역할, 하나의 플랫폼",
+        "en": "Three roles, one platform",
+        "ja": "三つの役割、一つのプラットフォーム"
+      },
+      "intro": {
+        "ko": "고객·전문가·관리자가 각자의 화면에서 같은 컨설팅 흐름을 다룹니다.",
+        "en": "Customers, experts and administrators each work on the same consulting flow from their own interface.",
+        "ja": "顧客・専門家・管理者が、それぞれの画面で同じコンサルティングの流れを扱います。"
+      },
+      "core": {
+        "ko": "FITY 플랫폼",
+        "en": "FITY Platform",
+        "ja": "FITYプラットフォーム"
+      },
+      "columns": [
+        {
+          "platform": "app",
+          "title": {
+            "ko": "고객 APP",
+            "en": "Customer App",
+            "ja": "顧客アプリ"
+          },
+          "audience": {
+            "ko": "컨설팅을 찾고 이용하는 고객",
+            "en": "Customers looking for consultations",
+            "ja": "コンサルを探して利用する顧客"
+          },
+          "items": [
+            {
+              "ko": "컨설팅 · 전문가 탐색",
+              "en": "Browse consultations and experts",
+              "ja": "コンサル・専門家の検索"
+            },
+            {
+              "ko": "핏노트 — 사진과 기본 정보 관리",
+              "en": "Fit Note — photos and profile",
+              "ja": "フィットノート — 写真と基本情報"
+            },
+            {
+              "ko": "핏 요청 — 고민을 올리고 제안 받기",
+              "en": "Fit Request — post a concern, get proposals",
+              "ja": "フィットリクエスト — 悩みを投稿し提案を受け取る"
+            },
+            {
+              "ko": "상품 구매와 결제",
+              "en": "Purchase and payment",
+              "ja": "商品購入と決済"
+            },
+            {
+              "ko": "진행 현황 · 결과물 확인",
+              "en": "Progress and results",
+              "ja": "進行状況・結果物の確認"
+            },
+            {
+              "ko": "후기 작성",
+              "en": "Reviews",
+              "ja": "レビュー作成"
+            },
+            {
+              "ko": "커뮤니티",
+              "en": "Community",
+              "ja": "コミュニティ"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "전문가 WEB",
+            "en": "Expert Web",
+            "ja": "専門家Web"
+          },
+          "audience": {
+            "ko": "컨설팅을 제공하는 전문가",
+            "en": "Experts who provide consultations",
+            "ja": "コンサルを提供する専門家"
+          },
+          "items": [
+            {
+              "ko": "대시보드 — 오늘 처리할 일",
+              "en": "Dashboard — today’s tasks",
+              "ja": "ダッシュボード — 今日の対応事項"
+            },
+            {
+              "ko": "프로필 관리와 앱 미리보기",
+              "en": "Profile editor with app preview",
+              "ja": "プロフィール管理とアプリプレビュー"
+            },
+            {
+              "ko": "컨설팅 상품 등록 · 관리",
+              "en": "Product registration and management",
+              "ja": "コンサル商品の登録・管理"
+            },
+            {
+              "ko": "핏 요청에 상품 제안",
+              "en": "Propose products to Fit Requests",
+              "ja": "フィットリクエストへの商品提案"
+            },
+            {
+              "ko": "의뢰 관리 — 확인 · 진행 · 결과물",
+              "en": "Orders — confirm, run, deliver",
+              "ja": "依頼管理 — 確認・進行・結果物"
+            },
+            {
+              "ko": "후기 답변",
+              "en": "Reply to reviews",
+              "ja": "レビューへの返信"
+            },
+            {
+              "ko": "정산 · 광고 신청",
+              "en": "Settlement and ad requests",
+              "ja": "精算・広告申請"
+            }
+          ]
+        },
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "관리자 WEB",
+            "en": "Admin Web",
+            "ja": "管理者Web"
+          },
+          "audience": {
+            "ko": "플랫폼을 운영하는 관리자",
+            "en": "Administrators who run the platform",
+            "ja": "プラットフォームを運営する管理者"
+          },
+          "items": [
+            {
+              "ko": "대시보드 — 처리할 일 · 이달 요약",
+              "en": "Dashboard — pending work and monthly summary",
+              "ja": "ダッシュボード — 対応事項・月次サマリー"
+            },
+            {
+              "ko": "고객 · 전문가 회원, 전문가 심사",
+              "en": "Customers, experts and expert screening",
+              "ja": "顧客・専門家会員、専門家審査"
+            },
+            {
+              "ko": "핏 요청 · 컨설팅 · 상품 관리",
+              "en": "Fit Requests, consultations and products",
+              "ja": "フィットリクエスト・コンサル・商品管理"
+            },
+            {
+              "ko": "거래액 · 매출 · 정산",
+              "en": "Transactions, revenue and settlement",
+              "ja": "取引額・売上・精算"
+            },
+            {
+              "ko": "광고 관리",
+              "en": "Ad management",
+              "ja": "広告管理"
+            },
+            {
+              "ko": "신고 · 커뮤니티 관리",
+              "en": "Reports and community",
+              "ja": "通報・コミュニティ管理"
+            }
+          ]
+        }
+      ],
+      "note": {
+        "ko": "개발 버전 기준 화면 수 — 고객 앱 43 · 전문가 WEB 24 · 관리자 WEB 21",
+        "en": "Screens in the development build — customer app 43 · expert web 24 · admin web 21",
+        "ja": "開発版の画面数 — 顧客アプリ43・専門家Web 24・管理者Web 21"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "04",
+        "label": "CUSTOMER EXPERIENCE"
+      },
+      "heading": {
+        "ko": "탐색에서 결과 확인까지, 끊기지 않는 고객 경험",
+        "en": "From discovery to results, without a break",
+        "ja": "検索から結果確認まで、途切れない顧客体験"
+      },
+      "intro": {
+        "ko": "고객은 앱 하나로 컨설팅의 전 과정을 이어갑니다.",
+        "en": "Customers move through the entire consultation in a single app.",
+        "ja": "顧客はアプリ一つでコンサルティングの全過程を進めます。"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "탐색",
+            "en": "Discover",
+            "ja": "検索"
+          },
+          "body": {
+            "ko": "고민에 맞는 컨설팅과 전문가를 찾습니다.",
+            "en": "Find consultations and experts for your concern.",
+            "ja": "悩みに合うコンサルと専門家を探します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "정보 등록",
+            "en": "Share details",
+            "ja": "情報登録"
+          },
+          "body": {
+            "ko": "핏노트에 사진과 기본 정보를 저장해 두고 필요한 것만 씁니다.",
+            "en": "Photos and basic details live in Fit Note and are reused when needed.",
+            "ja": "写真と基本情報をフィットノートに保存し、必要なものだけ使います。"
+          }
+        },
+        {
+          "title": {
+            "ko": "컨설팅 신청",
+            "en": "Request",
+            "ja": "申込"
+          },
+          "body": {
+            "ko": "상품을 고르고 그 상품에 필요한 사진을 확인해 주문합니다.",
+            "en": "Pick a product and order with the photos it needs.",
+            "ja": "商品を選び、必要な写真を確認して注文します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "상담 진행",
+            "en": "Session",
+            "ja": "相談進行"
+          },
+          "body": {
+            "ko": "결제, 일정 확정, 작업 중 단계를 확인합니다.",
+            "en": "Follow payment, scheduling and work-in-progress stages.",
+            "ja": "決済・日程確定・作業中の段階を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "결과 확인",
+            "en": "Results",
+            "ja": "結果確認"
+          },
+          "body": {
+            "ko": "컨설팅 결과를 받아보고 다시 확인합니다.",
+            "en": "Receive the results and come back to them anytime.",
+            "ja": "コンサル結果を受け取り、いつでも見返せます。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "CONSULTATION"
+      },
+      "layout": "imageRight",
+      "surface": "light",
+      "heading": {
+        "ko": "진행 상황과 결과를 한 화면에서",
+        "en": "Progress and results in one place",
+        "ja": "進行状況と結果を一つの画面で"
+      },
+      "body": {
+        "ko": "결제, 일정 확정, 작업 중 단계를 확인합니다. 컨설팅 결과를 받아보고 다시 확인합니다.",
+        "en": "Follow payment, scheduling and work-in-progress stages. Receive the results and come back to them anytime.",
+        "ja": "決済・日程確定・作業中の段階を確認します。コンサル結果を受け取り、いつでも見返せます。"
+      },
+      "images": [
+        "app-consult",
+        "app-result"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "EXPERT WORKSPACE"
+      },
+      "layout": "full",
+      "surface": "light",
+      "heading": {
+        "ko": "전문가의 하루를 정리하는 업무 화면",
+        "en": "A workspace that organises the expert’s day",
+        "ja": "専門家の一日を整理する業務画面"
+      },
+      "body": {
+        "ko": "전문가는 PC 웹에서 오늘 마감할 의뢰와 정산을 한눈에 보고, 프로필을 고치면 고객 앱에 보이는 모습을 바로 확인합니다.",
+        "en": "On the web, experts see today’s deadlines and settlement at a glance, and preview how their profile looks in the customer app as they edit it.",
+        "ja": "専門家はPCのWebで今日締め切りの依頼と精算をひと目で確認し、プロフィールを直すと顧客アプリでの見え方をすぐ確認できます。"
+      },
+      "bullets": [
+        {
+          "ko": "마감 · 기한초과 의뢰 우선 표시",
+          "en": "Due and overdue orders first",
+          "ja": "締切・期限超過の依頼を優先表示"
+        },
+        {
+          "ko": "프로필 편집과 앱 미리보기",
+          "en": "Profile editing with app preview",
+          "ja": "プロフィール編集とアプリプレビュー"
+        },
+        {
+          "ko": "상태별 의뢰 목록",
+          "en": "Orders by status",
+          "ja": "状態別の依頼一覧"
+        }
+      ],
+      "images": [
+        "expert-dashboard",
+        "expert-orders"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "07",
+        "label": "PLATFORM MANAGEMENT"
+      },
+      "layout": "imageLeft",
+      "surface": "dark",
+      "heading": {
+        "ko": "플랫폼 운영의 기준을 세우는 관리자 화면",
+        "en": "An admin console that sets the rules of the platform",
+        "ja": "プラットフォーム運営の基準をつくる管理者画面"
+      },
+      "body": {
+        "ko": "관리자는 전문가 심사부터 컨설팅 · 상품 관리, 거래액 · 정산까지 플랫폼 운영 전체를 다룹니다.",
+        "en": "Administrators run the whole platform, from expert screening to consultations, products, transactions and settlement.",
+        "ja": "管理者は専門家審査からコンサル・商品管理、取引額・精算までプラットフォーム運営全体を扱います。"
+      },
+      "bullets": [
+        {
+          "ko": "전문가 심사 · 회원 관리",
+          "en": "Expert screening and members",
+          "ja": "専門家審査・会員管理"
+        },
+        {
+          "ko": "컨설팅 상태별 관리",
+          "en": "Consultations by status",
+          "ja": "状態別のコンサル管理"
+        },
+        {
+          "ko": "거래액 · 매출 · 정산",
+          "en": "Transactions, revenue, settlement",
+          "ja": "取引額・売上・精算"
+        }
+      ],
+      "images": [
+        "admin-consult"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "08",
+        "label": "MORE SCREENS"
+      },
+      "heading": {
+        "ko": "그 밖의 화면",
+        "en": "Other screens",
+        "ja": "その他の画面"
+      },
+      "intro": {
+        "ko": "검색·사진 등록·내 컨설팅·후기·거래액 등 주요 흐름을 보조하는 화면입니다.",
+        "en": "Search, photo upload, my consultations, reviews and sales — screens that support the main flow.",
+        "ja": "検索・写真登録・マイコンサル・レビュー・取引額など、主な流れを補助する画面です。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "검색",
+            "en": "Search",
+            "ja": "検索"
+          },
+          "body": {
+            "ko": "컨설팅·전문가 검색 화면",
+            "en": "Search for consultations and experts",
+            "ja": "コンサル・専門家の検索画面"
+          },
+          "image": "app-search"
+        },
+        {
+          "title": {
+            "ko": "사진 등록",
+            "en": "Photo upload",
+            "ja": "写真登録"
+          },
+          "body": {
+            "ko": "주문 단계의 필요한 사진 등록 화면",
+            "en": "Required photos step during an order",
+            "ja": "注文時の必要写真の登録画面"
+          },
+          "image": "app-photos"
+        },
+        {
+          "title": {
+            "ko": "내 컨설팅",
+            "en": "My consultations",
+            "ja": "マイコンサル"
+          },
+          "body": {
+            "ko": "내 컨설팅 목록",
+            "en": "My consultations",
+            "ja": "マイコンサル一覧"
+          },
+          "image": "app-consults"
+        },
+        {
+          "title": {
+            "ko": "후기 작성",
+            "en": "Review",
+            "ja": "レビュー作成"
+          },
+          "body": {
+            "ko": "후기 작성 화면",
+            "en": "Writing a review",
+            "ja": "レビュー作成画面"
+          },
+          "image": "app-review"
+        },
+        {
+          "title": {
+            "ko": "거래액 현황",
+            "en": "Sales overview",
+            "ja": "取引額の状況"
+          },
+          "body": {
+            "ko": "관리자 WEB 거래액 현황",
+            "en": "Admin web transaction overview",
+            "ja": "管理者Webの取引額"
+          },
+          "image": "admin-sales"
+        }
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "09",
+        "label": "PROJECT SCOPE"
+      },
+      "heading": {
+        "ko": "수행 범위",
+        "en": "Scope of work",
+        "ja": "担当範囲"
+      }
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "세 역할의 업무 흐름을\n하나의 플랫폼으로.",
+        "en": "Three roles' workflows,\none platform.",
+        "ja": "三つの役割の業務フローを、\n一つのプラットフォームに。"
+      },
+      "sub": {
+        "ko": "FITY — PIUS가 기획하고 개발 중인 뷰티 컨설팅 플랫폼",
+        "en": "FITY — a beauty consulting platform planned and being built by PIUS",
+        "ja": "FITY — PIUSが企画・開発中のビューティーコンサルティングプラットフォーム"
+      }
+    }
+  ],
+  "projectState": "inDevelopment",
+  "year": 2026
+}

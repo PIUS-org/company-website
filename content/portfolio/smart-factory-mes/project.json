@@ -1,0 +1,580 @@
+{
+  "id": "smart-factory-mes",
+  "slug": "smart-factory-mes",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 15,
+  "includeInPdf": true,
+  "title": {
+    "ko": "스마트팩토리 MES",
+    "en": "Smart Factory MES",
+    "ja": "スマートファクトリーMES"
+  },
+  "subtitle": {
+    "ko": "CNC 제조 현장의 생산·품질·추적 업무를 연결하는 MES UI 데모",
+    "en": "A connected MES UI demo for CNC production, quality and traceability",
+    "ja": "CNC製造現場の生産・品質・トレーサビリティをつなぐMES UIデモ"
+  },
+  "summary": {
+    "ko": "생산계획부터 현장 작업, 품질검사, LOT 추적까지 연결한 자동차 부품 제조업 MES 데모.",
+    "en": "An automotive-parts MES demo connecting production planning, shop-floor work, quality inspection and LOT traceability.",
+    "ja": "生産計画、現場作業、品質検査、LOT追跡をつなぐ自動車部品製造向けMESデモ。"
+  },
+  "overview": {
+    "ko": "자동차 부품 CNC 가공 업무를 가상의 작업지시 데이터로 재현한 생산관리 WEB 및 현장 태블릿 UI 포트폴리오입니다. 계획·지시·가공·검사·추적을 동일한 정보 흐름으로 표현했습니다.",
+    "en": "A portfolio demonstration of production management web screens and shop-floor tablet interfaces for CNC automotive-parts manufacturing, using fictional work order data. Planning, orders, machining, quality and tracing are represented as one connected workflow.",
+    "ja": "自動車部品のCNC加工業務を架空の作業指示データで表現した、生産管理WEBと現場タブレットUIのポートフォリオです。計画・指示・加工・検査・追跡を一連の情報の流れとして示します。"
+  },
+  "industry": {
+    "ko": "자동차 부품 CNC 가공 제조",
+    "en": "CNC automotive-parts manufacturing",
+    "ja": "自動車部品のCNC加工製造"
+  },
+  "categories": [
+    "erp",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "생산관리 WEB",
+        "en": "Production management web",
+        "ja": "生産管理WEB"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "현장 작업자·품질관리자 태블릿 UI",
+        "en": "Shop-floor & quality tablet UI",
+        "ja": "現場作業者・品質管理者向けタブレットUI"
+      }
+    }
+  ],
+  "scope": [
+    {
+      "key": "planning",
+      "label": {
+        "ko": "가상 데이터 기반 업무 흐름 설계",
+        "en": "Workflow design with fictional data",
+        "ja": "架空データに基づく業務フロー設計"
+      }
+    },
+    {
+      "key": "ui",
+      "label": {
+        "ko": "반응형 업무 화면·태블릿 화면 시각화",
+        "en": "Responsive web and tablet UI visualization",
+        "ja": "レスポンシブ業務画面・タブレット画面の視覚化"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#0D8588",
+    "accentInk": "#122531",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "mes-dashboard"
+  ],
+  "images": [
+    {
+      "id": "mes-dashboard",
+      "kind": "desktop",
+      "file": "mes-dashboard.webp",
+      "alt": {
+        "ko": "PIUS MES DEMO 생산 운영 대시보드에 생산실적, 작업지시 진행률과 CNC 설비 상태가 표시된 화면.",
+        "en": "PIUS MES DEMO manufacturing overview dashboard showing production totals, work order progress and CNC equipment status.",
+        "ja": "PIUS MES DEMOの生産ダッシュボード。生産実績、作業指示の進捗、CNC設備の状態を表示。"
+      },
+      "caption": {
+        "ko": "생산실적 1,810개, 양품 1,777개, 불량 33개를 기준으로 작업지시와 설비 현황을 요약합니다.",
+        "en": "An overview of 1,810 produced units, 1,777 good units and 33 defects alongside work orders and machine status.",
+        "ja": "生産実績1,810個、良品1,777個、不良33個と作業指示・設備の状況を一覧化。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "mes-production-plan",
+      "kind": "desktop",
+      "file": "mes-production-plan.webp",
+      "alt": {
+        "ko": "CNC-01부터 CNC-04의 작업지시별 설비 배정 생산 일정",
+        "en": "Machine-level production schedule for CNC-01 through CNC-04",
+        "ja": "CNC-01～CNC-04の作業指示別生産スケジュール"
+      },
+      "caption": {
+        "ko": "WO-261106-014~017 총 3,550개 생산계획을 설비별 일간 타임라인으로 재구성한 UI입니다.",
+        "en": "A machine-by-day timeline for work orders 014–017, totaling 3,550 planned units.",
+        "ja": "作業指示014～017の合計3,550個の計画を設備別の日次タイムラインで示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "mes-work-orders",
+      "kind": "desktop",
+      "file": "mes-work-orders.webp",
+      "alt": {
+        "ko": "WO-261106-014 작업지시의 공정·담당·실적 관리 화면",
+        "en": "Work-order execution, assignment, and progress for WO-261106-014",
+        "ja": "WO-261106-014の工程・担当者・実績管理画面"
+      },
+      "caption": {
+        "ko": "CNC-01 작업지시 1,200개 중 840개 생산과 품질 검사 결과를 연결한 실행 관리 UI입니다.",
+        "en": "An execution workspace linking 840 of 1,200 planned CNC-01 units with inspection results.",
+        "ja": "CNC-01の計画1,200個に対する生産840個と検査結果を連携させた管理UIです。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "mes-shopfloor-terminal",
+      "kind": "tablet",
+      "file": "mes-shopfloor-terminal.webp",
+      "alt": {
+        "ko": "태블릿에서 CNC-01 배정 작업과 840개 누적 생산실적을 확인하는 현장 작업 화면.",
+        "en": "Tablet shop-floor terminal showing the CNC-01 assignment and 840 units of cumulative production.",
+        "ja": "CNC-01の割当作業と累計生産840個を表示する現場作業者向けタブレット画面。"
+      },
+      "caption": {
+        "ko": "현장 작업자가 배정 작업, 진행률 70%, 실적 입력 인터페이스를 확인하는 시연용 화면입니다.",
+        "en": "A demonstration interface for assigned jobs, 70% progress and production entry.",
+        "ja": "担当作業、進捗率70%、実績入力UIを確認するためのデモ画面。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "mes-quality-inspection",
+      "kind": "tablet",
+      "file": "mes-quality-inspection.webp",
+      "alt": {
+        "ko": "브래킷 A120의 측정값, 적합 판정 및 누적 양품 822개·불량 18개를 보여주는 품질검사 태블릿 화면.",
+        "en": "Tablet quality inspection screen with sample measurements, verdicts, 822 good units and 18 defects for Bracket A120.",
+        "ja": "ブラケットA120の測定値、合否判定、良品822個・不良18個を表示する品質検査タブレット画面。"
+      },
+      "caption": {
+        "ko": "샘플 측정값과 불량 유형별 집계를 함께 표시하는 품질검사 UI 시연입니다.",
+        "en": "A quality control UI illustrating sample checks and defect type summaries.",
+        "ja": "サンプル測定と不良種別集計を表示する品質検査UIのデモ。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "mes-lot-trace",
+      "kind": "desktop",
+      "file": "mes-lot-trace.webp",
+      "alt": {
+        "ko": "LOT-261106-A14의 원자재·CNC·품질검사 추적 계보",
+        "en": "Genealogy of materials, CNC operations, and inspection for LOT-261106-A14",
+        "ja": "LOT-261106-A14の原材料・CNC加工・品質検査の追跡系統図"
+      },
+      "caption": {
+        "ko": "작업지시 1,200개, 생산 840개, 양품 822개, 불량 18개를 공정 계보와 함께 검산한 화면입니다.",
+        "en": "A traceability flow reconciling 1,200 planned, 840 produced, 822 accepted, and 18 rejected units.",
+        "ja": "計画1,200個、生産840個、良品822個、不良18個を工程系統と照合する画面です。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "mes-production-analytics",
+      "kind": "desktop",
+      "file": "mes-production-analytics.webp",
+      "alt": {
+        "ko": "총 계획 3,550개와 실적 1,810개를 기준으로 생산 달성률과 품목별 불량률을 분석하는 MES 화면.",
+        "en": "MES analytics screen comparing 3,550 planned units with 1,810 actual units and item-level defect rates.",
+        "ja": "計画3,550個と実績1,810個、品目別不良率を比較するMES分析画面。"
+      },
+      "caption": {
+        "ko": "작업지시별 계획 대비 실적과 양품률 98.2%·불량률 1.8%를 가상 데이터로 시각화합니다.",
+        "en": "Demo visualizations of production progress, 98.2% good yield and 1.8% defect rate.",
+        "ja": "作業指示別の計画達成度、良品率98.2%、不良率1.8%を架空データで可視化。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "mes-process-flow",
+      "kind": "graphic",
+      "file": "mes-process-flow.webp",
+      "alt": {
+        "ko": "생산계획부터 작업지시, CNC 가공, 품질검사, 양품·불량 확정, LOT 추적, 분석으로 이어지는 MES 업무 흐름도.",
+        "en": "MES process flow from planning and work orders through CNC machining, inspection, LOT traceability and analytics.",
+        "ja": "生産計画から作業指示、CNC加工、品質検査、良否確定、LOT追跡、分析につながるMES業務フロー図。"
+      },
+      "caption": {
+        "ko": "생산관리자·현장 작업자·품질관리자의 업무를 하나의 연결된 제조 데이터 흐름으로 표현합니다.",
+        "en": "A connected manufacturing data flow across production, shop-floor and quality roles.",
+        "ja": "生産管理者、現場作業者、品質管理者の業務を一連の製造データフローとして示す。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DEMO · PoC",
+        "en": "DEMO · PoC",
+        "ja": "DEMO · PoC"
+      },
+      "headline": {
+        "ko": "계획부터 LOT 추적까지,\n하나의 MES 업무 흐름으로.",
+        "en": "From planning to LOT tracing,\none connected MES workflow.",
+        "ja": "計画からLOT追跡まで、\n一つのMES業務フローに。"
+      },
+      "sub": {
+        "ko": "PIUS 자체 데모·PoC — 모든 화면 데이터는 시연용 가상 데이터입니다.",
+        "en": "A PIUS self-initiated demo and PoC — all screen data is fictional.",
+        "ja": "PIUS独自のデモ・PoC — 画面のデータはすべて架空のデモデータです。"
+      },
+      "images": [
+        "mes-dashboard"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "생산계획과 현장 실적, 품질검사 결과가 분리되어 있으면 작업 진행 상태 및 생산 이력을 한눈에 확인하기 어렵습니다. 이 데모는 작업지시와 LOT를 공통 연결 기준으로 삼는 화면 구조를 보여줍니다.",
+        "en": "When schedules, shop-floor output and inspection records are isolated, production progress and history are harder to understand. This demo uses work orders and LOT identifiers to connect the screens.",
+        "ja": "生産計画、現場実績、品質検査が別々に管理されると、進捗や製造履歴を横断的に把握しにくくなります。本デモでは作業指示とLOT番号を共通の連携基準として扱います。"
+      }
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "02",
+        "label": "KEY FEATURES"
+      },
+      "heading": {
+        "ko": "업무 영역별 역할",
+        "en": "Who does what, by work area",
+        "ja": "業務領域ごとの役割"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "생산계획",
+            "en": "Production planning",
+            "ja": "生産計画"
+          },
+          "body": {
+            "ko": "생산관리자가 품목별 계획 수량과 일정을 정하고 CNC 설비를 배정합니다.",
+            "en": "The planner sets quantities and dates per item and assigns CNC machines.",
+            "ja": "生産管理者が品目ごとの計画数量と日程を決め、CNC設備を割り当てます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "작업지시",
+            "en": "Work orders",
+            "ja": "作業指示"
+          },
+          "body": {
+            "ko": "관리자가 작업지시를 발행하고 담당자·설비를 지정해 계획 대비 실적을 확인합니다.",
+            "en": "The supervisor issues work orders, assigns operator and machine, and compares plan with output.",
+            "ja": "管理者が作業指示を発行し、担当者・設備を指定して計画対比の実績を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장 실적·품질검사",
+            "en": "Shop floor and quality",
+            "ja": "現場実績・品質検査"
+          },
+          "body": {
+            "ko": "작업자는 태블릿에서 생산실적을 입력하고, 품질관리자는 측정값과 불량 유형으로 판정합니다.",
+            "en": "Operators log output on a tablet; quality staff judge by measurements and defect type.",
+            "ja": "作業者はタブレットで生産実績を入力し、品質管理者は測定値と不良種別で判定します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "LOT 추적",
+            "en": "LOT tracing",
+            "ja": "LOT追跡"
+          },
+          "body": {
+            "ko": "LOT 번호 하나로 가공·작업자·실적·검사 이력을 거슬러 조회합니다.",
+            "en": "One LOT number traces machining, operator, output and inspection history.",
+            "ja": "LOT番号1つで加工・作業者・実績・検査履歴をさかのぼって照会します。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "생산계획에서 LOT 추적까지, 각 업무의 기록이 작업지시와 LOT 번호로 이어집니다(가상 데이터).",
+        "en": "From the production plan to LOT tracing, every record links through the work order and the LOT number (sample data).",
+        "ja": "生産計画からLOT追跡まで、各業務の記録が作業指示とLOT番号でつながります(仮想データ)。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "WORKFLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "intro": {
+        "ko": "생산관리자·현장 작업자·품질관리자의 업무를 하나의 연결된 제조 데이터 흐름으로 표현합니다.",
+        "en": "A connected manufacturing data flow across production, shop-floor and quality roles.",
+        "ja": "生産管理者、現場作業者、品質管理者の業務を一連の製造データフローとして示す。"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "생산계획",
+            "en": "Production plan",
+            "ja": "生産計画"
+          }
+        },
+        {
+          "title": {
+            "ko": "작업지시 발행",
+            "en": "Work order",
+            "ja": "作業指示"
+          }
+        },
+        {
+          "title": {
+            "ko": "CNC 설비·작업자 배정",
+            "en": "Machine and operator assignment",
+            "ja": "設備・担当者割当"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장 가공 및 생산실적",
+            "en": "CNC machining and production entry",
+            "ja": "CNC加工・実績入力"
+          }
+        },
+        {
+          "title": {
+            "ko": "품질검사",
+            "en": "Quality inspection",
+            "ja": "品質検査"
+          }
+        },
+        {
+          "title": {
+            "ko": "양품·불량 판정",
+            "en": "Good and defective unit determination",
+            "ja": "良品・不良判定"
+          }
+        },
+        {
+          "title": {
+            "ko": "LOT 추적·분석",
+            "en": "LOT tracing and analytics",
+            "ja": "LOT追跡・分析"
+          }
+        }
+      ],
+      "pdf": {
+        "skip": true
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "PRODUCTION PLANNING"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "생산계획과 CNC 설비 배정",
+        "en": "Production plans and CNC assignment",
+        "ja": "生産計画とCNC設備割当"
+      },
+      "body": {
+        "ko": "품목별 계획 수량과 작업 일정, CNC 설비 배정을 한 화면에 정리하고, 작업지시와 생산계획을 품목·설비별로 연결합니다.",
+        "en": "Planned quantities, schedules and CNC machine assignments sit on one screen, linking work orders and production plans by item and machine.",
+        "ja": "品目別の計画数量と作業スケジュール、CNC設備の割当を一つの画面に整理し、作業指示と生産計画を品目・設備別に紐付けます。"
+      },
+      "images": [
+        "mes-production-plan"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "WORK ORDERS"
+      },
+      "layout": "imageLeft",
+      "surface": "dark",
+      "heading": {
+        "ko": "작업지시와 담당자, 실적 연결",
+        "en": "Work orders, operators and output",
+        "ja": "作業指示・担当者・実績の連携"
+      },
+      "body": {
+        "ko": "작업지시별 계획·실적과 담당자·설비 배정을 확인하고, 선택한 작업지시에서 생산·품질 이력으로 이어집니다.",
+        "en": "Check planned versus actual output and operator and machine assignments per work order, then follow the selected order into its production and quality history.",
+        "ja": "作業指示ごとの計画・実績と担当者・設備の割当を確認し、選択した指示から生産・品質履歴へつながります。"
+      },
+      "images": [
+        "mes-work-orders"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "06",
+        "label": "SHOP FLOOR & QUALITY"
+      },
+      "layout": "tablets",
+      "surface": "accent",
+      "heading": {
+        "ko": "현장 작업과 품질검사 태블릿 UI",
+        "en": "Shop-floor and quality tablet UI",
+        "ja": "現場作業・品質検査のタブレットUI"
+      },
+      "body": {
+        "ko": "현장 작업자는 배정 작업과 진행률을 보고 생산실적을 입력하고, 품질관리자는 샘플 측정값과 불량 유형별 집계로 검사 결과를 확인합니다.",
+        "en": "Operators see their assigned job and progress and enter output; quality managers review sample measurements and defect counts by type.",
+        "ja": "現場作業者は担当作業と進捗を確認して生産実績を入力し、品質管理者はサンプル測定値と不良種別の集計で検査結果を確認します。"
+      },
+      "images": [
+        "mes-shopfloor-terminal",
+        "mes-quality-inspection"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "07",
+        "label": "LOT TRACEABILITY"
+      },
+      "layout": "full",
+      "surface": "light",
+      "heading": {
+        "ko": "LOT 번호 하나로 공정·품질 이력을",
+        "en": "Process and quality history from one LOT number",
+        "ja": "LOT番号一つで工程・品質履歴を"
+      },
+      "body": {
+        "ko": "LOT 번호를 기준으로 작업지시, CNC 가공, 작업자, 생산실적, 품질검사 이력을 한 화면에서 조회합니다.",
+        "en": "Look up work orders, CNC machining, operators, production quantities and inspections on one screen by LOT number.",
+        "ja": "LOT番号を基準に、作業指示・CNC加工・担当者・生産実績・品質検査の履歴を一つの画面で参照します。"
+      },
+      "images": [
+        "mes-lot-trace"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "08",
+        "label": "MORE SCREENS"
+      },
+      "heading": {
+        "ko": "업무 흐름도와 분석 화면",
+        "en": "Process map and analytics",
+        "ja": "業務フロー図と分析画面"
+      },
+      "intro": {
+        "ko": "핵심 업무 화면을 보조하는 구조도와 지표 화면입니다(가상 데이터).",
+        "en": "A process map and an indicator screen that support the core screens (sample data).",
+        "ja": "主要業務画面を補助する構造図と指標画面です(仮想データ)。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "하나로 연결된 제조 데이터 흐름",
+            "en": "One connected manufacturing data flow",
+            "ja": "一つにつながる製造データフロー"
+          },
+          "body": {
+            "ko": "생산관리자·현장 작업자·품질관리자의 업무를 하나의 연결된 제조 데이터 흐름으로 표현합니다.",
+            "en": "A connected manufacturing data flow across production, shop-floor and quality roles.",
+            "ja": "生産管理者、現場作業者、品質管理者の業務を一連の製造データフローとして示す。"
+          },
+          "image": "mes-process-flow"
+        },
+        {
+          "title": {
+            "ko": "생산 달성률과 품질 지표 분석",
+            "en": "Production progress and quality analytics",
+            "ja": "生産達成率と品質指標の分析"
+          },
+          "body": {
+            "ko": "작업지시별 계획 대비 실적과 양품률 98.2%·불량률 1.8%를 가상 데이터로 시각화합니다.",
+            "en": "Demo visualizations of production progress, 98.2% good yield and 1.8% defect rate.",
+            "ja": "作業指示別の計画達成度、良品率98.2%、不良率1.8%を架空データで可視化。"
+          },
+          "image": "mes-production-analytics"
+        }
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "09",
+        "label": "PROJECT SCOPE"
+      },
+      "heading": {
+        "ko": "수행 범위",
+        "en": "Scope of work",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "PIUS 자체 포트폴리오용 PoC입니다. 실제 고객사 구축 또는 생산성 개선 실적이 아닙니다.",
+        "en": "A PIUS self-initiated portfolio PoC. Not a client deployment or a verified operational improvement.",
+        "ja": "PIUS独自制作のポートフォリオPoCです。実顧客への導入事例や検証済みの改善実績ではありません。"
+      }
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "하나의 작업지시와 LOT 데이터를 중심으로 생산, 현장, 품질 정보를 연결하는 제조 업무 디지털화의 접근을 보여줍니다.",
+        "en": "A demonstration of how manufacturing planning, shop-floor and quality information can be connected through shared work order and LOT records.",
+        "ja": "共通の作業指示とLOTデータを軸に、生産・現場・品質の情報を連携する製造業務デジタル化の考え方を示します。"
+      },
+      "sub": {
+        "ko": "스마트팩토리 MES — PIUS 자체 데모·PoC",
+        "en": "Smart Factory MES — a PIUS demo and PoC",
+        "ja": "スマートファクトリーMES — PIUS独自のデモ・PoC"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "등록 프롬프트(2026-11-06) 기준. 자체 데모·PoC, 모든 수치는 화면 시연용 가상 데이터.",
+    "status review — 사용자 승인 전 approved 불가.",
+    "projectState·year·stack은 확인되지 않아 비움."
+  ]
+}

@@ -1,0 +1,584 @@
+{
+  "id": "threadform-studio",
+  "slug": "threadform-studio",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 21,
+  "includeInPdf": true,
+  "title": {
+    "ko": "THREADFORM STUDIO — 패션 디자인·제품 개발 워크스페이스",
+    "en": "THREADFORM STUDIO — Fashion Design Engineering Workspace",
+    "ja": "THREADFORM STUDIO — ファッション設計・製品開発ワークスペース"
+  },
+  "subtitle": {
+    "ko": "2D 패션 설계와 샘플 협업을 위한 전문 UI 데모",
+    "en": "A professional UI concept for 2D garment engineering and sample collaboration",
+    "ja": "2D衣服設計とサンプルレビューのための専門UIデモ"
+  },
+  "summary": {
+    "ko": "2D 의류 도식화, 컬러웨이, 패턴 편집, 사이즈 그레이딩, 테크팩과 샘플 검수를 연결하는 패션 제품 개발 UI 데모.",
+    "en": "A fashion product development UI demo connecting 2D garment flats, colorways, pattern editing, size grading, tech packs, and sample reviews.",
+    "ja": "2D衣服図面、カラーウェイ、パターン編集、サイズグレーディング、仕様書、サンプルレビューをつなぐ製品開発UIデモ。"
+  },
+  "overview": {
+    "ko": "THREADFORM STUDIO는 의류 제품을 구상하고 제조 사양을 검토하는 과정을 하나의 작업 흐름으로 시각화한 자체 UI 데모입니다. 2D 재킷 도식화에서 색상, 패턴, 치수, 소재, 테크팩, 샘플 변경 이력으로 이어지는 전문 소프트웨어의 정보 구조를 제안합니다. 의류 제품 개발에서는 디자인 파일, 소재 코드, 치수표, 제작 사양, 샘플 코멘트가 서로 다른 문서에 분산되기 쉽습니다. 동일한 스타일과 버전의 정보를 연결해서 확인하고 수정 전후의 차이를 명확하게 표시하는 인터페이스가 필요합니다.",
+    "en": "THREADFORM STUDIO is an in-house UI demo visualizing the journey from apparel design to manufacturing-specification review. It proposes a coherent workspace for 2D jacket flats, colorways, patterns, measurements, materials, technical packs, and sample change histories. Apparel development information is often scattered across design files, fabric references, size charts, technical documents, and sample feedback. Teams need a consistent way to inspect a style and its revision history without losing the context of each specification.",
+    "ja": "THREADFORM STUDIOは、衣服のデザインから製造仕様の確認までをひとつの流れとして可視化した、自社制作のUIデモです。2Dジャケット図面、カラー、パターン、寸法、素材、テックパック、サンプル変更履歴を結びつける専門的な画面構成を提案します。アパレルの製品開発では、デザインデータ、素材コード、サイズ表、仕様書、サンプルへのコメントが別々の資料に分散しがちです。同じスタイルと版の情報を確認し、変更前後の差分を明確にするインターフェースが求められます。"
+  },
+  "industry": {
+    "ko": "Fashion Tech / 패션 디자인 / 의류 제품 개발",
+    "en": "Fashion Tech / Fashion Design / Apparel Product Development",
+    "ja": "Fashion Tech / ファッションデザイン / 衣料品の製品開発"
+  },
+  "categories": [
+    "platform",
+    "web",
+    "mobile"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "Desktop WEB",
+        "en": "Desktop WEB",
+        "ja": "Desktop WEB"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "Mobile WEB",
+        "en": "Mobile WEB",
+        "ja": "Mobile WEB"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#4468EB",
+    "accentInk": "#17181C",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "threadform-design-workspace"
+  ],
+  "images": [
+    {
+      "id": "threadform-design-workspace",
+      "kind": "desktop",
+      "file": "threadform-design-workspace.webp",
+      "alt": {
+        "ko": "좌측 레이어, 중앙의 2D 재킷 정면·후면 도식화, 우측 포켓 속성 패널이 포함된 THREADFORM 디자인 편집 화면.",
+        "en": "THREADFORM 2D fashion editor with layer tools, front and back jacket flats, and left pocket flap properties.",
+        "ja": "レイヤーツール、ジャケット前後の2D図面、左ポケットフラップの属性を表示したTHREADFORMのデザイン画面。"
+      },
+      "caption": {
+        "ko": "선택한 왼쪽 포켓 플랩의 14.0cm 폭과 V2 수정 위치를 확인하는 2D 디자인 워크스페이스.",
+        "en": "An annotated jacket design workspace displaying the selected 14.0 cm pocket flap in sample V2.",
+        "ja": "左ポケットフラップの幅14.0cmとV2での修正位置を確認する2Dデザインワークスペース。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "threadform-collection-board",
+      "kind": "desktop",
+      "file": "threadform-collection-board.webp",
+      "alt": {
+        "ko": "모듈러 유틸리티 재킷과 세 가지 컬러웨이, 소재 방향, 개발 상태를 나타내는 2027 SS 컬렉션 보드.",
+        "en": "2027 SS collection board showing the modular utility jacket, three colorways, fabric direction, and development status.",
+        "ja": "ユーティリティジャケット、3つのカラーウェイ、素材方針、開発状況を示す2027 SSコレクションボード。"
+      },
+      "caption": {
+        "ko": "제품 스타일과 컬러, FAB-041 소재, In Review 상태를 묶어 보여주는 시즌 컬렉션 화면.",
+        "en": "A seasonal collection view aligning the jacket style, colorways, FAB-041 material, and In Review status.",
+        "ja": "製品スタイル、カラー、FAB-041素材、In Review状態をまとめたシーズン管理画面。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "threadform-colorway-editor",
+      "kind": "desktop",
+      "file": "threadform-colorway-editor.webp",
+      "alt": {
+        "ko": "Cobalt Blue 컬러가 선택된 동일 유틸리티 재킷의 정면·후면 도식화와 세 가지 컬러웨이 선택 화면.",
+        "en": "Front and back jacket flats in selected Cobalt Blue with a three-option colorway library.",
+        "ja": "Cobalt Blueを選択した同じジャケットの前後2D図面と3色のカラーウェイ選択画面。"
+      },
+      "caption": {
+        "ko": "CW-03 Cobalt Blue와 #476ACB 색상, FAB-041 소재, 브러시드 실버 부자재를 표시한 편집 화면.",
+        "en": "CW-03 Cobalt Blue (#476ACB), FAB-041 shell fabric, and brushed silver hardware in a colorway editor.",
+        "ja": "CW-03 Cobalt Blue（#476ACB）、FAB-041生地、ブラッシュドシルバーの副資材を示す編集画面。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "threadform-pattern-editor",
+      "kind": "desktop",
+      "file": "threadform-pattern-editor.webp",
+      "alt": {
+        "ko": "패턴 피스 목록과 앞판, 뒤판, 소매, 칼라, 커프스 및 선택된 포켓 플랩 제어점의 2D 패턴 편집 UI.",
+        "en": "Illustrative 2D pattern editor with garment piece list, panels, sleeves, collar, cuffs, and selected pocket flap control points.",
+        "ja": "パーツ一覧、前後身頃、袖、襟、カフス、選択したポケットフラップの制御点を表示する2Dパターン編集UI。"
+      },
+      "caption": {
+        "ko": "패턴선, 시접, 그레인라인, 벡터 제어점을 보여주는 가상 패턴 편집 워크스페이스.",
+        "en": "Pattern-piece editing UI illustrating cutting lines, seam allowances, grainlines, and vector handles.",
+        "ja": "パターン線、縫い代、地の目線、ベクター制御点を表すデモ用編集ワークスペース。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "threadform-size-grading",
+      "kind": "desktop",
+      "file": "threadform-size-grading.webp",
+      "alt": {
+        "ko": "XS부터 XL까지 중첩된 패턴 윤곽선과 기준 사이즈 M이 강조된 치수표를 보여주는 사이즈 그레이딩 화면.",
+        "en": "Nested XS to XL pattern outlines beside a size specification table highlighting base size M.",
+        "ja": "XS〜XLの重なったパターン輪郭と、基準サイズMを強調した寸法表を並べた画面。"
+      },
+      "caption": {
+        "ko": "가상 치수 데이터를 활용해 사이즈별 패턴 차이를 시각화한 그레이딩 UI.",
+        "en": "An illustrative grading interface comparing pattern outlines and size measurements across XS–XL.",
+        "ja": "デモ用の寸法データでサイズ別のパターン差分を可視化したUI。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "threadform-material-editor",
+      "kind": "desktop",
+      "file": "threadform-material-editor.webp",
+      "alt": {
+        "ko": "유틸리티 재킷의 부위별 주석이 원단, 지퍼, 스냅과 봉제사 라이브러리로 연결되는 소재 편집 화면.",
+        "en": "Garment annotation view connecting a utility jacket to fabric, zipper, snap, and thread references.",
+        "ja": "ジャケットの部位注釈と、生地、ファスナー、スナップ、糸のライブラリを紐付けた素材編集画面。"
+      },
+      "caption": {
+        "ko": "FAB-041 원단과 ZIP-012, SNAP-008, THR-003의 적용 부위를 표시한 소재·부자재 매핑 UI.",
+        "en": "Material and trim mapping UI for FAB-041, ZIP-012, SNAP-008, and THR-003.",
+        "ja": "FAB-041、ZIP-012、SNAP-008、THR-003の適用箇所を示す素材・副資材マッピングUI。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "threadform-tech-pack",
+      "kind": "desktop",
+      "file": "threadform-tech-pack.webp",
+      "alt": {
+        "ko": "2D 재킷 도식화, XS~XL 치수 사양, 자재 목록과 샘플 수정 내역을 통합한 디지털 테크팩 화면.",
+        "en": "Digital garment tech pack with flat jacket sketches, XS–XL measurements, bill of materials, and sample revision notes.",
+        "ja": "ジャケットの2D図面、XS〜XL寸法、部材表、サンプル修正履歴をまとめたデジタル仕様書画面。"
+      },
+      "caption": {
+        "ko": "가상 제품 데이터로 구성한 테크팩의 도식화, 치수표, BOM, V2 수정 요약.",
+        "en": "An illustrative technical specification combining flats, measurements, BOM, and V2 changes.",
+        "ja": "デモ用データで構成された図面、寸法表、BOM、V2の修正概要。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "threadform-sample-review",
+      "kind": "desktop",
+      "file": "threadform-sample-review.webp",
+      "alt": {
+        "ko": "2026년 11월 1일 V1과 11월 6일 V2 재킷 샘플을 나란히 비교하며 포켓 수정 내용과 승인 대기 상태를 표시한 화면.",
+        "en": "Side-by-side V1 and V2 sample jacket review with pocket revision details and pending approval status.",
+        "ja": "2026年11月1日のV1と11月6日のV2を並べ、ポケット変更内容と承認待ちを示すサンプル比較画面。"
+      },
+      "caption": {
+        "ko": "포켓 플랩 폭 15.0→14.0cm, 위치 1.5cm 상향 변경을 보여주는 샘플 검수 UI.",
+        "en": "Sample comparison showing the flap width change from 15.0 to 14.0 cm and a 1.5 cm upward adjustment.",
+        "ja": "フラップ幅15.0→14.0cm、位置1.5cm上方への修正を確認するサンプルレビューUI。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "threadform-mobile-review",
+      "kind": "mobile",
+      "file": "threadform-mobile-review.webp",
+      "alt": {
+        "ko": "모바일에서 선택된 왼쪽 포켓 플랩, 수정 치수, 박서윤 검수 의견을 보여주는 디자인 검수 화면.",
+        "en": "Mobile design review showing the selected left pocket flap, revised measurements, and reviewer notes.",
+        "ja": "左ポケットフラップの選択状態、修正寸法、レビューコメントを表示するモバイル画面。"
+      },
+      "caption": {
+        "ko": "주석 마커와 V2 포켓 변경 사양을 모바일 화면에서 검토하는 UI.",
+        "en": "Mobile UI for examining annotation markers and V2 pocket revisions.",
+        "ja": "注釈マーカーとV2のポケット変更仕様を確認するモバイルレビューUI。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "threadform-mobile-approval",
+      "kind": "mobile",
+      "file": "threadform-mobile-approval.webp",
+      "alt": {
+        "ko": "모바일에서 샘플 V2의 변경 체크리스트, 승인 대기 상태, 수정 요청 및 승인 버튼을 표시한 화면.",
+        "en": "Mobile sample approval screen showing the V2 revision checklist, Approval Pending status, and review action buttons.",
+        "ja": "サンプルV2の変更チェックリスト、承認待ち状態、修正依頼・承認ボタンを表示したモバイル画面。"
+      },
+      "caption": {
+        "ko": "최종 승인 전인 In Review 상태를 유지한 모바일 샘플 검수 화면.",
+        "en": "A mobile sample review interface that remains In Review and has not reached final approval.",
+        "ja": "最終承認前のIn Review状態を維持したモバイルサンプル確認UI。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DEMO · PoC",
+        "en": "DEMO · PoC",
+        "ja": "DEMO · PoC"
+      },
+      "headline": {
+        "ko": "디자인의 모든 디테일을 하나의 워크스페이스로.",
+        "en": "Every Detail. One Creative Workspace.",
+        "ja": "デザインの細部まで、ひとつのワークスペースで。"
+      },
+      "images": [
+        "threadform-design-workspace"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "패션 제품 개발의 정보를 하나로",
+        "en": "One Workspace for Apparel Development",
+        "ja": "製品開発の情報をひとつに"
+      },
+      "lead": {
+        "ko": "2D 디자인부터 컬러, 패턴, 치수, 소재, 테크팩, 샘플 변경 이력까지 서로 다른 정보를 같은 제품과 버전 기준으로 연결하는 전문 UI를 제안합니다. PIUS 자체 제작 정적 데모입니다.",
+        "en": "A professional UI concept connecting 2D design, color, patterns, measurements, materials, tech packs, and sample revisions around a single style and version. Created as an in-house static demo by PIUS.",
+        "ja": "2Dデザイン、カラー、パターン、寸法、素材、仕様書、サンプルの変更履歴を、同じ製品と版のもとでつなぐ専門UIを提案します。PIUS制作の静的デモです。"
+      }
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "02",
+        "label": "SERVICES"
+      },
+      "heading": {
+        "ko": "디자인부터 검수까지 이어지는 작업 흐름",
+        "en": "An End-to-End Design Review Workflow",
+        "ja": "デザインからレビューまでのワークフロー"
+      },
+      "intro": {
+        "ko": "2D 디자인 편집, 컬렉션 보드, 컬러웨이 선택, 패턴 편집, 사이즈 그레이딩 시각화, 소재·부자재 관리, 테크팩 검토, 샘플 버전 비교, 모바일 검수·승인 검토 화면을 구성했습니다.",
+        "en": "The demo includes a vector-style design editor, seasonal asset board, colorway selection, 2D pattern-piece editing, size comparison, material-to-component mapping, tech-pack review, version comparison, and mobile review and approval screens.",
+        "ja": "ベクター風デザインエディター、シーズンコレクション管理、カラーウェイ選択、2Dパターン編集、サイズ比較、素材と部位の紐付け、テックパック確認、版比較、モバイルレビュー・承認確認画面を構成しました。"
+      },
+      "note": {
+        "ko": "PIUS가 제작한 정적 프론트 UI 데모입니다. 실제 CAD 엔진이나 제조 시스템을 구현한 사례는 아닙니다.",
+        "en": "This is a static front-end UI concept by PIUS, not evidence of a functional CAD engine, verified manufacturing patterns, or production integrations.",
+        "ja": "本件はPIUSによる静的フロントエンドUIデモであり、実際に動作するCADエンジンや製造用パターンの検証、工場連携を実装したものではありません。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "디자인",
+            "en": "Design",
+            "ja": "デザイン"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "2D 디자인 편집",
+              "en": "2D Design Editing",
+              "ja": "2Dデザイン編集"
+            },
+            {
+              "ko": "컬러웨이 관리",
+              "en": "Colorway Management",
+              "ja": "カラーウェイ管理"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "패턴",
+            "en": "Pattern",
+            "ja": "パターン"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "패턴 피스 편집",
+              "en": "Pattern Piece Editing",
+              "ja": "パターンピース編集"
+            },
+            {
+              "ko": "사이즈 그레이딩 시각화",
+              "en": "Size Grading Visualization",
+              "ja": "サイズグレーディングの可視化"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "사양",
+            "en": "Specification",
+            "ja": "仕様"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "소재·부자재 매핑",
+              "en": "Material and Trim Mapping",
+              "ja": "素材・副資材の紐付け"
+            },
+            {
+              "ko": "테크팩 검토",
+              "en": "Tech Pack Review",
+              "ja": "テックパック確認"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "검수",
+            "en": "Review",
+            "ja": "レビュー"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "샘플 버전 비교",
+              "en": "Sample Version Comparison",
+              "ja": "サンプル版比較"
+            },
+            {
+              "ko": "모바일 검수·승인 검토",
+              "en": "Mobile Review and Approval",
+              "ja": "モバイルレビュー・承認確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "COLLECTION BOARD"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "시즌 컬렉션을 한눈에",
+        "en": "A Unified Seasonal Collection Board",
+        "ja": "シーズンコレクションを一覧で"
+      },
+      "body": {
+        "ko": "2027 SS 컬렉션 보드에서 TF-JK-014 재킷의 디자인, 세 가지 컬러웨이, FAB-041 소재와 샘플 검수 상태를 함께 탐색합니다.",
+        "en": "Browse the TF-JK-014 jacket, three colorways, FAB-041 fabric reference, and sample review status within a 2027 SS collection board.",
+        "ja": "2027 SSのボードで、TF-JK-014のデザイン、3つのカラーウェイ、FAB-041素材、サンプルのレビュー状態をまとめて確認できます。"
+      },
+      "images": [
+        "threadform-collection-board"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "04",
+        "label": "DESIGN TOOLS"
+      },
+      "heading": {
+        "ko": "컬러웨이와 모바일 승인",
+        "en": "Colourways and mobile approval",
+        "ja": "カラーウェイとモバイル承認"
+      },
+      "intro": {
+        "ko": "디자인·검수 흐름을 보조하는 화면입니다.",
+        "en": "Screens that support the design and review flow.",
+        "ja": "デザイン・検品の流れを補助する画面です。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "하나의 디자인, 세 가지 컬러웨이",
+            "en": "One Design, Three Colorways",
+            "ja": "ひとつのデザイン、3つのカラーウェイ"
+          },
+          "body": {
+            "ko": "원단 색상은 Stone Beige, Graphite, Cobalt Blue로 전환하면서도 포켓, 칼라, 지퍼와 실루엣은 동일하게 유지하는 컬러 편집 화면입니다.",
+            "en": "Switch the shell between Stone Beige, Graphite, and Cobalt Blue while maintaining consistent pockets, collar, zipper, and silhouette.",
+            "ja": "Stone Beige、Graphite、Cobalt Blueへ表地の色を切り替えながら、ポケット、襟、ファスナー、シルエットは共通に保つ編集画面です。"
+          },
+          "image": "threadform-colorway-editor"
+        },
+        {
+          "title": {
+            "ko": "모바일 샘플 승인 대기",
+            "en": "Mobile sample approval",
+            "ja": "モバイルのサンプル承認待ち"
+          },
+          "body": {
+            "ko": "최종 승인 전인 In Review 상태를 유지한 모바일 샘플 검수 화면.",
+            "en": "A mobile sample review interface that remains In Review and has not reached final approval.",
+            "ja": "最終承認前のIn Review状態を維持したモバイルサンプル確認UI。"
+          },
+          "image": "threadform-mobile-approval"
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "MATERIAL EDITOR"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "디자인 부위와 소재 정보를 연결",
+        "en": "Mapping Materials to Garment Components",
+        "ja": "衣服の部位と素材情報を紐付け"
+      },
+      "body": {
+        "ko": "선택한 재킷 부위에서 FAB-041 원단, ZIP-012 지퍼, SNAP-008 스냅, THR-003 봉제사를 찾아볼 수 있도록 소재·부자재 참조 관계를 표현했습니다.",
+        "en": "Component annotations connect the jacket to FAB-041 fabric, ZIP-012 zipper, SNAP-008 snaps, and THR-003 thread in a material and trim library.",
+        "ja": "選択した部位に対し、FAB-041生地、ZIP-012ファスナー、SNAP-008スナップ、THR-003縫製糸を参照できる素材・副資材の構成を示します。"
+      },
+      "images": [
+        "threadform-material-editor"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "TECH PACK"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "제작 정보를 한 화면의 테크팩으로",
+        "en": "A Unified Digital Tech Pack",
+        "ja": "製作情報を一画面のテックパックに"
+      },
+      "body": {
+        "ko": "전후면 플랫 도식화, XS~XL 치수표, BOM과 V2 수정 요약을 결합한 디지털 제작 사양서 화면입니다. 생산 검증 완료 문서가 아닌 UI 예시입니다.",
+        "en": "A digital specification UI combines front and back flats, XS–XL measurements, a bill of materials, and V2 revision notes. It is an illustrative interface, not a production-validated document.",
+        "ja": "前後の平面図、XS〜XL寸法表、BOM、V2の修正内容をまとめたデジタル仕様書のUIです。生産用に検証された文書ではありません。"
+      },
+      "images": [
+        "threadform-tech-pack"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "07",
+        "label": "SAMPLE REVIEW"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "V1에서 V2로, 변경 이력을 명확하게",
+        "en": "Clear Revision Tracking from V1 to V2",
+        "ja": "V1からV2への変更履歴を明確に"
+      },
+      "body": {
+        "ko": "좌우 포켓 플랩 폭을 15.0cm에서 14.0cm로 조정하고 위치를 1.5cm 올린 차이를 비교합니다. V2는 최종 승인 전 In Review 상태입니다.",
+        "en": "Compare the change from 15.0 cm to 14.0 cm flap width and a 1.5 cm upward adjustment to both pockets. V2 remains In Review, awaiting final approval.",
+        "ja": "両ポケットフラップの幅を15.0cmから14.0cmに変更し、位置を1.5cm上げた差分を比較します。V2は最終承認前のIn Review状態です。"
+      },
+      "images": [
+        "threadform-sample-review"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "08",
+        "label": "MOBILE REVIEW"
+      },
+      "layout": "phones",
+      "surface": "accent",
+      "heading": {
+        "ko": "모바일에서도 이어지는 검수 협업",
+        "en": "Review Workflows That Continue on Mobile",
+        "ja": "モバイルでも続くレビューワークフロー"
+      },
+      "body": {
+        "ko": "검수자는 모바일에서 도식화의 수정 부위와 코멘트를 확인합니다.",
+        "en": "Reviewers check the marked changes and comments on the flat sketch from a phone.",
+        "ja": "レビュー担当はモバイルで図面の修正箇所とコメントを確認します。"
+      },
+      "images": [
+        "threadform-mobile-review"
+      ]
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "디자인에서 샘플까지",
+        "en": "From Design to Sample Review",
+        "ja": "デザインからサンプルまで"
+      },
+      "sub": {
+        "ko": "디자인 아이디어부터 샘플 검수까지, 패션 제품 개발의 모든 정보를 연결하는 디지털 워크스페이스.",
+        "en": "Connecting every detail of fashion product development, from the first sketch to sample review.",
+        "ja": "デザインの着想からサンプルレビューまで、製品開発の情報をひとつにつなぐデジタルワークスペース。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "등록 프롬프트(2026-11-06) 원고 그대로. PIUS 자체 정적 UI 데모·PoC 10장. 제품(TF-JK-014)·치수·인명·샘플 정보는 모두 데모 데이터.",
+    "status review — 사용자 승인 전 approved 불가. projectState 미지정. results·scope 블록 미사용. Sample V2는 Approval Pending 유지.",
+    "서비스 8항목은 렌더러 칸 수 한계(최대 6칸)로 4칸×2항목으로 묶음(항목 문구는 원고 그대로, 칸 제목만 추가). 수행 범위 문구는 서비스 블록 note, 문제 정의는 개요 아래에 배치.",
+    "산업 영문·일문 표기는 원고(한국어)에 맞춰 번역."
+  ]
+}

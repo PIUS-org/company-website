@@ -1,0 +1,486 @@
+{
+  "id": "leasegrid",
+  "slug": "leasegrid",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 160,
+  "includeInPdf": true,
+  "title": {
+    "ko": "LEASEGRID — 상업용 부동산 임대 운영",
+    "en": "LEASEGRID — Commercial Leasing Operations",
+    "ja": "LEASEGRID — 商業不動産の賃貸運営"
+  },
+  "subtitle": {
+    "ko": "호실·임대계약·청구·갱신 일정의 통합 관리",
+    "en": "Unify units, leases, invoices, and renewals",
+    "ja": "区画・賃貸契約・請求・更新予定の一元管理"
+  },
+  "summary": {
+    "ko": "상업용 건물의 호실 현황, 임대차 계약, 월별 청구, 갱신 검토를 연결한 임대 운영 UI 구성안.",
+    "en": "A commercial property UI concept for occupancy, lease terms, monthly billing, and renewals.",
+    "ja": "商業物件の区画状況・賃貸契約・月次請求・更新をつなぐ運営UI構想。"
+  },
+  "overview": {
+    "ko": "상업용 건물 운영자가 호실별 입주 현황과 계약 조건을 확인하고, 임대료 청구 및 갱신 일정을 관리하는 워크스페이스를 구상했습니다. 인테리어 쇼룸이나 숙박 예약이 아니라 장기 임대차 계약과 월별 원장을 중심으로 합니다.",
+    "en": "This independent concept lets property operators track unit occupancy, lease terms, invoices, and renewals. It focuses on longer-term commercial leases and billing ledgers, not interior showrooms or hotel bookings.",
+    "ja": "商業物件の運営者が区画別の入居状況、契約条件、請求、更新予定を管理する自主制作UI構想です。インテリア展示や宿泊予約ではなく、長期賃貸契約と月次請求台帳を中心とします。"
+  },
+  "industry": {
+    "ko": "상업용 부동산·임대 운영",
+    "en": "Commercial Property and Lease Management",
+    "ja": "商業不動産・賃貸運営"
+  },
+  "categories": [
+    "erp",
+    "platform",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "임대자산 운영 WEB",
+        "en": "Property operations web",
+        "ja": "賃貸物件運営Web"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "계약·청구 관리",
+        "en": "Lease and billing management",
+        "ja": "賃貸契約・請求管理"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#756A62",
+    "accentInk": "#342E2A",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "leasegrid-unit-occupancy"
+  ],
+  "images": [
+    {
+      "id": "leasegrid-unit-occupancy",
+      "kind": "desktop",
+      "file": "leasegrid-unit-occupancy.webp",
+      "alt": {
+        "ko": "층별 호실 점유 현황 화면",
+        "en": "Unit occupancy by floor",
+        "ja": "フロア別の区画稼働状況画面"
+      },
+      "caption": {
+        "ko": "상가·오피스 호실의 임대 상태를 한눈에 보는 현황 화면입니다.",
+        "en": "An at-a-glance view of lease status across retail and office units.",
+        "ja": "店舗・オフィス区画の賃貸状況をひと目で把握する画面です。"
+      }
+    },
+    {
+      "id": "leasegrid-lease-contract-detail",
+      "kind": "desktop",
+      "file": "leasegrid-lease-contract-detail.webp",
+      "alt": {
+        "ko": "임대 계약 상세 화면",
+        "en": "Lease contract detail",
+        "ja": "賃貸契約の詳細画面"
+      },
+      "caption": {
+        "ko": "선택한 호실의 임대 조건과 계약 내용을 확인하는 화면입니다.",
+        "en": "A view of the selected unit’s lease terms and contract details.",
+        "ja": "選択した区画の賃貸条件と契約内容を確認する画面です。"
+      }
+    },
+    {
+      "id": "leasegrid-monthly-billing-ledger",
+      "kind": "desktop",
+      "file": "leasegrid-monthly-billing-ledger.webp",
+      "alt": {
+        "ko": "월별 청구 원장 화면",
+        "en": "Monthly billing ledger",
+        "ja": "月次請求台帳画面"
+      },
+      "caption": {
+        "ko": "월 임대료와 관리비 청구 내역을 관리하는 원장 화면입니다.",
+        "en": "A ledger for managing monthly rent and maintenance-fee charges.",
+        "ja": "月額賃料と管理費の請求内容を管理する台帳画面です。"
+      }
+    },
+    {
+      "id": "leasegrid-renewal-workbench",
+      "kind": "desktop",
+      "file": "leasegrid-renewal-workbench.webp",
+      "alt": {
+        "ko": "갱신 협상 관리 화면",
+        "en": "Renewal negotiation workbench",
+        "ja": "更新交渉の管理画面"
+      },
+      "caption": {
+        "ko": "계약 만료 예정 호실의 갱신 검토와 일정 조율 화면입니다.",
+        "en": "A workbench for reviewing renewals and scheduling talks for units nearing lease expiry.",
+        "ja": "契約満了が近い区画の更新検討と日程調整を行う画面です。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·정적 UI 데모를 위한 1차 텍스트 등록본. 실제 고객 프로젝트·서비스 개발 실적이 아님.",
+    "고도화 시 우선 검토할 화면: Commercial Unit Grid, Lease Detail, Invoice Ledger, Renewal Calendar",
+    "3차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "건물의 호실과 계약, 수납을 하나의 운영 기록으로.",
+        "en": "One clear record for every unit and lease.",
+        "ja": "区画・契約・請求を一つの運営記録へ。"
+      },
+      "images": [
+        "leasegrid-unit-occupancy"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "가상 오피스 건물 MAPLE TOWER의 12개 호실을 관리하며, 402호 입주사 LOOM OFFICE의 월 청구와 계약 만료 예정 상황을 대표 사례로 연결합니다.",
+        "en": "The demo manages 12 units at the fictional MAPLE TOWER office building, focusing on unit 402 leased to LOOM OFFICE and its monthly invoice and upcoming expiry.",
+        "ja": "架空オフィスビルMAPLE TOWERの12区画を管理し、402号室のテナントLOOM OFFICEの月次請求と契約満了予定を代表事例とします。"
+      },
+      "body": {
+        "ko": "호실 12개는 임대 중 9·갱신 검토 중 1·공실 2로 분류합니다. 402호 월 청구는 임대료 ₩2,200,000 + 관리비 ₩300,000 + 부가세 ₩250,000 = 합계 ₩2,750,000입니다. 2026-11-09에는 납기 전 미수납(Pending)이며 납기일은 11월 10일입니다. 계약 종료 예정일은 2026-12-31이고 갱신은 미확정입니다.",
+        "en": "The 12 units comprise nine active leases, one lease under renewal review, and two vacant units. Unit 402 monthly charges total ₩2,750,000: ₩2,200,000 rent, ₩300,000 management fees, and ₩250,000 VAT. On Nov 9, 2026 the invoice is pending but not overdue; its due date is Nov 10. The lease is set to end Dec 31, 2026, and renewal is undecided.",
+        "ja": "12区画の内訳は通常契約中9・更新検討中1・空室2です。402号室の月額請求は賃料₩2,200,000＋管理費₩300,000＋付加価値税₩250,000＝合計₩2,750,000です。2026年11月9日時点では支払期限前の未入金で、期限は11月10日。契約終了予定日は2026年12月31日で、更新は未決定です。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "호실·계약 연결",
+            "en": "Unit-to-lease consistency",
+            "ja": "区画と契約の一貫性"
+          },
+          "body": {
+            "ko": "402호의 임대 조건·계약 종료일·청구 정보를 같은 원본으로 표시합니다.",
+            "en": "Show unit 402 terms, expiry, and invoices from one consistent record.",
+            "ja": "402号室の契約条件・満了日・請求を共通データで表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "수납·연체 구분",
+            "en": "Pending versus overdue",
+            "ja": "未入金と延滞の区別"
+          },
+          "body": {
+            "ko": "납기 전 미수납과 기한 경과 후 연체를 명확하게 구별합니다.",
+            "en": "Distinguish payment pending before due date from late payment.",
+            "ja": "期限前の未入金と期限後の延滞を明確に区別します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "호실 현황부터 갱신 검토까지",
+        "en": "From unit status to renewal review",
+        "ja": "区画状況から更新検討まで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "호실 현황 확인",
+            "en": "Review occupancy",
+            "ja": "区画の状況確認"
+          },
+          "body": {
+            "ko": "12개 호실의 임대 9·갱신 검토 1·공실 2를 확인합니다.",
+            "en": "Review nine active, one renewing, and two vacant units.",
+            "ja": "通常契約中9・更新検討1・空室2を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "임대차 조건 검토",
+            "en": "Review lease terms",
+            "ja": "賃貸条件の確認"
+          },
+          "body": {
+            "ko": "402호 월 임대료와 계약 종료일을 확인합니다.",
+            "en": "Review rent and lease expiry for unit 402.",
+            "ja": "402号室の賃料と契約終了日を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "월 청구 발행",
+            "en": "Prepare monthly invoice",
+            "ja": "月次請求の作成"
+          },
+          "body": {
+            "ko": "11월 청구액 ₩2,750,000을 구성합니다.",
+            "en": "Prepare the ₩2,750,000 November invoice.",
+            "ja": "11月分の₩2,750,000の請求を作成します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "납기 상태 확인",
+            "en": "Review due status",
+            "ja": "支払期限の確認"
+          },
+          "body": {
+            "ko": "11월 9일에는 Pending이며 연체가 아님을 표시합니다.",
+            "en": "On Nov 9, show Pending, not Overdue.",
+            "ja": "11月9日は期限前の未入金として表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "갱신 검토",
+            "en": "Review renewal",
+            "ja": "更新の検討"
+          },
+          "body": {
+            "ko": "12월 31일 만료 예정 계약의 갱신 여부를 검토 중으로 유지합니다.",
+            "en": "Leave the Dec 31 expiry under renewal review.",
+            "ja": "12月31日満了予定の契約は更新検討中とします。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "데모 사례: 402호 11월 청구 ₩2,750,000이 발행되고, 납기 전 미수납 상태에서 연말 만료 계약의 갱신을 검토하기까지.",
+        "en": "Demo case: unit 402’s November bill of ₩2,750,000 is issued, stays unpaid before its due date, and the year-end renewal is reviewed.",
+        "ja": "デモ事例：402号室の11月請求₩2,750,000が発行され、納期前の未入金のまま年末満了契約の更新を検討するまで。"
+      }
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "LEASE DETAIL"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "402호 임대 계약 상세",
+        "en": "Unit 402 lease detail",
+        "ja": "402号室の賃貸契約詳細"
+      },
+      "body": {
+        "ko": "LOOM OFFICE의 임대료·관리비·부가세와 계약 종료 예정일(2026-12-31), 11월 청구 상태를 한 화면에서 확인합니다.",
+        "en": "LOOM OFFICE’s rent, maintenance fee, VAT, scheduled end date (2026-12-31) and November billing status on one screen.",
+        "ja": "LOOM OFFICEの賃料・管理費・付加価値税、契約終了予定日（2026-12-31）、11月の請求状況を一画面で確認します。"
+      },
+      "images": [
+        "leasegrid-lease-contract-detail"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "04",
+        "label": "BILLING & RENEWAL"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "월 청구 원장과 갱신 검토",
+        "en": "Monthly ledger and renewal review",
+        "ja": "月次台帳と更新の検討"
+      },
+      "images": [
+        "leasegrid-monthly-billing-ledger",
+        "leasegrid-renewal-workbench"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "05",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "호실 운영과 임대차 재무 관리",
+        "en": "Property operations and lease billing",
+        "ja": "区画運用と賃貸請求管理"
+      },
+      "intro": {
+        "ko": "운영 담당자와 청구 담당자가 같은 호실·계약 데이터에서 업무를 진행합니다.",
+        "en": "Property and billing staff work from shared unit and lease records.",
+        "ja": "施設運営担当と請求担当が同じ区画・契約情報を参照します。"
+      },
+      "note": {
+        "ko": "자체 정적 UI 구성안입니다. 실제 은행 입금 연동, 세금계산서 발행, 법률 계약 검증 또는 수납 처리를 구현하지 않았습니다.",
+        "en": "Independent static UI concept; no bank reconciliation, tax invoice issuance, legal validation, or live payment collection is implemented.",
+        "ja": "自主制作の静的UI構想で、銀行入金照合、税務請求書発行、法的検証、実際の入金処理は実装していません。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "물건·계약 운영",
+            "en": "Property and lease workspace",
+            "ja": "物件・契約管理"
+          },
+          "audience": {
+            "ko": "건물 운영 관리자",
+            "en": "Property operations managers",
+            "ja": "物件運営管理者"
+          },
+          "items": [
+            {
+              "ko": "12개 호실 임대·공실 현황",
+              "en": "Occupancy across 12 units",
+              "ja": "12区画の稼働・空室状況"
+            },
+            {
+              "ko": "호실별 임대차 조건·기간",
+              "en": "Unit-level lease terms and dates",
+              "ja": "区画別賃貸条件・契約期間"
+            },
+            {
+              "ko": "갱신 검토 일정과 담당자 메모",
+              "en": "Renewal dates and owner notes",
+              "ja": "更新予定と担当者メモ"
+            }
+          ]
+        },
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "청구·수납 관리",
+            "en": "Billing and collections",
+            "ja": "請求・入金管理"
+          },
+          "audience": {
+            "ko": "청구·회계 운영 담당자",
+            "en": "Billing and accounting staff",
+            "ja": "請求・経理担当者"
+          },
+          "items": [
+            {
+              "ko": "임대료·관리비·세액 분리",
+              "en": "Rent, service charges, and tax breakdown",
+              "ja": "賃料・管理費・税額の内訳"
+            },
+            {
+              "ko": "청구 발행·납기·수납 상태",
+              "en": "Invoice issue, due date, and payment state",
+              "ja": "請求発行・期限・入金状態"
+            },
+            {
+              "ko": "건별 월별 청구 내역 조회",
+              "en": "Invoice history by unit and month",
+              "ja": "区画・月別の請求履歴"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "06",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "임대 운영 데이터",
+        "en": "Lease operations data",
+        "ja": "賃貸運営データ"
+      },
+      "intro": {
+        "ko": "호실·계약·청구·수납 상태를 같은 호실 번호로 따라갈 수 있게 목록과 상세 화면을 나눴습니다.",
+        "en": "Lists and detail views let unit, lease, billing and payment status be followed by one unit number.",
+        "ja": "区画・契約・請求・入金状態を同じ区画番号で追えるよう、一覧と詳細画面を分けました。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "호실 상태 그리드",
+            "en": "Unit occupancy grid",
+            "ja": "区画ステータスグリッド"
+          },
+          "body": {
+            "ko": "12개 호실을 임대·갱신 검토·공실로 구분합니다.",
+            "en": "Separate 12 units into active, renewal review, and vacant.",
+            "ja": "12区画を入居中・更新検討・空室に分類します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "임대계약 상세",
+            "en": "Lease detail",
+            "ja": "賃貸契約詳細"
+          },
+          "body": {
+            "ko": "402호 임대료·계약 기간·보증금 정보를 한 화면에 표시합니다.",
+            "en": "Show unit 402 rent, term, and deposit on one screen.",
+            "ja": "402号室の賃料・期間・敷金をまとめます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "월별 청구 원장",
+            "en": "Monthly invoice ledger",
+            "ja": "月次請求台帳"
+          },
+          "body": {
+            "ko": "임대료 ₩2,200,000·관리비 ₩300,000·세액 ₩250,000을 합산합니다.",
+            "en": "Reconcile ₩2,200,000 rent, ₩300,000 fees, and ₩250,000 VAT.",
+            "ja": "賃料₩2,200,000・管理費₩300,000・税額₩250,000を合算します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "갱신 일정",
+            "en": "Renewal review",
+            "ja": "更新予定管理"
+          },
+          "body": {
+            "ko": "만료 예정일과 협의 중 상태를 추적합니다.",
+            "en": "Track expiry dates and renewal negotiations.",
+            "ja": "満了予定日と更新協議中の状態を確認します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "공간의 운영 현황을 계약과 숫자로 명확하게.",
+        "en": "Bring every lease into operational focus.",
+        "ja": "物件の運営を、契約と数字で明確に。"
+      },
+      "sub": {
+        "ko": "호실·임대계약·월별 청구의 자체 정적 UI 데모.",
+        "en": "An independent static UI concept for units, leases, and billing.",
+        "ja": "区画・賃貸契約・月次請求の自主制作静的UIデモ。"
+      }
+    }
+  ]
+}

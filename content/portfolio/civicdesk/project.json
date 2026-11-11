@@ -1,0 +1,410 @@
+{
+  "id": "civicdesk",
+  "slug": "civicdesk",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 170,
+  "includeInPdf": true,
+  "title": {
+    "ko": "CIVICDESK — 민원 접수부터 공식 회신까지",
+    "en": "CIVICDESK — From intake to official response",
+    "ja": "CIVICDESK — 申請受付から正式回答まで"
+  },
+  "subtitle": {
+    "ko": "담당 부서와 처리 상태를 연결하는 민원 업무 워크스페이스",
+    "en": "A case-management workspace for departments and resolution states",
+    "ja": "担当部署と処理状況をつなぐ住民要望管理ワークスペース"
+  },
+  "summary": {
+    "ko": "접수함, 민원 상세, 부서 배정, 회신 결재를 연속된 운영 화면으로 구성한 공공업무 UI 데모입니다.",
+    "en": "A public-service UI concept covering inbox, case details, assignment, and response approval.",
+    "ja": "受付一覧、案件詳細、担当部署への割当、回答承認を連続した画面にまとめた行政業務UIデモです。"
+  },
+  "overview": {
+    "ko": "민원 처리에서는 접수 내용과 첨부 자료를 확인하고 적절한 부서에 배정한 뒤, 처리 상태를 추적하고 공식 회신을 검토하는 절차가 중요합니다. CIVICDESK는 이 흐름을 목록·상세·보드·회신 문서 편집의 네 화면으로 보여줍니다.",
+    "en": "Handling a citizen request requires reviewing the intake and attachments, assigning the right department, tracking resolution, and approving a formal response. CIVICDESK demonstrates this workflow through four coordinated interface views.",
+    "ja": "住民からの要望では、受付内容と添付資料の確認、担当部署への割当、対応状況の追跡、正式回答の審査が重要です。CIVICDESKは、この流れを一覧・詳細・ボード・回答編集の4画面で表現しています。"
+  },
+  "industry": {
+    "ko": "공공 행정·민원 서비스",
+    "en": "Public Administration and Civic Services",
+    "ja": "公共行政・住民サービス"
+  },
+  "categories": [
+    "erp",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "admin",
+      "label": {
+        "ko": "민원 운영 WEB",
+        "en": "Case operations web",
+        "ja": "要望対応の運営Web"
+      }
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#456C7C",
+    "accentInk": "#223B45",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "c01"
+  ],
+  "images": [
+    {
+      "id": "c01",
+      "kind": "desktop",
+      "file": "civicdesk-request-inbox.webp",
+      "alt": {
+        "ko": "접수 총계 128건, 민원 목록과 선택 민원 상세 패널을 동시에 배치한 운영 화면",
+        "en": "Public-service inbox with 128 total cases, a queue, and a selected-case detail panel.",
+        "ja": "受付128件の統計、案件一覧、選択案件の詳細を並べた運営画面。"
+      },
+      "caption": {
+        "ko": "접수번호 CVD-261104-028을 기준으로 우선순위·기한·담당부서·처리 단계를 한눈에 확인합니다.",
+        "en": "Case CVD-261104-028 ties priority, due date, department, and workflow stages together.",
+        "ja": "受付番号CVD-261104-028を中心に優先度、期限、担当部署、対応段階を確認します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "c02",
+      "kind": "desktop",
+      "file": "civicdesk-request-detail.webp",
+      "alt": {
+        "ko": "가로등 고장 민원의 상세 내용과 개략 위치도, 첨부자료 및 이력을 나타낸 화면",
+        "en": "Case-detail view with a streetlight report, schematic location map, attachments, and history.",
+        "ja": "街灯の故障申告、概略位置図、添付資料、対応履歴を示す詳細画面。"
+      },
+      "caption": {
+        "ko": "현장 위치와 처리 담당 정보를 연결한 민원 상세 기록을 보여줍니다.",
+        "en": "The location illustration and assignment history support case review without claiming real geodata.",
+        "ja": "位置情報の模式図と担当履歴をひとつの案件記録に整理しました。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "c03",
+      "kind": "desktop",
+      "file": "civicdesk-assignment-board.webp",
+      "alt": {
+        "ko": "접수·배정 완료·처리 중·회신 검토 네 개 상태 열에 민원 카드를 배치한 칸반 화면",
+        "en": "Kanban board with columns for intake, assignment, processing, and response review.",
+        "ja": "受付・割当完了・対応中・回答審査の4列で構成したカンバン画面。"
+      },
+      "caption": {
+        "ko": "담당 부서와 우선순위를 구분해 진행 단계별 병목을 파악하는 구조입니다.",
+        "en": "Department owners and priorities make queues and handoffs easier to scan.",
+        "ja": "担当部署と優先度を可視化し、段階ごとの滞留を把握できる構成です。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "c04",
+      "kind": "desktop",
+      "file": "civicdesk-response-review.webp",
+      "alt": {
+        "ko": "민원 회신 문서와 결재 상태를 함께 확인하는 검토 화면",
+        "en": "Official citizen request response document with approval status",
+        "ja": "行政相談への回答文書と承認状況を確認する画面"
+      },
+      "caption": {
+        "ko": "CVD-261103-087 어린이공원 조명 점검 민원의 공식 회신 본문을 중심으로 결재 대기 및 발송 단계를 검토하는 UI입니다.",
+        "en": "A document-centered review for case CVD-261103-087, showing the park-lighting response and approval steps.",
+        "ja": "案件CVD-261103-087の公園照明点検に関する回答文書と承認・送信手順を示すUIです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 정적 UI 구상·30개 포트폴리오 1차 확보용 텍스트 등록. 실제 고객사 수행·서비스 구현 실적이 아님.",
+    "4차 승인 UI 이미지·콘텐츠 반영(2026-11-10): 전달 원문으로 제목·개요·기능·흐름·범위·마무리 문장 교체, 자체 정적 UI 데모 화면 4장 연결. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "접수함, 민원 상세, 부서 배정, 회신 결재를 연속된 운영 화면으로 구성한 공공업무 UI 데모입니다.",
+        "en": "A public-service UI concept covering inbox, case details, assignment, and response approval.",
+        "ja": "受付一覧、案件詳細、担当部署への割当、回答承認を連続した画面にまとめた行政業務UIデモです。"
+      },
+      "images": [
+        "c01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "민원 처리에서는 접수 내용과 첨부 자료를 확인하고 적절한 부서에 배정한 뒤, 처리 상태를 추적하고 공식 회신을 검토하는 절차가 중요합니다. CIVICDESK는 이 흐름을 목록·상세·보드·회신 문서 편집의 네 화면으로 보여줍니다.",
+        "en": "Handling a citizen request requires reviewing the intake and attachments, assigning the right department, tracking resolution, and approving a formal response. CIVICDESK demonstrates this workflow through four coordinated interface views.",
+        "ja": "住民からの要望では、受付内容と添付資料の確認、担当部署への割当、対応状況の追跡、正式回答の審査が重要です。CIVICDESKは、この流れを一覧・詳細・ボード・回答編集の4画面で表現しています。"
+      },
+      "body": {
+        "ko": "민원 상태와 기한, 담당자, 회신 문서가 분리되면 처리 현황을 파악하고 누락을 확인하기 어렵습니다. 민원마다 하나의 식별번호와 처리 이력을 유지하도록 설계했습니다.",
+        "en": "When status, deadlines, assignees, and correspondence live in separate systems, progress and omissions become hard to track. Each case retains one reference number and coherent activity history.",
+        "ja": "進捗、期限、担当者、回答書が別々になると、対応状況や漏れを把握しづらくなります。案件ごとに一意の受付番号と対応履歴を維持する設計です。"
+      }
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "주요 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "통합 민원 접수함",
+            "en": "Unified case inbox",
+            "ja": "統合受付一覧"
+          },
+          "body": {
+            "ko": "접수번호·유형·위치·우선순위·처리 기한을 목록에서 확인합니다.",
+            "en": "Scan reference numbers, locations, priority, deadlines, and status.",
+            "ja": "受付番号、場所、優先度、期限、処理状況を確認できます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장 위치·이력 관리",
+            "en": "Location and activity record",
+            "ja": "現場位置と履歴"
+          },
+          "body": {
+            "ko": "민원 설명, 개략 위치도, 첨부, 담당부서와 단계 이력을 보여줍니다.",
+            "en": "Display case details, a schematic location graphic, attachments, and processing milestones.",
+            "ja": "案件内容、概略位置図、添付資料、担当部署、処理段階を表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "업무 배정 보드",
+            "en": "Department assignment board",
+            "ja": "担当部署の割当ボード"
+          },
+          "body": {
+            "ko": "접수·배정·처리·회신 검토를 칸반 방식으로 구분합니다.",
+            "en": "Group work into intake, assignment, processing, and response review.",
+            "ja": "受付・割当・対応中・回答審査をカンバン方式で整理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "공식 회신 검토",
+            "en": "Official response review",
+            "ja": "正式回答の審査"
+          },
+          "body": {
+            "ko": "회신 문서와 승인 단계, 발송 전 체크리스트를 함께 배치합니다.",
+            "en": "Combine the draft response, approval route, and pre-send checks.",
+            "ja": "回答書、承認フロー、送信前の確認項目をまとめます。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "온라인 민원 접수",
+            "en": "Receive an online request",
+            "ja": "オンライン受付"
+          }
+        },
+        {
+          "title": {
+            "ko": "내용 확인 및 담당부서 배정",
+            "en": "Review and assign its department",
+            "ja": "内容確認と担当部署への割当"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장 처리 상태 업데이트",
+            "en": "Update field-resolution status",
+            "ja": "現場対応状況の更新"
+          }
+        },
+        {
+          "title": {
+            "ko": "회신 검토·승인 및 발송",
+            "en": "Review, approve, and send a response",
+            "ja": "回答審査・承認・送信"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "CASE INBOX"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "통합 민원 접수함",
+        "en": "Unified case inbox",
+        "ja": "統合受付一覧"
+      },
+      "body": {
+        "ko": "접수번호 CVD-261104-028을 기준으로 우선순위·기한·담당부서·처리 단계를 한눈에 확인합니다.",
+        "en": "Case CVD-261104-028 ties priority, due date, department, and workflow stages together.",
+        "ja": "受付番号CVD-261104-028を中心に優先度、期限、担当部署、対応段階を確認します。"
+      },
+      "images": [
+        "c01"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "CASE DETAIL"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "현장 위치·이력 관리",
+        "en": "Location and activity record",
+        "ja": "現場位置と履歴"
+      },
+      "body": {
+        "ko": "현장 위치와 처리 담당 정보를 연결한 민원 상세 기록을 보여줍니다.",
+        "en": "The location illustration and assignment history support case review without claiming real geodata.",
+        "ja": "位置情報の模式図と担当履歴をひとつの案件記録に整理しました。"
+      },
+      "images": [
+        "c02"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "ASSIGNMENT BOARD"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "업무 배정 보드",
+        "en": "Department assignment board",
+        "ja": "担当部署の割当ボード"
+      },
+      "body": {
+        "ko": "담당 부서와 우선순위를 구분해 진행 단계별 병목을 파악하는 구조입니다.",
+        "en": "Department owners and priorities make queues and handoffs easier to scan.",
+        "ja": "担当部署と優先度を可視化し、段階ごとの滞留を把握できる構成です。"
+      },
+      "images": [
+        "c03"
+      ],
+      "surface": "light"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "07",
+        "label": "RESPONSE REVIEW"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "공식 회신 검토",
+        "en": "Official response review",
+        "ja": "正式回答の審査"
+      },
+      "body": {
+        "ko": "시민에게 발송할 문서와 결재 절차를 같은 작업 공간에서 검토합니다.",
+        "en": "The case officer can inspect the outgoing letter and approval process in one workspace.",
+        "ja": "住民へ送る文書と決裁手順を同じ作業画面で確認します。"
+      },
+      "images": [
+        "c04"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "08",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "자체 제작 정적 UI 데모 4종입니다. 실제 전자정부 시스템 연계, 위치정보 서비스, 전자결재, 민원인 통지, 민원 DB 처리는 구현되지 않았습니다. 화면의 위치도는 실제 지리정보가 아닌 개략 표현입니다.",
+        "en": "Four static UI screens were produced as an in-house concept. No government integrations, live geolocation service, e-approval system, citizen notification, or production database were implemented. The map is schematic, not geospatial data.",
+        "ja": "自社制作の静的UIデモ4点です。行政システム連携、実位置情報、電子決裁、住民通知、データベース処理は実装していません。位置図は実際の地理情報ではなく概略図です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "09",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "민원 한 건의 처리 과정이 담당자와 상태를 넘어 끊기지 않도록 구성했습니다.",
+        "en": "A continuous record of responsibility and resolution for every request.",
+        "ja": "一件の要望を、担当者と処理状態をまたいで一貫して追跡できる構成です。"
+      }
+    }
+  ]
+}

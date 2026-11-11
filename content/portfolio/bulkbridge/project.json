@@ -1,0 +1,564 @@
+{
+  "id": "bulkbridge",
+  "slug": "bulkbridge",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 70,
+  "includeInPdf": true,
+  "title": {
+    "ko": "BULKBRIDGE — B2B 도매·기업 발주",
+    "en": "BULKBRIDGE — Wholesale Commerce",
+    "ja": "BULKBRIDGE — 法人向け卸売コマース"
+  },
+  "subtitle": {
+    "ko": "거래처별 가격부터 견적·승인·발주까지",
+    "en": "Business pricing, quoting, approvals, and purchasing",
+    "ja": "取引先別価格から見積・承認・発注まで"
+  },
+  "summary": {
+    "ko": "수량별 단가와 기업 내부 승인을 연결하는 B2B 도매 발주 플랫폼 UI 구성안.",
+    "en": "A B2B wholesale UI concept spanning volume pricing and internal purchasing approvals.",
+    "ja": "数量別価格と社内承認をつなぐB2B卸売プラットフォームのUI構想。"
+  },
+  "overview": {
+    "ko": "편집숍 구매 담당자가 여러 공급 상품을 비교하고, 박스 단위 수량에 따른 단가를 적용해 견적과 발주를 처리하는 업무를 다룹니다. 기업별 가격·수량·승인 상태가 하나의 구매 흐름으로 이어지도록 설계한 자체 UI 데모입니다.",
+    "en": "This independent UI concept follows a retailer buyer comparing wholesale items, applying case-pack quantities and volume tiers, and preparing purchase orders. It connects account-specific pricing, quantities, quotations and approval states.",
+    "ja": "小売店の購買担当者が卸商品を比較し、ケース単位の数量と数量別単価を適用して見積・発注する業務を想定した自主制作UIデモです。取引先別価格、数量、承認状態を一つの購買フローで表現します。"
+  },
+  "industry": {
+    "ko": "B2B 도매·기업 구매",
+    "en": "B2B Wholesale and Procurement",
+    "ja": "B2B卸売・法人購買"
+  },
+  "categories": [
+    "commerce",
+    "platform",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "기업 구매 WEB",
+        "en": "Business purchasing web",
+        "ja": "法人購買Web"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "발주·승인 워크스페이스",
+        "en": "Procurement and approval workspace",
+        "ja": "発注・承認ワークスペース"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#496A5D",
+    "accentInk": "#17241E",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "bulkbridge-bulk-order-builder"
+  ],
+  "images": [
+    {
+      "id": "bulkbridge-wholesale-catalog",
+      "kind": "desktop",
+      "file": "bulkbridge-wholesale-catalog.webp",
+      "alt": {
+        "ko": "기업 전용 도매 상품 카탈로그 — 자체 UI 시연 화면",
+        "en": "Business wholesale product catalog — static UI demo",
+        "ja": "法人向け卸売商品カタログ — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "사업자 구매 담당자가 포장 단위·거래처 단가·재고를 비교하는 B2B 상품 탐색 시연 화면입니다.",
+        "en": "Illustrative B2B catalog for comparing case sizes, negotiated prices and stock availability.",
+        "ja": "法人購買担当者が梱包単位・取引価格・在庫を比較するB2B商品カタログのデモです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "bulkbridge-bulk-order-builder",
+      "kind": "desktop",
+      "file": "bulkbridge-bulk-order-builder.webp",
+      "alt": {
+        "ko": "수량 매트릭스 기반 대량 발주 — 자체 UI 시연 화면",
+        "en": "Bulk order quantity builder — static UI demo",
+        "ja": "数量マトリクスによる一括発注 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "머그 24개, 캔들 36개, 유리잔 12개로 구성된 가상 발주의 공급가액 640,800원과 부가세를 계산하는 시연 UI입니다.",
+        "en": "A demo bulk-order builder for 24 mugs, 36 candles and 12 glasses, showing a KRW 640,800 subtotal before VAT.",
+        "ja": "マグ24個・キャンドル36個・グラス12個の架空発注について、税抜640,800ウォンと付加価値税を示すデモUIです。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "bulkbridge-quotation-review",
+      "kind": "desktop",
+      "file": "bulkbridge-quotation-review.webp",
+      "alt": {
+        "ko": "대량 구매 견적 검토 — 자체 UI 시연 화면",
+        "en": "Bulk quotation review — static UI demo",
+        "ja": "大口購買の見積確認 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "거래처 수량별 가격과 부가세를 검토하고 구매 승인 전 총액 704,880원을 확인하는 화면입니다.",
+        "en": "Illustrative quotation review checking tiered pricing, VAT and a KRW 704,880 total prior to purchase approval.",
+        "ja": "数量別価格と付加価値税を確認し、購買承認前の合計704,880ウォンを検討するデモ画面です。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "bulkbridge-purchase-approval",
+      "kind": "desktop",
+      "file": "bulkbridge-purchase-approval.webp",
+      "alt": {
+        "ko": "기업 구매 요청 승인 — 자체 UI 시연 화면",
+        "en": "Business purchase request approval — static UI demo",
+        "ja": "法人購買リクエストの承認 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "사내 결재 기준에 따른 구매 요청·검토·승인 이력을 보여주는 업무 시연 화면입니다.",
+        "en": "An internal purchasing demo showing request, review and approval history against sample spending rules.",
+        "ja": "社内の購買規定に基づく申請・確認・承認履歴を示す業務デモです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "bulkbridge-purchase-order-detail",
+      "kind": "desktop",
+      "file": "bulkbridge-purchase-order-detail.webp",
+      "alt": {
+        "ko": "발주서 접수 및 상세 현황 — 자체 UI 시연 화면",
+        "en": "Purchase order details and acceptance — static UI demo",
+        "ja": "発注書の受付と詳細 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "승인된 가상 발주서의 품목·수량·납기 요청과 공급사 접수 단계를 보여주는 시연 화면입니다.",
+        "en": "An illustrative purchase-order detail view showing approved items, quantities, requested delivery and supplier receipt.",
+        "ja": "承認済みの架空発注書について、商品・数量・納期希望と取引先の受付状態を示すデモです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·UI 데모를 위한 1차 텍스트 등록본. 실제 구현 실적이나 고객 성과가 아님.",
+    "2차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결, External PDF 대표 장면은 presentation.external로 지정. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "수량·단가·승인을 한 화면의 구매 흐름으로 연결합니다.",
+        "en": "One procurement flow for quantities, prices, and approvals.",
+        "ja": "数量・単価・承認を一つの購買フローへ。"
+      },
+      "images": [
+        "bulkbridge-bulk-order-builder"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "고정 가격으로 상품을 한 개씩 구매하는 일반 쇼핑몰과 달리, 거래처 계약 가격과 박스 단위 발주, 내부 승인 절차를 중심으로 설계했습니다.",
+        "en": "Unlike single-item retail checkout, the concept centers on contract pricing, case-pack orders, and internal purchasing approvals.",
+        "ja": "通常の小売購入とは異なり、取引先別の契約価格、ケース単位の発注、社内承認を中心に設計しています。"
+      },
+      "body": {
+        "ko": "가상 구매사 COMMON CORNER가 세 가지 리빙 상품을 총 72개 발주하는 예시를 사용합니다. 공급가액 ₩640,800, 부가세 ₩64,080, 배송비 ₩0, 총액 ₩704,880으로 견적과 발주 정보를 일치시킵니다.",
+        "en": "The fictional buyer COMMON CORNER orders 72 units across three homeware products. The example reconciles a ₩640,800 supply amount, ₩64,080 VAT, ₩0 shipping, and a ₩704,880 total.",
+        "ja": "架空の購入企業COMMON CORNERが生活雑貨3品目を計72点発注する想定です。供給価額₩640,800、付加価値税₩64,080、送料₩0、合計₩704,880を見積と注文で統一します。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "거래처별 가격",
+            "en": "Account pricing",
+            "ja": "取引先別価格"
+          },
+          "body": {
+            "ko": "기업 계약에 따라 상품 단가와 수량 구간을 확인합니다.",
+            "en": "Display negotiated prices and volume tiers per business account.",
+            "ja": "法人契約に応じた単価と数量区分を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "발주 상태 일관성",
+            "en": "Order lifecycle consistency",
+            "ja": "発注状態の一貫性"
+          },
+          "body": {
+            "ko": "견적 준비·승인 요청·발주 접수의 시점을 구분합니다.",
+            "en": "Separate quote preparation, approval request, and supplier acceptance.",
+            "ja": "見積準備・承認依頼・受注受付の時点を区別します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "견적에서 발주 접수까지",
+        "en": "From quote to accepted order",
+        "ja": "見積から発注受付まで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "카탈로그 탐색",
+            "en": "Explore wholesale catalogue",
+            "ja": "卸売カタログ検索"
+          },
+          "body": {
+            "ko": "COMMON CORNER가 거래처 전용 가격과 포장 단위를 확인합니다.",
+            "en": "COMMON CORNER reviews its prices and case-pack sizes.",
+            "ja": "COMMON CORNERが取引先別価格と梱包単位を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "대량 수량 입력",
+            "en": "Enter bulk quantities",
+            "ja": "大量数量入力"
+          },
+          "body": {
+            "ko": "머그 24개·캔들 36개·유리잔 12개를 입력합니다.",
+            "en": "Add 24 mugs, 36 candles, and 12 glasses.",
+            "ja": "マグ24点・キャンドル36点・グラス12点を入力します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "견적 검토",
+            "en": "Review quotation",
+            "ja": "見積確認"
+          },
+          "body": {
+            "ko": "공급가액 ₩640,800과 최종 합계 ₩704,880을 확인합니다.",
+            "en": "Review ₩640,800 before VAT and a ₩704,880 total.",
+            "ja": "供給価額₩640,800と合計₩704,880を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "내부 승인",
+            "en": "Internal approval",
+            "ja": "社内承認"
+          },
+          "body": {
+            "ko": "₩500,000 초과 공급가액에 대한 승인 요청과 결정을 분리합니다.",
+            "en": "Route supply totals above ₩500,000 for approval.",
+            "ja": "供給価額₩500,000超の注文を社内承認へ進めます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "발주 접수",
+            "en": "Supplier acceptance",
+            "ja": "卸売側の受注受付"
+          },
+          "body": {
+            "ko": "승인 후 발주서를 제출하고 공급사 접수를 표시합니다.",
+            "en": "Submit the approved order and display supplier acceptance.",
+            "ja": "承認済みの発注書を送信し、供給側の受付状態を表示します。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "데모 사례: 구매 담당자가 72개 발주를 견적으로 만들고, 승인권자 결정을 거쳐 공급사 접수 상태가 되기까지.",
+        "en": "Demo case: a buyer turns a 72-unit order into a quote, the approver decides, and the supplier marks it received.",
+        "ja": "デモ事例：購買担当が72個の発注を見積にまとめ、承認者の決定を経てサプライヤーの受付状態になるまで。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "WHOLESALE CATALOG"
+      },
+      "layout": "imageLeft",
+      "surface": "light",
+      "heading": {
+        "ko": "기업 전용 도매 상품 카탈로그",
+        "en": "Business wholesale product catalog",
+        "ja": "法人向けの卸売商品カタログ"
+      },
+      "body": {
+        "ko": "사업자 구매 담당자가 포장 단위·거래처 단가·재고를 비교하는 B2B 상품 탐색 시연 화면입니다.",
+        "en": "Illustrative B2B catalog for comparing case sizes, negotiated prices and stock availability.",
+        "ja": "法人購買担当者が梱包単位・取引価格・在庫を比較するB2B商品カタログのデモです。"
+      },
+      "images": [
+        "bulkbridge-wholesale-catalog"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "QUOTATION"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대량 구매 견적 검토",
+        "en": "Bulk quotation review",
+        "ja": "大口購買の見積確認"
+      },
+      "body": {
+        "ko": "거래처 수량별 가격과 부가세를 검토하고 구매 승인 전 총액 704,880원을 확인하는 화면입니다.",
+        "en": "Illustrative quotation review checking tiered pricing, VAT and a KRW 704,880 total prior to purchase approval.",
+        "ja": "数量別価格と付加価値税を確認し、購買承認前の合計704,880ウォンを検討するデモ画面です。"
+      },
+      "images": [
+        "bulkbridge-quotation-review"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "PURCHASE APPROVAL"
+      },
+      "layout": "full",
+      "surface": "light",
+      "heading": {
+        "ko": "기업 구매 요청 승인",
+        "en": "Business purchase request approval",
+        "ja": "法人購買リクエストの承認"
+      },
+      "body": {
+        "ko": "사내 결재 기준에 따른 구매 요청·검토·승인 이력을 보여주는 업무 시연 화면입니다.",
+        "en": "An internal purchasing demo showing request, review and approval history against sample spending rules.",
+        "ja": "社内の購買規定に基づく申請・確認・承認履歴を示す業務デモです。"
+      },
+      "images": [
+        "bulkbridge-purchase-approval"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "PURCHASE ORDER"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "발주서 접수 및 상세 현황",
+        "en": "Purchase order details and acceptance",
+        "ja": "発注書の受付と詳細"
+      },
+      "body": {
+        "ko": "승인된 가상 발주서의 품목·수량·납기 요청과 공급사 접수 단계를 보여주는 시연 화면입니다.",
+        "en": "An illustrative purchase-order detail view showing approved items, quantities, requested delivery and supplier receipt.",
+        "ja": "承認済みの架空発注書について、商品・数量・納期希望と取引先の受付状態を示すデモです。"
+      },
+      "images": [
+        "bulkbridge-purchase-order-detail"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "07",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "기업 구매 워크스페이스",
+        "en": "Business purchasing workspace",
+        "ja": "法人購買ワークスペース"
+      },
+      "intro": {
+        "ko": "구매 담당자와 승인권자의 업무를 하나의 도매 카탈로그와 발주 데이터로 연결합니다.",
+        "en": "A shared wholesale catalogue and order record serve buyers and approvers.",
+        "ja": "共通の商品カタログと発注データで購買担当者と承認者の業務をつなぎます。"
+      },
+      "note": {
+        "ko": "PIUS의 자체 정적 UI 구성안이며 실제 구매·재고·세금·승인 API는 구현하지 않았습니다.",
+        "en": "Independent static UI concept; no live purchasing, inventory, tax, or approval APIs were implemented.",
+        "ja": "PIUS自主制作の静的UI構想です。実際の購買・在庫・税計算・承認APIは実装していません。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "도매 구매 WEB",
+            "en": "Wholesale buying web",
+            "ja": "卸売購買Web"
+          },
+          "audience": {
+            "ko": "편집숍 구매 담당자",
+            "en": "Retail purchasing staff",
+            "ja": "小売店の購買担当者"
+          },
+          "items": [
+            {
+              "ko": "거래처 전용 상품 카탈로그",
+              "en": "Account-specific product catalogue",
+              "ja": "取引先専用の商品カタログ"
+            },
+            {
+              "ko": "SKU별 박스 수량·구간 단가 입력",
+              "en": "Case-pack quantity and tiered unit-price entry",
+              "ja": "SKU別のケース数量・段階単価入力"
+            },
+            {
+              "ko": "견적 구성과 과세·총액 검토",
+              "en": "Quotation review with tax and totals",
+              "ja": "見積と税額・総額の確認"
+            }
+          ]
+        },
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "발주 승인·상태 관리",
+            "en": "Approval and order tracking",
+            "ja": "発注承認・状態管理"
+          },
+          "audience": {
+            "ko": "구매 승인권자·공급사 담당자",
+            "en": "Purchasing approvers and supplier staff",
+            "ja": "購買承認者・卸売供給側担当者"
+          },
+          "items": [
+            {
+              "ko": "승인 요청·검토·결정",
+              "en": "Request, review, and decision",
+              "ja": "承認依頼・審査・判断"
+            },
+            {
+              "ko": "견적서와 발주서 상태 구분",
+              "en": "Separate quotation and purchase-order states",
+              "ja": "見積書と発注書の状態管理"
+            },
+            {
+              "ko": "이전 주문 복사·재주문 초안",
+              "en": "Repeat-order draft from past purchases",
+              "ja": "過去の注文から再注文の下書き作成"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "08",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "구매 담당자가 쓰는 기능",
+        "en": "What the buyer works with",
+        "ja": "購買担当が使う機能"
+      },
+      "intro": {
+        "ko": "단가·수량·승인 상태가 같은 주문 데이터를 공유하도록 기능을 나눴습니다.",
+        "en": "Price, quantity and approval state share one order record.",
+        "ja": "単価・数量・承認状態が同じ注文データを共有するよう機能を分けました。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "SKU 주문 매트릭스",
+            "en": "SKU order matrix",
+            "ja": "SKU発注マトリクス"
+          },
+          "body": {
+            "ko": "포장 단위·박스 수·총 수량·단가·품목 합계를 한 테이블에서 관리합니다.",
+            "en": "Review pack sizes, boxes, unit counts, prices, and line totals together.",
+            "ja": "梱包単位・ケース数・数量・単価・明細金額を一覧で確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "수량별 단가",
+            "en": "Volume-based pricing",
+            "ja": "数量別単価"
+          },
+          "body": {
+            "ko": "발주 수량 구간에 따라 적용된 단가를 명시합니다.",
+            "en": "Show the unit price applied to each quantity tier.",
+            "ja": "注文数量区分ごとの適用単価を明示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "견적·승인",
+            "en": "Quotation and approvals",
+            "ja": "見積・承認"
+          },
+          "body": {
+            "ko": "견적 준비와 내부 승인, 공급사 접수 상태를 구분합니다.",
+            "en": "Track quote preparation, internal approval, and supplier acceptance separately.",
+            "ja": "見積準備、社内承認、受注受付を別々に管理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "재주문 초안",
+            "en": "Repeat order draft",
+            "ja": "再注文の下書き"
+          },
+          "body": {
+            "ko": "이전 발주 수량을 불러와 신규 주문의 수량을 다시 설정합니다.",
+            "en": "Reuse prior items while editing new quantities.",
+            "ja": "過去の発注商品を再利用し、新しい数量を編集します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "09",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "복잡한 기업 구매도 명확한 주문 흐름으로.",
+        "en": "Make complex procurement a clear purchasing journey.",
+        "ja": "複雑な法人購買を、分かりやすい発注フローへ。"
+      },
+      "sub": {
+        "ko": "대량 주문·가격·승인을 연결한 자체 B2B UI 데모.",
+        "en": "An independent B2B UI concept for bulk ordering, pricing, and approvals.",
+        "ja": "大量発注・価格・承認をつなぐ自主制作B2B UIデモ。"
+      }
+    }
+  ]
+}

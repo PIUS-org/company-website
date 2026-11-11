@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/portfolio.mjs sync",
     "dev": "next dev",
+    "prebuild": "node scripts/portfolio.mjs sync",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "pretypecheck": "node scripts/portfolio.mjs sync",
+    "typecheck": "tsc --noEmit",
+    "portfolio:check": "node scripts/portfolio.mjs check",
+    "portfolio:new": "node scripts/portfolio.mjs new",
+    "portfolio:export": "node scripts/portfolio-export.mjs",
+    "portfolio:capture": "node scripts/portfolio-capture.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",
@@ -17,6 +24,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "playwright": "~1.63.0",
     "typescript": "^5.6"
   }
 }

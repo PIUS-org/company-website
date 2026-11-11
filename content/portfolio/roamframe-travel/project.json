@@ -1,0 +1,570 @@
+{
+  "id": "roamframe-travel",
+  "slug": "roamframe-travel",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 22,
+  "includeInPdf": true,
+  "title": {
+    "ko": "ROAMFRAME — 인터랙티브 여행 플래닝 플랫폼",
+    "en": "ROAMFRAME — Visual Travel Planning Workspace",
+    "ja": "ROAMFRAME — インタラクティブ旅行プランニングプラットフォーム"
+  },
+  "subtitle": {
+    "ko": "여행의 장소와 시간을 하나의 화면으로 연결하는 시각적 여행 워크스페이스",
+    "en": "A visual workspace connecting the places, people and moments of a journey",
+    "ja": "場所、時間、同行者の予定をひとつにつなぐビジュアル旅行ワークスペース"
+  },
+  "summary": {
+    "ko": "여행 일정·2D 지도·장소 탐색·공동 계획·경비 정산·예약정보를 하나로 연결하는 시각적 여행 플래닝 UI 데모",
+    "en": "A visual travel planning UI demo combining itineraries, 2D maps, place discovery, collaborative planning, expense splitting and reservation management",
+    "ja": "旅程、2Dマップ、スポット検索、共同計画、費用精算、予約情報をひとつにつなぐ旅行プランニングUIデモ"
+  },
+  "overview": {
+    "ko": "본 프로젝트는 PIUS의 자체 정적 UI 데모로, 실제 지도·예약·결제 시스템을 구현하거나 외부 서비스와 연동한 수행 실적은 아닙니다.",
+    "en": "This PIUS project is a static UI demonstration, not a deployed product or a completed integration with mapping, booking or payment services.",
+    "ja": "本プロジェクトはPIUSが制作した静的UIデモであり、実際の地図、予約、決済サービスとの連携や運用実績を示すものではありません。"
+  },
+  "industry": {
+    "ko": "Travel Tech / 여행·라이프스타일",
+    "en": "Travel Tech / Travel & Lifestyle",
+    "ja": "Travel Tech / 旅行・ライフスタイル"
+  },
+  "categories": [
+    "platform",
+    "web",
+    "mobile"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "Desktop WEB",
+        "en": "Desktop WEB",
+        "ja": "Desktop WEB"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "Mobile WEB",
+        "en": "Mobile WEB",
+        "ja": "Mobile WEB"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#2E5B53",
+    "accentInk": "#172525",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "roamframe-trip-overview"
+  ],
+  "images": [
+    {
+      "id": "roamframe-trip-overview",
+      "kind": "desktop",
+      "file": "roamframe-trip-overview.webp",
+      "alt": {
+        "ko": "교토 3박 4일 여행의 일정·지도·공동 예산을 보여주는 ROAMFRAME 여행 개요 화면",
+        "en": "ROAMFRAME trip overview showing the four-day Kyoto itinerary, illustrated map and shared budget",
+        "ja": "京都3泊4日の旅程、2Dマップ、共有予算をまとめて表示したROAMFRAMEの旅行概要画面"
+      },
+      "caption": {
+        "ko": "교토 여행을 한눈에 확인하는 시각적 워크스페이스",
+        "en": "A visual workspace for planning a Kyoto getaway",
+        "ja": "京都旅行の全体像をひと目で把握できるワークスペース"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "roamframe-map-itinerary",
+      "kind": "desktop",
+      "file": "roamframe-map-itinerary.webp",
+      "alt": {
+        "ko": "4개 방문 장소의 시간별 일정과 방문 순서를 표시한 교토 2D 지도 편집 화면",
+        "en": "Kyoto itinerary editor pairing four scheduled stops with an illustrative 2D route map",
+        "ja": "4つの訪問スポットの時刻と順序を2Dマップに対応させた京都の旅程編集画面"
+      },
+      "caption": {
+        "ko": "일정 목록과 2D 지도를 나란히 연결한 여행 경로 편집",
+        "en": "Itinerary cards and numbered map pins in one planning view",
+        "ja": "旅程カードと番号付きマーカーを連動させたルート編集"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "roamframe-daily-timeline",
+      "kind": "desktop",
+      "file": "roamframe-daily-timeline.webp",
+      "alt": {
+        "ko": "기존 기온 산책과 카페 제안이 30분 중복되는 여행 일정 편집 타임라인",
+        "en": "Timeline editor highlighting the 30-minute overlap between a proposed café stop and a confirmed Gion walk",
+        "ja": "カフェの提案と確定済みの祇園散策が30分重なる状態を表示したタイムライン編集画面"
+      },
+      "caption": {
+        "ko": "15:30~16:30 카페 제안과 16:00~17:00 확정 일정을 비교하는 시간 충돌 화면",
+        "en": "Schedule editing with a visible 30-minute conflict",
+        "ja": "確定予定と提案予定の30分間の重複を確認"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "roamframe-place-discovery",
+      "kind": "desktop",
+      "file": "roamframe-place-discovery.webp",
+      "alt": {
+        "ko": "교토 장소 6개를 사진 카드로 탐색하고 아라시야마 대나무숲을 선택한 화면",
+        "en": "Kyoto discovery grid with six destination cards and Arashiyama Bamboo Grove selected",
+        "ja": "京都のスポット6件を写真カードで探し、嵐山の竹林を選択した画面"
+      },
+      "caption": {
+        "ko": "사진 기반 장소 탐색과 여행 일정 추가를 연결하는 장소 탐색 UI",
+        "en": "Image-led place discovery connected to trip planning",
+        "ja": "写真を使ったスポット探しから旅程への追加までをつなぐUI"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "roamframe-collaboration",
+      "kind": "desktop",
+      "file": "roamframe-collaboration.webp",
+      "alt": {
+        "ko": "민서·지훈·유나가 마지막 날 방문 후보에 투표하고 의견을 남기는 협업 화면",
+        "en": "Collaborative planning view with three travelers voting on optional Day 4 destinations and commenting",
+        "ja": "3人の旅行者が最終日の候補地に投票し、コメントを共有する共同計画画面"
+      },
+      "caption": {
+        "ko": "철학의 길 2표와 교토 철도박물관 1표를 비교하는 공동 계획",
+        "en": "Two votes for Philosopher’s Path, one for Kyoto Railway Museum",
+        "ja": "哲学の道2票、京都鉄道博物館1票の投票状況を表示"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "roamframe-budget",
+      "kind": "desktop",
+      "file": "roamframe-budget.webp",
+      "alt": {
+        "ko": "총예산 18만 엔과 기록 지출 12만 3천 엔, 균등 정산액을 표시한 여행 경비 화면",
+        "en": "Travel budget view showing ¥180,000 planned, ¥123,000 recorded and the three-person expense split",
+        "ja": "予算18万円、記録済み支出12万3千円、3人の均等精算額を示す旅費管理画面"
+      },
+      "caption": {
+        "ko": "카테고리별 예산과 3인 공동 경비 정산을 시각화",
+        "en": "A clear view of budgets, recorded costs and settlement balances",
+        "ja": "予算配分と立替精算の関係を可視化"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "roamframe-reservations",
+      "kind": "desktop",
+      "file": "roamframe-reservations.webp",
+      "alt": {
+        "ko": "가상 항공편 2건과 가상 숙소 예약을 여행 일정과 연결한 예약 정보 화면",
+        "en": "Reservation organizer linking two fictional flight records and a demo hotel stay to itinerary dates",
+        "ja": "架空の往復航空便と宿泊予約を旅程の日付に関連付けた予約情報管理画面"
+      },
+      "caption": {
+        "ko": "입국·숙박·귀국 정보를 여행 일정과 함께 정리하는 데모 예약 지갑",
+        "en": "One demo wallet for flights, accommodation and related itinerary dates",
+        "ja": "航空便と宿泊情報を旅程とともに整理するデモ用ウォレット"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "roamframe-mobile-today",
+      "kind": "mobile",
+      "file": "roamframe-mobile-today.webp",
+      "alt": {
+        "ko": "여행 2일 차 10시 45분 기준 완료 일정과 다음 방문지를 보여주는 모바일 여행 화면",
+        "en": "Mobile Day 2 view showing the completed first stop and the next stop at 10:45 in demo travel mode",
+        "ja": "旅行2日目の10時45分時点で完了済みの訪問先と次の予定を示すモバイル画面"
+      },
+      "caption": {
+        "ko": "여행 중 다음 방문지를 빠르게 확인하는 모바일 오늘의 일정",
+        "en": "A focused mobile view for the day’s travel plan",
+        "ja": "旅行中に次の訪問先をすばやく確認できる今日の予定"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "roamframe-mobile-route",
+      "kind": "mobile",
+      "file": "roamframe-mobile-route.webp",
+      "alt": {
+        "ko": "산넨자카를 선택한 2D 지도와 장소 바텀시트를 함께 보여주는 모바일 화면",
+        "en": "Mobile illustrated route map with Sannenzaka selected and its place detail bottom sheet open",
+        "ja": "産寧坂を選択した2Dマップとスポット詳細のボトムシートを表示するモバイル画面"
+      },
+      "caption": {
+        "ko": "확정된 방문 순서를 지도 마커와 바텀시트로 확인",
+        "en": "Numbered route markers and a contextual place bottom sheet",
+        "ja": "訪問順マーカーとボトムシートで行程を確認"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "roamframe-mobile-wallet",
+      "kind": "mobile",
+      "file": "roamframe-mobile-wallet.webp",
+      "alt": {
+        "ko": "가상 숙소 KAMO STAY KYOTO의 체크인·체크아웃과 항공편 정보를 담은 모바일 예약 지갑",
+        "en": "Mobile travel wallet for the fictional KAMO STAY KYOTO booking and two demo flight records",
+        "ja": "架空の宿泊施設KAMO STAY KYOTOの滞在情報とデモ航空便を表示したモバイル予約ウォレット"
+      },
+      "caption": {
+        "ko": "데모 숙박 예약과 왕복 항공 정보를 확인하는 모바일 여행 지갑",
+        "en": "Mobile access to demo stay and flight information",
+        "ja": "デモ宿泊予約と往復便をまとめて確認できる旅行ウォレット"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DEMO · PoC",
+        "en": "DEMO · PoC",
+        "ja": "DEMO · PoC"
+      },
+      "headline": {
+        "ko": "여행을 계획하는 순간부터, 여행은 시작됩니다.",
+        "en": "The Journey Begins with a Plan.",
+        "ja": "旅は、計画する瞬間から始まる。"
+      },
+      "sub": {
+        "ko": "계획은 더 직관적으로, 여행은 함께 완성하는 경험으로.",
+        "en": "Plan beautifully. Travel together.",
+        "ja": "美しく計画し、一緒に旅をつくる。"
+      },
+      "images": [
+        "roamframe-trip-overview"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "계획의 모든 조각을 하나로",
+        "en": "Every part of the journey, connected",
+        "ja": "旅の計画をひとつの画面に"
+      },
+      "lead": {
+        "ko": "여행 계획은 방문 장소, 날짜별 일정, 동행자의 의견, 예산과 예약 기록이 흩어지기 쉽습니다. ROAMFRAME은 여행의 전체 흐름을 하나의 화면에서 파악하도록 설계한 사용자 중심 UI 콘셉트입니다. 교토 3박 4일이라는 동일한 예시 데이터를 사용하여 일정과 2D 지도, 장소 저장, 투표와 코멘트, 공동 경비 및 예약 정리 화면이 어떻게 연결되는지 보여줍니다.",
+        "en": "Planning a trip often means coordinating places, daily schedules, travel companions, budgets and reservation details across separate tools. ROAMFRAME is a user-centered interface concept that brings these planning tasks into one visual workspace. A consistent four-day Kyoto sample itinerary demonstrates how schedule editing, illustrative 2D maps, saved places, group votes and comments, shared spending and reservation records can be presented together.",
+        "ja": "旅行の計画では、訪問先、日別スケジュール、同行者の意見、予算、予約情報が別々に管理されがちです。ROAMFRAMEは、これらの情報をひとつの視覚的なワークスペースにまとめるユーザー向けUIコンセプトです。京都3泊4日の共通サンプルデータを使用し、旅程編集、2Dマップ、スポット保存、投票とコメント、共同費用、予約記録がどのようにつながるかを表現します。"
+      }
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "02",
+        "label": "SERVICES"
+      },
+      "heading": {
+        "ko": "여행 플래닝 경험을 구성하는 화면",
+        "en": "The views behind the travel planning experience",
+        "ja": "旅の計画を支える画面"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "계획",
+            "en": "Plan",
+            "ja": "計画"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "여행 개요: 여행 기간, 참여자, 날짜별 주요 일정, 공통 예산을 한 번에 확인합니다.",
+              "en": "Trip Overview: See the travel dates, companions, daily highlights and shared budget in one place.",
+              "ja": "旅行概要：旅行期間、同行者、日別の予定、共有予算を一目で確認します。"
+            },
+            {
+              "ko": "일정·지도 편집: 장소별 방문 순서와 시간, 지도 마커를 나란히 배치해 계획 흐름을 보여줍니다.",
+              "en": "Map & Itinerary Builder: Compare the ordered stop list with numbered pins on a 2D route map.",
+              "ja": "旅程・マップ編集：訪問順序と時刻を、番号付き2Dマップのマーカーと並べて表示します。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "탐색",
+            "en": "Explore",
+            "ja": "探索"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "시간표 편집: 시간축에 확정 일정과 제안 일정을 구분하고 겹치는 구간을 표시합니다.",
+              "en": "Daily Timeline Editor: Distinguish confirmed events from proposals and surface time overlaps.",
+              "ja": "タイムライン編集：確定予定と提案予定を区別し、時間の重複を確認します。"
+            },
+            {
+              "ko": "장소 탐색: 관광지 사진과 분류, 저장·일정 추가 버튼으로 탐색과 계획 수립을 연결합니다.",
+              "en": "Place Discovery: Browse destination imagery and connect saved places to a trip plan.",
+              "ja": "スポット検索：写真から旅先を探し、保存や旅程への追加につなげます。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "함께",
+            "en": "Together",
+            "ja": "共同"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "공동 계획: 세 여행자가 방문 후보를 제안하고 투표·코멘트로 의견을 모읍니다.",
+              "en": "Collaborative Planning: Review travel suggestions, votes and comments from three companions.",
+              "ja": "共同計画：3人の旅行者による候補の提案、投票、コメントを確認します。"
+            },
+            {
+              "ko": "예산·정산: 계획 예산과 기록한 지출을 구분하고 균등 분담 결과를 시각화합니다.",
+              "en": "Budget & Expense Split: Compare planned costs, recorded expenses and equal-share balances.",
+              "ja": "予算・精算：計画予算と記録済み支出を区別し、均等負担額を可視化します。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "여행 중",
+            "en": "On the go",
+            "ja": "旅先で"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "모바일 여행 모드: 당일 일정과 2D 경로 지도를 세로 화면에 맞췄습니다.",
+              "en": "Mobile travel mode: the day plan and a 2D route map, laid out for a portrait screen.",
+              "ja": "モバイル旅行モード：当日の日程と2Dの経路マップを縦画面に合わせました。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "MAP & ITINERARY"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "일정과 지도를 함께 읽는 여행 설계",
+        "en": "Planning with an itinerary and map side by side",
+        "ja": "旅程と地図を同時に確認するプランニング"
+      },
+      "body": {
+        "ko": "DAY 2의 기요미즈데라, 산넨자카, 야사카 신사, 기온 거리를 1번부터 4번까지 같은 순서로 표시합니다. 시간표와 번호가 있는 2D 지도 마커를 나란히 배치해 방문 순서의 대응 관계를 직관적으로 보여주는 편집 화면입니다. 경로 선은 설명용이며 실제 지도 API나 교통시간 계산 결과가 아닙니다.",
+        "en": "Day 2 lists Kiyomizu-dera, Sannenzaka, Yasaka Shrine and Gion District as stops one through four. Matching itinerary cards and numbered 2D map markers make the planned sequence easy to understand. The route is illustrative and does not represent a real map service or calculated travel times.",
+        "ja": "2日目の清水寺、産寧坂、八坂神社、祇園を1番から4番まで同じ順序で表示します。時間別の訪問カードと番号付き2Dマーカーを並べることで、移動予定の流れを直感的に把握できます。ルート線は説明用であり、実際の地図サービスや移動時間の計算結果ではありません。"
+      },
+      "images": [
+        "roamframe-map-itinerary"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "DAILY TIMELINE"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "시간 충돌을 발견하는 데일리 타임라인",
+        "en": "A daily timeline that makes conflicts visible",
+        "ja": "時間の重複を確認できるデイリータイムライン"
+      },
+      "body": {
+        "ko": "확정된 기온 사진 산책 16:00~17:00에 카페 방문 제안 15:30~16:30이 추가되며 16:00~16:30의 30분이 겹치는 상황을 구성했습니다. 확정 일정과 미확정 제안을 서로 다른 스타일로 구분하고 충돌 시간을 바로 인지하도록 설계했습니다.",
+        "en": "A proposed Gion café break from 15:30 to 16:30 overlaps a confirmed Gion photo walk from 16:00 to 17:00 by exactly 30 minutes. Distinct styles for confirmed and proposed activities help explain the scheduling conflict before a plan is finalized.",
+        "ja": "16:00〜17:00の確定済み祇園散策に、15:30〜16:30のカフェ提案が追加された状況を表現します。16:00〜16:30の30分間が重なっていることを、確定予定と未確定提案の異なる表示スタイルで確認できます。"
+      },
+      "images": [
+        "roamframe-daily-timeline"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "COLLABORATIVE PLANNING"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "동행자와 함께 결정하는 여행 계획",
+        "en": "Making travel decisions together",
+        "ja": "同行者と一緒に決める旅の計画"
+      },
+      "body": {
+        "ko": "마지막 날의 미확정 방문지를 세 명의 여행자가 함께 검토하는 상황입니다. 철학의 길은 민서·유나 2표, 교토 철도박물관은 지훈 1표를 받았으며 투표는 진행 중입니다. 제안·투표·의견 확인을 여행 일정 확정 이전의 별도 협업 단계로 표현했습니다.",
+        "en": "Three travelers review possible additional stops for the last day. Minseo and Yuna have voted for Philosopher’s Path, while Jihoon has voted for Kyoto Railway Museum. The two-to-one result is still an open vote, not a confirmed itinerary change. Comments and voting are visualized as a shared decision-making stage.",
+        "ja": "最終日の未確定候補を3人で検討する場面です。哲学の道にはミンソとユナの2票、京都鉄道博物館にはジフンの1票が入っています。投票は進行中であり、訪問先の確定を意味しません。候補提案、投票、コメントを共同意思決定の画面として表現しました。"
+      },
+      "images": [
+        "roamframe-collaboration"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "BUDGET & EXPENSE SPLIT"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "공동 예산과 정산을 쉽게 이해하는 화면",
+        "en": "Shared budgets and transparent expense splits",
+        "ja": "共有予算と立替精算をわかりやすく"
+      },
+      "body": {
+        "ko": "교토 현지 공동 예산 ¥180,000 중 ¥123,000의 비용이 기록되었고 잔여 계획 예산은 ¥57,000입니다. 현재 기록된 비용은 세 명이 각 ¥41,000씩 부담하는 것으로 계산하며, 지훈이 민서에게 ¥23,000, 유나가 민서에게 ¥35,000을 보낼 금액으로 표현합니다. 국제선 항공권은 공동 예산에 포함되지 않으며 실제 송금 기능은 없습니다.",
+        "en": "The shared local budget is ¥180,000, with ¥123,000 recorded and ¥57,000 remaining. Recorded expenses are split equally at ¥41,000 per traveler. The example balances show Jihoon owing Minseo ¥23,000 and Yuna owing Minseo ¥35,000. International flights are excluded; no real payment or money transfer is implemented.",
+        "ja": "京都滞在中の共有予算は180,000円、記録済み支出は123,000円、残りの計画予算は57,000円です。記録済み支出を3人で均等に負担すると1人41,000円になり、ジフンからミンソへ23,000円、ユナからミンソへ35,000円を精算する例を表示します。国際線の航空運賃は予算対象外であり、実際の送金機能はありません。"
+      },
+      "images": [
+        "roamframe-budget"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "07",
+        "label": "MORE SCREENS"
+      },
+      "heading": {
+        "ko": "장소 탐색과 모바일 경로",
+        "en": "Place discovery and mobile route",
+        "ja": "スポット探索とモバイルの経路"
+      },
+      "intro": {
+        "ko": "일정·지도를 보조하는 화면입니다. 지도의 경로는 확정 방문 순서를 보여 주는 일러스트이며 실제 GPS·길 안내가 아닙니다.",
+        "en": "Screens that support the itinerary and map. The route is an illustration of the confirmed visit order — not live GPS or navigation.",
+        "ja": "日程・地図を補助する画面です。地図の経路は確定した訪問順を示すイラストで、実際のGPS・道案内ではありません。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "발견한 장소를 일정으로 연결하는 탐색",
+            "en": "From discovering a place to planning a visit",
+            "ja": "気になるスポットを旅程につなげる検索画面"
+          },
+          "body": {
+            "ko": "교토의 주요 장소를 사진 중심의 카드 그리드로 탐색하고 문화·자연·거리 등으로 구분합니다. 장소 선택, 저장 상태, 일정 추가 액션을 하나의 탐색 경험으로 연결합니다. 화면에서 선택된 장소는 아라시야마 대나무숲입니다.",
+            "en": "A photo-led grid presents Kyoto attractions by culture, nature and neighborhood. Selection, saving and add-to-trip actions connect browsing with itinerary planning. Arashiyama Bamboo Grove is the selected place in the sample view.",
+            "ja": "京都の主な観光スポットを写真中心のカードで表示し、文化、自然、街並みなどのカテゴリーで整理します。場所の選択、保存、旅程への追加という操作の流れを一体化しました。サンプル画面では嵐山の竹林を選択しています。"
+          },
+          "image": "roamframe-place-discovery"
+        },
+        {
+          "title": {
+            "ko": "모바일 지도",
+            "en": "Mobile map",
+            "ja": "モバイル地図"
+          },
+          "body": {
+            "ko": "확정된 방문 순서를 지도 마커와 바텀시트로 확인",
+            "en": "Numbered route markers and a contextual place bottom sheet",
+            "ja": "訪問順マーカーとボトムシートで行程を確認"
+          },
+          "image": "roamframe-mobile-route"
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "08",
+        "label": "MOBILE TRAVEL MODE"
+      },
+      "layout": "phones",
+      "surface": "accent",
+      "heading": {
+        "ko": "모바일 여행 모드",
+        "en": "Mobile Travel Mode",
+        "ja": "モバイル旅行モード"
+      },
+      "body": {
+        "ko": "여행 2일 차 가상 시각 10:45를 기준으로 기요미즈데라 방문 완료, 다음 일정인 11:00 산넨자카, 이후 야사카 신사와 기온 거리를 세로형 일정 카드로 확인하는 모바일 여행 모드입니다.",
+        "en": "At the illustrative Day 2 time of 10:45, Kiyomizu-dera is marked complete and the next visit, Sannenzaka at 11:00, is highlighted, with Yasaka Shrine and Gion District after it — a mobile-first day view.",
+        "ja": "旅行2日目のデモ時刻10:45を基準に、清水寺の訪問完了、次の11:00の産寧坂、続く八坂神社と祇園の予定を縦型カードで確認するモバイル旅行モードです。"
+      },
+      "images": [
+        "roamframe-mobile-today"
+      ]
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "여행의 모든 계획을 하나의 시각적 경험으로 연결하다.",
+        "en": "Connecting every part of travel planning into one visual experience.",
+        "ja": "旅の計画のすべてを、ひとつのビジュアル体験へ。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "등록 프롬프트(2026-11-06) 원고 그대로. PIUS 자체 정적 UI 데모·PoC 10장. 여행·인물·예산·예약(KAMO STAY KYOTO, ROAM AIR)은 모두 가상 데이터.",
+    "status review — 사용자 승인 전 approved 불가. projectState 미지정. results·scope·featureGrid·imageGallery·userFlow 미사용.",
+    "서비스 8항목은 렌더러 칸 수 한계(최대 6칸)로 4칸×2항목(항목 문구는 원고 그대로, 칸 제목만 추가). 개요 본문의 마지막 문장(데모 고지)은 프로젝트 소개 칸(웹·PDF 표시). 모바일 3화면 설명(RF-08·09·10)은 쇼케이스 본문에 순서대로, 제목은 서비스 항목명 '모바일 여행 모드'.",
+    "산업 영문·일문 표기는 원고(한국어)에 맞춰 번역. 상세 페이지 변형: rail."
+  ]
+}

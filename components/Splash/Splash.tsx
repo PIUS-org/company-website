@@ -7,7 +7,7 @@ import { RM, Registry } from '@/lib/core';
 import { MarkPaths, TagPaths, WordPaths } from '../Logo';
 import s from './Splash.module.css';
 
-export type SplashHandle = { play(onExit: () => void): void };
+export type SplashHandle = { play(onExit: () => void): void; skip(onExit: () => void): void };
 const KEYS = ['u', 'bar', 's', 'p'] as const;
 const FROM: Record<string, [number, number]> = { u: [-16, 9], bar: [18, -10], s: [16, 9], p: [0, -18] };
 
@@ -15,6 +15,12 @@ const Splash = forwardRef<SplashHandle>(function Splash(_, ref) {
   const root = useRef<HTMLDivElement>(null), mark = useRef<SVGSVGElement>(null), sweep = useRef<SVGPolygonElement>(null);
   const wm = useRef<SVGSVGElement>(null), tag = useRef<SVGSVGElement>(null), skip = useRef<HTMLButtonElement>(null);
   useImperativeHandle(ref, () => ({
+    /* return visit: no splash, straight to the intro */
+    skip(onExit: () => void) {
+      const r = root.current!;
+      r.classList.add('is-out', 'is-gone');
+      onExit();
+    },
     play(onExit: () => void) {
       const r = root.current!, mk = mark.current!, pieces = Array.from(mk.querySelectorAll<SVGGElement>('[data-k]'));
       const anims: Animation[] = [];
@@ -65,7 +71,7 @@ const Splash = forwardRef<SplashHandle>(function Splash(_, ref) {
     },
   }), []);
   return (
-    <div className={s.splash} ref={root} aria-hidden="true">
+    <div className={s.splash} ref={root} aria-hidden="true" data-splash="">
       <div className={s.splash__stage}>
         <svg className={s.splash__mark} ref={mark} viewBox={MARK_VB}>
           <defs>

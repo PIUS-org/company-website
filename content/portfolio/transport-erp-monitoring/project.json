@@ -1,0 +1,360 @@
+{
+  "id": "transport-erp-monitoring",
+  "slug": "transport-erp-monitoring",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 20,
+  "includeInPdf": true,
+  "title": {
+    "ko": "운송 ERP·관제",
+    "en": "Transport ERP",
+    "ja": "運送ERP・管制"
+  },
+  "subtitle": {
+    "ko": "여객 운송사 ERP 통합과 실시간 차량 관제 시스템",
+    "en": "Integrated ERP and real-time fleet monitoring for a passenger transport company",
+    "ja": "旅客運送会社のERP統合とリアルタイム車両管制システム"
+  },
+  "summary": {
+    "ko": "흩어져 있던 기사·차량·배차 데이터를 하나의 ERP로 모으고, GPS 기반 실시간 관제로 배차 대응을 빠르게 만들었습니다.",
+    "en": "Brought scattered driver, vehicle and dispatch data into one ERP, and made dispatch response faster with GPS-based live monitoring.",
+    "ja": "散在していた乗務員・車両・配車データを一つのERPに統合し、GPSによるリアルタイム管制で配車対応を迅速にしました。"
+  },
+  "overview": {
+    "ko": "엑셀과 개별 시스템에 나뉘어 있던 운영 데이터를 통합하고, 전화와 메신저에 의존하던 차량 위치 확인을 관제 대시보드로 바꾼 사내 디지털 전환 프로젝트입니다. 근태 확인과 고객 메일 응대까지 같은 시스템 안으로 들였습니다.",
+    "en": "An in-house digital transformation project that unified operating data split across spreadsheets and separate systems, and replaced phone-and-messenger vehicle tracking with a monitoring dashboard. Attendance checks and customer mail were brought into the same system.",
+    "ja": "Excelや個別システムに分かれていた運営データを統合し、電話やメッセンジャーに頼っていた車両位置の確認を管制ダッシュボードに置き換えた社内DXプロジェクトです。勤怠確認や顧客メール対応も同じシステムに取り込みました。"
+  },
+  "industry": {
+    "ko": "여객 운송",
+    "en": "Passenger transport",
+    "ja": "旅客運送"
+  },
+  "categories": [
+    "erp",
+    "integration"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "ERP WEB",
+        "en": "ERP Web",
+        "ja": "ERP Web"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "관제 대시보드",
+        "en": "Monitoring dashboard",
+        "ja": "管制ダッシュボード"
+      }
+    }
+  ],
+  "period": "2025.01 – 2025.12",
+  "year": 2025,
+  "stack": [
+    "Django DRF",
+    "React",
+    "MariaDB",
+    "Redis",
+    "Docker",
+    "Nginx",
+    "GCP"
+  ],
+  "scope": [
+    {
+      "key": "frontend"
+    },
+    {
+      "key": "backend"
+    },
+    {
+      "key": "infra",
+      "label": {
+        "ko": "인프라 구성 (Docker · GCP)",
+        "en": "Infrastructure (Docker · GCP)",
+        "ja": "インフラ構成（Docker・GCP）"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#3B5B7A",
+    "accentInk": "#1B1D22",
+    "cover": "dark",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "erp-dashboard"
+  ],
+  "images": [
+    {
+      "id": "erp-dashboard",
+      "kind": "desktop",
+      "file": "erp-dashboard.webp",
+      "alt": {
+        "ko": "ERP 대시보드",
+        "en": "ERP dashboard",
+        "ja": "ERPダッシュボード"
+      },
+      "caption": {
+        "ko": "용역 계약 현황과 서식 운영 현황, 최근 업데이트된 서식을 요약해 보여주는 ERP 대시보드입니다.",
+        "en": "An ERP dashboard summarizing service contracts, document templates in use and recently updated forms.",
+        "ja": "役務契約の状況、書式の運用状況、最近更新された書式をまとめたERPダッシュボードです。"
+      }
+    },
+    {
+      "id": "erp-monitoring",
+      "kind": "desktop",
+      "file": "erp-monitoring.webp",
+      "alt": {
+        "ko": "실시간 차량 관제 화면",
+        "en": "Live vehicle monitoring",
+        "ja": "リアルタイム車両管制画面"
+      },
+      "caption": {
+        "ko": "운행 중·미운행 차량 목록과 지도 위 차량 위치, 선택한 차량의 운행 정보를 함께 보는 관제 화면입니다.",
+        "en": "A monitoring view pairing the list of active and idle vehicles with their positions on the map and the selected vehicle’s trip details.",
+        "ja": "運行中・未運行の車両一覧と地図上の位置、選択した車両の運行情報を合わせて確認する管制画面です。"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "ERP · GPS",
+        "en": "ERP · GPS",
+        "ja": "ERP · GPS"
+      },
+      "headline": {
+        "ko": "흩어진 운영 데이터는 하나로,\n차량 위치는 실시간으로.",
+        "en": "Scattered operations data in one place,\nevery vehicle in real time.",
+        "ja": "散らばった運営データは一つに、\n車両の位置はリアルタイムに。"
+      },
+      "sub": {
+        "ko": "ERP 통합 · GPS 관제 · NFC/QR 근태 · 메일 연동",
+        "en": "ERP integration · GPS monitoring · NFC/QR attendance · Mail integration",
+        "ja": "ERP統合・GPS管制・NFC/QR勤怠・メール連携"
+      },
+      "images": [
+        "erp-dashboard"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "기사·차량·배차 정보가 엑셀과 여러 시스템에 흩어져 있고, 차량 위치는 전화와 메신저로 확인하던 운영을 하나의 시스템으로 옮겼습니다.",
+        "en": "Driver, vehicle and dispatch records lived in spreadsheets and several systems, and vehicle locations were checked by phone and messenger. We moved all of it into one system.",
+        "ja": "乗務員・車両・配車の情報がExcelや複数のシステムに散らばり、車両の位置は電話やメッセンジャーで確認していた運営を、一つのシステムに移しました。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "기존 운영의 문제",
+            "en": "The starting point",
+            "ja": "従来の運用の課題"
+          },
+          "body": {
+            "ko": "기사·차량·배차 데이터가 엑셀과 개별 시스템에 나뉘고, 차량 위치는 전화·메신저로 확인했습니다.",
+            "en": "Driver, vehicle and dispatch data sat in spreadsheets and separate systems; vehicle locations were checked by phone and messenger.",
+            "ja": "乗務員・車両・配車データがExcelと個別システムに分かれ、車両位置は電話やメッセンジャーで確認していました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "ERP: 업무 데이터 통합",
+            "en": "ERP: one place for operations data",
+            "ja": "ERP：業務データの統合"
+          },
+          "body": {
+            "ko": "운영 데이터를 하나의 ERP로 모으고, 근태 확인과 고객 메일 응대까지 같은 시스템에서 처리합니다.",
+            "en": "Operations data moves into one ERP, and attendance checks and customer mail are handled in the same system.",
+            "ja": "運用データを一つのERPに集め、勤怠確認と顧客メール対応まで同じシステムで処理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "관제: 실시간 위치 확인",
+            "en": "Monitoring: live vehicle positions",
+            "ja": "管制：リアルタイムの位置確認"
+          },
+          "body": {
+            "ko": "30초마다 갱신되는 관제 화면에서 운행 상태와 노선을 바로 확인해 배차 대응에 씁니다.",
+            "en": "A monitoring screen refreshed every 30 seconds shows status and route, used for dispatch decisions.",
+            "ja": "30秒ごとに更新される管制画面で運行状態と路線をすぐ確認し、配車対応に活用します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "LIVE MONITORING"
+      },
+      "layout": "full",
+      "surface": "light",
+      "heading": {
+        "ko": "모든 차량의 위치와 운행 상태를 한 화면에서",
+        "en": "Every vehicle's location and status on one screen",
+        "ja": "すべての車両の位置と運行状況を一つの画面で"
+      },
+      "body": {
+        "ko": "30초마다 자동으로 갱신되는 관제 화면에서 전체·운행 중·미운행 차량을 나눠 보고, 지도에서 차량을 고르면 노선과 운행 시간·거리를 바로 확인합니다.",
+        "en": "The monitoring screen refreshes every 30 seconds and splits vehicles into all, running and idle. Pick a vehicle on the map to see its route, driving time and distance at once.",
+        "ja": "30秒ごとに自動更新される管制画面で、全体・運行中・未運行の車両を分けて確認し、地図で車両を選ぶと路線と運行時間・距離をすぐに確認できます。"
+      },
+      "images": [
+        "erp-monitoring"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "03",
+        "label": "KEY FEATURES"
+      },
+      "heading": {
+        "ko": "주요 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "실시간 차량 관제",
+            "en": "Real-time vehicle monitoring",
+            "ja": "リアルタイム車両管制"
+          },
+          "body": {
+            "ko": "GPS 위치 수집과 관제 대시보드로 전화·메신저 확인을 대신해, 배차 대응과 긴급 상황 처리를 빠르게 했습니다.",
+            "en": "GPS location collection and a monitoring dashboard replaced phone and messenger checks, speeding up dispatch response and emergency handling.",
+            "ja": "GPS位置収集と管制ダッシュボードで電話・メッセンジャーでの確認を置き換え、配車対応と緊急時の処理を迅速にしました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "ERP 통합",
+            "en": "ERP integration",
+            "ja": "ERP統合"
+          },
+          "body": {
+            "ko": "엑셀과 개별 시스템에 흩어진 기사·차량·배차 데이터를 하나의 ERP로 모아 업무 효율과 정확도를 높였습니다.",
+            "en": "Driver, vehicle and dispatch data scattered across spreadsheets and separate systems now lives in one ERP, improving efficiency and accuracy.",
+            "ja": "Excelや個別システムに散在していた乗務員・車両・配車データを一つのERPにまとめ、業務効率と正確性を高めました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "NFC/QR 근태",
+            "en": "NFC/QR attendance",
+            "ja": "NFC/QR勤怠"
+          },
+          "body": {
+            "ko": "수기로 하던 기사 출근 확인을 자동화해 출근 누락을 줄였습니다.",
+            "en": "Automated the manual driver check-in, reducing missed check-ins.",
+            "ja": "手作業だった乗務員の出勤確認を自動化し、出勤漏れを減らしました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "메일 연동",
+            "en": "Mail integration",
+            "ja": "メール連携"
+          },
+          "body": {
+            "ko": "SMTP/IMAP 기반 자체 메일 모듈로 고객 응대 이력을 한곳에서 관리합니다.",
+            "en": "An in-house SMTP/IMAP mail module keeps the full history of customer correspondence in one place.",
+            "ja": "SMTP/IMAPベースの自社メールモジュールで、顧客対応の履歴を一か所で管理します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "04",
+        "label": "TECHNOLOGY"
+      },
+      "heading": {
+        "ko": "기술 선택",
+        "en": "Technology choices",
+        "ja": "技術選定"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "Django DRF",
+            "en": "Django DRF",
+            "ja": "Django DRF"
+          },
+          "body": {
+            "ko": "빠른 개발 속도를 위해 선택했습니다.",
+            "en": "Chosen for development speed.",
+            "ja": "開発スピードを重視して選定しました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "MariaDB",
+            "en": "MariaDB",
+            "ja": "MariaDB"
+          },
+          "body": {
+            "ko": "기존 운영 환경과의 호환성을 유지했습니다.",
+            "en": "Kept compatibility with the existing environment.",
+            "ja": "既存の運用環境との互換性を保ちました。"
+          }
+        },
+        {
+          "title": {
+            "ko": "Redis",
+            "en": "Redis",
+            "ja": "Redis"
+          },
+          "body": {
+            "ko": "실시간 위치 데이터를 처리합니다.",
+            "en": "Handles real-time location data.",
+            "ja": "リアルタイムの位置データを処理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "Docker",
+            "en": "Docker",
+            "ja": "Docker"
+          },
+          "body": {
+            "ko": "일관된 배포 환경을 만들었습니다.",
+            "en": "Provides consistent deployments.",
+            "ja": "一貫したデプロイ環境をつくりました。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "PROJECT SCOPE"
+      },
+      "heading": {
+        "ko": "수행 범위",
+        "en": "Scope of work",
+        "ja": "担当範囲"
+      }
+    }
+  ]
+}

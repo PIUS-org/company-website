@@ -1,0 +1,538 @@
+{
+  "id": "velora-space",
+  "slug": "velora-space",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 17,
+  "includeInPdf": true,
+  "title": {
+    "ko": "VELORA SPACE — 인터랙티브 공간 쇼룸",
+    "en": "VELORA SPACE — Immersive Interior Experience",
+    "ja": "VELORA SPACE — インタラクティブ空間ショールーム"
+  },
+  "subtitle": {
+    "ko": "프리미엄 주거공간을 위한 몰입형 디지털 쇼룸",
+    "en": "An immersive digital showroom for premium residential spaces",
+    "ja": "プレミアム住宅空間のための没入型デジタルショールーム"
+  },
+  "summary": {
+    "ko": "공간 탐색부터 소재 커스터마이징까지 연결하는 프리미엄 인터랙티브 웹 경험.",
+    "en": "A premium interactive web experience for exploring and personalizing interior spaces.",
+    "ja": "空間探索から素材のカスタマイズまでをつなぐプレミアムなインタラクティブWeb体験。"
+  },
+  "overview": {
+    "ko": "ATELIER 84라는 가상 84㎡ 공간을 중심으로 랜딩, 공간 컬렉션, 개략 평면도, 이미지 뷰어, 소재 선택, 전후 비교, 저장 콘셉트가 하나의 경험으로 이어집니다. 정적 결과 이미지와 실제 제품 개발·시공 결과는 구분합니다.",
+    "en": "Within the fictional 84 m² ATELIER 84 residence, it connects editorial discovery, a schematic floor plan, photographic views, material selection, before-and-after comparison and a saved design concept. The visuals represent a design demo, not a completed client installation.",
+    "ja": "架空の84㎡住宅ATELIER 84を中心に、空間コレクション、概略間取り図、写真ビューアー、素材選択、比較、保存コンセプトを一つの体験としてつなぎます。実際の顧客向け施工実績ではありません。"
+  },
+  "industry": {
+    "ko": "인테리어·건축·프리미엄 주거",
+    "en": "Interior, architecture & premium residential",
+    "ja": "インテリア・建築・プレミアム住宅"
+  },
+  "categories": [
+    "web",
+    "platform"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "반응형 사용자 WEB (Desktop + Mobile)",
+        "en": "Responsive user web (desktop + mobile)",
+        "ja": "レスポンシブ ユーザーWeb（Desktop + Mobile）"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#604C3C",
+    "accentInk": "#282824",
+    "cover": "light",
+    "layout": "stage"
+  },
+  "thumbnail": [
+    "velora-landing"
+  ],
+  "images": [
+    {
+      "id": "velora-landing",
+      "kind": "desktop",
+      "file": "velora-landing.webp",
+      "alt": {
+        "ko": "자연광이 드는 아틀리에 84 거실 위에 VELORA SPACE의 대표 문구와 탐색 버튼을 배치한 웹 랜딩 화면.",
+        "en": "VELORA SPACE landing interface overlaying an airy ATELIER 84 living room with navigation and exploration actions.",
+        "ja": "明るいATELIER 84のリビングにナビゲーションと探索ボタンを重ねたVELORA SPACEのランディング画面。"
+      },
+      "caption": {
+        "ko": "ATELIER 84의 내추럴 오크 거실을 전면에 활용한 몰입형 브랜드 랜딩.",
+        "en": "An immersive brand landing built around the sunlit Natural Oak living room.",
+        "ja": "Natural Oakのリビングを主役にした没入感のあるブランドトップ画面。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "velora-collection",
+      "kind": "desktop",
+      "file": "velora-collection.webp",
+      "alt": {
+        "ko": "거실을 선택한 4개 공간 목록, 큰 미리보기, 세 가지 카메라·마감 뷰 선택 카드가 있는 공간 컬렉션 웹 인터페이스.",
+        "en": "Space collection web interface showing a four-room selector, large living-room preview and three view-state cards.",
+        "ja": "4つの部屋の選択リスト、リビングの大型プレビュー、3種類の表示カードを備えた空間コレクションのWeb画面。"
+      },
+      "caption": {
+        "ko": "공간 선택과 프리뷰 상태 전환을 중심으로 만든 반응형 웹 탐색 UI. 침실·욕실에는 사진을 주장하지 않음.",
+        "en": "A navigable room collection emphasizing UI selection states, photographic preview and schematic fallbacks.",
+        "ja": "部屋選択とプレビュー切り替えを中心にしたWeb探索UI。未撮影の部屋は概略表現で区別。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "velora-floorplan",
+      "kind": "desktop",
+      "file": "velora-floorplan.webp",
+      "alt": {
+        "ko": "ATELIER 84의 거실 선택 2D 평면도와 소재·뷰어 연계 화면",
+        "en": "ATELIER 84 2D floor plan with living-room selection and viewer link",
+        "ja": "ATELIER 84のリビング選択付き2D間取り図と素材ビューア連携画面"
+      },
+      "caption": {
+        "ko": "거실·부엌·침실 구획을 확대하고 선택 공간의 Natural Oak 소재와 사진 프리뷰 연결을 표시합니다.",
+        "en": "An enlarged room plan linking the selected living area, Natural Oak finish, and photo preview.",
+        "ja": "リビング・キッチン・寝室を拡大し、選択した空間のNatural Oak素材と写真プレビューを表示します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "velora-room-viewer",
+      "kind": "desktop",
+      "file": "velora-room-viewer.webp",
+      "alt": {
+        "ko": "거실 고정 사진 뷰어의 소재 핫스팟 선택 및 저장·비교 작업 화면",
+        "en": "Living-room photo viewer with material hotspots, save, and compare controls",
+        "ja": "リビング写真ビューアの素材ホットスポット選択・保存・比較画面"
+      },
+      "caption": {
+        "ko": "ATELIER 84 사진 프리뷰에서 Light Travertine 핫스팟과 마감재 선택을 강조합니다. 실시간 3D 렌더링은 아닙니다.",
+        "en": "The ATELIER 84 static photo preview highlights Light Travertine and finish selection; this is not real-time 3D.",
+        "ja": "ATELIER 84の静止写真プレビューでLight Travertineと仕上げ材の選択を示します。リアルタイム3Dではありません。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "velora-configurator",
+      "kind": "desktop",
+      "file": "velora-configurator.webp",
+      "alt": {
+        "ko": "Smoked Oak 바닥과 Warm Taupe 벽이 선택된 거실 미리보기와 데스크톱 소재 설정 패널.",
+        "en": "Desktop material configurator previewing Smoked Oak flooring and Warm Taupe walls in the living room.",
+        "ja": "Smoked Oakの床とWarm Taupeの壁を選択したリビングプレビューと素材設定パネル。"
+      },
+      "caption": {
+        "ko": "바닥·벽을 독립 선택할 수 있는 탭·옵션·상태 미리보기 웹 UI. 대표 캡처는 Contemporary Taupe.",
+        "en": "A tabbed material editor with independent floor/wall selection and matched image states; Contemporary Taupe shown.",
+        "ja": "床・壁を個別に選べるタブ式設定画面。掲載状態はContemporary Taupe。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "velora-comparison",
+      "kind": "desktop",
+      "file": "velora-comparison.webp",
+      "alt": {
+        "ko": "동일한 거실 사진을 중앙 슬라이더로 나눠 Natural Oak와 Contemporary Taupe 상태를 비교하는 화면.",
+        "en": "A fifty-fifty comparison of the same living room scene in Natural Oak and Contemporary Taupe finishes.",
+        "ja": "同一視点のリビングをNatural OakとContemporary Taupeに分けて比較する画面。"
+      },
+      "caption": {
+        "ko": "동일 시점의 데모 이미지 두 상태를 50% 경계에서 비교하는 Before / After UI.",
+        "en": "A before-and-after comparison of two finish previews from the same camera view.",
+        "ja": "同一アングルの2種類の仕上げを50％の位置で比較するBefore／After UI。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "velora-my-space",
+      "kind": "desktop",
+      "file": "velora-my-space.webp",
+      "alt": {
+        "ko": "Contemporary Taupe 거실 이미지와 네 가지 마감·가구 샘플을 편집형 무드보드로 정리한 My Space 화면.",
+        "en": "An editorial My Space moodboard showing the saved Contemporary Taupe living room and four material references.",
+        "ja": "保存したContemporary Taupeのリビングと4種類の素材見本を整理したMy Spaceのムードボード。"
+      },
+      "caption": {
+        "ko": "선택한 공간 이미지, 4개 소재 팔레트, 상세 스펙과 다시 편집하기를 연결한 저장 보드.",
+        "en": "A saved design board with an image gallery, palette, selected specifications and an edit action.",
+        "ja": "ギャラリー、素材パレット、選択仕様、再編集への導線を備えた保存デザインボード。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "velora-mobile-landing",
+      "kind": "mobile",
+      "file": "velora-mobile-landing.webp",
+      "alt": {
+        "ko": "거실 사진을 세로 화면에 재구성하고 브랜드 문구와 탐색 버튼을 배치한 모바일 랜딩.",
+        "en": "Portrait mobile landing with a responsive crop of the ATELIER 84 living room, brand message and CTAs.",
+        "ja": "ATELIER 84のリビング画像を縦型に構成し直したブランドメッセージ付きモバイルランディング。"
+      },
+      "caption": {
+        "ko": "세로형 히어로, 공간 선택 미리보기, 하단 탭 내비게이션을 갖춘 실제 모바일 전용 레이아웃.",
+        "en": "A mobile-specific landing with portrait hero, space previews and persistent bottom navigation.",
+        "ja": "縦型ヒーロー、部屋プレビュー、下部ナビゲーションを備えたモバイル専用レイアウト。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "velora-mobile-viewer",
+      "kind": "mobile",
+      "file": "velora-mobile-viewer.webp",
+      "alt": {
+        "ko": "화면을 가득 채운 거실 사진에 탐색 핫스폿, 좌우 조작과 소재 변경 버튼을 배치한 모바일 뷰어.",
+        "en": "Mobile living room viewer featuring image hotspots, view controls and a materials entry point.",
+        "ja": "リビング画像、素材ホットスポット、切替操作、素材設定ボタンを備えたモバイルビューアー。"
+      },
+      "caption": {
+        "ko": "사진 위 핫스폿과 프리셋 썸네일, 고정된 소재 변경 CTA를 포함한 모바일 WEB 뷰어.",
+        "en": "A mobile web room viewer with hotspots, image preset strip and a fixed customization CTA.",
+        "ja": "ホットスポット、画像プリセット、固定CTAを組み合わせたモバイルWebビューアー。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "velora-mobile-configurator",
+      "kind": "mobile",
+      "file": "velora-mobile-configurator.webp",
+      "alt": {
+        "ko": "거실 미리보기 아래 바텀시트에서 Smoked Oak와 Warm Taupe를 선택한 모바일 커스터마이저.",
+        "en": "Mobile material configurator with a bottom sheet showing Smoked Oak and Warm Taupe selected.",
+        "ja": "リビングプレビューの下のボトムシートでSmoked OakとWarm Taupeを選択したモバイル画面。"
+      },
+      "caption": {
+        "ko": "하단 바텀시트에서 바닥·벽 탭을 독립 선택하고 비교·저장하는 모바일 WEB 화면.",
+        "en": "A mobile finish editor with bottom sheet, independent floor/wall tabs and compare/save actions.",
+        "ja": "床・壁タブを個別に切り替えられるボトムシートと比較・保存ボタンを備えたモバイルWeb画面。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DEMO · PoC",
+        "en": "DEMO · PoC",
+        "ja": "DEMO · PoC"
+      },
+      "headline": {
+        "ko": "공간을 바라보는 새로운 방식",
+        "en": "A New Way to Experience Space",
+        "ja": "空間体験の新しいかたち"
+      },
+      "sub": {
+        "ko": "자연광과 원목, 천연석이 조화를 이루는 ATELIER 84. 한 화면 안에서 공간을 탐색하고 나만의 분위기를 구상하는 프리미엄 쇼룸 데모입니다.",
+        "en": "Discover ATELIER 84, where daylight, natural wood and stone meet. This premium showroom concept connects space exploration with personal design choices.",
+        "ja": "自然光と木材、天然石が調和するATELIER 84。空間の探索から自分らしいデザインの検討までをつなぐプレミアムショールームのデモです。"
+      },
+      "images": [
+        "velora-landing"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "공간을 보는 것에서, 직접 경험하는 것으로",
+        "en": "From seeing a space to experiencing it",
+        "ja": "空間を「見る」から「体験する」へ"
+      },
+      "lead": {
+        "ko": "VELORA SPACE는 사진을 나열하는 기존 인테리어 소개 페이지를 넘어 사용자가 하나의 주거공간을 탐색하고 서로 다른 마감의 분위기를 비교하도록 구상한 반응형 쇼룸 데모입니다.",
+        "en": "VELORA SPACE is a responsive showroom concept that moves beyond static interior galleries.",
+        "ja": "VELORA SPACEは、写真を並べるだけのインテリアサイトを超え、空間の探索と素材による雰囲気の比較を提案するレスポンシブショールームのデモです。"
+      }
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "02",
+        "label": "CORE EXPERIENCES"
+      },
+      "heading": {
+        "ko": "네 개의 핵심 경험",
+        "en": "Four core experiences",
+        "ja": "4つのコア体験"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "공간 발견",
+            "en": "Discover Spaces",
+            "ja": "空間を発見する"
+          },
+          "audience": {
+            "ko": "반응형 WEB",
+            "en": "Responsive web",
+            "ja": "レスポンシブWeb"
+          },
+          "items": [
+            {
+              "ko": "공간 선택 리스트와 사진 프리뷰, 보기 프리셋을 결합해 공간을 탐색합니다.",
+              "en": "Navigate rooms through a selector, photographic preview and preset views.",
+              "ja": "部屋選択リスト、写真プレビュー、表示プリセットを通じて空間を探索します。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "공간 탐색",
+            "en": "Explore Rooms",
+            "ja": "空間を探索する"
+          },
+          "audience": {
+            "ko": "반응형 WEB",
+            "en": "Responsive web",
+            "ja": "レスポンシブWeb"
+          },
+          "items": [
+            {
+              "ko": "개략 평면도와 거실 뷰어를 통해 선택 위치와 공간 정보를 연결합니다.",
+              "en": "Connect room selections, schematic layout information and photographic viewing.",
+              "ja": "概略間取り図、エリア選択、写真ビューアーをつなぎます。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "소재 커스터마이징",
+            "en": "Customize Materials",
+            "ja": "素材をカスタマイズする"
+          },
+          "audience": {
+            "ko": "반응형 WEB",
+            "en": "Responsive web",
+            "ja": "レスポンシブWeb"
+          },
+          "items": [
+            {
+              "ko": "바닥 2종과 벽 2종을 독립 선택하고 4개 사진 기반 데모 상태를 비교합니다.",
+              "en": "Independently combine two floor finishes and two wall tones across four matched photo-preview states.",
+              "ja": "床材2種と壁材2種を個別に選び、4通りの写真ベースのプレビューを比較します。"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "비교와 저장",
+            "en": "Compare and Save",
+            "ja": "比較して保存する"
+          },
+          "audience": {
+            "ko": "반응형 WEB",
+            "en": "Responsive web",
+            "ja": "レスポンシブWeb"
+          },
+          "items": [
+            {
+              "ko": "동일한 카메라 시점의 디자인을 비교하고 선택 콘셉트를 무드보드로 정리합니다.",
+              "en": "Contrast finish previews from the same viewpoint and collect a preferred concept in a moodboard.",
+              "ja": "同じ視点で仕上げを比較し、選んだコンセプトをムードボードにまとめます。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "FLOOR PLAN"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "평면도에서 시작되는 탐색",
+        "en": "Begin exploring from the floor plan",
+        "ja": "間取り図から始まる空間探索"
+      },
+      "body": {
+        "ko": "29㎡ 거실을 선택한 개략 평면도와 대응하는 미리보기 UI를 함께 보여줍니다. 공간 구역과 선택 상태를 쉽게 이해하도록 구성했으며 정확한 치수의 시공 도면을 의미하지 않습니다.",
+        "en": "A schematic plan highlights the 29 m² Living Room and pairs it with a photographic preview. The diagram is intended for spatial navigation rather than construction documentation.",
+        "ja": "29㎡のリビングを選択した概略間取り図と写真プレビューを並べ、エリアと選択状態を直感的に伝えます。施工用の寸法図面ではありません。"
+      },
+      "images": [
+        "velora-floorplan"
+      ],
+      "surface": "light"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "ROOM VIEWER"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "한 장의 사진을 넘어선 공간의 경험",
+        "en": "A more immersive way to view a room",
+        "ja": "写真の先にある空間体験"
+      },
+      "body": {
+        "ko": "거실을 화면 가득 보여주고 소재 핫스폿, 보기 전환, 커스터마이징 진입을 배치했습니다. 이미지 시점·구도 변화를 사용하는 포토 뷰어 데모이며, 실시간 자유 이동 3D 뷰어가 아닙니다.",
+        "en": "The living room is presented with material hotspots, view controls and a direct path to customization. The demo navigates photographic framing; it does not claim real-time 3D movement.",
+        "ja": "リビング画像に素材ホットスポット、ビュー切り替え、カスタマイズへの導線を配置。写真の見せ方を切り替えるデモであり、リアルタイム3D空間ではありません。"
+      },
+      "images": [
+        "velora-room-viewer"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "MATERIALS"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "소재의 차이가 공간의 분위기를 바꿉니다",
+        "en": "Small finish changes, a different atmosphere",
+        "ja": "素材の違いが空間の印象を変える"
+      },
+      "body": {
+        "ko": "Floor와 Wall Finish 탭에서 바닥 2종·벽 2종을 독립 선택하면 총 4개 조합의 사진 기반 프리뷰가 전환됩니다. 대표 캡처는 Smoked Oak와 Warm Taupe를 조합한 Contemporary Taupe입니다. 같은 카메라 시점과 가구·조명은 유지하며, 소재 변경은 픽셀 기반 데모 처리입니다.",
+        "en": "The tabbed configurator supports independent selection of two flooring and two wall choices across four aligned photo-based states. The featured capture combines Smoked Oak flooring and Warm Taupe walls. Furniture, viewpoint and lighting are unchanged; finish rendering is a visual demo, not a 3D material engine.",
+        "ja": "床2種類と壁2種類を別々に選択し、計4通りの写真ベースのプレビューを切り替えられるタブ式UIです。掲載画面はSmoked Oakの床とWarm Taupeの壁の組み合わせ。家具と視点、照明は固定で、素材の変化はデモ用画像処理です。"
+      },
+      "images": [
+        "velora-configurator"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "COMPARISON"
+      },
+      "layout": "full",
+      "surface": "light",
+      "heading": {
+        "ko": "같은 공간, 두 가지 선택",
+        "en": "One space, two design directions",
+        "ja": "同じ空間、二つのデザイン"
+      },
+      "body": {
+        "ko": "카메라 시점과 가구 배치를 동일하게 유지한 사진 프리뷰를 슬라이더 형태로 나누었습니다. 왼쪽은 Natural Oak와 Ivory Plaster, 오른쪽은 Smoked Oak와 Warm Taupe를 적용한 데모 상태이며, 50% 지점의 비교 장면을 담았습니다.",
+        "en": "A midpoint slider visually compares two finish states using the same source viewpoint and furniture arrangement. Natural Oak and Ivory Plaster appear on the left, with Smoked Oak and Warm Taupe on the right.",
+        "ja": "同じカメラ視点と家具配置を保った二つの仕上げを中央のスライダーで比較。左はNatural OakとIvory Plaster、右はSmoked OakとWarm Taupeのデモ状態です。"
+      },
+      "images": [
+        "velora-comparison"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "07",
+        "label": "MOBILE"
+      },
+      "layout": "imageRight",
+      "surface": "light",
+      "heading": {
+        "ko": "더 작은 화면에서도, 공간은 넓게",
+        "en": "Room to explore on every screen",
+        "ja": "小さな画面でも広がる空間体験"
+      },
+      "body": {
+        "ko": "모바일에서는 소재 설정 화면을 별도 레이아웃으로 구성했습니다. 터치용 바텀시트에서 바닥·벽 소재를 고릅니다.",
+        "en": "On mobile the material configurator has its own layout: floor and wall finishes are picked from a touch bottom sheet.",
+        "ja": "モバイルでは素材設定画面を別レイアウトで構成しました。タッチ用のボトムシートで床・壁の素材を選びます。"
+      },
+      "images": [
+        "velora-mobile-configurator"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "08",
+        "label": "MORE SCREENS"
+      },
+      "heading": {
+        "ko": "저장한 무드보드",
+        "en": "Saved moodboard",
+        "ja": "保存したムードボード"
+      },
+      "intro": {
+        "ko": "선택한 조합을 저장해 다시 보는 보조 화면입니다.",
+        "en": "A supporting screen for saving and revisiting a chosen combination.",
+        "ja": "選んだ組み合わせを保存して見返す補助画面です。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "선택한 분위기를 하나의 무드보드로",
+            "en": "Turn your selections into a moodboard",
+            "ja": "選んだ雰囲気をムードボードに"
+          },
+          "body": {
+            "ko": "저장된 Contemporary Taupe 콘셉트를 대표 이미지와 소재 팔레트로 정리합니다. Smoked Oak, Warm Taupe, Linen Cream, Light Travertine의 조합이 보이며, UI에서 다시 편집 단계로 이동할 수 있도록 구성했습니다.",
+            "en": "The selected Contemporary Taupe concept is summarized with a hero image and four material references: Smoked Oak, Warm Taupe, Linen Cream and Light Travertine. The layout also shows an edit action.",
+            "ja": "Contemporary Taupeのコンセプトを代表画像と素材パレットで整理。Smoked Oak、Warm Taupe、Linen Cream、Light Travertineの組み合わせと再編集の導線を示します。"
+          },
+          "image": "velora-my-space"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "공간을 경험하도록 만드는 프론트엔드",
+        "en": "Frontend design that makes space experiential",
+        "ja": "空間を体験に変えるフロントエンド"
+      },
+      "sub": {
+        "ko": "VELORA SPACE는 하나의 공간을 발견하고, 탐색하고, 비교하고, 저장하는 흐름을 시각화한 PIUS 자체 포트폴리오 데모입니다. 디자인의 몰입감과 조작의 명확성을 함께 검토한 프론트엔드 표현 사례입니다.",
+        "en": "VELORA SPACE is a PIUS concept portfolio illustrating a journey from discovery and exploration to comparison and saved design choices. It showcases how immersive visual direction can coexist with clear interface patterns.",
+        "ja": "VELORA SPACEは、空間の発見・探索・比較・保存までの流れを可視化したPIUSの自主制作デモです。没入感のあるビジュアルと分かりやすい操作設計を両立させる表現事例です。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "등록 프롬프트(2026-11-06) 기준. PIUS 자체 데모·PoC. 공간 비주얼은 AI 생성 이미지를 재활용한 콘셉트 자료(실제 주택·시공 사진 아님).",
+    "status review — 사용자 승인 전 approved 불가. scope·results 블록 미사용(수행 범위·성과 미확인).",
+    "projectState·year·stack 미기재. overview 본문은 첫 문장을 lead, 나머지를 overview 필드로 나눠 전문 반영."
+  ]
+}

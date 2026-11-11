@@ -1,0 +1,475 @@
+{
+  "id": "nodera-flow",
+  "slug": "nodera-flow",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 120,
+  "includeInPdf": true,
+  "title": {
+    "ko": "NODERA FLOW — 비주얼 업무 자동화",
+    "en": "NODERA FLOW — Visual Workflow Automation",
+    "ja": "NODERA FLOW — ビジュアル業務自動化"
+  },
+  "subtitle": {
+    "ko": "조건 분기부터 승인 이력까지, 흐름을 구성하는 워크플로 빌더",
+    "en": "A workflow builder spanning conditions, approval steps and execution visibility",
+    "ja": "条件分岐から承認履歴まで、業務フローを設計するビルダー"
+  },
+  "summary": {
+    "ko": "시설 구매 요청의 접수·금액 조건·담당자 경로·결재 상태를 노드와 업무 화면으로 연결한 UI 데모",
+    "en": "A UI concept connecting purchase requests, monetary rules, assignee routing and approval status",
+    "ja": "設備購入申請・金額条件・担当者への振り分け・承認状態をノードと業務画面でつなぐUIデモ"
+  },
+  "overview": {
+    "ko": "WF-014 시설 구매 승인 프로세스를 예시로 접수·금액 조건·팀장 검토 또는 담당자 지정·최종 승인까지의 업무 흐름을 시각화했습니다. 실제 승인 자동화 엔진이 동작하는 화면이 아닌 정적 프론트 UI 시연입니다.",
+    "en": "A fictional WF-014 facilities purchase approval process connects intake, amount conditions, manager review or assignee routing, and final approval. These are static frontend concept screens, not a functioning automation engine.",
+    "ja": "架空のWF-014設備購買承認プロセスを例に、受付・金額条件・管理者確認または担当者振り分け・最終承認の流れを可視化しています。実際の承認自動化エンジンではなく、静的なフロントエンドUIデモです。"
+  },
+  "industry": {
+    "ko": "업무 자동화·프로세스 협업",
+    "en": "Workflow Automation and Team Operations",
+    "ja": "業務自動化・プロセス協業"
+  },
+  "categories": [
+    "platform",
+    "web",
+    "integration"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "워크플로 편집 WEB",
+        "en": "Workflow design web",
+        "ja": "ワークフロー編集Web"
+      }
+    },
+    {
+      "type": "admin",
+      "label": {
+        "ko": "실행·승인 운영 WEB",
+        "en": "Execution and approval console",
+        "ja": "実行・承認管理Web"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#4F6C84",
+    "accentInk": "#203342",
+    "cover": "light",
+    "layout": "stage"
+  },
+  "thumbnail": [
+    "nodera-flow-visual-builder"
+  ],
+  "images": [
+    {
+      "id": "nodera-flow-visual-builder",
+      "kind": "desktop",
+      "file": "nodera-flow-visual-builder.webp",
+      "alt": {
+        "ko": "WF-014 시설 구매 승인 워크플로의 금액 조건 노드를 편집하는 시각적 빌더",
+        "en": "Visual workflow builder editing the purchase amount condition node in WF-014",
+        "ja": "WF-014施設購買承認ワークフローの金額条件ノードを編集するビジュアルビルダー"
+      },
+      "caption": {
+        "ko": "3,000,000원 기준으로 분기하는 노드 캔버스와 조건 속성, 연결·검증 결과를 함께 확인합니다.",
+        "en": "The node canvas exposes a KRW 3,000,000 decision branch alongside condition properties and validation results.",
+        "ja": "3,000,000ウォンを境に分岐するノードキャンバスと条件設定、接続検証結果を確認します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "nodera-flow-request-intake",
+      "kind": "desktop",
+      "file": "nodera-flow-request-intake.webp",
+      "alt": {
+        "ko": "REQ-092 시설 구매 승인 요청의 접수 양식과 자동 승인 경로를 보여주는 관리 웹",
+        "en": "Intake console displaying facility purchase request REQ-092 and its approval flow",
+        "ja": "施設購買申請REQ-092の受付フォームと承認経路を示す管理Web画面"
+      },
+      "caption": {
+        "ko": "2,800,000원 시설 구매 요청을 WF-014 V2 규칙으로 검토하고 최종 승인 대기 상태를 확인합니다.",
+        "en": "The KRW 2,800,000 facilities request is reviewed against WF-014 V2, with final approval still pending.",
+        "ja": "2,800,000ウォンの設備購入申請をWF-014 V2で確認し、最終承認待ちの状態を示します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "nodera-flow-approval-inbox",
+      "kind": "desktop",
+      "file": "nodera-flow-approval-inbox.webp",
+      "alt": {
+        "ko": "승인 인박스 화면",
+        "en": "Approval inbox",
+        "ja": "承認インボックス画面"
+      },
+      "caption": {
+        "ko": "담당자별 승인 대기 항목을 처리하는 인박스 화면입니다.",
+        "en": "An inbox where each approver works through pending approval items.",
+        "ja": "担当者ごとの承認待ち項目を処理するインボックス画面です。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "nodera-flow-run-history",
+      "kind": "desktop",
+      "file": "nodera-flow-run-history.webp",
+      "alt": {
+        "ko": "실행 이력 추적 화면",
+        "en": "Run history tracking",
+        "ja": "実行履歴の追跡画面"
+      },
+      "caption": {
+        "ko": "실행 단계별 결과와 처리 시간을 점검하는 운영 화면입니다.",
+        "en": "An operations view for checking each run step’s result and duration.",
+        "ja": "実行ステップごとの結果と処理時間を確認する運用画面です。"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·정적 UI 데모를 위한 1차 텍스트 등록본. 실제 고객 프로젝트·서비스 개발 실적이 아님.",
+    "고도화 시 우선 검토할 화면: Workflow Canvas, Conditional Branch Editor, Approval Inbox, Execution History",
+    "3차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결. 실제 구현·고객 실적 아님.",
+    "B실 재디자인 반영(2026-11-10): 사례를 WF-014 시설 구매 승인(REQ-092 ₩2,800,000)으로 교체, visual-builder·request-intake 교체. approval-inbox·run-history는 이전 사례(₩480,000·WF-261109-008)라 숨김 — 교체본 필요."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "업무 규칙을 노드로 설계하고, 요청이 진행되는 경로를 확인합니다.",
+        "en": "Define rules as nodes. Follow the path of every request.",
+        "ja": "業務ルールをノードで設計し、申請の進行経路を確認する。"
+      },
+      "images": [
+        "nodera-flow-visual-builder"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "WF-014 시설 구매 승인 프로세스를 예시로 접수·금액 조건·팀장 검토 또는 담당자 지정·최종 승인까지의 업무 흐름을 시각화했습니다. 실제 승인 자동화 엔진이 동작하는 화면이 아닌 정적 프론트 UI 시연입니다.",
+        "en": "A fictional WF-014 facilities purchase approval process connects intake, amount conditions, manager review or assignee routing, and final approval. These are static frontend concept screens, not a functioning automation engine.",
+        "ja": "架空のWF-014設備購買承認プロセスを例に、受付・金額条件・管理者確認または担当者振り分け・最終承認の流れを可視化しています。実際の承認自動化エンジンではなく、静的なフロントエンドUIデモです。"
+      },
+      "body": {
+        "ko": "승인 조건과 업무 담당이 문서에 흩어져 있으면 요청 경로를 검증하고 변경하기 어렵습니다.",
+        "en": "When approval thresholds and responsibilities are scattered across documents, workflows are difficult to review and change.",
+        "ja": "承認条件と担当者情報が文書に分散していると、申請経路の確認や変更が難しくなります。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "条件 분기의 가시성",
+            "en": "Visible decision paths",
+            "ja": "条件分岐の可視化"
+          },
+          "body": {
+            "ko": "분기 조건과 연결선을 실제 2D 캔버스에서 구분합니다.",
+            "en": "Show conditions and connections clearly on the 2D canvas.",
+            "ja": "2Dキャンバス上で条件と接続線を明確に示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "설계·실행 상태 분리",
+            "en": "Design vs. execution",
+            "ja": "設計と実行の状態分離"
+          },
+          "body": {
+            "ko": "편집 중인 플로우와 실제 요청의 처리 이력을 혼동하지 않습니다.",
+            "en": "Keep edited flow definitions separate from individual request histories.",
+            "ja": "編集中のフロー定義と各依頼の処理履歴を分けます。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "요청 접수부터 최종 승인 대기까지",
+        "en": "From request to pending final approval",
+        "ja": "申請受付から最終承認待ちまで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "시설 구매 요청 접수",
+            "en": "Submit a facilities request",
+            "ja": "設備購入申請を受付"
+          }
+        },
+        {
+          "title": {
+            "ko": "요청 금액 확인",
+            "en": "Check its amount",
+            "ja": "金額を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "3,000,000원 기준 금액 분기",
+            "en": "Evaluate the KRW 3,000,000 condition",
+            "ja": "3,000,000ウォンで分岐"
+          }
+        },
+        {
+          "title": {
+            "ko": "2,800,000원 요청은 담당자 지정 경로",
+            "en": "Route the KRW 2,800,000 request to an assignee",
+            "ja": "2,800,000ウォンの申請は担当者振り分け経路へ"
+          }
+        },
+        {
+          "title": {
+            "ko": "최종 승인 대기",
+            "en": "Await final approval",
+            "ja": "最終承認待ち"
+          }
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "VISUAL BUILDER"
+      },
+      "layout": "full",
+      "surface": "light",
+      "heading": {
+        "ko": "노드 기반 흐름 편집",
+        "en": "Visual node editing",
+        "ja": "ノード編集"
+      },
+      "body": {
+        "ko": "6개 노드로 구성된 WF-014 V2 흐름을 넓은 캔버스에 배치하고, 선택된 금액 조건 노드의 기준값과 분기 방향·검증 결과를 편집 패널에서 보여줍니다.",
+        "en": "Six connected nodes form WF-014 V2, with amount properties, branch directions and validation status shown beside a spacious editing canvas.",
+        "ja": "WF-014 V2の6つのノードを広いキャンバスに配置し、金額条件・分岐方向・検証結果を右側に示します。"
+      },
+      "images": [
+        "nodera-flow-visual-builder"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "REQUEST INTAKE"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "요청 접수와 승인 경로",
+        "en": "Request intake and approval path",
+        "ja": "申請受付と承認経路"
+      },
+      "body": {
+        "ko": "REQ-092 시설 구매 승인 요청의 금액 2,800,000원과 제출 부서, 첨부 파일, 현재 승인 경로를 한 화면에서 살펴봅니다.",
+        "en": "Request REQ-092 displays a KRW 2,800,000 purchase, department, attachments and approval flow together.",
+        "ja": "REQ-092の購入金額2,800,000ウォン、申請部署、添付ファイル、承認経路をまとめて確認します。"
+      },
+      "images": [
+        "nodera-flow-request-intake"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "05",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "설계 화면과 실행 관리의 연결",
+        "en": "Connect flow design and execution review",
+        "ja": "フロー設計と実行管理の連携"
+      },
+      "intro": {
+        "ko": "업무 설계자와 승인자가 같은 프로세스를 서로 다른 도구로 확인합니다.",
+        "en": "Designers and approvers view the same process through role-specific workspaces.",
+        "ja": "設計者と承認者が同じ業務を役割別の画面で扱います。"
+      },
+      "note": {
+        "ko": "자체 정적 UI 구상이며 실제 자동화 엔진·외부 API·워크플로 런타임·알림 서버는 구현하지 않았습니다.",
+        "en": "Independent static UI concept; no workflow runtime, external APIs, or notification service is implemented.",
+        "ja": "自主制作の静的UI構想であり、自動化エンジン・外部API・通知サーバーは実装していません。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "플로우 설계 WEB",
+            "en": "Flow builder web",
+            "ja": "フロー設計Web"
+          },
+          "audience": {
+            "ko": "업무 프로세스 설계자",
+            "en": "Process designers",
+            "ja": "業務フロー設計者"
+          },
+          "items": [
+            {
+              "ko": "시작·입력·분기·승인·결과 노드 배치",
+              "en": "Arrange start, input, branch, approval, and outcome nodes",
+              "ja": "開始・入力・分岐・承認・結果ノードを配置"
+            },
+            {
+              "ko": "조건별 연결선과 노드 속성 편집",
+              "en": "Edit conditional edges and node properties",
+              "ja": "条件別の接続線とノード属性を編集"
+            },
+            {
+              "ko": "버전별 초안·검토·배포 준비 표시",
+              "en": "Label draft, review, and ready versions",
+              "ja": "下書き・確認・公開準備の版を区別"
+            }
+          ]
+        },
+        {
+          "platform": "admin",
+          "title": {
+            "ko": "실행·승인 WEB",
+            "en": "Execution and approval web",
+            "ja": "実行・承認Web"
+          },
+          "audience": {
+            "ko": "팀 리더·승인 담당자",
+            "en": "Team leads and approvers",
+            "ja": "チームリーダー・承認担当者"
+          },
+          "items": [
+            {
+              "ko": "승인 대기 요청함과 상세 기록",
+              "en": "Review pending requests and details",
+              "ja": "承認待ち依頼と詳細を確認"
+            },
+            {
+              "ko": "요청별 조건 통과·반려 이력",
+              "en": "Review decision and rejection history",
+              "ja": "依頼ごとの分岐・差戻し履歴"
+            },
+            {
+              "ko": "실행 결과·오류·재시도 상태 확인",
+              "en": "Inspect outcome, error, and retry states",
+              "ja": "実行結果・エラー・再試行状態を確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "06",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "플로우 설계와 실행 확인",
+        "en": "Designing a flow, checking a run",
+        "ja": "フロー設計と実行確認"
+      },
+      "intro": {
+        "ko": "규칙을 노드로 그리는 화면과, 그 규칙대로 처리된 결과를 보는 화면을 나눴습니다.",
+        "en": "One screen draws the rules as nodes; another shows how a run went through them.",
+        "ja": "ルールをノードで描く画面と、そのルールで処理された結果を確認する画面を分けました。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "노드 에디터",
+            "en": "Node editor",
+            "ja": "ノードエディター"
+          },
+          "body": {
+            "ko": "6개 노드로 구성된 WF-014 V2 흐름을 편집하는 2D 캔버스입니다.",
+            "en": "A 2D canvas for editing the six-node WF-014 V2 flow.",
+            "ja": "6ノードで構成したWF-014 V2を編集する2Dキャンバスです。"
+          }
+        },
+        {
+          "title": {
+            "ko": "조건 분기",
+            "en": "Conditional routing",
+            "ja": "条件分岐"
+          },
+          "body": {
+            "ko": "요청 금액 3,000,000원을 기준으로 팀장 검토와 담당자 지정 경로를 나눕니다.",
+            "en": "Split manager review and assignee routing at a KRW 3,000,000 request amount.",
+            "ja": "申請金額3,000,000ウォンを境に管理者確認と担当者振り分けを分けます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "승인 인박스",
+            "en": "Approval inbox",
+            "ja": "承認受信箱"
+          },
+          "body": {
+            "ko": "대기·승인·반려 상태를 역할별로 정리합니다.",
+            "en": "Organize pending, approved, and returned requests by role.",
+            "ja": "待機・承認・差戻しを役割別に整理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "실행 이력",
+            "en": "Execution history",
+            "ja": "実行履歴"
+          },
+          "body": {
+            "ko": "노드별 처리 시점과 최종 상태를 추적합니다.",
+            "en": "Trace step timestamps and final outcomes.",
+            "ja": "ノードごとの処理時刻と結果を追跡します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "변경 가능한 업무 규칙과 실제 요청 상태를 같은 흐름으로 읽을 수 있도록 구성한 자동화 UI.",
+        "en": "A coherent UI that makes editable rules and request progress visible in one workflow.",
+        "ja": "変更可能な業務ルールと申請状態を一つのフローとして把握できる自動化UI。"
+      },
+      "sub": {
+        "ko": "조건·승인·실행 이력을 표현한 자체 UI 데모.",
+        "en": "An independent UI concept for branches, approvals, and execution history.",
+        "ja": "条件・承認・実行履歴を表現した自主制作UIデモ。"
+      }
+    }
+  ]
+}

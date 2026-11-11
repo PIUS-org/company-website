@@ -6,6 +6,7 @@
 import { useEffect, useRef } from 'react';
 import { Engine, EV, Registry, Scroller, bindPointer, emit, on } from '@/lib/core';
 import { createStage } from '@/lib/stage';
+import { bindPageLeave, introSeen, markIntroSeen, readArrival } from '@/lib/nav';
 import { createHeroBG } from '@/lib/heroBg';
 import { LangProvider, useLang } from './LangProvider';
 import Atmosphere from './Atmosphere/Atmosphere';
@@ -18,6 +19,8 @@ import Understand from './Understand/Understand';
 import Build from './Build/Build';
 import Process from './Process/Process';
 import Contact from './Contact/Contact';
+import Works from './Works/Works';
+import type { Project } from '@/lib/portfolio/types';
 import Footer from './Footer/Footer';
 
 function SkipLink() {
@@ -27,8 +30,10 @@ function SkipLink() {
 
 function Boot({ splash }: { splash: React.RefObject<SplashHandle | null> }) {
   useEffect(() => {
-    /* always start at the hero */
+    /* always start at the hero. A section hash (e.g. /#business from the portfolio header) is
+       remembered and scrolled to once the intro has finished. */
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    const arrival = location.hash.slice(1);
     if (location.hash) history.replaceState(null, '', location.pathname + location.search);
     scrollTo(0, 0);
     bindPointer();
@@ -60,15 +65,27 @@ function Boot({ splash }: { splash: React.RefObject<SplashHandle | null> }) {
     offs.push(() => document.removeEventListener('click', onClick), () => document.removeEventListener('pointermove', onMove));
 
     let cancelled = false;
+    offs.push(bindPageLeave());
+    /* the splash plays once per visit; coming back from another page of the site goes straight to the intro */
+    const returning = !!readArrival() || introSeen();
     const go = () => {
       if (cancelled) return;
       Engine.start();
       emit(EV.resize);                       /* headline fit + stage anchors, now that everything is mounted */
       stage.start();
-      splash.current?.play(() => {
+      const run = returning ? splash.current?.skip.bind(splash.current) : splash.current?.play.bind(splash.current);
+      markIntroSeen();
+      run?.(() => {
         stage.intro(); bg.start();
         emit(EV.intro);
-        setTimeout(() => { document.documentElement.classList.remove('is-locked'); scrollTo(0, 0); }, 700);
+        setTimeout(() => {
+          document.documentElement.classList.remove('is-locked'); scrollTo(0, 0);
+          const el = arrival && arrival !== 'top' ? document.getElementById(arrival) : null;
+          if (el) setTimeout(() => {
+            Scroller.toEl(el);
+            if (arrival === 'contact') setTimeout(() => document.getElementById('f-name')?.focus({ preventScroll: true }), 1300);
+          }, 250);
+        }, returning ? 150 : 700);
       });
     };
     const ready = document.fonts?.ready ? Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1200))]) : Promise.resolve();
@@ -81,7 +98,8 @@ function Boot({ splash }: { splash: React.RefObject<SplashHandle | null> }) {
   return null;
 }
 
-export default function Site() {
+export default function Site({ projects = [] }: { projects?: Project[] }) {
+  const works = projects.length > 0;
   const splash = useRef<SplashHandle>(null);
   return (
     <LangProvider>
@@ -89,13 +107,14 @@ export default function Site() {
       <HeroStage />
       <Atmosphere />
       <Splash ref={splash} />
-      <Header />
+      <Header works={works} />
       <main id="main">
         <Hero />
         <About />
         <Understand />
         <Build />
         <Process />
+        {works && <Works projects={projects} />}
         <Contact />
       </main>
       <Footer />

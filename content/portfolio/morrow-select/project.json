@@ -1,0 +1,566 @@
+{
+  "id": "morrow-select",
+  "slug": "morrow-select",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 23,
+  "includeInPdf": true,
+  "title": {
+    "ko": "MORROW SELECT — 프리미엄 멀티브랜드 패션 커머스",
+    "en": "MORROW SELECT — Curated Fashion Commerce",
+    "ja": "MORROW SELECT — セレクトファッションコマース"
+  },
+  "subtitle": {
+    "ko": "취향을 발견하고 자연스럽게 구매로 연결되는 쇼핑 경험",
+    "en": "A Refined Journey from Discovery to Checkout",
+    "ja": "好みとの出会いから購入までをつなぐショッピング体験"
+  },
+  "summary": {
+    "ko": "브랜드 큐레이션과 룩북, 상품 탐색부터 결제 전 확인까지 연결한 패션 커머스 UI.",
+    "en": "A curated fashion commerce UI connecting editorial looks, product discovery, and pre-payment checkout review.",
+    "ja": "エディトリアルなルック、商品検索、購入前の注文確認をつなぐファッションコマースUI。"
+  },
+  "overview": {
+    "ko": "브랜드의 개성을 보여주는 콘텐츠와 실제 구매에 필요한 검색·옵션·주문 정보가 분리되면 고객의 탐색 흐름이 끊어집니다.",
+    "en": "Shopping journeys become fragmented when brand storytelling is disconnected from search, product options, and order information.",
+    "ja": "ブランドの世界観を伝えるコンテンツと、検索・商品オプション・注文情報が分断されると、購買体験の連続性が失われます。"
+  },
+  "industry": {
+    "ko": "Fashion / Retail / E-commerce",
+    "en": "Fashion / Retail / E-commerce",
+    "ja": "Fashion / Retail / E-commerce"
+  },
+  "categories": [
+    "commerce",
+    "web",
+    "mobile"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "Desktop WEB",
+        "en": "Desktop WEB",
+        "ja": "Desktop WEB"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "Mobile WEB",
+        "en": "Mobile WEB",
+        "ja": "Mobile WEB"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#4E5D52",
+    "accentInk": "#1E2420",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "morrow-storefront"
+  ],
+  "images": [
+    {
+      "id": "morrow-storefront",
+      "kind": "desktop",
+      "file": "morrow-editorial-storefront.webp",
+      "alt": {
+        "ko": "에디토리얼 메인 스토어",
+        "en": "Editorial fashion storefront",
+        "ja": "エディトリアルなストアトップ"
+      },
+      "caption": {
+        "ko": "시즌 캠페인과 신상품 탐색을 연결한 메인 화면",
+        "en": "Seasonal campaign and new-arrival discovery",
+        "ja": "シーズンキャンペーンと新着商品をつなぐトップ画面"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "morrow-discovery",
+      "kind": "desktop",
+      "file": "morrow-product-discovery.webp",
+      "alt": {
+        "ko": "상품 필터 및 8개 상품 목록",
+        "en": "Product filters and eight-item grid",
+        "ja": "商品フィルターと8商品の一覧"
+      },
+      "caption": {
+        "ko": "브랜드·카테고리·가격 기반 상품 탐색",
+        "en": "Browse products by brand, category and price",
+        "ja": "ブランド・カテゴリー・価格で商品を探す"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "morrow-product-detail",
+      "kind": "desktop",
+      "file": "morrow-product-detail.webp",
+      "alt": {
+        "ko": "코트 상품 상세와 옵션 선택",
+        "en": "Coat product details and variants",
+        "ja": "コートの商品詳細とオプション"
+      },
+      "caption": {
+        "ko": "Charcoal M 옵션 및 장바구니 진입",
+        "en": "Charcoal M variant and add-to-bag action",
+        "ja": "Charcoal・Mの選択とカート追加"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "morrow-lookbook",
+      "kind": "desktop",
+      "file": "morrow-style-lookbook.webp",
+      "alt": {
+        "ko": "착장과 구매 상품을 연결한 룩북",
+        "en": "Shoppable editorial lookbook",
+        "ja": "着用商品と連動したルックブック"
+      },
+      "caption": {
+        "ko": "세 가지 상품으로 구성된 룩북 착장",
+        "en": "An editorial look comprising three products",
+        "ja": "3商品で構成されたエディトリアルルック"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "morrow-shopping-bag",
+      "kind": "desktop",
+      "file": "morrow-shopping-bag.webp",
+      "alt": {
+        "ko": "상품 2개가 담긴 장바구니",
+        "en": "Shopping bag with two items",
+        "ja": "2商品入りのショッピングカート"
+      },
+      "caption": {
+        "ko": "할인 적용 전 장바구니 상품 관리",
+        "en": "Bag management before coupon application",
+        "ja": "クーポン適用前のカート管理"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "morrow-checkout",
+      "kind": "desktop",
+      "file": "morrow-checkout.webp",
+      "alt": {
+        "ko": "배송·결제 정보 확인 화면",
+        "en": "Shipping and payment review",
+        "ja": "配送先・支払い情報の確認画面"
+      },
+      "caption": {
+        "ko": "WELCOME10 할인 적용 및 결제 전 확인",
+        "en": "Coupon application and pre-payment review",
+        "ja": "WELCOME10適用と決済前の注文確認"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "morrow-order-management",
+      "kind": "desktop",
+      "file": "morrow-order-management.webp",
+      "alt": {
+        "ko": "결제 완료 후 배송 준비 주문 내역",
+        "en": "Paid order awaiting shipment",
+        "ja": "決済済み・発送準備中の注文履歴"
+      },
+      "caption": {
+        "ko": "결제 완료와 미출고 상태를 구분한 주문 화면",
+        "en": "Order status distinguishing paid and unshipped",
+        "ja": "決済済みと未発送を区別した注文画面"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "morrow-mobile-discovery",
+      "kind": "mobile",
+      "file": "morrow-mobile-discovery.webp",
+      "alt": {
+        "ko": "모바일 상품 탐색과 2열 목록",
+        "en": "Mobile discovery and two-column products",
+        "ja": "モバイルの商品検索と2列一覧"
+      },
+      "caption": {
+        "ko": "터치 기반 모바일 상품 탐색 화면",
+        "en": "Touch-first mobile product browsing",
+        "ja": "タッチ操作に適したモバイル商品検索"
+      },
+      "presentation": {
+        "tier": "hidden"
+      }
+    },
+    {
+      "id": "morrow-mobile-product",
+      "kind": "mobile",
+      "file": "morrow-mobile-product.webp",
+      "alt": {
+        "ko": "모바일 코트 상품 상세",
+        "en": "Mobile coat product detail",
+        "ja": "モバイルのコート商品詳細"
+      },
+      "caption": {
+        "ko": "상품 옵션 및 하단 장바구니 버튼",
+        "en": "Product options and fixed add-to-bag action",
+        "ja": "商品オプションと固定カートボタン"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "morrow-mobile-checkout",
+      "kind": "mobile",
+      "file": "morrow-mobile-checkout.webp",
+      "alt": {
+        "ko": "모바일 결제 전 주문 확인",
+        "en": "Mobile pre-payment checkout",
+        "ja": "モバイルの決済前確認"
+      },
+      "caption": {
+        "ko": "할인 및 최종 결제 예정액 확인",
+        "en": "Discount and final payable amount review",
+        "ja": "割引と最終支払予定額の確認"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "DEMO · PoC",
+        "en": "DEMO · PoC",
+        "ja": "DEMO · PoC"
+      },
+      "headline": {
+        "ko": "브랜드 큐레이션과 룩북, 상품 탐색부터 결제 전 확인까지 연결한 패션 커머스 UI.",
+        "en": "A curated fashion commerce UI connecting editorial looks, product discovery, and pre-payment checkout review.",
+        "ja": "エディトリアルなルック、商品検索、購入前の注文確認をつなぐファッションコマースUI。"
+      },
+      "images": [
+        "morrow-storefront"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "개요",
+        "en": "Overview",
+        "ja": "概要"
+      },
+      "lead": {
+        "ko": "MORROW SELECT는 여러 패션 브랜드의 상품을 한곳에서 탐색하는 프리미엄 편집숍을 가정한 자체 UI 데모입니다. 에디토리얼 큐레이션과 실용적인 쇼핑 동선을 결합했습니다.",
+        "en": "MORROW SELECT is an independent UI demonstration of a premium multibrand fashion retailer, bringing editorial curation and practical shopping journeys together.",
+        "ja": "MORROW SELECTは、複数のファッションブランドを扱うプレミアムセレクトショップを想定した自主制作のUIデモです。編集的なキュレーションと実用的な購買導線を組み合わせました。"
+      }
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "기능",
+        "en": "Features",
+        "ja": "主な機能"
+      },
+      "intro": {
+        "ko": "메인 → 상품 탐색 → 상품 상세 → 옵션 선택 → 장바구니 → 결제 정보 확인 → 주문 내역. 룩북에서 개별 착장 상품으로 진입할 수 있습니다.",
+        "en": "Storefront → Discovery → Product → Variants → Bag → Checkout Review → Orders. Editorial looks link to individual products.",
+        "ja": "トップ → 商品検索 → 商品詳細 → オプション選択 → カート → 決済前確認 → 注文履歴。ルックブックから各商品へ移動できます。"
+      },
+      "note": {
+        "ko": "정적 Desktop WEB 7개 화면 및 Mobile WEB 3개 화면의 시각 디자인·렌더링. 실제 결제·재고·배송·인증·API는 구현하지 않았습니다.",
+        "en": "Static visual design and rendering of seven desktop and three mobile web screens. No live payments, inventory, shipping, authentication, or API integrations were built.",
+        "ja": "デスクトップ7画面、モバイル3画面の静的UIデザインと画像レンダリング。決済・在庫・配送・認証・API連携は実装していません。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "탐색",
+            "en": "Discover",
+            "ja": "発見"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "브랜드·카테고리·가격 탐색",
+              "en": "Brand and category discovery, price filtering",
+              "ja": "ブランド・カテゴリー検索、価格フィルター"
+            },
+            {
+              "ko": "룩북 연계",
+              "en": "Shoppable lookbooks",
+              "ja": "購入可能なルックブック"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "구매",
+            "en": "Purchase",
+            "ja": "購入"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "상품 옵션 선택",
+              "en": "Product variants",
+              "ja": "商品オプション"
+            },
+            {
+              "ko": "장바구니",
+              "en": "Shopping bag",
+              "ja": "カート"
+            },
+            {
+              "ko": "쿠폰 적용",
+              "en": "Coupon application",
+              "ja": "クーポン適用"
+            },
+            {
+              "ko": "결제 전 주문 확인",
+              "en": "Checkout review",
+              "ja": "決済前確認"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "주문·모바일",
+            "en": "Orders & Mobile",
+            "ja": "注文・モバイル"
+          },
+          "audience": {
+            "ko": "Desktop · Mobile WEB",
+            "en": "Desktop · Mobile WEB",
+            "ja": "Desktop · Mobile WEB"
+          },
+          "items": [
+            {
+              "ko": "주문 상태 조회",
+              "en": "Order status",
+              "ja": "注文状況"
+            },
+            {
+              "ko": "모바일 쇼핑 UI",
+              "en": "Mobile shopping layouts",
+              "ja": "モバイルUI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "PRODUCT DISCOVERY"
+      },
+      "layout": "imageRight",
+      "surface": "light",
+      "heading": {
+        "ko": "브랜드·카테고리·가격 탐색",
+        "en": "Brand and category discovery, price filtering",
+        "ja": "ブランド・カテゴリー検索、価格フィルター"
+      },
+      "body": {
+        "ko": "브랜드·카테고리·가격으로 상품 목록을 좁히는 탐색 화면입니다. 화보가 아닌 상품 정보로 비교합니다.",
+        "en": "Narrow the catalogue by brand, category and price — products are compared by their data, not the editorial images.",
+        "ja": "ブランド・カテゴリー・価格で商品一覧を絞り込む探索画面です。ビジュアルではなく商品情報で比較します。"
+      },
+      "images": [
+        "morrow-discovery"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "PRODUCT DETAIL"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "상품 옵션 선택",
+        "en": "Product variants",
+        "ja": "商品オプション"
+      },
+      "body": {
+        "ko": "색상·사이즈 옵션(Charcoal·M)을 고른 뒤 장바구니에 담는 상품 상세 화면입니다.",
+        "en": "The product page where colour and size (Charcoal, M) are chosen before adding to the bag.",
+        "ja": "色・サイズ(Charcoal・M)を選んでカートに入れる商品詳細画面です。"
+      },
+      "images": [
+        "morrow-product-detail"
+      ],
+      "surface": "dark"
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "SHOPPING BAG"
+      },
+      "layout": "imageRight",
+      "surface": "light",
+      "heading": {
+        "ko": "장바구니",
+        "en": "Shopping bag",
+        "ja": "カート"
+      },
+      "body": {
+        "ko": "할인 적용 전, 담은 상품과 금액을 확인하는 장바구니 화면입니다.",
+        "en": "The bag before any discount: items and amounts at a glance.",
+        "ja": "割引適用前に、入れた商品と金額を確認するカート画面です。"
+      },
+      "images": [
+        "morrow-shopping-bag"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "CHECKOUT REVIEW"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "결제 전 주문 확인",
+        "en": "Checkout review",
+        "ja": "決済前確認"
+      },
+      "body": {
+        "ko": "WELCOME10 쿠폰 할인이 반영된 금액을 결제 직전에 확인하는 화면입니다. 실제 결제는 이뤄지지 않습니다.",
+        "en": "The last check before payment, with the WELCOME10 discount applied. No real payment takes place.",
+        "ja": "WELCOME10クーポンの割引を反映した金額を決済直前に確認する画面です。実際の決済は行いません。"
+      },
+      "images": [
+        "morrow-checkout"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "07",
+        "label": "MOBILE"
+      },
+      "layout": "imageRight",
+      "surface": "light",
+      "heading": {
+        "ko": "모바일 상품 상세",
+        "en": "Mobile product page",
+        "ja": "モバイル商品詳細"
+      },
+      "body": {
+        "ko": "모바일 상품 상세에서 옵션을 고르고 장바구니로 이어지는 화면입니다.",
+        "en": "The mobile product page, where options are chosen on the way to the bag.",
+        "ja": "モバイルの商品詳細でオプションを選び、カートへ進む画面です。"
+      },
+      "images": [
+        "morrow-mobile-product"
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "08",
+        "label": "MORE SCREENS"
+      },
+      "heading": {
+        "ko": "주문 조회와 모바일 결제 확인",
+        "en": "Order status and mobile checkout",
+        "ja": "注文照会とモバイル決済確認"
+      },
+      "intro": {
+        "ko": "결제 이후와 모바일 결제 직전을 보여 주는 보조 화면입니다. 실제 결제는 이뤄지지 않습니다.",
+        "en": "Supporting screens for after payment and the mobile pre-payment check. No real payment takes place.",
+        "ja": "決済後とモバイル決済直前を示す補助画面です。実際の決済は行いません。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "주문 상태 조회",
+            "en": "Order status",
+            "ja": "注文状況"
+          },
+          "body": {
+            "ko": "결제 완료와 미출고를 별도 상태로 표시해, 결제 후 배송 전 단계를 구분하는 주문 조회 화면입니다.",
+            "en": "Order status keeps “paid” and “not yet shipped” apart, so the step between payment and delivery is clear.",
+            "ja": "決済完了と未発送を別の状態で示し、決済後・配送前の段階を区別する注文照会画面です。"
+          },
+          "image": "morrow-order-management"
+        },
+        {
+          "title": {
+            "ko": "모바일 결제 전 확인",
+            "en": "Mobile checkout review",
+            "ja": "モバイル決済前の確認"
+          },
+          "body": {
+            "ko": "할인 및 최종 결제 예정액 확인",
+            "en": "Discount and final payable amount review",
+            "ja": "割引と最終支払予定額の確認"
+          },
+          "image": "morrow-mobile-checkout"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "text": {
+        "ko": "발견에서 구매 확인까지, 하나의 일관된 패션 커머스 경험을 시각화했습니다.",
+        "en": "A cohesive visual shopping journey from inspiration to order review.",
+        "ja": "発見から注文確認まで、一貫したファッションコマース体験を可視化しました。"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "등록 프롬프트(2026-11-09) 원고 그대로. PIUS 자체 정적 UI 데모·PoC 10장. 상품·가격·주문·인물 데이터는 데모. 사진 자산 일부는 임시 재사용 이미지(상용 상품 촬영물 아님).",
+    "status review — 사용자 승인 전 approved 불가. results·scope 블록 미사용.",
+    "배치: 개요=lead, 문제=project.overview, 흐름=services intro, 범위=services note, 기능=서비스 칸 항목(3칸, 칸 제목 추가), textImage 제목=해당 기능 항목·본문=이미지 caption, 쇼케이스 제목=모바일 기능 항목, 표지 메시지=카드 요약.",
+    "일부 상품 사진에 다른 화면의 상품명·가격 글자가 겹쳐 렌더링됨(이미지 원본 그대로 사용)."
+  ]
+}

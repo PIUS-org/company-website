@@ -15,6 +15,7 @@ cp .env.example .env.local     # 값 채우기 (아래 2장)
 npm run dev                    # http://localhost:3000
 npm run build && npm start     # 운영 빌드
 npm run typecheck              # 타입 검사
+npm run portfolio:check        # 포트폴리오 콘텐츠 검사
 ```
 
 권장 버전은 Node 20 이상, Next 15, React 19입니다.
@@ -37,12 +38,10 @@ npm run typecheck              # 타입 검사
 
 ```
 app/
-  layout.tsx          메타데이터(canonical·OG·트위터), 구조화 데이터(JSON-LD), 뷰포트, 폰트, globals.css
+  layout.tsx          메타데이터(OG·트위터), 뷰포트, 폰트, globals.css
   page.tsx            <Site />
-  icon.png            파비콘 (512×512, Next가 <link rel="icon"> 자동 생성)
-  apple-icon.png      iOS 홈 화면 아이콘
-  robots.ts           /robots.txt
-  sitemap.ts          /sitemap.xml
+  robots.ts sitemap.ts  검색엔진용 robots.txt · sitemap.xml
+  icon.png apple-icon.png  파비콘
   globals.css         디자인 토큰 · 리셋 · 공용 유틸(.wrap .btn .disp .sec-idx .pin …)
 components/
   Site.tsx            페이지 구성 + 부팅 순서(최상단 시작 → 3D 준비 → 스플래시 → 인트로)
@@ -59,12 +58,24 @@ lib/
   stage.ts            히어로~About 3D 로고플레이 안무 (P·I·U·S)
   heroBg.ts           히어로 배경 셰이더
   glass/              3D 유리 렌더러 (WebGL2 레이마칭) — index.ts가 타입이 붙은 공개 API
-  site.ts             사이트 주소(SITE_URL). 환경변수가 없으면 https://pius.co.kr
 public/
-  og/og-image.png     OG 이미지 1200×630
+  og/                 OG 이미지 1200×630, 2400×1260
   logo/               로고 SVG (흰색/검정)
-  google4fcd0ab38f628a81.html   구글 서치 콘솔 소유 확인 파일 (삭제 금지)
+  portfolio/          (생성물) 공개 승인된 포트폴리오 이미지 — 빌드 때 자동 복사, git 제외
+content/portfolio/    포트폴리오 원본: <slug>/project.json + images/
+docs/                 포트폴리오 구조서 · 운영 가이드 · Claude 지침
+scripts/portfolio.mjs          포트폴리오 검사·동기화·생성 (prebuild에서 자동 실행)
+scripts/portfolio-export.mjs   포트폴리오 PDF·PNG 출력 (로컬 전용)
+scripts/portfolio-capture.mjs  데모 화면 캡처 → content/portfolio/<slug>/images (로컬 전용)
 ```
+
+### 포트폴리오 (`/portfolio`, `/portfolio/[slug]`)
+
+- 프로젝트마다 페이지를 만들지 않습니다. `content/portfolio/<slug>/project.json`만 추가하면 목록·상세·PDF가 생깁니다.
+- `npm run build` 전에 `node scripts/portfolio.mjs sync`가 자동 실행되어 **공개 승인(approved)된 프로젝트만** 데이터와 이미지를 빌드에 넣습니다. 검증 오류가 있으면 빌드가 멈춥니다.
+- 서브페이지는 `components/SubPage.tsx`를 씁니다. 헤더·언어·푸터는 같고 메인의 스플래시·3D·스크롤 초기화는 실행하지 않습니다.
+- PDF 출력: `npm run portfolio:export -- --slug <slug> --lang ko` (처음 한 번 `npx playwright install chromium`). 출력용 화면은 운영 빌드에 포함되지 않습니다.
+- 상세: `docs/PORTFOLIO_SCHEMA.md`(개발자), `docs/PORTFOLIO_CONTENT_GUIDE.md`(운영자)
 
 ### 동작 방식
 
@@ -138,6 +149,7 @@ public/
   - 네이버: `app/layout.tsx`의 `verification` 메타 태그로 소유 확인합니다. 지우면 확인이 풀립니다.
   - 두 곳 모두 `https://pius.co.kr/sitemap.xml`을 제출합니다.
 - **구조화 데이터**(JSON-LD)는 `app/layout.tsx`에 있습니다. 대표자·주소가 바뀌면 푸터 문구(`lib/i18n.ts`)와 함께 수정해 주세요.
+- `sitemap.xml`에는 메인, `/portfolio`, 공개(approved) 프로젝트 상세가 들어갑니다. 상세 페이지마다 canonical이 따로 붙습니다(`app/portfolio`).
 - 영어·일본어는 브라우저 안에서만 전환되어 검색엔진에는 한국어만 색인됩니다.
 - OG 이미지를 바꾼 뒤에는 카카오·페이스북 공유 디버거에서 캐시를 초기화해 주세요.
 
@@ -149,5 +161,4 @@ public/
 - [ ] 영어·일본어 번역 원어민 검수: `lib/i18n.ts`와 각 controller 안의 목업 문구
 - [ ] 개인정보 수집·이용 동의 전문 또는 처리방침 링크 추가
 - [x] 파비콘·OG 이미지·robots·sitemap·구조화 데이터
-- [ ] 네이버 서치어드바이저 소유 확인 코드 추가
-- [x] `package-lock.json` 생성·커밋, 로컬 `npm run build` 통과
+- [x] 구글·네이버 소유 확인

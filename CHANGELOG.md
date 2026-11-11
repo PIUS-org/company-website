@@ -1,0 +1,95 @@
+# 변경 이력
+
+개발자에게 전달된 버전 단위로 기록합니다. 각 전달 zip의 `CHANGES.md`에는 해당 버전의 변경 파일 목록이 들어 있습니다.
+
+## [작업 중]
+- **정리(화면 변화 없음)**: 쓰이지 않는 코드 제거 — export 6개(`IS_PREVIEW`, `liveImages`, `hasScreens`, `pendingScreens`, `IMAGE_TIERS`, `PAGE_LAYOUTS`), 문구 키 5개×3언어(`pf.pending`, `pf.review*`, `pf.flow`), CSS 규칙 4개(`plat__sky`, `card__planT`, `rv__t`, `morph__arrow`). OG 이미지 2장 무손실 재압축(픽셀 동일, 2.4MB→2.2MB).
+- **작업 원본 zip 용량**: git 이력을 v28 시점 한 커밋으로 정리(이전 이력은 비공개 백업), work zip에서 이미지 중복 제거(`scripts/work-zip.mjs`·`scripts/workspace-init.mjs`, Claude 작업용 — 개발자 전달본에는 안 들어감).
+
+## [v2] 2026-11-11 (전달 파일명 v28)
+- **v28 최종 일괄 수정**: stackflow-wms `wms-inbound`·`wms-location-map`을 남색 사이드바 셸로, subscripta `subscripta-billing-operations`를 상단 탭 셸로 재렌더링(작업 영역·수치 그대로). civera layer-explorer caption에 2D/3D 구분(한·영·일). reviewNotes 정리, IMPRINT LAB 사진 권리 확인 필요 기록, PDF 캡처 가이드 갱신. 운송 ERP 3장·NODERA 2장은 보류 유지. 보고: `docs/PORTFOLIO_V28_FINAL_REPORT.md`
+- **사용자 확정: 대표 화면 3장 재구성 UI로 교체** — 통근버스 shuttle-dashboard·shuttle-driver-app(B실), 전세버스 dispatch-calendar(C실). id·파일명·kind·표지·썸네일·블록 유지. alt·caption 한·영·일을 '재구성 UI'로 명시, 두 프로젝트 개요 블록 본문에 재구성 화면 안내 1문장, 통근버스 기사 앱 섹션 본문을 새 화면 내용에 맞게 보완. 실제 수행 범위·상태·분류 무변경
+- **C실 재제작 이미지 13장 교체**(civicdesk c04, farm admin-catalog, metaverse 2장, sitelog s02, MES 3장, WMS 2장, subscripta billing-operations, velora 2장): 파일과 alt·caption 한·영·일만 갱신. charter-bus-dispatch `dispatch-calendar`는 approved 실제 프로젝트 대표 화면이라 보류(사용자 결정 대기)
+- **D·E실**: caption 없던 26장(전세버스·통근버스·커머스·메타버스·운송 ERP·FITY 19장)에 한·영·일 caption 추가(메타데이터만). NODERA 도메인 정합성 확인. review/public 빌드·540개 반응형·다국어 검사·목록 필터/더보기 검사. PDF 캡처 선별 가이드 작성. 보고: `docs/PORTFOLIO_DE_VERIFICATION_REPORT.md`, `docs/PORTFOLIO_PDF_CAPTURE_GUIDE.md`
+- **B실 재디자인 반영(부분)**: nodera-flow — visual-builder·request-intake 교체, 사례를 WF-014 시설 구매 승인(REQ-092 ₩2,800,000)으로 한·영·일 원고 교체, 이전 사례(₩480,000)의 approval-inbox·run-history는 숨김(교체본 대기). civera-twin — layer-explorer만 교체·노출(레이어 탐색 textImage). 보존: civera command-center(날짜 2026.11.10≠기존 2027.07.15, 기존 3D 대표가 디자인 계열 일치), civera flood-timeline(T+00·T+30 수치가 사건 리포트 24·71동과 불일치), 통근버스 2장(승인된 실제 수행 프로젝트 — 사용자 결정 대기)
+- **이미지 오류 수정본 2장 교체(A)**: helio-desk `helio-desk-sla-operations`(차트 자리 `{svg}` 글자 → 실제 차트), secondloop `secondloop-transaction-tracking`(하단 템플릿 문구 → View transaction 버튼, 상품가 ₩218,000·배송비 ₩4,000 표시). 파일만 교체, id·kind·alt·caption·블록·상태 그대로. 운송 ERP 신규 3장은 계속 보류
+- **자체 데모 UI 이미지 3차(20장)·4차(16장)**: nodera-flow·fieldnest·contracta·leasegrid·subscripta 각 4장, penova-class·civicdesk·sitelog·stayport-pms 각 4장 + 4차 4개 프로젝트 문구 전체 교체(한·영·일). 30개 모두 실제 화면 연결(자리표시자 0), 이미지 160 → 196장. PDF 마무리 쪽에 scope note 표시. 상세: `docs/PORTFOLIO_BATCH03_04_IMAGES_REPORT.md`
+- **자체 데모 UI 이미지 2차(24장)**: hireloom·bulkbridge·imprint-lab·tavora-os·helio-desk에 화면 5·5·5·5·4장. 표지·썸네일 교체(자리표시자 제거), textImage·screenShowcase(phones·focus 태블릿) 블록, External 대표 장면은 presentation.external. 모두 review 유지. 이미지 136 → 160장. 상세: `docs/PORTFOLIO_BATCH02_IMAGES_REPORT.md`
+- **도식 툴 구조도 제거**: farm-commerce-backend `commerce-architecture`, charter-bus-dispatch `dispatch-architecture`(ARCHITECTURE 섹션 블록·이미지 항목·파일 삭제), 섹션 번호 재정렬. 앞으로 Mermaid·draw.io류 구조도는 쓰지 않는다는 규칙을 CLAUDE.md·등록 지침에 추가. 이미지 138 → 136장
+- **승인 프로젝트 UI 이미지 추가(batch01, 12장 반영 · 3장 보류)**: farm-commerce-backend 4장(screenShowcase desktop 1 + imageGallery 2열 3장), commute-shuttle-platform 2장(screenShowcase desktop 2개), charter-bus-dispatch 3장(screenShowcase 1 + imageGallery 2장), metaverse-live-app 3장(screenShowcase phones). alt·caption 한·영·일은 전달본 그대로, 시연 UI임을 밝히는 본문 포함. 섹션 번호 재정렬, 상태·slug·순서·표지·기존 이미지·블록 그대로. transport-erp-monitoring 3장은 화면 안에 공개 금지 거래처 이름이 보여 반영하지 않음(교체본 대기). 이미지 126 → 138장, 기존 126장 SHA256 동일
+- **STEP 0 이미지 노출 정책(11개 · 117장, C67/S27/H23/E55)**: `images[].presentation`(tier·external) 정식 스키마 추가 — 검증·manifest·웹·Full/External PDF·문서 연동. hidden은 어디에도 연결 불가·public 복사 제외, support는 보조 블록 전용, External은 E 화면만(표지 반복 제외). 11개 블록 재배치, 숨긴 화면 관련 문구 최소 수정(한·영·일). `screenShowcase` `tablets` 레이아웃(MES). 왼쪽 화면 textImage가 좁은 칸에 들어가던 공통 CSS 수정. export report에 쪽별 화면 id. 원본 126장 SHA256 동일
+- **포트폴리오 30개 구조·콘텐츠 통합 개선**
+  - 목록: 탭 첫 카드 = 2칸 대표 카드(가로형, 업무 흐름 단계 표시, '전체'는 featured). 마지막 줄 빈칸은 마지막 카드가 넓어져 채움. 첫 화면 11장. 카드 분류 줄을 산업명으로. 화면 대기 프로젝트는 빈 브라우저 틀 대신 업무 흐름 카드(상세 layout에 따라 3가지 배치) + 'UI 준비 중' 표시
+  - 상세: 화면 대기 프로젝트의 표지는 업무 흐름 패널(단계·설명·플랫폼). 다음 프로젝트 미리보기는 실제 화면이 있을 때만. 화면이 붙은 기능 카드는 2열(홀수면 첫 카드가 한 줄 전체)
+  - PDF: External 판본(`--mode external|both`, 최대 7쪽, 서로 다른 섹션의 대표 기능 2쪽), 흐름 균등 분할, 화면 붙은 기능 카드 페이지, 화면 대기 표지 = 흐름 패널, 텍스트 페이지 글자 확대, `exports/report.json`(쪽수·크기·잘림·외부 제출 준비 여부, 실행마다 병합), PDF 안 화면을 JPEG 사본으로 넣어 용량 약 1/5(FITY 16MB → 3.3MB, 원본 불변, `--raw`로 해제)
+  - 줄바꿈: 한국어 조사가 %·닫는 따옴표·괄호 뒤에서 떨어지지 않게, '입니다(' 앞에서 끊기지 않게
+  - 콘텐츠(한·영·일): 신규 14개 — '1차 등록' 내부 표기 제거, 내부 제작 메모가 공개 문구로 나가던 기능 소개 문장 교체, 데모 사례(사용자→단계→상태→결과) 소개, 유형별 블록 순서, STAYPORT 퇴실 단계 추가. 이미지 10개 프로젝트 — 핵심 화면은 크게, 보조 화면은 화면+설명 카드로 묶음(VELORA·NOCTAVE·CIVERA·REELSHIFT·THREADFORM·ROAMFRAME·MORROW), MORROW 화면 설명 재작성, SECONDLOOP 거래 시점별 흐름, MES 업무 영역별 역할, REELSHIFT EDIT/REVIEW 구획. 승인 5개 — 개요에 '문제→처리' 항목(기존 기재 사실만)
+  - 문서: `docs/PORTFOLIO_IMAGE_PLAN.md`(30개 이미지 계획·126장 평가), `docs/PORTFOLIO_QUALITY_REPORT.md`, 스키마·운영 가이드의 목록·PDF 설명 갱신(이미지 10장 고정 규칙 폐지)
+- 포트폴리오 3차 배치(텍스트 중심) 4건 추가: civicdesk(170)·subscripta(180)·sitelog(190)·stayport-pms(200). 전달 JSON 원문 그대로, 모두 status review, 대표 화면 `file: null` 대기. 전체 30건(approved 6·review 24) — 30건 등록 구조 완성
+- 포트폴리오 2차 배치(텍스트 중심) 5건 추가: nodera-flow(120)·fieldnest(130)·contracta(140)·helio-desk(150)·leasegrid(160). 전달 JSON 원문 그대로, 모두 status review, 대표 화면 `file: null` 대기. 전체 26건(approved 6·review 20)
+- 포트폴리오 1차 배치(텍스트 중심) 5건 추가: bulkbridge(70)·imprint-lab(80)·hireloom(90)·tavora-os(100)·penova-class(110). 전달 JSON 원문 그대로, 모두 status review, 대표 화면은 `file: null` 대기(빈 화면 틀 표시)
+- 포트폴리오 추가: MORROW SELECT (`morrow-select`, review, 변형 editorial), SECONDLOOP (`secondloop`, review, 변형 split). PIUS 자체 정적 UI 데모·PoC, 각 화면 10장(원본 그대로), 한·영·일 원고 그대로
+- 일본어 제목 줄바꿈: 가타카나 단어 보정 규칙 개선(단어 시작 불가 조각은 앞, 1–2자 조각은 뒤, 짧은 조각끼리 8자까지 합침)
+- PDF 표지 제목 크기: 가장 긴 단어의 추정 폭(글자 종류별)이 칸에 들어가는 크기를 넘지 않도록 상한 — 'STACKFLO/W', 'Commerc/e'처럼 단어가 끊기던 문제 수정
+- 포트폴리오 목록 카드 개편: 균일 3열(태블릿 2열·모바일 1열), 카드 = 테두리 패널 하나로 경계 명확화, 이미지 16:10으로 축소, 번호·분류 → 이름 → 설명 → 요약 2줄 → 플랫폼·연도 순의 정보 위계, 표지 eyebrow를 이미지 배지로. 첫 카드 전체 폭 표시 제거
+- 포트폴리오 추가: ROAMFRAME (`roamframe-travel`, **status: review** — 운영 빌드 미포함). PIUS 자체 정적 UI 데모·PoC, 화면 10장(전달 원본 그대로), 한·영·일 원고 그대로, 상세 변형 rail. 서비스 8항목 4칸×2
+- PDF: 화면 쇼케이스 블록의 본문(body)을 첫 쪽 제목 아래에 출력(이전에는 웹에만 표시되고 PDF에서 빠졌음). 일본어 표지 제목은 웹과 같이 단어 경계에서만 줄바꿈
+- 줄바꿈 정리(사이트 전체): 단어 중간 끊김 방지(ko·en keep-all, 영어 문장 속 한국어 포함), 가운뎃점 "A·B" 붙임, 짧은 끝 단어(≤3자·영문 4자) 앞 단어와 붙임, 제목류 balance·문단 pretty. 일본어 표지·카드·다음 프로젝트 제목은 단어 경계(Intl.Segmenter, 가타카나 보정)에서만 줄바꿈하고 크기도 최장 단어 기준. 서비스 칸 제목·좌우형 본문 제목은 칸 폭에 비례. 카드/다음 프로젝트 그리드가 긴 일본어 문장 때문에 화면 밖으로 넓어지던 문제 수정
+- 포트폴리오 목록: 탭마다 첫 카드(크게 보이는 카드)가 서로 다르도록 자동 배정(전체=featured, 나머지 탭은 매칭으로 겹침 최소화). featured는 '전체' 탭 대표만 결정
+- 상세 페이지 변형 4종(`theme.layout`: split·stage·editorial·rail, 웹 전용). 표지·화면+글 블록·띠 모양·번호 표현이 변형별로 달라짐. 화면 크롭 없음. 기존 13개 프로젝트에 이웃끼리 겹치지 않게 배정(split 3·stage 4·editorial 3·rail 3). PDF 레이아웃은 변경 없음
+- 포트폴리오 추가: THREADFORM STUDIO (`threadform-studio`, **status: review** — 운영 빌드 미포함). PIUS 자체 정적 UI 데모·PoC, 화면 10장(전달 원본 그대로), 한·영·일 원고 그대로. 서비스 8항목은 4칸×2항목, 개요+문제 정의는 프로젝트 소개 한 문단(PDF는 overview.body를 출력하지 않음)
+- 포트폴리오 추가: REELSHIFT STUDIO (`reelshift-studio`, **status: review** — 운영 빌드 미포함). PIUS 자체 정적 UI 데모·PoC, 화면 10장(전달 원본 그대로), 한·영·일 원고 그대로. 서비스 8항목은 4칸×2항목으로 묶음
+- 포트폴리오 추가: CIVERA TWIN (`civera-twin`, **status: review** — 운영 빌드 미포함). PIUS 자체 데모·PoC(가상 도시), 화면 10장(전달 원본 그대로), 한·영·일. 서비스 9항목은 3칸×3항목으로 묶음
+- 포트폴리오 추가: NOCTAVE FEST (`noctave-fest`, **status: review** — 운영 빌드 미포함). PIUS 자체 데모·PoC, 화면 10장(전달 원본 그대로), 한·영·일
+- 긴 프로젝트명 대응: 웹 표지 제목 길이별 최대 크기 단계(`data-long`), PDF 표지 영문 긴 제목 54pt/42pt(`data-len`) — 표지 넘침 방지. 짧은 제목은 변경 없음
+- 서비스 블록 5·6칸: 연결선 칸 수 맞춤, 제목 크기·여백 조정, 일본어 제목 문절 줄바꿈·칸 넘침 방지
+- 포트폴리오 추가: VELORA SPACE (`velora-space`, **status: review** — 운영 빌드 미포함). PIUS 자체 데모·PoC, 화면 10장(전달 원본 그대로), 한·영·일
+- 표지 일본어 제목: 띄어쓰기 없는 긴 제목이 단어 중간에서 줄바뀜·과도한 축소되던 문제 수정(문절 단위 줄바꿈 `word-break:auto-phrase`, 웹 크기 계산 상한, PDF 40pt). 한국어·영어는 변경 없음
+- 포트폴리오 추가: STACKFLOW WMS (`stackflow-wms`, **status: review** — 운영 빌드 미포함). PIUS 자체 데모·PoC, 화면 10장(전달 원본 그대로), 한·영·일
+- 포트폴리오 목록 카드: 기기 틀이 카드 끝에서 잘리던 문제 수정 — 모든 화면을 카드 안에 통째로 배치, 폰 1장 카드는 같은 화면을 흐리게 깐 배경 추가. 상세·PDF는 변경 없음
+- 포트폴리오 추가: 스마트팩토리 MES (`smart-factory-mes`, **status: review** — 운영 빌드 미포함, 사용자 승인 후 approved). PIUS 자체 데모·PoC, 화면 8장(전달 원본 그대로), 한·영·일
+- 공개 정책 보완: `portfolio:export`·미리보기 빌드가 끝나면 `.next`를 지움. Next.js 정적 내보내기는 중간 빌드물을 `.next`에 써서, 그대로 두면 review 단계 콘텐츠가 운영 빌드 폴더에 남았음. 출력 뒤 `next start` 전에는 `npm run build`를 다시 실행
+- 메인 Portfolio 섹션 개편: 결과물 카드 제거 → 분류별 프로젝트 수 타일(모바일 앱·웹·플랫폼·ERP·커머스·시스템 연동, 공개 데이터에서 자동 계산, 카운트업·선 아이콘 애니메이션). 타일을 누르면 `/portfolio#분류`로 필터된 목록으로 이동. 전체 보기는 작은 텍스트 링크. `paths.portfolio(hash)` 추가. 한·영·일 문구
+- 포트폴리오 5건 추가(거래처 이름 가림): 운송 ERP·관제, 통근버스 운영, 농수산물 커머스, 메타버스 라이브, 전세버스 배차 — 화면 9장(거래처 로고·상호·인명·실사용자 얼굴 가림 처리) 포함
+- 거래처 공개 금지: `content/portfolio/_clients.txt` 금지어 검사(`portfolio:check`에서 오류), 캡처 시 화면 글자 자동 가림, `portfolio:capture --mask <css>`·`--replace`
+- 화면 없는 프로젝트 공개 지원: `stack`·`period` 필드, 카드·표지·PDF 표지의 기술 스택 대체 화면
+- 한글·일본어 프로젝트명 표지 줄간격·크기 보정, 개요 표에 기간·기술 스택, 플랫폼 기본 표기(API 등)
+- 포트폴리오 시스템 추가: `/portfolio` 목록(카테고리 필터), `/portfolio/[slug]` 상세(블록형 공통 렌더러), PDF 출력
+  - 콘텐츠: `content/portfolio/<slug>/project.json` + `images/` (한·영·일). 프로젝트별 페이지·컴포넌트 없음
+  - 검증·동기화 `scripts/portfolio.mjs` (predev·prebuild·pretypecheck 자동 실행): 중복 slug/id, 이미지 누락, 잘못된 블록, 외부 링크, 출처 없는 수치, 승인 시 번역·이미지·미확인 범위 검사
+  - 공개 단계: 운영 빌드는 `approved`만 포함. 승인 전 프로젝트의 데이터·이미지는 빌드와 `public/`에 복사되지 않음
+  - PDF: `/portfolio/[slug]/print/[lang]` (A4 가로 기본, 16:9 지원), `npm run portfolio:export` (Playwright, PDF + 페이지별 PNG, 잘림 검사). 출력용 화면은 운영 빌드에서 404
+  - FITY 샘플(`status: review`): 문구 3개 언어 완성, 화면 이미지 15장은 아직 없어 '화면 준비 중' 틀로 표시
+- 헤더: Contact 메뉴 → Portfolio (`/portfolio`). 문의하기 CTA 그대로. 서브페이지에서는 섹션 메뉴·CTA·로고가 메인으로 이동, Portfolio 활성 고정
+- 메인: `/#섹션` 주소로 들어오면 기존 인트로 후 해당 섹션으로 이동 (포트폴리오 헤더에서 돌아올 때)
+- `LangProvider`: 서브페이지별 제목·설명(선택). 메인 동작은 동일
+- `components/SubPage.tsx`: 서브페이지 셸 (스플래시·3D·섹션 컨트롤러 미실행)
+- `app/not-found.tsx`: PIUS 디자인 404
+- `lib/i18n.ts`: 포트폴리오 문구 `pf.*` (한·영·일)
+- `next.config.ts`: `PIUS_EXPORT=1`(PDF 출력)일 때만 정적 export 설정 추가. 운영 설정 변경 없음
+- devDependency `playwright` 추가 — PDF·PNG 자동 출력용. 로컬 출력 때만 쓰이고 운영 번들에는 포함되지 않음
+- 문서: `docs/PORTFOLIO_PROJECT_INSTRUCTIONS.md`, `docs/PORTFOLIO_CONTENT_GUIDE.md`, `docs/PORTFOLIO_SCHEMA.md`
+- 확인: typecheck, 운영 빌드, 메인 전후 비교(문서 높이·주요 요소 위치 동일), 라우팅·헤더·언어·모바일 메뉴, PDF 3개 언어
+- 메인 페이지에 Selected Works 섹션 추가 (Process와 Contact 사이, 공개 프로젝트가 있을 때만). 헤더 Portfolio는 메인에서 이 섹션으로 스크롤하고 활성 표시됨. 위쪽 섹션 위치는 그대로
+- FITY: FITY 데모(고객 앱·전문가 WEB·관리자)를 직접 띄워 캡처한 실제 화면 19장으로 교체. 수행 범위·상태(개발 중, 2026)는 FITY 개발 인수인계서 기준. PIUS 자체 서비스(데모의 사업자 정보: 피우스)라 공개 승인으로 전환
+- 검토용 표시(배너·배지·확인 필요 태그) 제거. 확인되지 않은 수행 범위는 화면·PDF에 표시하지 않음
+- 배경을 중립색으로 변경(분홍 제거). 프로젝트 색은 밝은 면의 작은 표식·제목 글자색에만, 어두운 면 표식은 아이스블루. FITY 색은 BI의 Espresso(#2E211B)
+- 큰 제목이 단어 중간에서 줄바꿈되지 않게 수정 (목록 "Portfolio" 한 줄 고정, 표지 프로젝트명 크기 상한)
+- 상세 A/B 레이아웃: 여러 폰 화면은 나란히 크게, 여러 PC 화면은 겹쳐 배치
+- 페이지 이동 개선 (`lib/nav.ts`): 메인↔포트폴리오 이동 때 헤더·배경은 그대로 두고 본문만 페이드, 헤더 활성 표시가 이전 위치에서 이어서 이동
+- 스플래시는 방문당 한 번만. 사이트 안에서 메인으로 돌아오면 스플래시 없이 바로 인트로, `/#섹션` 이동도 약 1초로 단축
+- 어떤 페이지든 열리면 항상 맨 위에서 시작 (상세가 아래쪽에서 열리던 문제 수정)
+- 프로젝트 여러 개 배치 규칙: 대표(featured)는 한 줄 전체, 나머지는 2열, 혼자 남는 카드는 한 줄 전체로. 목록은 12개 후 '더 보기'. 메인은 최대 3개(1개 넓게 + 2개 나란히)
+- 목록 제목 'Portfolio'에 메인 섹션 제목과 같은 글자 등장 애니메이션
+- 포트폴리오 등록 모듈화: 등록 양식 `docs/PORTFOLIO_INTAKE.md`, 데모 화면 캡처 명령 `npm run portfolio:capture`, Claude 절차서 개편(양식 수신 시 바로 착수)
+- `app/layout.tsx`: 재방문 표시용 짧은 인라인 스크립트(헤더 즉시 표시·스플래시 깜빡임 방지). `globals.css`: 페이지 전환용 클래스 4개 추가(해당 클래스가 붙을 때만 동작)
+
+## [v1] 2026-11-04
+- 실제 Next.js 빌드에서 막히던 타입 오류 2건 수정
+  - `components/Contact/Contact.tsx`: `<textarea rows="4">` → `rows={4}`
+  - `components/Footer/Footer.tsx`: `<time datetime>` → `dateTime`
+- `next.config.ts`: Claude 미리보기 전용 설정 추가. `PIUS_PREVIEW=1` 환경변수가 있을 때만 켜지며, 운영 빌드에는 영향 없음
+- `.gitignore`: 미리보기·전달 산출물 폴더 추가
+- `package-lock.json` 추가 (`npm ci`로 같은 버전 설치용)
+- `CHANGELOG.md` 추가
+- 확인: `npm run typecheck`, `npm run build` 통과

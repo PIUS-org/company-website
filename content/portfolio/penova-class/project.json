@@ -1,0 +1,414 @@
+{
+  "id": "penova-class",
+  "slug": "penova-class",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 110,
+  "includeInPdf": true,
+  "title": {
+    "ko": "PENOVA CLASS — 교육 콘텐츠와 학습 운영을 하나로",
+    "en": "PENOVA CLASS — One workspace for creating and running courses",
+    "ja": "PENOVA CLASS — 教材制作と学習運営をひとつに"
+  },
+  "subtitle": {
+    "ko": "강의 제작·평가·과제 피드백을 연결하는 LMS 워크스페이스",
+    "en": "An LMS workspace connecting course authoring, assessment, and assignment feedback",
+    "ja": "講義編集・評価・課題フィードバックをつなぐLMSワークスペース"
+  },
+  "summary": {
+    "ko": "교육 운영자는 강의를 설계하고 채점하며, 학습자는 모바일에서 콘텐츠와 퀴즈를 이어서 학습합니다.",
+    "en": "Instructors create and grade lessons while learners resume courses and quizzes on mobile.",
+    "ja": "講師は教材制作と採点を行い、受講者はモバイルで講義やクイズの続きを学べます。"
+  },
+  "overview": {
+    "ko": "강의 목차, 레슨 본문, 평가 문항, 제출물 채점이 서로 다른 도구에 흩어지면 교육 운영 흐름이 단절됩니다. PENOVA CLASS는 강사와 학습자의 업무를 구분하면서도 강의 제작부터 학습 완료까지 하나의 과정으로 연결하는 자체 UI 데모입니다.",
+    "en": "When course outlines, lesson content, assessments, and grading are scattered across tools, learning operations lose continuity. PENOVA CLASS is a self-initiated UI concept that separates instructor and learner experiences while connecting the workflow from authoring to completion.",
+    "ja": "講義構成、教材、評価問題、採点が別々のツールに分かれていると、教育運営の流れが途切れがちです。PENOVA CLASSは、講師と受講者それぞれの操作を整理しながら、教材制作から学習完了までをつなぐ自社制作のUIデモです。"
+  },
+  "industry": {
+    "ko": "교육·EdTech·학습 관리",
+    "en": "Education, EdTech, and Learning Management",
+    "ja": "教育・EdTech・学習管理"
+  },
+  "categories": [
+    "platform",
+    "web",
+    "mobile"
+  ],
+  "platforms": [
+    {
+      "type": "admin",
+      "label": {
+        "ko": "강사용 관리자 WEB",
+        "en": "Instructor admin web",
+        "ja": "講師向け管理Web"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "학습자 모바일 WEB",
+        "en": "Learner mobile web",
+        "ja": "受講者向けモバイルWeb"
+      }
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#566D91",
+    "accentInk": "#202D45",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "p01"
+  ],
+  "images": [
+    {
+      "id": "p01",
+      "kind": "desktop",
+      "file": "penova-course-editor.webp",
+      "alt": {
+        "ko": "강사 강의 편집기에서 챕터 목록, 레슨 본문 캔버스, 우측 게시 설정 패널을 동시에 확인하는 화면",
+        "en": "Instructor-facing course editor with chapter navigation, lesson canvas, and publishing settings.",
+        "ja": "章一覧、レッスン編集キャンバス、公開設定を並べた講師向け画面。"
+      },
+      "caption": {
+        "ko": "강의 목차와 콘텐츠 블록, 첨부 자료, 공개 조건을 하나의 편집 워크스페이스에 구성했습니다.",
+        "en": "Chapters, content blocks, attachments, and publication rules share one authoring workspace.",
+        "ja": "講義構成、教材ブロック、添付資料、公開条件をひとつの編集空間に整理しました。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "p02",
+      "kind": "desktop",
+      "file": "penova-quiz-builder.webp",
+      "alt": {
+        "ko": "객관식 퀴즈 문항과 선택지, 정답, 배점 및 합격 기준을 편집하는 화면",
+        "en": "Assessment builder for multiple-choice questions, answer keys, points, and passing thresholds.",
+        "ja": "選択問題、正答、配点、合格基準を編集する評価作成画面。"
+      },
+      "caption": {
+        "ko": "문항별 정답과 설명을 편집하고 평가 전체 배점 100점과 합격 기준 70점을 확인합니다.",
+        "en": "The instructor edits the answer rationale and checks a 100-point assessment with a 70-point pass rule.",
+        "ja": "各問題の解説を編集し、100点満点と70点の合格基準を確認できます。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "p03",
+      "kind": "desktop",
+      "file": "penova-assignment-feedback.webp",
+      "alt": {
+        "ko": "학생 제출물 문서 미리보기와 채점 루브릭, 88점 피드백 패널을 보여주는 화면",
+        "en": "Assignment-review screen with a document preview, rubric scoring, and 88-point feedback panel.",
+        "ja": "提出書類のプレビュー、ルーブリック採点、88点のフィードバックを表示した画面。"
+      },
+      "caption": {
+        "ko": "제출 문서를 검토하면서 항목별 점수와 강사 피드백을 기록하는 채점 흐름을 표현합니다.",
+        "en": "Review student submissions alongside criterion-level scoring and written instructor feedback.",
+        "ja": "提出物を確認しながら評価項目別の得点と講師コメントを記録します。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "p04",
+      "kind": "mobile",
+      "file": "penova-student-learning.webp",
+      "alt": {
+        "ko": "세로 모바일에서 강의 진도 64%, 이어 듣기와 객관식 퀴즈 답변을 표시하는 학습 화면",
+        "en": "Portrait mobile learner screen showing 64% progress, resume learning, and quiz selection.",
+        "ja": "学習進捗64%、受講再開、クイズ回答を表示した縦型モバイル画面。"
+      },
+      "caption": {
+        "ko": "실제 모바일 비율로 강의 재개와 퀴즈 선택을 구성해 강사용 WEB과 학습자 경험을 구분했습니다.",
+        "en": "The dedicated mobile layout connects lesson continuation and quiz responses for students.",
+        "ja": "講師向けWEBとは別に、受講者の操作に合わせたモバイルUIを制作しました。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·UI 데모를 위한 1차 텍스트 등록본. 실제 구현 실적이나 고객 성과가 아님.",
+    "4차 승인 UI 이미지·콘텐츠 반영(2026-11-10): 전달 원문으로 제목·개요·기능·흐름·범위·마무리 문장 교체, 자체 정적 UI 데모 화면 4장 연결. 실제 구현·고객 실적 아님."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "교육 운영자는 강의를 설계하고 채점하며, 학습자는 모바일에서 콘텐츠와 퀴즈를 이어서 학습합니다.",
+        "en": "Instructors create and grade lessons while learners resume courses and quizzes on mobile.",
+        "ja": "講師は教材制作と採点を行い、受講者はモバイルで講義やクイズの続きを学べます。"
+      },
+      "images": [
+        "p01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "강의 목차, 레슨 본문, 평가 문항, 제출물 채점이 서로 다른 도구에 흩어지면 교육 운영 흐름이 단절됩니다. PENOVA CLASS는 강사와 학습자의 업무를 구분하면서도 강의 제작부터 학습 완료까지 하나의 과정으로 연결하는 자체 UI 데모입니다.",
+        "en": "When course outlines, lesson content, assessments, and grading are scattered across tools, learning operations lose continuity. PENOVA CLASS is a self-initiated UI concept that separates instructor and learner experiences while connecting the workflow from authoring to completion.",
+        "ja": "講義構成、教材、評価問題、採点が別々のツールに分かれていると、教育運営の流れが途切れがちです。PENOVA CLASSは、講師と受講者それぞれの操作を整理しながら、教材制作から学習完了までをつなぐ自社制作のUIデモです。"
+      },
+      "body": {
+        "ko": "교육 담당자가 레슨을 반복 편집하고 평가 문항과 학습 자료를 관리하는 과정, 학습자의 제출물을 확인하고 피드백을 전달하는 과정이 하나의 운영 인터페이스에서 이어져야 합니다.",
+        "en": "Educators need a continuous interface for editing lessons, managing assessments and resources, reviewing submissions, and delivering actionable feedback.",
+        "ja": "教材の編集、評価問題や資料の管理、提出課題の確認、フィードバックまでを一貫して扱える運営画面が必要です。"
+      }
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "주요 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "블록형 강의 편집",
+            "en": "Block-based course authoring",
+            "ja": "ブロック型教材編集"
+          },
+          "body": {
+            "ko": "챕터와 레슨을 구성하고 본문·실습 자료·공개 범위를 설정합니다.",
+            "en": "Organize chapters and lessons, edit content and practice assets, and manage visibility.",
+            "ja": "章とレッスンを構成し、本文・演習資料・公開範囲を管理します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "퀴즈·배점 설계",
+            "en": "Quiz and scoring setup",
+            "ja": "クイズと配点設定"
+          },
+          "body": {
+            "ko": "문항 유형과 정답, 배점, 합격 기준을 관리합니다.",
+            "en": "Configure question types, answer keys, points, and passing rules.",
+            "ja": "問題形式、正答、配点、合格条件を設定します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "루브릭 기반 채점",
+            "en": "Rubric-based review",
+            "ja": "ルーブリック採点"
+          },
+          "body": {
+            "ko": "제출물 미리보기와 항목별 점수, 강사 피드백을 함께 보여줍니다.",
+            "en": "Bring submission previews, criterion scores, and instructor comments into one view.",
+            "ja": "提出物プレビュー、評価項目別の点数、講師コメントをまとめます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일 학습 경험",
+            "en": "Mobile learning experience",
+            "ja": "モバイル学習"
+          },
+          "body": {
+            "ko": "수강 진도, 이어 듣기, 퀴즈 응시를 세로 화면에 최적화합니다.",
+            "en": "Adapt progress tracking, lesson resumption, and quiz response to portrait screens.",
+            "ja": "進捗確認、続きからの受講、クイズ回答を縦画面に最適化します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "과정과 레슨 구성",
+            "en": "Organize courses and lessons",
+            "ja": "コースとレッスンの構成"
+          }
+        },
+        {
+          "title": {
+            "ko": "평가 문항과 합격 조건 설정",
+            "en": "Set assessment questions and passing criteria",
+            "ja": "設問と合格条件の設定"
+          }
+        },
+        {
+          "title": {
+            "ko": "제출물 검토 및 피드백",
+            "en": "Review submissions and give feedback",
+            "ja": "提出物の確認とフィードバック"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일에서 학습 진행",
+            "en": "Continue learning on mobile",
+            "ja": "モバイルで学習を継続"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "COURSE EDITOR"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "블록형 강의 편집",
+        "en": "Block-based course authoring",
+        "ja": "ブロック型教材編集"
+      },
+      "body": {
+        "ko": "강의 목차와 콘텐츠 블록, 첨부 자료, 공개 조건을 하나의 편집 워크스페이스에 구성했습니다.",
+        "en": "Chapters, content blocks, attachments, and publication rules share one authoring workspace.",
+        "ja": "講義構成、教材ブロック、添付資料、公開条件をひとつの編集空間に整理しました。"
+      },
+      "images": [
+        "p01"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "QUIZ BUILDER"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "퀴즈·배점 설계",
+        "en": "Quiz and scoring setup",
+        "ja": "クイズと配点設定"
+      },
+      "body": {
+        "ko": "문항별 정답과 설명을 편집하고 평가 전체 배점 100점과 합격 기준 70점을 확인합니다.",
+        "en": "The instructor edits the answer rationale and checks a 100-point assessment with a 70-point pass rule.",
+        "ja": "各問題の解説を編集し、100点満点と70点の合格基準を確認できます。"
+      },
+      "images": [
+        "p02"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "ASSIGNMENT REVIEW"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "루브릭 기반 채점",
+        "en": "Rubric-based review",
+        "ja": "ルーブリック採点"
+      },
+      "body": {
+        "ko": "제출 문서를 검토하면서 항목별 점수와 강사 피드백을 기록하는 채점 흐름을 표현합니다.",
+        "en": "Review student submissions alongside criterion-level scoring and written instructor feedback.",
+        "ja": "提出物を確認しながら評価項目別の得点と講師コメントを記録します。"
+      },
+      "images": [
+        "p03"
+      ],
+      "surface": "light"
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "07",
+        "label": "MOBILE LEARNING"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "모바일 학습 경험",
+        "en": "Mobile learning experience",
+        "ja": "モバイル学習"
+      },
+      "images": [
+        "p04"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "08",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "정적 프론트 UI 화면 4종을 설계·렌더링한 자체 데모입니다. 실제 학습 데이터 저장, 영상 스트리밍, 퀴즈 채점 엔진, 알림 및 인증 서비스는 구현 실적으로 주장하지 않습니다.",
+        "en": "Four static front-end screens were designed and rendered as an in-house demo. Persistent learner records, video streaming, automated grading, notifications, and authentication were not implemented.",
+        "ja": "自社デモとして静的フロントエンド画面4点を制作しました。学習データの永続化、動画配信、自動採点、通知、認証の実装実績ではありません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "09",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "교육의 제작과 운영, 학습 경험이 하나의 흐름으로 이어지도록 설계했습니다.",
+        "en": "An integrated experience from authoring and operations to learning.",
+        "ja": "教材制作から運営、受講体験まで、ひとつながりの流れを設計しました。"
+      }
+    }
+  ]
+}

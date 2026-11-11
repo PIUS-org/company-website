@@ -1,0 +1,565 @@
+{
+  "id": "imprint-lab",
+  "slug": "imprint-lab",
+  "status": "review",
+  "visible": true,
+  "featured": false,
+  "order": 80,
+  "includeInPdf": true,
+  "title": {
+    "ko": "IMPRINT LAB — 맞춤형 포토북·프린트 커머스",
+    "en": "IMPRINT LAB — Personalized Print Commerce",
+    "ja": "IMPRINT LAB — カスタムプリントコマース"
+  },
+  "subtitle": {
+    "ko": "사진 선택부터 페이지 디자인과 주문까지",
+    "en": "From photo selection to page design and ordering",
+    "ja": "写真選択からページ編集・注文まで"
+  },
+  "summary": {
+    "ko": "고객이 포토북을 직접 구성하고 인쇄 전 상태를 검토하는 주문제작 커머스 UI 구성안.",
+    "en": "A custom-print commerce UI concept for composing photo books and reviewing proofs.",
+    "ja": "フォトブックを自分で編集し印刷前プレビューを確認するカスタムコマースUI構想。"
+  },
+  "overview": {
+    "ko": "개인이 사진을 선택해 포토북 표지와 내지를 구성하고, 옵션별 가격 및 인쇄 전 주의사항을 확인한 뒤 주문하는 과정을 다룹니다. 전자상거래와 2D 편집 UI가 만나는 고객 경험을 가정한 자체 데모입니다.",
+    "en": "This independent UI concept follows a customer selecting photos, designing a cover and interior pages, checking options and pre-print warnings, and ordering a personalized photo book. It combines commerce with a two-dimensional editor.",
+    "ja": "写真を選び、フォトブックの表紙と本文ページを構成し、仕様別価格と印刷前の注意事項を確認して注文する流れを想定した自主制作UIデモです。"
+  },
+  "industry": {
+    "ko": "맞춤형 인쇄·주문제작 커머스",
+    "en": "Personalized Print and Made-to-Order Commerce",
+    "ja": "カスタム印刷・受注制作コマース"
+  },
+  "categories": [
+    "commerce",
+    "platform",
+    "web"
+  ],
+  "platforms": [
+    {
+      "type": "web",
+      "label": {
+        "ko": "포토북 제작 WEB",
+        "en": "Photo book editor web",
+        "ja": "フォトブック制作Web"
+      }
+    },
+    {
+      "type": "web",
+      "label": {
+        "ko": "모바일 사진 선택·주문 조회",
+        "en": "Mobile upload and order review",
+        "ja": "モバイル写真選択・注文確認"
+      }
+    }
+  ],
+  "scope": [],
+  "theme": {
+    "accent": "#50665F",
+    "accentInk": "#202A26",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "imprint-lab-editor-workspace"
+  ],
+  "images": [
+    {
+      "id": "imprint-lab-product-configurator",
+      "kind": "desktop",
+      "file": "imprint-lab-product-configurator.webp",
+      "alt": {
+        "ko": "맞춤 포토북 상품 옵션 설정 — 자체 UI 시연 화면",
+        "en": "Custom photo book configuration — static UI demo",
+        "ja": "カスタムフォトブックの商品設定 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "하드커버·규격·내지·페이지 수·권수를 선택하고 미리보기와 가상 견적을 확인하는 제작 화면입니다.",
+        "en": "A demo configurator for photo-book binding, size, paper, pages, quantity and price preview.",
+        "ja": "製本・サイズ・用紙・ページ数・部数を選び、プレビューと架空見積を確認する画面です。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "imprint-lab-photo-library",
+      "kind": "desktop",
+      "file": "imprint-lab-photo-library.webp",
+      "alt": {
+        "ko": "포토북 사진 자산 라이브러리 — 자체 UI 시연 화면",
+        "en": "Photo asset library — static UI demo",
+        "ja": "フォトブック用写真ライブラリ — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "포토북에 배치할 데모 이미지를 선택·분류하고 사용 여부를 확인하는 2D 사진 라이브러리입니다.",
+        "en": "An illustrative 2D asset library for selecting, grouping and tracking images used in a photo book.",
+        "ja": "フォトブックに配置するデモ画像の選択・分類・使用状況を管理する2Dライブラリです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "imprint-lab-editor-workspace",
+      "kind": "desktop",
+      "file": "imprint-lab-editor-workspace.webp",
+      "alt": {
+        "ko": "양면 포토북 페이지 편집기 — 자체 UI 시연 화면",
+        "en": "Two-page photo book editor — static UI demo",
+        "ja": "見開きフォトブック編集画面 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "중앙 양면 페이지 캔버스와 좌측 페이지 목록, 이미지·텍스트 속성 편집을 결합한 정적 편집 UI 시연 화면입니다.",
+        "en": "A static editing UI demo with a two-page canvas, page navigator, and image and text property controls.",
+        "ja": "見開きキャンバス、ページ一覧、画像・テキストの編集設定を備えた静的エディタのデモです。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "imprint-lab-print-preflight",
+      "kind": "desktop",
+      "file": "imprint-lab-print-preflight.webp",
+      "alt": {
+        "ko": "인쇄 전 파일·레이아웃 검수 — 자체 UI 시연 화면",
+        "en": "Print preflight checks — static UI demo",
+        "ja": "印刷前のファイル・レイアウト確認 — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "이미지 해상도·재단 여백·페이지 누락 여부를 구분해 확인하는 인쇄 전 검수 화면입니다. 실제 인쇄 엔진 실행 결과는 아닙니다.",
+        "en": "Illustrative preflight checks for image quality, trim margins and missing pages; not the result of a production print engine.",
+        "ja": "画像品質・裁ち落とし・ページ欠落を確認する印刷前チェックのデモです。実際の印刷エンジンの結果ではありません。"
+      },
+      "presentation": {
+        "tier": "core",
+        "external": true
+      }
+    },
+    {
+      "id": "imprint-lab-checkout-preview",
+      "kind": "desktop",
+      "file": "imprint-lab-checkout-preview.webp",
+      "alt": {
+        "ko": "포토북 주문 확인과 제작 대기 — 자체 UI 시연 화면",
+        "en": "Photo book checkout and production queue — static UI demo",
+        "ja": "フォトブックの注文確認・製作待ち — 静的UIデモ"
+      },
+      "caption": {
+        "ko": "2권 주문의 상품 합계·할인·결제 예정액 82,800원과 제작 대기 상태를 보여주는 데모 화면입니다.",
+        "en": "An illustrative order summary for two books showing discount, KRW 82,800 payable and pending production.",
+        "ja": "2冊分の注文金額・割引・支払予定額82,800ウォンと製作待ち状態を示すデモです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ],
+  "reviewNotes": [
+    "PIUS 자체 서비스 구상·UI 데모를 위한 1차 텍스트 등록본. 실제 구현 실적이나 고객 성과가 아님.",
+    "2차 승인 UI 이미지 반영(2026-11-10): 자체 정적 UI 데모 화면. 표지·썸네일·상세 화면 블록 연결, External PDF 대표 장면은 presentation.external로 지정. 실제 구현·고객 실적 아님.",
+    "이미지 권리(2026-11-11): 데모 화면 속 사진 중 실존 인물로 보이는 사진은 사용 권리가 확인되지 않음 → 공개(approved) 전 교체 또는 권리 확인 필요. 확인 전까지 review 유지."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "사진이 상품이 되는 과정을 한 공간에서 디자인합니다.",
+        "en": "Design the journey from photographs to a finished product.",
+        "ja": "写真から完成品までを、一つの場所でデザイン。"
+      },
+      "images": [
+        "imprint-lab-editor-workspace"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "A YEAR IN FRAME이라는 가상의 24페이지 포토북 프로젝트를 중심으로 옵션 설정, 사진 라이브러리, 편집 캔버스, 검수, 결제를 연결했습니다.",
+        "en": "The fictional 24-page photo book A YEAR IN FRAME anchors a flow for product configuration, photo libraries, editing, proof review, and checkout.",
+        "ja": "架空の24ページのフォトブック「A YEAR IN FRAME」を例に、仕様設定、写真管理、編集、プレビュー、注文をつなぎます。"
+      },
+      "body": {
+        "ko": "20×20cm 하드커버·매트 내지 포토북을 2권 주문하는 예시입니다. 1권 ₩46,000, 상품 합계 ₩92,000, 데모 쿠폰 ₩9,200 할인, 배송비 ₩0, 결제 예정액은 ₩82,800입니다.",
+        "en": "The example configures two 20×20 cm hardcover books with matte pages: ₩46,000 per book, ₩92,000 subtotal, ₩9,200 demo discount, ₩0 shipping, and a ₩82,800 payable total.",
+        "ja": "20×20cm・ハードカバー・マット紙のフォトブックを2冊注文する想定です。1冊₩46,000、小計₩92,000、デモ割引₩9,200、送料₩0、支払予定額₩82,800です。"
+      },
+      "goals": [
+        {
+          "title": {
+            "ko": "정확한 편집 컨텍스트",
+            "en": "Consistent design context",
+            "ja": "一貫した編集コンテキスト"
+          },
+          "body": {
+            "ko": "표지·내지·미리보기에 같은 사진·문구·페이지 정보를 사용합니다.",
+            "en": "Keep photos, text, and page numbers consistent across editing and proofing.",
+            "ja": "表紙・本文・プレビューで写真、文言、ページ番号を統一します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "검수 상태 구분",
+            "en": "Clear proofing states",
+            "ja": "プレビュー状態の区別"
+          },
+          "body": {
+            "ko": "저해상도 경고 발생·수정·검토 완료 시점을 구분합니다.",
+            "en": "Distinguish a low-resolution warning, its resolution, and final review.",
+            "ja": "低解像度の警告、修正、最終確認の状態を区別します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "옵션 선택부터 제작 대기까지",
+        "en": "From options to the production queue",
+        "ja": "オプション選択から製作待ちまで"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "제작 옵션 선택",
+            "en": "Configure the book",
+            "ja": "仕様選択"
+          },
+          "body": {
+            "ko": "20×20cm·하드커버·24페이지·2권을 선택합니다.",
+            "en": "Select a 20×20cm hardcover, 24 pages, and two copies.",
+            "ja": "20×20cm、ハードカバー、24ページ、2冊を選択します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "사진 관리",
+            "en": "Organize photos",
+            "ja": "写真管理"
+          },
+          "body": {
+            "ko": "가상의 사진 12장을 모아 표지와 페이지에 연결합니다.",
+            "en": "Organize 12 demo photos for the cover and interior.",
+            "ja": "デモ写真12枚を整理して表紙と本文に配置します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "페이지 편집",
+            "en": "Edit pages",
+            "ja": "ページ編集"
+          },
+          "body": {
+            "ko": "표지와 p14–15 양면의 사진·문구를 배치합니다.",
+            "en": "Edit the cover and photo/text layout on pages 14–15.",
+            "ja": "表紙および14～15ページの写真・文章を配置します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "인쇄 전 검토",
+            "en": "Review proof",
+            "ja": "印刷前プレビュー"
+          },
+          "body": {
+            "ko": "p14 저해상도 경고를 표시하고 원본 교체 후 해결 상태로 전환합니다.",
+            "en": "Flag low resolution on p14, then resolve it using the original file.",
+            "ja": "14ページの低解像度警告を表示し、原本への差し替え後に解消します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "주문·제작 대기",
+            "en": "Checkout and queue",
+            "ja": "注文・制作待ち"
+          },
+          "body": {
+            "ko": "데모 결제 ₩82,800 이후 제작 대기 상태를 표시합니다.",
+            "en": "Display production queued after the ₩82,800 demo payment.",
+            "ja": "デモ決済₩82,800の後、制作待ち状態を表示します。"
+          }
+        }
+      ],
+      "intro": {
+        "ko": "데모 사례: 고객이 20×20cm 포토북 2권을 편집하고, 저해상도 경고를 해결한 뒤 결제해 제작 대기 상태가 되기까지.",
+        "en": "Demo case: a customer edits two 20×20cm photobooks, clears a low-resolution warning, pays, and the order enters the production queue.",
+        "ja": "デモ事例：お客様が20×20cmのフォトブック2冊を編集し、低解像度の警告を解消して決済し、製作待ちになるまで。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "PRODUCT OPTIONS"
+      },
+      "layout": "imageLeft",
+      "surface": "light",
+      "heading": {
+        "ko": "맞춤 포토북 상품 옵션 설정",
+        "en": "Custom photo book configuration",
+        "ja": "カスタムフォトブックの商品設定"
+      },
+      "body": {
+        "ko": "하드커버·규격·내지·페이지 수·권수를 선택하고 미리보기와 가상 견적을 확인하는 제작 화면입니다.",
+        "en": "A demo configurator for photo-book binding, size, paper, pages, quantity and price preview.",
+        "ja": "製本・サイズ・用紙・ページ数・部数を選び、プレビューと架空見積を確認する画面です。"
+      },
+      "images": [
+        "imprint-lab-product-configurator"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "04",
+        "label": "PHOTO LIBRARY"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "포토북 사진 자산 라이브러리",
+        "en": "Photo asset library",
+        "ja": "フォトブック用写真ライブラリ"
+      },
+      "body": {
+        "ko": "포토북에 배치할 데모 이미지를 선택·분류하고 사용 여부를 확인하는 2D 사진 라이브러리입니다.",
+        "en": "An illustrative 2D asset library for selecting, grouping and tracking images used in a photo book.",
+        "ja": "フォトブックに配置するデモ画像の選択・分類・使用状況を管理する2Dライブラリです。"
+      },
+      "images": [
+        "imprint-lab-photo-library"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "05",
+        "label": "PREFLIGHT"
+      },
+      "layout": "full",
+      "surface": "light",
+      "heading": {
+        "ko": "인쇄 전 파일·레이아웃 검수",
+        "en": "Print preflight checks",
+        "ja": "印刷前のファイル・レイアウト確認"
+      },
+      "body": {
+        "ko": "이미지 해상도·재단 여백·페이지 누락 여부를 구분해 확인하는 인쇄 전 검수 화면입니다. 실제 인쇄 엔진 실행 결과는 아닙니다.",
+        "en": "Illustrative preflight checks for image quality, trim margins and missing pages; not the result of a production print engine.",
+        "ja": "画像品質・裁ち落とし・ページ欠落を確認する印刷前チェックのデモです。実際の印刷エンジンの結果ではありません。"
+      },
+      "images": [
+        "imprint-lab-print-preflight"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "06",
+        "label": "CHECKOUT"
+      },
+      "layout": "imageLeft",
+      "heading": {
+        "ko": "포토북 주문 확인과 제작 대기",
+        "en": "Photo book checkout and production queue",
+        "ja": "フォトブックの注文確認・製作待ち"
+      },
+      "body": {
+        "ko": "2권 주문의 상품 합계·할인·결제 예정액 82,800원과 제작 대기 상태를 보여주는 데모 화면입니다.",
+        "en": "An illustrative order summary for two books showing discount, KRW 82,800 payable and pending production.",
+        "ja": "2冊分の注文金額・割引・支払予定額82,800ウォンと製作待ち状態を示すデモです。"
+      },
+      "images": [
+        "imprint-lab-checkout-preview"
+      ]
+    },
+    {
+      "type": "services",
+      "section": {
+        "index": "07",
+        "label": "SERVICE STRUCTURE"
+      },
+      "heading": {
+        "ko": "상품 구성부터 인쇄 전 확인까지",
+        "en": "From product setup to proof review",
+        "ja": "商品設定から印刷前確認まで"
+      },
+      "intro": {
+        "ko": "커머스 구매 절차와 정교한 2D 페이지 편집 인터페이스를 연결합니다.",
+        "en": "A shopping journey connected to a precise 2D page editor.",
+        "ja": "購買フローと精密な2Dページ編集UIを連携します。"
+      },
+      "note": {
+        "ko": "실제 사진 업로드 서버·편집 엔진·인쇄 품질 분석·결제 연동을 구현하지 않은 자체 정적 UI 데모입니다.",
+        "en": "Independent static UI concept; no production upload server, editing engine, print-quality analysis, or payment integration is implemented.",
+        "ja": "実際の写真アップロードサーバー、編集エンジン、印刷品質分析、決済連携は実装していない自主制作の静的UIデモです。"
+      },
+      "columns": [
+        {
+          "platform": "web",
+          "title": {
+            "ko": "포토북 편집 WEB",
+            "en": "Photo book editing web",
+            "ja": "フォトブック編集Web"
+          },
+          "audience": {
+            "ko": "포토북 제작 고객",
+            "en": "Customers creating photo books",
+            "ja": "フォトブック制作ユーザー"
+          },
+          "items": [
+            {
+              "ko": "크기·페이지·커버 옵션 설정",
+              "en": "Select size, pages, and cover options",
+              "ja": "サイズ・ページ数・表紙の仕様設定"
+            },
+            {
+              "ko": "사진 라이브러리와 표지·내지 2D 편집",
+              "en": "Photo library and 2D cover/page layouts",
+              "ja": "写真ライブラリと表紙・本文の2D編集"
+            },
+            {
+              "ko": "인쇄 전 경고와 전체 페이지 미리보기",
+              "en": "Pre-print warnings and full-page review",
+              "ja": "印刷前警告と全ページプレビュー"
+            }
+          ]
+        },
+        {
+          "platform": "web",
+          "title": {
+            "ko": "모바일 주문 경험",
+            "en": "Mobile order experience",
+            "ja": "モバイル注文体験"
+          },
+          "audience": {
+            "ko": "휴대폰으로 사진을 선택하는 고객",
+            "en": "Customers selecting photos on mobile",
+            "ja": "スマートフォンで写真を選ぶユーザー"
+          },
+          "items": [
+            {
+              "ko": "사진 선택과 업로드 상태",
+              "en": "Photo selection and upload state",
+              "ja": "写真選択とアップロード状態"
+            },
+            {
+              "ko": "최종 포토북 페이지 검토",
+              "en": "Final photo book preview",
+              "ja": "完成したフォトブックの確認"
+            },
+            {
+              "ko": "주문 접수·제작 대기 상태 확인",
+              "en": "Order confirmation and production queue",
+              "ja": "注文受付と制作待ち状態の確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "featureGrid",
+      "section": {
+        "index": "08",
+        "label": "FEATURES"
+      },
+      "heading": {
+        "ko": "편집 도구와 인쇄 전 검토",
+        "en": "Editing tools and the print check",
+        "ja": "編集ツールと印刷前チェック"
+      },
+      "intro": {
+        "ko": "캔버스에서 만든 결과가 검수와 가격에 그대로 반영되도록 구성했습니다.",
+        "en": "What is built on the canvas feeds straight into the print check and the price.",
+        "ja": "キャンバスで作った結果が検品と価格にそのまま反映されるよう構成しました。"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "2D 편집 캔버스",
+            "en": "2D editing canvas",
+            "ja": "2D編集キャンバス"
+          },
+          "body": {
+            "ko": "페이지·사진·텍스트·정렬 가이드·속성 패널을 중심으로 구성합니다.",
+            "en": "Compose pages with images, text, guides, and properties.",
+            "ja": "ページ、画像、文字、ガイド、プロパティを中心に構成します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "사진 라이브러리",
+            "en": "Photo library",
+            "ja": "写真ライブラリ"
+          },
+          "body": {
+            "ko": "선택·사용 여부·페이지 연결 상태를 구분합니다.",
+            "en": "Track selected and placed photos.",
+            "ja": "写真の選択・使用・ページ配置状態を区別します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "인쇄 전 검수",
+            "en": "Pre-print review",
+            "ja": "印刷前確認"
+          },
+          "body": {
+            "ko": "데모 경고를 수정 완료와 구분하여 표시합니다.",
+            "en": "Separate demonstration warnings from resolved states.",
+            "ja": "デモ警告と修正完了の状態を区別します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "옵션별 가격",
+            "en": "Configurable pricing",
+            "ja": "仕様別価格"
+          },
+          "body": {
+            "ko": "추가 페이지와 하드커버, 수량 및 쿠폰을 계산합니다.",
+            "en": "Calculate additional pages, hardcover, quantity, and coupon.",
+            "ja": "追加ページ、ハードカバー、数量、クーポンを計算します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "09",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "소중한 순간을 편집하고, 인쇄 가능한 이야기로.",
+        "en": "Turn moments into an edited, printable story.",
+        "ja": "大切な瞬間を編集し、形に残すストーリーへ。"
+      },
+      "sub": {
+        "ko": "포토북 제작 경험을 구성한 자체 정적 UI 데모.",
+        "en": "An independent static UI concept for custom photo books.",
+        "ja": "フォトブック制作体験を表現した自主制作の静的UIデモ。"
+      }
+    }
+  ]
+}

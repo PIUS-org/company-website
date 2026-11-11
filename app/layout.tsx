@@ -1,23 +1,26 @@
 import type { Metadata, Viewport } from 'next';
-import { SITE_URL } from '@/lib/site';
 import './globals.css';
+import { RETURN_SCRIPT } from '@/lib/nav';
+import { SITE_URL } from '@/lib/site';
 
 const TITLE = 'PIUS — Build Your Growth';
 const DESCRIPTION = 'PIUS는 기업의 업무를 이해하고, 그 업무에 맞는 시스템을 기획하고 개발하는 SI 회사입니다.';
+const OG_DESCRIPTION = '기업의 업무를 이해하고, 그 업무에 맞는 시스템을 만듭니다.';
 
+/* Canonical URLs are set per page (app/page.tsx, app/portfolio/...), not here:
+   a canonical in the root layout would be inherited by every sub page and point them all at the home page. */
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: '/' },
   openGraph: {
     type: 'website', siteName: 'PIUS', url: '/',
     title: TITLE,
-    description: DESCRIPTION,
-    images: [{ url: '/og/og-image.png', width: 1200, height: 630, alt: TITLE }],
+    description: OG_DESCRIPTION,
+    images: [{ url: '/og/og-image.png', width: 1200, height: 630, alt: 'PIUS — Build Your Growth. 유리 질감의 PIUS 큐브 로고' }],
     locale: 'ko_KR', alternateLocale: ['en_US', 'ja_JP'],
   },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION, images: ['/og/og-image.png'] },
+  twitter: { card: 'summary_large_image', title: TITLE, description: OG_DESCRIPTION, images: ['/og/og-image.png'] },
   /* Search engine ownership. Google is verified by public/google4fcd0ab38f628a81.html (do not delete).
      Naver is verified by this meta tag (Search Advisor "HTML 태그"; do not remove). */
   verification: { other: { 'naver-site-verification': '3263912a3ed55ef315838bad0d49f6ae54818532' } },
@@ -63,6 +66,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* keep the site's own dark palette even when the browser forces a dark mode */}
         <meta name="color-scheme" content="dark only" />
+        {/* return visit inside the site: header shown at once, no splash flash (lib/nav.ts) */}
+        <script dangerouslySetInnerHTML={{ __html: RETURN_SCRIPT }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
