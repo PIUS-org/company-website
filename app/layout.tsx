@@ -3,8 +3,8 @@ import './globals.css';
 import { RETURN_SCRIPT } from '@/lib/nav';
 import { SITE_URL } from '@/lib/site';
 
-const TITLE = 'PIUS — Build Your Growth';
-const DESCRIPTION = 'PIUS는 기업의 업무를 이해하고, 그 업무에 맞는 시스템을 기획하고 개발하는 SI 회사입니다.';
+const TITLE = 'PIUS(피우스) — Build Your Growth';
+const DESCRIPTION = '피우스(PIUS)는 기업의 업무를 이해하고, 그 업무에 맞는 시스템을 기획하고 개발하는 SI 회사입니다.';
 const OG_DESCRIPTION = '기업의 업무를 이해하고, 그 업무에 맞는 시스템을 만듭니다.';
 
 /* Canonical URLs are set per page (app/page.tsx, app/portfolio/...), not here:
@@ -36,6 +36,7 @@ const JSON_LD = {
       '@type': 'Organization',
       '@id': `${SITE_URL}/#organization`,
       name: 'PIUS',
+      alternateName: '피우스',
       url: `${SITE_URL}/`,
       logo: `${SITE_URL}/icon.png`,
       description: DESCRIPTION,
@@ -53,6 +54,7 @@ const JSON_LD = {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
       name: 'PIUS',
+      alternateName: '피우스',
       url: `${SITE_URL}/`,
       inLanguage: 'ko',
       publisher: { '@id': `${SITE_URL}/#organization` },
