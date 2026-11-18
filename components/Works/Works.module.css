@@ -17,16 +17,18 @@
 .all:hover svg{ transform:translateX(3px); }
 
 /* tiles */
-.tiles{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(10px,1.1vw,16px); margin-top:clamp(56px,8vw,104px); }
+.tiles{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:1fr; gap:clamp(10px,1.1vw,16px); margin-top:clamp(56px,8vw,104px); }
 .tiles[data-n="4"]{ grid-template-columns:repeat(4,minmax(0,1fr)); }
 .tiles[data-n="2"], .tiles[data-n="1"]{ grid-template-columns:repeat(2,minmax(0,1fr)); }
-.tiles li{ opacity:0; transform:translateY(36px); transition:opacity .9s, transform 1.3s var(--e-out); transition-delay:calc(var(--i) * 90ms); }
+.tiles li{ container-type:inline-size; opacity:0; transform:translateY(36px); transition:opacity .9s, transform 1.3s var(--e-out); transition-delay:calc(var(--i) * 90ms); }
 .tiles:global(.is-in) li{ opacity:1; transform:none; }
 
 .tile{
   --mx:50%; --my:0%;
   position:relative; isolation:isolate; overflow:hidden; display:grid; grid-template-rows:auto 1fr auto; gap:clamp(18px,2vw,28px);
-  aspect-ratio:1.5; padding:clamp(20px,2vw,30px);
+  /* 1.5 is the minimum shape (100cqi = tile width, see .tiles li). Unlike aspect-ratio, a min-height lets the
+     tile grow when the content needs more room, so the label is never clipped on narrow 3-column widths. */
+  min-height:calc(100cqi / 1.5); height:100%; padding:clamp(20px,2vw,30px);
   border:1px solid var(--line); border-radius:clamp(18px,1.8vw,28px);
   background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.012));
   transition:border-color .5s, transform .8s var(--e-out);
