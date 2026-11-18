@@ -22,9 +22,9 @@
     "ja": "路線の自動生成と日付別バージョン管理、組織別の権限分離、乗務員アプリとリアルタイムダッシュボードを一つにまとめた通勤運行プラットフォームです。"
   },
   "overview": {
-    "ko": "잦은 노선 변경을 수작업으로 처리하던 통근 운영을 디지털로 전환한 프로젝트입니다. 여러 운영 조직이 함께 쓰는 구조에 맞춰 권한을 나누고, 현장 운행은 기사 앱으로, 탑승 현황은 실시간 대시보드로 연결했습니다.",
-    "en": "A project that took commuter operations, where frequent route changes were handled by hand, fully digital. Permissions are split for the several organizations that share the system, field operations run on a driver app, and boarding status flows to a live dashboard.",
-    "ja": "頻繁な路線変更を手作業で処理していた通勤運行をデジタル化したプロジェクトです。複数の運営組織が共に使う構造に合わせて権限を分け、現場の運行は乗務員アプリで、乗車状況はリアルタイムダッシュボードでつなぎました。"
+    "ko": "잦은 노선 변경을 수작업으로 처리하던 통근 운영을 디지털로 전환한 프로젝트입니다. 여러 운영 조직이 함께 쓰는 구조에 맞춰 권한을 나누고, 현장 운행은 기사 앱으로, 탑승 현황은 실시간 대시보드로 연결했습니다. 이 페이지의 관리자 화면과 기사 앱 화면은 개인정보·운영정보 보호를 위해 실제 업무 흐름을 바탕으로 재구성한 UI입니다.",
+    "en": "A project that took commuter operations, where frequent route changes were handled by hand, fully digital. Permissions are split for the several organizations that share the system, field operations run on a driver app, and boarding status flows to a live dashboard. The admin and driver-app screens on this page are reconstructed UI based on the actual workflow, with personal and operational information anonymized.",
+    "ja": "頻繁な路線変更を手作業で処理していた通勤運行をデジタル化したプロジェクトです。複数の運営組織が共に使う構造に合わせて権限を分け、現場の運行は乗務員アプリで、乗車状況はリアルタイムダッシュボードでつなぎました。 このページの管理画面とドライバーアプリ画面は、個人情報・運営情報を保護するため、実際の業務フローをもとに再構成したUIです。"
   },
   "industry": {
     "ko": "기업 통근 운송",
@@ -36,6 +36,7 @@
     "mobile",
     "integration"
   ],
+  "mainCategory": "integration",
   "platforms": [
     {
       "type": "admin",
@@ -223,9 +224,9 @@
         }
       ],
       "body": {
-        "ko": "이 페이지의 관리자 화면과 기사 앱 화면은 개인정보·운영정보 보호를 위해 실제 업무 흐름을 바탕으로 재구성한 UI입니다.",
-        "en": "The admin and driver-app screens on this page are reconstructed UI based on the actual workflow, with personal and operational information anonymized.",
-        "ja": "このページの管理画面とドライバーアプリ画面は、個人情報・運営情報を保護するため、実際の業務フローをもとに再構成したUIです。"
+        "ko": "노선 개정 전후의 기준일과 기사 현장 입력을 구분하여, 운영 조직마다 같은 운행을 다른 버전으로 해석하지 않도록 했습니다.",
+        "en": "Effective dates for route revisions and driver-side trip events are kept distinct so multiple operators work from the same current plan.",
+        "ja": "路線改訂の適用日と乗務員の現場入力を分け、複数の運営主体が異なる版の運行計画を参照しないようにしました。"
       }
     },
     {

@@ -1,0 +1,364 @@
+{
+  "id": "franchise-network-ops",
+  "slug": "franchise-network-ops",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 340,
+  "includeInPdf": true,
+  "title": {
+    "ko": "프랜차이즈 본사·가맹점 운영 관리",
+    "en": "Franchise Headquarters & Store Operations",
+    "ja": "フランチャイズ本部・加盟店運営管理"
+  },
+  "subtitle": {
+    "ko": "여러 매장을 하나의 운영 기준으로 연결하다",
+    "en": "One operational standard across every location",
+    "ja": "複数店舗を一つの運営基準でつなぐ"
+  },
+  "summary": {
+    "ko": "본사 운영 점검, 점포별 준수율 비교, 개선 이슈 협업, 공지 확인 및 매장 모바일 점검을 연결한 프랜차이즈 운영 UI 데모입니다.",
+    "en": "A static franchise operations UI demo connecting head office inspections, store-level compliance, issue follow-up, notice acknowledgements, and mobile store checklists.",
+    "ja": "本部による運営点検、店舗別遵守状況の比較、改善課題の管理、お知らせの確認状況、加盟店向けモバイル点検をつないだ静的UIデモです。"
+  },
+  "overview": {
+    "ko": "서로 다른 점포의 점검표와 운영 이슈가 흩어져 있으면 본사에서는 제출 누락과 조치 지연을 한눈에 확인하기 어렵습니다. 이 UI 데모는 본사의 주간 점검·검수·조치·공지 배포 업무와 가맹점의 점검 응답을 하나의 흐름으로 구성했습니다.",
+    "en": "When inspection submissions and corrective actions are scattered across stores, headquarters cannot easily identify missed deadlines or stalled follow-up work. This UI demonstration places standards distribution, inspection, review, corrective actions, and store responses into a connected workflow.",
+    "ja": "店舗ごとに点検票や改善対応が分散すると、本部は未提出や対応の遅れを把握しにくくなります。このUIデモでは、基準配信から点検入力・確認・改善対応までの本部と店舗の業務を一連の画面で表現しています。"
+  },
+  "industry": {
+    "ko": "프랜차이즈·다점포 운영",
+    "en": "Franchise & multi-location operations",
+    "ja": "フランチャイズ・多店舗運営"
+  },
+  "categories": [
+    "erp",
+    "platform",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "erp",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#347471",
+    "accentInk": "#1A3332",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "franchise-multi-store-overview",
+    "franchise-manager-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 B실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "본사 운영 점검, 점포별 준수율 비교, 개선 이슈 협업, 공지 확인 및 매장 모바일 점검을 연결한 프랜차이즈 운영 UI 데모입니다.",
+        "en": "A static franchise operations UI demo connecting head office inspections, store-level compliance, issue follow-up, notice acknowledgements, and mobile store checklists.",
+        "ja": "本部による運営点検、店舗別遵守状況の比較、改善課題の管理、お知らせの確認状況、加盟店向けモバイル点検をつないだ静的UIデモです。"
+      },
+      "images": [
+        "franchise-multi-store-overview"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "점검 완료율만으로는 미제출 매장, 기준 미달 항목, 과거 미조치 이슈 및 공지 미확인 매장을 구분하기 어렵습니다. 본사 관점의 비교와 개별 매장 관점의 실행 화면을 분리할 필요가 있습니다.",
+        "en": "A completion rate alone does not reveal which locations have not submitted their inspections, which checks require attention, which older issues remain open, or who has not acknowledged a notice. Headquarters needs network-wide comparisons, while each store needs a task-oriented workspace.",
+        "ja": "完了率だけでは、点検を未提出の店舗、基準を満たさない項目、前回から残る課題、お知らせを未確認の店舗を区別できません。本部の横断比較と店舗担当者の実務画面を分けて設計する必要があります。"
+      },
+      "body": {
+        "ko": "본사 공지 발행과 가맹점 확인·점검 제출·시정조치가 각각 다른 상태라는 점을 관리 화면에 반영했습니다.",
+        "en": "Head-office notices, store acknowledgements, inspections, and corrective actions require different status tracking.",
+        "ja": "本部通知、店舗確認、点検提出、是正対応はそれぞれ異なる状態として管理する必要があります。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "8개 매장 주간 점검 제출·대기 현황 및 항목별 점수 비교",
+          "en": "Weekly submission tracking and domain-level scores across eight stores",
+          "ja": "8店舗の週次点検提出状況と項目別スコアの比較"
+        },
+        {
+          "ko": "매장 제출 점검표의 세부 문항·증빙 확인과 보완 요청",
+          "en": "Checklist review with supporting evidence and correction requests",
+          "ja": "点検票の設問・証憑確認と補完依頼"
+        },
+        {
+          "ko": "미착수·조치 중·검수 대기 개선 이슈 협업 보드",
+          "en": "Collaborative issue board for not-started, in-progress, and review-pending work",
+          "ja": "未着手・対応中・確認待ちの改善課題ボード"
+        },
+        {
+          "ko": "본사 기준서 공지 배포·매장별 확인 이력",
+          "en": "Head office notice distribution and store-by-store acknowledgement history",
+          "ja": "本部のお知らせ配信と店舗別確認履歴"
+        },
+        {
+          "ko": "매장 담당자용 모바일 점검 임시 저장·미완료 제출 제한",
+          "en": "Mobile inspections with draft saving and submission restricted until complete",
+          "ja": "下書き保存と未完了時の提出制限を備えたモバイル点検UI"
+        }
+      ],
+      "images": [
+        "franchise-manager-mobile"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "본사에서 점검 기준과 공지를 배포합니다.",
+            "en": "Head office publishes operating standards and notices.",
+            "ja": "本部が点検基準とお知らせを配信します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "가맹점 담당자가 공지를 확인하고 모바일 점검표에 답변을 입력합니다.",
+            "en": "Store managers acknowledge notices and enter mobile inspection responses.",
+            "ja": "加盟店担当者が通知を確認し、モバイル点検票に回答します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "본사가 점검 제출·대기 매장을 비교하고 제출 내용을 검수합니다.",
+            "en": "Head office compares submissions and reviews the completed checklists.",
+            "ja": "本部が提出状況を比較し、点検内容と証憑を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "보완 사항을 이슈로 관리해 담당자와 마감일을 연결합니다.",
+            "en": "Follow-up issues are assigned to owners with deadlines.",
+            "ja": "改善課題に担当者と期限を設定します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "증빙을 재검토하고 후속조치 상태를 확인합니다.",
+            "en": "Submitted evidence and corrective-action status are reviewed.",
+            "ja": "証憑と改善対応の進捗を再確認します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "franchise-store-checklist",
+        "franchise-issue-board"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "franchise-notice-ack"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "WEB 관리자 화면 4장과 가맹점 모바일 화면 1장을 HTML/CSS·SVG 기반으로 정적으로 제작했습니다. 8개 점포, 준수율, 이슈, 공지와 체크리스트는 모두 가상 데이터입니다. 실제 사용자 로그인, 권한 제어, 알림 발송, 파일 업로드, 서버, 데이터베이스, 실시간 운영 기능은 구현하지 않았습니다.",
+        "en": "Four static headquarters web screens and one store-manager mobile screen were created using HTML/CSS and SVG. All locations, scores, issues, notices, and checklist data are illustrative. Authentication, authorization, message delivery, file uploads, server logic, databases, and live operations were not implemented.",
+        "ja": "HTML/CSS・SVGを用いて本部向けWEB画面4枚と加盟店向けモバイル画面1枚を静的に制作しました。店舗・点数・課題・お知らせ・点検データはすべて架空です。認証、権限管理、通知送信、ファイルアップロード、サーバー、データベース、実運用機能は実装していません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "현장의 점검 결과가 본사의 판단과 후속조치로 이어지도록 운영 흐름을 화면에 담았습니다.",
+        "en": "A connected visual workflow from frontline inspections to head-office review and corrective action.",
+        "ja": "現場の点検から本部の判断、改善対応までを一続きのUIで表現しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "franchise-multi-store-overview",
+      "file": "franchise-multi-store-overview.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "프랜차이즈 본사가 8개 매장의 주간 점검 현황과 성수점 제출 대기를 비교하는 운영 화면",
+        "en": "Head office operations screen comparing weekly inspections across eight franchise stores and a pending submission from Seongsu",
+        "ja": "本部が8店舗の週次点検状況と聖水店の未提出を比較する運営画面"
+      },
+      "caption": {
+        "ko": "8개 매장 중 6개 점검 완료·2개 대기. 점수 비교표와 FR-018 성수점의 마감·미조치 내역을 연결합니다.",
+        "en": "Six of eight stores have submitted inspections. The matrix links scores with the Seongsu store’s deadline and outstanding follow-up.",
+        "ja": "8店舗のうち6店舗が点検完了、2店舗が未提出。点数比較と聖水店の期限・未対応事項をひも付けます。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "franchise-store-checklist",
+      "file": "franchise-store-checklist.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "수원역점의 위생·서비스·시설·재고 점수와 소화기 점검표 증빙을 검수하는 본사 화면",
+        "en": "Review workspace for Suwon Station store’s category scores and fire-extinguisher inspection evidence",
+        "ja": "水原駅店の衛生・サービス・設備・在庫スコアと消火器点検の証憑を確認する本部画面"
+      },
+      "caption": {
+        "ko": "FR-016 수원역점의 제출 점검표를 열어 세부 문항·첨부자료를 확인하고 보완 요청을 기록합니다.",
+        "en": "Review the submitted checklist for FR-016, inspect supporting evidence, and record a request for updated documentation.",
+        "ja": "FR-016水原駅店の提出済み点検票から設問・添付資料を確認し、補完依頼を記録します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "franchise-issue-board",
+      "file": "franchise-issue-board.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "미착수·조치 중·검수 대기 3개 상태로 분류된 가맹점 후속조치 협업 보드",
+        "en": "Franchise follow-up board with three issues grouped into not started, in progress, and awaiting review",
+        "ja": "未着手・対応中・確認待ちの3状態に分類された加盟店の改善対応ボード"
+      },
+      "caption": {
+        "ko": "지난주 미조치 3건을 FR-016·FR-018 매장, 담당자, 기한, 다음 액션으로 관리합니다.",
+        "en": "Track three unresolved issues from the previous inspection cycle by store, owner, deadline, and next action.",
+        "ja": "前週から未対応の3件を店舗・担当者・期限・次の対応別に管理します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "franchise-notice-ack",
+      "file": "franchise-notice-ack.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "본사가 운영 기준서 v1.8 공지를 배포하고 8개 매장의 읽음 여부를 확인하는 화면",
+        "en": "Head office notice distribution screen showing read acknowledgements for operating standard v1.8 across eight stores",
+        "ja": "運営基準書v1.8を本部から配信し、8店舗の既読状況を確認する画面"
+      },
+      "caption": {
+        "ko": "본사 공지 1건의 발송 원문, 첨부 기준서 및 7개 확인·1개 미확인 매장 이력을 표시합니다.",
+        "en": "View one published notice, its attached standards document, and seven acknowledged stores versus one unacknowledged store.",
+        "ja": "配信済みのお知らせ本文・添付基準書と、確認済み7店舗・未確認1店舗の履歴を表示します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "franchise-manager-mobile",
+      "file": "franchise-manager-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "성수점 담당자가 12개 점검 문항 중 6개를 임시 저장한 모바일 주간 점검 화면",
+        "en": "Mobile weekly inspection screen with six of twelve items saved in a draft by the Seongsu store manager",
+        "ja": "聖水店の担当者が12項目中6項目を下書き保存したモバイル週次点検画面"
+      },
+      "caption": {
+        "ko": "가맹점 담당자는 영역별 점검 답변을 작성하며 6/12개 입력 상태에서는 제출을 비활성화합니다.",
+        "en": "The store manager fills in inspection sections; submission remains disabled while only 6 of 12 fields are entered.",
+        "ja": "加盟店担当者が点検回答を入力し、12項目中6項目の入力段階では提出を無効にしています。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

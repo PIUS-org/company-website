@@ -35,6 +35,7 @@
     "erp",
     "web"
   ],
+  "mainCategory": "erp",
   "platforms": [
     {
       "type": "web",
@@ -265,9 +266,14 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
-        "ko": "생산계획과 현장 실적, 품질검사 결과가 분리되어 있으면 작업 진행 상태 및 생산 이력을 한눈에 확인하기 어렵습니다. 이 데모는 작업지시와 LOT를 공통 연결 기준으로 삼는 화면 구조를 보여줍니다.",
-        "en": "When schedules, shop-floor output and inspection records are isolated, production progress and history are harder to understand. This demo uses work orders and LOT identifiers to connect the screens.",
-        "ja": "生産計画、現場実績、品質検査が別々に管理されると、進捗や製造履歴を横断的に把握しにくくなります。本デモでは作業指示とLOT番号を共通の連携基準として扱います。"
+        "ko": "생산계획과 현장 실적, 품질검사 결과가 분리되어 있으면 작업 진행 상태 및 생산 이력을 한눈에 확인하기 어렵습니다.",
+        "en": "When schedules, shop-floor output and inspection records are isolated, production progress and history are harder to understand.",
+        "ja": "生産計画、現場実績、品質検査が別々に管理されると、進捗や製造履歴を横断的に把握しにくくなります。"
+      },
+      "body": {
+        "ko": "생산계획 변경이 현장 작업과 품질 기록에 어떻게 이어지는지 확인할 수 있도록 작업지시와 LOT를 공통 기준으로 삼았습니다.",
+        "en": "Work orders and lot IDs connect planning changes to shop-floor execution and quality records, making traceability a design priority.",
+        "ja": "生産計画の変更が現場作業と品質記録にどう反映されるか追えるよう、作業指示とロットを共通の軸にしました。"
       }
     },
     {

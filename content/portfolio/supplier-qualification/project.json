@@ -1,0 +1,359 @@
+{
+  "id": "supplier-qualification",
+  "slug": "supplier-qualification",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 390,
+  "includeInPdf": true,
+  "title": {
+    "ko": "협력업체 등록·평가 플랫폼",
+    "en": "Supplier Registration & Qualification Platform",
+    "ja": "協力会社登録・審査プラットフォーム"
+  },
+  "subtitle": {
+    "ko": "서류 검토부터 적격성 평가, 승인 심사까지 연결하는 협력사 관리",
+    "en": "A connected workflow for document review, qualification scoring, and approval",
+    "ja": "書類確認から適格性評価、最終承認審査までをつなぐ協力会社管理"
+  },
+  "summary": {
+    "ko": "협력업체 신청과 증빙 수집, 평가 채점, 리스크 처리, 최종 승인 검토를 하나의 업무 흐름으로 구성한 기업용 WEB 정적 UI 데모입니다.",
+    "en": "A static enterprise web UI concept bringing supplier applications, document intake, scoring, risk review, and final approval checks into one workflow.",
+    "ja": "協力会社の申請受付、必要書類の収集、評価採点、リスク確認、最終承認前の審査を一連の業務として示す企業向けWebの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "협력업체 등록 요청부터 필수 증빙 검수, 항목별 적격성 평가, 리스크 확인, 심사위원 의견 기록까지 이어지는 내부 운영 과정을 다섯 개의 실무 화면으로 구성했습니다. 담당자는 서류 누락과 평가 점수를 각각 확인하고, 승인 전에 해결해야 할 조건을 명확히 파악할 수 있습니다.",
+    "en": "Five practical desktop views represent the internal supplier qualification process: application intake, required-document checks, itemized scoring, risk review, and committee comments. Reviewers can assess missing submissions and recorded scores independently and see outstanding conditions before approval.",
+    "ja": "申請受付、必要書類の確認、項目別適格性評価、リスク管理、審査担当者の意見記録まで、社内の確認業務を5つのデスクトップ画面で表現しました。書類の不足状況と評価点数を分けて確認し、最終承認前に必要な対応を把握できます。"
+  },
+  "industry": {
+    "ko": "기업 구매·협력업체 관리",
+    "en": "Enterprise Procurement & Supplier Management",
+    "ja": "企業調達・協力会社管理"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#777099",
+    "accentInk": "#282533",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "vendor-onboarding-board"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 A실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출).",
+    "표지 배치: stage 레이아웃은 1024px 이상에서 데스크톱 표지 위아래를 약 2% 잘라 하단 상태 표시줄 글자가 잘려서, 자르지 않는 split 레이아웃으로 지정."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "협력업체 신청과 증빙 수집, 평가 채점, 리스크 처리, 최종 승인 검토를 하나의 업무 흐름으로 구성한 기업용 WEB 정적 UI 데모입니다.",
+        "en": "A static enterprise web UI concept bringing supplier applications, document intake, scoring, risk review, and final approval checks into one workflow.",
+        "ja": "協力会社の申請受付、必要書類の収集、評価採点、リスク確認、最終承認前の審査を一連の業務として示す企業向けWebの静的UIデモです。"
+      },
+      "images": [
+        "vendor-onboarding-board"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "제출 서류가 모두 모였다는 사실과 협력업체 자격이 승인됐다는 판단을 구분해 근거 중심으로 검토하도록 구성했습니다.",
+        "en": "Having a complete document set does not mean supplier qualification is approved; evidence and review decisions remain separate.",
+        "ja": "書類が揃ったことと取引先の適格性が承認されたことを区別し、根拠に基づいて確認します。"
+      },
+      "body": {
+        "ko": "업체 신청·문서·평가표·승인 의견이 분리되면 제출 여부와 판단 근거가 일치하는지 확인하기 어렵고, 승인 이전 필수 조건이 누락될 수 있습니다.",
+        "en": "When applications, supporting documents, scorecards, and approval comments are kept apart, reviewers may struggle to verify evidence and identify unmet prerequisites.",
+        "ja": "申請情報、添付書類、評価表、承認意見が分散していると、証拠資料の充足状況や承認前の未解決条件を確認しにくくなります。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "신청 접수 및 단계별 온보딩 현황",
+          "en": "Application intake and onboarding status board",
+          "ja": "申請受付とオンボーディング状況の管理"
+        },
+        {
+          "ko": "필수 제출 서류 확인과 보완 요청 검토",
+          "en": "Required-document review and amendment requests",
+          "ja": "必要書類の確認と補完依頼の検討"
+        },
+        {
+          "ko": "정량·정성 평가 기준 및 점수 기록",
+          "en": "Quantitative and qualitative qualification scorecards",
+          "ja": "定量・定性評価の採点記録"
+        },
+        {
+          "ko": "기한 만료 문서와 미해결 리스크 검토",
+          "en": "Expired-document and outstanding-risk review",
+          "ja": "期限切れ書類と未解決リスクの確認"
+        },
+        {
+          "ko": "심사위원 의견 취합 및 승인 선행 조건 확인",
+          "en": "Committee comments and pre-approval checks",
+          "ja": "審査意見の集約と承認条件の確認"
+        }
+      ],
+      "images": [
+        "vendor-document-review"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "업체 신청 접수",
+            "en": "Receive a supplier application",
+            "ja": "協力会社の申請を受け付ける"
+          }
+        },
+        {
+          "title": {
+            "ko": "필수 증빙 제출·검토",
+            "en": "Collect and review required documents",
+            "ja": "必要書類を収集・確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "자격 요건 확인",
+            "en": "Check eligibility requirements",
+            "ja": "資格要件を審査する"
+          }
+        },
+        {
+          "title": {
+            "ko": "항목별 평가 점수 기록",
+            "en": "Record itemized assessment scores",
+            "ja": "項目別評価点数を記録する"
+          }
+        },
+        {
+          "title": {
+            "ko": "리스크 해소·승인 조건 확인",
+            "en": "Resolve risks and verify approval prerequisites",
+            "ja": "リスクを解消し承認条件を確認する"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "vendor-scorecard"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "vendor-risk-register",
+        "vendor-approval-record"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "기업 관리자용 Desktop UI 이미지 5장만 정적 제작했습니다. 실제 업체 등록·문서 전송·승인 처리·서버·DB·외부 연동 기능은 구현하지 않았습니다. 회사명, 금액, 상태, 평가 수치는 모두 가상 데모 데이터입니다.",
+        "en": "Only five static desktop interface images were designed. No live supplier registration, document transmission, approval execution, backend, database, or third-party integration was implemented. All companies, statuses, and assessment records are fictional demo data.",
+        "ja": "デスクトップ向け静的UI画像5点のみを制作しました。実際の登録、書類送信、承認実行、サーバー・データベース・外部連携は実装していません。会社名・状態・評価記録はすべて架空のデモデータです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "평가 점수와 승인 조건을 분리해, 어떤 근거가 확보되었고 무엇을 보완해야 하는지를 보여주는 협력업체 검토 경험입니다.",
+        "en": "A supplier review experience that separates recorded scores from approval eligibility and makes outstanding evidence requirements clear.",
+        "ja": "評価点数と承認条件を切り分け、確認済みの根拠と不足している書類を把握できる協力会社審査UIです。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "vendor-onboarding-board",
+      "file": "vendor-onboarding-board.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "협력업체 11곳의 접수·서류·평가·승인 단계를 보여주는 온보딩 보드",
+        "en": "Supplier onboarding board displaying eleven applications across four review stages",
+        "ja": "11社の申請・書類提出・評価・承認審査の段階を示すオンボーディングボード"
+      },
+      "caption": {
+        "ko": "신청부터 최종 승인 검토까지 4개 단계로 업체 상태를 관리합니다.",
+        "en": "Track suppliers from intake to final approval review across four stages.",
+        "ja": "申請から最終承認審査までの4段階で進捗を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "vendor-document-review",
+      "file": "vendor-document-review.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "VEN-035의 필수 서류 5종과 미제출 1건을 검토하는 문서 화면",
+        "en": "Document review workspace showing four of five required files received for VEN-035",
+        "ja": "VEN-035の必須書類5点のうち4点の提出状況を確認する画面"
+      },
+      "caption": {
+        "ko": "제출된 증빙 4건을 확인하고 품질관리 확인서 보완 요청 초안을 검토합니다.",
+        "en": "Review four received documents and a draft request for the missing quality assurance form.",
+        "ja": "提出済み4点を確認し、未提出の品質管理確認書に対する補完依頼案を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "vendor-scorecard",
+      "file": "vendor-scorecard.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "VEN-035의 수행 역량·문서 적합성·운영 안정성 점수표",
+        "en": "Qualification scorecard for VEN-035 with capability, documentation, and operational criteria",
+        "ja": "VEN-035の遂行能力・書類適合性・運用安定性の評価表"
+      },
+      "caption": {
+        "ko": "세부 평가 합계 86/100점과 서류 미비에 따른 승인 제한을 함께 보여줍니다.",
+        "en": "View the verified score of 86/100 alongside the outstanding document that blocks approval.",
+        "ja": "合計86/100点と、書類不足による承認制限を同時に示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "vendor-risk-register",
+      "file": "vendor-risk-register.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "문서 만료 및 미해결 위험 항목 6건을 관리하는 협력업체 리스크 원장",
+        "en": "Supplier risk register with six unresolved document and review issues",
+        "ja": "期限切れ書類や未解決事項6件を管理する協力会社リスク台帳"
+      },
+      "caption": {
+        "ko": "누락된 필수 서류, 기한 만료 증빙, 미취합 심사 의견을 구분하고 조치 상태를 검토합니다.",
+        "en": "Separate missing forms, expired certificates, and pending committee input by action status.",
+        "ja": "必須書類の不足、期限切れ証明書、未収集の審査意見を分類して対応状況を確認します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "vendor-approval-record",
+      "file": "vendor-approval-record.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "VEN-035 심사위원 의견 3건과 최종 승인 조건 검토 화면",
+        "en": "Approval review screen compiling three committee comments for VEN-035",
+        "ja": "VEN-035に関する審査意見3件と最終承認条件の確認画面"
+      },
+      "caption": {
+        "ko": "평가 점수 86점과 필수 서류 4/5건을 대조해 승인 보류 사유를 기록합니다.",
+        "en": "Compare a score of 86/100 against four of five required documents to explain the approval hold.",
+        "ja": "評価点86点と必須書類4/5点を照合し、承認保留の理由を記録します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

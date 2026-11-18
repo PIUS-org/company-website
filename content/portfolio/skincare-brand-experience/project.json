@@ -1,0 +1,369 @@
+{
+  "id": "skincare-brand-experience",
+  "slug": "skincare-brand-experience",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 600,
+  "includeInPdf": true,
+  "title": {
+    "ko": "오르네",
+    "en": "ORNE",
+    "ja": "オルネ"
+  },
+  "subtitle": {
+    "ko": "일상의 리추얼을 담은 스킨케어 D2C",
+    "en": "A considered skincare D2C experience",
+    "ja": "毎日の習慣を彩るスキンケアD2C"
+  },
+  "summary": {
+    "ko": "제품 탐색과 성분 확인, 구매 옵션을 하나의 브랜드 경험으로 연결했습니다.",
+    "en": "From collection discovery and ingredient reading to a clear purchase-options flow.",
+    "ja": "商品検索から成分情報、購入オプションまでを一つのブランド体験に。"
+  },
+  "overview": {
+    "ko": "중립적인 제품 스틸라이프와 편집형 브랜드 콘텐츠를 바탕으로 정보와 구매 UX의 균형을 설계했습니다.",
+    "en": "Product still lifes and editorial storytelling balance brand character with commerce usability.",
+    "ja": "プロダクト写真と編集的なストーリーで、世界観と購入しやすさを両立します。"
+  },
+  "industry": {
+    "ko": "스킨케어 브랜드",
+    "en": "Skincare brand",
+    "ja": "スキンケアブランド"
+  },
+  "categories": [
+    "commerce",
+    "web"
+  ],
+  "mainCategory": "commerce",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#835D53",
+    "accentInk": "#2C1F1C",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "skincare-brand-experience-01"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / A실 claude-integration-prompt.txt. 이미지 5장은 a-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "제품 탐색과 성분 확인, 구매 옵션을 하나의 브랜드 경험으로 연결했습니다.",
+        "en": "From collection discovery and ingredient reading to a clear purchase-options flow.",
+        "ja": "商品検索から成分情報、購入オプションまでを一つのブランド体験に。"
+      },
+      "images": [
+        "skincare-brand-experience-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "브랜드 스토리를 읽은 방문자가 제품 종류·성분·용량·구매 옵션을 다시 탐색하지 않고 확인할 수 있게 구성했습니다.",
+        "en": "Brand storytelling leads directly to usable product information: formulation, ingredients, size, and purchase options.",
+        "ja": "ブランドの世界観から製品の種類・成分・容量・購入オプションへ自然につながる構成です。"
+      }
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "02",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "skincare-brand-experience-02"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "FEATURES"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "컬렉션 필터",
+          "en": "Collection filtering",
+          "ja": "商品フィルター"
+        },
+        {
+          "ko": "제품 상세",
+          "en": "Product information",
+          "ja": "詳細情報"
+        },
+        {
+          "ko": "용량·수량 선택",
+          "en": "Size and quantity selection",
+          "ja": "容量・数量選択"
+        },
+        {
+          "ko": "장바구니 요약",
+          "en": "Cart summary",
+          "ja": "カート概要"
+        },
+        {
+          "ko": "브랜드 스토리",
+          "en": "Brand journal",
+          "ja": "ブランドストーリー"
+        }
+      ],
+      "images": [
+        "skincare-brand-experience-03"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "MORE SCREENS"
+      },
+      "layout": "desktop",
+      "heading": {
+        "ko": "이어지는 화면",
+        "en": "More screens",
+        "ja": "その他の画面"
+      },
+      "images": [
+        "skincare-brand-experience-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "surface": "light",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "skincare-brand-experience-05"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "06",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "브랜드 발견",
+            "en": "Discover brand",
+            "ja": "ブランドを知る"
+          }
+        },
+        {
+          "title": {
+            "ko": "제품 비교",
+            "en": "Compare products",
+            "ja": "商品比較"
+          }
+        },
+        {
+          "title": {
+            "ko": "상세 및 사용 정보",
+            "en": "Review details",
+            "ja": "詳細"
+          }
+        },
+        {
+          "title": {
+            "ko": "옵션 선택",
+            "en": "Choose options",
+            "ja": "オプション選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "구매 전 요약",
+            "en": "Pre-purchase summary",
+            "ja": "購入前確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "07",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "홈·컬렉션·상세·구매 옵션·모바일 스토리 정적 UI 5개. 실결제·의학적 효능 보증은 포함하지 않습니다.",
+        "en": "Five static UI screens; no real checkout or clinical efficacy claims.",
+        "ja": "静的UI全5画面。実決済や医学的効能の保証はありません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "08",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "덜어낸 만큼 분명해지는 매일의 선택.",
+        "en": "An everyday choice, made with intention.",
+        "ja": "余分をそぎ落とした、毎日の選択。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "skincare-brand-experience-01",
+      "file": "skincare-brand-experience-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "오르네 브랜드 홈 화면 — 밸런싱 세럼 · 30ml 관련 정적 UI",
+        "en": "ORNE — Brand homepage static user interface showing Balancing Serum · 30ml",
+        "ja": "オルネのブランドホーム画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "브랜드 홈 · 스킨케어 브랜드의 데스크톱 사용자 경험",
+        "en": "Brand homepage · Desktop skincare brand experience",
+        "ja": "ブランドホーム・デスクトップ画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "skincare-brand-experience-02",
+      "file": "skincare-brand-experience-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "오르네 제품 컬렉션 화면 — 밸런싱 세럼 · 30ml 관련 정적 UI",
+        "en": "ORNE — Product collection static user interface showing Balancing Serum · 30ml",
+        "ja": "オルネの商品コレクション画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "제품 컬렉션 · 스킨케어 브랜드의 데스크톱 사용자 경험",
+        "en": "Product collection · Desktop skincare brand experience",
+        "ja": "商品コレクション・デスクトップ画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "skincare-brand-experience-03",
+      "file": "skincare-brand-experience-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "오르네 제품 상세 화면 — 밸런싱 세럼 · 30ml 관련 정적 UI",
+        "en": "ORNE — Product details static user interface showing Balancing Serum · 30ml",
+        "ja": "オルネの商品詳細画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "제품 상세 · 스킨케어 브랜드의 데스크톱 사용자 경험",
+        "en": "Product details · Desktop skincare brand experience",
+        "ja": "商品詳細・デスクトップ画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "skincare-brand-experience-04",
+      "file": "skincare-brand-experience-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "오르네 구매 옵션 화면 — 밸런싱 세럼 · 30ml 관련 정적 UI",
+        "en": "ORNE — Purchase options static user interface showing Balancing Serum · 30ml",
+        "ja": "オルネの購入オプション画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "구매 옵션 · 스킨케어 브랜드의 데스크톱 사용자 경험",
+        "en": "Purchase options · Desktop skincare brand experience",
+        "ja": "購入オプション・デスクトップ画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "skincare-brand-experience-05",
+      "file": "skincare-brand-experience-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "오르네 모바일 브랜드 스토리 화면 — 밸런싱 세럼 · 30ml 관련 정적 UI",
+        "en": "ORNE — Brand journal static user interface showing Balancing Serum · 30ml",
+        "ja": "オルネのブランドストーリー画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "모바일 브랜드 스토리 · 스킨케어 브랜드의 모바일 사용자 경험",
+        "en": "Brand journal · Mobile skincare brand experience",
+        "ja": "ブランドストーリー・モバイル画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

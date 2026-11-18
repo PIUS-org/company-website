@@ -1,0 +1,310 @@
+{
+  "id": "podcast-production-hub",
+  "slug": "podcast-production-hub",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 590,
+  "includeInPdf": true,
+  "title": {
+    "ko": "팟캐스트 제작 허브",
+    "en": "Podcast Production Hub",
+    "ja": "ポッドキャスト制作ハブ"
+  },
+  "subtitle": {
+    "ko": "에피소드의 대본, 멀티트랙 타임라인, 구간 피드백을 통합한 제작 도구",
+    "en": "An episode workspace connecting scripts, multitrack timelines, and timestamped feedback.",
+    "ja": "台本、マルチトラックのタイムライン、区間別コメントをまとめる制作ワークスペース"
+  },
+  "summary": {
+    "ko": "에피소드 워크스페이스, 멀티트랙 타임라인, 대본·쇼 노트, 구간 리뷰와 모바일 검수 화면.",
+    "en": "Episode workspace, multitrack timeline, script and show notes, segment review and a mobile check.",
+    "ja": "エピソード管理、マルチトラック編集、台本とショーノート、区間レビュー、モバイル確認の画面。"
+  },
+  "overview": {
+    "ko": "녹음 파일과 대본, 타임코드 코멘트가 따로 관리되는 문제를 오디오 제작 맥락에서 시각화했습니다.",
+    "en": "A visual design concept for managing recordings, scripts, and time-based comments together during episode production.",
+    "ja": "録音素材、台本、タイムコード付きコメントを制作フローの中で確認できるUIコンセプトです。"
+  },
+  "industry": {
+    "ko": "미디어·팟캐스트",
+    "en": "Media and podcasts",
+    "ja": "メディア・ポッドキャスト"
+  },
+  "categories": [
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#6B5BB5",
+    "accentInk": "#1B1631",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "podcast-production-hub-02"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / E실 claude-integration-prompt.txt. 이미지 5장은 e-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "멀티트랙 타임라인과 대본, 구간 코멘트를 한 화면에서.",
+        "en": "The multitrack timeline, script and timecoded comments on one screen.",
+        "ja": "マルチトラックのタイムライン、台本、区間コメントを一つの画面で。"
+      },
+      "images": [
+        "podcast-production-hub-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "에피소드 대본의 시간 표시와 오디오 구간·리뷰 의견을 같은 편집 시점으로 연결해 검수 오류를 줄이는 데 초점을 맞췄습니다.",
+        "en": "Transcript timestamps, audio segments, and review comments must point to the same edit and version.",
+        "ja": "台本のタイムコード、音声区間、レビュー意見を同じ編集時点と版につなぐことを重視しました。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "에피소드 준비",
+            "en": "Prepare episode",
+            "ja": "準備"
+          }
+        },
+        {
+          "title": {
+            "ko": "트랙 편집",
+            "en": "Edit tracks",
+            "ja": "トラック編集"
+          }
+        },
+        {
+          "title": {
+            "ko": "대본 연계",
+            "en": "Link transcript",
+            "ja": "台本連携"
+          }
+        },
+        {
+          "title": {
+            "ko": "구간 피드백",
+            "en": "Review segment",
+            "ja": "区間レビュー"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일 검토",
+            "en": "Check on mobile",
+            "ja": "モバイル確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "podcast-production-hub-02",
+        "podcast-production-hub-03",
+        "podcast-production-hub-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "podcast-production-hub-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "프론트엔드 정적 UI 시각화 5화면(데스크톱 4, 모바일 1). 서버, 로그인, 저장, 실시간 협업, 외부 연동 미구현. 화면의 데이터는 모두 데모용 가상 데이터입니다.",
+        "en": "Five static front-end interface visuals (four desktop, one mobile). No backend, authentication, persistence, live collaboration, or external integrations. All displayed data is fictional demo data.",
+        "ja": "デスクトップ4画面、モバイル1画面の静的UIビジュアル。サーバー、認証、保存、リアルタイム協業、外部連携は未実装。表示データはデモ用の架空データです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "파형과 대본, 타임코드 코멘트가 같은 시간축에 맞춰져 고칠 구간을 바로 찾아 들을 수 있습니다.",
+        "en": "Waveforms, script and timecoded comments share one timeline, so the part to fix can be found and heard right away.",
+        "ja": "波形、台本、タイムコード付きコメントが同じ時間軸にそろい、直す箇所をすぐに見つけて聴けます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "podcast-production-hub-01",
+      "file": "podcast-production-hub-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "팟캐스트 제작 허브의 에피소드 워크스페이스 정적 화면. 일과 일상 사이의 리듬(THE SMALL SHIFT EP08) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static episode production workspace screen in Podcast Production Hub, showing the demo project “The Rhythm Between Work and Life (The Small Shift EP08)”.",
+        "ja": "ポッドキャスト制作ハブの制作ワークスペースを示す静的UI画面。デモ案件「仕事と日常のあいだのリズム（THE SMALL SHIFT EP08）」の表示です。"
+      },
+      "caption": {
+        "ko": "에피소드 워크스페이스",
+        "en": "Episode production workspace",
+        "ja": "制作ワークスペース"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "podcast-production-hub-02",
+      "file": "podcast-production-hub-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "팟캐스트 제작 허브의 멀티트랙 편집 타임라인 정적 화면. 일과 일상 사이의 리듬(THE SMALL SHIFT EP08) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static multitrack audio timeline screen in Podcast Production Hub, showing the demo project “The Rhythm Between Work and Life (The Small Shift EP08)”.",
+        "ja": "ポッドキャスト制作ハブのマルチトラック編集を示す静的UI画面。デモ案件「仕事と日常のあいだのリズム（THE SMALL SHIFT EP08）」の表示です。"
+      },
+      "caption": {
+        "ko": "멀티트랙 편집 타임라인",
+        "en": "Multitrack audio timeline",
+        "ja": "マルチトラック編集"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "podcast-production-hub-03",
+      "file": "podcast-production-hub-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "팟캐스트 제작 허브의 대본 및 쇼 노트 정적 화면. 일과 일상 사이의 리듬(THE SMALL SHIFT EP08) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static script and show notes screen in Podcast Production Hub, showing the demo project “The Rhythm Between Work and Life (The Small Shift EP08)”.",
+        "ja": "ポッドキャスト制作ハブの台本・ノートを示す静的UI画面。デモ案件「仕事と日常のあいだのリズム（THE SMALL SHIFT EP08）」の表示です。"
+      },
+      "caption": {
+        "ko": "대본 및 쇼 노트",
+        "en": "Script and show notes",
+        "ja": "台本・ノート"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "podcast-production-hub-04",
+      "file": "podcast-production-hub-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "팟캐스트 제작 허브의 오디오 구간 리뷰 정적 화면. 일과 일상 사이의 리듬(THE SMALL SHIFT EP08) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static segment-based audio review screen in Podcast Production Hub, showing the demo project “The Rhythm Between Work and Life (The Small Shift EP08)”.",
+        "ja": "ポッドキャスト制作ハブの区間別レビューを示す静的UI画面。デモ案件「仕事と日常のあいだのリズム（THE SMALL SHIFT EP08）」の表示です。"
+      },
+      "caption": {
+        "ko": "오디오 구간 리뷰",
+        "en": "Segment-based audio review",
+        "ja": "区間別レビュー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "podcast-production-hub-05",
+      "file": "podcast-production-hub-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "팟캐스트 제작 허브의 에피소드 모바일 검수 정적 화면. 일과 일상 사이의 리듬(THE SMALL SHIFT EP08) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static mobile episode review screen in Podcast Production Hub, showing the demo project “The Rhythm Between Work and Life (The Small Shift EP08)”.",
+        "ja": "ポッドキャスト制作ハブのモバイル検収を示す静的UI画面。デモ案件「仕事と日常のあいだのリズム（THE SMALL SHIFT EP08）」の表示です。"
+      },
+      "caption": {
+        "ko": "에피소드 모바일 검수",
+        "en": "Mobile episode review",
+        "ja": "モバイル検収"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

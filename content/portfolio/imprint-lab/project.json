@@ -36,6 +36,7 @@
     "platform",
     "web"
   ],
+  "mainCategory": "commerce",
   "platforms": [
     {
       "type": "web",
@@ -192,14 +193,14 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
+        "ko": "주문제작 포토북은 옵션을 고른 뒤에도 페이지 편집과 인쇄 전 검수가 끝나야 주문 조건을 정확하게 확인할 수 있습니다.",
+        "en": "A personalised photo book is not ready to order until its format, page layout, and pre-print checks refer to the same design.",
+        "ja": "オーダーメイドのフォトブックは仕様選択だけでなく、ページ編集と印刷前確認を経て初めて注文内容を判断できます。"
+      },
+      "body": {
         "ko": "A YEAR IN FRAME이라는 가상의 24페이지 포토북 프로젝트를 중심으로 옵션 설정, 사진 라이브러리, 편집 캔버스, 검수, 결제를 연결했습니다.",
         "en": "The fictional 24-page photo book A YEAR IN FRAME anchors a flow for product configuration, photo libraries, editing, proof review, and checkout.",
         "ja": "架空の24ページのフォトブック「A YEAR IN FRAME」を例に、仕様設定、写真管理、編集、プレビュー、注文をつなぎます。"
-      },
-      "body": {
-        "ko": "20×20cm 하드커버·매트 내지 포토북을 2권 주문하는 예시입니다. 1권 ₩46,000, 상품 합계 ₩92,000, 데모 쿠폰 ₩9,200 할인, 배송비 ₩0, 결제 예정액은 ₩82,800입니다.",
-        "en": "The example configures two 20×20 cm hardcover books with matte pages: ₩46,000 per book, ₩92,000 subtotal, ₩9,200 demo discount, ₩0 shipping, and a ₩82,800 payable total.",
-        "ja": "20×20cm・ハードカバー・マット紙のフォトブックを2冊注文する想定です。1冊₩46,000、小計₩92,000、デモ割引₩9,200、送料₩0、支払予定額₩82,800です。"
       },
       "goals": [
         {

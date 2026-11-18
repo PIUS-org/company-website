@@ -35,6 +35,7 @@
     "mobile",
     "platform"
   ],
+  "mainCategory": "mobile",
   "platforms": [
     {
       "type": "app",
@@ -208,7 +209,12 @@
             "ja": "映像と3Dが同時に動く条件でメモリとレンダリングを最適化しました。"
           }
         }
-      ]
+      ],
+      "body": {
+        "ko": "라이브 영상과 3D 상호작용이 동시에 진행되는 모바일 환경을 고려해 시청 경험과 실시간 반응을 하나의 앱 흐름에서 다뤘습니다.",
+        "en": "Live video and 3D interaction place different demands on an iOS experience, so the viewing and interaction flows were considered together.",
+        "ja": "ライブ映像と3Dインタラクションが同時に動くiOS環境を踏まえ、視聴とリアルタイム反応を一体の体験として扱いました。"
+      }
     },
     {
       "type": "screenShowcase",

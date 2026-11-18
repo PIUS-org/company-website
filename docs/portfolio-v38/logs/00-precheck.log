@@ -1,0 +1,8 @@
+$ 사전 검증: R3-FINAL-5-REPLACEMENT-MANIFEST.csv(5) vs 이미지 zip vs v37 작업본(8a1bc73)
+rows 5 zip files 5 1:1 True
+premium-interior-studio-02.webp OK
+private-clinic-brand-site-05.webp OK
+local-fitness-class-app-03.webp OK
+local-fitness-class-app-05.webp OK
+podcast-production-hub-02.webp OK
+problems 0

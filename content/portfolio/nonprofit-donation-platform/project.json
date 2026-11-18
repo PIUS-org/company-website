@@ -1,0 +1,353 @@
+{
+  "id": "nonprofit-donation-platform",
+  "slug": "nonprofit-donation-platform",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 670,
+  "includeInPdf": true,
+  "title": {
+    "ko": "굿핸즈",
+    "en": "Goodhands",
+    "ja": "グッドハンズ"
+  },
+  "subtitle": {
+    "ko": "스토리와 투명한 계획을 연결하는 후원 플랫폼",
+    "en": "A donation platform balancing stories with transparent plans",
+    "ja": "ストーリーと透明な計画をつなぐ寄付プラットフォーム"
+  },
+  "summary": {
+    "ko": "캠페인 발견부터 금액 선택과 후원 기록까지의 경험.",
+    "en": "Campaign discovery, contribution choices and donation records.",
+    "ja": "キャンペーンの発見から金額選択、記録確認まで。"
+  },
+  "overview": {
+    "ko": "지역 참여 캠페인을 발견하고 목적·예상 사용 계획을 확인한 뒤 후원 주기와 금액을 선택하는 웹·모바일 UI입니다.",
+    "en": "A web and mobile donation concept for finding local initiatives, reviewing intended use of funds and choosing an amount and frequency.",
+    "ja": "地域の活動を探し、目的・資金の使用計画を確認して、寄付頻度と金額を選択するWeb・モバイルUIです。"
+  },
+  "industry": {
+    "ko": "후원",
+    "en": "Donations and nonprofits",
+    "ja": "寄付・非営利"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#2F5D43",
+    "accentInk": "#182F22",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "nonprofit-donation-platform-03"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / B실 claude-integration-prompt.txt. 이미지 5장은 b-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "캠페인 발견부터 금액 선택과 후원 기록까지의 경험.",
+        "en": "Campaign discovery, contribution choices and donation records.",
+        "ja": "キャンペーンの発見から金額選択、記録確認まで。"
+      },
+      "images": [
+        "nonprofit-donation-platform-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "캠페인 공감과 실제 후원 결정을 구분해 금액·주기·사용 목적을 명확히 확인하도록 설계했습니다.",
+        "en": "A compelling campaign story should be accompanied by clear donation amount, frequency, and intended use.",
+        "ja": "キャンペーンへの共感と寄付の判断を分け、金額・頻度・用途を明確に確認できる構成です。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "캠페인 홈",
+          "en": "Campaign home",
+          "ja": "キャンペーントップ"
+        },
+        {
+          "ko": "분야별 탐색",
+          "en": "Filtered discovery",
+          "ja": "分野別検索"
+        },
+        {
+          "ko": "목적과 사용 계획",
+          "en": "Project and budget details",
+          "ja": "目的と予算計画"
+        },
+        {
+          "ko": "일시·정기 후원 선택",
+          "en": "One-time and recurring choices",
+          "ja": "単発・定期寄付選択"
+        },
+        {
+          "ko": "모바일 후원 확인",
+          "en": "Mobile contribution receipt",
+          "ja": "モバイル確認"
+        }
+      ],
+      "images": [
+        "nonprofit-donation-platform-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "홈",
+            "en": "Home",
+            "ja": "トップ"
+          }
+        },
+        {
+          "title": {
+            "ko": "캠페인 탐색",
+            "en": "Campaign discovery",
+            "ja": "キャンペーン検索"
+          }
+        },
+        {
+          "title": {
+            "ko": "상세 및 사용 계획",
+            "en": "Detail and fund plan",
+            "ja": "詳細・使用計画"
+          }
+        },
+        {
+          "title": {
+            "ko": "후원 금액 설정",
+            "en": "Contribution selection",
+            "ja": "寄付額選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "가상 기록 확인",
+            "en": "Demo receipt",
+            "ja": "デモ記録確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "nonprofit-donation-platform-03",
+        "nonprofit-donation-platform-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "nonprofit-donation-platform-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "모든 모금액과 후원 기록은 가상 데이터입니다. 결제·기부금 영수증 발행·실제 공익 사업 운영은 구현하지 않았습니다.",
+        "en": "All fundraising figures and records are fictional. No live payments, tax receipts or actual nonprofit operations were implemented.",
+        "ja": "募金額と寄付記録はすべて架空です。実決済、寄付証明書の発行、団体運営は未実装です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "좋은 의도를 분명한 정보와 부담 없는 참여로 이어갑니다.",
+        "en": "Connecting thoughtful participation with clear information.",
+        "ja": "思いやりを、わかりやすい情報と参加体験につなぎます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "nonprofit-donation-platform-01",
+      "file": "nonprofit-donation-platform-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "굿핸즈 캠페인 홈 정적 UI 화면",
+        "en": "Static UI screenshot of Goodhands: Campaign home",
+        "ja": "グッドハンズの「キャンペーントップ」静的UI画面"
+      },
+      "caption": {
+        "ko": "캠페인 홈",
+        "en": "Campaign home",
+        "ja": "キャンペーントップ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "nonprofit-donation-platform-02",
+      "file": "nonprofit-donation-platform-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "굿핸즈 프로젝트 탐색 정적 UI 화면",
+        "en": "Static UI screenshot of Goodhands: Project discovery",
+        "ja": "グッドハンズの「プロジェクト検索」静的UI画面"
+      },
+      "caption": {
+        "ko": "프로젝트 탐색",
+        "en": "Project discovery",
+        "ja": "プロジェクト検索"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "nonprofit-donation-platform-03",
+      "file": "nonprofit-donation-platform-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "굿핸즈 캠페인 상세 정적 UI 화면",
+        "en": "Static UI screenshot of Goodhands: Campaign details",
+        "ja": "グッドハンズの「詳細」静的UI画面"
+      },
+      "caption": {
+        "ko": "캠페인 상세",
+        "en": "Campaign details",
+        "ja": "詳細"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "nonprofit-donation-platform-04",
+      "file": "nonprofit-donation-platform-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "굿핸즈 후원 진행 정적 UI 화면",
+        "en": "Static UI screenshot of Goodhands: Donation checkout",
+        "ja": "グッドハンズの「寄付手続き」静的UI画面"
+      },
+      "caption": {
+        "ko": "후원 진행",
+        "en": "Donation checkout",
+        "ja": "寄付手続き"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "nonprofit-donation-platform-05",
+      "file": "nonprofit-donation-platform-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "굿핸즈 후원 내역 정적 UI 화면",
+        "en": "Static UI screenshot of Goodhands: Donation record",
+        "ja": "グッドハンズの「寄付記録」静的UI画面"
+      },
+      "caption": {
+        "ko": "후원 내역",
+        "en": "Donation record",
+        "ja": "寄付記録"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

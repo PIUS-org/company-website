@@ -1,0 +1,379 @@
+{
+  "id": "home-service-dispatch",
+  "slug": "home-service-dispatch",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 320,
+  "includeInPdf": true,
+  "title": {
+    "ko": "방문형 생활서비스 매칭",
+    "en": "On-site Home Service Matching",
+    "ja": "訪問型生活サービスのマッチング"
+  },
+  "subtitle": {
+    "ko": "고객 요청에서 견적 비교, 기사 배정, 현장 검수까지",
+    "en": "From customer requests and quote comparison to crew assignment and field verification",
+    "ja": "依頼受付・見積比較からスタッフ配置・現場確認まで"
+  },
+  "summary": {
+    "ko": "고객의 방문서비스 요청을 복수 견적·기사 가용 일정·현장 체크리스트까지 연결한 WEB·APP 정적 UI 데모입니다.",
+    "en": "A static WEB/APP UI demonstration connecting customer service requests with competing quotes, crew availability, visit sequencing, and field checklists.",
+    "ja": "顧客の訪問依頼から複数見積、スタッフの空き時間、訪問順、現場チェックまでをつないだWEB・APPの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "가상 요청 HC-0042를 중심으로 고객이 방문 홈클리닝을 요청하고, 세 업체의 제안 조건을 비교한 뒤 2인팀 견적을 선택하는 흐름을 구성했습니다. 운영자는 기사 4명의 시간 충돌을 확인해 2인팀을 배정하고, 모의 방문 순서도에서 당일 업무를 검토합니다. 현장 화면은 작업 항목 4개 중 3개가 확인되었으나 고객 검수가 남아 완료 전인 상태를 표현합니다.",
+    "en": "The interface follows fictional request HC-0042: a customer submits a home-cleaning request, compares three provider quotations, and selects a two-person service quote. An operator checks four workers for scheduling conflicts and assigns a two-person crew, while a schematic day board displays the order of visits. The field screen records three of four inspection tasks as checked but keeps the job incomplete while customer sign-off is outstanding.",
+    "ja": "架空の依頼HC-0042をもとに、顧客が訪問清掃を申し込み、3社の見積条件を比較して2人作業のプランを選ぶ流れを表現しました。運営担当者は4人のスタッフの時間重複を確認して2人を割り当て、訪問順の模式図で当日の業務を把握します。現場画面では4項目のうち3項目が確認済みですが、顧客確認が残っているため完了前の状態を維持しています。"
+  },
+  "industry": {
+    "ko": "방문형 생활서비스·홈케어",
+    "en": "On-site home services and home care",
+    "ja": "訪問型生活サービス・ホームケア"
+  },
+  "categories": [
+    "platform",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#36796C",
+    "accentInk": "#1A332E",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "home-customer-request-mobile",
+    "home-quote-comparison-mobile",
+    "home-completion-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 B실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "고객의 방문서비스 요청을 복수 견적·기사 가용 일정·현장 체크리스트까지 연결한 WEB·APP 정적 UI 데모입니다.",
+        "en": "A static WEB/APP UI demonstration connecting customer service requests with competing quotes, crew availability, visit sequencing, and field checklists.",
+        "ja": "顧客の訪問依頼から複数見積、スタッフの空き時間、訪問順、現場チェックまでをつないだWEB・APPの静的UIデモです。"
+      },
+      "images": [
+        "home-customer-request-mobile"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "고객의 사진·방문 희망 시간·견적 선택 이력이 기사 배정 및 현장 점검과 분리되면 고객에게 확정된 조건을 현장에 정확하게 전달하기 어렵습니다. 단순한 예약 목록만으로는 기사별 시간 충돌과 고객 완료 확인 대기 상태도 파악하기 어렵습니다.",
+        "en": "When request photos, preferred visit windows, selected quotes, crew schedules, and inspection records live in disconnected systems, operators risk assigning the wrong conditions and losing track of availability or customer approval. A basic booking list is not enough to show those operational dependencies.",
+        "ja": "依頼時の写真、希望時間、見積選択、スタッフ配置、現場確認の情報が分断されると、顧客と合意した条件を正しく現場に引き継ぐことが困難になります。予約一覧だけでは担当者の時間重複や顧客の完了確認待ちも把握しにくくなります。"
+      },
+      "body": {
+        "ko": "고객 요청과 방문기사의 이동·작업 완료 상태가 달라지지 않도록 배정·진행·결과 확인 흐름을 연결했습니다.",
+        "en": "Customer bookings and field-worker dispatch updates need to stay linked through assignment, visit, and completion.",
+        "ja": "顧客依頼と訪問担当者の移動・作業完了状態がずれないよう、割当から結果確認までつなぎました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "고객 모바일 서비스 요청과 방문 희망 시간·참고 이미지 등록 화면",
+          "en": "Customer mobile request with preferred date, time, and illustrative reference images",
+          "ja": "希望日時と参考画像を登録する顧客向けモバイル依頼画面"
+        },
+        {
+          "ko": "세 업체의 견적 금액·2인/1인 작업 인력·소요시간 비교 및 선택 결과",
+          "en": "Comparison of three fictional quotes by price, crew size, and expected duration",
+          "ja": "架空の3社の見積金額・作業人数・所要時間の比較と選択結果"
+        },
+        {
+          "ko": "운영자용 기사 배정 타임그리드와 겹치는 일정 식별",
+          "en": "Dispatch workbench that identifies overlapping personnel schedules",
+          "ja": "重複するスタッフ予定を識別する運営者向け配置タイムグリッド"
+        },
+        {
+          "ko": "실제 지도·교통·ETA가 없는 비지리적 방문 순서 시각화",
+          "en": "Nongeographic visit-order diagram with no live map, traffic data, or ETA",
+          "ja": "実地図・交通情報・到着予測を含まない訪問順の模式図"
+        },
+        {
+          "ko": "현장 모바일 4개 항목 점검·사진 예시·고객 확인 대기 상태",
+          "en": "Mobile field checklist with sample illustrations and pending customer confirmation",
+          "ja": "例示画像と顧客確認待ちを備えた現場向けモバイルチェックリスト"
+        }
+      ],
+      "images": [
+        "home-quote-comparison-mobile"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "고객이 방문 홈클리닝과 희망 날짜·시간을 등록합니다.",
+            "en": "The customer submits a home-cleaning request with a preferred visit window.",
+            "ja": "顧客が訪問清掃と希望日時を登録します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "업체 세 곳의 가상 견적을 비교하고 2인·2시간·180,000원 견적을 선택합니다.",
+            "en": "They compare three fictional quotes and choose a two-person, two-hour service for KRW 180,000.",
+            "ja": "架空の3つの見積を比較し、2人・2時間・180,000ウォンのプランを選びます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "운영자가 배정 가능 인력 두 명을 검토해 방문 일정을 확정합니다.",
+            "en": "An operator assigns two available field workers to the selected booking.",
+            "ja": "運営担当者が空き状況を確認し、現場スタッフ2人を割り当てます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장팀의 순차 방문 일정을 모의 업무 보드에서 확인합니다.",
+            "en": "The crew reviews the planned visit order on a schematic operations board.",
+            "ja": "チームが模式的な訪問順ボードで当日の予定を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장 점검 항목을 기록하고 고객 확인이 완료되기 전까지 작업을 미완료로 유지합니다.",
+            "en": "Field checks are recorded, but the job stays incomplete until outstanding checks and customer confirmation are finished.",
+            "ja": "現場確認を記録し、残りの項目と顧客確認が終わるまでは未完了とします。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "home-provider-assignment"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "home-completion-mobile"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "06",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "home-crew-route"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "07",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "모바일 고객 화면 2장, 데스크톱 운영 화면 2장, 모바일 현장기사 화면 1장을 HTML/CSS/SVG 기반 정적 프론트 UI 이미지로 제작했습니다. 요청번호, 고객·업체·기사, 가격·날짜·주소 범위·비교 견적·현장 사진 예시는 모두 가상입니다. 실제 견적 API, 매칭 알고리즘, 결제, 실시간 위치·지도·ETA, 사진 업로드, 서명, 실서비스 운영, 서버·DB는 구현하지 않았습니다.",
+        "en": "Two customer mobile screens, two desktop operator screens, and one field-worker mobile screen were produced as static HTML/CSS/SVG front-end images. Request IDs, names, providers, staff, prices, dates, broad locations, quote comparisons, and image illustrations are fictional. No live quotation or matching API, payments, geolocation, maps, traffic-based ETA, uploads, signatures, service operations, servers, or database were implemented.",
+        "ja": "顧客向けモバイル2画面、運営者向けデスクトップ2画面、現場スタッフ向けモバイル1画面をHTML/CSS/SVGによる静的フロントUI画像として制作しました。依頼番号、顧客・事業者・担当者、金額、日時、地域、比較見積、画像はすべて架空です。実際の見積・マッチングAPI、決済、位置情報・地図・ETA、画像アップロード、署名、サービス運営、サーバー・DBは実装していません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "08",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "하나의 서비스 요청이 견적 결정과 기사 배정, 현장 검수까지 어떻게 이어지는지 각 역할별 화면으로 보여주는 운영 UI 사례입니다.",
+        "en": "A role-based UI example showing how a service request flows through quote selection, crew assignment, and on-site verification.",
+        "ja": "一つの依頼が見積選択、スタッフ配置、現場確認へとつながる業務フローを役割別画面で表現したUI事例です。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "home-customer-request-mobile",
+      "file": "home-customer-request-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "방문 홈클리닝 요청 HC-0042의 날짜·시간 선택, 지역, 가상 참고 이미지, 예상가를 표시한 고객 모바일 화면",
+        "en": "Customer mobile request HC-0042 showing preferred visit date and time, area, illustrative photos, and estimated price",
+        "ja": "訪問清掃依頼HC-0042の希望日時、地域、例示画像、概算料金を示す顧客向けモバイル画面"
+      },
+      "caption": {
+        "ko": "고객이 11월 18일 13~15시 방문을 희망하고 시연 예상가 180,000원을 확인합니다.",
+        "en": "The customer requests November 18, 13:00–15:00 and reviews a simulated KRW 180,000 estimate.",
+        "ja": "11月18日13～15時の訪問希望と架空の概算180,000ウォンを表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "home-quote-comparison-mobile",
+      "file": "home-quote-comparison-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "HC-0042에 제안된 165,000원·180,000원·198,000원 세 견적과 선택 결과를 비교하는 고객 모바일 화면",
+        "en": "Mobile quote comparison for HC-0042 showing three fictional prices and the selected KRW 180,000 offer",
+        "ja": "HC-0042の架空見積3件と180,000ウォンの選択結果を比較するモバイル画面"
+      },
+      "caption": {
+        "ko": "작업 인원과 시간을 함께 비교해 2인·2시간·180,000원 견적을 선택한 상태입니다.",
+        "en": "Crew size and duration are compared; the two-person, two-hour KRW 180,000 quote is selected.",
+        "ja": "人数と所要時間を比較し、2人・2時間・180,000ウォンの見積を選択済みです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "home-provider-assignment",
+      "file": "home-provider-assignment.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "기사 후보 4명의 시간별 배정 가능 여부와 HC-0042에 배정된 2인팀을 보여주는 운영자 데스크톱 작업대",
+        "en": "Operator dispatch workbench showing four staff schedules and a two-person crew assigned to HC-0042",
+        "ja": "4人のスタッフ予定とHC-0042への2人割当を表示する管理者向け配置画面"
+      },
+      "caption": {
+        "ko": "기존 작업과 겹치는 후보를 제외하고 이수연·박현우 2인을 13~15시에 배정합니다.",
+        "en": "Two available workers are assigned from 13:00 to 15:00 without overlapping other jobs.",
+        "ja": "既存予定との重複を避け、13～15時にスタッフ2人を割り当てます。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "home-crew-route",
+      "file": "home-crew-route.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "실제 지도나 이동 시간 계산 없이 HC-0042를 포함한 3개 방문 업무의 순서를 나타낸 모의 동선 보드",
+        "en": "Schematic visit-order board for three fictional jobs including HC-0042, without real maps or ETA",
+        "ja": "実地図や到着予測を用いず、HC-0042を含む3件の訪問順を示す模式ボード"
+      },
+      "caption": {
+        "ko": "오전 완료 1건과 오후 예정 2건의 순서만 확인하며 교통·거리·ETA는 계산하지 않습니다.",
+        "en": "The board shows one completed morning visit and two planned afternoon visits without routing metrics.",
+        "ja": "午前の完了1件と午後の予定2件の順番のみを表示し、交通・距離・ETAは計算しません。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "home-completion-mobile",
+      "file": "home-completion-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "HC-0042의 현장 체크리스트 3/4 완료와 고객 확인 대기 상태를 보여주는 기사 모바일 점검 화면",
+        "en": "Field-worker mobile checklist showing three of four tasks checked for HC-0042, with customer confirmation pending",
+        "ja": "HC-0042の点検4項目中3項目の確認と顧客承認待ちを表示する現場スタッフ画面"
+      },
+      "caption": {
+        "ko": "현장 작업 기록은 작성되었으나 창틀 확인과 고객 서명이 남아 완료 상태로 처리하지 않습니다.",
+        "en": "Three checks are recorded, but the job remains incomplete pending the final check and customer sign-off.",
+        "ja": "3項目の確認後も窓枠の確認と顧客署名が残るため完了扱いにはしません。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

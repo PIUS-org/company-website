@@ -1,0 +1,5 @@
+$ node form.mjs — NEXT_PUBLIC_FORM_ENDPOINT 미설정, 상담 버튼 경유 초안 + 필수값 입력 후 제출 (ko/en/ja) · commit 19f6bca
+ko is-done false is-sending false fail toast shown true success text visible false POST requests 0
+en is-done false is-sending false fail toast shown true success text visible false POST requests 0
+ja is-done false is-sending false fail toast shown true success text visible false POST requests 0
+# exit=0

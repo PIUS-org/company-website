@@ -1,7 +1,7 @@
 'use client';
 /* PORTFOLIO on the main page (between Process and Contact).
    No project results here. What we have built is shown as counters per category (computed from the
-   published data); every tile is a door into /portfolio, already filtered to that category.
+   published data, each project counted once — under its mainCategory); every tile is a door into /portfolio, already filtered to that category.
    A quiet text link covers "see everything". Rendered only when at least one project is published. */
 import { type ReactNode, useEffect, useRef } from 'react';
 import { onceInView, RM } from '@/lib/core';
@@ -31,7 +31,7 @@ const ICON: Record<Category, ReactNode> = {
 
 export function worksTiles(projects: Project[]) {
   return ORDER.filter(c => (CATEGORIES as readonly string[]).includes(c))
-    .map(c => ({ cat: c, value: projects.filter(p => p.categories.includes(c)).length }))
+    .map(c => ({ cat: c, value: projects.filter(p => p.mainCategory === c).length }))
     .filter(x => x.value > 0);
 }
 

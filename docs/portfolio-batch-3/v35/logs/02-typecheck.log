@@ -1,0 +1,12 @@
+$ npm run typecheck
+# 2026-11-16T10:47:08+09:00 · commit 8aca9a2
+
+> pius-site@1.0.0 pretypecheck
+> node scripts/portfolio.mjs sync
+
+portfolio sync [public] · 포함 6건 (fity:approved, transport-erp-monitoring:approved, commute-shuttle-platform:approved, farm-commerce-backend:approved, metaverse-live-app:approved, charter-bus-dispatch:approved) · 제외 78건
+
+> pius-site@1.0.0 typecheck
+> tsc --noEmit
+
+# exit=0

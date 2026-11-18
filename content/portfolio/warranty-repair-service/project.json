@@ -1,0 +1,385 @@
+{
+  "id": "warranty-repair-service",
+  "slug": "warranty-repair-service",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 260,
+  "includeInPdf": true,
+  "title": {
+    "ko": "제품 A/S·보증수리 관리",
+    "en": "Product Service & Warranty Repair Management",
+    "ja": "製品アフターサービス・保証修理管理"
+  },
+  "subtitle": {
+    "ko": "고장 접수부터 보증 판정, 부품 출고, 현장 수리 완료까지",
+    "en": "From fault reporting and coverage checks to part issuance and field completion",
+    "ja": "故障受付から保証判定、部品出庫、現場修理完了まで"
+  },
+  "summary": {
+    "ko": "고객의 A/S 접수부터 운영자의 보증 판정·부품 관리, 현장 기사의 작업 확인까지 연결한 정적 WEB·APP UI 데모입니다.",
+    "en": "A static WEB and APP UI demonstration linking customer service requests, warranty assessments, spare-parts control, and technician inspections.",
+    "ja": "顧客の修理受付、運営担当者による保証判定・部品管理、現場技術者の点検記録をつなぐWEB・APPの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "고객이 고장 증상과 사진을 등록하면 운영자는 접수번호를 기준으로 보증 유효기간과 수리 범위를 검토하고 기사를 배정합니다. 이후 담당자는 교체 부품 1개의 출고 및 재고 변동을 기록하고, 현장 기사는 수리 점검 결과와 전후 사진을 정리합니다. 한 티켓의 시점별 상태를 서로 다른 역할의 화면으로 표현했습니다.",
+    "en": "After a customer submits a fault description and photographs, the operations team uses the ticket reference to check coverage and planned repair work, then assigns a technician. The parts team records the issue of a single replacement component and the inventory change. A field technician documents the repair, test results, and before-and-after evidence. Each role is shown at a distinct point in the same ticket lifecycle.",
+    "ja": "顧客が故障内容と写真を登録すると、運営担当者は受付番号を使って保証期間と修理範囲を確認し、技術者を割り当てます。続いて交換部品1点の出庫と在庫変動を記録し、現場技術者が修理・動作確認の結果と作業前後の画像をまとめます。同じチケットの異なる時点を、役割別の画面で示しました。"
+  },
+  "industry": {
+    "ko": "가전제품 A/S 및 보증수리 운영",
+    "en": "Consumer appliance after-sales service and warranty repair",
+    "ja": "家電製品のアフターサービス・保証修理運営"
+  },
+  "categories": [
+    "platform",
+    "web",
+    "mobile"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#3A6E81",
+    "accentInk": "#1A2C33",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "repair-intake-mobile",
+    "repair-field-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 B실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "고객의 A/S 접수부터 운영자의 보증 판정·부품 관리, 현장 기사의 작업 확인까지 연결한 정적 WEB·APP UI 데모입니다.",
+        "en": "A static WEB and APP UI demonstration linking customer service requests, warranty assessments, spare-parts control, and technician inspections.",
+        "ja": "顧客の修理受付、運営担当者による保証判定・部品管理、現場技術者の点検記録をつなぐWEB・APPの静的UIデモです。"
+      },
+      "images": [
+        "repair-intake-mobile"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "접수 이력, 보증 판정, 부품 재고, 현장 작업 기록이 분산되면 승인 전 작업이 진행되거나 미출고 부품이 교체 완료로 표시되는 등의 상태 불일치가 발생할 수 있습니다. 작업 순서와 이력의 연결이 중요합니다.",
+        "en": "When customer requests, warranty decisions, inventory, and field records live in separate workflows, repairs can appear authorized before approval or parts can appear installed before they are issued. A consistent sequence of states and traceable events is essential.",
+        "ja": "受付情報、保証判定、部品在庫、現場作業記録が分断されると、承認前の修理が進んだり、未出庫の部品が交換済みとして表示されたりするおそれがあります。作業順序と履歴の整合性が重要です。"
+      },
+      "body": {
+        "ko": "보증 판정 전에 부품 교체가 완료된 것처럼 보이지 않도록 접수·승인·출고·현장 작업을 단계별로 구분했습니다.",
+        "en": "Warranty decisions, parts release, and field work need distinct checkpoints so repair progress is not overstated.",
+        "ja": "保証判定前に部品交換が完了したように見えないよう、受付・承認・出庫・現場対応を分けました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "고객: 제품 고장 접수 내역, 증상·사진 및 진행 단계 확인",
+          "en": "Customer: review the service ticket, reported symptoms, photographs, and progress",
+          "ja": "顧客：故障受付内容、症状・写真、進行状況の確認"
+        },
+        {
+          "ko": "운영자: 접수 티켓별 보증 결과 확인과 기사 배정 이력 관리",
+          "en": "Operator: inspect ticket queues, warranty decisions, and technician assignment history",
+          "ja": "運営担当者：受付チケット、保証判定、技術者の割り当て履歴の確認"
+        },
+        {
+          "ko": "운영자: 모델·시리얼·구매일·보증 만료일 기반의 가상 보증 판정",
+          "en": "Operator: review a simulated coverage decision using model, masked serial, purchase date, and warranty expiry",
+          "ja": "運営担当者：型番・マスク済みシリアル・購入日・保証期限を用いた模擬保証判定"
+        },
+        {
+          "ko": "자재 담당자: 교체 부품 출고 전표, 재고 수량과 기사 인계 기록",
+          "en": "Parts coordinator: track a part-issue document, stock movement, and handover to a technician",
+          "ja": "部品担当者：部品出庫伝票、在庫数量、技術者への引き渡し履歴の確認"
+        },
+        {
+          "ko": "현장 기사: 부품 교체·작동 테스트·수리 사진·완료 안내 초안 점검",
+          "en": "Field technician: record component replacement, functional tests, photographic evidence, and a completion-notice draft",
+          "ja": "現場技術者：部品交換、動作テスト、作業写真、完了案内文の下書き確認"
+        }
+      ],
+      "images": [
+        "repair-warranty-check"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "고장 접수 및 사진 등록",
+            "en": "Submit a fault report and photographs",
+            "ja": "故障内容と写真を登録"
+          }
+        },
+        {
+          "title": {
+            "ko": "보증 자격 검토",
+            "en": "Review warranty eligibility",
+            "ja": "保証対象かどうかを確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "기사 배정",
+            "en": "Assign a technician",
+            "ja": "担当技術者を割り当て"
+          }
+        },
+        {
+          "title": {
+            "ko": "부품 출고 및 인계",
+            "en": "Issue and hand over the replacement part",
+            "ja": "交換部品を出庫・引き渡し"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장 수리와 작동 점검",
+            "en": "Repair and test the appliance on site",
+            "ja": "現場で修理・動作確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "완료 안내 초안 작성",
+            "en": "Prepare a completion-notice draft",
+            "ja": "完了通知の下書きを作成"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "repair-ticket-workbench"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "repair-field-mobile"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "06",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "repair-parts-allocation"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "07",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "고객 모바일 접수 화면 1개, 운영자 데스크톱 관리 화면 3개, 기사 모바일 점검 화면 1개를 정적 HTML/CSS 렌더링 이미지로 제작했습니다. 제품 수리, 보증 판정, 재고 차감, 고객 통지, 서버·API 연계는 실제 구현되지 않았습니다. 모든 금액·사진·기록은 가상 시연입니다.",
+        "en": "Produced one customer mobile intake image, three operator desktop management images, and one technician mobile inspection image using static HTML/CSS rendering. Repairs, warranty approval, inventory updates, notifications, APIs, and server integration are visual simulations only. All amounts, images, and records are fictional.",
+        "ja": "顧客向けモバイル受付画面1点、運営者向けデスクトップ管理画面3点、現場技術者向けモバイル点検画面1点を、HTML/CSSによる静的画像として制作しました。実際の修理、保証判定、在庫更新、顧客通知、API・サーバー連携は実装していません。金額・画像・履歴はすべて架空のデモです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "08",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "접수·보증·부품·현장 작업이 하나의 티켓으로 이어지는 서비스 운영 흐름을 시각적으로 설계한 UI 사례입니다.",
+        "en": "A UI case study connecting intake, coverage, stock control, and field service through one traceable ticket.",
+        "ja": "受付・保証・部品・現場作業を一つのチケットでつなぐサービス運営フローのUI設計事例です。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "repair-intake-mobile",
+      "file": "repair-intake-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "고객이 SR-2712 공기청정기 전원 오류 접수 내역과 고장 사진 2장, 보증 확인 및 기사 배정 완료 상태를 확인하는 모바일 화면",
+        "en": "Customer mobile screen for ticket SR-2712 showing an air purifier power fault, two mock photographs, warranty verification, and technician assignment",
+        "ja": "顧客が受付番号SR-2712の空気清浄機の電源故障、添付写真2枚、保証確認、技術者の割り当て完了を確認するモバイル画面"
+      },
+      "caption": {
+        "ko": "고객 접수 · 증상·사진·보증 및 기사 배정 단계 확인",
+        "en": "Customer intake — fault, photos, warranty status, and assignment progress",
+        "ja": "顧客受付 — 症状・写真・保証・技術者割り当ての確認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "repair-ticket-workbench",
+      "file": "repair-ticket-workbench.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "운영자가 A/S 접수 목록에서 SR-2712를 선택해 보증 승인, 담당 기사 김도윤 배정 및 수리 작업 인계 대기를 확인하는 작업대",
+        "en": "Operator ticket workbench selecting SR-2712 to review warranty approval, fictitious technician Doyun Kim, and pending repair handover",
+        "ja": "運営担当者が受付一覧からSR-2712を選び、保証承認、架空の担当技術者、修理作業への引き継ぎ待ちを確認する画面"
+      },
+      "caption": {
+        "ko": "접수 작업대 · 티켓 상태와 기사 배정 검토",
+        "en": "Ticket workbench — queue states and technician assignment review",
+        "ja": "受付ワークベンチ — チケット状態と担当者配置の確認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "repair-warranty-check",
+      "file": "repair-warranty-check.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "AIR-360의 마스킹된 시리얼과 2027년 3월 31일 보증 만료일을 확인하고 고객 청구 예정액 0원을 표시한 보증 심사 화면",
+        "en": "Warranty assessment for AIR-360 showing a masked serial number, March 31, 2027 coverage expiry, and a planned customer charge of ₩0",
+        "ja": "AIR-360の一部を伏せたシリアル番号、2027年3月31日の保証期限、顧客への請求予定額0ウォンを示す保証判定画面"
+      },
+      "caption": {
+        "ko": "보증 판정 · 기간·시리얼·무상 적용 근거 검토",
+        "en": "Warranty assessment — coverage dates, masked serial, and no-charge decision",
+        "ja": "保証判定 — 期間・シリアル・無償対応の根拠確認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "repair-parts-allocation",
+      "file": "repair-parts-allocation.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "SR-2712 수리용 전원 제어 모듈 1개를 11월 13일 14시에 출고해 재고가 8개에서 7개로 바뀐 전표와 인계 기록",
+        "en": "Spare-parts issue screen showing one power control module issued at 2 p.m. on November 13 for SR-2712, reducing inventory from eight to seven",
+        "ja": "SR-2712用の電源制御モジュール1点を11月13日14時に出庫し、在庫が8点から7点に減った伝票と引き渡し履歴"
+      },
+      "caption": {
+        "ko": "부품 출고 · 전표·담당 기사 인계 및 8→7 재고 검산",
+        "en": "Parts issue — transaction, technician handover, and reconciled stock of 8 to 7",
+        "ja": "部品出庫 — 伝票・引き渡し・在庫8→7の照合"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "repair-field-mobile",
+      "file": "repair-field-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "현장 기사가 다음 날 16시 10분 수리 완료 후 모듈 1개 교체, E2 오류 해소, 작동 테스트 및 가상 전후 사진을 확인하는 모바일 체크리스트",
+        "en": "Technician mobile checklist marking module replacement, resolved E2 fault, functional test, and mock before-and-after photos at 4:10 p.m. the following day",
+        "ja": "翌日16時10分に修理を終えた技術者が、モジュール1点の交換、E2エラー解消、動作試験、架空の作業前後写真を確認するモバイル画面"
+      },
+      "caption": {
+        "ko": "현장 완료 · 부품 교체·작동 점검 및 고객 안내 초안",
+        "en": "Field completion — replacement, functional checks, and customer notice draft",
+        "ja": "現場作業完了 — 部品交換・動作確認・案内文の下書き"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+$ 사전 검증: R3-REPLACEMENT-MANIFEST.csv(22) vs 이미지 zip vs v36 작업본(commit 11af70a)
+rows 22 {'A': 2, 'B': 8, 'C': 4, 'E': 8}
+zip files 22 filename 1:1 True dup targets 0
+per-file checks (11 each): problems 0

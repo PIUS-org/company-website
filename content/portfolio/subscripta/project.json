@@ -36,6 +36,7 @@
     "web",
     "commerce"
   ],
+  "mainCategory": "platform",
   "platforms": [
     {
       "type": "web",
@@ -161,14 +162,14 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
+        "ko": "구독 좌석 변경을 현재 청구서에 즉시 반영할지 다음 주기에 반영할지 구분하지 않으면 금액 안내가 모호해집니다.",
+        "en": "Seat changes, billing periods, and tax-inclusive totals must be distinguished so a future subscription amount is not mistaken for a current charge.",
+        "ja": "契約席数の変更を現在の請求に反映するか次回周期に反映するかで、案内する金額は変わります。"
+      },
+      "body": {
         "ko": "가상 팀 ORBIT WORKSPACE의 현재 6석 이용 현황에서 다음 청구 주기의 8석 요금으로 변경하는 과정을 보여줍니다.",
         "en": "Follow fictional team ORBIT WORKSPACE increasing planned billable seats from six to eight for the next cycle.",
         "ja": "架空チームORBIT WORKSPACEの利用6席から、次回請求期間の8席へ変更する流れを示します。"
-      },
-      "body": {
-        "ko": "조직 ORB-001은 Team 플랜을 1석당 월 ₩18,000(부가세 별도)으로 이용합니다. 11월 청구 기간(11/01–11/30)은 6석 × ₩18,000 = ₩108,000, VAT ₩10,800, 합계 ₩118,800으로 결제 완료입니다. 11/09 14:10에 다음 주기(12/01 시작)의 좌석을 8석으로 요청합니다. 다음 청구 예정액은 공급가 ₩144,000, VAT ₩14,400, 총 ₩158,400이며 아직 청구·결제되지 않았습니다. 중도 일할 계산은 적용하지 않습니다.",
-        "en": "Organization ORB-001 uses the Team plan at ₩18,000 per seat per month before tax. The paid November invoice (Nov 1–30) covers 6 seats: ₩108,000 plus ₩10,800 VAT = ₩118,800. On Nov 9 at 14:10 it requests 8 seats effective Dec 1. The December preview is ₩144,000 plus ₩14,400 VAT = ₩158,400, not yet invoiced or paid. No mid-cycle proration is applied.",
-        "ja": "組織ORB-001はTeamプランを1席月₩18,000（税別）で利用。11月分（11/01–11/30）は6席で₩108,000＋VAT₩10,800＝₩118,800、支払済みです。11/09 14:10に12/01から8席へ変更申請。次回請求見込は₩144,000＋VAT₩14,400＝₩158,400で、未請求・未決済です。月中の日割り計算は行いません。"
       },
       "goals": [
         {

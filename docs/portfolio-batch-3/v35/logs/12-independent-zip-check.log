@@ -1,0 +1,47 @@
+$ unzip pius-work-v35-r3-quality-fixed.zip into empty /tmp/v35check  (2026-11-16T10:59:04+09:00)
+# exit=0
+zip sha256: bc3958ebd2c0b28739eb5d1353c4f2dd1cf8a27cb2dc809fb7120bd28cf9c814
+top-level: .env.example .gitattributes .gitignore .workspace.json CHANGELOG.md CLAUDE.md README.md app components content docs lib next.config.ts package-lock.json package.json public scripts tsconfig.json 
+{
+  "lastHandoff": 3,
+  "commit": "8aca9a2",
+  "subject": "v35: B·E 캡션 반복 꼬리말 제거(화면 이름만), E 카드 요약을 부제와 다른 문장으로, 미리보기 카드 이미지 누락 수정",
+  "createdAt": "2026-11-16T01:58:58.315Z"
+}
+
+absent .git
+absent node_modules
+absent .next
+absent .export-build
+absent .preview-build
+absent exports
+absent preview-dist
+temp PDFs in zip: 0
+portfolio projects (excl. _template): 84
+portfolio webp: 466
+3차 webp: 150
+decode failures 0
+3차 SHA-256 = MANIFEST: 150 / 150
+duplicate image hashes: 0
+project.json image refs 466 missing 0
+$ sha256sum -c baseline (1·2차 content)
+baseline OK (371 files unchanged)
+$ npm ci
+
+added 34 packages in 7s
+# exit=0
+$ node scripts/workspace-init.mjs
+새 저장소 생성 · 기준 커밋 45c5695 · handoff-3 태그
+# exit=0
+tags: handoff-3
+uncommitted after init: 0
+$ npm run portfolio:check
+포트폴리오 84건 검사 통과 · draft 0 · review 78 · approved 6 · private 0
+# exit=0
+$ npm run typecheck
+# exit=0
+$ npm run build
+# exit=0
+portfolio sync [public] · 포함 6건 (fity:approved, transport-erp-monitoring:approved, commute-shuttle-platform:approved, farm-commerce-backend:approved, metaverse-live-app:approved, charter-bus-dispatch:approved) · 제외 78건
+ ✓ Generating static pages (11/11)
+public build: 3차 slug hits 0 · public/portfolio: charter-bus-dispatch commute-shuttle-platform farm-commerce-backend fity metaverse-live-app transport-erp-monitoring 

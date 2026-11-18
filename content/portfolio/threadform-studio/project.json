@@ -36,6 +36,7 @@
     "web",
     "mobile"
   ],
+  "mainCategory": "web",
   "platforms": [
     {
       "type": "web",
@@ -283,6 +284,11 @@
         "ko": "2D 디자인부터 컬러, 패턴, 치수, 소재, 테크팩, 샘플 변경 이력까지 서로 다른 정보를 같은 제품과 버전 기준으로 연결하는 전문 UI를 제안합니다. PIUS 자체 제작 정적 데모입니다.",
         "en": "A professional UI concept connecting 2D design, color, patterns, measurements, materials, tech packs, and sample revisions around a single style and version. Created as an in-house static demo by PIUS.",
         "ja": "2Dデザイン、カラー、パターン、寸法、素材、仕様書、サンプルの変更履歴を、同じ製品と版のもとでつなぐ専門UIを提案します。PIUS制作の静的デモです。"
+      },
+      "body": {
+        "ko": "의류의 컬러·패턴·치수 변경이 테크팩과 샘플 검수에서 서로 다른 버전으로 전달되지 않도록 제품 단위의 연결을 강조했습니다.",
+        "en": "Colourways, pattern edits, grading, and tech packs are tied to one product version to reduce mismatched sample feedback.",
+        "ja": "カラー・パターン・寸法の変更がテックパックやサンプル確認に別版として伝わらないよう、製品単位のつながりを重視しました。"
       }
     },
     {

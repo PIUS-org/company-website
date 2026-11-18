@@ -1,0 +1,338 @@
+{
+  "id": "neighborhood-community-app",
+  "slug": "neighborhood-community-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 630,
+  "includeInPdf": true,
+  "title": {
+    "ko": "모여 동네 커뮤니티",
+    "en": "Moyeo Neighborhood",
+    "ja": "モヨ 地域コミュニティ"
+  },
+  "subtitle": {
+    "ko": "동네 소식에서 주말 모임 참여까지",
+    "en": "From local posts to joining weekend meetups",
+    "ja": "地域の投稿から週末の集まりまで"
+  },
+  "summary": {
+    "ko": "망원동 피드, 취향 모임, 모임 상세, 글 작성과 활동 내역을 잇는 로컬 UX.",
+    "en": "A neighborhood experience spanning Mangwon feeds, meetups, post creation and activity.",
+    "ja": "望遠洞のフィード、集まり、投稿作成、活動履歴をつなぐローカルUX。"
+  },
+  "overview": {
+    "ko": "망원동의 빵집 후기 게시글과 11월 21일 오전 8시 망원 아침 러닝 크루(정원 10명, 참여 6명)를 공통 콘텐츠로 사용했습니다.",
+    "en": "A Mangwon bakery post and the November 21, 8 AM running crew (6 of 10 spots filled) anchor the community flow.",
+    "ja": "望遠洞のパン屋投稿と11月21日8時のランニング会（定員10名・参加6名）を共通コンテンツとして使用しました。"
+  },
+  "industry": {
+    "ko": "지역 커뮤니티",
+    "en": "Local community",
+    "ja": "地域コミュニティ"
+  },
+  "categories": [
+    "mobile"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#2F7A4E",
+    "accentInk": "#143421",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "neighborhood-community-app-01",
+    "neighborhood-community-app-03"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / D실 claude-integration-prompt.txt. 이미지 5장은 d-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "망원동 피드, 취향 모임, 모임 상세, 글 작성과 활동 내역을 잇는 로컬 UX.",
+        "en": "A neighborhood experience spanning Mangwon feeds, meetups, post creation and activity.",
+        "ja": "望遠洞のフィード、集まり、投稿作成、活動履歴をつなぐローカルUX。"
+      },
+      "images": [
+        "neighborhood-community-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "동네 게시글을 읽는 행위와 실제 지역 모임 참여가 끊기지 않도록 장소·시간·참가 정보를 연결했습니다.",
+        "en": "Local posts and offline meetups become one journey when place, time, and participation details stay visible.",
+        "ja": "地域の投稿から実際の集まりへの参加につながるよう、場所・時間・参加情報を結びました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "망원동 빵집 후기와 러닝 모임 피드",
+          "en": "Mangwon bakery post and running-group feed",
+          "ja": "望遠洞のパン屋投稿とランニング会のフィード"
+        },
+        {
+          "ko": "11월 21일 러닝 모임 및 동네 모임 탐색",
+          "en": "November 21 running meetup discovery",
+          "ja": "11月21日のランニング会と地域イベント検索"
+        },
+        {
+          "ko": "망원 아침 러닝 크루 상세와 참여 안내",
+          "en": "Running crew details, members and join action",
+          "ja": "ランニング会の詳細・参加者・申込案内"
+        },
+        {
+          "ko": "동네소식 글 작성·사진 첨부",
+          "en": "Local post composer with photo attachment",
+          "ja": "写真添付付きの地域投稿作成"
+        },
+        {
+          "ko": "모임 참여 내역과 게시글·알림",
+          "en": "Joined meetups, posts and notifications",
+          "ja": "参加予定、投稿、通知の一覧"
+        }
+      ],
+      "images": [
+        "neighborhood-community-app-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "동네 피드",
+            "en": "Local feed",
+            "ja": "地域フィード"
+          }
+        },
+        {
+          "title": {
+            "ko": "모임 검색",
+            "en": "Explore meetups",
+            "ja": "集まりを探す"
+          }
+        },
+        {
+          "title": {
+            "ko": "러닝 모임 상세",
+            "en": "Running event detail",
+            "ja": "ランニング会の詳細"
+          }
+        },
+        {
+          "title": {
+            "ko": "동네 게시글 작성",
+            "en": "Create post",
+            "ja": "投稿作成"
+          }
+        },
+        {
+          "title": {
+            "ko": "참여 모임·알림 확인",
+            "en": "Check joined events and alerts",
+            "ja": "参加予定と通知"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "phones",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "neighborhood-community-app-03",
+        "neighborhood-community-app-04",
+        "neighborhood-community-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "화면별 기능이 명확히 구분되는 소비자 모바일 UI 5장, 실제 텍스트·사진·SVG 그래픽 제작. 동작하는 앱·로그인·서버·AI·결제·실시간 상태 기능 미구현.",
+        "en": "Five distinct static mobile UI screenshots with real typography, photos and vector elements. No working app, login, server, AI, payments or live status.",
+        "ja": "機能ごとに異なる静的モバイルUI5画面。実際の文字・写真・SVGを使用。動作するアプリ、ログイン、サーバー、AI、決済、リアルタイム機能は未実装。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "동네 소식과 모임을 한 흐름으로 묶어, 글을 읽다가 모임을 발견하고 참여 신청까지 이어지게 했습니다.",
+        "en": "Local posts and meetups share one feed, so reading neighbourhood news can lead straight to finding a group and asking to join.",
+        "ja": "近所の投稿と集まりを一つの流れにまとめ、記事を読むうちに集まりを見つけて参加申請まで進めるようにしました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "neighborhood-community-app-01",
+      "file": "neighborhood-community-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "모여 동네 커뮤니티 — 망원동 빵집 후기와 러닝 모임 피드",
+        "en": "Moyeo Neighborhood — Mangwon bakery post and running-group feed",
+        "ja": "モヨ 地域コミュニティ — 望遠洞のパン屋投稿とランニング会のフィード"
+      },
+      "caption": {
+        "ko": "망원동 빵집 후기와 러닝 모임 피드",
+        "en": "Mangwon bakery post and running-group feed",
+        "ja": "望遠洞のパン屋投稿とランニング会のフィード"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "neighborhood-community-app-02",
+      "file": "neighborhood-community-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "모여 동네 커뮤니티 — 11월 21일 러닝 모임 및 동네 모임 탐색",
+        "en": "Moyeo Neighborhood — November 21 running meetup discovery",
+        "ja": "モヨ 地域コミュニティ — 11月21日のランニング会と地域イベント検索"
+      },
+      "caption": {
+        "ko": "11월 21일 러닝 모임 및 동네 모임 탐색",
+        "en": "November 21 running meetup discovery",
+        "ja": "11月21日のランニング会と地域イベント検索"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "neighborhood-community-app-03",
+      "file": "neighborhood-community-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "모여 동네 커뮤니티 — 망원 아침 러닝 크루 상세와 참여 안내",
+        "en": "Moyeo Neighborhood — Running crew details, members and join action",
+        "ja": "モヨ 地域コミュニティ — ランニング会の詳細・参加者・申込案内"
+      },
+      "caption": {
+        "ko": "망원 아침 러닝 크루 상세와 참여 안내",
+        "en": "Running crew details, members and join action",
+        "ja": "ランニング会の詳細・参加者・申込案内"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "neighborhood-community-app-04",
+      "file": "neighborhood-community-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "모여 동네 커뮤니티 — 동네소식 글 작성·사진 첨부",
+        "en": "Moyeo Neighborhood — Local post composer with photo attachment",
+        "ja": "モヨ 地域コミュニティ — 写真添付付きの地域投稿作成"
+      },
+      "caption": {
+        "ko": "동네소식 글 작성·사진 첨부",
+        "en": "Local post composer with photo attachment",
+        "ja": "写真添付付きの地域投稿作成"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "neighborhood-community-app-05",
+      "file": "neighborhood-community-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "모여 동네 커뮤니티 — 모임 참여 내역과 게시글·알림",
+        "en": "Moyeo Neighborhood — Joined meetups, posts and notifications",
+        "ja": "モヨ 地域コミュニティ — 参加予定、投稿、通知の一覧"
+      },
+      "caption": {
+        "ko": "모임 참여 내역과 게시글·알림",
+        "en": "Joined meetups, posts and notifications",
+        "ja": "参加予定、投稿、通知の一覧"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

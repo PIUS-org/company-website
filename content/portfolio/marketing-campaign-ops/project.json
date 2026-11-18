@@ -1,0 +1,358 @@
+{
+  "id": "marketing-campaign-ops",
+  "slug": "marketing-campaign-ops",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 360,
+  "includeInPdf": true,
+  "title": {
+    "ko": "마케팅 캠페인 운영·검수 플랫폼",
+    "en": "Marketing Campaign Operations & Review",
+    "ja": "マーケティングキャンペーン運用・審査プラットフォーム"
+  },
+  "subtitle": {
+    "ko": "소재 제작부터 광고주 승인·매체 일정·운영 보고까지",
+    "en": "From creative production and client approval to media scheduling and reporting",
+    "ja": "素材制作から広告主承認、媒体スケジュール、運用報告まで"
+  },
+  "summary": {
+    "ko": "매체별 집행 일정, 광고 소재 버전 검수, 예산 편성 및 광고주 승인 이력을 한 캠페인에서 연결한 WEB 정적 UI 데모입니다.",
+    "en": "A static web UI concept connecting media schedules, creative version reviews, allocated budgets, client approvals, and reporting in one campaign workspace.",
+    "ja": "媒体別スケジュール、広告素材の版管理、予算配分、広告主承認履歴、報告書編集を一つのキャンペーンでつなぐWEB静的UIデモです。"
+  },
+  "overview": {
+    "ko": "광고 캠페인 운영자는 매체별 일정과 예산 편성을 관리하면서 소재의 버전 변경, 광고주 수정 요청, 최종 승인 상태를 함께 추적합니다. MOTIF는 CMP-014 캠페인을 기준으로 운영 캘린더, 소재 검수, 매체별 예산, 광고주 승인, 보고서 편집의 다섯 업무를 구현한 정적 화면 구성입니다.",
+    "en": "Campaign operators coordinate media budgets and schedules while tracking creative revisions, client feedback, and final sign-off. MOTIF presents five connected workflows for the fictional CMP-014 campaign: the operations calendar, creative review, channel tracker, client approval board, and report builder.",
+    "ja": "キャンペーン担当者は媒体別の予算や配信予定を管理しながら、素材の修正履歴、広告主からのフィードバック、最終承認を追跡します。MOTIFでは架空のCMP-014を軸に、運用カレンダー、素材レビュー、媒体別予算、広告主承認、報告書編集の5業務を一連の画面として表現しました。"
+  },
+  "industry": {
+    "ko": "디지털 광고·마케팅 캠페인 운영",
+    "en": "Digital advertising and campaign operations",
+    "ja": "デジタル広告・キャンペーン運用"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#3F576B",
+    "accentInk": "#1E2933",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "marketing-02"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 D실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "매체별 집행 일정, 광고 소재 버전 검수, 예산 편성 및 광고주 승인 이력을 한 캠페인에서 연결한 WEB 정적 UI 데모입니다.",
+        "en": "A static web UI concept connecting media schedules, creative version reviews, allocated budgets, client approvals, and reporting in one campaign workspace.",
+        "ja": "媒体別スケジュール、広告素材の版管理、予算配分、広告主承認履歴、報告書編集を一つのキャンペーンでつなぐWEB静的UIデモです。"
+      },
+      "images": [
+        "marketing-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "소재 제작과 광고주 검수, 매체별 배정, 보고서 작성이 따로 관리되면 승인되지 않은 소재가 집행 일정에 확정된 것처럼 보이거나 아직 발생하지 않은 성과가 보고서에 섞일 수 있습니다. 동일한 소재 ID·검수 상태·예산 원장을 화면마다 재사용해 의사결정 조건을 명확히 구분했습니다.",
+        "en": "When creative production, client sign-off, media planning, and reporting live in separate tools, an unapproved asset may appear ready for launch, and projected figures may be confused with actual performance. Shared IDs, financial totals, and state transitions across these screens make such distinctions explicit.",
+        "ja": "素材制作、広告主による確認、配信計画、報告書が別々に管理されると、未承認素材が配信確定済みに見えたり、未発生の実績が報告書に混在したりする恐れがあります。素材ID・審査状態・予算データを統一し、判断の条件を明確にしました。"
+      },
+      "body": {
+        "ko": "광고 소재 승인 전의 예산 계획과 실제 집행 결과를 섞지 않도록 버전·상태·집계 기준을 구분했습니다.",
+        "en": "Planned budgets, creative approvals, and realised campaign results need clear version and status boundaries.",
+        "ja": "広告素材の承認前予算と実際の配信結果が混ざらないよう、版・状態・集計基準を分けました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "매체·소재·담당자 기준 2주 간트형 일정과 승인 전 잠정 일정 표시",
+          "en": "A two-week schedule by channel, creative asset, and owner, with tentative placements clearly marked",
+          "ja": "媒体・素材・担当者別の2週間スケジュールと未承認の暫定配信日程"
+        },
+        {
+          "ko": "릴스 소재 A-03의 v1.1·v1.2를 나란히 비교하고 시간코드에 검토 의견 연결",
+          "en": "Side-by-side comparison of A-03 versions v1.1 and v1.2 with timecoded client feedback",
+          "ja": "リール素材A-03のv1.1とv1.2の比較、および再生位置に対応した広告主コメント"
+        },
+        {
+          "ko": "총예산 800만원과 Meta·네이버 GFA·카카오모먼트 편성금액 및 미편성 잔액 관리",
+          "en": "An KRW 8m budget allocated across Meta, Naver GFA, and Kakao, separating unallocated funds",
+          "ja": "総予算800万ウォンの媒体別配分と未配分残高の区別"
+        },
+        {
+          "ko": "승인 소재 2건과 수정 요청 중인 소재 1건의 광고주 의사결정·이력 추적",
+          "en": "Client decision trail showing two approved creatives and one pending revision",
+          "ja": "承認済み2件・修正依頼中1件の広告主承認履歴と次工程の条件"
+        },
+        {
+          "ko": "실제 성과를 임의 기입하지 않는 운영 보고서 편집 및 증빙 연결 상태 시각화",
+          "en": "Evidence-linked reporting draft that leaves actual performance blank until verified",
+          "ja": "実績値を作り出さず、根拠の連携状態を示す運用報告書の編集"
+        }
+      ],
+      "images": [
+        "marketing-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "CMP-014 캠페인과 2026년 11월 9–22일 매체별 계획 확인",
+            "en": "Review CMP-014 and planned channel activities for November 9–22, 2026",
+            "ja": "CMP-014と2026年11月9～22日の媒体別予定を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "A-03 릴스 v1.1·v1.2 변경점과 광고주 검토 의견 확인",
+            "en": "Inspect A-03 version changes and the client annotation on the opening seconds",
+            "ja": "A-03の版ごとの差分と冒頭3秒への広告主コメントを確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "Meta Ads·네이버 GFA·카카오모먼트 예산 편성 및 미편성액 검산",
+            "en": "Reconcile allocations across Meta Ads, Naver GFA, and Kakao, plus unallocated funds",
+            "ja": "Meta Ads、NAVER GFA、カカオモーメントの予算配分と未配分残高を照合"
+          }
+        },
+        {
+          "title": {
+            "ko": "A-01·A-02 승인 완료와 A-03 승인 대기 상태에 따른 집행 일정 잠정 처리",
+            "en": "Distinguish approved assets A-01/A-02 from pending A-03 before finalizing flight dates",
+            "ja": "A-01・A-02の承認済み、A-03の承認待ちを区別し配信日程を暫定扱いにする"
+          }
+        },
+        {
+          "title": {
+            "ko": "보고서 초안에 예산과 승인 근거를 연결하고 실제 광고 성과는 미입력으로 유지",
+            "en": "Assemble the report draft from budget and approval evidence without inventing actual performance",
+            "ja": "予算と承認記録を報告書の下書きへつなぎ、広告実績は未入力のままにする"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "marketing-03"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "marketing-04",
+        "marketing-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "가상 브랜드 루프데이의 캠페인 CMP-014를 대상으로 WEB 정적 UI 5장을 제작했습니다. 예산·승인·담당자·일정은 모두 가상의 시연 데이터입니다. 실제 소재 영상 재생, 광고 매체 API, 승인 발송, 집행 자동화, 비용 정산, 광고 성과 수집, 보고서 파일 생성 및 서버 저장 기능은 구현하지 않았습니다.",
+        "en": "Five static web UI screens were authored for the fictional Loopday campaign CMP-014. All budgets, people, approvals, and dates are demonstrative data. There is no live video playback, ad-platform API, approval dispatch, automated campaign execution, settlement, analytics ingestion, file export, or server-side persistence.",
+        "ja": "架空のブランド「ループデイ」のキャンペーンCMP-014を対象に、WEB静的UIを5画面制作しました。予算、担当者、承認、日程はすべてデモ用の架空データです。動画再生、広告媒体API、承認通知、配信の自動実行、精算、実績収集、ファイル出力、サーバー保存機能は実装していません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "일정·소재·승인·예산·근거를 연결해 광고 캠페인의 집행 전 의사결정이 명확하게 보이도록 설계했습니다.",
+        "en": "A coherent campaign operations workspace that makes pre-launch decisions, dependencies, and evidence visible.",
+        "ja": "予定・素材・承認・予算・根拠を結び付け、配信前の判断と依存関係が見える運用体験を設計しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "marketing-01",
+      "file": "marketing-campaign-calendar.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "매체·소재·담당자별 일정과 승인 상태가 나타나는 모티프 마케팅 캠페인 타임라인",
+        "en": "MOTIF campaign calendar showing channel, creative owner, schedule, and approval state",
+        "ja": "媒体・素材・担当者別の予定と承認状態を表示するMOTIFのキャンペーンカレンダー"
+      },
+      "caption": {
+        "ko": "2026년 11월 9일부터 22일까지 채널별 운영 계획을 표시하고 승인 대기 소재 A-03의 잠정 일정과 승인 완료된 A-01·A-02를 구분합니다.",
+        "en": "The November 9–22 timeline distinguishes the two approved assets from A-03, whose media flight remains tentative pending client sign-off.",
+        "ja": "11月9～22日の運用計画を表示し、承認済みのA-01・A-02と、承認待ちで配信日程が暫定のA-03を区別します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "marketing-02",
+      "file": "marketing-creative-review.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "릴스 광고 소재 A-03의 v1.1·v1.2를 나란히 비교하는 피드백 작업 화면",
+        "en": "Side-by-side v1.1 and v1.2 creative review for campaign asset A-03",
+        "ja": "リール広告素材A-03のv1.1とv1.2を並べて比較するレビュー画面"
+      },
+      "caption": {
+        "ko": "A-03의 후킹 문구 변경과 첫 3초 컷 전환에 연결된 광고주 주석을 확인하며 미승인 상태를 유지합니다.",
+        "en": "Review revised opening copy and the client’s annotation on the first three seconds while keeping the creative pending approval.",
+        "ja": "冒頭コピーの修正と最初の3秒に付いた広告主のコメントを確認し、未承認の状態を維持します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "marketing-03",
+      "file": "marketing-channel-tracker.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "총 800만원 캠페인 예산의 매체별 편성·미편성 잔액을 보여주는 트래커",
+        "en": "Campaign budget tracker separating allocated media budgets and unallocated funds",
+        "ja": "800万ウォンの予算配分と未配分残高を分けて表示する管理画面"
+      },
+      "caption": {
+        "ko": "Meta Ads 240만원, 네이버 GFA 160만원, 카카오모먼트 80만원을 편성하고 미편성 320만원 및 집행 전 상태를 분리합니다.",
+        "en": "Allocates KRW 2.4m to Meta, 1.6m to Naver GFA, and 0.8m to Kakao, leaving KRW 3.2m unallocated; actual spend is not shown.",
+        "ja": "Meta Adsに240万、NAVER GFAに160万、カカオモーメントに80万ウォンを配分し、未配分320万ウォンと配信前の状態を分けます。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "marketing-04",
+      "file": "marketing-client-approval.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "광고 소재 3건의 광고주 승인 현황과 A-03 승인 단계 상세 화면",
+        "en": "Client approval board for three advertising assets with the A-03 approval flow",
+        "ja": "広告素材3件の広告主承認状況とA-03の承認フローを表示する画面"
+      },
+      "caption": {
+        "ko": "승인 2건·대기 1건을 표시하고 광고주 수정 의견, 담당자 응답, 승인 완료 전 집행 일정 확정 차단을 연결합니다.",
+        "en": "Shows two approved assets and one awaiting approval, links the advertiser’s revision note and the manager’s reply, and keeps the schedule from being confirmed before approval.",
+        "ja": "承認済み2件・承認待ち1件、修正依頼と担当者の返信を確認し、承認前は配信確定できない状態を示します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "marketing-05",
+      "file": "marketing-report-builder.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "캠페인 운영 보고서의 목차·예산 원장·승인 근거를 연결하는 편집기",
+        "en": "Report builder linking campaign outline, planned budget ledger, and approval evidence",
+        "ja": "報告書の構成、予算明細、承認根拠を結び付けるキャンペーン編集画面"
+      },
+      "caption": {
+        "ko": "보고서 초안에 총예산 800만원과 편성 480만원·미편성 320만원을 기록하고 외부 매체 성과가 없는 영역은 미연결로 표시합니다.",
+        "en": "The draft reconciles KRW 8m in budget, KRW 4.8m allocated, and KRW 3.2m unallocated while leaving actual media results unconnected.",
+        "ja": "予算800万、配分480万、未配分320万ウォンを明示し、実際の広告実績がない項目は未連携として表示します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

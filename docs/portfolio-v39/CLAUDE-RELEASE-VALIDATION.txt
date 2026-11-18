@@ -1,0 +1,26 @@
+# Claude 검증 및 최종 배포 전 QA — PIUS v39
+
+`pius-work-v39-portfolio-content-upgrade.zip`을 압축 해제한 후, 기존 디자인과 이미지의 원본을 보존하면서 84개 상세 페이지의 콘텐츠·상담 동선을 **실제로 검증**하세요.
+
+이번 ZIP은 84개 프로젝트의 한국어·영어·일본어 설계 설명 및 웹 전용 공통 문의 CTA가 적용된 작업본입니다. 이미지 466장, 이미지 ID와 경로, 프로젝트 승인 상태, 기존 BI는 건드리지 마세요.
+
+## 반드시 수행
+
+1. `docs/portfolio-v39/V39-QUALITY-REPORT.md`와 변경 목록을 확인하고, `docs/PORTFOLIO_SCHEMA.md`를 검토하세요.
+2. `npm ci` 실행 후 `npm run portfolio:check`, `npm run typecheck`를 실행하세요.
+3. `node scripts/portfolio.mjs sync --stage review` 후 `PORTFOLIO_STAGE=review npm run build`.
+4. `node scripts/portfolio.mjs sync --stage public` 후 `npm run build`. Public에는 승인된 기존 6개만 포함되어야 합니다.
+5. 84개 상세 페이지의 ko/en/ja 콘텐츠와 이미지 연결, 제목·본문 줄바꿈을 검수하세요. 특히 설명이 길어진 Overview에서 텍스트 과밀·중복·잘림을 점검하고 필요한 경우 해당 문단만 다듬으세요.
+6. 프로젝트별 상담 버튼을 눌러 Contact로 이동하고, **해당 프로젝트명과 slug가 문의 메시지 초안에 들어가는지** 확인하세요. 이름과 프로젝트명이 바뀌어서는 안 됩니다.
+7. PDF에는 상담 CTA가 빠져 있는지 확인하세요. `npm run portfolio:export -- --slug <slug> --lang all --png`를 84개 프로젝트 전부 실행하고 252개의 언어별 PDF 및 페이지 이미지의 누락·잘림·페이지 넘김을 검사하세요.
+8. 실제 환경 `NEXT_PUBLIC_FORM_ENDPOINT`가 존재하지 않으면 폼은 전송 성공을 표시해서는 안 됩니다. 주소를 임의로 만들어 넣지 말고 '실제 문의 수신 미검증'으로 보고하세요.
+9. 최종 ZIP에 `content/portfolio/*/images/` 실제 이미지 파일 466장이 있는지 독립 압축 해제로 확인하세요. `.git`, `node_modules`, `.next`, 생성된 `public/portfolio`, `.portfolio`는 포함하지 마세요.
+
+## 납품
+
+- 독립 검증된 v39 홈페이지 ZIP
+- 실행 로그/브라우저·PDF 검수 결과
+- 수정 전후 콘텐츠 품질 평가 및 미완료 사항
+- 기존 이미지 466장의 보존, 84개 프로젝트의 status 보존 결과
+
+정적 UI 데모를 실제 SI 개발 실적으로 소개하지 않고, 원본 화면과 기획 범위를 유지해야 합니다. 확인하지 않은 테스트를 통과했다고 기재하지 마세요. 이미지를 생성하거나 재디자인하지 마세요.

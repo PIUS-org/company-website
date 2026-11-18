@@ -1,0 +1,7 @@
+$ v38(dae0cba) → v39 project.json 필드 비교, 84건
+status 변경: []
+바뀐 필드 경로(언어 합산):
+  186 .blocks[overview].body.<lang>
+  138 .blocks[overview].lead.<lang>
+  30 .overview.<lang>
+텍스트 외 변경(구조·이미지·순서): 0

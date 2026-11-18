@@ -2,7 +2,7 @@
 /* /portfolio — intro, project count, category filter (sliding pill like the header) and the card grid. */
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { CATEGORIES, type Category, type Project } from '@/lib/portfolio/types';
-import { EV, on, onceInView } from '@/lib/core';
+import { EV, on, onceInView, Scroller } from '@/lib/core';
 import { leadsByFilter, withLead } from '@/lib/portfolio/text';
 import { useLang } from '../LangProvider';
 import PortfolioCard from './PortfolioCard';
@@ -35,13 +35,19 @@ export default function PortfolioList({ projects }: { projects: Project[] }) {
   const { t, lang } = useLang();
   const [filter, setFilter] = useState<Filter>('all');
   const root = useRef<HTMLDivElement>(null), bar = useRef<HTMLDivElement>(null), pill = useRef<HTMLSpanElement>(null);
-  const counts = useMemo(() => Object.fromEntries(CATEGORIES.map(c => [c, projects.filter(p => p.categories.includes(c)).length])) as Record<Category, number>, [projects]);
+  const dock = useRef<HTMLDivElement>(null), gridEl = useRef<HTMLElement>(null);
+  const [stuck, setStuck] = useState(false);
+  /* cards added by "더 보기" load their images right away (the user is about to look at them) */
+  const [fresh, setFresh] = useState(Infinity);
+  /* each project sits in exactly one tab — its mainCategory — so tab counts add up to the total
+     and match the home page counters (components/Works). Tags on cards/details still list every category. */
+  const counts = useMemo(() => Object.fromEntries(CATEGORIES.map(c => [c, projects.filter(p => p.mainCategory === c).length])) as Record<Category, number>, [projects]);
   const [limit, setLimit] = useState(FIRST);
   const [cols, setCols] = useState(3);
   useEffect(() => { const f = () => setCols(colsNow()); f(); return on(EV.resize, f); }, []);
   /* each tab opens with a different project (see leadsByFilter) */
   const leads = useMemo(() => leadsByFilter(projects, (['all', ...CATEGORIES] as Filter[]).filter(f => f !== 'all')), [projects]);
-  const matched = withLead(filter === 'all' ? projects : projects.filter(p => p.categories.includes(filter)), leads[filter]);
+  const matched = withLead(filter === 'all' ? projects : projects.filter(p => p.mainCategory === filter), leads[filter]);
   const shown = matched.slice(0, limit);
 
   /* remember the filter in the URL hash (#platform …) so a filtered view can be shared or restored */
@@ -50,7 +56,18 @@ export default function PortfolioList({ projects }: { projects: Project[] }) {
     if ((CATEGORIES as readonly string[]).includes(h)) setFilter(h);
   }, []);
   const pick = (f: Filter) => {
-    setFilter(f); setLimit(FIRST);
+    setFilter(f); setLimit(FIRST); setFresh(Infinity);
+    /* picked while scrolled down: bring the top of the new list under the docked filter bar */
+    const g = gridEl.current, d = dock.current;
+    if (g && d && stuck) {
+      const hdr = document.getElementById('hdr')?.offsetHeight || 0;
+      Scroller.to(Math.max(0, g.getBoundingClientRect().top + scrollY - hdr - d.offsetHeight - 16));
+    }
+    /* keep the active tab visible in the horizontal scroller (mobile) */
+    requestAnimationFrame(() => {
+      const b = bar.current, a = b?.querySelector<HTMLElement>('[aria-pressed="true"]');
+      if (b && a && b.scrollWidth > b.clientWidth) b.scrollTo({ left: a.offsetLeft - (b.clientWidth - a.offsetWidth) / 2, behavior: 'smooth' });
+    });
     try { history.replaceState(null, '', f === 'all' ? location.pathname + location.search : `#${f}`); } catch { /* sandboxed */ }
   };
 
@@ -68,7 +85,19 @@ export default function PortfolioList({ projects }: { projects: Project[] }) {
     return () => offs.forEach(f => f());
   }, [filter, lang]);
 
-  useReveal(root, [filter, lang, limit]);
+  /* the filter bar docks under the header; mark it once it is docked (background + hairline) */
+  useEffect(() => {
+    const f = () => {
+      const d = dock.current; if (!d) return;
+      const hdr = document.getElementById('hdr')?.offsetHeight || 0;
+      setStuck(d.getBoundingClientRect().top <= hdr + 1 && scrollY > 0);
+    };
+    f(); addEventListener('scroll', f, { passive: true });
+    const off = on(EV.resize, f);
+    return () => { removeEventListener('scroll', f); off(); };
+  }, []);
+
+  useReveal(root, [filter, lang, limit], { margin: '0px 0px 12% 0px', stagger: 70 });
   useEffect(() => onceInView(document.getElementById('pfTitle'), el => el.classList.add('is-in'), '0px'), []);
 
   return (
@@ -85,26 +114,31 @@ export default function PortfolioList({ projects }: { projects: Project[] }) {
             <p className={s.intro__count}><b>{String(projects.length).padStart(2, '0')}</b><span>{t('pf.count')}</span></p>
           </div>
         </div>
-        <div className={s.filter} ref={bar} role="group" aria-label={t('pf.filter')}>
-          <span className={s.filter__pill} ref={pill} aria-hidden="true" />
-          {(['all', ...CATEGORIES] as Filter[]).map(f => {
-            const n = f === 'all' ? projects.length : counts[f];
-            return (
-              <button key={f} type="button" aria-pressed={filter === f} className={n ? '' : s['filter--zero']} onClick={() => pick(f)}>
-                {t(`pf.cat.${f}`)}<sup>{n}</sup>
-              </button>
-            );
-          })}
-        </div>
       </section>
 
-      <section className={`${s.grid} wrap`} aria-live="polite">
-        {shown.map((p, i) => <PortfolioCard key={p.slug} p={p} lang={lang} eager={i < 3} index={i} span={spanOf(i, shown.length, cols)} />)}
+      <div className={s.dock} ref={dock} data-stuck={stuck ? '' : undefined}>
+        <div className={`wrap ${s.dock__in}`}>
+          <div className={s.filter} ref={bar} role="group" aria-label={t('pf.filter')}>
+            <span className={s.filter__pill} ref={pill} aria-hidden="true" />
+            {(['all', ...CATEGORIES] as Filter[]).map(f => {
+              const n = f === 'all' ? projects.length : counts[f];
+              return (
+                <button key={f} type="button" aria-pressed={filter === f} className={n ? '' : s['filter--zero']} onClick={() => pick(f)}>
+                  {t(`pf.cat.${f}`)}<sup>{n}</sup>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      <section className={`${s.grid} wrap`} aria-live="polite" ref={gridEl}>
+        {shown.map((p, i) => <PortfolioCard key={p.slug} p={p} lang={lang} eager={i < 3 || i >= fresh} index={i} span={spanOf(i, shown.length, cols)} />)}
         {!shown.length && <p className={s.empty}>{t(projects.length ? 'pf.empty' : 'pf.emptyAll')}</p>}
       </section>
       {matched.length > limit && (
         <div className={`wrap ${s.more}`}>
-          <button type="button" className="btn btn--glass" onClick={() => setLimit(l => l + PAGE)}>
+          <button type="button" className="btn btn--glass" onClick={() => { setFresh(limit); setLimit(l => l + PAGE); }}>
             <span>{t('pf.more')}</span><sup className={s.more__n}>{matched.length - limit}</sup>
           </button>
         </div>

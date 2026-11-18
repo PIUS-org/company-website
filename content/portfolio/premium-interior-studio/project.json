@@ -1,0 +1,362 @@
+{
+  "id": "premium-interior-studio",
+  "slug": "premium-interior-studio",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 550,
+  "includeInPdf": true,
+  "title": {
+    "ko": "아틀리에 모노",
+    "en": "ATELIER MONO",
+    "ja": "アトリエ・モノ"
+  },
+  "subtitle": {
+    "ko": "건축 매거진처럼 탐색하는 인테리어 스튜디오",
+    "en": "An interior studio shaped like an architectural journal",
+    "ja": "建築誌のように巡るインテリアスタジオ"
+  },
+  "summary": {
+    "ko": "공간 사진의 편집미와 실제 상담 브리프 입력 과정을 결합한 스튜디오 웹 경험.",
+    "en": "Editorial spatial photography meets structured client consultation.",
+    "ja": "空間写真のエディトリアル表現と相談ブリーフを結ぶサイト体験。"
+  },
+  "overview": {
+    "ko": "프로젝트별 소재·면적·범위를 정리하고 모바일에서 공간 탐색과 상담 CTA를 연결했습니다.",
+    "en": "Project materials, area, and scope are presented clearly, with mobile exploration linked to the inquiry journey.",
+    "ja": "素材、面積、業務範囲を整理し、モバイルから相談導線につなげます。"
+  },
+  "industry": {
+    "ko": "인테리어 스튜디오",
+    "en": "Interior design studio",
+    "ja": "インテリアスタジオ"
+  },
+  "categories": [
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#373A38",
+    "accentInk": "#232523",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "premium-interior-studio-01",
+    "premium-interior-studio-05"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / A실 claude-integration-prompt.txt. 이미지 5장은 a-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "공간 사진의 편집미와 실제 상담 브리프 입력 과정을 결합한 스튜디오 웹 경험.",
+        "en": "Editorial spatial photography meets structured client consultation.",
+        "ja": "空間写真のエディトリアル表現と相談ブリーフを結ぶサイト体験。"
+      },
+      "images": [
+        "premium-interior-studio-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "아름다운 공간 사진을 본 고객이 프로젝트 조건을 이해하고 상담에 필요한 정보를 정리할 수 있도록 갤러리와 브리프를 연결했습니다.",
+        "en": "Project photography leads into practical project details and a consultation brief instead of ending at the gallery.",
+        "ja": "空間写真を見た顧客が案件条件を理解し、相談に必要な情報を整理できるよう作品とブリーフをつなぎました。"
+      }
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "02",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "premium-interior-studio-02"
+      ]
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "03",
+        "label": "FEATURES"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "카테고리별 프로젝트 갤러리",
+          "en": "Project gallery",
+          "ja": "作品ギャラリー"
+        },
+        {
+          "ko": "상세 사례",
+          "en": "Case studies",
+          "ja": "事例詳細"
+        },
+        {
+          "ko": "공간 정보",
+          "en": "Space specifications",
+          "ja": "空間情報"
+        },
+        {
+          "ko": "상담 브리프",
+          "en": "Inquiry brief",
+          "ja": "相談フォーム"
+        },
+        {
+          "ko": "모바일 프로젝트 보기",
+          "en": "Mobile detail",
+          "ja": "モバイル詳細"
+        }
+      ],
+      "images": [
+        "premium-interior-studio-03"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "MORE SCREENS"
+      },
+      "layout": "desktop",
+      "heading": {
+        "ko": "이어지는 화면",
+        "en": "More screens",
+        "ja": "その他の画面"
+      },
+      "images": [
+        "premium-interior-studio-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "surface": "light",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "premium-interior-studio-05"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "06",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "공간 탐색",
+            "en": "Explore spaces",
+            "ja": "事例検索"
+          }
+        },
+        {
+          "title": {
+            "ko": "프로젝트 확인",
+            "en": "Inspect project",
+            "ja": "詳細確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "예산 및 일정 입력",
+            "en": "Enter budget and schedule",
+            "ja": "予算・日程入力"
+          }
+        },
+        {
+          "title": {
+            "ko": "상담 요청 화면",
+            "en": "Consultation screen",
+            "ja": "相談画面"
+          }
+        }
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "07",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "스튜디오 홈·갤러리·상세·상담·모바일 상세 5개 정적 UI. 실제 상담 접수는 구현하지 않았습니다.",
+        "en": "Five static UI screens; no live inquiry submission or client project claims.",
+        "ja": "静的UI全5画面。相談の実送信や実顧客の実績を示すものではありません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "08",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "공간의 인상에서 다음 대화로.",
+        "en": "From spatial inspiration to a meaningful conversation.",
+        "ja": "空間への関心を次の対話へ。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "premium-interior-studio-01",
+      "file": "premium-interior-studio-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "아틀리에 모노 스튜디오 홈 화면 — 한남동 레지던스 관련 정적 UI",
+        "en": "ATELIER MONO — Studio homepage static user interface showing Hannam-dong Residence",
+        "ja": "アトリエ・モノのスタジオホーム画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "스튜디오 홈 · 인테리어 스튜디오의 데스크톱 사용자 경험",
+        "en": "Studio homepage · Desktop interior studio experience",
+        "ja": "スタジオホーム・デスクトップ画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "premium-interior-studio-02",
+      "file": "premium-interior-studio-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "아틀리에 모노 프로젝트 갤러리 화면 — 한남동 레지던스 관련 정적 UI",
+        "en": "ATELIER MONO — Project gallery static user interface showing Hannam-dong Residence",
+        "ja": "アトリエ・モノの作品ギャラリー画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "프로젝트 갤러리 · 인테리어 스튜디오의 데스크톱 사용자 경험",
+        "en": "Project gallery · Desktop interior studio experience",
+        "ja": "作品ギャラリー・デスクトップ画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "premium-interior-studio-03",
+      "file": "premium-interior-studio-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "아틀리에 모노 프로젝트 상세 화면 — 한남동 레지던스 관련 정적 UI",
+        "en": "ATELIER MONO — Project case study static user interface showing Hannam-dong Residence",
+        "ja": "アトリエ・モノのプロジェクト詳細画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "프로젝트 상세 · 인테리어 스튜디오의 데스크톱 사용자 경험",
+        "en": "Project case study · Desktop interior studio experience",
+        "ja": "プロジェクト詳細・デスクトップ画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "premium-interior-studio-04",
+      "file": "premium-interior-studio-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "아틀리에 모노 상담 브리프 화면 — 한남동 레지던스 관련 정적 UI",
+        "en": "ATELIER MONO — Consultation brief static user interface showing Hannam-dong Residence",
+        "ja": "アトリエ・モノの相談ブリーフ画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "상담 브리프 · 인테리어 스튜디오의 데스크톱 사용자 경험",
+        "en": "Consultation brief · Desktop interior studio experience",
+        "ja": "相談ブリーフ・デスクトップ画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "premium-interior-studio-05",
+      "file": "premium-interior-studio-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "아틀리에 모노 모바일 프로젝트 상세 화면 — 한남동 레지던스 관련 정적 UI",
+        "en": "ATELIER MONO — Mobile case study static user interface showing Hannam-dong Residence",
+        "ja": "アトリエ・モノのモバイル詳細画面。静的UIデモ"
+      },
+      "caption": {
+        "ko": "모바일 프로젝트 상세 · 인테리어 스튜디오의 모바일 사용자 경험",
+        "en": "Mobile case study · Mobile interior studio experience",
+        "ja": "モバイル詳細・モバイル画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+$ 교체 전후 SHA-256 · 기준 v37(8a1bc73)
+files before 466 after 466 same set True
+교체 5장: before=before_sha256, after=after_sha256 → 5/5
+비대상 461장 해시 유지 → 461/461 (1·2차 316, 3차 보존 145)

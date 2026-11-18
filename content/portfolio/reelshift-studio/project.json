@@ -35,6 +35,7 @@
     "platform",
     "web"
   ],
+  "mainCategory": "platform",
   "platforms": [
     {
       "type": "web",
@@ -282,6 +283,11 @@
         "ko": "영상 작업은 원본 자산, 멀티트랙 편집, 모션, 색보정, 자막, 검수, 버전 비교, 출력 설정으로 이어집니다. REELSHIFT STUDIO는 이러한 전문 작업을 웹 기반 화면에서 어떻게 조직할 수 있는지 보여주는 자체 UI 데모입니다. 단일 AFTERLIGHT 프로젝트의 30초 영상과 V2 검수 상태를 모든 화면에 일관되게 적용했습니다. 실제 미디어 처리 엔진이나 온라인 협업 기능은 구현하지 않았습니다.",
         "en": "Video production moves through asset management, multitrack editing, motion graphics, color grading, captions, reviews, version comparison and export configuration. REELSHIFT STUDIO is an in-house UI demo exploring how these specialist tasks can be organized in a web-based workspace. Every screen uses the same 30-second AFTERLIGHT project and its V2 review state. The actual media processing engine and online collaboration features were not implemented.",
         "ja": "映像制作には、素材管理、マルチトラック編集、モーション、カラーグレーディング、字幕、レビュー、バージョン比較、書き出し設定など多くの工程があります。REELSHIFT STUDIOは、これらの専門作業をWeb上でどのように整理できるかを示す自社UIデモです。全画面で30秒の架空作品AFTERLIGHTとV2のレビュー状態を統一しています。実際の映像処理エンジンやオンライン共同作業機能は実装していません。"
+      },
+      "body": {
+        "ko": "같은 영상의 편집·색보정·자막·피드백이 서로 다른 버전을 기준으로 처리되지 않도록 작업물과 검수 시점을 연결했습니다.",
+        "en": "Editing, grading, subtitles, and review need a shared asset and version reference so feedback does not target an outdated cut.",
+        "ja": "編集・カラー調整・字幕・レビューが異なる版を対象にしないよう、素材と確認時点を共通化しました。"
       }
     },
     {

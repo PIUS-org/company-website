@@ -103,6 +103,8 @@ export type Project = {
   overview: L;
   industry?: L;
   categories: Category[];
+  /** the one category the main-page counters count this project under (must be one of `categories`) */
+  mainCategory: Category;
   platforms: Platform[];
   projectState?: ProjectState;
   year?: number;

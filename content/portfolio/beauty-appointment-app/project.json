@@ -1,0 +1,338 @@
+{
+  "id": "beauty-appointment-app",
+  "slug": "beauty-appointment-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 580,
+  "includeInPdf": true,
+  "title": {
+    "ko": "무드 뷰티 예약",
+    "en": "Mood Beauty Booking",
+    "ja": "mood. ビューティー予約"
+  },
+  "subtitle": {
+    "ko": "헤어스타일 발견에서 디자이너 시술 예약까지",
+    "en": "From hairstyle discovery to stylist booking",
+    "ja": "ヘアスタイル探しから美容師の予約まで"
+  },
+  "summary": {
+    "ko": "스타일 사진, 디자이너 프로필, 시술 가격과 예약 경험을 연결한 뷰티 앱.",
+    "en": "A beauty app connecting hairstyle photography, stylist profiles, menu pricing and appointments.",
+    "ja": "ヘア写真、美容師プロフィール、施術料金、予約をつなぐアプリ。"
+  },
+  "overview": {
+    "ko": "성수동 무드살롱의 서아 디자이너, 여성 디자인 커트 48,000원, 11월 21일 오후 3시라는 공통 예약 데이터를 중심으로 5개 화면을 구성했습니다.",
+    "en": "Five screens share a booking for stylist Seoa at Mood Salon in Seongsu: women’s design cut, KRW 48,000, November 21 at 3 PM.",
+    "ja": "聖水洞のムードサロン、担当のソア、女性デザインカット48,000ウォン、11月21日15時の共通予約データを基に構成しました。"
+  },
+  "industry": {
+    "ko": "뷰티 예약",
+    "en": "Beauty booking",
+    "ja": "ビューティー予約"
+  },
+  "categories": [
+    "mobile"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#B4685A",
+    "accentInk": "#311A16",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "beauty-appointment-app-01",
+    "beauty-appointment-app-03"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / D실 claude-integration-prompt.txt. 이미지 5장은 d-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "스타일 사진, 디자이너 프로필, 시술 가격과 예약 경험을 연결한 뷰티 앱.",
+        "en": "A beauty app connecting hairstyle photography, stylist profiles, menu pricing and appointments.",
+        "ja": "ヘア写真、美容師プロフィール、施術料金、予約をつなぐアプリ。"
+      },
+      "images": [
+        "beauty-appointment-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "스타일 이미지에서 발견한 시술을 실제 담당 디자이너·가격·예약 가능한 시간과 연결하도록 설계했습니다.",
+        "en": "An inspirational style needs to lead to the relevant service, stylist, price, and bookable time.",
+        "ja": "スタイル写真で見つけた施術を担当者・料金・予約可能時間へつなぐ導線を設計しました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "헤어스타일 사진과 추천 디자이너 홈",
+          "en": "Editorial hairstyles and featured stylist",
+          "ja": "ヘア写真とおすすめ美容師のホーム"
+        },
+        {
+          "ko": "성수동 여성 커트 검색과 필터",
+          "en": "Seongsu haircut search and filters",
+          "ja": "聖水洞の女性向けカット検索と絞り込み"
+        },
+        {
+          "ko": "서아 디자이너 소개·사진·48,000원 메뉴",
+          "en": "Stylist Seoa, portfolio and KRW 48,000 service",
+          "ja": "ソアの紹介・作品写真・48,000ウォンのメニュー"
+        },
+        {
+          "ko": "11월 21일 오후 3시 시술 예약",
+          "en": "November 21, 3 PM appointment selection",
+          "ja": "11月21日15時の施術予約"
+        },
+        {
+          "ko": "확정 예약과 지난 시술 리뷰 영역",
+          "en": "Upcoming appointment and past-service review",
+          "ja": "確定予約と過去の施術レビュー"
+        }
+      ],
+      "images": [
+        "beauty-appointment-app-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "스타일 발견",
+            "en": "Discover looks",
+            "ja": "スタイルを発見"
+          }
+        },
+        {
+          "title": {
+            "ko": "지역·시술 검색",
+            "en": "Filter by area and service",
+            "ja": "地域・施術で検索"
+          }
+        },
+        {
+          "title": {
+            "ko": "디자이너 포트폴리오",
+            "en": "View stylist portfolio",
+            "ja": "美容師の作品を見る"
+          }
+        },
+        {
+          "title": {
+            "ko": "날짜·시간 선택",
+            "en": "Pick a slot",
+            "ja": "日時選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "내 예약·리뷰",
+            "en": "Review booking",
+            "ja": "予約・レビュー"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "phones",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "beauty-appointment-app-03",
+        "beauty-appointment-app-04",
+        "beauty-appointment-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "화면별 기능이 명확히 구분되는 소비자 모바일 UI 5장, 실제 텍스트·사진·SVG 그래픽 제작. 동작하는 앱·로그인·서버·AI·결제·실시간 상태 기능 미구현.",
+        "en": "Five distinct static mobile UI screenshots with real typography, photos and vector elements. No working app, login, server, AI, payments or live status.",
+        "ja": "機能ごとに異なる静的モバイルUI5画面。実際の文字・写真・SVGを使用。動作するアプリ、ログイン、サーバー、AI、決済、リアルタイム機能は未実装。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "사진으로 스타일을 고르고, 그 스타일을 만든 디자이너의 포트폴리오에서 바로 시술과 시간을 예약하는 흐름입니다.",
+        "en": "You pick a style from photos, then book the service and time straight from the portfolio of the designer behind it.",
+        "ja": "写真でスタイルを選び、そのスタイルを手がけたデザイナーのポートフォリオから施術と時間をそのまま予約する流れです。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "beauty-appointment-app-01",
+      "file": "beauty-appointment-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "무드 뷰티 예약 — 헤어스타일 사진과 추천 디자이너 홈",
+        "en": "Mood Beauty Booking — Editorial hairstyles and featured stylist",
+        "ja": "mood. ビューティー予約 — ヘア写真とおすすめ美容師のホーム"
+      },
+      "caption": {
+        "ko": "헤어스타일 사진과 추천 디자이너 홈",
+        "en": "Editorial hairstyles and featured stylist",
+        "ja": "ヘア写真とおすすめ美容師のホーム"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "beauty-appointment-app-02",
+      "file": "beauty-appointment-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "무드 뷰티 예약 — 성수동 여성 커트 검색과 필터",
+        "en": "Mood Beauty Booking — Seongsu haircut search and filters",
+        "ja": "mood. ビューティー予約 — 聖水洞の女性向けカット検索と絞り込み"
+      },
+      "caption": {
+        "ko": "성수동 여성 커트 검색과 필터",
+        "en": "Seongsu haircut search and filters",
+        "ja": "聖水洞の女性向けカット検索と絞り込み"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "beauty-appointment-app-03",
+      "file": "beauty-appointment-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "무드 뷰티 예약 — 서아 디자이너 소개·사진·48,000원 메뉴",
+        "en": "Mood Beauty Booking — Stylist Seoa, portfolio and KRW 48,000 service",
+        "ja": "mood. ビューティー予約 — ソアの紹介・作品写真・48,000ウォンのメニュー"
+      },
+      "caption": {
+        "ko": "서아 디자이너 소개·사진·48,000원 메뉴",
+        "en": "Stylist Seoa, portfolio and KRW 48,000 service",
+        "ja": "ソアの紹介・作品写真・48,000ウォンのメニュー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "beauty-appointment-app-04",
+      "file": "beauty-appointment-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "무드 뷰티 예약 — 11월 21일 오후 3시 시술 예약",
+        "en": "Mood Beauty Booking — November 21, 3 PM appointment selection",
+        "ja": "mood. ビューティー予約 — 11月21日15時の施術予約"
+      },
+      "caption": {
+        "ko": "11월 21일 오후 3시 시술 예약",
+        "en": "November 21, 3 PM appointment selection",
+        "ja": "11月21日15時の施術予約"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "beauty-appointment-app-05",
+      "file": "beauty-appointment-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "무드 뷰티 예약 — 확정 예약과 지난 시술 리뷰 영역",
+        "en": "Mood Beauty Booking — Upcoming appointment and past-service review",
+        "ja": "mood. ビューティー予約 — 確定予約と過去の施術レビュー"
+      },
+      "caption": {
+        "ko": "확정 예약과 지난 시술 리뷰 영역",
+        "en": "Upcoming appointment and past-service review",
+        "ja": "確定予約と過去の施術レビュー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

@@ -35,6 +35,7 @@
     "platform",
     "web"
   ],
+  "mainCategory": "platform",
   "platforms": [
     {
       "type": "web",
@@ -159,14 +160,14 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
+        "ko": "계약 조항이 수정될 때 누가 어떤 버전에 의견을 남겼고 어느 단계에서 승인했는지를 구분하는 것이 중요합니다.",
+        "en": "Contract review must distinguish clause revisions, comments, and approvals by document version and reviewer.",
+        "ja": "契約条項の変更時に、誰がどの版へ意見を残し、どの段階で承認したかを区別することが重要です。"
+      },
+      "body": {
         "ko": "가상의 브랜드 협력 서비스 계약을 대상으로 두 버전의 조항을 비교하고, 의견을 정리한 뒤 내부 승인 요청까지 이어지는 흐름을 구성했습니다.",
         "en": "A fictional brand-services agreement moves through clause comparison, comments, revision review, and internal approval.",
         "ja": "架空のブランド支援契約について、条項比較からコメント整理、修正版の確認、社内承認依頼までを表現します。"
-      },
-      "body": {
-        "ko": "문서 CTR-261109-014는 v1.1에서 v1.2로 개정되었고 변경 조항은 2개(제4조 산출물 승인, 제7조 계약 종료)입니다. 검토 의견 3건 중 해결 2건·미해결 1건입니다. 11:45 내부 승인 대기 상태이며 전자서명·체결은 완료되지 않았습니다. 계약 예정 기간은 2027-01-01~2027-12-31입니다.",
-        "en": "Contract CTR-261109-014 moves from v1.1 to v1.2, changing two clauses (Article 4 deliverable approval; Article 7 termination). Of three comments, two are resolved and one remains open. The agreement is awaiting internal approval at 11:45; it is not signed. Proposed term: Jan 1–Dec 31, 2027.",
-        "ja": "契約CTR-261109-014はv1.1からv1.2へ改訂され、第4条（成果物の承認）と第7条（終了）の2条項を変更しました。コメント3件中2件解決・1件未解決。11:45時点で社内承認待ちで、署名・締結は未完了です。契約予定期間は2027年1月1日～12月31日です。"
       },
       "goals": [
         {

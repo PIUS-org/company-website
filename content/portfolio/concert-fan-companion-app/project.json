@@ -1,0 +1,338 @@
+{
+  "id": "concert-fan-companion-app",
+  "slug": "concert-fan-companion-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 730,
+  "includeInPdf": true,
+  "title": {
+    "ko": "스테이지온 팬 동행",
+    "en": "Stage:On Fan Companion",
+    "ja": "STAGE:ON ファンコンパニオン"
+  },
+  "subtitle": {
+    "ko": "공연 탐색과 가상 티켓, 팬 피드와 굿즈",
+    "en": "Explore live shows, demo tickets, fan posts and merch",
+    "ja": "公演を探し、模擬チケット・ファン投稿・グッズを楽しむ"
+  },
+  "summary": {
+    "ko": "가상의 NOEMA 공연을 중심으로 공연 탐색, 상세, 입장 불가 데모 티켓, 팬 콘텐츠를 시각화.",
+    "en": "A fictional NOEMA concert connects live-show discovery, detail, non-valid demo tickets and fan content.",
+    "ja": "架空のNOEMA公演を軸に、検索・詳細・入場不可の模擬チケット・ファン投稿を表現。"
+  },
+  "overview": {
+    "ko": "12월 5일 서울 공연 ‘BLUE HOUR’와 가상 티켓 R구역 5열 12번을 일관되게 반영했습니다. QR은 인증 불가 시각 예시이며 실제 공연이나 공식 계약·상품 판매가 아닙니다.",
+    "en": "The December 5 Seoul show BLUE HOUR and R-section, row 5, seat 12 remain consistent. The QR-like graphic is nonfunctional; no real show, partnership or commerce exists.",
+    "ja": "12月5日のソウル公演「BLUE HOUR」とRエリア5列12番の模擬チケットを一貫して表示。QR風画像は認証不可で、実際の公演・契約・販売ではありません。"
+  },
+  "industry": {
+    "ko": "공연·팬덤",
+    "en": "Live music and fandom",
+    "ja": "公演・ファンダム"
+  },
+  "categories": [
+    "mobile"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#6C55D8",
+    "accentInk": "#191434",
+    "cover": "dark",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "concert-fan-companion-app-01",
+    "concert-fan-companion-app-04"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / D실 claude-integration-prompt.txt. 이미지 5장은 d-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "가상의 NOEMA 공연을 중심으로 공연 탐색, 상세, 입장 불가 데모 티켓, 팬 콘텐츠를 시각화.",
+        "en": "A fictional NOEMA concert connects live-show discovery, detail, non-valid demo tickets and fan content.",
+        "ja": "架空のNOEMA公演を軸に、検索・詳細・入場不可の模擬チケット・ファン投稿を表現。"
+      },
+      "images": [
+        "concert-fan-companion-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "공연을 발견한 뒤 일정·좌석·팬 콘텐츠를 탐색할 수 있도록 하고 데모 티켓의 실제 입장 가능 여부는 명확히 구분했습니다.",
+        "en": "Discovery, show details, seating, and fan content are connected, while the sample ticket is clearly not valid for admission.",
+        "ja": "公演の発見から日程・座席・ファンコンテンツへつなぎ、デモチケットは入場に使えないと明示しました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "공연 사진 중심 팬 홈과 다가오는 일정",
+          "en": "Concert-led fan home and upcoming dates",
+          "ja": "公演写真を中心としたファンホーム"
+        },
+        {
+          "ko": "12월 콘서트 일정과 지역·날짜 필터",
+          "en": "December concert search with location filters",
+          "ja": "12月公演の検索と地域・日付フィルター"
+        },
+        {
+          "ko": "NOEMA BLUE HOUR 공연 안내와 좌석 가격",
+          "en": "NOEMA BLUE HOUR details, seats and prices",
+          "ja": "NOEMA BLUE HOUR公演詳細と座席料金"
+        },
+        {
+          "ko": "12월 5일 R구역 5열 12번 가상 티켓",
+          "en": "Non-valid December 5 pass: R-section, row 5, seat 12",
+          "ja": "12月5日 Rエリア5列12番の無効な模擬チケット"
+        },
+        {
+          "ko": "팬 공연 준비 글과 판매하지 않는 굿즈",
+          "en": "Fan post and concept-only merchandise",
+          "ja": "ファン投稿と非売品の架空グッズ"
+        }
+      ],
+      "images": [
+        "concert-fan-companion-app-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "팬 홈",
+            "en": "Fan home",
+            "ja": "ファンホーム"
+          }
+        },
+        {
+          "title": {
+            "ko": "공연 검색",
+            "en": "Browse shows",
+            "ja": "公演検索"
+          }
+        },
+        {
+          "title": {
+            "ko": "12월 5일 공연 상세",
+            "en": "December 5 show detail",
+            "ja": "12月5日の詳細"
+          }
+        },
+        {
+          "title": {
+            "ko": "입장 불가 데모 티켓",
+            "en": "Non-valid demo pass",
+            "ja": "入場不可の模擬チケット"
+          }
+        },
+        {
+          "title": {
+            "ko": "팬 게시글·가상 굿즈",
+            "en": "Fan posts and concept merch",
+            "ja": "ファン投稿・架空グッズ"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "phones",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "concert-fan-companion-app-03",
+        "concert-fan-companion-app-04",
+        "concert-fan-companion-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "화면별 기능이 명확히 구분되는 소비자 모바일 UI 5장, 실제 텍스트·사진·SVG 그래픽 제작. 동작하는 앱·로그인·서버·AI·결제·실시간 상태 기능 미구현.",
+        "en": "Five distinct static mobile UI screenshots with real typography, photos and vector elements. No working app, login, server, AI, payments or live status.",
+        "ja": "機能ごとに異なる静的モバイルUI5画面。実際の文字・写真・SVGを使用。動作するアプリ、ログイン、サーバー、AI、決済、リアルタイム機能は未実装。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "공연을 찾고 좌석을 확인한 뒤, 티켓과 팬들의 준비 이야기를 같은 앱에서 이어 보는 공연 전후의 경험을 담았습니다.",
+        "en": "It covers the time around a show: finding the concert and checking the seat, then keeping the ticket and fans’ preparation posts in the same app.",
+        "ja": "公演を探して座席を確かめ、チケットとファンの準備の投稿を同じアプリで続けて見られる、公演前後の体験をまとめました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "concert-fan-companion-app-01",
+      "file": "concert-fan-companion-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스테이지온 팬 동행 — 공연 사진 중심 팬 홈과 다가오는 일정",
+        "en": "Stage:On Fan Companion — Concert-led fan home and upcoming dates",
+        "ja": "STAGE:ON ファンコンパニオン — 公演写真を中心としたファンホーム"
+      },
+      "caption": {
+        "ko": "공연 사진 중심 팬 홈과 다가오는 일정",
+        "en": "Concert-led fan home and upcoming dates",
+        "ja": "公演写真を中心としたファンホーム"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "concert-fan-companion-app-02",
+      "file": "concert-fan-companion-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스테이지온 팬 동행 — 12월 콘서트 일정과 지역·날짜 필터",
+        "en": "Stage:On Fan Companion — December concert search with location filters",
+        "ja": "STAGE:ON ファンコンパニオン — 12月公演の検索と地域・日付フィルター"
+      },
+      "caption": {
+        "ko": "12월 콘서트 일정과 지역·날짜 필터",
+        "en": "December concert search with location filters",
+        "ja": "12月公演の検索と地域・日付フィルター"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "concert-fan-companion-app-03",
+      "file": "concert-fan-companion-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스테이지온 팬 동행 — NOEMA BLUE HOUR 공연 안내와 좌석 가격",
+        "en": "Stage:On Fan Companion — NOEMA BLUE HOUR details, seats and prices",
+        "ja": "STAGE:ON ファンコンパニオン — NOEMA BLUE HOUR公演詳細と座席料金"
+      },
+      "caption": {
+        "ko": "NOEMA BLUE HOUR 공연 안내와 좌석 가격",
+        "en": "NOEMA BLUE HOUR details, seats and prices",
+        "ja": "NOEMA BLUE HOUR公演詳細と座席料金"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "concert-fan-companion-app-04",
+      "file": "concert-fan-companion-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스테이지온 팬 동행 — 12월 5일 R구역 5열 12번 가상 티켓",
+        "en": "Stage:On Fan Companion — Non-valid December 5 pass: R-section, row 5, seat 12",
+        "ja": "STAGE:ON ファンコンパニオン — 12月5日 Rエリア5列12番の無効な模擬チケット"
+      },
+      "caption": {
+        "ko": "12월 5일 R구역 5열 12번 가상 티켓",
+        "en": "Non-valid December 5 pass: R-section, row 5, seat 12",
+        "ja": "12月5日 Rエリア5列12番の無効な模擬チケット"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "concert-fan-companion-app-05",
+      "file": "concert-fan-companion-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스테이지온 팬 동행 — 팬 공연 준비 글과 판매하지 않는 굿즈",
+        "en": "Stage:On Fan Companion — Fan post and concept-only merchandise",
+        "ja": "STAGE:ON ファンコンパニオン — ファン投稿と非売品の架空グッズ"
+      },
+      "caption": {
+        "ko": "팬 공연 준비 글과 판매하지 않는 굿즈",
+        "en": "Fan post and concept-only merchandise",
+        "ja": "ファン投稿と非売品の架空グッズ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

@@ -22,9 +22,9 @@
     "ja": "講師は教材制作と採点を行い、受講者はモバイルで講義やクイズの続きを学べます。"
   },
   "overview": {
-    "ko": "강의 목차, 레슨 본문, 평가 문항, 제출물 채점이 서로 다른 도구에 흩어지면 교육 운영 흐름이 단절됩니다. PENOVA CLASS는 강사와 학습자의 업무를 구분하면서도 강의 제작부터 학습 완료까지 하나의 과정으로 연결하는 자체 UI 데모입니다.",
-    "en": "When course outlines, lesson content, assessments, and grading are scattered across tools, learning operations lose continuity. PENOVA CLASS is a self-initiated UI concept that separates instructor and learner experiences while connecting the workflow from authoring to completion.",
-    "ja": "講義構成、教材、評価問題、採点が別々のツールに分かれていると、教育運営の流れが途切れがちです。PENOVA CLASSは、講師と受講者それぞれの操作を整理しながら、教材制作から学習完了までをつなぐ自社制作のUIデモです。"
+    "ko": "강의 목차, 레슨 본문, 평가 문항, 제출물 채점이 서로 다른 도구에 흩어지면 교육 운영 흐름이 단절됩니다. PENOVA CLASS는 강사와 학습자의 업무를 구분하면서도 강의 제작부터 학습 완료까지 하나의 과정으로 연결하는 자체 UI 데모입니다. 교육 담당자가 레슨을 반복 편집하고 평가 문항과 학습 자료를 관리하는 과정, 학습자의 제출물을 확인하고 피드백을 전달하는 과정이 하나의 운영 인터페이스에서 이어져야 합니다.",
+    "en": "When course outlines, lesson content, assessments, and grading are scattered across tools, learning operations lose continuity. PENOVA CLASS is a self-initiated UI concept that separates instructor and learner experiences while connecting the workflow from authoring to completion. Educators need a continuous interface for editing lessons, managing assessments and resources, reviewing submissions, and delivering actionable feedback.",
+    "ja": "講義構成、教材、評価問題、採点が別々のツールに分かれていると、教育運営の流れが途切れがちです。PENOVA CLASSは、講師と受講者それぞれの操作を整理しながら、教材制作から学習完了までをつなぐ自社制作のUIデモです。 教材の編集、評価問題や資料の管理、提出課題の確認、フィードバックまでを一貫して扱える運営画面が必要です。"
   },
   "industry": {
     "ko": "교육·EdTech·학습 관리",
@@ -36,6 +36,7 @@
     "web",
     "mobile"
   ],
+  "mainCategory": "platform",
   "platforms": [
     {
       "type": "admin",
@@ -186,14 +187,9 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
-        "ko": "강의 목차, 레슨 본문, 평가 문항, 제출물 채점이 서로 다른 도구에 흩어지면 교육 운영 흐름이 단절됩니다. PENOVA CLASS는 강사와 학습자의 업무를 구분하면서도 강의 제작부터 학습 완료까지 하나의 과정으로 연결하는 자체 UI 데모입니다.",
-        "en": "When course outlines, lesson content, assessments, and grading are scattered across tools, learning operations lose continuity. PENOVA CLASS is a self-initiated UI concept that separates instructor and learner experiences while connecting the workflow from authoring to completion.",
-        "ja": "講義構成、教材、評価問題、採点が別々のツールに分かれていると、教育運営の流れが途切れがちです。PENOVA CLASSは、講師と受講者それぞれの操作を整理しながら、教材制作から学習完了までをつなぐ自社制作のUIデモです。"
-      },
-      "body": {
-        "ko": "교육 담당자가 레슨을 반복 편집하고 평가 문항과 학습 자료를 관리하는 과정, 학습자의 제출물을 확인하고 피드백을 전달하는 과정이 하나의 운영 인터페이스에서 이어져야 합니다.",
-        "en": "Educators need a continuous interface for editing lessons, managing assessments and resources, reviewing submissions, and delivering actionable feedback.",
-        "ja": "教材の編集、評価問題や資料の管理、提出課題の確認、フィードバックまでを一貫して扱える運営画面が必要です。"
+        "ko": "강의 편집과 수강생 학습, 퀴즈 채점이 서로 떨어져 있으면 어떤 레슨이 실제 이수됐는지 판단하기 어렵습니다.",
+        "en": "Course authoring, learner progress, and assessment results must refer to the same lessons and completion criteria.",
+        "ja": "講座の編集、受講、採点が分断されると、どのレッスンが実際に修了したか判断しづらくなります。"
       }
     },
     {

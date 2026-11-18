@@ -36,6 +36,7 @@
     "web",
     "mobile"
   ],
+  "mainCategory": "mobile",
   "platforms": [
     {
       "type": "web",
@@ -200,14 +201,14 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
+        "ko": "테이블 주문이 주방으로 전달된 시점과 실제 서빙·결제 상태를 구분해야 홀과 주방이 같은 주문을 다르게 이해하지 않습니다.",
+        "en": "Order intake, kitchen preparation, serving, and payment need distinct states so front-of-house and kitchen teams share one view.",
+        "ja": "注文の受付、調理、配膳、会計を区別し、ホールと厨房が同じ注文を別の状態として認識しないようにしました。"
+      },
+      "body": {
         "ko": "가상 레스토랑의 8개 테이블 중 T04에서 발생한 주문을 기준으로 홀 POS, 주방 KDS, 서빙, 결제, 테이블 정리 상태를 분리해 표현합니다.",
         "en": "A fictional eight-table restaurant uses table T04 to demonstrate how POS, kitchen display, serving, payment, and table reset interact without conflating states.",
         "ja": "架空の8テーブルのレストランでT04の注文を例に、POS、厨房表示、配膳、決済、清掃の状態を区別します。"
-      },
-      "body": {
-        "ko": "T04 주문은 머시룸 리소토 2개 ₩36,000, 마르게리타 피자 1개 ₩21,000, 탄산수 2개 ₩8,000으로 합계 ₩65,000입니다. 메뉴 가격은 부가세 포함이며 가상의 매장 데이터입니다.",
-        "en": "The T04 ticket includes two mushroom risottos for ₩36,000, one Margherita pizza for ₩21,000, and two sparkling waters for ₩8,000: ₩65,000 in total. Prices include VAT and are fictional.",
-        "ja": "T04の注文はマッシュルームリゾット2点₩36,000、マルゲリータピザ1点₩21,000、炭酸水2点₩8,000で合計₩65,000です。価格は税込みの架空データです。"
       },
       "goals": [
         {

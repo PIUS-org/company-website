@@ -12,6 +12,7 @@
  "summary": { "ko": "목록 카드에 나오는 한 줄 설명", "en": "", "ja": "" },
  "overview": { "ko": "프로젝트 개요 2~3문장", "en": "", "ja": "" },
  "categories": ["web"],
+ "mainCategory": "web",
  "platforms": [{ "type": "web" }],
  "scope": [],
  "theme": { "accent": "#bfd6ff", "accentInk": "#0b1220", "cover": "dark" },

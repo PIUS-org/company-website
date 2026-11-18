@@ -1,0 +1,301 @@
+{
+  "id": "parenting-care-record-app",
+  "slug": "parenting-care-record-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 710,
+  "includeInPdf": true,
+  "title": {
+    "ko": "육아 기록 앱",
+    "en": "Parenting Care Journal",
+    "ja": "育児記録アプリ"
+  },
+  "subtitle": {
+    "ko": "작은 하루를 함께 기록하는 가족 공간",
+    "en": "A shared journal for the smallest moments",
+    "ja": "小さな一日を家族で記録する"
+  },
+  "summary": {
+    "ko": "아기의 수유·수면 기록, 하루 타임라인, 성장 추이, 가족 공유를 차분한 정보 디자인으로 구성한 모바일 UI 데모입니다.",
+    "en": "A calm parenting UI covering feeding, sleep, daily timelines, growth logs, and family participation.",
+    "ja": "授乳・睡眠、日別タイムライン、成長推移、家族共有を落ち着いた情報設計でまとめたUIデモです。"
+  },
+  "overview": {
+    "ko": "아기의 수유·수면 기록, 하루 타임라인, 성장 추이, 가족 공유를 차분한 정보 디자인으로 구성한 모바일 UI 데모입니다.",
+    "en": "A calm parenting UI covering feeding, sleep, daily timelines, growth logs, and family participation.",
+    "ja": "授乳・睡眠、日別タイムライン、成長推移、家族共有を落ち着いた情報設計でまとめたUIデモです。"
+  },
+  "industry": {
+    "ko": "육아 기록",
+    "en": "Parenting records",
+    "ja": "育児記録"
+  },
+  "categories": [
+    "mobile"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#9A6C45",
+    "accentInk": "#312316",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "parenting-care-record-app-01",
+    "parenting-care-record-app-04"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / C실 claude-integration-prompt.txt. 이미지 5장은 c-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "수유와 수면을 몇 번의 탭으로 남기고, 가족이 함께 돌아보는 기록.",
+        "en": "Log feeds and sleep in a few taps, then look back on them together as a family.",
+        "ja": "授乳と睡眠を数タップで残し、家族で一緒に振り返る記録。"
+      },
+      "images": [
+        "parenting-care-record-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "빠른 수유·수면 기록과 날짜별 합계, 가족 공유 내역이 같은 시점을 가리키도록 기록 단위를 구분했습니다.",
+        "en": "Quick feeding and sleep entries, daily totals, and family views need consistent timestamps and units.",
+        "ja": "授乳・睡眠の簡単な記録、日別合計、家族共有の表示が同じ時点を参照するよう単位を整理しました。"
+      },
+      "body": {
+        "ko": "빠른 기록, 수유량·수면 합산, 날짜별 성장 차트, 공동 기록 권한과 가족 일정 안내를 설계했습니다.",
+        "en": "Quick logging, daily feeding and sleep totals, growth plots, shared recording roles, and family calendar notes.",
+        "ja": "簡単な記録入力、授乳量・睡眠時間の集計、成長グラフ、共同記録の権限、家族予定を設計しました。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "서아의 마지막 수유 확인",
+            "en": "Check Seoah’s latest feed",
+            "ja": "ソアの直近の授乳を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "11월 13일 10:20 분유 150ml 기록",
+            "en": "Log 150ml formula at 10:20 on November 13",
+            "ja": "11月13日10時20分のミルク150mlを入力"
+          }
+        },
+        {
+          "title": {
+            "ko": "일별 수유 450ml·수면 3시간 15분 확인",
+            "en": "Review 450ml feeding and 3h 15m sleep",
+            "ja": "合計450ml・睡眠3時間15分を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "6.5kg 성장 그래프",
+            "en": "Inspect 6.5kg growth",
+            "ja": "6.5kgの成長記録"
+          }
+        },
+        {
+          "title": {
+            "ko": "가족 공유",
+            "en": "Share with family",
+            "ja": "家族共有"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "focus",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "parenting-care-record-app-04",
+        "parenting-care-record-app-02",
+        "parenting-care-record-app-03",
+        "parenting-care-record-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "04",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "값과 성장 그래프는 예시이며 의료적 판단·진단 기능은 없습니다. 실제 알림·동기화 없이 제작된 정적 프론트 이미지 5장입니다.",
+        "en": "All measurements and charts are illustrative, not medical guidance. Five static frontend screens have no live notifications or synchronization.",
+        "ja": "数値とグラフはサンプルであり医療評価・診断ではありません。通知・同期機能を持たない静的UI全5画面です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "05",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "양육의 작은 순간을 이해하기 쉬운 가족의 공동 기록으로 만들었습니다.",
+        "en": "Turn everyday care into a clear, shared family record.",
+        "ja": "日々の小さな出来事を、家族みんながわかる記録に変えます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "parenting-care-record-app-01",
+      "file": "parenting-care-record-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "육아 기록 앱 — 마지막 수유·수면과 빠른 기록 홈 화면",
+        "en": "Parenting Care Journal — Latest feeding, sleep and quick logging mobile screen",
+        "ja": "育児記録アプリ — 直近の授乳・睡眠と簡易入力の画面"
+      },
+      "caption": {
+        "ko": "마지막 수유·수면과 빠른 기록 홈",
+        "en": "Latest feeding, sleep and quick logging",
+        "ja": "直近の授乳・睡眠と簡易入力"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "parenting-care-record-app-02",
+      "file": "parenting-care-record-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "육아 기록 앱 — 분유 유형·시각·150ml 입력 화면",
+        "en": "Parenting Care Journal — Formula type, time and 150ml entry mobile screen",
+        "ja": "育児記録アプリ — ミルクの種類・時間・150mlの入力の画面"
+      },
+      "caption": {
+        "ko": "분유 유형·시각·150ml 입력",
+        "en": "Formula type, time and 150ml entry",
+        "ja": "ミルクの種類・時間・150mlの入力"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "parenting-care-record-app-03",
+      "file": "parenting-care-record-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "육아 기록 앱 — 일별 총 수유량과 수면 타임라인 화면",
+        "en": "Parenting Care Journal — Daily feeding and sleep totals and timeline mobile screen",
+        "ja": "育児記録アプリ — 授乳・睡眠の一日合計と履歴の画面"
+      },
+      "caption": {
+        "ko": "일별 총 수유량과 수면 타임라인",
+        "en": "Daily feeding and sleep totals and timeline",
+        "ja": "授乳・睡眠の一日合計と履歴"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "parenting-care-record-app-04",
+      "file": "parenting-care-record-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "육아 기록 앱 — 체중 수치에 비례한 성장 그래프 화면",
+        "en": "Parenting Care Journal — Growth graph scaled to weight values mobile screen",
+        "ja": "育児記録アプリ — 体重の値に対応した成長グラフの画面"
+      },
+      "caption": {
+        "ko": "체중 수치에 비례한 성장 그래프",
+        "en": "Growth graph scaled to weight values",
+        "ja": "体重の値に対応した成長グラフ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "parenting-care-record-app-05",
+      "file": "parenting-care-record-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "육아 기록 앱 — 가족 참여 권한과 공유 일정 화면",
+        "en": "Parenting Care Journal — Family participation and shared schedule mobile screen",
+        "ja": "育児記録アプリ — 家族の権限と共有スケジュールの画面"
+      },
+      "caption": {
+        "ko": "가족 참여 권한과 공유 일정",
+        "en": "Family participation and shared schedule",
+        "ja": "家族の権限と共有スケジュール"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

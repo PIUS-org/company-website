@@ -1,0 +1,6 @@
+$ public build leak check · commit 19f6bca
+3차 slug hits in public build: 0
+built portfolio pages: [slug] 
+public/portfolio: charter-bus-dispatch commute-shuttle-platform farm-commerce-backend fity metaverse-live-app transport-erp-monitoring 
+review 78건 경로(portfolio/<slug>) 공개 빌드 노출: 0 건
+approved: ['charter-bus-dispatch', 'commute-shuttle-platform', 'farm-commerce-backend', 'fity', 'metaverse-live-app', 'transport-erp-monitoring']

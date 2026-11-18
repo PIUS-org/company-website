@@ -36,6 +36,7 @@
     "web",
     "mobile"
   ],
+  "mainCategory": "mobile",
   "platforms": [
     {
       "type": "web",
@@ -288,6 +289,11 @@
         "ko": "여행 계획은 방문 장소, 날짜별 일정, 동행자의 의견, 예산과 예약 기록이 흩어지기 쉽습니다. ROAMFRAME은 여행의 전체 흐름을 하나의 화면에서 파악하도록 설계한 사용자 중심 UI 콘셉트입니다. 교토 3박 4일이라는 동일한 예시 데이터를 사용하여 일정과 2D 지도, 장소 저장, 투표와 코멘트, 공동 경비 및 예약 정리 화면이 어떻게 연결되는지 보여줍니다.",
         "en": "Planning a trip often means coordinating places, daily schedules, travel companions, budgets and reservation details across separate tools. ROAMFRAME is a user-centered interface concept that brings these planning tasks into one visual workspace. A consistent four-day Kyoto sample itinerary demonstrates how schedule editing, illustrative 2D maps, saved places, group votes and comments, shared spending and reservation records can be presented together.",
         "ja": "旅行の計画では、訪問先、日別スケジュール、同行者の意見、予算、予約情報が別々に管理されがちです。ROAMFRAMEは、これらの情報をひとつの視覚的なワークスペースにまとめるユーザー向けUIコンセプトです。京都3泊4日の共通サンプルデータを使用し、旅程編集、2Dマップ、スポット保存、投票とコメント、共同費用、予約記録がどのようにつながるかを表現します。"
+      },
+      "body": {
+        "ko": "동행자가 정한 장소 순서와 예산, 예약 정보가 서로 다른 계획으로 남지 않도록 하나의 여행 일정에 묶어 보여줍니다.",
+        "en": "Saved places, group decisions, budgets, and bookings are organised around the same itinerary so plans remain understandable to everyone travelling.",
+        "ja": "同行者が決めた訪問順・予算・予約情報が別々の計画として残らないよう、一つの旅程にまとめます。"
       }
     },
     {

@@ -1,0 +1,12 @@
+$ v39 overview 자동 검사 (84 × ko/en/ja)
+발견: {'과장 후보': 4, '금지어': 2}
+  ('fieldnest', 'ko', '과장 후보', '운영 중인', '니다. 생산 설비의 제조 실적이나 건설 공정이 아닌, 운영 중인 건물의 유지보수 업무에 집중합니다.')
+  ('helio-desk', 'en', '금지어(이름 비공개)')
+  ('reelshift-studio', 'ko', '과장 후보', '고객사', 'US가 기획·시각화한 자체 정적 UI 데모이며, 실제 고객사 수행 또는 영상 편집·인코딩 서비스 운영 실적이 아닙')
+  ('reelshift-studio', 'en', '금지어(이름 비공개)')
+  ('sales-crm-pipeline', 'ko', '과장 후보', '고객사', '다음 행동을 판단하기 어렵습니다. 영업 담당자는 여러 고객사의 요청을 접수한 뒤 단계별 기회, 상담 이력, 견적 ')
+  ('stackflow-wms', 'ja', '과장 후보', '導入実績', '、棚卸差異は承認までシステム在庫と分けて管理します。顧客向け導入実績ではなく、PIUSによるUI・業務フローのデモです。')
+ko lead+body 글자 수 v38 중앙값 105.0 → v39 133.0 최대 293
+en lead+body 글자 수 v38 중앙값 208.0 → v39 258.5 최대 602
+ja lead+body 글자 수 v38 중앙값 79.5 → v39 101.5 최대 250
+가장 긴 6: [('roamframe-travel', 'en', 455, 602), ('reelshift-studio', 'en', 456, 582), ('civera-twin', 'en', 396, 525), ('commerce-returns-ops', 'en', 347, 460), ('noctave-fest', 'en', 329, 452), ('academy-enrollment-ops', 'en', 306, 436)]

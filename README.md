@@ -25,7 +25,7 @@ npm run portfolio:check        # 포트폴리오 콘텐츠 검사
 | 변수 | 용도 |
 |---|---|
 | `NEXT_PUBLIC_SITE_URL` | 실제 사이트 주소입니다. OG 이미지 같은 공유 미리보기의 절대경로에 쓰입니다. |
-| `NEXT_PUBLIC_FORM_ENDPOINT` | 문의 폼 접수 API입니다. 비워두면 전송을 흉내만 냅니다(UI 미리보기). |
+| `NEXT_PUBLIC_FORM_ENDPOINT` | 문의 폼 접수 API입니다. 비워두면 전송하지 않고 실패 안내를 띄웁니다(가짜 접수 성공 없음). 운영 배포 전 반드시 설정·수신 확인. |
 
 폼은 `POST` + `application/json`으로 아래 값을 보냅니다.
 - 보내는 필드: `name, company, phone, email, message, agree, lang, sentAt`
@@ -41,7 +41,7 @@ app/
   layout.tsx          메타데이터(OG·트위터), 뷰포트, 폰트, globals.css
   page.tsx            <Site />
   robots.ts sitemap.ts  검색엔진용 robots.txt · sitemap.xml
-  icon.png apple-icon.png  파비콘
+  icon.png apple-icon.png favicon.ico  파비콘
   globals.css         디자인 토큰 · 리셋 · 공용 유틸(.wrap .btn .disp .sec-idx .pin …)
 components/
   Site.tsx            페이지 구성 + 부팅 순서(최상단 시작 → 3D 준비 → 스플래시 → 인트로)
@@ -155,7 +155,7 @@ scripts/portfolio-capture.mjs  데모 화면 캡처 → content/portfolio/<slug>
 
 ## 7. 운영 전 체크리스트
 
-- [ ] Vercel 환경변수 `NEXT_PUBLIC_SITE_URL` 설정 (`NEXT_PUBLIC_FORM_ENDPOINT`는 문의 폼 백엔드 준비 후)
+- [ ] `.env.local`에 `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_FORM_ENDPOINT` 설정
 - [ ] 대표자 영문·일문 표기 확인: 현재 "Si-on Choi" / 「チェ・シオン（최시온）」(`lib/i18n.ts`)
 - [ ] 영문·일문 주소 확인
 - [ ] 영어·일본어 번역 원어민 검수: `lib/i18n.ts`와 각 controller 안의 목업 문구

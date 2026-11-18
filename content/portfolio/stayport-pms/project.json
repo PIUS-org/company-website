@@ -22,9 +22,9 @@
     "ja": "予約、未精算額、チェックイン、清掃・点検状態を同じサンプルデータでつないだ宿泊運営UIデモです。"
   },
   "overview": {
-    "ko": "호텔 운영은 객실별 예약 일정, 고객 요청, 결제 상태, 체크인 준비, 청소 완료 상태가 긴밀히 연결됩니다. STAYPORT PMS는 현장 운영자가 보는 예약 캘린더와 프런트 화면, 작업자가 사용하는 태블릿 점검 화면을 분리해 설계했습니다.",
-    "en": "Hotel operations connect room availability, guest requests, payment balances, arrival readiness, and cleaning status. STAYPORT PMS separates the reservation and front-desk desktop views from the touch-oriented housekeeping tablet.",
-    "ja": "ホテル運営では、客室の予約状況、お客様の要望、支払状況、入室準備、清掃完了が密接に連動します。STAYPORT PMSは、予約・フロント向けデスクトップ画面と、現場スタッフ向けタブレット画面を分けて設計しました。"
+    "ko": "호텔 운영은 객실별 예약 일정, 고객 요청, 결제 상태, 체크인 준비, 청소 완료 상태가 긴밀히 연결됩니다. STAYPORT PMS는 현장 운영자가 보는 예약 캘린더와 프런트 화면, 작업자가 사용하는 태블릿 점검 화면을 분리해 설계했습니다. 예약 가능 객실과 청소 완료 상태가 서로 다르면 체크인 지연이 생길 수 있습니다. 같은 예약번호와 객실번호를 통해 예약에서 객실 점검까지의 흐름을 표현합니다.",
+    "en": "Hotel operations connect room availability, guest requests, payment balances, arrival readiness, and cleaning status. STAYPORT PMS separates the reservation and front-desk desktop views from the touch-oriented housekeeping tablet. A mismatch between availability and room readiness can delay check-in. Shared booking and room identifiers show how the workflow moves from reservation to room inspection.",
+    "ja": "ホテル運営では、客室の予約状況、お客様の要望、支払状況、入室準備、清掃完了が密接に連動します。STAYPORT PMSは、予約・フロント向けデスクトップ画面と、現場スタッフ向けタブレット画面を分けて設計しました。 空室状況と清掃完了情報が一致しないと、チェックインが遅れる可能性があります。予約番号と客室番号を統一し、予約から点検までの流れを表現しています。"
   },
   "industry": {
     "ko": "호텔·숙박 운영",
@@ -36,6 +36,7 @@
     "platform",
     "web"
   ],
+  "mainCategory": "erp",
   "platforms": [
     {
       "type": "admin",
@@ -186,14 +187,9 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
-        "ko": "호텔 운영은 객실별 예약 일정, 고객 요청, 결제 상태, 체크인 준비, 청소 완료 상태가 긴밀히 연결됩니다. STAYPORT PMS는 현장 운영자가 보는 예약 캘린더와 프런트 화면, 작업자가 사용하는 태블릿 점검 화면을 분리해 설계했습니다.",
-        "en": "Hotel operations connect room availability, guest requests, payment balances, arrival readiness, and cleaning status. STAYPORT PMS separates the reservation and front-desk desktop views from the touch-oriented housekeeping tablet.",
-        "ja": "ホテル運営では、客室の予約状況、お客様の要望、支払状況、入室準備、清掃完了が密接に連動します。STAYPORT PMSは、予約・フロント向けデスクトップ画面と、現場スタッフ向けタブレット画面を分けて設計しました。"
-      },
-      "body": {
-        "ko": "예약 가능 객실과 청소 완료 상태가 서로 다르면 체크인 지연이 생길 수 있습니다. 같은 예약번호와 객실번호를 통해 예약에서 객실 점검까지의 흐름을 표현합니다.",
-        "en": "A mismatch between availability and room readiness can delay check-in. Shared booking and room identifiers show how the workflow moves from reservation to room inspection.",
-        "ja": "空室状況と清掃完了情報が一致しないと、チェックインが遅れる可能性があります。予約番号と客室番号を統一し、予約から点検までの流れを表現しています。"
+        "ko": "예약 가능 객실, 체크인 준비, 청소·점검 완료를 같은 상태로 취급하면 현장 배정에서 혼선이 생깁니다.",
+        "en": "Room availability, check-in readiness, and housekeeping completion are different operational states that need to be reconciled.",
+        "ja": "予約可能、チェックイン準備、清掃・点検完了は異なる状態として整理する必要があります。"
       }
     },
     {

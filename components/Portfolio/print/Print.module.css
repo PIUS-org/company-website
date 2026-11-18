@@ -1,13 +1,13 @@
 /* ===== PDF pages =====  A4 landscape by default, 16:9 via ?format=169.
    Sizes are in mm / pt so the PDF is identical whatever the screen. */
 .doc{
-  --pw:297mm; --ph:210mm; --mx:15mm; --scrH:118mm; --coverH:124mm; --flowH:88mm;
+  --pw:297mm; --ph:210mm; --mx:15mm; --scrH:118mm; --scrH1:140mm; --scrH1t:130mm; --coverH:124mm; --flowH:88mm;
   --paper:#f6f5f3; --ink-p:#15181d; --ink-p2:rgba(21,24,29,.66); --ink-p3:rgba(21,24,29,.44); --line-p:rgba(21,24,29,.12);
   display:grid; justify-content:center; gap:10mm; padding:10mm 0; background:#25282d;
   font-family:var(--f-body); color:var(--ink-p); font-size:9.5pt; line-height:1.6;
   -webkit-print-color-adjust:exact; print-color-adjust:exact;
 }
-.doc[data-format="169"]{ --pw:338.67mm; --ph:190.5mm; --mx:17mm; --scrH:104mm; --coverH:110mm; --flowH:78mm; }
+.doc[data-format="169"]{ --pw:338.67mm; --ph:190.5mm; --mx:17mm; --scrH:104mm; --scrH1:124mm; --scrH1t:115mm; --coverH:110mm; --flowH:78mm; }
 @media print{ .doc{ gap:0; padding:0; background:none; } }
 
 .pg{

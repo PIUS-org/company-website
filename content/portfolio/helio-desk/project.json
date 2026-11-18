@@ -36,6 +36,7 @@
     "web",
     "integration"
   ],
+  "mainCategory": "integration",
   "platforms": [
     {
       "type": "web",
@@ -174,14 +175,14 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
+        "ko": "고객 문의의 첫 응답과 기술팀 이관, 해결 완료가 하나의 티켓에서 추적되어야 대응 책임이 명확해집니다.",
+        "en": "First response, escalation, and resolution belong to the same support ticket so ownership and service commitments remain visible.",
+        "ja": "顧客問い合わせの初回応答、技術チームへの引き継ぎ、解決完了を一つのチケットで追えることが重要です。"
+      },
+      "body": {
         "ko": "가상 소프트웨어 서비스의 로그인 오류 문의를 대표 티켓으로 삼아 접수·첫 응답·기술팀 이관·해결 과정을 서로 다른 시점으로 구성했습니다.",
         "en": "A fictional login issue demonstrates the distinct stages of intake, first response, technical escalation, and resolution.",
         "ja": "架空サービスへのログイン不具合を代表チケットとし、受付、初回返信、技術チームへの引継ぎ、解決を時刻別に表現します。"
-      },
-      "body": {
-        "ko": "티켓 HEL-261109-042는 09:10 접수, 09:14 상담사 배정, 09:22 첫 응답, 10:05 기술팀 이관, 11:10 해결입니다. 첫 응답 소요 12분(목표 30분 이내), 해결 소요 2시간(목표 4시간 이내)입니다. 09:30 기준 인박스 12건은 Open 6·In Progress 4·Waiting on Customer 1·Resolved 1이며 대표 티켓은 In Progress에 포함됩니다.",
-        "en": "Ticket HEL-261109-042 arrives at 09:10, is assigned 09:14, receives a first response at 09:22, escalates at 10:05, and resolves at 11:10. First reply: 12 minutes against a 30-minute target; resolution: two hours against a four-hour target. At 09:30 the fictional inbox has 12 tickets: six open, four in progress, one waiting on a customer, and one resolved, with the example ticket among the four in progress.",
-        "ja": "HEL-261109-042は09:10受付、09:14担当割当、09:22初回返信、10:05技術担当へ引継ぎ、11:10解決です。初回返信12分（目標30分以内）、解決2時間（目標4時間以内）。09:30時点の12件は未着手6・対応中4・顧客待ち1・解決済み1で、代表チケットは対応中4件に含まれます。"
       },
       "goals": [
         {

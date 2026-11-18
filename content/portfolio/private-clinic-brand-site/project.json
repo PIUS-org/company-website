@@ -1,0 +1,358 @@
+{
+  "id": "private-clinic-brand-site",
+  "slug": "private-clinic-brand-site",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 470,
+  "includeInPdf": true,
+  "title": {
+    "ko": "루멘 클리닉",
+    "en": "Lumen Clinic",
+    "ja": "ルーメンクリニック"
+  },
+  "subtitle": {
+    "ko": "상담을 중심에 둔 프라이빗 클리닉 웹",
+    "en": "A private clinic website built around consultation",
+    "ja": "カウンセリングを中心にしたプライベートクリニックサイト"
+  },
+  "summary": {
+    "ko": "진료 안내부터 상담 예약 접수까지 연결하는 브랜드 경험.",
+    "en": "A calm journey from care information to consultation requests.",
+    "ja": "診療案内から相談予約の申請までつなぐブランド体験。"
+  },
+  "overview": {
+    "ko": "방문자가 진료 프로그램과 예상 소요 시간, 상담 순서를 확인하고 희망 일정을 신청할 수 있도록 설계한 의료 브랜드 프론트 UI입니다.",
+    "en": "A healthcare brand front-end concept that helps visitors review programs, expected durations and consultation steps before requesting a preferred appointment.",
+    "ja": "診療プログラム、所要時間、相談の流れを確認し、希望日時を申請できる医療ブランドのフロントエンドUIコンセプトです。"
+  },
+  "industry": {
+    "ko": "클리닉",
+    "en": "Private clinic",
+    "ja": "クリニック"
+  },
+  "categories": [
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#5B4E3C",
+    "accentInk": "#2B251C",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "private-clinic-brand-site-01",
+    "private-clinic-brand-site-05"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / B실 claude-integration-prompt.txt. 이미지 5장은 b-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "진료 안내부터 상담 예약 접수까지 연결하는 브랜드 경험.",
+        "en": "A calm journey from care information to consultation requests.",
+        "ja": "診療案内から相談予約の申請までつなぐブランド体験。"
+      },
+      "images": [
+        "private-clinic-brand-site-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "프로그램 안내에서 선택한 상담 항목과 실제 예약 신청 정보가 달라지지 않도록 신중한 정보 전달에 초점을 맞췄습니다.",
+        "en": "Programme descriptions and appointment details need to remain consistent, with careful wording appropriate to a clinic.",
+        "ja": "施術・相談の案内と予約申込み情報が食い違わないよう、医療分野にふさわしい慎重な情報設計を重視しました。"
+      },
+      "body": {
+        "ko": "의료 정보는 정확하고 신중하게 전달되어야 하며, 서비스 탐색과 예약 정보가 분리되면 방문자는 다시 확인하는 수고를 겪습니다.",
+        "en": "Healthcare information requires careful communication. Fragmented service and booking pages make informed decisions harder.",
+        "ja": "医療情報には慎重で正確な説明が必要です。案内と予約が分断されると、利用者の確認負担が増えます。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "브랜드·시설 소개",
+          "en": "Brand and facility introduction",
+          "ja": "ブランド・施設紹介"
+        },
+        {
+          "ko": "프로그램 분류 탐색",
+          "en": "Program filters",
+          "ja": "プログラム検索"
+        },
+        {
+          "ko": "프로그램 상세 및 유의사항",
+          "en": "Detailed guidance and precautions",
+          "ja": "詳細と注意事項"
+        },
+        {
+          "ko": "상담 일정·신청자 입력",
+          "en": "Consultation request form",
+          "ja": "日時・申請者情報の入力"
+        },
+        {
+          "ko": "모바일 접수 확인",
+          "en": "Mobile request receipt",
+          "ja": "モバイル受付確認"
+        }
+      ],
+      "images": [
+        "private-clinic-brand-site-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "브랜드 메인",
+            "en": "Brand home",
+            "ja": "ブランドトップ"
+          }
+        },
+        {
+          "title": {
+            "ko": "프로그램 탐색",
+            "en": "Browse programs",
+            "ja": "プログラム検索"
+          }
+        },
+        {
+          "title": {
+            "ko": "상담 상세",
+            "en": "Program details",
+            "ja": "詳細"
+          }
+        },
+        {
+          "title": {
+            "ko": "신청서 입력",
+            "en": "Request form",
+            "ja": "申請フォーム"
+          }
+        },
+        {
+          "title": {
+            "ko": "접수 확인",
+            "en": "Receipt",
+            "ja": "受付確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "private-clinic-brand-site-03",
+        "private-clinic-brand-site-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "private-clinic-brand-site-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "한국어 중심 정적 Desktop 4장·Mobile 1장. 실제 의료 진료, 예약 운영, 의료 시스템 연동은 구현하지 않았습니다.",
+        "en": "Five static Korean-language UI images: four desktop and one mobile. No clinical care, operational booking or medical-system integration was developed.",
+        "ja": "韓国語を基本とした静的UI画像5点（デスクトップ4点、モバイル1点）。実際の診療・予約運用・医療システム連携は未実装です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "진료를 선택하기 전 충분히 이해할 수 있는 차분한 경험.",
+        "en": "A considered experience that makes room for understanding before booking.",
+        "ja": "予約の前に十分な理解を得られる、落ち着いた体験。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "private-clinic-brand-site-01",
+      "file": "private-clinic-brand-site-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "루멘 클리닉 브랜드 메인 정적 UI 화면",
+        "en": "Static UI screenshot of Lumen Clinic: Brand home",
+        "ja": "ルーメンクリニックの「ブランドトップ」静的UI画面"
+      },
+      "caption": {
+        "ko": "브랜드 메인",
+        "en": "Brand home",
+        "ja": "ブランドトップ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "private-clinic-brand-site-02",
+      "file": "private-clinic-brand-site-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "루멘 클리닉 프로그램 탐색 정적 UI 화면",
+        "en": "Static UI screenshot of Lumen Clinic: Program discovery",
+        "ja": "ルーメンクリニックの「プログラム検索」静的UI画面"
+      },
+      "caption": {
+        "ko": "프로그램 탐색",
+        "en": "Program discovery",
+        "ja": "プログラム検索"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "private-clinic-brand-site-03",
+      "file": "private-clinic-brand-site-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "루멘 클리닉 프로그램 상세 정적 UI 화면",
+        "en": "Static UI screenshot of Lumen Clinic: Program details",
+        "ja": "ルーメンクリニックの「プログラム詳細」静的UI画面"
+      },
+      "caption": {
+        "ko": "프로그램 상세",
+        "en": "Program details",
+        "ja": "プログラム詳細"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "private-clinic-brand-site-04",
+      "file": "private-clinic-brand-site-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "루멘 클리닉 상담 예약 정적 UI 화면",
+        "en": "Static UI screenshot of Lumen Clinic: Consultation request",
+        "ja": "ルーメンクリニックの「相談予約申請」静的UI画面"
+      },
+      "caption": {
+        "ko": "상담 예약",
+        "en": "Consultation request",
+        "ja": "相談予約申請"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "private-clinic-brand-site-05",
+      "file": "private-clinic-brand-site-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "루멘 클리닉 예약 접수 확인 정적 UI 화면",
+        "en": "Static UI screenshot of Lumen Clinic: Request receipt",
+        "ja": "ルーメンクリニックの「申請受付確認」静的UI画面"
+      },
+      "caption": {
+        "ko": "예약 접수 확인",
+        "en": "Request receipt",
+        "ja": "申請受付確認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

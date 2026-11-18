@@ -1,0 +1,4 @@
+$ node scripts/portfolio.mjs sync --stage public
+# 2026-11-16T22:05:18+09:00 · commit 19f6bca
+portfolio sync [public] · 포함 6건 (fity:approved, transport-erp-monitoring:approved, commute-shuttle-platform:approved, farm-commerce-backend:approved, metaverse-live-app:approved, charter-bus-dispatch:approved) · 제외 78건
+# exit=0

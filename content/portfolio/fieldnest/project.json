@@ -36,6 +36,7 @@
     "web",
     "mobile"
   ],
+  "mainCategory": "web",
   "platforms": [
     {
       "type": "admin",
@@ -160,14 +161,14 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
+        "ko": "다지점 시설의 고장 접수부터 현장 점검까지 이어지는 동안 담당자·설비·처리 이력이 단절되지 않도록 구성했습니다.",
+        "en": "Maintenance teams need faults, assigned technicians, assets, and on-site findings linked across locations and stages.",
+        "ja": "複数拠点の故障受付から現場点検まで、担当者・設備・対応履歴が途切れない構成を重視しました。"
+      },
+      "body": {
         "ko": "가상 공유오피스 세 지점의 냉방·조명·출입 설비를 관리하며, 강남 지점 4층 회의실 냉방 이상을 대표 작업으로 추적합니다.",
         "en": "The demo tracks HVAC, lighting, and access systems across three fictional coworking locations, focusing on a cooling issue in a Gangnam meeting room.",
         "ja": "架空のシェアオフィス3拠点で空調・照明・入退室設備を管理し、江南拠点4階会議室の冷房不調を代表事例として扱います。"
-      },
-      "body": {
-        "ko": "접수번호 SR-261109-018을 작업지시 WO-261109-034로 전환합니다. 09:05 접수, 09:20 배정, 10:10 현장 도착, 10:45 조치 완료, 11:00 관리자 확인으로 시점을 구분합니다. 가상 기술자 김도현이 냉방 필터 막힘을 점검하고 교체 부품 없이 청소 후 정상 동작을 보고합니다.",
-        "en": "Service request SR-261109-018 becomes work order WO-261109-034: reported 09:05, assigned 09:20, technician arrived 10:10, work completed 10:45, manager confirmed 11:00. Fictional technician Kim Do-hyeon cleans a blocked air filter and reports normal operation without replacing a part.",
-        "ja": "依頼SR-261109-018を作業指示WO-261109-034に変換します。09:05受付、09:20割当、10:10到着、10:45作業完了、11:00管理者確認です。架空の技術者キム・ドヒョンがフィルターの詰まりを清掃し、部品交換なしで正常稼働を報告します。"
       },
       "goals": [
         {

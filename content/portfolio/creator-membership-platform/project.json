@@ -1,0 +1,353 @@
+{
+  "id": "creator-membership-platform",
+  "slug": "creator-membership-platform",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 620,
+  "includeInPdf": true,
+  "title": {
+    "ko": "크레아다",
+    "en": "Creada",
+    "ja": "クレアダ"
+  },
+  "subtitle": {
+    "ko": "크리에이터의 콘텐츠와 구독을 잇는 멤버십 플랫폼",
+    "en": "A membership platform connecting creators and audiences",
+    "ja": "クリエイターとファンをつなぐメンバーシッププラットフォーム"
+  },
+  "summary": {
+    "ko": "발견, 프로필, 멤버십 가입, 전용 콘텐츠를 연결합니다.",
+    "en": "Discovery, creator profiles, membership selection and exclusive content.",
+    "ja": "発見、プロフィール、入会、限定コンテンツまでをつなぎます。"
+  },
+  "overview": {
+    "ko": "사용자가 크리에이터를 발견하고 창작물을 탐색한 뒤 월간 멤버십을 선택해 전용 콘텐츠를 확인하는 소비자 프론트 UI입니다.",
+    "en": "A consumer-facing concept where audiences discover creators, explore public work, select a monthly membership tier and view member content.",
+    "ja": "クリエイターを探し、公開作品を見て月額プランを選び、会員限定コンテンツを確認する消費者向けUIです。"
+  },
+  "industry": {
+    "ko": "크리에이터",
+    "en": "Creator membership",
+    "ja": "クリエイター"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#5A3F6B",
+    "accentInk": "#261A2D",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "creator-membership-platform-03"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / B실 claude-integration-prompt.txt. 이미지 5장은 b-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "발견, 프로필, 멤버십 가입, 전용 콘텐츠를 연결합니다.",
+        "en": "Discovery, creator profiles, membership selection and exclusive content.",
+        "ja": "発見、プロフィール、入会、限定コンテンツまでをつなぎます。"
+      },
+      "images": [
+        "creator-membership-platform-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "크리에이터의 공개 콘텐츠를 본 방문자가 유료 멤버십 혜택과 가격을 비교한 뒤 가입 여부를 판단하도록 구성했습니다.",
+        "en": "Visitors move from discovering a creator's public work to comparing membership benefits and prices before subscribing.",
+        "ja": "クリエイターの公開コンテンツを見た人が、会員特典と料金を比較して加入を判断できる構成です。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "크리에이터 추천 홈",
+          "en": "Curated home",
+          "ja": "おすすめトップ"
+        },
+        {
+          "ko": "주제·가격별 탐색",
+          "en": "Topical and price filters",
+          "ja": "テーマ・料金別検索"
+        },
+        {
+          "ko": "프로필과 콘텐츠",
+          "en": "Creator profile",
+          "ja": "プロフィール"
+        },
+        {
+          "ko": "티어별 혜택 비교",
+          "en": "Tier benefits and join summary",
+          "ja": "特典比較と加入確認"
+        },
+        {
+          "ko": "모바일 멤버 전용 게시물",
+          "en": "Mobile member post",
+          "ja": "モバイル限定投稿"
+        }
+      ],
+      "images": [
+        "creator-membership-platform-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "홈",
+            "en": "Home",
+            "ja": "トップ"
+          }
+        },
+        {
+          "title": {
+            "ko": "크리에이터 탐색",
+            "en": "Discover",
+            "ja": "探索"
+          }
+        },
+        {
+          "title": {
+            "ko": "프로필",
+            "en": "Creator profile",
+            "ja": "プロフィール"
+          }
+        },
+        {
+          "title": {
+            "ko": "멤버십 선택",
+            "en": "Join membership",
+            "ja": "メンバーシップ選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "전용 콘텐츠",
+            "en": "Exclusive content",
+            "ja": "限定コンテンツ"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "creator-membership-platform-03",
+        "creator-membership-platform-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "creator-membership-platform-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "가상 크리에이터와 콘텐츠로 제작한 정적 UI 5장. 실제 콘텐츠 서비스, 결제, 접근 권한 제어는 미구현입니다.",
+        "en": "Five static UI images with fictional creators and content. No live publishing, billing or access-control implementation.",
+        "ja": "架空のクリエイターと作品による静的UI画像5点。配信、課金、アクセス制御は未実装です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "창작자와 팬의 거리를 줄이는 일관된 멤버십 경험.",
+        "en": "A consistent membership experience that brings creators and their audiences closer.",
+        "ja": "クリエイターとファンを近づける一貫した会員体験。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "creator-membership-platform-01",
+      "file": "creator-membership-platform-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "크레아다 서비스 홈 정적 UI 화면",
+        "en": "Static UI screenshot of Creada: Service home",
+        "ja": "クレアダの「サービストップ」静的UI画面"
+      },
+      "caption": {
+        "ko": "서비스 홈",
+        "en": "Service home",
+        "ja": "サービストップ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "creator-membership-platform-02",
+      "file": "creator-membership-platform-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "크레아다 크리에이터 탐색 정적 UI 화면",
+        "en": "Static UI screenshot of Creada: Creator discovery",
+        "ja": "クレアダの「クリエイター検索」静的UI画面"
+      },
+      "caption": {
+        "ko": "크리에이터 탐색",
+        "en": "Creator discovery",
+        "ja": "クリエイター検索"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "creator-membership-platform-03",
+      "file": "creator-membership-platform-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "크레아다 크리에이터 상세 정적 UI 화면",
+        "en": "Static UI screenshot of Creada: Creator profile",
+        "ja": "クレアダの「プロフィール」静的UI画面"
+      },
+      "caption": {
+        "ko": "크리에이터 상세",
+        "en": "Creator profile",
+        "ja": "プロフィール"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "creator-membership-platform-04",
+      "file": "creator-membership-platform-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "크레아다 멤버십 가입 정적 UI 화면",
+        "en": "Static UI screenshot of Creada: Membership join",
+        "ja": "クレアダの「メンバー入会」静的UI画面"
+      },
+      "caption": {
+        "ko": "멤버십 가입",
+        "en": "Membership join",
+        "ja": "メンバー入会"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "creator-membership-platform-05",
+      "file": "creator-membership-platform-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "크레아다 구독 콘텐츠 정적 UI 화면",
+        "en": "Static UI screenshot of Creada: Member-only content",
+        "ja": "クレアダの「会員限定コンテンツ」静的UI画面"
+      },
+      "caption": {
+        "ko": "구독 콘텐츠",
+        "en": "Member-only content",
+        "ja": "会員限定コンテンツ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

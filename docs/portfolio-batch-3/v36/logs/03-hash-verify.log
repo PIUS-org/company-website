@@ -1,0 +1,5 @@
+$ 교체 전후 SHA-256 비교 (content/portfolio/*/images/*.webp)
+files before 466 after 466 same set True
+교체 100장: 교체 전 = sha256_v35 이고 교체 후 = sha256_new → 100/100
+비대상 366장 해시 유지 → 366/366  (1·2차 316장, 3차 보존 50장)
+3차 150 = 교체 100 + 보존 50

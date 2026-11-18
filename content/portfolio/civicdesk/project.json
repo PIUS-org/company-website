@@ -22,9 +22,9 @@
     "ja": "受付一覧、案件詳細、担当部署への割当、回答承認を連続した画面にまとめた行政業務UIデモです。"
   },
   "overview": {
-    "ko": "민원 처리에서는 접수 내용과 첨부 자료를 확인하고 적절한 부서에 배정한 뒤, 처리 상태를 추적하고 공식 회신을 검토하는 절차가 중요합니다. CIVICDESK는 이 흐름을 목록·상세·보드·회신 문서 편집의 네 화면으로 보여줍니다.",
-    "en": "Handling a citizen request requires reviewing the intake and attachments, assigning the right department, tracking resolution, and approving a formal response. CIVICDESK demonstrates this workflow through four coordinated interface views.",
-    "ja": "住民からの要望では、受付内容と添付資料の確認、担当部署への割当、対応状況の追跡、正式回答の審査が重要です。CIVICDESKは、この流れを一覧・詳細・ボード・回答編集の4画面で表現しています。"
+    "ko": "민원 처리에서는 접수 내용과 첨부 자료를 확인하고 적절한 부서에 배정한 뒤, 처리 상태를 추적하고 공식 회신을 검토하는 절차가 중요합니다. CIVICDESK는 이 흐름을 목록·상세·보드·회신 문서 편집의 네 화면으로 보여줍니다. 민원 상태와 기한, 담당자, 회신 문서가 분리되면 처리 현황을 파악하고 누락을 확인하기 어렵습니다. 민원마다 하나의 식별번호와 처리 이력을 유지하도록 설계했습니다.",
+    "en": "Handling a citizen request requires reviewing the intake and attachments, assigning the right department, tracking resolution, and approving a formal response. CIVICDESK demonstrates this workflow through four coordinated interface views. When status, deadlines, assignees, and correspondence live in separate systems, progress and omissions become hard to track. Each case retains one reference number and coherent activity history.",
+    "ja": "住民からの要望では、受付内容と添付資料の確認、担当部署への割当、対応状況の追跡、正式回答の審査が重要です。CIVICDESKは、この流れを一覧・詳細・ボード・回答編集の4画面で表現しています。 進捗、期限、担当者、回答書が別々になると、対応状況や漏れを把握しづらくなります。案件ごとに一意の受付番号と対応履歴を維持する設計です。"
   },
   "industry": {
     "ko": "공공 행정·민원 서비스",
@@ -35,6 +35,7 @@
     "erp",
     "web"
   ],
+  "mainCategory": "erp",
   "platforms": [
     {
       "type": "admin",
@@ -177,14 +178,9 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
-        "ko": "민원 처리에서는 접수 내용과 첨부 자료를 확인하고 적절한 부서에 배정한 뒤, 처리 상태를 추적하고 공식 회신을 검토하는 절차가 중요합니다. CIVICDESK는 이 흐름을 목록·상세·보드·회신 문서 편집의 네 화면으로 보여줍니다.",
-        "en": "Handling a citizen request requires reviewing the intake and attachments, assigning the right department, tracking resolution, and approving a formal response. CIVICDESK demonstrates this workflow through four coordinated interface views.",
-        "ja": "住民からの要望では、受付内容と添付資料の確認、担当部署への割当、対応状況の追跡、正式回答の審査が重要です。CIVICDESKは、この流れを一覧・詳細・ボード・回答編集の4画面で表現しています。"
-      },
-      "body": {
-        "ko": "민원 상태와 기한, 담당자, 회신 문서가 분리되면 처리 현황을 파악하고 누락을 확인하기 어렵습니다. 민원마다 하나의 식별번호와 처리 이력을 유지하도록 설계했습니다.",
-        "en": "When status, deadlines, assignees, and correspondence live in separate systems, progress and omissions become hard to track. Each case retains one reference number and coherent activity history.",
-        "ja": "進捗、期限、担当者、回答書が別々になると、対応状況や漏れを把握しづらくなります。案件ごとに一意の受付番号と対応履歴を維持する設計です。"
+        "ko": "민원 접수 단계의 원문과 담당 부서의 처리 기록, 최종 회신 문서가 같은 건으로 이어져야 책임을 추적할 수 있습니다.",
+        "en": "Intake details, departmental handling, and the final response must stay connected to the same public-service case.",
+        "ja": "申請の原文、担当部署の処理記録、最終回答文書を同一案件として結ぶことで対応の根拠を追えます。"
       }
     },
     {

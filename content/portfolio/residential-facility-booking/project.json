@@ -1,0 +1,362 @@
+{
+  "id": "residential-facility-booking",
+  "slug": "residential-facility-booking",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 410,
+  "includeInPdf": true,
+  "title": {
+    "ko": "아파트 입주민 커뮤니티·시설 예약",
+    "en": "Residential Community & Amenity Reservations",
+    "ja": "マンション居住者コミュニティ・共用施設予約"
+  },
+  "subtitle": {
+    "ko": "예약 가용성과 입주민 권한, 소통을 하나의 운영 흐름으로",
+    "en": "A connected workflow for amenity capacity, resident access, and communication",
+    "ja": "施設の空き状況・居住者権限・情報共有を一つの運営フローに"
+  },
+  "summary": {
+    "ko": "입주민의 공동시설 예약 요청, 관리자 정원 관리, 세대 인증, 주민 설문 및 공지 열람을 연결한 WEB·APP 정적 UI 데모입니다.",
+    "en": "A static WEB/APP demonstration combining resident amenity booking requests, capacity oversight, household verification, community polls, and notice readership.",
+    "ja": "居住者の共用施設予約申請、管理者の定員管理、住戸認証、アンケート、掲示のお知らせ閲覧状況を結ぶWEB・APPの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "가상 120세대 단지의 입주민 예약부터 관리사무소 운영까지 역할별로 보여주는 화면입니다. 입주민은 2026년 11월 14일 19시 헬스룸 이용 가능 인원 2명을 확인하고 승인 요청을 준비합니다. 운영자는 동일한 시간대의 정원 8명 중 승인 완료 6명을 확인하고, 입주 세대 인증·설문 참여·공지 열람을 각각 관리합니다.",
+    "en": "The five screens depict resident and property-manager workflows for a fictional 120-household community. A resident reviews two remaining places in the gym at 19:00 on November 14, 2026, before submitting an approval request. The manager sees the same six approved occupants out of a capacity of eight, alongside separate workflows for household verification, poll participation, and notice readership.",
+    "ja": "架空の120世帯マンションを舞台に、居住者と管理事務所の操作を5画面で表現しました。居住者は2026年11月14日19時のジムの残り2名分を確認し、承認申請の前段階まで進みます。管理側では同じ時間帯の定員8名に対して承認済み6名を確認し、住戸認証・アンケート集計・お知らせ閲覧を個別に管理します。"
+  },
+  "industry": {
+    "ko": "공동주택·주거시설 관리",
+    "en": "Residential property and community management",
+    "ja": "集合住宅・共用施設管理"
+  },
+  "categories": [
+    "platform",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#316D6B",
+    "accentInk": "#1A3332",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "residential-reservation-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 B실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "입주민의 공동시설 예약 요청, 관리자 정원 관리, 세대 인증, 주민 설문 및 공지 열람을 연결한 WEB·APP 정적 UI 데모입니다.",
+        "en": "A static WEB/APP demonstration combining resident amenity booking requests, capacity oversight, household verification, community polls, and notice readership.",
+        "ja": "居住者の共用施設予約申請、管理者の定員管理、住戸認証、アンケート、掲示のお知らせ閲覧状況を結ぶWEB・APPの静的UIデモです。"
+      },
+      "images": [
+        "residential-reservation-mobile"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "공동시설 잔여 정원과 승인 대기 요청을 혼동하거나, 입주민 인증 여부를 확인하지 않은 채 예약을 허용하면 실제 이용 가능 상태를 판단하기 어렵습니다. 설문 참여와 공지 열람도 시설 예약 목록과 별도의 운영 확인이 필요합니다.",
+        "en": "When remaining capacity is confused with pending requests, or booking access is granted without household verification, actual availability becomes difficult to judge. Poll response status and notice acknowledgements also require workflows distinct from the booking calendar.",
+        "ja": "残り定員と承認待ち申請を混同したり、住戸認証を確認せず予約を許可したりすると、実際の空き状況が分かりにくくなります。アンケート回答とお知らせの閲覧状況にも、予約管理とは異なる運用確認が必要です。"
+      },
+      "body": {
+        "ko": "입주민 인증과 시설 정원, 승인 요청을 확인해야 예약 가능 여부를 정확하게 안내할 수 있습니다.",
+        "en": "Eligibility, facility capacity, and approval requests must all be checked before a resident booking can be considered confirmed.",
+        "ja": "住民認証、施設定員、承認依頼を確認して初めて予約可否を正しく案内できます。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "입주민 APP의 시설 선택·날짜·시간대·잔여 정원 확인과 승인 요청 전 화면",
+          "en": "Resident mobile facility selection, date/time availability, remaining places, and a pre-submission approval request",
+          "ja": "居住者向けモバイルの施設・日付・時間帯・空き定員確認と申請前画面"
+        },
+        {
+          "ko": "관리자 WEB의 시설별 시간 그리드·예약 승인 현황·정원 검증",
+          "en": "Management web calendar for facility timeslots, approved occupants, and capacity checks",
+          "ja": "管理者WEBの施設別時間グリッド、承認済み予約、定員確認"
+        },
+        {
+          "ko": "세대 중복 여부 및 증빙을 확인하는 입주민 인증 심사 작업대",
+          "en": "Household verification workbench for duplicate registrations and illustrative documents",
+          "ja": "住戸の重複登録と例示書類を確認する居住者認証審査画面"
+        },
+        {
+          "ko": "120세대 대상 설문 72표의 선택지별 집계와 참여 현황",
+          "en": "Poll tally and participation review for 72 responses from a 120-household audience",
+          "ja": "120世帯に対する72回答の選択肢別集計と参加状況"
+        },
+        {
+          "ko": "공지 원문 관리와 동별 열람·미열람 대상 확인",
+          "en": "Notice content, building-level readership, and unread-recipient review",
+          "ja": "お知らせ本文の管理と棟別閲覧・未閲覧確認"
+        }
+      ],
+      "images": [
+        "residential-facility-calendar"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "입주민 인증을 완료한 계정에서 시설별 예약 가능 시간과 규칙을 확인합니다.",
+            "en": "A verified resident account reviews facility rules and available booking slots.",
+            "ja": "認証済みの居住者アカウントで施設利用規則と予約可能枠を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "2026년 11월 14일 19:00~20:00 헬스룸의 승인 완료 예약 6명과 잔여 정원 2명을 조회합니다.",
+            "en": "The gym shows six approved occupants and two spaces remaining for November 14, 19:00–20:00.",
+            "ja": "11月14日19:00～20:00のジムは承認済み6名、残り2名と表示します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "입주민이 관리자 승인 요청 버튼을 누르기 전 상태를 표시하고, 운영자는 시간대별 승인 예약을 별도로 확인합니다.",
+            "en": "The mobile screen remains before request submission while management views already approved reservations in a separate workspace.",
+            "ja": "モバイルは承認申請前の状態を維持し、管理者は承認済み予約を別画面で確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "관리사무소가 입주민 심사 대기·보완 요청을 처리할 수 있는 UI를 확인합니다.",
+            "en": "Property managers review pending household verification and request supplementary documents where needed.",
+            "ja": "管理事務所は住戸認証の審査待ちや追加書類の依頼を扱います。"
+          }
+        },
+        {
+          "title": {
+            "ko": "설문 결과와 공지 열람 이력을 확인해 후속 안내 대상자를 분류합니다.",
+            "en": "The team inspects poll responses and notice readership to identify follow-up audiences.",
+            "ja": "アンケート回答とお知らせの閲覧履歴から、追加案内が必要な住戸を確認します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "residential-tenant-verification"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "residential-poll-board",
+        "residential-notice-admin"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "입주민 모바일 예약 UI 1장, 관리자 데스크톱 화면 4장을 HTML/CSS·SVG 정적 렌더링으로 제작했습니다. 단지명·동호수·가구 수·일정·예약 인원·설문·공지 수치는 모두 가상 시연 데이터입니다. 실제 입주민 인증, 시설 예약 저장, 관리자 승인, 공지·푸시 발송, 설문 수집, 실시간 정원 동기화, 서버 및 DB는 구현하지 않았습니다.",
+        "en": "One resident mobile reservation screen and four desktop management screens were rendered as static HTML/CSS/SVG front-end images. The property name, unit numbers, residents, schedules, booking capacities, poll votes, and notice metrics are entirely illustrative. No actual resident authentication, booking persistence, approval workflows, push messaging, poll collection, real-time capacity synchronization, server, or database was implemented.",
+        "ja": "居住者向けモバイル予約画面1枚と管理者用デスクトップ画面4枚をHTML/CSS・SVGで静的にレンダリングしました。マンション名、住戸番号、世帯数、日程、予約人数、アンケート結果、お知らせの集計はすべて架空のデータです。実際の認証、予約保存、承認処理、通知配信、回答収集、リアルタイムの定員同期、サーバー、DBは実装していません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "하나의 시설 예약을 시작점으로 입주민 권한·정원·설문·공지 업무가 연결되는 주거 운영 제품 UI를 설계했습니다.",
+        "en": "A role-based interface linking amenity availability with household access, surveys, and community notices.",
+        "ja": "共用施設予約を起点に、居住者権限・定員・アンケート・お知らせ管理がつながる運営UIを提案します。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "residential-reservation-mobile",
+      "file": "residential-reservation-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "가상 늘봄 레지던스 입주민이 11월 14일 19시 헬스룸의 예약 6명·잔여 2명을 확인하는 모바일 시설 예약 화면",
+        "en": "Resident mobile amenity booking showing a gym slot on November 14 at 19:00 with six approved occupants and two spaces left",
+        "ja": "11月14日19時のジム枠について承認済み6名と残り2名を確認する居住者向け予約画面"
+      },
+      "caption": {
+        "ko": "정원 8명 중 예약 완료 6명, 남은 자리 2명을 보여주며 관리사무소 승인 요청 전 단계로 유지합니다.",
+        "en": "Six of eight spots are approved; the resident reviews the two remaining places before requesting management approval.",
+        "ja": "定員8名のうち6名が承認済み。残り2名を確認し、管理事務所への申請前の状態を表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "residential-facility-calendar",
+      "file": "residential-facility-calendar.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "관리자가 시설 4곳의 시간별 예약 가용성과 11월 14일 헬스룸 19시 승인 완료 6명 정보를 확인하는 캘린더",
+        "en": "Management timeslot matrix for four amenities highlighting six approved gym occupants and two remaining places at 19:00 on November 14",
+        "ja": "4施設の時間別予約枠と11月14日19時のジム承認済み6名・残り2名を示す管理者カレンダー"
+      },
+      "caption": {
+        "ko": "시간별 가용·마감 상태와 승인된 세대 4건(이용자 6명)을 구분하고, 다른 일정의 승인 대기 2건을 확인합니다.",
+        "en": "A capacity grid separates four approved household bookings totaling six people from two pending requests for other slots.",
+        "ja": "4住戸の承認済み予約による利用者6名と、別時間帯の承認待ち2件を分けて確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "residential-tenant-verification",
+      "file": "residential-tenant-verification.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "120세대의 입주민 인증 승인 114건·대기 4건·반려 2건과 선택 세대 서류 검토 패널",
+        "en": "Household verification workspace with 114 approved, four pending, and two rejected records among 120 illustrative households",
+        "ja": "架空の120世帯に対する承認114件・審査待ち4件・却下2件と住戸書類の確認画面"
+      },
+      "caption": {
+        "ko": "가상 서류를 마스킹하여 심사하고, 인증 완료 세대에만 예약 접근 권한이 부여되는 흐름을 표시합니다.",
+        "en": "Masked illustrative documents support a review flow in which amenity access is granted only after verification.",
+        "ja": "マスキングした架空の書類を確認し、認証完了後に予約権限が有効になる流れを示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "residential-poll-board",
+      "file": "residential-poll-board.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "공용시설 운영시간 설문에 참여한 72세대의 60% 참여율 및 선택지별 32표·28표·12표 집계 화면",
+        "en": "Community poll management with a 60 percent response rate, 72 of 120 households, and option totals of 32, 28, and 12",
+        "ja": "120世帯中72世帯の回答率60％と選択肢ごとの32・28・12票を示すアンケート運営画面"
+      },
+      "caption": {
+        "ko": "설문 시작 후 선택지를 잠근 상태에서 72표의 비율과 참여·미참여 세대를 검산합니다.",
+        "en": "With voting options locked, the dashboard reconciles 72 votes and identifies participating and nonparticipating households.",
+        "ja": "回答開始後の選択肢を固定し、72票の集計と参加・未参加の住戸を確認します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "residential-notice-admin",
+      "file": "residential-notice-admin.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "11월 13일 헬스룸 점검 공지 원문과 120세대 중 열람 94세대·미열람 26세대 현황을 보여주는 관리자 화면",
+        "en": "Notice management showing a November 13 gym maintenance announcement, viewed by 94 and unread by 26 of 120 households",
+        "ja": "11月13日のジム点検のお知らせ本文と、120世帯中閲覧94・未閲覧26を示す管理者画面"
+      },
+      "caption": {
+        "ko": "11월 13일 10~12시 점검 일정은 14일 예약과 충돌하지 않으며, 열람률 78.3%를 표시합니다.",
+        "en": "The November 13, 10:00–12:00 maintenance window does not conflict with the November 14 booking; readership is 78.3%.",
+        "ja": "11月13日10～12時の点検は14日の予約に影響せず、閲覧率78.3％を表示します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

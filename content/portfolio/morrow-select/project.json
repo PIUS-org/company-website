@@ -36,6 +36,7 @@
     "web",
     "mobile"
   ],
+  "mainCategory": "commerce",
   "platforms": [
     {
       "type": "web",
@@ -283,6 +284,11 @@
         "ko": "MORROW SELECT는 여러 패션 브랜드의 상품을 한곳에서 탐색하는 프리미엄 편집숍을 가정한 자체 UI 데모입니다. 에디토리얼 큐레이션과 실용적인 쇼핑 동선을 결합했습니다.",
         "en": "MORROW SELECT is an independent UI demonstration of a premium multibrand fashion retailer, bringing editorial curation and practical shopping journeys together.",
         "ja": "MORROW SELECTは、複数のファッションブランドを扱うプレミアムセレクトショップを想定した自主制作のUIデモです。編集的なキュレーションと実用的な購買導線を組み合わせました。"
+      },
+      "body": {
+        "ko": "브랜드 이야기를 읽는 경험과 상품의 사이즈·가격·구매 조건을 확인하는 행동이 분리되지 않도록 큐레이션과 커머스를 연결했습니다.",
+        "en": "Editorial brand discovery should lead naturally to practical product information, sizes, prices, and the purchase decision.",
+        "ja": "ブランドの物語を読む体験とサイズ・価格・購入条件の確認が途切れないよう、キュレーションと購買をつなぎました。"
       }
     },
     {

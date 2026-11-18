@@ -72,7 +72,8 @@ lib/portfolio/index.ts (manifest import) → 목록 · 상세 · PDF
 | `includeInPdf` | boolean | ● | PDF 출력 대상 여부 |
 | `title` `subtitle` `summary` `overview` | L | ● | 프로젝트명 · 부제 · 한 줄 설명(카드) · 개요 |
 | `industry` | L | | 산업 분야 |
-| `categories` | erp·platform·mobile·web·commerce·integration [] | ● | 복수 가능. 목록 필터 |
+| `categories` | erp·platform·mobile·web·commerce·integration [] | ● | 복수 가능. 카드·상세의 분류 태그 |
+| `mainCategory` | categories 중 하나 | ● | 메인 화면 숫자 타일과 목록 필터 탭이 함께 쓰는 단 하나의 분류(프로젝트당 1회) |
 | `platforms` | `{ type: app·web·admin·desktop·api, label?: L }[]` | ● | 카드에는 App · Web · Admin으로 표시 |
 | `projectState` | inDevelopment·launched·operating·completed·maintenance | | **모르면 넣지 않음** |
 | `year` | number | | 모르면 넣지 않음 |
@@ -151,7 +152,8 @@ lib/portfolio/index.ts (manifest import) → 목록 · 상세 · PDF
 ## 7. 메인 페이지 Works 섹션
 
 - 공개 프로젝트가 1건 이상이면 메인의 Process와 Contact 사이에 `components/Works/Works.tsx`("Built to Work.")가 나옵니다. **결과물 카드는 메인에 싣지 않습니다.** 분류별 프로젝트 수를 타일로 보여 주고, 타일을 누르면 그 분류로 필터된 `/portfolio#<category>`로 이동합니다(앱 타일 → 모바일 앱 필터). 전체 보기는 제목 옆의 작은 텍스트 링크 하나뿐입니다.
-- 숫자는 `worksTiles()`가 공개 데이터의 `categories`에서 자동 계산합니다(직접 입력 없음). 순서: 모바일 앱 · 웹 · 플랫폼 · ERP · 커머스 · 시스템 연동, 0인 분류는 숨김. 그래서 **앱이 있는 프로젝트는 `mobile` 분류를 꼭 넣어야** 앱 숫자에 잡힙니다.
+- 숫자는 `worksTiles()`가 공개 데이터의 `mainCategory`에서 자동 계산합니다(프로젝트당 1회, 중복 카운트 없음 — 타일 합계 = 공개 프로젝트 수). 순서: 모바일 앱 · 웹 · 플랫폼 · ERP · 커머스 · 시스템 연동, 0인 분류는 숨김. 메인 카테고리는 분포가 고르게(표준편차가 작게) 정합니다 — `node scripts/portfolio.mjs balance`.
+- 목록 필터 탭도 `mainCategory` 기준이라, 메인 타일 숫자와 탭 숫자가 항상 같고 탭 합계가 전체 수와 같습니다. `categories`는 태그 표시용입니다.
 - 화면에 들어오면 타일이 차례로 올라오고, 선 아이콘이 그려지고, 숫자가 00부터 카운트업됩니다. 마우스를 따라 타일 안에 은은한 빛이 움직입니다.
 - 이때 메인 헤더의 Portfolio는 `#works`로 스크롤하고, 그 구간에서 활성 표시가 켜집니다. 공개 프로젝트가 0건이면 섹션이 없고 Portfolio는 `/portfolio`로 이동합니다.
 - 그 위 섹션(히어로~Process)의 위치·크기는 바뀌지 않습니다(Contact·푸터만 섹션 높이만큼 아래로).
