@@ -1,0 +1,358 @@
+{
+  "id": "luxury-real-estate-showcase",
+  "slug": "luxury-real-estate-showcase",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 520,
+  "includeInPdf": true,
+  "title": {
+    "ko": "베레아 레지던스",
+    "en": "Véréa Residence",
+    "ja": "ヴェレア レジデンス"
+  },
+  "subtitle": {
+    "ko": "공간과 라이프스타일을 연결하는 주거 쇼케이스",
+    "en": "An editorial showcase for premium residences",
+    "ja": "住まいとライフスタイルをつなぐ住宅ショーケース"
+  },
+  "summary": {
+    "ko": "사진, 매물 제원, 방문 상담을 하나의 흐름으로 연결합니다.",
+    "en": "From architectural photography to property details and viewing requests.",
+    "ja": "建築写真から物件情報、内覧申請までを一つの流れに。"
+  },
+  "overview": {
+    "ko": "건축 사진을 중심에 두고 위치와 면적·가격 정보를 비교한 뒤 방문 일정을 신청하는 프리미엄 주거 탐색 경험입니다.",
+    "en": "A premium residential discovery concept combining architectural imagery, location, area and pricing information with a private viewing request flow.",
+    "ja": "建築写真を軸に所在地・面積・価格を比較し、内覧の希望日時を申請する高級住宅向けUIコンセプトです。"
+  },
+  "industry": {
+    "ko": "부동산",
+    "en": "Residential real estate",
+    "ja": "不動産"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#2F3B33",
+    "accentInk": "#202822",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "luxury-real-estate-showcase-03"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / B실 claude-integration-prompt.txt. 이미지 5장은 b-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "사진, 매물 제원, 방문 상담을 하나의 흐름으로 연결합니다.",
+        "en": "From architectural photography to property details and viewing requests.",
+        "ja": "建築写真から物件情報、内覧申請までを一つの流れに。"
+      },
+      "images": [
+        "luxury-real-estate-showcase-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "공간의 인상과 실제 매물 판단에 필요한 면적·위치·가격·방문 일정이 함께 전달되도록 설계했습니다.",
+        "en": "Architecture photography should sit alongside the area, location, price, and visit information needed to assess a property.",
+        "ja": "空間の魅力と物件判断に必要な面積・立地・価格・内覧日程を一緒に伝える構成です。"
+      },
+      "body": {
+        "ko": "고가 주거 상품에서는 시각적인 매력뿐 아니라 면적, 가격, 위치, 방문 절차의 명료함이 필요합니다.",
+        "en": "High-value properties demand more than beautiful images; specifications, location and viewing steps must remain clear.",
+        "ja": "高価格帯の住宅には美しい写真だけでなく、仕様・立地・価格・内覧手順の明快さが必要です。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "에디토리얼 홈",
+          "en": "Editorial home",
+          "ja": "エディトリアルなトップ"
+        },
+        {
+          "ko": "지역·가격·면적별 검색",
+          "en": "Property search filters",
+          "ja": "条件検索"
+        },
+        {
+          "ko": "매물 상세 갤러리와 제원",
+          "en": "Gallery and specification details",
+          "ja": "写真ギャラリーと物件仕様"
+        },
+        {
+          "ko": "방문 상담 신청",
+          "en": "Private viewing form",
+          "ja": "内覧申請"
+        },
+        {
+          "ko": "모바일 매물 상세",
+          "en": "Mobile property details",
+          "ja": "モバイル物件詳細"
+        }
+      ],
+      "images": [
+        "luxury-real-estate-showcase-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "메인",
+            "en": "Home",
+            "ja": "トップ"
+          }
+        },
+        {
+          "title": {
+            "ko": "매물 검색",
+            "en": "Search",
+            "ja": "物件検索"
+          }
+        },
+        {
+          "title": {
+            "ko": "매물 상세",
+            "en": "Property detail",
+            "ja": "物件詳細"
+          }
+        },
+        {
+          "title": {
+            "ko": "방문 신청",
+            "en": "Viewing request",
+            "ja": "内覧申請"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일 상세 확인",
+            "en": "Mobile property view",
+            "ja": "モバイル詳細"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "luxury-real-estate-showcase-03",
+        "luxury-real-estate-showcase-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "luxury-real-estate-showcase-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "가상 매물 정보를 사용한 정적 Desktop 4장·Mobile 1장. 중개, 매물 실재성 확인, 상담 접수는 구현하지 않았습니다.",
+        "en": "Five static UI images using fictional property data. No brokerage service, verified listing or real appointment processing was developed.",
+        "ja": "架空の物件情報による静的UI画像5点。仲介業務、実在物件の確認、予約処理は未実装です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "좋은 공간을 이해하는 데 필요한 정보를 보기 좋게 정리합니다.",
+        "en": "The details that matter, presented with architectural clarity.",
+        "ja": "住まいの価値を理解するための情報を、端正に整理します。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "luxury-real-estate-showcase-01",
+      "file": "luxury-real-estate-showcase-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "베레아 레지던스 브랜드 메인 정적 UI 화면",
+        "en": "Static UI screenshot of Véréa Residence: Brand home",
+        "ja": "ヴェレア レジデンスの「ブランドトップ」静的UI画面"
+      },
+      "caption": {
+        "ko": "브랜드 메인",
+        "en": "Brand home",
+        "ja": "ブランドトップ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "luxury-real-estate-showcase-02",
+      "file": "luxury-real-estate-showcase-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "베레아 레지던스 매물 검색 정적 UI 화면",
+        "en": "Static UI screenshot of Véréa Residence: Property search",
+        "ja": "ヴェレア レジデンスの「物件検索」静的UI画面"
+      },
+      "caption": {
+        "ko": "매물 검색",
+        "en": "Property search",
+        "ja": "物件検索"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "luxury-real-estate-showcase-03",
+      "file": "luxury-real-estate-showcase-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "베레아 레지던스 매물 상세 정적 UI 화면",
+        "en": "Static UI screenshot of Véréa Residence: Property detail",
+        "ja": "ヴェレア レジデンスの「物件詳細」静的UI画面"
+      },
+      "caption": {
+        "ko": "매물 상세",
+        "en": "Property detail",
+        "ja": "物件詳細"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "luxury-real-estate-showcase-04",
+      "file": "luxury-real-estate-showcase-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "베레아 레지던스 방문 상담 신청 정적 UI 화면",
+        "en": "Static UI screenshot of Véréa Residence: Viewing request",
+        "ja": "ヴェレア レジデンスの「内覧申請」静的UI画面"
+      },
+      "caption": {
+        "ko": "방문 상담 신청",
+        "en": "Viewing request",
+        "ja": "内覧申請"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "luxury-real-estate-showcase-05",
+      "file": "luxury-real-estate-showcase-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "베레아 레지던스 모바일 매물 상세 정적 UI 화면",
+        "en": "Static UI screenshot of Véréa Residence: Mobile property detail",
+        "ja": "ヴェレア レジデンスの「モバイル物件詳細」静的UI画面"
+      },
+      "caption": {
+        "ko": "모바일 매물 상세",
+        "en": "Mobile property detail",
+        "ja": "モバイル物件詳細"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

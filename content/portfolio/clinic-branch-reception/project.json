@@ -1,0 +1,358 @@
+{
+  "id": "clinic-branch-reception",
+  "slug": "clinic-branch-reception",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 280,
+  "includeInPdf": true,
+  "title": {
+    "ko": "ORIN 병원 다지점 예약·접수 운영",
+    "en": "ORIN Multi-Branch Clinic Booking & Reception",
+    "ja": "ORIN 多拠点クリニックの予約・受付管理"
+  },
+  "subtitle": {
+    "ko": "예약실 운영부터 현장 접수·방문자 확인까지 연결되는 클리닉 워크스페이스",
+    "en": "A connected workspace for bookings, front-desk queues, and appointment resources",
+    "ja": "予約枠・来院受付・担当者配置をつなぐ運営ワークスペース"
+  },
+  "summary": {
+    "ko": "3개 가상 지점의 예약 슬롯, 현장 접수 대기열, 직원·예약실 배정, 모바일 예약 변경, 지점별 수용량을 연결한 WEB·APP 정적 UI 데모.",
+    "en": "A static WEB/APP UI demo connecting booking slots at three fictional branches, reception queues, staff and room assignments, mobile rescheduling, and branch capacity.",
+    "ja": "架空の3拠点における予約枠、受付待機列、スタッフと予約室の割り当て、モバイルでの予約変更候補、拠点別稼働状況を結んだWEB・APPの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "ORIN은 가상 클리닉의 지점 운영 담당자와 방문자를 위한 예약·접수 인터페이스입니다. 운영자는 여러 지점의 예약 가능 시간을 비교하고, 현장 접수 내역을 확인하며, 직원과 예약실을 중복 없이 배정할 수 있는 업무 화면을 사용합니다. 방문자는 모바일에서 자신의 예약과 변경 후보 시간을 조회합니다. 실제 진료기록·진단·처방은 포함하지 않습니다.",
+    "en": "ORIN is a fictional clinic operations interface for branch coordinators and visitors. Staff compare appointment availability, monitor front-desk arrivals, and review room and personnel allocation without overlaps. Visitors check their bookings and choose a proposed change on mobile. No clinical notes, diagnoses, or prescriptions are represented.",
+    "ja": "ORINは、架空のクリニックの拠点運営担当者と来院者向けに設計した予約・受付UIです。運営担当者は拠点ごとの空き枠、受付の待機状況、担当者と予約室の配置を一元的に確認します。来院者はモバイルで予約を照会し、変更候補の時間を選択できます。診療記録・診断・処方の画面は含みません。"
+  },
+  "industry": {
+    "ko": "의료기관 예약·방문 접수 운영(진료정보 제외)",
+    "en": "Clinic appointment and reception operations (excluding clinical records)",
+    "ja": "医療機関の予約・来院受付運営（診療情報は対象外）"
+  },
+  "categories": [
+    "platform",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#5A8F8F",
+    "accentInk": "#203333",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "clinic-branch-schedule",
+    "clinic-appointment-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 C실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "3개 가상 지점의 예약 슬롯, 현장 접수 대기열, 직원·예약실 배정, 모바일 예약 변경, 지점별 수용량을 연결한 WEB·APP 정적 UI 데모.",
+        "en": "A static WEB/APP UI demo connecting booking slots at three fictional branches, reception queues, staff and room assignments, mobile rescheduling, and branch capacity.",
+        "ja": "架空の3拠点における予約枠、受付待機列、スタッフと予約室の割り当て、モバイルでの予約変更候補、拠点別稼働状況を結んだWEB・APPの静的UIデモです。"
+      },
+      "images": [
+        "clinic-branch-schedule"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "여러 지점의 예약 가능 시간을 따로 확인하거나 예약·현장 접수·직원 배정을 별도 명부로 관리하면, 이미 점유한 예약실을 중복 배정하거나 대기 상태와 방문 완료 상태를 혼동할 수 있습니다. 예약 건수와 접수 건수의 기준을 분리하면서 지점별 잔여 수용량을 일관되게 보여주는 운영 UI가 필요합니다.",
+        "en": "Disconnected booking calendars, reception lists, and staff rosters can lead to overlapping room assignments and confusion between waiting and completed visits. Branch operators need a consistent view of remaining appointment capacity while keeping booked appointments and checked-in visits as separate measures.",
+        "ja": "拠点ごとの予約カレンダー、受付記録、勤務表が分かれていると、予約室の重複割り当てや、待機と来院完了の状態を取り違える恐れがあります。予約件数と受付件数を区別しながら、各拠点の残り予約枠を整合的に表示する必要があります。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "지점 예약 캘린더: 11월 12일 서초점 BR-03의 4개 실·32개 슬롯 중 예약 24건과 잔여 8개 표시",
+          "en": "Branch calendar: 24 bookings and eight open spaces among 32 half-hour slots across four rooms at fictional branch BR-03 on November 12",
+          "ja": "拠点予約カレンダー：11月12日の架空の瑞草店BR-03で、4室・32枠のうち予約24件、空き8枠を表示"
+        },
+        {
+          "ko": "현장 접수 대기열: 방문 접수 12건을 완료 7건·호출 대기 5건으로 구분하고 가상 방문자 #0150을 선택",
+          "en": "Reception queue: 12 arrivals split into seven completed and five waiting visits, with fictional visitor #0150 selected",
+          "ja": "来院受付：受付12件を完了7件・呼び出し待ち5件に分け、架空の来院者#0150を選択"
+        },
+        {
+          "ko": "직원·예약실 배정: 4명의 직원 근무 구간과 4개 예약실의 시간을 교차 확인해 중복 배정 0건 표시",
+          "en": "Staff and room allocation: four employees and four rooms reviewed across work shifts, showing zero overlapping assignments",
+          "ja": "スタッフ・予約室の配置：スタッフ4名と4室の勤務時間帯を照合し、重複配置0件を表示"
+        },
+        {
+          "ko": "방문자 모바일: 가상 예약 #0158의 기존 11:30 일정을 확인하고 12:00 후보를 선택하되 변경은 미확정 유지",
+          "en": "Visitor mobile view: booking #0158 remains at 11:30 a.m. while noon is selected as an unconfirmed rescheduling option",
+          "ja": "来院者向けモバイル：予約#0158の11:30の予定を維持し、12:00を未確定の変更候補として選択"
+        },
+        {
+          "ko": "지점 수용량: 강남·송파·서초 3개 지점의 88슬롯 중 예약 63건, 잔여 25개를 비교",
+          "en": "Capacity comparison: 63 bookings out of 88 available slots across the Gangnam, Songpa, and Seocho sample branches, leaving 25 open",
+          "ja": "拠点別収容枠：江南・松坡・瑞草の3拠点で計88枠中予約63件、空き25枠を比較"
+        }
+      ],
+      "images": [
+        "clinic-appointment-mobile"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "운영자가 지점별 예약 가능 슬롯을 조회하고 방문 예약의 시간·예약실을 확인",
+            "en": "A coordinator checks available appointment slots and the room assigned to each reservation",
+            "ja": "運営担当者が拠点別の空き枠と予約室を確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "서초점 프런트가 현장 접수 12건을 완료 7건과 대기 5건으로 나누어 검토",
+            "en": "The Seocho front desk reviews twelve check-ins, with seven complete and five awaiting a call",
+            "ja": "瑞草店の受付担当者が受付12件を完了7件と待機5件に分けて確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "관리자가 직원 근무 구간과 예약실 점유를 함께 비교해 선택 예약의 배정을 점검",
+            "en": "An operator cross-checks shift coverage and room occupancy for a selected appointment",
+            "ja": "管理者がスタッフの勤務時間帯と予約室の利用状況を照合する"
+          }
+        },
+        {
+          "title": {
+            "ko": "방문자가 모바일에서 확정된 예약을 확인하고 사용 가능한 변경 후보 시간을 선택",
+            "en": "A visitor views a confirmed booking and selects an available alternative without modifying the original record",
+            "ja": "来院者がモバイルで確定済みの予約を確認し、変更候補を選ぶ"
+          }
+        },
+        {
+          "title": {
+            "ko": "지점 관리자가 전체 3개 지점의 점유율과 잔여 슬롯을 비교해 추가 예약 여력을 판단",
+            "en": "A branch manager compares occupancy and remaining booking capacity across all three branches",
+            "ja": "拠点管理者が3拠点の稼働率と残り枠を比較して追加予約の余力を確認する"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "clinic-checkin-queue",
+        "clinic-staff-assignment"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "clinic-branch-capacity"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "PIUS가 자체 제작한 가상의 병원 예약·접수 운영 정적 UI 포트폴리오입니다. HTML/CSS/SVG와 정적 브라우저 렌더링으로 데스크톱 4장과 모바일 1장을 제작했습니다. 사용자 인증, 실제 예약·변경·접수 처리, 실시간 배정, 알림 발송, 서버·DB·API는 구현하지 않았습니다. 모든 지점·직원·방문자·예약 정보와 수치는 가상입니다. 진료·검사·진단·처방 및 개인정보 처리 기능은 제작 범위에서 제외했습니다.",
+        "en": "An independently produced fictional static UI portfolio demo by PIUS, comprising four desktop renders and one mobile render built with HTML, CSS, SVG, and browser-based static capture. Login, real appointment changes, reception processing, live assignment, notifications, databases, servers, and APIs were not implemented. All clinic locations, staff, visitors, bookings, and counts are illustrative. Clinical records, examinations, diagnosis, prescriptions, and real personal data are excluded.",
+        "ja": "PIUSが自主制作した架空のクリニック予約・受付システムの静的UIポートフォリオです。HTML・CSS・SVGとブラウザーの静的キャプチャにより、デスクトップ4画面とモバイル1画面を制作しました。認証、実際の予約変更、受付処理、リアルタイム配置、通知送信、サーバー、DB、APIは実装していません。拠点・スタッフ・来院者・予約・数値はすべてサンプルです。診療記録、検査、診断、処方、実在する個人情報は対象外です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "서로 다른 시점의 예약·현장 접수·배정 정보를 같은 가상 데이터로 연결해 다지점 운영자가 실제로 판단할 업무 흐름을 보여줍니다.",
+        "en": "A consistent fictional dataset connects schedules, check-ins, resource allocation, and branch capacity into a practical multi-location workflow.",
+        "ja": "同一の架空データに基づき、予約・受付・配置・拠点別の空き状況をつなげて、実務に即した多拠点運営の流れを表現しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "clinic-branch-schedule",
+      "file": "clinic-branch-schedule.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "ORIN 다지점 예약 캘린더에서 오린 서초점 BR-03의 32슬롯 중 예약 24건과 잔여 8개를 확인하는 화면",
+        "en": "ORIN branch booking calendar for fictitious Seocho branch BR-03 showing 24 booked and eight open slots out of 32",
+        "ja": "架空の瑞草店BR-03で32枠中予約24件・空き8枠を表示するORIN拠点予約カレンダー"
+      },
+      "caption": {
+        "ko": "예약실 A·B·C·D의 30분 단위 캘린더와 선택 방문자 #0150의 접수·대기 상태를 한 화면에서 확인합니다.",
+        "en": "Review four rooms in a half-hour grid alongside selected visitor #0150 and their checked-in, waiting status.",
+        "ja": "4室の30分刻みの予約状況と来院者#0150の受付・待機状態を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "clinic-checkin-queue",
+      "file": "clinic-checkin-queue.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "오린 서초점의 현장 접수 12건을 방문 완료 7건과 호출 대기 5건으로 구분한 ORIN 운영 화면",
+        "en": "ORIN clinic reception queue separating twelve check-ins into seven completed visits and five waiting visitors",
+        "ja": "受付12件を来院完了7件・呼び出し待ち5件に分けたORINの受付管理画面"
+      },
+      "caption": {
+        "ko": "가상 방문자 #0150의 10:24 접수 시각과 대기 순번 03을 확인하고 호출 작업 영역을 검토합니다.",
+        "en": "Inspect visitor #0150, checked in at 10:24 a.m. with waiting position 03, in a reception workflow.",
+        "ja": "架空の来院者#0150の受付時刻10:24と待機順番03を確認する業務画面です。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "clinic-staff-assignment",
+      "file": "clinic-staff-assignment.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "예약실 4개와 직원 4명의 근무 구간을 매칭해 중복 배정 여부를 검토하는 ORIN 직원 배정판",
+        "en": "ORIN scheduling workbench matching four staff shifts with four rooms and reviewing overlapping assignments",
+        "ja": "4名のスタッフと4室の予約時間を照合して重複配置を確認するORINスタッフ配置画面"
+      },
+      "caption": {
+        "ko": "선택 예약 #0150의 10:30 상담실 A 배정을 확인하며 직원·예약실 시간 충돌이 없음을 표시합니다.",
+        "en": "Confirm the 10:30 a.m. room A assignment for booking #0150, with no concurrent staff or room conflicts.",
+        "ja": "予約#0150の10:30・相談室Aへの配置を確認し、時間帯の重複がないことを表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "clinic-appointment-mobile",
+      "file": "clinic-appointment-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "가상 방문자 #0158이 11월 12일 11시 30분 예약을 확인하고 12시 변경 후보를 선택한 ORIN 모바일 화면",
+        "en": "ORIN mobile booking screen showing fictional visitor #0158 selecting noon as an alternative to an 11:30 a.m. appointment",
+        "ja": "架空の来院者#0158が11:30の予約を確認し、12:00を変更候補に選んだORINモバイル画面"
+      },
+      "caption": {
+        "ko": "예약실 D의 기존 11:30 예약은 유지하고, 12:00 슬롯은 아직 확정되지 않은 변경 후보로 표현했습니다.",
+        "en": "The confirmed 11:30 a.m. booking in room D remains in effect; noon is only an unconfirmed change option.",
+        "ja": "予約室Dの11:30の予約は維持したまま、12:00を未確定の変更候補として表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "clinic-branch-capacity",
+      "file": "clinic-branch-capacity.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "ORIN 강남·송파·서초 지점의 예약 63건과 전체 88슬롯·잔여 25슬롯을 비교하는 수용량 화면",
+        "en": "ORIN three-branch capacity comparison showing 63 bookings, 88 total slots, and 25 open appointment spaces",
+        "ja": "架空の3拠点で予約63件・全88枠・空き25枠を比較するORIN予約収容状況画面"
+      },
+      "caption": {
+        "ko": "3개 지점의 예약률과 잔여 슬롯을 비교하고 서초점 4개 예약실의 점유 현황을 상세 조회합니다.",
+        "en": "Compare bookings and occupancy across Gangnam, Songpa, and Seocho, then inspect room-level capacity at Seocho.",
+        "ja": "江南・松坡・瑞草の稼働率と空き枠を比較し、瑞草店の予約室別利用状況を確認します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

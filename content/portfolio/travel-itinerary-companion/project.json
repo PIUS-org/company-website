@@ -1,0 +1,302 @@
+{
+  "id": "travel-itinerary-companion",
+  "slug": "travel-itinerary-companion",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 610,
+  "includeInPdf": true,
+  "title": {
+    "ko": "여행 일정 동행 앱",
+    "en": "Travel Itinerary Companion",
+    "ja": "旅行日程コンパニオン"
+  },
+  "subtitle": {
+    "ko": "여행의 발견과 실행을 잇는 일정 동행",
+    "en": "From travel inspiration to the day itself",
+    "ja": "旅の発見から当日の行動まで"
+  },
+  "summary": {
+    "ko": "교토 여행 하나를 기준으로 여행 카드, 일별 계획, 장소 저장, 일정 편집과 당일 체크를 구성한 모바일 UI 데모입니다.",
+    "en": "A Kyoto-focused mobile UI connecting trips, day plans, saved places, itinerary editing, and day-of checklists.",
+    "ja": "京都旅行を例に、旅の一覧、日別計画、スポット保存、日程編集、当日のチェックをつないだUIデモです。"
+  },
+  "overview": {
+    "ko": "교토 여행 하나를 기준으로 여행 카드, 일별 계획, 장소 저장, 일정 편집과 당일 체크를 구성한 모바일 UI 데모입니다.",
+    "en": "A Kyoto-focused mobile UI connecting trips, day plans, saved places, itinerary editing, and day-of checklists.",
+    "ja": "京都旅行を例に、旅の一覧、日別計画、スポット保存、日程編集、当日のチェックをつないだUIデモです。"
+  },
+  "industry": {
+    "ko": "여행 일정 관리",
+    "en": "Travel itineraries",
+    "ja": "旅行日程管理"
+  },
+  "categories": [
+    "platform",
+    "mobile"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#1C5A78",
+    "accentInk": "#142934",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "travel-itinerary-companion-01",
+    "travel-itinerary-companion-04"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / C실 claude-integration-prompt.txt. 이미지 5장은 c-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "여행 카드 한 장에서 시작해 일정, 장소, 당일 체크까지.",
+        "en": "From one trip card to the day plan, saved places and on-the-day checks.",
+        "ja": "旅のカード一枚から、日程、スポット、当日のチェックまで。"
+      },
+      "images": [
+        "travel-itinerary-companion-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "저장한 장소의 순서와 하루 타임라인, 당일 체크 상태가 달라지지 않도록 하나의 여행 일정을 기준으로 설계했습니다.",
+        "en": "Saved places, daily timelines, and day-of checklists should follow one coherent itinerary.",
+        "ja": "保存した場所の順序、日別タイムライン、当日のチェック状態を一つの旅程に合わせます。"
+      },
+      "body": {
+        "ko": "사진형 여행 카드, 시간순 일정, 장소 지도 미리보기, 방문 순서 재배치, 당일 상태를 설계했습니다.",
+        "en": "Travel cards, chronological itineraries, location previews, reorderable stops, and visit states form the experience.",
+        "ja": "写真付き旅行カード、時系列予定、地図プレビュー、訪問順の変更、当日の進行状態を設計しました。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "2027년 4월 8–11일 교토 여행 생성",
+            "en": "Create April 8–11, 2027 Kyoto trip",
+            "ja": "2027年4月8〜11日の京都旅行を作成"
+          }
+        },
+        {
+          "title": {
+            "ko": "4월 9일 일정 확인",
+            "en": "Open April 9 plan",
+            "ja": "4月9日の予定確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "기요미즈데라·산넨자카·니시키 시장 저장",
+            "en": "Save Kiyomizu-dera, Sannenzaka, Nishiki Market",
+            "ja": "清水寺・産寧坂・錦市場を保存"
+          }
+        },
+        {
+          "title": {
+            "ko": "순서 편집",
+            "en": "Reorder",
+            "ja": "順番を編集"
+          }
+        },
+        {
+          "title": {
+            "ko": "당일 체크",
+            "en": "Mark visits",
+            "ja": "当日チェック"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "focus",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "travel-itinerary-companion-04",
+        "travel-itinerary-companion-02",
+        "travel-itinerary-companion-03",
+        "travel-itinerary-companion-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "04",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "지도와 동선은 설명용 2D 그래픽입니다. 실제 지도·길찾기·이동 시간 계산은 제공하지 않는 정적 화면 5장입니다.",
+        "en": "Maps and routes are illustrative 2D graphics. Five static screens do not provide navigation or verified travel times.",
+        "ja": "地図・経路は説明用2Dグラフィックです。ナビゲーションや移動時間を検証する機能はない静的UI全5画面です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "05",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "여행 전의 기대와 여행 중의 실행을 한 흐름으로 연결했습니다.",
+        "en": "Connect the anticipation of planning with the clarity of traveling.",
+        "ja": "計画するときの期待を、旅先での行動につなぎます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "travel-itinerary-companion-01",
+      "file": "travel-itinerary-companion-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "여행 일정 동행 앱 — 교토 여행 카드와 준비 체크 화면",
+        "en": "Travel Itinerary Companion — Kyoto trip and preparation checklist mobile screen",
+        "ja": "旅行日程コンパニオン — 京都旅行カードと準備チェックの画面"
+      },
+      "caption": {
+        "ko": "교토 여행 카드와 준비 체크",
+        "en": "Kyoto trip and preparation checklist",
+        "ja": "京都旅行カードと準備チェック"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "travel-itinerary-companion-02",
+      "file": "travel-itinerary-companion-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "여행 일정 동행 앱 — 4월 9일 방문 일정 타임라인 화면",
+        "en": "Travel Itinerary Companion — April 9 chronological itinerary mobile screen",
+        "ja": "旅行日程コンパニオン — 4月9日の時系列予定の画面"
+      },
+      "caption": {
+        "ko": "4월 9일 방문 일정 타임라인",
+        "en": "April 9 chronological itinerary",
+        "ja": "4月9日の時系列予定"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "travel-itinerary-companion-03",
+      "file": "travel-itinerary-companion-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "여행 일정 동행 앱 — 저장 가능한 장소와 예시 지도 화면",
+        "en": "Travel Itinerary Companion — Saved destinations and illustrative map mobile screen",
+        "ja": "旅行日程コンパニオン — 保存スポットとサンプル地図の画面"
+      },
+      "caption": {
+        "ko": "저장 가능한 장소와 예시 지도",
+        "en": "Saved destinations and illustrative map",
+        "ja": "保存スポットとサンプル地図"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "travel-itinerary-companion-04",
+      "file": "travel-itinerary-companion-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "여행 일정 동행 앱 — 방문 순서 재배치와 시간 편집 화면",
+        "en": "Travel Itinerary Companion — Reorder stops and edit schedule times mobile screen",
+        "ja": "旅行日程コンパニオン — 訪問順と時刻の編集の画面"
+      },
+      "caption": {
+        "ko": "방문 순서 재배치와 시간 편집",
+        "en": "Reorder stops and edit schedule times",
+        "ja": "訪問順と時刻の編集"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "travel-itinerary-companion-05",
+      "file": "travel-itinerary-companion-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "여행 일정 동행 앱 — 여행 당일 다음 장소와 체크 상태 화면",
+        "en": "Travel Itinerary Companion — Day-of upcoming stops and visit status mobile screen",
+        "ja": "旅行日程コンパニオン — 当日の次の場所と完了状態の画面"
+      },
+      "caption": {
+        "ko": "여행 당일 다음 장소와 체크 상태",
+        "en": "Day-of upcoming stops and visit status",
+        "ja": "当日の次の場所と完了状態"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "id": "architecture-client-portal",
+  "slug": "architecture-client-portal",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 740,
+  "includeInPdf": true,
+  "title": {
+    "ko": "건축 고객 포털",
+    "en": "Architecture Client Portal",
+    "ja": "建築クライアントポータル"
+  },
+  "subtitle": {
+    "ko": "공간 시안과 2D 평면, 변경 의견, 승인 기록을 공유하는 고객용 협업 화면",
+    "en": "A 2D client review portal for space concepts, pinned feedback, and approvals.",
+    "ja": "空間案、2D平面、修正コメント、承認履歴を共有する顧客向けポータル"
+  },
+  "summary": {
+    "ko": "프로젝트 개요, 공간 시안 갤러리, 2D 핀 피드백, 결정·승인 기록과 모바일 진행 화면.",
+    "en": "Project overview, concept gallery, pinned feedback on 2D plans, decision log and mobile progress.",
+    "ja": "プロジェクト概要、空間案ギャラリー、2D平面へのピンコメント、決定・承認記録、モバイル進捗の画面。"
+  },
+  "overview": {
+    "ko": "고객도 이해하기 쉬운 개념 시안과 핀 피드백을 중심으로 변경 전후, 결정 내역을 확인할 수 있도록 구성했습니다.",
+    "en": "A client-facing UI concept built around approachable space previews, conceptual 2D plans, change comparisons, and decisions.",
+    "ja": "顧客が理解しやすいコンセプト画像と位置指定コメントを中心に、変更比較と決定履歴を確認するUIです。"
+  },
+  "industry": {
+    "ko": "건축·인테리어",
+    "en": "Architecture and interiors",
+    "ja": "建築・インテリア"
+  },
+  "categories": [
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#4F7A72",
+    "accentInk": "#1C2B28",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "architecture-client-portal-03"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / E실 claude-integration-prompt.txt. 이미지 5장은 e-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "공간 시안과 2D 평면에 핀으로 의견을 남기고, 결정과 승인을 기록합니다.",
+        "en": "Pin comments on concepts and 2D plans, and keep a record of decisions and approvals.",
+        "ja": "空間案と2D平面にピンでコメントを残し、決定と承認を記録します。"
+      },
+      "images": [
+        "architecture-client-portal-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "공간 시안의 이미지와 핀 코멘트, 변경 승인 이력이 같은 버전을 가리켜야 고객 검토가 의미 있게 이어집니다.",
+        "en": "Design previews, pinned comments, and change approvals must reference the same version for client reviews to be meaningful.",
+        "ja": "空間案の画像、ピンコメント、変更承認の履歴が同じ版を参照することで、顧客の確認がつながります。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "진행 확인",
+            "en": "View progress",
+            "ja": "進捗確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "시안 비교",
+            "en": "Browse concepts",
+            "ja": "案を比較"
+          }
+        },
+        {
+          "title": {
+            "ko": "위치별 코멘트",
+            "en": "Pin feedback",
+            "ja": "位置指定コメント"
+          }
+        },
+        {
+          "title": {
+            "ko": "변경 승인",
+            "en": "Approve changes",
+            "ja": "変更承認"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일 현황 확인",
+            "en": "Review on mobile",
+            "ja": "モバイル確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "architecture-client-portal-02",
+        "architecture-client-portal-03",
+        "architecture-client-portal-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "architecture-client-portal-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "프론트엔드 정적 UI 시각화 5화면(데스크톱 4, 모바일 1). 서버, 로그인, 저장, 실시간 협업, 외부 연동 미구현. 화면의 데이터는 모두 데모용 가상 데이터입니다.",
+        "en": "Five static front-end interface visuals (four desktop, one mobile). No backend, authentication, persistence, live collaboration, or external integrations. All displayed data is fictional demo data.",
+        "ja": "デスクトップ4画面、モバイル1画面の静的UIビジュアル。サーバー、認証、保存、リアルタイム協業、外部連携は未実装。表示データはデモ用の架空データです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "평면 위의 핀 하나가 의견이 되고, 변경 전후 비교와 승인 기록으로 이어져 결정의 근거가 남습니다.",
+        "en": "A pin on the plan becomes a comment, then a before-and-after comparison and an approval, so each decision keeps its reasoning.",
+        "ja": "平面上のピン一つがコメントになり、変更前後の比較と承認記録につながって、決定の根拠が残ります。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "architecture-client-portal-01",
+      "file": "architecture-client-portal-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "건축 고객 포털의 고객 프로젝트 개요 정적 화면. 서초 주거 리노베이션 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static architecture project overview screen in Architecture Client Portal, showing the demo project “Seocho Residence Renovation”.",
+        "ja": "建築クライアントポータルの案件概要を示す静的UI画面。デモ案件「瑞草住宅リノベーション」の表示です。"
+      },
+      "caption": {
+        "ko": "고객 프로젝트 개요",
+        "en": "Architecture project overview",
+        "ja": "案件概要"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "architecture-client-portal-02",
+      "file": "architecture-client-portal-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "건축 고객 포털의 공간 시안 갤러리 정적 화면. 서초 주거 리노베이션 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static space concept gallery screen in Architecture Client Portal, showing the demo project “Seocho Residence Renovation”.",
+        "ja": "建築クライアントポータルの空間案ギャラリーを示す静的UI画面。デモ案件「瑞草住宅リノベーション」の表示です。"
+      },
+      "caption": {
+        "ko": "공간 시안 갤러리",
+        "en": "Space concept gallery",
+        "ja": "空間案ギャラリー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "architecture-client-portal-03",
+      "file": "architecture-client-portal-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "건축 고객 포털의 2D 시안 핀 피드백 정적 화면. 서초 주거 리노베이션 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static annotated 2D plan review screen in Architecture Client Portal, showing the demo project “Seocho Residence Renovation”.",
+        "ja": "建築クライアントポータルの2D平面コメントを示す静的UI画面。デモ案件「瑞草住宅リノベーション」の表示です。"
+      },
+      "caption": {
+        "ko": "2D 시안 핀 피드백",
+        "en": "Annotated 2D plan review",
+        "ja": "2D平面コメント"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "architecture-client-portal-04",
+      "file": "architecture-client-portal-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "건축 고객 포털의 결정 및 승인 기록 정적 화면. 서초 주거 리노베이션 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static change and approval record screen in Architecture Client Portal, showing the demo project “Seocho Residence Renovation”.",
+        "ja": "建築クライアントポータルの変更・承認履歴を示す静的UI画面。デモ案件「瑞草住宅リノベーション」の表示です。"
+      },
+      "caption": {
+        "ko": "결정 및 승인 기록",
+        "en": "Change and approval record",
+        "ja": "変更・承認履歴"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "architecture-client-portal-05",
+      "file": "architecture-client-portal-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "건축 고객 포털의 모바일 프로젝트 진행 정적 화면. 서초 주거 리노베이션 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static mobile project progress screen in Architecture Client Portal, showing the demo project “Seocho Residence Renovation”.",
+        "ja": "建築クライアントポータルのモバイル進捗を示す静的UI画面。デモ案件「瑞草住宅リノベーション」の表示です。"
+      },
+      "caption": {
+        "ko": "모바일 프로젝트 진행",
+        "en": "Mobile project progress",
+        "ja": "モバイル進捗"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

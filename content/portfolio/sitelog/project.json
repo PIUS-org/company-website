@@ -22,9 +22,9 @@
     "ja": "ガントチャート、2D図面上の課題、タブレット現場日報、技術照会をつなぐ建設管理UIデモです。"
   },
   "overview": {
-    "ko": "현장 프로젝트는 공정 일정의 변화가 도면 검토와 작업일지, 기술질의에 영향을 줍니다. SITELOG는 복잡한 3D 구현 대신 실제 실무 흐름을 표현하는 공정 간트·도면 마커·태블릿 기록·RFI 단계 화면에 집중했습니다.",
-    "en": "Changes to a field schedule affect drawing reviews, daily reports, and technical inquiries. Instead of speculative 3D interfaces, SITELOG focuses on the operational workflow using a Gantt view, marked-up plans, portrait tablet reporting, and RFI approval steps.",
-    "ja": "工事現場では工程の変更が図面確認、日報、技術照会に影響します。SITELOGは過度な3D表現ではなく、工程表、図面マーカー、縦型タブレット日報、RFI承認の実務フローに焦点を当てました。"
+    "ko": "현장 프로젝트는 공정 일정의 변화가 도면 검토와 작업일지, 기술질의에 영향을 줍니다. SITELOG는 복잡한 3D 구현 대신 실제 실무 흐름을 표현하는 공정 간트·도면 마커·태블릿 기록·RFI 단계 화면에 집중했습니다. 공정 지연, 도면 간섭, 현장 작업, 기술질의가 따로 기록되면 원인과 조치 내역이 분리됩니다. 동일한 현장과 이슈 식별자를 화면 간 일관되게 사용합니다.",
+    "en": "Changes to a field schedule affect drawing reviews, daily reports, and technical inquiries. Instead of speculative 3D interfaces, SITELOG focuses on the operational workflow using a Gantt view, marked-up plans, portrait tablet reporting, and RFI approval steps. When delays, clashes, daily logs, and technical questions are captured independently, causes and resolutions lose their connection. The demo reuses one project and related issue identifiers across screens.",
+    "ja": "工事現場では工程の変更が図面確認、日報、技術照会に影響します。SITELOGは過度な3D表現ではなく、工程表、図面マーカー、縦型タブレット日報、RFI承認の実務フローに焦点を当てました。 工程遅延、図面の干渉、現場作業、技術的な質問を別々に記録すると、原因と対応が分断されます。同一プロジェクトと課題IDを画面間で統一しています。"
   },
   "industry": {
     "ko": "건설 공정·현장 협업",
@@ -36,6 +36,7 @@
     "web",
     "mobile"
   ],
+  "mainCategory": "mobile",
   "platforms": [
     {
       "type": "admin",
@@ -186,14 +187,9 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
-        "ko": "현장 프로젝트는 공정 일정의 변화가 도면 검토와 작업일지, 기술질의에 영향을 줍니다. SITELOG는 복잡한 3D 구현 대신 실제 실무 흐름을 표현하는 공정 간트·도면 마커·태블릿 기록·RFI 단계 화면에 집중했습니다.",
-        "en": "Changes to a field schedule affect drawing reviews, daily reports, and technical inquiries. Instead of speculative 3D interfaces, SITELOG focuses on the operational workflow using a Gantt view, marked-up plans, portrait tablet reporting, and RFI approval steps.",
-        "ja": "工事現場では工程の変更が図面確認、日報、技術照会に影響します。SITELOGは過度な3D表現ではなく、工程表、図面マーカー、縦型タブレット日報、RFI承認の実務フローに焦点を当てました。"
-      },
-      "body": {
-        "ko": "공정 지연, 도면 간섭, 현장 작업, 기술질의가 따로 기록되면 원인과 조치 내역이 분리됩니다. 동일한 현장과 이슈 식별자를 화면 간 일관되게 사용합니다.",
-        "en": "When delays, clashes, daily logs, and technical questions are captured independently, causes and resolutions lose their connection. The demo reuses one project and related issue identifiers across screens.",
-        "ja": "工程遅延、図面の干渉、現場作業、技術的な質問を別々に記録すると、原因と対応が分断されます。同一プロジェクトと課題IDを画面間で統一しています。"
+        "ko": "공정 일정의 변경이 도면 이슈와 현장일지에 어떤 영향을 주는지 확인할 수 있어야 현장 의사결정이 단절되지 않습니다.",
+        "en": "Schedule changes should remain traceable through drawing issues, site logs, and technical questions rather than isolated status boards.",
+        "ja": "工程の変更が図面課題や現場日誌にどう影響するか追える構成が現場判断には欠かせません。"
       }
     },
     {

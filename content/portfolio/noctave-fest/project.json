@@ -36,6 +36,7 @@
     "platform",
     "mobile"
   ],
+  "mainCategory": "web",
   "platforms": [
     {
       "type": "web",
@@ -288,6 +289,11 @@
         "ko": "NOCTAVE FEST는 가상의 도심형 음악·아트 페스티벌을 위한 관람객 중심 Desktop·Mobile WEB UI 데모입니다. 개별적으로 흩어지기 쉬운 아티스트 정보, 공연 시간, 개인 일정, 행사장 공간, 티켓 정보를 하나의 시각 언어로 연결하도록 설계했습니다. 본 포트폴리오는 정적 화면 디자인 사례이며 실제 개최 행사나 운영 서비스가 아닙니다.",
         "en": "NOCTAVE FEST is a visitor-centered desktop and mobile web UI demo for a fictional urban music and art festival. It unifies artist discovery, showtimes, saved schedules, venue navigation and ticket information within one visual system. This portfolio presents static interface concepts, not a real festival or operational service.",
         "ja": "NOCTAVE FESTは、架空の都市型音楽・アートフェスティバルを想定した来場者向けデスクトップ・モバイルWeb UIデモです。アーティスト情報、公演時間、保存した予定、会場マップ、チケット情報を一貫したビジュアルでつなぎます。実在のイベントや稼働中のサービスではなく、静的な画面デザインの事例です。"
+      },
+      "body": {
+        "ko": "관람객이 관심 아티스트를 발견한 뒤 공연 시간·장소·티켓 정보를 여러 화면에서 다시 찾지 않도록 흐름을 연결했습니다.",
+        "en": "Artist discovery, set times, venue navigation, and ticket details belong to one visitor journey rather than isolated pages.",
+        "ja": "気になるアーティストを見つけた後、出演時間・会場・チケットを別々に探し直さずに済む導線を設計しました。"
       }
     },
     {

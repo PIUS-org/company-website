@@ -1,0 +1,338 @@
+{
+  "id": "mindful-journal-app",
+  "slug": "mindful-journal-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 680,
+  "includeInPdf": true,
+  "title": {
+    "ko": "스틸 마음 기록",
+    "en": "Still Mindful Journal",
+    "ja": "still. 気持ちの記録"
+  },
+  "subtitle": {
+    "ko": "감정을 기록하고 달력과 통계로 돌아보는 일상",
+    "en": "Reflect through daily entries, calendar and mood insights",
+    "ja": "感情の日記・カレンダー・集計で日々を振り返る"
+  },
+  "summary": {
+    "ko": "감정 체크인, 비공개 일기, 월간 캘린더, 계산된 주간 감정 분포와 루틴.",
+    "en": "Mood check-ins, private journals, calendar, calculated weekly insights and routines.",
+    "ja": "感情チェックイン、非公開日記、カレンダー、週次集計、記録習慣を備えたUI。"
+  },
+  "overview": {
+    "ko": "11월 13일 ‘보통’ 감정의 일기를 중심으로, 11월 9~13일 총 5개 기록(편안 2·기쁨 1·보통 1·피곤 1)을 기반으로 분포를 계산했습니다. 실제 정신건강 진단과 무관한 자체 데모입니다.",
+    "en": "A November 13 neutral-mood journal connects with five simulated entries from November 9–13: calm 2, happy 1, neutral 1 and tired 1. Not a medical assessment.",
+    "ja": "11月13日の「普通」の日記を中心に、11月9～13日の模擬記録5件（穏やか2、喜び1、普通1、疲れ1）から分布を算出。医療的な診断ではありません。"
+  },
+  "industry": {
+    "ko": "마음 기록",
+    "en": "Mood journaling",
+    "ja": "感情記録"
+  },
+  "categories": [
+    "mobile"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#8E7BB0",
+    "accentInk": "#211B2D",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "mindful-journal-app-01",
+    "mindful-journal-app-04"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / D실 claude-integration-prompt.txt. 이미지 5장은 d-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "감정 체크인, 비공개 일기, 월간 캘린더, 계산된 주간 감정 분포와 루틴.",
+        "en": "Mood check-ins, private journals, calendar, calculated weekly insights and routines.",
+        "ja": "感情チェックイン、非公開日記、カレンダー、週次集計、記録習慣を備えたUI。"
+      },
+      "images": [
+        "mindful-journal-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "그날의 감정 입력과 장기적인 기록 조회를 분리하면서도 사용자에게 부담스럽지 않은 회고 경험을 목표로 했습니다.",
+        "en": "Daily emotional check-ins and longer-term reflection are separated without making the journal feel clinical.",
+        "ja": "その日の気分入力と長期的な振り返りを分け、負担の少ない記録体験を目指しました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "오늘의 ‘보통’ 감정 체크인과 질문",
+          "en": "Neutral-mood check-in and daily prompt",
+          "ja": "今日の「普通」の感情選択と質問"
+        },
+        {
+          "ko": "11월 13일 일기 작성과 태그",
+          "en": "November 13 journal composer and tags",
+          "ja": "11月13日の日記作成とタグ"
+        },
+        {
+          "ko": "11월 기록이 표시된 감정 캘린더",
+          "en": "Mood calendar with November entries",
+          "ja": "11月の記録を示す感情カレンダー"
+        },
+        {
+          "ko": "기록 5개로 계산한 주간 감정 막대 그래프",
+          "en": "Mood bars calculated from five entries",
+          "ja": "5件の記録から算出した週間グラフ"
+        },
+        {
+          "ko": "5일 연속 작성과 오후 9시 30분 알림",
+          "en": "Five-day streak and 9:30 PM reminder",
+          "ja": "5日連続の記録と21時30分の通知"
+        }
+      ],
+      "images": [
+        "mindful-journal-app-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "감정 선택",
+            "en": "Mood check-in",
+            "ja": "感情を選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "비공개 일기",
+            "en": "Private entry",
+            "ja": "非公開日記"
+          }
+        },
+        {
+          "title": {
+            "ko": "11월 달력",
+            "en": "November calendar",
+            "ja": "11月のカレンダー"
+          }
+        },
+        {
+          "title": {
+            "ko": "5개 기록 기반 주간 인사이트",
+            "en": "Insights from five records",
+            "ja": "5件の週次分析"
+          }
+        },
+        {
+          "title": {
+            "ko": "알림 루틴",
+            "en": "Reminder routine",
+            "ja": "通知ルーティン"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "phones",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "mindful-journal-app-03",
+        "mindful-journal-app-04",
+        "mindful-journal-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "화면별 기능이 명확히 구분되는 소비자 모바일 UI 5장, 실제 텍스트·사진·SVG 그래픽 제작. 동작하는 앱·로그인·서버·AI·결제·실시간 상태 기능 미구현.",
+        "en": "Five distinct static mobile UI screenshots with real typography, photos and vector elements. No working app, login, server, AI, payments or live status.",
+        "ja": "機能ごとに異なる静的モバイルUI5画面。実際の文字・写真・SVGを使用。動作するアプリ、ログイン、サーバー、AI、決済、リアルタイム機能は未実装。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "감정 하나를 고르는 가벼운 체크인에서 시작해, 쌓인 기록을 달력과 주간 분포로 차분히 돌아보게 했습니다.",
+        "en": "It starts with a light check-in of a single mood, then lets you look back calmly on the entries through a calendar and a weekly breakdown.",
+        "ja": "気分を一つ選ぶ軽いチェックインから始め、たまった記録をカレンダーと週ごとの分布で落ち着いて振り返れるようにしました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "mindful-journal-app-01",
+      "file": "mindful-journal-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스틸 마음 기록 — 오늘의 ‘보통’ 감정 체크인과 질문",
+        "en": "Still Mindful Journal — Neutral-mood check-in and daily prompt",
+        "ja": "still. 気持ちの記録 — 今日の「普通」の感情選択と質問"
+      },
+      "caption": {
+        "ko": "오늘의 ‘보통’ 감정 체크인과 질문",
+        "en": "Neutral-mood check-in and daily prompt",
+        "ja": "今日の「普通」の感情選択と質問"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "mindful-journal-app-02",
+      "file": "mindful-journal-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스틸 마음 기록 — 11월 13일 일기 작성과 태그",
+        "en": "Still Mindful Journal — November 13 journal composer and tags",
+        "ja": "still. 気持ちの記録 — 11月13日の日記作成とタグ"
+      },
+      "caption": {
+        "ko": "11월 13일 일기 작성과 태그",
+        "en": "November 13 journal composer and tags",
+        "ja": "11月13日の日記作成とタグ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "mindful-journal-app-03",
+      "file": "mindful-journal-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스틸 마음 기록 — 11월 기록이 표시된 감정 캘린더",
+        "en": "Still Mindful Journal — Mood calendar with November entries",
+        "ja": "still. 気持ちの記録 — 11月の記録を示す感情カレンダー"
+      },
+      "caption": {
+        "ko": "11월 기록이 표시된 감정 캘린더",
+        "en": "Mood calendar with November entries",
+        "ja": "11月の記録を示す感情カレンダー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "mindful-journal-app-04",
+      "file": "mindful-journal-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스틸 마음 기록 — 기록 5개로 계산한 주간 감정 막대 그래프",
+        "en": "Still Mindful Journal — Mood bars calculated from five entries",
+        "ja": "still. 気持ちの記録 — 5件の記録から算出した週間グラフ"
+      },
+      "caption": {
+        "ko": "기록 5개로 계산한 주간 감정 막대 그래프",
+        "en": "Mood bars calculated from five entries",
+        "ja": "5件の記録から算出した週間グラフ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "mindful-journal-app-05",
+      "file": "mindful-journal-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "스틸 마음 기록 — 5일 연속 작성과 오후 9시 30분 알림",
+        "en": "Still Mindful Journal — Five-day streak and 9:30 PM reminder",
+        "ja": "still. 気持ちの記録 — 5日連続の記録と21時30分の通知"
+      },
+      "caption": {
+        "ko": "5일 연속 작성과 오후 9시 30분 알림",
+        "en": "Five-day streak and 9:30 PM reminder",
+        "ja": "5日連続の記録と21時30分の通知"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

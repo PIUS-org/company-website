@@ -1,0 +1,48 @@
+portfolio sync [review] · 포함 84건 (fity:approved, smart-factory-mes:review, stackflow-wms:review, velora-space:review, noctave-fest:review, civera-twin:review, reelshift-studio:review, transport-erp-monitoring:approved, threadform-studio:review, roamframe-travel:review, morrow-select:review, secondloop:review, commute-shuttle-platform:approved, farm-commerce-backend:approved, metaverse-live-app:approved, charter-bus-dispatch:approved, bulkbridge:review, imprint-lab:review, hireloom:review, tavora-os:review, penova-class:review, nodera-flow:review, fieldnest:review, contracta:review, helio-desk:review, leasegrid:review, civicdesk:review, subscripta:review, sitelog:review, stayport-pms:review, sales-crm-pipeline:review, people-attendance-payroll:review, service-booking-payment:review, multi-site-content-cms:review, academy-enrollment-ops:review, warranty-repair-service:review, revenue-reconciliation:review, clinic-branch-reception:review, loyalty-points-ops:review, cbt-exam-center:review, equipment-rental-ops:review, home-service-dispatch:review, grant-application-review:review, franchise-network-ops:review, commerce-returns-ops:review, marketing-campaign-ops:review, form-survey-builder:review, insurance-claim-operations:review, supplier-qualification:review, employee-learning-compliance:review, residential-facility-booking:review, project-resource-costing:review, corporate-expense-ops:review, donation-donor-crm:review, boutique-hotel-booking:review, dog-walking-booking-app:review, private-clinic-brand-site:review, language-speaking-challenge-app:review, creator-collab-workspace:review, wellness-retreat-program:review, local-fitness-class-app:review, luxury-real-estate-showcase:review, second-home-cleaning-app:review, social-campaign-builder:review, premium-interior-studio:review, home-cooking-subscription-app:review, fintech-product-landing:review, beauty-appointment-app:review, podcast-production-hub:review, skincare-brand-experience:review, travel-itinerary-companion:review, creator-membership-platform:review, neighborhood-community-app:review, online-course-studio:review, art-fair-ticketing:review, used-fashion-market-app:review, nonprofit-donation-platform:review, mindful-journal-app:review, wedding-planning-portal:review, design-conference-portal:review, parenting-care-record-app:review, custom-furniture-configurator:review, concert-fan-companion-app:review, architecture-client-portal:review) · 제외 0건
+   ▲ Next.js 15.5.29
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 11.0s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/425) ...
+   Generating static pages (106/425) 
+   Generating static pages (212/425) 
+   Generating static pages (318/425) 
+ ✓ Generating static pages (425/425)
+   Finalizing page optimization ...
+   Collecting build traces ...
+   Exporting (0/2) ...
+ ✓ Exporting (2/2)
+
+Route (app)                                  Size  First Load JS
+┌ ○ /                                     43.3 kB         175 kB
+├ ○ /_not-found                             123 B         103 kB
+├ ○ /portfolio                              170 B         143 kB
+├ ● /portfolio/[slug]                       170 B         143 kB
+├   ├ /portfolio/fity
+├   ├ /portfolio/smart-factory-mes
+├   ├ /portfolio/stackflow-wms
+├   └ [+81 more paths]
+├ ● /portfolio/[slug]/print                 131 B         116 kB
+├   ├ /portfolio/fity/print
+├   ├ /portfolio/smart-factory-mes/print
+├   ├ /portfolio/stackflow-wms/print
+├   └ [+81 more paths]
+└ ● /portfolio/[slug]/print/[lang]          131 B         116 kB
+    ├ /portfolio/fity/print/ko
+    ├ /portfolio/fity/print/en
+    ├ /portfolio/fity/print/ja
+    └ [+249 more paths]
++ First Load JS shared by all              103 kB
+  ├ chunks/255-297169296243fbcb.js        46.7 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js   54.2 kB
+  └ other shared chunks (total)           1.96 kB
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+portfolio sync [public] · 포함 6건 (fity:approved, transport-erp-monitoring:approved, commute-shuttle-platform:approved, farm-commerce-backend:approved, metaverse-live-app:approved, charter-bus-dispatch:approved) · 제외 78건
+preview: inlined 71 single-page images (file cap 490)
+preview-dist ready: 490 files · pages: index.html, portfolio-academy-enrollment-ops.html, portfolio-architecture-client-portal.html, portfolio-art-fair-ticketing.html, portfolio-beauty-appointment-app.html, portfolio-boutique-hotel-booking.html, portfolio-bulkbridge.html, portfolio-cbt-exam-center.html, portfolio-charter-bus-dispatch.html, portfolio-civera-twin.html, portfolio-civicdesk.html, portfolio-clinic-branch-reception.html, portfolio-commerce-returns-ops.html, portfolio-commute-shuttle-platform.html, portfolio-concert-fan-companion-app.html, portfolio-contracta.html, portfolio-corporate-expense-ops.html, portfolio-creator-collab-workspace.html, portfolio-creator-membership-platform.html, portfolio-custom-furniture-configurator.html, portfolio-design-conference-portal.html, portfolio-dog-walking-booking-app.html, portfolio-donation-donor-crm.html, portfolio-employee-learning-compliance.html, portfolio-equipment-rental-ops.html, portfolio-farm-commerce-backend.html, portfolio-fieldnest.html, portfolio-fintech-product-landing.html, portfolio-fity.html, portfolio-form-survey-builder.html, portfolio-franchise-network-ops.html, portfolio-grant-application-review.html, portfolio-helio-desk.html, portfolio-hireloom.html, portfolio-home-cooking-subscription-app.html, portfolio-home-service-dispatch.html, portfolio-imprint-lab.html, portfolio-insurance-claim-operations.html, portfolio-language-speaking-challenge-app.html, portfolio-leasegrid.html, portfolio-local-fitness-class-app.html, portfolio-loyalty-points-ops.html, portfolio-luxury-real-estate-showcase.html, portfolio-marketing-campaign-ops.html, portfolio-metaverse-live-app.html, portfolio-mindful-journal-app.html, portfolio-morrow-select.html, portfolio-multi-site-content-cms.html, portfolio-neighborhood-community-app.html, portfolio-noctave-fest.html, portfolio-nodera-flow.html, portfolio-nonprofit-donation-platform.html, portfolio-online-course-studio.html, portfolio-parenting-care-record-app.html, portfolio-penova-class.html, portfolio-people-attendance-payroll.html, portfolio-podcast-production-hub.html, portfolio-premium-interior-studio.html, portfolio-private-clinic-brand-site.html, portfolio-project-resource-costing.html, portfolio-reelshift-studio.html, portfolio-residential-facility-booking.html, portfolio-revenue-reconciliation.html, portfolio-roamframe-travel.html, portfolio-sales-crm-pipeline.html, portfolio-second-home-cleaning-app.html, portfolio-secondloop.html, portfolio-service-booking-payment.html, portfolio-sitelog.html, portfolio-skincare-brand-experience.html, portfolio-smart-factory-mes.html, portfolio-social-campaign-builder.html, portfolio-stackflow-wms.html, portfolio-stayport-pms.html, portfolio-subscripta.html, portfolio-supplier-qualification.html, portfolio-tavora-os.html, portfolio-threadform-studio.html, portfolio-transport-erp-monitoring.html, portfolio-travel-itinerary-companion.html, portfolio-used-fashion-market-app.html, portfolio-velora-space.html, portfolio-warranty-repair-service.html, portfolio-wedding-planning-portal.html, portfolio-wellness-retreat-program.html, portfolio.html

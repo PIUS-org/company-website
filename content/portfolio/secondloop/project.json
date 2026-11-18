@@ -36,6 +36,7 @@
     "platform",
     "mobile"
   ],
+  "mainCategory": "commerce",
   "platforms": [
     {
       "type": "web",
@@ -283,6 +284,11 @@
         "ko": "SECONDLOOP는 개인이 소장하던 빈티지 카메라, 오디오, 디자인 오브제를 새로운 사용자에게 연결하는 큐레이션형 중고거래 경험을 제안합니다. 이 프로젝트는 구매자와 판매자의 화면을 정적 UI로 구성한 자체 데모입니다.",
         "en": "SECONDLOOP explores a curated resale experience for vintage cameras, audio equipment, and design objects previously owned by individuals. This is an in-house static UI demonstration of buyer and seller journeys.",
         "ja": "SECONDLOOPは、個人が所有していたヴィンテージカメラ、オーディオ機器、デザイン雑貨を次の持ち主へつなぐ、キュレーション型リユース体験の提案です。購入者と出品者の導線を静的UIで表現した自社デモです。"
+      },
+      "body": {
+        "ko": "중고 상품의 사진만으로는 거래를 결정하기 어렵기 때문에 상태 설명·협상·거래 진행 정보를 같은 상품에 연결했습니다.",
+        "en": "A resale listing needs more than appealing photographs: condition, price negotiation, and transaction status must reference the same item.",
+        "ja": "中古品は写真だけでは判断できないため、状態説明・価格交渉・取引状況を同じ商品に結び付けました。"
       }
     },
     {

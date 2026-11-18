@@ -17,6 +17,8 @@ import UserFlow from './blocks/UserFlow';
 import { ImageGallery, ScreenShowcase, TextImage } from './blocks/Media';
 import { FeatureGrid, Results, Scope, Statement } from './blocks/Text';
 import Screen from './media/Screen';
+import ScreenZoom from './media/ScreenZoom';
+import CaseInquiry from './CaseInquiry';
 import { Arrow, NavLink, useReveal } from './shared';
 import s from './Project.module.css';
 
@@ -69,7 +71,9 @@ export default function ProjectView({ p, next }: { p: Project; next: Project | n
           </div>
         );
       })}
+      <CaseInquiry p={p} />
       <NextProject next={next} />
+      <ScreenZoom root={root} deps={[lang, p.slug]} />
     </div>
   );
 }

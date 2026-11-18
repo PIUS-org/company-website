@@ -1,0 +1,46 @@
+$ env PORTFOLIO_STAGE=review npm run build
+# 2026-11-16T10:47:10+09:00 · commit 8aca9a2
+
+> pius-site@1.0.0 prebuild
+> node scripts/portfolio.mjs sync
+
+portfolio sync [review] · 포함 84건 (fity:approved, smart-factory-mes:review, stackflow-wms:review, velora-space:review, noctave-fest:review, civera-twin:review, reelshift-studio:review, transport-erp-monitoring:approved, threadform-studio:review, roamframe-travel:review, morrow-select:review, secondloop:review, commute-shuttle-platform:approved, farm-commerce-backend:approved, metaverse-live-app:approved, charter-bus-dispatch:approved, bulkbridge:review, imprint-lab:review, hireloom:review, tavora-os:review, penova-class:review, nodera-flow:review, fieldnest:review, contracta:review, helio-desk:review, leasegrid:review, civicdesk:review, subscripta:review, sitelog:review, stayport-pms:review, sales-crm-pipeline:review, people-attendance-payroll:review, service-booking-payment:review, multi-site-content-cms:review, academy-enrollment-ops:review, warranty-repair-service:review, revenue-reconciliation:review, clinic-branch-reception:review, loyalty-points-ops:review, cbt-exam-center:review, equipment-rental-ops:review, home-service-dispatch:review, grant-application-review:review, franchise-network-ops:review, commerce-returns-ops:review, marketing-campaign-ops:review, form-survey-builder:review, insurance-claim-operations:review, supplier-qualification:review, employee-learning-compliance:review, residential-facility-booking:review, project-resource-costing:review, corporate-expense-ops:review, donation-donor-crm:review, boutique-hotel-booking:review, dog-walking-booking-app:review, private-clinic-brand-site:review, language-speaking-challenge-app:review, creator-collab-workspace:review, wellness-retreat-program:review, local-fitness-class-app:review, luxury-real-estate-showcase:review, second-home-cleaning-app:review, social-campaign-builder:review, premium-interior-studio:review, home-cooking-subscription-app:review, fintech-product-landing:review, beauty-appointment-app:review, podcast-production-hub:review, skincare-brand-experience:review, travel-itinerary-companion:review, creator-membership-platform:review, neighborhood-community-app:review, online-course-studio:review, art-fair-ticketing:review, used-fashion-market-app:review, nonprofit-donation-platform:review, mindful-journal-app:review, wedding-planning-portal:review, design-conference-portal:review, parenting-care-record-app:review, custom-furniture-configurator:review, concert-fan-companion-app:review, architecture-client-portal:review) · 제외 0건
+
+> pius-site@1.0.0 build
+> next build
+
+   ▲ Next.js 15.5.29
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 10.5s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/89) ...
+   Generating static pages (22/89) 
+   Generating static pages (44/89) 
+   Generating static pages (66/89) 
+ ✓ Generating static pages (89/89)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    43.3 kB         175 kB
+├ ○ /_not-found                            123 B         103 kB
+├ ○ /portfolio                             170 B         143 kB
+├ ● /portfolio/[slug]                      170 B         143 kB
+├   ├ /portfolio/fity
+├   ├ /portfolio/smart-factory-mes
+├   ├ /portfolio/stackflow-wms
+├   └ [+81 more paths]
+├ ● /portfolio/[slug]/print                131 B         116 kB
+└ ● /portfolio/[slug]/print/[lang]         131 B         116 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/255-57cdd523657f12de.js       46.6 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          1.96 kB
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+# exit=0

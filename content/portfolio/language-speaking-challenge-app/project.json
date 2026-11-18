@@ -1,0 +1,338 @@
+{
+  "id": "language-speaking-challenge-app",
+  "slug": "language-speaking-challenge-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 480,
+  "includeInPdf": true,
+  "title": {
+    "ko": "말하기 챌린지",
+    "en": "Daily Speaking Challenge",
+    "ja": "スピーキングチャレンジ"
+  },
+  "subtitle": {
+    "ko": "매일 10분, 일상 표현을 소리 내어 연습하는 습관",
+    "en": "A 10-minute daily speaking practice routine",
+    "ja": "1日10分、日常表現を声に出して練習する習慣"
+  },
+  "summary": {
+    "ko": "학습 목표 설정, 말하기 과제, 예시 피드백과 연속 학습을 연결한 모바일 학습 UI.",
+    "en": "A mobile learning UI linking goals, speaking tasks, sample feedback and learning streaks.",
+    "ja": "学習目標、発話課題、模擬フィードバック、継続記録をつなぐモバイル学習UI。"
+  },
+  "overview": {
+    "ko": "영어 초급 학습자가 하루 10분 목표를 설정하고 카페 주문 문장을 연습하는 여정을 설계했습니다. 음성 점수는 가상 데이터이며 실제 AI 분석은 수행하지 않습니다.",
+    "en": "A beginner English learner sets a ten-minute goal and practices ordering at a café. Speech scores are simulated, not analyzed by AI.",
+    "ja": "英語初級者が10分の目標を設定し、カフェでの注文を練習する流れを設計。発話スコアは模擬データで、AI解析は行っていません。"
+  },
+  "industry": {
+    "ko": "언어 교육",
+    "en": "Language learning",
+    "ja": "語学教育"
+  },
+  "categories": [
+    "mobile"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#5B47D6",
+    "accentInk": "#181434",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "language-speaking-challenge-app-01",
+    "language-speaking-challenge-app-04"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / D실 claude-integration-prompt.txt. 이미지 5장은 d-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "학습 목표 설정, 말하기 과제, 예시 피드백과 연속 학습을 연결한 모바일 학습 UI.",
+        "en": "A mobile learning UI linking goals, speaking tasks, sample feedback and learning streaks.",
+        "ja": "学習目標、発話課題、模擬フィードバック、継続記録をつなぐモバイル学習UI。"
+      },
+      "images": [
+        "language-speaking-challenge-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "학습 목표·말하기 과제·예시 피드백·학습 기록을 한 번의 연습 흐름으로 이해할 수 있도록 단계별로 구성했습니다.",
+        "en": "Goals, speaking tasks, illustrative feedback, and progress records form one understandable practice cycle.",
+        "ja": "学習目標、スピーキング課題、例示フィードバック、学習記録を一連の練習として理解できる構成です。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "언어·레벨·하루 10분 목표 선택",
+          "en": "Language, level and 10-minute goal",
+          "ja": "言語・レベル・1日10分の目標選択"
+        },
+        {
+          "ko": "카페 주문 레슨과 오늘의 학습 진도",
+          "en": "Café ordering lesson and daily progress",
+          "ja": "カフェ注文レッスンと本日の進捗"
+        },
+        {
+          "ko": "마이크와 문장 중심의 말하기 과제",
+          "en": "Sentence-based microphone speaking task",
+          "ja": "例文とマイクを使う発話課題"
+        },
+        {
+          "ko": "가상 86점 피드백과 관사 교정",
+          "en": "Simulated score of 86 and article correction",
+          "ja": "模擬スコア86点と冠詞の修正"
+        },
+        {
+          "ko": "7일 연속 학습과 14일 도전",
+          "en": "Seven-day streak and a 14-day challenge",
+          "ja": "7日連続学習と14日間チャレンジ"
+        }
+      ],
+      "images": [
+        "language-speaking-challenge-app-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "언어·레벨·10분 목표 선택",
+            "en": "Select language, level and 10-minute goal",
+            "ja": "言語・レベル・10分目標を選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "오늘의 레슨",
+            "en": "Daily lesson",
+            "ja": "今日のレッスン"
+          }
+        },
+        {
+          "title": {
+            "ko": "문장 녹음형 인터페이스",
+            "en": "Recording-style UI",
+            "ja": "録音型UI"
+          }
+        },
+        {
+          "title": {
+            "ko": "예시 교정",
+            "en": "Sample correction",
+            "ja": "修正例"
+          }
+        },
+        {
+          "title": {
+            "ko": "7일 연속 성취",
+            "en": "Seven-day streak",
+            "ja": "7日連続達成"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "phones",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "language-speaking-challenge-app-03",
+        "language-speaking-challenge-app-04",
+        "language-speaking-challenge-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "화면별 기능이 명확히 구분되는 소비자 모바일 UI 5장, 실제 텍스트·사진·SVG 그래픽 제작. 동작하는 앱·로그인·서버·AI·결제·실시간 상태 기능 미구현.",
+        "en": "Five distinct static mobile UI screenshots with real typography, photos and vector elements. No working app, login, server, AI, payments or live status.",
+        "ja": "機能ごとに異なる静的モバイルUI5画面。実際の文字・写真・SVGを使用。動作するアプリ、ログイン、サーバー、AI、決済、リアルタイム機能は未実装。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "하루 10분 목표에서 시작해 듣고, 말하고, 고친 문장을 다시 말하는 짧은 반복이 연속 학습 기록으로 쌓이도록 했습니다.",
+        "en": "From a ten-minute daily goal, short loops of listening, speaking and repeating a corrected sentence build up into a visible learning streak.",
+        "ja": "1日10分の目標から、聞く・話す・直した文をもう一度言う短い繰り返しが、続けた記録として積み重なるようにしました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "language-speaking-challenge-app-01",
+      "file": "language-speaking-challenge-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "말하기 챌린지 — 언어·레벨·하루 10분 목표 선택",
+        "en": "Daily Speaking Challenge — Language, level and 10-minute goal",
+        "ja": "スピーキングチャレンジ — 言語・レベル・1日10分の目標選択"
+      },
+      "caption": {
+        "ko": "언어·레벨·하루 10분 목표 선택",
+        "en": "Language, level and 10-minute goal",
+        "ja": "言語・レベル・1日10分の目標選択"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "language-speaking-challenge-app-02",
+      "file": "language-speaking-challenge-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "말하기 챌린지 — 카페 주문 레슨과 오늘의 학습 진도",
+        "en": "Daily Speaking Challenge — Café ordering lesson and daily progress",
+        "ja": "スピーキングチャレンジ — カフェ注文レッスンと本日の進捗"
+      },
+      "caption": {
+        "ko": "카페 주문 레슨과 오늘의 학습 진도",
+        "en": "Café ordering lesson and daily progress",
+        "ja": "カフェ注文レッスンと本日の進捗"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "language-speaking-challenge-app-03",
+      "file": "language-speaking-challenge-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "말하기 챌린지 — 마이크와 문장 중심의 말하기 과제",
+        "en": "Daily Speaking Challenge — Sentence-based microphone speaking task",
+        "ja": "スピーキングチャレンジ — 例文とマイクを使う発話課題"
+      },
+      "caption": {
+        "ko": "마이크와 문장 중심의 말하기 과제",
+        "en": "Sentence-based microphone speaking task",
+        "ja": "例文とマイクを使う発話課題"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "language-speaking-challenge-app-04",
+      "file": "language-speaking-challenge-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "말하기 챌린지 — 가상 86점 피드백과 관사 교정",
+        "en": "Daily Speaking Challenge — Simulated score of 86 and article correction",
+        "ja": "スピーキングチャレンジ — 模擬スコア86点と冠詞の修正"
+      },
+      "caption": {
+        "ko": "가상 86점 피드백과 관사 교정",
+        "en": "Simulated score of 86 and article correction",
+        "ja": "模擬スコア86点と冠詞の修正"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "language-speaking-challenge-app-05",
+      "file": "language-speaking-challenge-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "말하기 챌린지 — 7일 연속 학습과 14일 도전",
+        "en": "Daily Speaking Challenge — Seven-day streak and a 14-day challenge",
+        "ja": "スピーキングチャレンジ — 7日連続学習と14日間チャレンジ"
+      },
+      "caption": {
+        "ko": "7일 연속 학습과 14일 도전",
+        "en": "Seven-day streak and a 14-day challenge",
+        "ja": "7日連続学習と14日間チャレンジ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

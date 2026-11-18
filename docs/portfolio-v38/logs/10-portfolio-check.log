@@ -1,0 +1,13 @@
+$ npm run portfolio:check
+# 2026-11-16T18:32:20+09:00 · commit 20ebf4a
+
+> pius-site@1.0.0 portfolio:check
+> node scripts/portfolio.mjs check
+
+포트폴리오 84건 검사 통과 · draft 0 · review 78 · approved 6 · private 0
+  묶음 batch-1 (닫힘) 1차 30건 (v29까지): 30건
+  묶음 batch-2 (닫힘) 2차 24건 (v33까지): 24건
+  묶음 batch-3 (열림) 3차 30건 (R3 A~E, 2026-11-13): 30건
+  메인 카테고리 [public] erp 1 · platform 1 · mobile 1 · web 1 · commerce 1 · integration 1 (표준편차 0.00)
+  메인 카테고리 [review] erp 14 · platform 21 · mobile 15 · web 21 · commerce 10 · integration 3 (표준편차 6.27)
+# exit=0

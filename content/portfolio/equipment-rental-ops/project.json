@@ -1,0 +1,363 @@
+{
+  "id": "equipment-rental-ops",
+  "slug": "equipment-rental-ops",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 310,
+  "includeInPdf": true,
+  "title": {
+    "ko": "장비·공구 대여 운영",
+    "en": "Equipment & Tool Rental Operations",
+    "ja": "機材・工具レンタル運用管理"
+  },
+  "subtitle": {
+    "ko": "장비 가용 확인부터 출고 인계, 반납 검수, 보증금 정산까지",
+    "en": "From availability planning and handover to return inspection and deposit settlement",
+    "ja": "空き状況の確認から引き渡し、返却点検、保証金精算まで"
+  },
+  "summary": {
+    "ko": "개별 장비의 가용 캘린더와 예약 조건, 현장 출고 점검, 반납 판정, 보증금 원장을 연결한 장비 대여 운영 UI 데모입니다.",
+    "en": "A static rental operations UI demo connecting item-level availability, contract terms, on-site handover, return inspection, and deposit accounting.",
+    "ja": "機材ごとの空き状況、契約条件、現場での引き渡し、返却点検、保証金台帳をつないだ静的UIデモです。"
+  },
+  "overview": {
+    "ko": "수원 렌털센터의 가상 품목 EQ-014 충전 임팩트 드라이버 3대를 기준으로, 기간별 점유를 시리얼 단위로 확인하는 화면을 구성했습니다. 대여 예약에서는 기간·장비·대여료·보증금을 구분하고, 현장 담당자는 모바일로 인계 체크리스트를 확인합니다. 반납 시에는 상태와 차감 사유를 검수하고, 별도 원장에서 반환성 보증금을 정산합니다.",
+    "en": "Using a fictional fleet of three 18V impact drivers under equipment code EQ-014, the UI displays availability by individual serial number and rental period. The booking workspace separates rental dates, equipment allocation, hire charges, and refundable deposits. A dedicated mobile screen guides the handover checklist, while desktop inspection and ledger screens illustrate damage review and deposit settlement.",
+    "ja": "架空の機材コードEQ-014に属する18Vインパクトドライバー3台を例に、個体のシリアル番号とレンタル期間ごとの空き状況を表示します。予約管理では貸出期間、割当機材、レンタル料金、返還対象の保証金を区分。現場担当者はモバイル画面で引き渡しチェックを行い、返却後は状態点検と控除理由を確認し、別台帳で保証金を精算する流れを表現しました。"
+  },
+  "industry": {
+    "ko": "산업용 장비·공구 렌털",
+    "en": "Industrial equipment and tool rental",
+    "ja": "産業機材・工具レンタル"
+  },
+  "categories": [
+    "erp",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "erp",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#456899",
+    "accentInk": "#1A2433",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "rental-availability-calendar",
+    "rental-handover-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 B실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "개별 장비의 가용 캘린더와 예약 조건, 현장 출고 점검, 반납 판정, 보증금 원장을 연결한 장비 대여 운영 UI 데모입니다.",
+        "en": "A static rental operations UI demo connecting item-level availability, contract terms, on-site handover, return inspection, and deposit accounting.",
+        "ja": "機材ごとの空き状況、契約条件、現場での引き渡し、返却点検、保証金台帳をつないだ静的UIデモです。"
+      },
+      "images": [
+        "rental-availability-calendar"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "품목 전체 재고만 관리하면 같은 날짜에 서로 다른 장비가 중복 배정될 수 있습니다. 또한 출고 전 점검 기록, 반납 상태 및 보증금 차감 근거가 계약과 분리되면 대여 가능 여부와 최종 반환액을 일관되게 파악하기 어렵습니다.",
+        "en": "Tracking only aggregate inventory can conceal double-bookings of individual units. If pre-handover checks, return findings, and deposit deductions are disconnected from the rental agreement, operators cannot consistently establish availability or explain the final refund.",
+        "ja": "品目単位の総在庫だけでは、同一期間に同じ個体を重複割当する可能性があります。引き渡し時の確認内容、返却時の損傷判定、保証金の控除根拠が契約と結び付いていないと、貸出可能数や返還額を一貫して把握できません。"
+      },
+      "body": {
+        "ko": "장비 예약과 실제 반출·반납, 점검 상태를 구분해야 같은 장비가 중복 배정되는 상황을 피할 수 있습니다.",
+        "en": "Reserved, dispatched, returned, and inspected equipment must have distinct availability states.",
+        "ja": "機材の予約、貸出、返却、点検を区別しないと、同一機材の重複割当が起こり得ます。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "시리얼별 장비 예약 기간과 일자별 가용 수량 비교",
+          "en": "Serial-level rental timeline and daily available-unit count",
+          "ja": "シリアル番号別の予約期間と日ごとの空き台数を比較"
+        },
+        {
+          "ko": "대여 계약의 기간·수량·단가 및 보증금 조건 확인과 변경안 검토",
+          "en": "Contract dates, quantities, rental rates, deposit terms, and unsaved change review",
+          "ja": "契約期間、台数、単価、保証金条件、未保存変更案を確認"
+        },
+        {
+          "ko": "현장 인계 담당자용 모바일 체크리스트·샘플 사진·고객 서명 단계",
+          "en": "Mobile handover checklist, illustrative photo slots, and signature step",
+          "ja": "現場担当者向けモバイルチェックリスト、写真例、受領署名ステップ"
+        },
+        {
+          "ko": "반납 입고 시 기능·배터리·구성품·외관 검수와 차감 사유 검토",
+          "en": "Return inspection covering functionality, battery, accessories, cosmetic condition, and deduction review",
+          "ja": "返却時の動作・バッテリー・付属品・外観点検と控除判定"
+        },
+        {
+          "ko": "보증금 수납·검수·모의 반환의 잔액 원장",
+          "en": "Separate refundable-deposit ledger for collection, inspection, and simulated reimbursement",
+          "ja": "保証金の預かり、点検確定、模擬返金を分けて追跡する台帳"
+        }
+      ],
+      "images": [
+        "rental-handover-mobile"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "품목과 대여 기간을 선택하고 가용 시리얼을 확인합니다.",
+            "en": "Select equipment and dates and check available serial numbers.",
+            "ja": "機材と日程を指定し、利用可能な個体を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "선택 장비의 대여 계약과 금액 조건을 검토합니다.",
+            "en": "Review the allocated unit and contract pricing terms.",
+            "ja": "割り当てた機材と契約・料金条件を確認します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "현장 담당자가 장비와 구성품을 확인한 뒤 인계 절차를 진행합니다.",
+            "en": "Complete the equipment handover checks and signature step on mobile.",
+            "ja": "現場担当者が引き渡し点検と署名手順を進めます。"
+          }
+        },
+        {
+          "title": {
+            "ko": "반납 입고 후 장비 상태와 공제 여부를 검수합니다.",
+            "en": "Inspect the returned asset and determine any deductions.",
+            "ja": "返却された機材を点検し、控除の有無を判断します。"
+          }
+        },
+        {
+          "title": {
+            "ko": "검수 결과를 반영하여 보증금 반환액을 정산 원장에 기록합니다.",
+            "en": "Record a simulated deposit refund against the inspected contract.",
+            "ja": "点検結果に基づく保証金の模擬返金を台帳に記録します。"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "rental-reservation-detail"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "rental-return-inspection",
+        "rental-deposit-settlement"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "Desktop 운영 화면 4장과 현장 담당자용 Mobile 화면 1장을 HTML/CSS/SVG 기반 정적 프론트 이미지로 제작했습니다. 3대 장비, 시리얼, 계약번호, 예약 기간, 금액, 사진 예시, 검수·정산 기록은 모두 가상 데이터입니다. 실시간 재고관리, 고객 서명, 사진 업로드, 실제 입출고 처리, 결제·환급 API 및 서버·DB는 구현하지 않았습니다.",
+        "en": "Four desktop operator screens and one mobile field-operator screen were rendered as static HTML/CSS/SVG front-end images. Equipment quantities, serial numbers, customers, contracts, dates, sample photos, monetary values, inspection records, and ledger transactions are fictional. Real-time availability, signatures, photo uploads, inventory updates, payment/refund APIs, servers, and databases were not implemented.",
+        "ja": "管理者向けデスクトップ4画面と現場担当者向けモバイル1画面を、HTML/CSS/SVGによる静的フロントエンド画像として制作しました。機材、顧客、シリアル番号、契約、金額、写真例、点検・精算記録はすべて架空データです。リアルタイム在庫連携、電子署名、写真アップロード、実際の入出庫、決済・返金API、サーバー、データベースは実装していません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "가용 일정의 정확한 판단이 현장 인계와 반납·정산까지 이어지도록 설계한 렌털 운영 UI 사례입니다.",
+        "en": "A rental operations interface that connects precise availability decisions with handover, return inspections, and accountable deposit settlement.",
+        "ja": "機材の正確な空き状況の判断を、現場での引き渡しから返却点検・保証金精算までつなげるUI設計事例です。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "rental-availability-calendar",
+      "file": "rental-availability-calendar.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "품목 EQ-014의 개별 장비 3대별 예약·가용 상태와 11월 18~20일 가용 1대를 보여주는 대여 캘린더",
+        "en": "Equipment availability calendar showing reservations for three EQ-014 units and one free unit from November 18 to 20",
+        "ja": "EQ-014の機材3台の予約・空き状況と11月18～20日の空き1台を示すレンタルカレンダー"
+      },
+      "caption": {
+        "ko": "시리얼 단위 타임라인에서 2대 예약·1대 가용을 계산하고 반납 예정 계약을 함께 확인합니다.",
+        "en": "The serial-number timeline verifies two units reserved and one free while showing upcoming returns.",
+        "ja": "シリアル番号別のタイムラインで予約2台・空き1台を確認し、返却予定契約も表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "rental-reservation-detail",
+      "file": "rental-reservation-detail.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "대여 계약 RN-261116-014의 기간·장비·5일 대여료 225,000원과 보관 보증금 150,000원을 구분한 상세 화면",
+        "en": "Contract detail showing allocated equipment, five-day rental fee of KRW 225,000, and separate KRW 150,000 deposit",
+        "ja": "契約RN-261116-014の機材、5日分の料金225,000ウォン、別途保証金150,000ウォンを示す詳細画面"
+      },
+      "caption": {
+        "ko": "변경안은 미저장 상태로 표시하고, 대여료와 반환성 보증금을 분리해 검토합니다.",
+        "en": "An unsaved change draft is distinguished from the active contract, with hire charges separate from the refundable deposit.",
+        "ja": "変更案を未保存と明示し、レンタル料金と返還対象の保証金を別々に確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "rental-handover-mobile",
+      "file": "rental-handover-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "현장 담당자가 장비 EQ-014-01의 출고 점검 5개 중 4개를 완료하고 고객 서명을 기다리는 모바일 화면",
+        "en": "Mobile handover checklist showing four of five checks complete for EQ-014-01, with customer signature pending",
+        "ja": "EQ-014-01の引き渡し点検5項目中4項目が完了し、受領署名待ちのモバイル画面"
+      },
+      "caption": {
+        "ko": "모바일 현장 점검 4/5 완료, 예시 사진 2장, 고객 서명 대기 상태를 보여줍니다.",
+        "en": "Four of five handover checks are complete, with two sample photo slots and customer signature still pending.",
+        "ja": "現場点検4/5完了、写真例2枚、受領署名待ちの状態を示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "rental-return-inspection",
+      "file": "rental-return-inspection.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "11월 21일 반납된 EQ-014-01의 기능·배터리·구성품·외관 및 차감액 0원 검수 화면",
+        "en": "Return inspection of EQ-014-01 on November 21, covering function, battery, accessories, appearance, and zero proposed deductions",
+        "ja": "11月21日に返却されたEQ-014-01の動作・バッテリー・付属品・外観と控除額0ウォンの点検画面"
+      },
+      "caption": {
+        "ko": "장비 입고 후 5개 항목을 확인하고 경미한 사용 흔적의 무차감 판정을 검토하며 정산 전 상태를 유지합니다.",
+        "en": "After intake, five inspection checks are reviewed and minor wear is proposed for zero deduction before settlement.",
+        "ja": "返却入庫後に5項目を確認し、軽微な使用痕を控除なしと判定する精算前の画面です。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "rental-deposit-settlement",
+      "file": "rental-deposit-settlement.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "보증금 150,000원의 가상 수납·검수 확정·전액 반환과 잔액 0원을 보여주는 별도 정산 원장",
+        "en": "Separate simulated deposit ledger showing KRW 150,000 collected, inspected, and fully returned with zero balance",
+        "ja": "保証金150,000ウォンの模擬受領・点検確定・全額返還と残高0を示す精算台帳"
+      },
+      "caption": {
+        "ko": "검수 확정 후 차감액 0원, 반환액 150,000원을 모의 기록하고 대여료는 별도로 처리합니다.",
+        "en": "Following completed inspection, the ledger simulates a KRW 150,000 refund with no deductions; hire fees remain separate.",
+        "ja": "点検確定後、控除0ウォン・返還150,000ウォンを模擬記録し、レンタル料金とは分けて管理します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

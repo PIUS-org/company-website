@@ -1,0 +1,362 @@
+{
+  "id": "commerce-returns-ops",
+  "slug": "commerce-returns-ops",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 350,
+  "includeInPdf": true,
+  "title": {
+    "ko": "ARNA 이커머스 반품·교환 운영",
+    "en": "ARNA E-commerce Returns & Exchanges Operations",
+    "ja": "ARNA EC返品・交換業務管理"
+  },
+  "subtitle": {
+    "ko": "고객의 반품 요청부터 상품 검수, 교환 출고, 환불 승인까지 연결하는 운영 워크스페이스",
+    "en": "A connected workspace for customer returns, inspection, exchange fulfillment, and refund reviews",
+    "ja": "返品申請、商品検品、交換品出荷、返金承認の確認をつなぐ運営ワークスペース"
+  },
+  "summary": {
+    "ko": "고객 모바일 반품 신청, RMA 처리 칸반, 입고·검수, 별도 교환 출고, 환불 승인 원장을 연결한 WEB·APP 정적 UI 데모.",
+    "en": "A static WEB/APP interface demonstrating mobile return requests, RMA kanban processing, incoming inspections, a separate exchange shipment workflow, and a refund review ledger.",
+    "ja": "顧客向けモバイル返品画面、RMAカンバン、入荷検品、別案件の交換出荷、返金承認台帳をつなぐWEB・APPの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "ARNA는 가상의 라이프스타일 커머스 운영팀을 위한 주문 후처리 인터페이스입니다. 고객은 모바일에서 반품 사유와 증빙을 확인하고, 운영자는 접수부터 수거·검수·환불 승인 대기까지 같은 반품 건을 추적합니다. 별도 교환 건은 재고 확보와 출고 준비 흐름으로 관리하며 반품 원장과 구분합니다. 서비스 화면은 실제 거래가 아닌 정적 시각 시연입니다.",
+    "en": "ARNA is a fictional post-purchase workspace for a lifestyle retailer. Customers can view their return reason, supporting evidence, and processing status on mobile. Operators follow the same return through intake, collection, inspection, and refund review. A separate exchange case illustrates inventory picking and pre-shipment checks without mixing exchange fulfillment with refund payouts. All screens are static UI demonstrations, not live transactions.",
+    "ja": "ARNAは、架空のライフスタイルショップの購入後対応業務を想定したUIです。顧客はモバイルで返品理由、証拠画像、処理状況を確認できます。運営担当者は受付から回収・検品・返金承認待ちまで同じ返品案件を追跡します。交換については別案件として在庫引当や出荷準備を表示し、返金処理と混同しないようにしています。実際の取引を伴わない静的な画面デモです。"
+  },
+  "industry": {
+    "ko": "이커머스 주문 후처리·반품·교환 운영",
+    "en": "E-commerce returns, exchanges, and post-purchase operations",
+    "ja": "ECの返品・交換・購入後対応業務"
+  },
+  "categories": [
+    "commerce",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "commerce",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#995845",
+    "accentInk": "#331F1A",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "returns-intake-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 C실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "고객 모바일 반품 신청, RMA 처리 칸반, 입고·검수, 별도 교환 출고, 환불 승인 원장을 연결한 WEB·APP 정적 UI 데모.",
+        "en": "A static WEB/APP interface demonstrating mobile return requests, RMA kanban processing, incoming inspections, a separate exchange shipment workflow, and a refund review ledger.",
+        "ja": "顧客向けモバイル返品画面、RMAカンバン、入荷検品、別案件の交換出荷、返金承認台帳をつなぐWEB・APPの静的UIデモです。"
+      },
+      "images": [
+        "returns-intake-mobile"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "반품 접수, 물류 검수, 교환 출고, 환불 검토가 별도 화면과 명부에 흩어지면 같은 건의 처리 단계가 달라 보이거나 환불 요청액을 실제 지급액으로 혼동하기 쉽습니다. 고객에게 보이는 상태와 운영자 내부 기록을 연결하면서 교환 건과 환불 건을 분리하는 구조가 필요합니다.",
+        "en": "When return intake, warehouse inspections, exchange fulfillment, and refund review are kept in separate worklists, case status becomes inconsistent and requested refunds can be mistaken for payments already issued. Operators need distinct workflows for exchanges and refunds, linked by consistent case-specific records and clear processing states.",
+        "ja": "返品受付、倉庫検品、交換品出荷、返金確認が別々のリストで管理されると、処理状況に食い違いが生じ、返金申請額を支払済み金額と取り違える可能性があります。返品と交換の流れを分けながら、担当者が案件ごとの状態と金額を整合的に把握できる画面が必要です。"
+      },
+      "body": {
+        "ko": "반품·교환·환불이 동일한 주문에서 출발해도 검수와 출고·승인 단계가 다르므로 별도 흐름으로 보여줍니다.",
+        "en": "Returns, exchanges, and refunds may originate from one order but follow different inspection and approval routes.",
+        "ja": "返品・交換・返金は同じ注文から始まっても検品と出荷・承認が異なるため、別の流れで示します。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "고객 모바일 반품 내역: 주문 ORD-261103-1842의 소프트 캔버스 크로스백과 봉제 불량 증빙 2장, RMA-261112-027의 승인 대기 상태 표시",
+          "en": "Customer mobile return: fictional order ORD-261103-1842, a canvas crossbody bag with two seam-defect evidence images, and the pending refund state of RMA-261112-027",
+          "ja": "顧客向けモバイル：架空注文ORD-261103-1842のバッグと縫製不良の証拠画像2枚、RMA-261112-027の返金承認待ちを表示"
+        },
+        {
+          "ko": "반품 처리 칸반: 접수 검토·수거 진행·검수 작업·환불 승인 대기 네 단계에 12개 가상 반품 건을 분류",
+          "en": "Returns kanban: twelve fictional cases organized into intake review, collection, product inspection, and refund approval pending",
+          "ja": "返品カンバン：架空の返品12件を受付確認・回収中・検品作業・返金承認待ちの4段階に分類"
+        },
+        {
+          "ko": "입고·상품 검수 작업대: 2026년 11월 11일 검수 완료 이력, 봉제 불량 체크리스트, 고객 증빙과 검수 의견 확인",
+          "en": "Inspection workbench: November 11 inspection outcome, stitching defect checklist, matching customer evidence, and operator notes",
+          "ja": "入荷検品：11月11日の検品完了記録、縫製不良のチェック項目、顧客画像、担当者メモを表示"
+        },
+        {
+          "ko": "별도 교환 출고: EXC-014 코튼 리브 니트의 M→L 사이즈 변경, L 재고 8개·피킹 1개와 송장 미발행 확인",
+          "en": "Separate exchange fulfillment: EXC-014 knit size M to L, eight L units available, one picked, and an unissued shipping label",
+          "ja": "別案件の交換出荷：EXC-014のニットをMからLへ変更し、L在庫8点・ピッキング1点・送り状未発行を確認"
+        },
+        {
+          "ko": "환불 승인 원장: 승인 대기 3건·₩145,000을 구분하고 RMA-261112-027의 요청액 ₩89,000과 실제 지급액 ₩0을 별도 표시",
+          "en": "Refund ledger: three pending approvals totaling KRW 145,000, with KRW 89,000 requested and KRW 0 paid for RMA-261112-027",
+          "ja": "返金承認台帳：承認待ち3件・合計145,000ウォンを表示し、RMA-261112-027の申請額89,000ウォンと支払額0ウォンを区別"
+        }
+      ],
+      "images": [
+        "returns-rma-board"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "고객이 모바일에서 반품 대상 상품·사유·증빙 이미지와 현재 처리 상태를 확인",
+            "en": "A customer reviews the item, reason, uploaded evidence, and current status of a submitted return on mobile",
+            "ja": "顧客がモバイルで返品対象商品、理由、添付画像、現在の処理状況を確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "운영자가 접수된 반품을 수거·검수·환불 승인 단계로 이동시키며 건별 상태를 검토",
+            "en": "An operator checks the return board and tracks each case through collection, inspection, and refund review",
+            "ja": "運営担当者が返品カンバンで回収・検品・返金確認までの案件状態を追跡する"
+          }
+        },
+        {
+          "title": {
+            "ko": "검수 담당자가 수거된 상품의 구성품과 결함 증빙을 대조해 검수 의견을 기록",
+            "en": "A warehouse reviewer compares the received product with submitted damage evidence and stores an inspection note",
+            "ja": "検品担当者が入荷商品と証拠画像を照合し、検品結果を記録する"
+          }
+        },
+        {
+          "title": {
+            "ko": "교환 담당자가 독립 교환 건의 재고 피킹과 포장·송장 발행 전 상태를 확인",
+            "en": "An exchange specialist verifies stock picking and shipping-label preparation for a separate exchange",
+            "ja": "交換担当者が別案件の在庫ピッキング、梱包、送り状発行前の状況を確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "정산 담당자가 검수 완료 반품의 요청액·차감액·지급액을 비교하고 미승인 건을 검토",
+            "en": "A finance reviewer compares requested refunds, deductions, approved states, and actually paid amounts before any payment is made",
+            "ja": "経理担当者が返金申請額、控除額、支払済み金額を照合し、未承認案件を確認する"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "returns-inspection-workbench"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "returns-replacement-shipping",
+        "returns-refund-ledger"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "PIUS가 제작한 가상 커머스 주문 후처리 업무의 정적 프론트 UI 포트폴리오입니다. HTML/CSS/SVG와 브라우저 캡처로 모바일 1장·데스크톱 4장을 제작했습니다. 실제 반품 접수, 주문·택배 조회, 재고 차감, 송장 발행, 환불 승인·지급, 알림 발송, 로그인, 서버·DB·API 연동은 구현하지 않았습니다. 상품, 회원, 주문, 금액과 이력은 모두 가상 시연 데이터입니다.",
+        "en": "A fictional static UI portfolio produced independently by PIUS with one mobile and four desktop screens rendered using HTML, CSS, SVG, and browser capture. Live return requests, order or carrier lookups, stock deduction, shipping-label generation, approvals, payouts, messaging, authentication, databases, servers, and APIs were not implemented. Every product, customer, order, amount, and processing record is illustrative.",
+        "ja": "PIUSが自主制作した架空のEC返品・交換業務の静的フロントエンドUIポートフォリオです。HTML・CSS・SVGとブラウザーキャプチャで、モバイル1画面とデスクトップ4画面を制作しました。実際の返品受付、注文・配送会社照会、在庫引当の更新、送り状発行、返金承認・送金、通知配信、ログイン、サーバー、DB、API連携は実装していません。商品・顧客・注文・金額・履歴はすべてサンプルデータです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "반품과 교환의 서로 다른 처리 경로를 분리하면서 고객 화면과 운영자 작업판, 환불 검토 원장의 상태·금액을 일관되게 표현했습니다.",
+        "en": "The interface separates return refunds from product exchanges while preserving consistent states and amounts across customer views, operator workbenches, and refund reviews.",
+        "ja": "返品と交換の異なる業務経路を分け、顧客画面、運営担当者の作業画面、返金台帳に一貫した状態と金額を示しています。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "returns-intake-mobile",
+      "file": "returns-intake-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "ARNA 모바일 화면에서 가상 주문 ORD-261103-1842의 반품 사유, 가방 봉제 불량 사진 2장, 환불 승인 대기 상태를 확인",
+        "en": "ARNA mobile return summary for fictional order ORD-261103-1842 showing a damaged bag, two seam-defect images, and refund approval pending",
+        "ja": "架空注文ORD-261103-1842のバッグ、縫製不良の画像2枚、返金承認待ちを確認するARNAモバイル返品画面"
+      },
+      "caption": {
+        "ko": "소프트 캔버스 크로스백 89,000원 반품 건 RMA-261112-027의 신청 내역과 검수 완료·환불 승인 전 단계를 표시합니다.",
+        "en": "The KRW 89,000 return RMA-261112-027 shows its submitted details, completed inspection, and refund request awaiting approval.",
+        "ja": "RMA-261112-027の89,000ウォンの返品について、申請内容、検品完了、返金承認待ちの状態を表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "returns-rma-board",
+      "file": "returns-rma-board.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "ARNA 반품 운영 칸반에서 가상 반품 12건을 접수·수거·검수·환불 승인 대기 네 단계로 구분한 화면",
+        "en": "ARNA returns kanban board organizing twelve fictional RMA cases into intake, pickup, inspection, and pending refund approval",
+        "ja": "架空の返品12件を受付・回収・検品・返金承認待ちの4段階で管理するARNA返品カンバン"
+      },
+      "caption": {
+        "ko": "RMA-261112-027의 11월 9일 접수부터 11월 11일 검수까지의 이력과 89,000원 환불 요청을 확인합니다.",
+        "en": "Follow RMA-261112-027 from its November 9 request to November 11 inspection and review the KRW 89,000 refund request.",
+        "ja": "RMA-261112-027について11月9日の申請から11月11日の検品までの履歴と89,000ウォンの返金申請額を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "returns-inspection-workbench",
+      "file": "returns-inspection-workbench.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "ARNA 입고 검수 작업대에서 가방 상품 정보, 고객 손상 증빙 두 장과 봉제 불량 검수 체크리스트를 확인하는 화면",
+        "en": "ARNA inspection workspace showing the bag, two customer defect images, and a four-part incoming-goods checklist",
+        "ja": "バッグの商品情報、顧客の不良箇所画像2枚、縫製不良の検品チェック項目を表示するARNA入荷検品画面"
+      },
+      "caption": {
+        "ko": "가상 검수 담당 W-03이 11월 11일 봉제 불량을 기록했으며, 환불 승인과 실제 지급은 아직 진행되지 않았습니다.",
+        "en": "Fictional inspector W-03 recorded a stitching defect on November 11, but no refund approval or payout has occurred.",
+        "ja": "架空の担当者W-03が11月11日に縫製不良を記録しましたが、返金承認と支払は実行されていません。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "returns-replacement-shipping",
+      "file": "returns-replacement-shipping.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "ARNA 별도 교환 건 EXC-014의 사이즈 M에서 L로 변경, 재고 피킹, 포장 준비와 송장 미발행 상태를 관리하는 화면",
+        "en": "ARNA separate exchange fulfillment view for EXC-014 showing size M to L replacement, stock picking, and an unissued shipping label",
+        "ja": "別案件EXC-014のMからLへのサイズ交換、在庫引当、梱包準備、送り状未発行を示すARNA交換出荷画面"
+      },
+      "caption": {
+        "ko": "코튼 리브 니트 L 옵션의 가용 재고 8개 중 1개를 피킹했으며, EXC-014는 반품 RMA-261112-027과 무관한 독립 건입니다.",
+        "en": "One size-L knit is picked from eight available units; EXC-014 is independent of refund case RMA-261112-027.",
+        "ja": "Lサイズのニットは在庫8点のうち1点をピッキング済みで、EXC-014は返品RMA-261112-027とは関係のない独立案件です。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "returns-refund-ledger",
+      "file": "returns-refund-ledger.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "ARNA 환불 승인 원장에서 가상 반품 8건의 승인 대기·지급 완료·보류 상태와 실제 지급액을 비교하는 화면",
+        "en": "ARNA refund ledger comparing pending, paid, and held statuses across eight illustrative return cases",
+        "ja": "架空の返品8件について承認待ち・支払完了・保留と実際の支払額を比較するARNA返金台帳"
+      },
+      "caption": {
+        "ko": "승인 대기 3건의 요청액 합계 145,000원과 선택한 RMA-261112-027의 미집행 환불 요청액 89,000원을 구분합니다.",
+        "en": "Three pending cases total KRW 145,000; selected RMA-261112-027 requests KRW 89,000 while the amount paid remains zero.",
+        "ja": "承認待ち3件の申請合計は145,000ウォンで、選択中のRMA-261112-027の申請額89,000ウォンに対する支払額は0ウォンです。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

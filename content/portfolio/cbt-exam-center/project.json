@@ -1,0 +1,359 @@
+{
+  "id": "cbt-exam-center",
+  "slug": "cbt-exam-center",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 300,
+  "includeInPdf": true,
+  "title": {
+    "ko": "온라인 자격시험·CBT 운영 관리",
+    "en": "Online Certification & CBT Operations",
+    "ja": "オンライン資格試験・CBT運用管理"
+  },
+  "subtitle": {
+    "ko": "문항은행 구성부터 응시 진행·채점 검토까지",
+    "en": "From question bank management to test sessions and score review",
+    "ja": "問題バンクの管理から受験進行・採点確認まで"
+  },
+  "summary": {
+    "ko": "문항은행 검수, 40문항 시험 구성, 응시자 화면, 응시 상태 확인, 채점·이의 검토를 연결한 정적 WEB UI 데모입니다.",
+    "en": "A static WEB UI demo connecting question validation, a 40-question exam blueprint, candidate test screens, session status reviews, and score appeals.",
+    "ja": "問題の確認、40問の試験構成、受験者画面、受験状況一覧、採点・異議申立ての確認をつなぐWEB向け静的UIデモです。"
+  },
+  "overview": {
+    "ko": "시험 운영자는 출제 문항의 적합성과 배점을 검증하고 시험지를 구성한 뒤, 응시자의 답안 저장 상태와 제출 현황을 확인하고 채점 결과에 대한 이의를 검토해야 합니다. EXAMORY는 관리자용 문항은행·시험 구성·응시 현황·채점 검토, 응시자용 문제 풀이의 다섯 화면으로 이 업무를 표현했습니다.",
+    "en": "Exam operations teams need to validate questions and scoring rules, assemble a balanced exam, monitor candidate submission states, and review disputed scores. EXAMORY demonstrates these responsibilities in five distinct interfaces: a question bank, an exam blueprint, a candidate session, an operations console, and a score review workspace.",
+    "ja": "試験運営では、問題と配点の妥当性を確認し、出題構成を決め、受験者の解答保存・提出状況を把握し、採点結果への異議を確認する必要があります。EXAMORYでは、問題バンク、試験構成、受験者画面、受験状況、採点確認という5画面で、管理者と受験者の業務を表現しました。"
+  },
+  "industry": {
+    "ko": "온라인 평가·자격시험 운영",
+    "en": "Online assessments and certification operations",
+    "ja": "オンライン評価・資格試験運営"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#394E6B",
+    "accentInk": "#1B2533",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "cbt-03"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 D실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출).",
+    "표지 배치: stage 레이아웃은 1024px 이상에서 데스크톱 표지 위아래를 약 2% 잘라 하단 상태 표시줄 글자가 잘려서, 자르지 않는 rail 레이아웃으로 지정."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "문항은행 검수, 40문항 시험 구성, 응시자 화면, 응시 상태 확인, 채점·이의 검토를 연결한 정적 WEB UI 데모입니다.",
+        "en": "A static WEB UI demo connecting question validation, a 40-question exam blueprint, candidate test screens, session status reviews, and score appeals.",
+        "ja": "問題の確認、40問の試験構成、受験者画面、受験状況一覧、採点・異議申立ての確認をつなぐWEB向け静的UIデモです。"
+      },
+      "images": [
+        "cbt-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "문항 검수, 시험 구성, 응시 상태, 채점 검토가 분리되어 있으면 배점과 정답의 일관성을 확인하기 어렵고 응시 중인 상태와 제출 완료 결과를 혼동할 수 있습니다. 이 데모는 시험 CBT-026을 기준으로 각 단계의 역할과 상태를 구분했습니다.",
+        "en": "When question validation, exam configuration, candidate status, and scoring reviews are managed separately, it is difficult to maintain consistent scoring rules and distinguish in-progress answers from submitted results. The demo follows one fictional exam, CBT-026, while separating responsibilities and lifecycle states.",
+        "ja": "問題の確認、試験構成、受験状況、採点審査が分断されると、配点の整合性を保ちにくく、受験中の解答と提出済みの結果を混同するおそれがあります。このデモでは架空の試験CBT-026を用いて、役割と状態を明確に区別しています。"
+      },
+      "body": {
+        "ko": "시험 응시 시간·제출 상태·채점·결과 공개 시점을 구분하지 않으면 시험 운영과 응시자 안내가 혼선에 빠집니다.",
+        "en": "Exam timing, submission, marking, and result release are separate stages that must be represented consistently.",
+        "ja": "試験時間、提出、採点、結果公開の時点を分けないと、運営と受験者への案内に混乱が生じます。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "검수 완료 212건과 검수 대기 28건을 구분하는 240개 문항은행 및 Q-104 편집",
+          "en": "Review a 240-item bank comprising 212 validated questions and 28 pending questions, including Q-104 editing",
+          "ja": "全240問を確認済み212問・確認待ち28問に分け、Q-104の問題編集を表示"
+        },
+        {
+          "ko": "4개 평가 영역의 40문항과 난이도 14·18·8문항, 60분 제한, 70점 합격 기준 설정",
+          "en": "Set 40 questions across four domains, a 14/18/8 difficulty mix, a 60-minute duration, and a passing threshold of 70",
+          "ja": "4領域・40問、難易度14／18／8問、制限時間60分、合格基準70点の試験構成"
+        },
+        {
+          "ko": "CAND-021 응시자용 40문항 탐색, 답안 저장 13/40, 32:18 잔여 시간 및 제출 확인 UI",
+          "en": "Present a candidate-facing 40-question test screen for CAND-021 with 13 saved answers and 32:18 remaining",
+          "ja": "受験者CAND-021の40問ナビゲーション、13／40問の保存状態、残り32分18秒と提出確認UI"
+        },
+        {
+          "ko": "80명 중 제출 68명·응시 중 9명·미시작 3명을 분리한 운영자 검토 목록",
+          "en": "Review 80 registrations classified as 68 submitted, 9 in progress, and 3 not started",
+          "ja": "登録80名を提出済み68名・受験中9名・未開始3名に分類する運営一覧"
+        },
+        {
+          "ko": "CAND-014의 30/40 정답=75/100점과 영역별 점수 및 이의신청 AP-014 검토 초안",
+          "en": "Inspect CAND-014’s score of 75/100 from 30 correct answers out of 40 alongside a draft appeal review for AP-014",
+          "ja": "CAND-014の正答30／40問＝75／100点と領域別点数、異議申立てAP-014の確認下書き"
+        }
+      ],
+      "images": [
+        "cbt-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "문항은행에서 Q-104의 보기·정답·해설 및 검수 상태 확인",
+            "en": "Validate Q-104, its answer choices, correct response, explanation, and review state in the question bank",
+            "ja": "問題バンクでQ-104の選択肢・正解・解説・確認状態を点検"
+          }
+        },
+        {
+          "title": {
+            "ko": "40개 출제 문항의 4개 영역·난이도·배점과 60분 제한 검토",
+            "en": "Check the exam blueprint across four domains, difficulty tiers, scoring rules, and a 60-minute limit",
+            "ja": "4領域・難易度・配点と60分の制限時間を確認して40問を構成"
+          }
+        },
+        {
+          "title": {
+            "ko": "응시자 CAND-021의 문항 이동과 답안 임시 저장 화면 확인",
+            "en": "View candidate CAND-021 navigating questions and the draft-answer state",
+            "ja": "受験者CAND-021の設問移動と解答保存状態を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "전체 80명의 제출·진행·미시작 상태와 응시 상세 점검",
+            "en": "Inspect the 80 candidate registrations by submitted, active, and not-started states",
+            "ja": "登録80名の提出・受験中・未開始を区別し進行状況を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "제출 완료 CAND-014의 점수 75점 및 이의신청 의견 검토",
+            "en": "Review CAND-014’s submitted score of 75 and prepare an appeal response",
+            "ja": "提出済みCAND-014の75点と異議申立てに対する確認意見を編集"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "cbt-03"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "cbt-04",
+        "cbt-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "EXAMORY의 가상 자격시험 CBT-026을 기준으로 관리자 WEB UI 4장과 응시자 WEB UI 1장, 총 5장의 정적 화면 이미지를 제작했습니다. 실제 문항 저장, 사용자 인증, 문제 추출, 시험 세션, 시간 제한, 응답 저장, 감독·웹캠, 자동 채점, 이의신청 접수 및 결과 발송 기능은 구현하지 않았습니다. 모든 응시자·문항·점수는 가상 데이터입니다.",
+        "en": "Five static WEB interface images were produced for the fictional EXAMORY exam CBT-026: four administrator screens and one candidate-facing screen. No live question storage, authentication, question selection, test-session management, timers, answer persistence, proctoring or webcam monitoring, automatic scoring, appeal processing, or result notifications were implemented. All candidates, questions, and scores are illustrative.",
+        "ja": "架空のEXAMORY試験CBT-026を対象に、管理者WEB画面4枚と受験者WEB画面1枚、合計5枚の静的UI画像を制作しました。実際の問題保存、認証、出題抽選、試験セッション、時間制限、解答保存、監督・ウェブカメラ、採点処理、異議申立て受付、結果通知は実装していません。受験者・問題・点数はすべてサンプルです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "출제부터 응시와 결과 검토까지, 시험 운영의 책임·상태·채점 근거가 구별되는 CBT 업무 경험을 설계했습니다.",
+        "en": "An exam operations experience that keeps authoring, candidate progress, scoring evidence, and appeal status visible and distinct.",
+        "ja": "出題から受験・結果確認まで、運営責任と進行状態、採点根拠を見分けやすくしたCBT業務画面を設計しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "cbt-01",
+      "file": "cbt-question-bank.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "검수 상태별 문항 목록과 Q-104의 정답·해설 편집 패널이 있는 EXAMORY 문항은행",
+        "en": "EXAMORY question bank showing review status and the Q-104 answer and explanation editor",
+        "ja": "問題の確認状態一覧とQ-104の正解・解説編集パネルを示すEXAMORYの問題バンク"
+      },
+      "caption": {
+        "ko": "240개 문항을 분류·검수하고 선택한 Q-104의 보기, 정답, 해설을 확인합니다.",
+        "en": "Review 240 questions and inspect Q-104 answer choices, correct response, and explanation.",
+        "ja": "全240問を分類・確認し、選択したQ-104の選択肢、正解、解説を点検します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "cbt-02",
+      "file": "cbt-exam-blueprint.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "4개 평가 영역 40문항과 난이도 분포, 응시 정책을 구성하는 시험지 설계 화면",
+        "en": "Exam blueprint showing 40-question distribution, difficulty mix, and candidate policies",
+        "ja": "4つの評価領域への40問の配分、難易度、受験条件を設定する試験構成画面"
+      },
+      "caption": {
+        "ko": "40문항의 영역별 배분과 난이도 분포, 제한 시간 60분, 합격 기준 70점을 설정합니다.",
+        "en": "Configure 40 questions by domain and difficulty with a 60-minute limit and passing score of 70.",
+        "ja": "40問の分野・難易度配分、制限時間60分、合格基準70点を設定します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "cbt-03",
+      "file": "cbt-candidate-session.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "CAND-021 응시자의 14번 문항 풀이와 40문항 탐색, 답안 저장·제출 확인 화면",
+        "en": "Candidate CAND-021 on question 14 with question navigation, saved answers, and submission controls",
+        "ja": "受験者CAND-021の第14問と設問一覧、解答保存・提出確認を示す画面"
+      },
+      "caption": {
+        "ko": "응시자는 14번 문제를 풀면서 저장된 13개 답안과 남은 시간 32분 18초를 확인합니다.",
+        "en": "The candidate reviews question 14, 13 saved answers, and a displayed remaining time of 32:18.",
+        "ja": "受験者は第14問に回答しながら保存済み13問と残り32分18秒を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "cbt-04",
+      "file": "cbt-proctor-console.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "등록 80명의 제출 68·진행 9·미시작 3 상태와 CAND-021 상세를 표시한 운영 화면",
+        "en": "Operations console with 80 registrations, 68 submissions, nine active candidates, and three not started",
+        "ja": "登録80名の提出済み68名・受験中9名・未開始3名とCAND-021の詳細を示す運営画面"
+      },
+      "caption": {
+        "ko": "등록 80명의 상태를 분리하고 응시 중 9명의 답안 저장량과 남은 시간을 검토합니다.",
+        "en": "Separates the statuses of 80 registered candidates and reviews saved answers and remaining time for the nine currently in the exam.",
+        "ja": "登録80名の状態を区別し、受験中9名の解答保存数と残り時間を確認します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "cbt-05",
+      "file": "cbt-score-review.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "CAND-014의 75점 채점 근거와 4개 영역 점수, 이의신청 AP-014를 검토하는 화면",
+        "en": "Score review for CAND-014 with a 75-point breakdown by domain and appeal AP-014",
+        "ja": "CAND-014の75点の採点根拠、4領域の得点、異議申立てAP-014を確認する画面"
+      },
+      "caption": {
+        "ko": "30개 정답으로 계산한 75점을 영역별로 확인하고, 이의신청 의견 초안을 작성합니다.",
+        "en": "Reviews 75 points from 30 correct answers and drafts a response to a scoring appeal.",
+        "ja": "正答30問による75点を領域別に確認し、異議申立てへの意見下書きを作成します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "id": "dog-walking-booking-app",
+  "slug": "dog-walking-booking-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 460,
+  "includeInPdf": true,
+  "title": {
+    "ko": "반려견 산책 예약 앱",
+    "en": "Dog Walking Booking",
+    "ja": "犬の散歩予約アプリ"
+  },
+  "subtitle": {
+    "ko": "보호자와 반려견을 위한 맞춤 산책 예약",
+    "en": "Personalized walks for dogs and their people",
+    "ja": "愛犬と飼い主のための散歩予約"
+  },
+  "summary": {
+    "ko": "견주가 검증된 워커를 탐색하고 산책을 예약하며 진행 상황을 한 흐름에서 확인하는 모바일 UI 데모입니다.",
+    "en": "A mobile UI concept for discovering trusted dog walkers, scheduling walks, and following their progress in one flow.",
+    "ja": "信頼できる散歩スタッフの検索から予約、進行状況の確認までを一連の流れで示すモバイルUIデモです。"
+  },
+  "overview": {
+    "ko": "견주가 검증된 워커를 탐색하고 산책을 예약하며 진행 상황을 한 흐름에서 확인하는 모바일 UI 데모입니다.",
+    "en": "A mobile UI concept for discovering trusted dog walkers, scheduling walks, and following their progress in one flow.",
+    "ja": "信頼できる散歩スタッフの検索から予約、進行状況の確認までを一連の流れで示すモバイルUIデモです。"
+  },
+  "industry": {
+    "ko": "반려견 산책 예약",
+    "en": "Dog walking booking",
+    "ja": "犬の散歩予約"
+  },
+  "categories": [
+    "platform",
+    "mobile"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#2E6A55",
+    "accentInk": "#163228",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "dog-walking-booking-app-01",
+    "dog-walking-booking-app-04"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / C실 claude-integration-prompt.txt. 이미지 5장은 c-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "워커를 고르고, 산책을 예약하고, 진행 상황까지 확인합니다.",
+        "en": "Choose a walker, book the walk and check how it is going.",
+        "ja": "散歩スタッフ選びから予約、散歩の進み具合の確認まで。"
+      },
+      "images": [
+        "dog-walking-booking-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "보호자가 선택한 워커와 반려견, 산책 시간, 진행 현황이 한 예약 건으로 이어져야 안심하고 이용할 수 있습니다.",
+        "en": "A pet owner needs the selected walker, dog, appointment, and walk status to stay connected within one booking.",
+        "ja": "飼い主が選んだ散歩代行者、愛犬、時間、進行状況を一つの予約として確認できる構成です。"
+      },
+      "body": {
+        "ko": "지역별 워커 탐색, 후기·서비스 확인, 날짜·시간 선택, 예약 금액 확인, 산책 진행 현황을 연결합니다.",
+        "en": "Find local walkers, review services and feedback, choose a slot, review pricing, and view walk progress.",
+        "ja": "地域別検索、口コミ・サービス確認、日時選択、料金確認、散歩の進行表示を構成しました。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "모카의 프로필 확인",
+            "en": "Review Moka’s profile",
+            "ja": "モカのプロフィール確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "김하린 워커 탐색",
+            "en": "Discover Harin Kim",
+            "ja": "キム・ハリンを検索"
+          }
+        },
+        {
+          "title": {
+            "ko": "서비스 비교",
+            "en": "Inspect the service",
+            "ja": "サービス確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "11월 14일 14시 산책 예약",
+            "en": "Book November 14 at 14:00",
+            "ja": "11月14日14時の予約"
+          }
+        },
+        {
+          "title": {
+            "ko": "진행 상황 확인",
+            "en": "View progress",
+            "ja": "進行表示"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "focus",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "dog-walking-booking-app-04",
+        "dog-walking-booking-app-02",
+        "dog-walking-booking-app-03",
+        "dog-walking-booking-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "04",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "상태별 예약 및 경로 표현을 구현한 정적 프론트 화면 5장으로, 결제·위치 추적·메시징 기능은 연동하지 않았습니다.",
+        "en": "Five static frontend screens illustrate reservation states and an example route; payments, location tracking, and messaging are not connected.",
+        "ja": "予約状態とサンプル経路を表現した静的UI全5画面です。決済・位置追跡・メッセージ送信は未接続です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "05",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "반려견을 맡기는 순간부터 산책을 마칠 때까지 신뢰할 수 있는 경험을 설계했습니다.",
+        "en": "A reassuring experience from choosing a walker to checking a walk’s progress.",
+        "ja": "散歩を頼む前から終了まで、安心感のある体験を目指しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "dog-walking-booking-app-01",
+      "file": "dog-walking-booking-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "반려견 산책 예약 앱 — 반려견 프로필과 주변 산책 추천 화면",
+        "en": "Dog Walking Booking — Dog profile and local walk suggestions mobile screen",
+        "ja": "犬の散歩予約アプリ — 愛犬のプロフィールと近隣のおすすめの画面"
+      },
+      "caption": {
+        "ko": "반려견 프로필과 주변 산책 추천",
+        "en": "Dog profile and local walk suggestions",
+        "ja": "愛犬のプロフィールと近隣のおすすめ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "dog-walking-booking-app-02",
+      "file": "dog-walking-booking-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "반려견 산책 예약 앱 — 지역·날짜·평점에 따른 워커 검색 화면",
+        "en": "Dog Walking Booking — Walker search by location, date and rating mobile screen",
+        "ja": "犬の散歩予約アプリ — 地域・日付・評価でスタッフ検索の画面"
+      },
+      "caption": {
+        "ko": "지역·날짜·평점에 따른 워커 검색",
+        "en": "Walker search by location, date and rating",
+        "ja": "地域・日付・評価でスタッフ検索"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "dog-walking-booking-app-03",
+      "file": "dog-walking-booking-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "반려견 산책 예약 앱 — 워커 이력·포함 서비스·가능 시간 화면",
+        "en": "Dog Walking Booking — Walker profile, included services and slots mobile screen",
+        "ja": "犬の散歩予約アプリ — 経歴・サービス・予約可能時間の画面"
+      },
+      "caption": {
+        "ko": "워커 이력·포함 서비스·가능 시간",
+        "en": "Walker profile, included services and slots",
+        "ja": "経歴・サービス・予約可能時間"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "dog-walking-booking-app-04",
+      "file": "dog-walking-booking-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "반려견 산책 예약 앱 — 날짜·시간·반려견·요금 예약 화면",
+        "en": "Dog Walking Booking — Choose date, time, dog and price mobile screen",
+        "ja": "犬の散歩予約アプリ — 日時・愛犬・料金を選択の画面"
+      },
+      "caption": {
+        "ko": "날짜·시간·반려견·요금 예약",
+        "en": "Choose date, time, dog and price",
+        "ja": "日時・愛犬・料金を選択"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "dog-walking-booking-app-05",
+      "file": "dog-walking-booking-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "반려견 산책 예약 앱 — 진행 상태와 예시 2D 산책 경로 화면",
+        "en": "Dog Walking Booking — Progress status and illustrative 2D walking route mobile screen",
+        "ja": "犬の散歩予約アプリ — 進行状況とサンプルの2D散歩経路の画面"
+      },
+      "caption": {
+        "ko": "진행 상태와 예시 2D 산책 경로",
+        "en": "Progress status and illustrative 2D walking route",
+        "ja": "進行状況とサンプルの2D散歩経路"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

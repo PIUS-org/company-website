@@ -24,7 +24,7 @@
 .idx{ display:flex; align-items:center; gap:12px; font-family:var(--f-disp); font-size:var(--t-xs); letter-spacing:.08em; color:var(--ink-3); }
 .idx span{ color:var(--pf-mark); }
 .idx::before{ content:""; width:28px; height:1px; background:currentColor; order:-1; }
-.h2{ font-family:var(--f-disp); font-weight:300; font-size:var(--t-d2); letter-spacing:-.035em; line-height:1.18; overflow-wrap:normal; word-break:keep-all; }
+.h2{ font-family:var(--f-disp); font-weight:300; font-size:clamp(1.5rem,1.05rem + 1.7vw,2.6rem); letter-spacing:-.035em; line-height:1.18; overflow-wrap:normal; word-break:keep-all; }
 html[lang="ko"] .h2, html[lang="ja"] .h2{ letter-spacing:-.02em; line-height:1.3; }
 .intro{ color:var(--ink-2); max-width:40em; }
 .note{ margin-top:28px; font-size:var(--t-xs); color:var(--ink-3); display:flex; align-items:center; gap:10px; }
@@ -57,8 +57,8 @@ html[lang="ko"] .h2, html[lang="ja"] .h2{ letter-spacing:-.02em; line-height:1.3
 .cover__tags li:first-child{ font-family:var(--f-disp); letter-spacing:.04em; background:color-mix(in srgb, currentColor 8%, transparent); }
 /* --len = longest word of the name (set inline): the size never lets a word break */
 .cover__name{ font-family:var(--f-disp); font-weight:300; font-size:min(clamp(4rem,1.6rem + 9.4vw,11.5rem), calc(100cqw / (var(--len,4) * .74))); letter-spacing:-.065em; line-height:.86; margin-left:-.04em; overflow-wrap:normal; word-break:keep-all; }
-.cover__sub{ font-size:var(--t-h3); font-weight:500; letter-spacing:-.02em; line-height:1.35; }
-.cover__msg{ font-size:clamp(1.12rem,.9rem + .9vw,1.7rem); font-weight:300; line-height:1.45; letter-spacing:-.015em; margin-top:clamp(8px,2vw,28px); }
+.cover__sub{ max-width:26em; font-size:clamp(1.08rem,.96rem + .5vw,1.42rem); font-weight:500; letter-spacing:-.02em; line-height:1.45; }
+.cover__msg{ max-width:32em; font-size:clamp(.98rem,.92rem + .25vw,1.12rem); font-weight:400; line-height:1.7; color:color-mix(in srgb, currentColor 78%, transparent); letter-spacing:-.015em; margin-top:clamp(8px,2vw,28px); }
 .cover__lead{ max-width:30em; font-size:var(--t-sm); color:color-mix(in srgb, currentColor 66%, transparent); }
 .cover__vis{ position:relative; align-self:end; display:flex; align-items:flex-end; justify-content:center; gap:3.5%; padding-top:6%; }
 .cover__phone{ width:29%; margin-bottom:-14%; animation:pfRise 1.4s var(--e-out) both; }
@@ -87,7 +87,7 @@ html[lang="ko"] .h2, html[lang="ja"] .h2{ letter-spacing:-.02em; line-height:1.3
 /* ---------- 02 overview ---------- */
 .ov__grid{ display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:clamp(32px,6vw,110px); align-items:start; }
 .ov__txt{ display:grid; gap:22px; }
-.ov__lead{ font-size:var(--t-h3); font-weight:300; line-height:1.5; letter-spacing:-.02em; color:var(--ink); }
+.ov__lead{ max-width:34em; font-size:clamp(1.06rem,.96rem + .42vw,1.36rem); font-weight:400; line-height:1.65; letter-spacing:-.02em; color:var(--ink); }
 .ov__body{ color:var(--ink-2); }
 .facts{ display:grid; border-top:1px solid var(--line); margin:0; }
 .facts > div{ display:grid; grid-template-columns:7.5em 1fr; gap:16px; padding:16px 0; border-bottom:1px solid var(--line); }
@@ -114,7 +114,7 @@ html[lang="ko"] .h2, html[lang="ja"] .h2{ letter-spacing:-.02em; line-height:1.3
 .svc__col{ display:grid; align-content:start; gap:10px; padding:clamp(22px,2.4vw,34px); border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.012)); }
 .svc__tag{ display:flex; align-items:center; gap:10px; font-family:var(--f-disp); font-size:var(--t-xs); letter-spacing:.08em; color:var(--ink-3); }
 .svc__tag span{ display:grid; place-items:center; width:26px; height:26px; border-radius:50%; font-size:.62rem; color:#000; background:var(--ink); letter-spacing:0; }
-.svc__col h3{ font-family:var(--f-disp); font-weight:300; font-size:var(--t-h3); letter-spacing:-.03em; margin-top:8px; }
+.svc__col h3{ font-family:var(--f-disp); font-weight:300; font-size:clamp(1.15rem,1rem + .55vw,1.55rem); letter-spacing:-.03em; margin-top:8px; }
 .svc__aud{ font-size:var(--t-sm); color:var(--ink-3); padding-bottom:14px; border-bottom:1px solid var(--line); }
 .svc__col ul{ display:grid; gap:9px; padding-top:6px; }
 .svc__col li{ position:relative; padding-left:16px; font-size:var(--t-sm); color:var(--ink-2); }
@@ -176,11 +176,15 @@ html[lang="ko"] .h2, html[lang="ja"] .h2{ letter-spacing:-.02em; line-height:1.3
 .phones__it:nth-child(even){ margin-top:6%; }
 .phones[data-n="3"] .phones__it{ width:25%; }
 .phones[data-n="2"] .phones__it{ width:28%; }
+/* a single phone shown on its own: a little larger than one of a row, so its text stays readable */
+.phones[data-n="1"] .phones__it{ width:28%; max-width:360px; }
 .sc .head{ margin-inline:auto; text-align:center; justify-items:center; }
 .sc .idx::after{ content:""; width:28px; height:1px; background:currentColor; }
 .stack{ display:grid; gap:clamp(20px,3vw,44px); }
 
 .gal__cols{ columns:var(--cols,3); column-gap:clamp(14px,2vw,28px); }
+/* a gallery with a single screen: one column at a readable width instead of half the row left empty */
+.gal__cols[data-n="1"]{ max-width:min(100%,1080px); }
 .gal__it{ break-inside:avoid; margin-bottom:clamp(14px,2vw,28px); }
 
 /* ---------- feature grid ---------- */
@@ -195,32 +199,45 @@ html[lang="ko"] .h2, html[lang="ja"] .h2{ letter-spacing:-.02em; line-height:1.3
 .scope__list{ border-top:1px solid var(--line-2); }
 .scope__list li{ display:grid; grid-template-columns:3.2em 1fr auto; align-items:baseline; gap:14px; padding:clamp(16px,2vw,24px) 0; border-bottom:1px solid var(--line); }
 .scope__n{ font-family:var(--f-disp); font-size:var(--t-xs); color:var(--pf-mark); }
-.scope__t{ font-size:var(--t-h3); font-weight:300; letter-spacing:-.02em; }
+.scope__t{ font-size:clamp(1.02rem,.95rem + .3vw,1.22rem); font-weight:400; letter-spacing:-.02em; }
 
 /* ---------- results ---------- */
 .res__grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:24px; margin:0; }
 .res__grid > div{ display:flex; flex-direction:column-reverse; gap:10px; padding-top:20px; border-top:1px solid var(--line-2); }
 .res__grid dt{ color:var(--ink-3); font-size:var(--t-sm); }
-.res__grid dd{ margin:0; font-family:var(--f-disp); font-weight:300; font-size:var(--t-d1); letter-spacing:-.05em; line-height:1; }
+.res__grid dd{ margin:0; font-family:var(--f-disp); font-weight:300; font-size:clamp(1.8rem,1.1rem + 2.6vw,3.6rem); letter-spacing:-.05em; line-height:1; }
 
 /* ---------- statement ---------- */
 .st{ text-align:center; }
 .st__in{ display:grid; justify-items:center; gap:28px; }
 .st__mark{ width:56px; height:auto; fill:var(--ink); opacity:.9; }
-.st__text{ font-family:var(--f-disp); font-weight:300; font-size:var(--t-d1); letter-spacing:-.04em; line-height:1.15; overflow-wrap:normal; word-break:keep-all; }
+.st__text{ max-width:min(24em,100%); text-wrap:balance; font-family:var(--f-disp); font-weight:300; font-size:clamp(1.4rem,.95rem + 1.7vw,2.6rem); letter-spacing:-.035em; line-height:1.38; overflow-wrap:normal; word-break:keep-all; }
 html[lang="ko"] .st__text, html[lang="ja"] .st__text{ letter-spacing:-.025em; line-height:1.3; }
 /* Japanese sentences: keep-all would leave only "、" as a break point — break by phrase instead */
 :global(html[lang="ja"]) .st__text{ word-break:auto-phrase; overflow-wrap:anywhere; }
 .st__sub{ color:var(--ink-3); font-size:var(--t-sm); }
 
+/* ---------- project-specific consultation (web only; omitted from PrintDoc) ---------- */
+.caseInquiry{ position:relative; border-top:1px solid var(--line); background:#101317; }
+.caseInquiry__inner{ display:flex; justify-content:space-between; align-items:center; gap:clamp(24px,5vw,84px); padding-block:clamp(54px,7vw,104px); }
+.caseInquiry__copy{ display:grid; gap:clamp(10px,1.2vw,16px); min-width:0; max-width:850px; }
+.caseInquiry__eyebrow{ font-family:var(--f-disp); font-size:var(--t-xs); letter-spacing:.09em; color:var(--ice); }
+.caseInquiry__title{ font-family:var(--f-disp); font-weight:300; font-size:clamp(1.65rem,1.15rem + 1.8vw,2.8rem); line-height:1.3; letter-spacing:-.035em; word-break:keep-all; }
+.caseInquiry__case{ color:var(--ink); font-size:clamp(.95rem,.88rem + .25vw,1.15rem); font-weight:500; line-height:1.5; }
+.caseInquiry__desc{ color:var(--ink-3); font-size:clamp(.92rem,.86rem + .2vw,1rem); line-height:1.75; max-width:55em; word-break:keep-all; }
+.caseInquiry__link{ flex:0 0 auto; display:inline-flex; align-items:center; justify-content:space-between; gap:24px; padding:18px 23px; border:1px solid rgba(205,224,235,.38); border-radius:999px; font-size:clamp(.9rem,.85rem + .25vw,1rem); color:var(--ink); transition:background .3s,color .3s,border-color .3s; }
+.caseInquiry__link svg{ width:20px; height:20px; }
+.caseInquiry__link:hover,.caseInquiry__link:focus-visible{ background:var(--ice); color:#0c1116; border-color:var(--ice); }
+@media(max-width:899px){ .caseInquiry__inner{ flex-direction:column; align-items:flex-start; } .caseInquiry__link{ width:100%; max-width:420px; } }
+
 /* ---------- next project ---------- */
 .next{ border-top:1px solid var(--line); }
 .next__link{ position:relative; display:grid; grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"lbl go" "name go"; align-items:center; gap:10px 24px; padding-block:clamp(56px,8vw,112px); }
 .next__lbl{ grid-area:lbl; font-family:var(--f-disp); font-size:var(--t-xs); letter-spacing:.08em; color:var(--ink-3); text-transform:uppercase; }
-.next__name{ grid-area:name; display:grid; gap:10px; font-family:var(--f-disp); font-weight:300; font-size:var(--t-d1); letter-spacing:-.05em; line-height:1; transition:transform .8s var(--e-out); overflow-wrap:break-word; word-break:keep-all; }
+.next__name{ grid-area:name; display:grid; gap:10px; font-family:var(--f-disp); font-weight:300; font-size:clamp(1.6rem,1rem + 2.3vw,3.2rem); letter-spacing:-.05em; line-height:1; transition:transform .8s var(--e-out); overflow-wrap:break-word; word-break:keep-all; }
 :global(html[lang="ja"]) .next__name{ word-break:keep-all; overflow-wrap:anywhere; }
 .next__name{ grid-template-columns:minmax(0,1fr); }
-.next__name small{ font-family:var(--f-body); font-size:var(--t-body); letter-spacing:-.01em; color:var(--ink-3); }
+.next__name small{ font-family:var(--f-body); font-size:var(--t-sm); letter-spacing:-.01em; color:var(--ink-3); }
 .next__go{ grid-area:go; display:grid; place-items:center; width:clamp(56px,6vw,84px); aspect-ratio:1; border-radius:50%; border:1px solid var(--line-2); transition:background .4s, color .4s, transform .6s var(--e-out); }
 .next__go svg{ width:40%; height:auto; }
 .next__thumb{ position:absolute; right:calc(var(--gut) + clamp(80px,9vw,130px)); top:50%; width:clamp(90px,9vw,140px); transform:translateY(-40%) rotate(4deg); opacity:0; transition:opacity .5s, transform .8s var(--e-out); pointer-events:none; }
@@ -252,6 +269,8 @@ html[lang="ko"] .st__text, html[lang="ja"] .st__text{ letter-spacing:-.025em; li
   .full__row[data-n="1"]{ grid-template-columns:1fr; margin-top:0; }
   .phones{ flex-wrap:wrap; gap:16px 4%; }
   .phones__it, .phones[data-n] .phones__it{ width:44%; }
+  .phones[data-n="1"] .phones__it{ width:66%; max-width:330px; }
+  .focus[data-kind="mobile"] .focus__main{ width:72%; margin-inline:auto; }
   .phones__it:nth-child(even){ margin-top:10%; }
   .next__thumb{ display:none; }
   .facts > div{ grid-template-columns:6.5em 1fr; }
@@ -268,7 +287,7 @@ html[lang="ko"] .st__text, html[lang="ja"] .st__text{ letter-spacing:-.025em; li
 .cover__stackT span:last-child{ font-family:var(--f-disp); }
 .cover__stack ol{ display:grid; }
 .cover__stack li{ display:grid; grid-template-columns:3em 1fr; align-items:baseline; padding:clamp(8px,1vw,14px) 0; border-bottom:1px solid color-mix(in srgb, currentColor 12%, transparent);
-  font-family:var(--f-disp); font-weight:300; font-size:clamp(1.4rem,.9rem + 1.8vw,3rem); letter-spacing:-.045em; line-height:1.05;
+  font-family:var(--f-disp); font-weight:300; font-size:clamp(1.25rem,.9rem + 1.3vw,2.2rem); letter-spacing:-.04em; line-height:1.15;
   animation:pfUp 1.1s var(--e-out) both; animation-delay:calc(.15s + var(--i,0) * .06s); }
 .cover__stack li span{ font-size:var(--t-xs); letter-spacing:.04em; color:var(--pf-mark); }
 @media (max-width:899px){ .cover__stack{ padding-bottom:clamp(36px,8svh,64px); } }
@@ -289,7 +308,7 @@ html[lang="ko"] .st__text, html[lang="ja"] .st__text{ letter-spacing:-.025em; li
 :global(html[lang="ja"]) .svc__col h3{ word-break:auto-phrase; }
 /* service titles scale with their column, so 4–6 narrow columns never end up one word per line */
 .svc__col{ container-type:inline-size; }
-.svc__col h3{ font-size:min(var(--t-h3), max(1.05rem, 9.5cqi)); }
+.svc__col h3{ font-size:min(clamp(1.15rem,1rem + .55vw,1.55rem), max(1.05rem, 9.5cqi)); }
 .svc__map[data-n="5"] .svc__col, .svc__map[data-n="6"] .svc__col{ padding:clamp(18px,1.6vw,26px); }
 
 /* =========================================================
@@ -319,6 +338,8 @@ html[lang="ko"] .st__text, html[lang="ja"] .st__text{ letter-spacing:-.025em; li
   .page[data-variant="stage"] .split .ti__copy,
   .page[data-variant="stage"] .ti__top .ti__copy{ order:0; display:grid; grid-template-columns:1fr; grid-template-areas:none; justify-items:center; text-align:center; max-width:780px; margin-inline:auto; }
   .page[data-variant="stage"] .ti__top .ti__copy > *{ grid-area:auto; }
+  /* the copy column is a size container (.split .ti__copy below): give it the width explicitly, or a centred grid shrinks it to 0 */
+  .page[data-variant="stage"] .split .ti__copy{ width:100%; }
   .page[data-variant="stage"] .ti__copy .idx::after{ content:""; width:28px; height:1px; background:currentColor; }
   .page[data-variant="stage"] .split__media{ width:min(100%,1080px); }
   .page[data-variant="stage"] .split[data-kind="desktop"] .split__media{ perspective:2000px; }
@@ -326,7 +347,7 @@ html[lang="ko"] .st__text, html[lang="ja"] .st__text{ letter-spacing:-.025em; li
   .page[data-variant="stage"] .split[data-kind="desktop"] .split__media > div:global(.is-in){ transform:rotateX(0); }
   .page[data-variant="stage"] .layer__main{ width:82%; margin-inline:auto; }
   .page[data-variant="stage"] .bul{ justify-items:center; width:100%; }
-  .page[data-variant="stage"] .ov__lead{ font-size:clamp(1.4rem,1rem + 1.3vw,2.2rem); }
+  .page[data-variant="stage"] .ov__lead{ font-size:clamp(1.12rem,1rem + .5vw,1.5rem); }
 }
 @keyframes pfStage{ from{ opacity:0; transform:translateY(90px) rotateX(26deg); } to{ opacity:1; transform:rotateX(9deg); } }
 
@@ -342,7 +363,7 @@ html[lang="ko"] .st__text, html[lang="ja"] .st__text{ letter-spacing:-.025em; li
 .page[data-variant="editorial"] .ti__copy .idx span{ display:none; }
 .page[data-variant="editorial"] .st{ text-align:left; }
 .page[data-variant="editorial"] .st__in{ justify-items:start; }
-.page[data-variant="editorial"] .st__text{ font-size:clamp(2.2rem,1.2rem + 3.4vw,4.8rem); max-width:min(18em,100%); }
+.page[data-variant="editorial"] .st__text{ font-size:clamp(1.6rem,1.05rem + 2vw,3rem); max-width:min(20em,100%); }
 @media (min-width:900px){
   .page[data-variant="editorial"] .cover{ background:linear-gradient(180deg, color-mix(in srgb, var(--pf-accent) 3%, #f4f3f1), color-mix(in srgb, var(--pf-accent) 6%, #e9e8e5)); }
   .page[data-variant="editorial"] .cover--dark{ background:linear-gradient(180deg,#0c0d10,#000); }
@@ -362,7 +383,7 @@ html[lang="ko"] .st__text, html[lang="ja"] .st__text{ letter-spacing:-.025em; li
   .page[data-variant="editorial"] .ti__top .ti__copy{ grid-template-areas:"num num" "idx idx" "h2 body" "h2 bul"; }
   .page[data-variant="editorial"] .ti__top .ti__num{ grid-area:num; }
   .page[data-variant="editorial"] .ov__grid{ grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); }
-  .page[data-variant="editorial"] .ov__lead{ font-size:clamp(1.5rem,1rem + 1.6vw,2.5rem); line-height:1.38; }
+  .page[data-variant="editorial"] .ov__lead{ font-size:clamp(1.15rem,1rem + .6vw,1.6rem); line-height:1.55; }
 }
 
 /* ---------- RAIL — framed: screens sit on tinted panels, the copy column stays in view while you scroll ---------- */
@@ -453,3 +474,78 @@ html[lang="ko"] .st__text, html[lang="ja"] .st__text{ letter-spacing:-.025em; li
   .page[data-variant="editorial"] .split.split--rev[data-kind="mobile"]{ grid-template-columns:minmax(0,1fr) minmax(0,1.2fr); }
   .page[data-variant="rail"] .split.split--rev{ grid-template-columns:minmax(0,1.6fr) minmax(0,.78fr); }
 }
+
+/* ---------- screen readability (v38) — portfolio image blocks only ----------
+   Goal: the UI inside a screenshot stays legible. Phones never drop below ~290px wide on a phone,
+   dense desktop screens never sit three to a row, and every real screen opens larger on tap (ScreenZoom). */
+.phones .cap, .focus .cap, .tabs .cap{ text-align:center; }
+.phones[data-n="3"] .phones__it{ max-width:340px; }
+@media (min-width:900px){ .page[data-variant="rail"] .split[data-kind="mobile"]:not([data-multi]) .split__media > div{ max-width:340px; } }
+.stack .cap, .full__main .cap{ margin-top:10px; }
+.page figure[data-zoom]{ cursor:zoom-in; }
+.page figure[data-zoom]:focus-visible{ outline:2px solid var(--pf-mark, currentColor); outline-offset:6px; border-radius:8px; }
+.page figure[data-zoom] > span:first-child::after{
+  content:""; position:absolute; top:10px; right:10px; width:30px; height:30px; border-radius:50%;
+  background:rgba(14,16,20,.62) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6'/%3E%3Cpath d='M15 15l5 5M10.5 8v5M8 10.5h5'/%3E%3C/svg%3E") center/16px no-repeat;
+  opacity:0; transition:opacity .2s; pointer-events:none; z-index:2;
+}
+.page figure[data-zoom][data-kind="mobile"] > span:first-child::after{ top:7%; right:9%; }
+.page figure[data-zoom]:hover > span:first-child::after, .page figure[data-zoom]:focus-visible > span:first-child::after{ opacity:1; }
+@media (hover:none){ .page figure[data-zoom] > span:first-child::after{ opacity:.85; width:26px; height:26px; background-size:14px; } }
+
+/* tablet widths: a row of three/four phones or a 1+3 focus is too small — wider phones, key screen centred above */
+@media (min-width:900px) and (max-width:1279px){
+  .phones{ gap:clamp(14px,2vw,24px); }
+  .phones[data-n="3"] .phones__it{ width:32%; }
+  .phones[data-n="1"] .phones__it{ width:36%; max-width:340px; }
+  .focus[data-kind="mobile"]{ grid-template-columns:1fr; justify-items:center; }
+  .focus[data-kind="mobile"] .focus__main{ width:min(44%,380px); }
+  .focus[data-kind="mobile"] .focus__side{ grid-template-columns:repeat(3,minmax(0,1fr)); width:100%; }
+}
+@media (max-width:899px){
+  .gal__cols[data-desk]{ columns:1; }
+  .dp{ padding:0; }
+  .dp__phones, .dp__phones[data-n="1"]{ position:static; width:100%; justify-content:center; margin-top:20px; }
+  .dp__phone{ flex:none; width:min(44%,300px); }
+}
+/* phones (390–560px): one screen per row, large enough to read; supporting screens follow in order */
+@media (max-width:560px){
+  .phones{ flex-direction:column; align-items:center; gap:32px; padding-bottom:0; }
+  .phones__it, .phones[data-n] .phones__it{ width:min(94%,380px); max-width:none; }
+  .phones__it:nth-child(even){ margin-top:0; }
+  .focus[data-kind="mobile"] .focus__main{ width:min(94%,380px); }
+  .focus[data-kind="mobile"] .focus__side{ grid-template-columns:1fr; justify-items:center; gap:32px; }
+  .focus[data-kind="mobile"] .focus__sub{ width:min(94%,380px); }
+  .pair{ flex-direction:column; align-items:center; gap:28px; }
+  .pair > div, .pair[data-n="3"] > div{ width:min(94%,380px); max-width:none; margin-top:0 !important; }
+  .dp__phone{ width:min(70%,300px); }
+  .dp__phones{ flex-direction:column; align-items:center; gap:24px; }
+}
+
+/* desktop screens beside copy (textImage imageLeft/Right) sat in a ~760px column at 1440 — dense tables and
+   editors became unreadable. From 900px the copy now sits above and the screen takes the full content width
+   (the stage variant already did this). Two layered screens become two full-width screens, nothing overlaps. */
+@media (min-width:900px){
+  .page[data-variant] .split[data-kind="desktop"]{ grid-template-columns:minmax(0,1fr); gap:clamp(28px,3.4vw,52px); align-items:start; justify-items:stretch; }
+  .page[data-variant] .split[data-kind="desktop"] .ti__copy{ order:0; width:100%; max-width:min(100%,64rem); position:static; }
+  .page[data-variant] .split[data-kind="desktop"] .split__media{ width:100%; max-width:none; }
+  .page[data-variant] .split[data-kind="desktop"] .layer{ padding:0; display:grid; gap:clamp(20px,3vw,44px); }
+  .page[data-variant] .split[data-kind="desktop"] .layer__main{ width:100%; margin:0; }
+  .page[data-variant] .split[data-kind="desktop"] .layer__front{ position:static; width:100%; }
+  .page[data-variant] .split[data-kind="desktop"] .layer__front[data-kind="mobile"]{ width:min(34%,340px); justify-self:center; }
+  .page[data-variant="stage"] .split[data-kind="desktop"] .split__media{ width:100%; }
+}
+/* full-width block: the screens after the first follow at full width too (no 2-up, no overlap) */
+.full__row, .full__row[data-n="1"], .full__row[data-n="3"]{ grid-template-columns:minmax(0,1fr); margin-top:0; justify-content:stretch; }
+/* gallery of desktop screens: one per row, at a width where 12px UI text stays ~9px */
+.gal__cols[data-desk]{ columns:1; max-width:min(100%,1120px); margin-inline:auto; }
+/* feature cards: a card carrying a desktop screen takes the whole row (screen on top, full width);
+   phone screens stay at phone size inside their cards */
+.fg__grid > .fg__card:has(> figure[data-kind="desktop"]){ grid-column:1 / -1; grid-template-columns:minmax(0,1fr); grid-template-rows:none; }
+.fg__grid > .fg__card:has(> figure[data-kind="desktop"]) > figure{ grid-column:auto; grid-row:auto; margin:0 0 6px; }
+.fg__card > figure[data-kind="mobile"]{ width:min(100%,320px); justify-self:center; }
+/* two tablets: one per row, wide */
+.tabs[data-n="2"]{ grid-template-columns:minmax(0,1fr); max-width:min(100%,1080px); margin-inline:auto; }
+/* two phones in a row / two or three phones beside copy: a little wider */
+@media (min-width:900px){ .phones[data-n="2"] .phones__it{ width:30%; max-width:340px; } .pair > div{ max-width:340px; } }
+@media (max-width:899px){ .split[data-multi] .split__media{ width:100%; justify-self:stretch; } }

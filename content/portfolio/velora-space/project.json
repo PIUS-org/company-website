@@ -35,6 +35,7 @@
     "web",
     "platform"
   ],
+  "mainCategory": "web",
   "platforms": [
     {
       "type": "web",
@@ -279,6 +280,11 @@
         "ko": "VELORA SPACE는 사진을 나열하는 기존 인테리어 소개 페이지를 넘어 사용자가 하나의 주거공간을 탐색하고 서로 다른 마감의 분위기를 비교하도록 구상한 반응형 쇼룸 데모입니다.",
         "en": "VELORA SPACE is a responsive showroom concept that moves beyond static interior galleries.",
         "ja": "VELORA SPACEは、写真を並べるだけのインテリアサイトを超え、空間の探索と素材による雰囲気の比較を提案するレスポンシブショールームのデモです。"
+      },
+      "body": {
+        "ko": "공간 사진을 보는 단계에서 끝나지 않고 같은 공간의 마감과 분위기를 비교해 선택할 수 있는 탐색 경험을 중심에 뒀습니다.",
+        "en": "The experience moves beyond a photo gallery by letting visitors compare finishes and moods within the same space.",
+        "ja": "写真を見るだけで終わらず、同じ空間の仕上げや雰囲気を比較して選べる体験を中心に据えました。"
       }
     },
     {

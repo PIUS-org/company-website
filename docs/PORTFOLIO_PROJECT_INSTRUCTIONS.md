@@ -36,7 +36,9 @@
   - 알림·권한 팝업은 --close-dialogs 또는 데모 상태값으로 끈다. 깨진 이미지가 보이는 화면은 쓰지 않는다.
 - 고르는 기준: 대표 3장(카드·표지), 사용자 흐름 4~6장, 역할별 업무 화면 1~3장, 나머지 쇼케이스 2~4장.
 
-**3. slug·카테고리** — slug는 영문 소문자(예: `abc-erp`). 카테고리: 사내 업무 → erp · 여러 사용자 그룹 → platform · 앱 화면 → mobile · 웹/관리자 → web · 결제·판매 중심 → commerce · 외부 시스템 연결 중심 → integration (복수 가능). 카테고리는 메인 Portfolio 숫자 타일에도 그대로 집계되므로, 앱이 있으면 mobile을 빠뜨리지 않는다.
+**3. slug·카테고리** — slug는 영문 소문자(예: `abc-erp`). 카테고리: 사내 업무 → erp · 여러 사용자 그룹 → platform · 앱 화면 → mobile · 웹/관리자 → web · 결제·판매 중심 → commerce · 외부 시스템 연결 중심 → integration (복수 가능, 목록 필터·카드·표지에 쓰임).
+- **메인 카테고리(`mainCategory`)** — categories 중 하나. 메인 화면 숫자 타일과 /portfolio 필터 탭은 이것만 센다(프로젝트당 1회, 중복 카운트 없음 — 두 화면 숫자가 항상 같다). `node scripts/portfolio.mjs balance`가 닫힌 묶음은 그대로 두고 전체 표준편차가 가장 작아지는 값을 추천한다. 추천을 따르되, 공개(approved) 프로젝트만으로도 6개 타일이 모두 1 이상이 되게 한다.
+- **묶음(배치)** — `node scripts/portfolio.mjs new <slug>`가 `content/portfolio/_batches.json`의 열린 묶음(지금 batch-2)에 자동 추가한다. 손으로 폴더를 만들었으면 열린 묶음 `slugs`에 직접 넣는다(빠지면 check 오류). **닫힌 묶음(batch-1, 1차 30건)의 project.json·이미지는 새 묶음 작업 중에 고치지 않는다.** 묶음별 보고서는 `docs/portfolio-batch-N/`에 둔다.
 
 **4. 데이터 작성** — `npm run portfolio:new -- <slug>`로 시작해 채운다.
 - title, subtitle(20자 내외), summary(카드 한 문장), overview(2~3문장), cover.headline(두 줄), cover.sub

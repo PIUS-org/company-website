@@ -1,0 +1,295 @@
+{
+  "id": "used-fashion-market-app",
+  "slug": "used-fashion-market-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 660,
+  "includeInPdf": true,
+  "title": {
+    "ko": "중고 패션 마켓 앱",
+    "en": "Pre-Loved Fashion Marketplace",
+    "ja": "中古ファッションマーケット"
+  },
+  "subtitle": {
+    "ko": "취향 좋은 물건의 두 번째 이야기",
+    "en": "A second story for pieces worth keeping",
+    "ja": "お気に入りの品に、次のストーリーを"
+  },
+  "summary": {
+    "ko": "패션 에디토리얼 감성의 상품 탐색부터 거래 전 대화와 판매 등록까지 표현한 중고 패션 마켓 모바일 UI 데모입니다.",
+    "en": "A fashion-led resale UI concept spanning product discovery, pre-purchase conversations, and seller listings.",
+    "ja": "エディトリアルな商品探しから購入前の会話、出品までを表現した中古ファッションUIデモです。"
+  },
+  "overview": {
+    "ko": "패션 에디토리얼 감성의 상품 탐색부터 거래 전 대화와 판매 등록까지 표현한 중고 패션 마켓 모바일 UI 데모입니다.",
+    "en": "A fashion-led resale UI concept spanning product discovery, pre-purchase conversations, and seller listings.",
+    "ja": "エディトリアルな商品探しから購入前の会話、出品までを表現した中古ファッションUIデモです。"
+  },
+  "industry": {
+    "ko": "중고 패션 거래",
+    "en": "Pre-loved fashion resale",
+    "ja": "中古ファッション売買"
+  },
+  "categories": [
+    "commerce",
+    "mobile"
+  ],
+  "mainCategory": "commerce",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#2B2B2B",
+    "accentInk": "#242424",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "used-fashion-market-app-01",
+    "used-fashion-market-app-03"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / C실 claude-integration-prompt.txt. 이미지 5장은 c-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "마음에 드는 물건을 발견하고, 판매자에게 묻고, 내 옷을 내놓기까지.",
+        "en": "Discover a piece, ask the seller about it and list one of your own.",
+        "ja": "気に入った一品を見つけ、出品者に尋ね、自分の服を出品するまで。"
+      },
+      "images": [
+        "used-fashion-market-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "상품 사진의 매력뿐 아니라 중고품 상태·사이즈·배송 조건과 판매자 대화를 함께 확인하게 구성했습니다.",
+        "en": "Pre-owned fashion listings need condition, sizing, delivery terms, and seller conversation alongside photos.",
+        "ja": "商品写真の魅力だけでなく中古品の状態・サイズ・配送条件・出品者との会話を確認できます。"
+      },
+      "body": {
+        "ko": "상품 피드, 브랜드·사이즈·가격 필터, 상품 상태·배송 정보, 판매자와의 채팅 및 등록 폼을 설계했습니다.",
+        "en": "Editorial product feed, brand/size/price filters, item condition and shipping, seller chat, and listing forms.",
+        "ja": "商品フィード、ブランド・サイズ・価格の絞り込み、商品状態と配送、出品者チャット、登録フォームを設計しました。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "빈티지 레더 숄더백 발견",
+            "en": "Discover a vintage leather shoulder bag",
+            "ja": "ヴィンテージレザーショルダーバッグを発見"
+          }
+        },
+        {
+          "title": {
+            "ko": "상태 A·128,000원 확인",
+            "en": "Review condition A and ₩128,000 price",
+            "ja": "状態A・128,000ウォンを確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "판매자 atelier.mina와 대화",
+            "en": "Message seller atelier.mina",
+            "ja": "出品者atelier.minaと会話"
+          }
+        },
+        {
+          "title": {
+            "ko": "같은 상품 등록 화면 검토",
+            "en": "Review the same item in the listing editor",
+            "ja": "同じ商品の出品画面を確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "focus",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "used-fashion-market-app-03",
+        "used-fashion-market-app-02",
+        "used-fashion-market-app-04",
+        "used-fashion-market-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "04",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "가상의 상품·판매자와 단일 생성 사진 에셋을 활용한 정적 UI 5장입니다. 실제 채팅·매매·결제·상품 검수 기능은 없습니다.",
+        "en": "Five static screens use a fictional product, seller, and a shared generated photo asset. There are no live chats, transactions, payments, or inspections.",
+        "ja": "架空の商品・出品者と共通の生成写真を使用した静的UI全5画面です。実際のチャット・取引・決済・鑑定機能はありません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "05",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "구매자의 발견과 판매자의 등록을 하나의 일관된 커머스 경험으로 연결했습니다.",
+        "en": "A consistent commerce experience for both discovery and listing.",
+        "ja": "探す人と出品する人の体験を一貫した形でつなぎます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "used-fashion-market-app-01",
+      "file": "used-fashion-market-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "중고 패션 마켓 앱 — 스타일 중심 패션 발견 피드 화면",
+        "en": "Pre-Loved Fashion Marketplace — Fashion discovery feed mobile screen",
+        "ja": "中古ファッションマーケット — スタイル別の商品発見フィードの画面"
+      },
+      "caption": {
+        "ko": "스타일 중심 패션 발견 피드",
+        "en": "Fashion discovery feed",
+        "ja": "スタイル別の商品発見フィード"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "used-fashion-market-app-02",
+      "file": "used-fashion-market-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "중고 패션 마켓 앱 — 브랜드·사이즈·가격·상태 필터 화면",
+        "en": "Pre-Loved Fashion Marketplace — Brand, size, price and condition filters mobile screen",
+        "ja": "中古ファッションマーケット — ブランド・サイズ・価格・状態の条件の画面"
+      },
+      "caption": {
+        "ko": "브랜드·사이즈·가격·상태 필터",
+        "en": "Brand, size, price and condition filters",
+        "ja": "ブランド・サイズ・価格・状態の条件"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "used-fashion-market-app-03",
+      "file": "used-fashion-market-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "중고 패션 마켓 앱 — 동일 상품의 사진·상태·가격·배송 상세 화면",
+        "en": "Pre-Loved Fashion Marketplace — Shared item photo, condition, pricing and shipping mobile screen",
+        "ja": "中古ファッションマーケット — 同一商品の写真・状態・価格・配送詳細の画面"
+      },
+      "caption": {
+        "ko": "동일 상품의 사진·상태·가격·배송 상세",
+        "en": "Shared item photo, condition, pricing and shipping",
+        "ja": "同一商品の写真・状態・価格・配送詳細"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "used-fashion-market-app-04",
+      "file": "used-fashion-market-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "중고 패션 마켓 앱 — 상품 맥락이 유지되는 판매자 대화 화면",
+        "en": "Pre-Loved Fashion Marketplace — Seller conversation retaining item context mobile screen",
+        "ja": "中古ファッションマーケット — 商品情報付きの出品者との会話の画面"
+      },
+      "caption": {
+        "ko": "상품 맥락이 유지되는 판매자 대화",
+        "en": "Seller conversation retaining item context",
+        "ja": "商品情報付きの出品者との会話"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "used-fashion-market-app-05",
+      "file": "used-fashion-market-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "중고 패션 마켓 앱 — 사진·브랜드·상태·가격 판매 등록 화면",
+        "en": "Pre-Loved Fashion Marketplace — Photo, brand, condition and price listing form mobile screen",
+        "ja": "中古ファッションマーケット — 写真・ブランド・状態・価格の出品登録の画面"
+      },
+      "caption": {
+        "ko": "사진·브랜드·상태·가격 판매 등록",
+        "en": "Photo, brand, condition and price listing form",
+        "ja": "写真・ブランド・状態・価格の出品登録"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "id": "corporate-expense-ops",
+  "slug": "corporate-expense-ops",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 430,
+  "includeInPdf": true,
+  "title": {
+    "ko": "법인카드·경비 지출 관리",
+    "en": "Corporate Card & Expense Operations",
+    "ja": "法人カード・経費支出管理"
+  },
+  "subtitle": {
+    "ko": "경비 등록부터 정책 예외 검토와 회계 전달 전 점검까지",
+    "en": "From expense entry and policy exceptions to accounting-export review",
+    "ja": "経費登録、規程超過の審査から経理連携前の確認まで"
+  },
+  "summary": {
+    "ko": "임직원 지출 입력, 영수증 증빙, 승인 검토, 부서별 예산과 회계 전달 준비 과정을 보여주는 WEB·모바일 정적 UI 데모입니다.",
+    "en": "A static web and mobile UI demonstration for expense submissions, receipt evidence, approval checks, departmental budgets, and accounting handoff preparation.",
+    "ja": "従業員の経費入力、領収書、承認前の確認、部門別予算、経理向けデータの準備を表現したWeb・モバイルの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "기업의 경비 담당자가 지출 신청을 접수하고 증빙과 금액을 확인한 뒤, 정책 위반 여부와 부서 예산을 검토하고 회계 전달 항목을 선별하는 흐름을 5개 화면으로 구성했습니다. 임직원 모바일 영수증 입력과 승인 담당자 WEB 검토 UI를 함께 보여줍니다.",
+    "en": "Five workflow-specific screens illustrate how a finance team receives employee expenses, checks receipt details and spending limits, reviews departmental budgets, and selects approved entries for accounting export. A mobile receipt-entry experience complements the reviewer’s desktop workspace.",
+    "ja": "従業員からの経費申請を受け付け、領収書と金額を照合し、支出規程や部門予算を確認したうえで、承認済みの項目を経理連携用に選別する流れを5画面で示しました。従業員向けの領収書登録画面と承認担当者向けのデスクトップ画面を組み合わせています。"
+  },
+  "industry": {
+    "ko": "기업 경비·회계 운영",
+    "en": "Corporate Expense & Accounting Operations",
+    "ja": "企業経費・経理業務"
+  },
+  "categories": [
+    "erp",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "erp",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#3A827A",
+    "accentInk": "#1A3330",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "expense-review-queue",
+    "expense-receipt-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 A실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "임직원 지출 입력, 영수증 증빙, 승인 검토, 부서별 예산과 회계 전달 준비 과정을 보여주는 WEB·모바일 정적 UI 데모입니다.",
+        "en": "A static web and mobile UI demonstration for expense submissions, receipt evidence, approval checks, departmental budgets, and accounting handoff preparation.",
+        "ja": "従業員の経費入力、領収書、承認前の確認、部門別予算、経理向けデータの準備を表現したWeb・モバイルの静的UIデモです。"
+      },
+      "images": [
+        "expense-review-queue"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "경비 신청, 증빙 사진, 정책 한도, 승인 상태와 회계 전달 데이터가 분리되어 있으면 한도 초과 사유를 검토하거나 미승인 비용이 집계·전송에 잘못 포함되는 문제를 확인하기 어렵습니다.",
+        "en": "When expense claims, receipt images, policy limits, approval statuses, and accounting exports are disconnected, reviewers may miss over-limit spending or accidentally include unapproved entries in reporting and handoff.",
+        "ja": "申請内容、領収書画像、支出上限、承認状態、経理連携データが分散すると、規程超過の理由を確認しにくく、未承認の経費を集計や連携対象に含めてしまうおそれがあります。"
+      },
+      "body": {
+        "ko": "영수증이 등록된 비용과 정책 검토·승인된 비용을 구분해 부서 예산에 반영할 범위를 명확히 했습니다.",
+        "en": "An uploaded receipt is not an approved expense; policy checks and approvals determine what reaches the department budget.",
+        "ja": "領収書が登録された支出と規程審査・承認済み支出を分け、部門予算への反映範囲を明確にしました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "지출 신청·증빙 목록 및 승인 전 검토",
+          "en": "Expense submission queue and evidence review",
+          "ja": "経費申請一覧と証憑の確認"
+        },
+        {
+          "ko": "직원 모바일 영수증 첨부와 지출 내역 수기 입력",
+          "en": "Mobile receipt attachment and manual line-item entry",
+          "ja": "モバイルでの領収書添付と明細の手入力"
+        },
+        {
+          "ko": "한도 초과 금액 및 정책 예외 결재 검토",
+          "en": "Policy-limit comparison and exception approval review",
+          "ja": "支出限度額の超過と例外承認の事前審査"
+        },
+        {
+          "ko": "부서별 승인 집행·예산 잔액 비교",
+          "en": "Approved spending versus departmental budget monitoring",
+          "ja": "部門別の承認済み支出と予算残高の比較"
+        },
+        {
+          "ko": "승인된 지출만 선별한 회계 파일 구성 미리보기",
+          "en": "Pre-export validation and accounting-file structure preview",
+          "ja": "承認済み項目を対象とした経理データのプレビュー"
+        }
+      ],
+      "images": [
+        "expense-receipt-mobile"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "임직원이 영수증과 지출 항목을 수기 등록",
+            "en": "Employee attaches a receipt and manually enters expenses",
+            "ja": "従業員が領収書を添付し、経費明細を手入力する"
+          }
+        },
+        {
+          "title": {
+            "ko": "경비 담당자가 신청·증빙과 금액 대조",
+            "en": "Reviewer matches submission details to the supplied evidence",
+            "ja": "担当者が申請情報と証憑を照合する"
+          }
+        },
+        {
+          "title": {
+            "ko": "정책 초과 및 예외 승인 필요 여부 확인",
+            "en": "Reviewer checks the policy exception and approval requirements",
+            "ja": "規程超過と例外承認の要否を確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "승인된 지출만 부서 예산에 반영된 상태 검토",
+            "en": "Finance checks departmental budgets using approved spending only",
+            "ja": "承認済み支出のみ反映された部門予算を確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "검토 완료 항목 선별 후 회계 내보내기 형식 확인",
+            "en": "Approved entries are selected and the accounting-file preview is inspected",
+            "ja": "確認済み項目を選択し、経理連携ファイルの構成を確認する"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "expense-policy-check"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "expense-budget-monitor",
+        "expense-export-review"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "관리자용 데스크톱 UI 4장과 직원용 모바일 UI 1장으로 구성된 자체 정적 이미지 데모입니다. 실제 카드사 연동, OCR 영수증 인식, 승인 실행, 회계 전송, 서버·DB·로그인 기능은 구현하지 않았습니다. 화면의 금액·사람·지출처·부서는 모두 가상 데이터입니다.",
+        "en": "This is an in-house static UI demo comprising four desktop images and one purpose-built mobile image. It does not implement real card integrations, OCR, approval actions, accounting transmission, authentication, a backend, or a database. Every person, merchant, department, and amount is fictional.",
+        "ja": "管理者向けデスクトップUI画像4点と従業員向けモバイルUI画像1点の自社制作静的デモです。カード会社連携、OCRによる領収書認識、承認処理、会計システムへの送信、ログイン、サーバー・データベースは実装していません。人物、店舗、部門、金額はすべて架空のデータです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "증빙과 정책 검토, 예산 관리, 회계 전달 준비가 서로 연결되는 운영 흐름을 실제 업무 화면 형태로 시각화했습니다.",
+        "en": "A coherent expense operations experience connects evidence, policy checks, budget visibility, and accounting preparation without implying live processing.",
+        "ja": "証憑、規程確認、予算管理、経理連携準備を一連の業務フローとして見渡せる経費管理UIです。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "expense-review-queue",
+      "file": "expense-review-queue.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "EX-1042 신청액 248,000원과 정책 한도 초과를 검토하는 경비 승인함",
+        "en": "Expense approval queue highlighting EX-1042 and its ₩48,000 policy-limit exception",
+        "ja": "EX-1042の申請額248,000ウォンと上限超過を確認する経費承認一覧"
+      },
+      "caption": {
+        "ko": "경비 8건 중 증빙과 승인 상태를 검토하고 EX-1042의 한도 초과 48,000원을 확인합니다.",
+        "en": "Review eight sample claims and inspect the ₩48,000 over-limit amount on EX-1042.",
+        "ja": "経費申請8件の証憑と承認状態を確認し、EX-1042の上限超過48,000ウォンを示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "expense-receipt-mobile",
+      "file": "expense-receipt-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "영수증 사진과 3개 항목 합계 248,000원을 수기 입력하는 직원 모바일 화면",
+        "en": "Mobile receipt-entry screen with a photo attachment and three manually entered lines totaling ₩248,000",
+        "ja": "領収書画像と合計248,000ウォンの3明細を手入力する従業員向けモバイル画面"
+      },
+      "caption": {
+        "ko": "영수증 이미지 첨부·지출 항목 입력·정책 초과 경고를 직원용 세로 화면에 구성했습니다.",
+        "en": "A purpose-built mobile form combines receipt attachment, manual line items, and an over-limit warning.",
+        "ja": "領収書の添付、明細入力、規程上限の超過警告をスマートフォン向けに配置しました。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "expense-policy-check",
+      "file": "expense-policy-check.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "경비 EX-1042의 신청액 248,000원과 한도 200,000원을 대조하는 정책 예외 검토 화면",
+        "en": "Policy exception review showing EX-1042 at ₩248,000 against a ₩200,000 limit",
+        "ja": "経費EX-1042の申請額248,000ウォンと上限200,000ウォンを比較する規程審査画面"
+      },
+      "caption": {
+        "ko": "48,000원 초과액과 영수증 3개 항목, 사유 입력 및 예외 결재 전 상태를 확인합니다.",
+        "en": "Compare the ₩48,000 excess with the receipt breakdown and the pre-approval review state.",
+        "ja": "超過48,000ウォンと領収書の3項目、理由および例外承認前の状態を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "expense-budget-monitor",
+      "file": "expense-budget-monitor.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "5개 부서의 예산 650만 원·승인 집행 407만5천 원·잔액 242만5천 원을 비교하는 화면",
+        "en": "Department budget monitor comparing ₩6.5 million planned, ₩4.075 million approved spend, and ₩2.425 million remaining",
+        "ja": "5部門の予算650万ウォン、承認済み支出407万5,000ウォン、残高242万5,000ウォンを比較する画面"
+      },
+      "caption": {
+        "ko": "전사 5개 부서의 집행률을 비교하고 브랜드운영팀 신청 EX-1042는 승인 전 집행에서 제외합니다.",
+        "en": "Compare spending across five departments while keeping pending EX-1042 out of approved expenditures.",
+        "ja": "5部門の執行率を比較し、承認待ちのEX-1042を承認済み支出から除外します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "expense-export-review",
+      "file": "expense-export-review.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "승인 경비 6건 436,800원과 회계 CSV 미리보기를 보여주고 EX-1042를 제외하는 검토 화면",
+        "en": "Accounting export review previewing six approved expenses totaling ₩436,800 while excluding pending EX-1042",
+        "ja": "承認済み経費6件・合計436,800ウォンのCSVプレビューとEX-1042の除外を示す確認画面"
+      },
+      "caption": {
+        "ko": "승인 완료 6건만 선택해 436,800원 합계를 검산하고 실제 파일 생성 전 열 구성을 미리 보여줍니다.",
+        "en": "Validate six approved lines totaling ₩436,800 in a static accounting-file preview without generating a file.",
+        "ja": "承認済みの6件・合計436,800ウォンを照合し、ファイルを生成せずに経理データの列構成を表示します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "id": "revenue-reconciliation",
+  "slug": "revenue-reconciliation",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 270,
+  "includeInPdf": true,
+  "title": {
+    "ko": "기업 매출·입금 대사 시스템",
+    "en": "Revenue & Deposit Reconciliation",
+    "ja": "売上・入金照合管理システム"
+  },
+  "subtitle": {
+    "ko": "청구·입금 연결과 차이 검토를 월 마감까지 추적하는 재무 운영 워크스페이스",
+    "en": "A finance workspace linking invoices, receipts, exceptions, and month-end controls",
+    "ja": "請求、入金の紐付け、差異確認、月次締めをつなぐ財務ワークスペース"
+  },
+  "summary": {
+    "ko": "청구 원장, 파일 기반 수동 입금 대사, 8만 원 차이 예외, 부분 입금 연결 근거, 월 마감 검증을 보여주는 기업형 회계 UI 데모.",
+    "en": "An accounts-receivable UI demo featuring an invoice ledger, manual file-based matching, an ₩80,000 exception, split deposits, and a month-end close review.",
+    "ja": "請求台帳、ファイルベースの手動入金照合、8万ウォンの差異、分割入金の根拠、月次締め確認を示す債権管理UIのデモです。"
+  },
+  "overview": {
+    "ko": "재무 담당자는 청구 내역과 수기 등록한 입금 파일을 비교하고, 부분 입금의 연결 근거와 차이 항목을 확인한 뒤 월 마감 가능 여부를 판단합니다. 2026년 11월의 가상 청구 6건 5,500만 원과 입금 4,392만 원을 기준으로 5개의 독립된 업무 화면을 제작했습니다.",
+    "en": "Finance staff compare invoices with manually imported sample receipt rows, inspect partial-payment evidence, and evaluate outstanding differences before closing a month. Five static UI screens use six fictional November 2026 invoices worth ₩55 million and recorded deposits totaling ₩43.92 million.",
+    "ja": "財務担当者が請求情報と手入力したサンプル入金ファイルを照合し、分割入金の根拠と差額を確認したうえで月次締めの可否を判断する業務を表現しました。2026年11月の架空の請求6件・総額5,500万ウォン、入金累計4,392万ウォンを共通データとして5つの静的UI画面を制作しました。"
+  },
+  "industry": {
+    "ko": "기업 재무·매출채권·수금 관리 (시연용 가상 데이터)",
+    "en": "Enterprise finance, accounts receivable, and collections (fictional data)",
+    "ja": "企業財務・売掛金・入金管理（架空データ）"
+  },
+  "categories": [
+    "erp",
+    "web"
+  ],
+  "mainCategory": "erp",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#306B66",
+    "accentInk": "#1A3331",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "recon-bank-matching"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 A실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "청구 원장, 파일 기반 수동 입금 대사, 8만 원 차이 예외, 부분 입금 연결 근거, 월 마감 검증을 보여주는 기업형 회계 UI 데모.",
+        "en": "An accounts-receivable UI demo featuring an invoice ledger, manual file-based matching, an ₩80,000 exception, split deposits, and a month-end close review.",
+        "ja": "請求台帳、ファイルベースの手動入金照合、8万ウォンの差異、分割入金の根拠、月次締め確認を示す債権管理UIのデモです。"
+      },
+      "images": [
+        "recon-bank-matching"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "부분 입금과 미확정 대사를 모두 수납 완료로 처리하면 잔액과 월마감 결과가 달라질 수 있습니다.",
+        "en": "Partial payments and tentative matches must not be treated as fully reconciled receipts in the closing ledger.",
+        "ja": "一部入金と未確定の照合を入金完了として扱うと、残高と月次締めの結果がずれます。"
+      },
+      "body": {
+        "ko": "청구와 입금이 분리되거나 일부 입금만 확인된 상태에서는 잔액·검토안·확정 대사를 구분하기 어려워 마감 전 예외가 누락될 수 있습니다.",
+        "en": "When invoice balances, partial payments, tentative matches, and confirmed reconciliations are not distinguished, outstanding exceptions can be overlooked during month-end review.",
+        "ja": "請求残高、分割入金、仮の紐付け、確定済みの照合を区別できないと、月次締め前の未解決項目を見落とすおそれがあります。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "청구서와 CSV 파일 입금 행을 선택해 구성하는 수동 대사안",
+          "en": "Build manual invoice-to-receipt matching proposals from sample CSV rows",
+          "ja": "サンプルCSV行から請求書への手動照合案を作成する画面"
+        },
+        {
+          "ko": "청구별 청구액·입금액·미수 잔액·연결 상태 원장",
+          "en": "Invoice ledger showing billed, paid, outstanding, and matching status",
+          "ja": "請求額・入金額・未収額・照合状況を示す請求台帳"
+        },
+        {
+          "ko": "INV-027의 8만 원 차이 예외 검토 및 보완 요청 시나리오",
+          "en": "₩80,000 discrepancy review and follow-up request for INV-027",
+          "ja": "INV-027の8万ウォンの差異確認と追加確認依頼"
+        },
+        {
+          "ko": "INV-026의 2건 부분 입금과 배분 비율·출처 검토",
+          "en": "Split-deposit evidence and allocation details for INV-026",
+          "ja": "INV-026の分割入金2件と配分率・根拠の確認"
+        },
+        {
+          "ko": "확정 3건과 미해결 3건을 분리한 월 마감 차단 점검",
+          "en": "Month-end checklist separating three confirmed items from three unresolved items",
+          "ja": "確定済み3件と未解決3件を分ける月次締めチェック"
+        }
+      ],
+      "images": [
+        "recon-invoice-ledger"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "청구 정보를 원장에 등록하고 입금 CSV를 수기로 불러오기",
+            "en": "Record invoices and review a manually supplied sample receipt file",
+            "ja": "請求を台帳に登録し、サンプル入金CSVを手動で確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "청구서에 연결할 입금 행을 선택하고 금액 차이 계산",
+            "en": "Select receipt rows and calculate provisional invoice matching differences",
+            "ja": "請求書に紐付ける入金行を選び差額を計算"
+          }
+        },
+        {
+          "title": {
+            "ko": "차이가 있는 청구의 원인을 검토하고 보완 요청 준비",
+            "en": "Investigate mismatches and prepare requests for clarification",
+            "ja": "差異の原因を確認し追加確認依頼を準備"
+          }
+        },
+        {
+          "title": {
+            "ko": "부분 입금의 원본 행과 배분 근거 확인",
+            "en": "Review partial-payment source rows and proposed allocation",
+            "ja": "分割入金の元データと配分根拠を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "월 마감 체크리스트에서 미해결 항목과 보류 사유 점검",
+            "en": "Check unresolved items and reasons for postponing month-end close",
+            "ja": "月次締め前に未解決項目と保留理由を確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "recon-exception-queue"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "recon-deposit-detail",
+        "recon-close-review"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "정적 HTML/CSS/SVG로 렌더링한 프론트 UI 이미지 5장입니다. 실제 은행·회계 시스템 연동, 자동 대사, 입금 확정, 계좌 조회, 파일 업로드 처리, DB 저장, 월 마감 실행 기능은 구현하지 않았습니다. 청구서·거래처·입금 행·날짜·금액은 모두 가상 데이터입니다.",
+        "en": "Five front-end UI images rendered with static HTML, CSS, and SVG. No bank or accounting integration, automated reconciliation, payment confirmation, live account lookup, file upload processing, database persistence, or actual close workflow was implemented. All invoices, companies, dates, receipt rows, and amounts are fictional.",
+        "ja": "静的HTML/CSS/SVGでレンダリングしたフロントエンドUI画像5点です。実際の銀行・会計システム連携、自動照合、入金確定、口座照会、ファイル処理、DB保存、月次締め実行は実装していません。請求書、取引先、入金行、日付、金額はすべて架空データです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "청구, 매칭 제안, 예외, 부분 입금 근거, 마감 검증을 분리해 재무 담당자의 실제 검토 흐름이 읽히도록 구성했습니다.",
+        "en": "The five screens separate invoice review, tentative matching, exception handling, split-payment evidence, and close readiness into a coherent finance workflow.",
+        "ja": "請求、仮の照合、差異、分割入金、締め前検証を分離し、財務担当者の確認プロセスが画面から理解できるよう構成しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "recon-bank-matching",
+      "file": "recon-bank-matching.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "청구 원장 6건과 입금 파일 거래 6건에서 INV-026 청구액 1,540만 원에 두 입금 행을 연결하는 수기 대사 작업대",
+        "en": "A three-pane manual reconciliation workbench linking two receipt rows to a ₩15.4 million INV-026 invoice across six invoices and six sample deposits",
+        "ja": "請求6件とサンプル入金6件の一覧から、INV-026の1,540万ウォンに入金2行を紐付ける手動照合画面"
+      },
+      "caption": {
+        "ko": "INV-026에 1,200만 원과 340만 원의 입금을 선택해 차액 0원을 확인하되, 실제 확정 전 검토안으로 표시했습니다.",
+        "en": "Select ₩12 million and ₩3.4 million for INV-026 and verify a zero difference without marking the match confirmed.",
+        "ja": "INV-026に1,200万ウォンと340万ウォンを選択し、差額0ウォンを確定前の照合案として表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "recon-invoice-ledger",
+      "file": "recon-invoice-ledger.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "청구 6건 총액 5,500만 원·입금 4,392만 원·미수 1,108만 원과 청구별 대사 상태가 표시된 수금 원장",
+        "en": "An invoice and receivables ledger with six invoices totaling ₩55 million, ₩43.92 million in deposits, and ₩11.08 million outstanding",
+        "ja": "請求6件の総額5,500万ウォン、入金累計4,392万ウォン、未収残高1,108万ウォンと照合状況を示す台帳"
+      },
+      "caption": {
+        "ko": "청구·입금·미수 잔액을 원장에 함께 표시하고, INV-026의 입금액 일치와 대사 확정 전 상태를 구분합니다.",
+        "en": "Compare billed, received, and outstanding balances while distinguishing INV-026’s matching draft from completed reconciliations.",
+        "ja": "請求額・入金額・未収額を一覧化し、INV-026の仮照合と確定済み照合を区別します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "recon-exception-queue",
+      "file": "recon-exception-queue.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "INV-027의 청구액 770만 원과 입금 762만 원 사이의 8만 원 차이를 검토하는 예외 처리 화면",
+        "en": "An exception review workspace highlighting the ₩80,000 difference between INV-027’s ₩7.7 million invoice and ₩7.62 million deposit",
+        "ja": "INV-027の請求770万ウォンと入金762万ウォンの差額8万ウォンを調査する例外確認画面"
+      },
+      "caption": {
+        "ko": "차이 발생 근거, 조사 체크리스트와 수기 보완 요청안을 구성했습니다.",
+        "en": "Inspect discrepancy evidence, a review checklist, and a draft clarification request.",
+        "ja": "差異の根拠、確認チェックリスト、追加確認依頼の下書きを示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "recon-deposit-detail",
+      "file": "recon-deposit-detail.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "INV-026의 11월 6일 1,200만 원과 11월 11일 340만 원의 부분 입금 행·배분율·연결 근거를 표시한 화면",
+        "en": "A split-payment detail screen for INV-026 with receipt rows of ₩12 million on November 6 and ₩3.4 million on November 11, plus allocation percentages",
+        "ja": "INV-026の11月6日の1,200万ウォンと11月11日の340万ウォンの分割入金、配分率、照合根拠を示す画面"
+      },
+      "caption": {
+        "ko": "분할 입금 2건의 파일 행과 77.92%·22.08% 배분율, 연결안 차액 0원을 확인합니다.",
+        "en": "Trace two sample receipt rows, their 77.92% / 22.08% split, and a zero provisional matching difference.",
+        "ja": "入金2行の77.92%・22.08%の配分と、仮照合の差額0ウォンを確認します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "recon-close-review",
+      "file": "recon-close-review.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "11월 청구 6건 중 확정 3건·검토안 1건·차이 1건·입금대기 1건을 확인하고 월 마감을 보류하는 검증 화면",
+        "en": "A month-end validation screen with three confirmed invoices, one tentative match, one discrepancy, and one unpaid invoice, leaving the close blocked",
+        "ja": "11月の請求6件を確定3件・仮照合1件・差異1件・未入金1件に分類し、月次締めを保留する確認画面"
+      },
+      "caption": {
+        "ko": "대사 미확정·8만 원 차이·미입금 1,100만 원의 미해결 사유를 표시해 월 마감 차단 조건을 확인합니다.",
+        "en": "Review the unresolved provisional match, ₩80,000 exception, and ₩11 million unpaid invoice before month-end close.",
+        "ja": "仮照合、8万ウォンの差異、1,100万ウォンの未入金を締め処理の阻害要因として示します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "id": "insurance-claim-operations",
+  "slug": "insurance-claim-operations",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 380,
+  "includeInPdf": true,
+  "title": {
+    "ko": "ARCO 보험 청구·사고 접수 운영",
+    "en": "ARCO Insurance Claims & Incident Intake",
+    "ja": "ARCO 保険金請求・事故受付管理"
+  },
+  "subtitle": {
+    "ko": "사고 접수부터 서류 보완·심사 대기·결과 안내 초안까지 연결하는 업무 화면",
+    "en": "A connected workspace for intake, missing documents, review drafts, and pre-send notices",
+    "ja": "事故受付・書類補完・審査待ち・通知下書きをつなぐ業務画面"
+  },
+  "summary": {
+    "ko": "고객 모바일 사고 접수, 필수 서류 검수, 처리 이력, 내부 심사 의견, 발송 전 안내문을 연결한 WEB·APP 정적 UI 데모입니다.",
+    "en": "A static WEB/APP UI demo linking mobile incident intake, document triage, case timelines, internal assessment notes, and a notice draft that has not been sent.",
+    "ja": "顧客向けモバイル事故受付、提出書類の確認、処理履歴、社内審査メモ、送信前の案内文をつないだWEB・APPの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "ARCO는 가상의 보험 청구 건을 고객 접수 화면과 보상 운영팀의 서류·심사 업무 화면으로 연결한 UI 시연 프로젝트입니다. 고객은 모바일에서 사고 경위와 제출 문서 현황을 확인하고, 담당자는 누락된 구매 증빙을 요청하고 처리 이력과 내부 검토 의견을 기록합니다. 서류가 미비한 청구 건은 결과 통지나 지급 확정을 진행하지 않는 상태로 표현했습니다.",
+    "en": "ARCO is a fictional insurance claims interface connecting a customer intake view to an operations team’s documentation and review workspace. Customers see incident details and submission status on mobile; staff request a missing proof of purchase, follow the case history, and draft internal assessment notes. The example intentionally prevents any payment determination or final notice while required documents are outstanding.",
+    "ja": "ARCOは、架空の保険金請求案件を顧客の受付画面と保険金請求の運用担当者向け画面でつなぐUIデモです。顧客は事故の申告内容と書類提出状況をモバイルで確認でき、担当者は不足している購入証明の提出を依頼し、履歴と社内検討メモを管理します。必要書類がそろっていない段階では、審査結果の通知や支払確定へ進まない状態を表現しました。"
+  },
+  "industry": {
+    "ko": "보험 사고 접수·청구 서류 운영",
+    "en": "Insurance claim intake and document operations",
+    "ja": "保険事故受付・請求書類の運用管理"
+  },
+  "categories": [
+    "platform",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#30516B",
+    "accentInk": "#1A2833",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "claims-intake-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 C실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "고객 모바일 사고 접수, 필수 서류 검수, 처리 이력, 내부 심사 의견, 발송 전 안내문을 연결한 WEB·APP 정적 UI 데모입니다.",
+        "en": "A static WEB/APP UI demo linking mobile incident intake, document triage, case timelines, internal assessment notes, and a notice draft that has not been sent.",
+        "ja": "顧客向けモバイル事故受付、提出書類の確認、処理履歴、社内審査メモ、送信前の案内文をつないだWEB・APPの静的UIデモです。"
+      },
+      "images": [
+        "claims-intake-mobile"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "청구 정보·첨부서류·처리 이력·심사 메모가 서로 다른 화면에서 관리되면 누락 서류를 확인하지 못한 채 결과를 통지하거나 요청액을 확정 지급액으로 오인할 위험이 있습니다. 접수된 자료의 존재와 실질적인 심사 판정을 분리한 업무 화면이 필요합니다.",
+        "en": "When claim information, attachments, case history, and reviewer notes are separated, teams risk overlooking missing evidence or treating a requested amount as an approved payout. An effective workflow must distinguish documents being submitted from the much later decision about claim eligibility or payment.",
+        "ja": "請求情報、添付書類、処理履歴、審査メモが分断されると、不足書類を見落としたまま結果を通知したり、請求額を支払確定額と誤認したりする恐れがあります。書類の提出事実と審査判断を明確に分けて扱う業務UIが必要です。"
+      },
+      "body": {
+        "ko": "서류 접수 완료와 보험금 지급 확정을 혼동하지 않도록 증빙 보완·심사·통지 단계를 구분했습니다.",
+        "en": "Document receipt is not a claim approval; missing evidence, assessment, and notification require separate stages.",
+        "ja": "書類の受付完了は保険金支払の確定ではなく、不足資料・審査・通知を段階ごとに区別します。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "모바일 사고 접수: 가상 청구 CLM-014의 휴대용 노트북 파손 사고, 청구 요청액 1,250,000원과 서류 제출 4/5종 확인",
+          "en": "Mobile intake: fictional claim CLM-014 for a damaged laptop, KRW 1,250,000 requested, and four of five documents submitted",
+          "ja": "モバイル事故受付：架空の請求CLM-014におけるノートPC破損、請求額125万ウォン、必須書類5種中4種の提出状況を表示"
+        },
+        {
+          "ko": "서류 검수 대기열: 구매 증빙 DOC-05 미제출 및 2026년 11월 12일 보완 요청 이력을 확인",
+          "en": "Document triage: identify missing purchase evidence DOC-05 and show the November 12, 2026 follow-up request",
+          "ja": "書類確認キュー：購入証明DOC-05の未提出と2026年11月12日の補完依頼履歴を確認"
+        },
+        {
+          "ko": "청구 건 작업대: 사고 접수·서류 확인·보완 요청·담당자 배정 내역을 하나의 처리 타임라인으로 연결",
+          "en": "Case workbench: connect intake, verification, missing-document follow-up, and assignee information in a unified timeline",
+          "ja": "案件ワークベンチ：事故受付、書類確認、補完依頼、担当者割当を時系列で表示"
+        },
+        {
+          "ko": "심사 의견 편집: 제출된 서류의 존재와 누락된 근거를 구분하는 내부 검토 초안 표시, 심사 결정·지급 미확정",
+          "en": "Assessment notes: draft an internal review that separates documents received from evidence still missing, with neither approval nor payment decided",
+          "ja": "審査メモ：受領済み書類と未確認の証拠を区別した社内検討案を表示し、審査結果と支払は未確定"
+        },
+        {
+          "ko": "결과 안내 초안: 구매 증빙 보완 문안을 미발송 상태로 검토하며, 결과 통지 발송은 심사 확정 이전에 제한",
+          "en": "Notification draft: preview an unsent missing-document message while keeping the final decision notice unavailable",
+          "ja": "案内文の下書き：購入証明の補完案内を未送信のまま確認し、結果通知の送信を制限"
+        }
+      ],
+      "images": [
+        "claims-document-triage"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "고객이 모바일에서 가상의 사고 정보 및 필수 서류 4종 제출 내역을 확인",
+            "en": "A fictional customer reviews the incident details and four uploaded document types on mobile",
+            "ja": "顧客がモバイルで架空の事故情報と提出済み書類4種を確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "운영자가 서류 검수 큐에서 필수 5종 중 구매 증빙 1종의 누락을 식별",
+            "en": "An operator identifies one missing proof of purchase among five required documents",
+            "ja": "担当者が必須5種中1種の購入証明が不足していると確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "담당자가 청구 건의 처리 이력과 보완 요청을 확인하고 검토 대기 상태로 유지",
+            "en": "The assignee checks the event timeline and keeps the claim awaiting supplementary evidence",
+            "ja": "案件の履歴と補完依頼を点検し、書類追加待ちの状態を維持する"
+          }
+        },
+        {
+          "title": {
+            "ko": "심사 담당자가 접수 사실과 미확인 근거를 구분해 내부 검토 의견 초안을 작성",
+            "en": "An assessor drafts a note distinguishing reported facts from unverified items",
+            "ja": "審査担当者が確認できた事実と未確認事項を区別して社内メモの下書きを作る"
+          }
+        },
+        {
+          "title": {
+            "ko": "운영자가 고객용 서류 보완 안내문을 미발송 초안으로 검토하고 실제 지급·결과 통지는 보류",
+            "en": "The operations team reviews an unsent supplementary-document notice without issuing a final payout decision",
+            "ja": "担当者が未送信の補完案内を確認し、最終的な支払決定と結果通知は保留する"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "claims-case-workbench"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "claims-assessor-review",
+        "claims-decision-notice"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "PIUS가 자체 제작한 보험 청구 업무용 가상 정적 UI 데모로, 데스크톱 4장과 모바일 1장을 HTML/CSS/SVG 기반으로 렌더링했습니다. 가상의 접수번호·담당자·사고·서류·금액만 사용했으며 실제 보험 심사 규칙 적용, 보험금 산정·승인·지급, 고객 본인 확인, 메시지 전송, DB·서버·API는 구현하지 않았습니다. 1,250,000원은 요청액이며 지급 확정 또는 실제 지급액이 아닙니다.",
+        "en": "An original fictional static UI portfolio demo by PIUS, rendered as four desktop and one mobile screenshot with HTML, CSS, and SVG. Claim IDs, personnel, incidents, files, and financial figures are illustrative. Actual underwriting or claims evaluation, benefit calculation, payout approval, transfer, customer authentication, messaging, backend, database, and API functions were not implemented. KRW 1,250,000 is the amount requested, not a confirmed or paid insurance benefit.",
+        "ja": "PIUSが自主制作した架空の保険金請求業務の静的UIポートフォリオです。HTML・CSS・SVGによるデスクトップ4画面とモバイル1画面を作成しました。請求番号、担当者、事故、書類、金額はすべてサンプルです。実際の保険審査、保険金算定・承認・支払、本人確認、通知送信、サーバー、DB、APIは実装していません。125万ウォンは請求額であり、支払確定額でも支払済額でもありません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "서류 제출 여부와 심사 결정을 엄격히 구분해, 보완이 완료되기 전에는 결과 통지나 보험금 지급을 확정하지 않는 업무 흐름을 시각화했습니다.",
+        "en": "By separating submission status from assessment outcomes, the interface demonstrates why a claim with missing documents must remain in review instead of proceeding to payment or a final notice.",
+        "ja": "書類の提出状況と審査結果を区別し、補完前には結果通知や支払確定を行わない業務の流れを視覚化しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "claims-intake-mobile",
+      "file": "claims-intake-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "ARCO 모바일에서 CLM-014 사고의 청구 요청액 125만원과 서류 5종 중 4종 제출·구매 증빙 1종 누락을 확인하는 화면",
+        "en": "ARCO mobile claim CLM-014 showing KRW 1.25 million requested, four of five documents submitted, and purchase evidence missing",
+        "ja": "ARCOのモバイル画面で、請求CLM-014の請求額125万ウォン、必須書類5種中4種提出、購入証明1種未提出を表示"
+      },
+      "caption": {
+        "ko": "가상 고객은 사고 접수 내용을 확인하고 구매 증빙 추가 제출 요청을 조회합니다. 보험금 지급 여부는 정해지지 않았습니다.",
+        "en": "The fictional customer reviews the reported incident and a request for additional proof of purchase; no benefit payment has been decided.",
+        "ja": "架空の顧客が受付内容と購入証明の追加提出依頼を確認します。支払可否は未決定です。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "claims-document-triage",
+      "file": "claims-document-triage.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "ARCO 서류 검수 작업함에서 CLM-014의 DOC-05 구매 증빙 미제출과 보완 요청 이력을 확인하는 화면",
+        "en": "ARCO document triage queue identifying missing purchase proof DOC-05 and the follow-up request for claim CLM-014",
+        "ja": "ARCOの書類確認キューで、請求CLM-014の購入証明DOC-05の未提出と補完依頼履歴を確認"
+      },
+      "caption": {
+        "ko": "필수 5종 중 4종 제출된 상태를 표시하며, 서류 보완 대기열에서 누락 증빙을 검토합니다.",
+        "en": "The operator reviews one missing item among five required documents; four document types have been submitted.",
+        "ja": "必須5種中4種提出の状態を表示し、不足証憑を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "claims-case-workbench",
+      "file": "claims-case-workbench.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "CLM-014 사고 내역·첨부 서류 4종·담당자 배정·보완 요청 처리 이력을 연결한 ARCO 청구 상세 화면",
+        "en": "ARCO case workbench linking CLM-014 incident details, four submitted document types, assignee, and follow-up timeline",
+        "ja": "CLM-014の事故内容、提出書類4種、担当者配置、補完依頼履歴をつないだARCO案件詳細画面"
+      },
+      "caption": {
+        "ko": "2026년 11월 12일 접수·서류 확인·보완 요청을 타임라인으로 표시하며 심사는 대기 상태입니다.",
+        "en": "The timeline connects intake, document review, and follow-up on November 12, 2026, while the final assessment remains pending.",
+        "ja": "2026年11月12日の受付・書類確認・補完依頼を時系列で示し、審査は待機状態です。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "claims-assessor-review",
+      "file": "claims-assessor-review.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "ARCO 심사 검토 화면에서 CLM-014의 제출 서류 4종과 구매 증빙 누락, 내부 의견 초안을 구분한 화면",
+        "en": "ARCO assessor review showing four document types received, missing proof of purchase, and an internal draft note for CLM-014",
+        "ja": "ARCO審査検討画面で、CLM-014の提出済み4種、購入証明の不足、社内メモの下書きを区別"
+      },
+      "caption": {
+        "ko": "담당자가 접수 사실과 확인되지 않은 사항을 분리해 기록하며 심사 승인 및 지급액은 확정하지 않습니다.",
+        "en": "A reviewer separates documented submissions from outstanding evidence without issuing an assessment approval or payout.",
+        "ja": "担当者が受付済みの事実と未確認事項を整理し、審査承認や支払額は確定しません。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "claims-decision-notice",
+      "file": "claims-decision-notice.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "ARCO 결과 안내 화면에서 CLM-014의 구매 증빙 보완 안내 초안과 심사 결과 통지 발송 제한을 보여주는 화면",
+        "en": "ARCO notice workspace previewing an unsent missing-purchase-proof message and withholding the final decision notice for CLM-014",
+        "ja": "ARCOの結果案内画面で、CLM-014の購入証明補完案内の下書きと、最終結果通知の送信制限を表示"
+      },
+      "caption": {
+        "ko": "발송 전 안내문을 미리보되 심사 결과·지급액이 미확정이므로 최종 결과 통지는 비활성 상태입니다.",
+        "en": "A pre-send draft is shown, while the final outcome notification remains disabled because the assessment and payout are undecided.",
+        "ja": "送信前の案内文を確認できますが、審査結果と支払額が未確定のため最終通知は無効です。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

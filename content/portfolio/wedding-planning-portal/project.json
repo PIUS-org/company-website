@@ -1,0 +1,311 @@
+{
+  "id": "wedding-planning-portal",
+  "slug": "wedding-planning-portal",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 690,
+  "includeInPdf": true,
+  "title": {
+    "ko": "웨딩 플래닝 포털",
+    "en": "Wedding Planning Portal",
+    "ja": "ウェディングプランニングポータル"
+  },
+  "subtitle": {
+    "ko": "예식 준비 일정과 업체 제안·계약을 함께 검토하는 프론트 포털",
+    "en": "A planning portal connecting wedding milestones, vendor proposals, and contract reviews.",
+    "ja": "結婚式の準備日程、事業者の提案、契約確認をまとめる顧客向けポータル"
+  },
+  "summary": {
+    "ko": "준비 홈과 일정 관리, 업체 견적 비교, 제안서·계약 검토, 예식 당일 타임라인 화면.",
+    "en": "Planning home, timeline, vendor quote comparison, proposal and contract review, and a wedding-day schedule.",
+    "ja": "準備ホーム、日程管理、業者の見積比較、提案書・契約確認、当日のタイムラインの画面。"
+  },
+  "overview": {
+    "ko": "예비부부의 중요한 결정들이 일정, 견적, 담당자와 연결되도록 감성적 콘텐츠와 실무 정보를 결합했습니다.",
+    "en": "A client-facing concept balancing wedding editorial visuals with actionable dates, budgets, proposals, and responsibilities.",
+    "ja": "大切な決定事項を予定・見積り・担当者に結びつけ、ビジュアルと実務情報を組み合わせました。"
+  },
+  "industry": {
+    "ko": "웨딩·이벤트",
+    "en": "Weddings and events",
+    "ja": "ウェディング・イベント"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#8A6347",
+    "accentInk": "#2F2218",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "wedding-planning-portal-03"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / E실 claude-integration-prompt.txt. 이미지 5장은 e-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "준비 일정, 업체 견적 비교, 제안서와 계약 검토를 한곳에서.",
+        "en": "The planning timeline, vendor quote comparison, proposals and contracts in one place.",
+        "ja": "準備の日程、業者の見積比較、提案書と契約の確認を一か所で。"
+      },
+      "images": [
+        "wedding-planning-portal-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "결혼 준비 일정과 업체 제안·견적·계약 검토를 한곳에서 비교하되 의사결정 단계별 상태를 분명하게 구분했습니다.",
+        "en": "Planning dates, vendor offers, quotes, and contract reviews are brought together while their decision stages remain distinct.",
+        "ja": "準備日程と業者提案・見積・契約確認を一か所で比較し、意思決定の段階を区別します。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "준비 현황 확인",
+            "en": "Review milestones",
+            "ja": "準備確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "일정 조율",
+            "en": "Plan dates",
+            "ja": "日程調整"
+          }
+        },
+        {
+          "title": {
+            "ko": "업체 비교",
+            "en": "Compare vendors",
+            "ja": "事業者比較"
+          }
+        },
+        {
+          "title": {
+            "ko": "계약 검토",
+            "en": "Review proposal",
+            "ja": "契約確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "예식 당일 체크",
+            "en": "Follow wedding-day timeline",
+            "ja": "当日の進行"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "wedding-planning-portal-02",
+        "wedding-planning-portal-03",
+        "wedding-planning-portal-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "wedding-planning-portal-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "프론트엔드 정적 UI 시각화 5화면(데스크톱 4, 모바일 1). 서버, 로그인, 저장, 실시간 협업, 외부 연동 미구현. 화면의 데이터는 모두 데모용 가상 데이터입니다.",
+        "en": "Five static front-end interface visuals (four desktop, one mobile). No backend, authentication, persistence, live collaboration, or external integrations. All displayed data is fictional demo data.",
+        "ja": "デスクトップ4画面、モバイル1画面の静的UIビジュアル。サーバー、認証、保存、リアルタイム協業、外部連携は未実装。表示データはデモ用の架空データです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "남은 일정과 업체 견적, 제안서와 계약이 나란히 놓여 두 사람이 같은 정보를 보며 결정할 수 있습니다.",
+        "en": "Upcoming milestones, vendor quotes, proposals and contracts sit side by side, so the couple decide from the same information.",
+        "ja": "残りの日程、業者の見積、提案書と契約が並び、二人が同じ情報を見ながら決められます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "wedding-planning-portal-01",
+      "file": "wedding-planning-portal-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "웨딩 플래닝 포털의 웨딩 준비 홈 정적 화면. 시온 & 지온의 결혼 준비 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static wedding planning overview screen in Wedding Planning Portal, showing the demo project “Sion & Jion’s Wedding Planning”.",
+        "ja": "ウェディングプランニングポータルの準備ホームを示す静的UI画面。デモ案件「シオン＆ジオンの結婚準備」の表示です。"
+      },
+      "caption": {
+        "ko": "웨딩 준비 홈",
+        "en": "Wedding planning overview",
+        "ja": "準備ホーム"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "wedding-planning-portal-02",
+      "file": "wedding-planning-portal-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "웨딩 플래닝 포털의 준비 일정 관리 정적 화면. 시온 & 지온의 결혼 준비 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static preparation calendar screen in Wedding Planning Portal, showing the demo project “Sion & Jion’s Wedding Planning”.",
+        "ja": "ウェディングプランニングポータルの準備カレンダーを示す静的UI画面。デモ案件「シオン＆ジオンの結婚準備」の表示です。"
+      },
+      "caption": {
+        "ko": "준비 일정 관리",
+        "en": "Preparation calendar",
+        "ja": "準備カレンダー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "wedding-planning-portal-03",
+      "file": "wedding-planning-portal-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "웨딩 플래닝 포털의 웨딩 업체·견적 비교 정적 화면. 시온 & 지온의 결혼 준비 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static vendor proposal comparison screen in Wedding Planning Portal, showing the demo project “Sion & Jion’s Wedding Planning”.",
+        "ja": "ウェディングプランニングポータルの事業者比較を示す静的UI画面。デモ案件「シオン＆ジオンの結婚準備」の表示です。"
+      },
+      "caption": {
+        "ko": "웨딩 업체·견적 비교",
+        "en": "Vendor proposal comparison",
+        "ja": "事業者比較"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "wedding-planning-portal-04",
+      "file": "wedding-planning-portal-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "웨딩 플래닝 포털의 제안서 및 계약 검토 정적 화면. 시온 & 지온의 결혼 준비 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static proposal and contract review screen in Wedding Planning Portal, showing the demo project “Sion & Jion’s Wedding Planning”.",
+        "ja": "ウェディングプランニングポータルの提案書・契約確認を示す静的UI画面。デモ案件「シオン＆ジオンの結婚準備」の表示です。"
+      },
+      "caption": {
+        "ko": "제안서 및 계약 검토",
+        "en": "Proposal and contract review",
+        "ja": "提案書・契約確認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "wedding-planning-portal-05",
+      "file": "wedding-planning-portal-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "웨딩 플래닝 포털의 예식 당일 타임라인 정적 화면. 시온 & 지온의 결혼 준비 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static wedding-day schedule screen in Wedding Planning Portal, showing the demo project “Sion & Jion’s Wedding Planning”.",
+        "ja": "ウェディングプランニングポータルの結婚式当日の日程を示す静的UI画面。デモ案件「シオン＆ジオンの結婚準備」の表示です。"
+      },
+      "caption": {
+        "ko": "예식 당일 타임라인",
+        "en": "Wedding-day schedule",
+        "ja": "結婚式当日の日程"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

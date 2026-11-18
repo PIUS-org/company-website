@@ -26,7 +26,7 @@ export const leadsByFilter = (projects: Project[], cats: readonly string[]): Rec
   const out: Record<string, string | undefined> = {};
   const allLead = (projects.find(p => p.featured) || projects[0])?.slug;
   out.all = allLead;
-  const cand = (c: string) => projects.filter(p => p.slug !== allLead && p.categories.includes(c as Project['categories'][number])).map(p => p.slug);
+  const cand = (c: string) => projects.filter(p => p.slug !== allLead && p.mainCategory === c).map(p => p.slug);
   /* matching (augmenting paths): as many tabs as possible get a project no other tab uses; earlier projects preferred */
   const owner = new Map<string, string>();
   const tryTab = (c: string, seen: Set<string>): boolean => {

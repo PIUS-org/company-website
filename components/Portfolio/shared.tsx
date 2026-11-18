@@ -10,14 +10,30 @@ export function NavLink({ href, className, children, ...rest }: { href: string; 
 }
 
 /** Adds .is-in to every [data-reveal] inside root once it enters the viewport (no-op with reduced motion). */
-export function useReveal(root: RefObject<HTMLElement | null>, deps: unknown[] = []) {
+/** Reveal [data-reveal] children as they scroll in.
+ *  margin — IntersectionObserver rootMargin (default: 10% inside the viewport; the list uses a positive margin so cards are ready before they appear)
+ *  stagger — ms between items that come in together (cleared after the entrance so hover transitions stay instant) */
+export function useReveal(root: RefObject<HTMLElement | null>, deps: unknown[] = [], opt: { margin?: string; stagger?: number } = {}) {
   useEffect(() => {
     const el = root.current; if (!el) return;
     const items = Array.from(el.querySelectorAll<HTMLElement>('[data-reveal]:not(.is-in)'));
     if (RM || !('IntersectionObserver' in window)) { items.forEach(i => i.classList.add('is-in')); return; }
-    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -10% 0px' });
+    const timers: number[] = [];
+    const io = new IntersectionObserver(es => {
+      let k = 0;
+      es.forEach(e => {
+        if (!e.isIntersecting) return;
+        const t = e.target as HTMLElement;
+        if (opt.stagger) {
+          const d = Math.min(k++, 5) * opt.stagger;
+          t.style.transitionDelay = d + 'ms';
+          timers.push(window.setTimeout(() => { t.style.transitionDelay = ''; }, d + 1100));
+        }
+        t.classList.add('is-in'); io.unobserve(t);
+      });
+    }, { rootMargin: opt.margin || '0px 0px -10% 0px' });
     items.forEach(i => io.observe(i));
-    return () => io.disconnect();
+    return () => { io.disconnect(); timers.forEach(clearTimeout); };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, deps);
 }

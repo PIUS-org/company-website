@@ -22,9 +22,9 @@
     "ja": "ビューティーコンサルティングの検索から申込、進行、結果確認までを一つの体験でつなぐプラットフォーム"
   },
   "overview": {
-    "ko": "FITY는 사용자가 외모와 스타일에 관한 고민에 맞춰 적합한 전문가의 컨설팅을 이용할 수 있도록 설계한 뷰티 컨설팅 플랫폼입니다. 퍼스널컬러, 체형, 메이크업 등 다양한 컨설팅을 탐색하고, 자신의 사진과 필요한 정보를 제공해 상담을 진행합니다.",
-    "en": "FITY is a beauty consulting platform designed to match people with the right expert for their appearance and style concerns. Users explore consultations such as personal color, body type and makeup, then share their photos and details to start a session.",
-    "ja": "FITYは、外見やスタイルの悩みに合わせて最適な専門家のコンサルティングを受けられるよう設計したビューティーコンサルティングプラットフォームです。パーソナルカラー、骨格、メイクなど多様なコンサルティングを探し、自分の写真と必要な情報を提供して相談を進めます。"
+    "ko": "FITY는 사용자가 외모와 스타일에 관한 고민에 맞춰 적합한 전문가의 컨설팅을 이용할 수 있도록 설계한 뷰티 컨설팅 플랫폼입니다. 퍼스널컬러, 체형, 메이크업 등 다양한 컨설팅을 탐색하고, 자신의 사진과 필요한 정보를 제공해 상담을 진행합니다. 고객은 자신에게 맞는 컨설팅을 찾아 신청하고 결과를 받아보며, 전문가는 상품과 상담을 관리하고, 관리자는 플랫폼 전체의 운영을 맡습니다.",
+    "en": "FITY is a beauty consulting platform designed to match people with the right expert for their appearance and style concerns. Users explore consultations such as personal color, body type and makeup, then share their photos and details to start a session. Customers find, request and receive the consultations that suit them; experts manage their products and sessions; administrators run the platform as a whole.",
+    "ja": "FITYは、外見やスタイルの悩みに合わせて最適な専門家のコンサルティングを受けられるよう設計したビューティーコンサルティングプラットフォームです。パーソナルカラー、骨格、メイクなど多様なコンサルティングを探し、自分の写真と必要な情報を提供して相談を進めます。 顧客は自分に合うコンサルティングを探して申し込み、結果を受け取ります。専門家は商品と相談を管理し、管理者はプラットフォーム全体の運営を担います。"
   },
   "industry": {
     "ko": "뷰티테크",
@@ -36,6 +36,7 @@
     "mobile",
     "web"
   ],
+  "mainCategory": "platform",
   "platforms": [
     {
       "type": "app",
@@ -504,9 +505,9 @@
         "ja": "FITYは、顧客・専門家・管理者の業務フローを一つのプラットフォームの中でつなぐことを目指しています。"
       },
       "body": {
-        "ko": "고객은 자신에게 맞는 컨설팅을 찾아 신청하고 결과를 받아보며, 전문가는 상품과 상담을 관리하고, 관리자는 플랫폼 전체의 운영을 맡습니다.",
-        "en": "Customers find, request and receive the consultations that suit them; experts manage their products and sessions; administrators run the platform as a whole.",
-        "ja": "顧客は自分に合うコンサルティングを探して申し込み、結果を受け取ります。専門家は商品と相談を管理し、管理者はプラットフォーム全体の運営を担います。"
+        "ko": "상담 요청을 올린 고객과 제안을 검토하는 전문가, 운영 관리자가 서로 다른 정보를 보지 않도록 요청 상태와 결과 전달 시점을 구분했습니다.",
+        "en": "The request lifecycle must remain consistent for clients, experts, and operators, even though each role sees a different part of the process.",
+        "ja": "相談を依頼する顧客、提案を確認する専門家、運営担当者の間で状態が食い違わないよう、依頼と成果物の受け渡しを整理しました。"
       },
       "goals": [
         {

@@ -35,6 +35,7 @@
     "erp",
     "integration"
   ],
+  "mainCategory": "erp",
   "platforms": [
     {
       "type": "web",
@@ -196,7 +197,12 @@
             "ja": "30秒ごとに更新される管制画面で運行状態と路線をすぐ確認し、配車対応に活用します。"
           }
         }
-      ]
+      ],
+      "body": {
+        "ko": "차량 위치만 확인하는 관제와 기사·차량·배차 원장을 분리하지 않고, 운영자가 일정 변경의 영향을 함께 판단하도록 구성했습니다.",
+        "en": "Dispatch records, vehicle and driver assignments, and location monitoring are viewed together to support operational decisions when schedules change.",
+        "ja": "位置情報だけの監視にせず、車両・乗務員・配車の記録を結び、予定変更の影響を運営者が判断できる構成です。"
+      }
     },
     {
       "type": "textImage",

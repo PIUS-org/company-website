@@ -1,0 +1,363 @@
+{
+  "id": "people-attendance-payroll",
+  "slug": "people-attendance-payroll",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 220,
+  "includeInPdf": true,
+  "title": {
+    "ko": "인사·근태·휴가·급여 ERP",
+    "en": "People, Attendance & Payroll ERP",
+    "ja": "人事・勤怠・休暇・給与ERP"
+  },
+  "subtitle": {
+    "ko": "직원 기록부터 월말 근태 대조와 급여 검토까지 이어지는 People Operations 워크스페이스",
+    "en": "A connected people-operations workspace from employee records to month-end payroll review",
+    "ja": "従業員記録から月末の勤怠照合・給与確認までをつなぐ人事業務ワークスペース"
+  },
+  "summary": {
+    "ko": "직원 프로필, 근태 달력, 연차 결재, 급여 원장과 모바일 셀프서비스를 연결한 인사·급여 관리 정적 UI 데모.",
+    "en": "A static HR operations UI demo connecting employee profiles, attendance calendars, leave approvals, payroll review, and mobile self-service.",
+    "ja": "従業員プロフィール、勤怠カレンダー、休暇承認、給与明細レビュー、従業員向けモバイル画面をつなぐ静的UIデモです。"
+  },
+  "overview": {
+    "ko": "인사 담당자는 직원 정보를 등록하고, 월간 근태와 휴가 승인 내역을 대조한 뒤 급여의 지급·공제 합계를 검토합니다. 이 프로젝트는 가상 기업 플레노웍스의 직원 8명과 담당 직원 EMP-042의 2026년 11월 기록을 공통 데이터로 사용해 관리용 WEB 4장과 직원용 모바일 1장을 구성했습니다.",
+    "en": "HR administrators maintain employee records, reconcile attendance against approved leave, and review earnings and deductions before payroll is finalized. The demo uses eight fictitious employees from PlenoWorks, with EMP-042’s November 2026 records as a shared anchor across four desktop administration screens and one employee mobile screen.",
+    "ja": "人事担当者が従業員情報を管理し、勤怠と承認済み休暇を照合したうえで、給与の支給額と控除額を確認する業務を想定しました。架空企業PlenoWorksの従業員8名と、EMP-042の2026年11月の記録を共通データとして使用し、管理者向けデスクトップ4画面と従業員向けモバイル1画面を制作しました。"
+  },
+  "industry": {
+    "ko": "기업 인사·노무·급여 운영 (가상 시연 데이터)",
+    "en": "Enterprise HR, attendance, leave, and payroll operations (fictional dataset)",
+    "ja": "企業の人事・勤怠・休暇・給与管理（架空のデモデータ）"
+  },
+  "categories": [
+    "erp",
+    "web",
+    "mobile"
+  ],
+  "mainCategory": "erp",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#377B6D",
+    "accentInk": "#1A332E",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "hr-attendance-ledger",
+    "hr-employee-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 A실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "직원 프로필, 근태 달력, 연차 결재, 급여 원장과 모바일 셀프서비스를 연결한 인사·급여 관리 정적 UI 데모.",
+        "en": "A static HR operations UI demo connecting employee profiles, attendance calendars, leave approvals, payroll review, and mobile self-service.",
+        "ja": "従業員プロフィール、勤怠カレンダー、休暇承認、給与明細レビュー、従業員向けモバイル画面をつなぐ静的UIデモです。"
+      },
+      "images": [
+        "hr-attendance-ledger"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "인사 기록, 출퇴근 내역, 휴가 승인, 급여 계산이 분리되면 소정근무일 중복 계산이나 최종 지급액 검산 누락을 찾기 어렵습니다. 관리자는 직원별 근거 기록을 추적하고, 직원은 자신의 상태를 한 화면에서 확인할 필요가 있습니다.",
+        "en": "When staff records, attendance, approved leave, and payroll figures live in separate workflows, duplicate counting and payout discrepancies become harder to spot. Administrators need traceable source records, while employees need a concise view of their own status.",
+        "ja": "従業員情報、出退勤、休暇承認、給与データが分断されていると、勤務日数の二重計上や支給額の差異を見つけにくくなります。管理者には根拠記録の照合、従業員には自分の状況を確認できる明快な画面が必要です。"
+      },
+      "body": {
+        "ko": "출퇴근·유급휴가·급여 항목이 서로 다른 기준으로 집계되지 않도록 승인 여부와 적용 기간을 구분해야 합니다.",
+        "en": "Attendance, approved leave, and payroll need consistent effective periods and approval states to prevent double counting.",
+        "ja": "勤怠・有給休暇・給与が異なる基準で集計されないよう、承認状態と対象期間を区別します。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "직원별 월간 근태 달력과 근태 이상 정정 검토",
+          "en": "Employee attendance ledger with correction exceptions",
+          "ja": "従業員別の月間勤怠台帳と修正待ち事項"
+        },
+        {
+          "ko": "연차 신청·잔여일수·업무 공백 확인 및 승인 대기 관리",
+          "en": "Leave requests, remaining balances, coverage checks, and approval queue",
+          "ja": "休暇申請・残日数・業務引き継ぎの確認と承認待ち一覧"
+        },
+        {
+          "ko": "지급·공제 항목별 급여 검토와 소정근무일 대조",
+          "en": "Payroll review with itemized earnings, deductions, and attendance reconciliation",
+          "ja": "支給・控除の項目別給与レビューと勤務日数照合"
+        },
+        {
+          "ko": "비식별 직원 프로필과 가상 계약·조직 변경 이력",
+          "en": "De-identified employee profiles and fictional contract/assignment history",
+          "ja": "個人情報を匿名化した社員情報と架空の契約・配属履歴"
+        },
+        {
+          "ko": "모바일 근태·잔여 연차·급여 예정액 확인 화면",
+          "en": "Mobile overview of attendance, leave balance, and expected pay",
+          "ja": "勤怠・休暇残日数・給与予定額を確認できるモバイル画面"
+        }
+      ],
+      "images": [
+        "hr-employee-mobile"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "직원 레코드와 소속·계약 이력 확인",
+            "en": "Review employee identity, team, and assignment history",
+            "ja": "従業員の所属・契約・配属履歴を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "출근 기록과 승인 유급휴가를 중복 없이 대조",
+            "en": "Reconcile worked days with paid approved leave without double counting",
+            "ja": "出勤日数と承認済み有給休暇を重複なく照合"
+          }
+        },
+        {
+          "title": {
+            "ko": "휴가 신청의 잔여 일수와 팀 업무 공백 검토",
+            "en": "Review requested leave balance and team coverage",
+            "ja": "休暇残日数とチーム業務への影響を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "지급액·공제액·실지급 예정액 검산",
+            "en": "Check earnings, deductions, and net pay arithmetic",
+            "ja": "総支給額・控除額・差引支給予定額を検算"
+          }
+        },
+        {
+          "title": {
+            "ko": "직원 모바일에서 개인 월간 현황 확인",
+            "en": "Present an employee-facing monthly overview on mobile",
+            "ja": "従業員向けモバイル画面で月間状況を表示"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "hr-leave-approval",
+        "hr-payroll-review"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "hr-employee-profile"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "관리자용 Desktop WebP 4장과 직원용 Mobile WebP 1장을 정적 HTML/CSS/SVG로 렌더링한 자체 프론트 UI 데모입니다. 실제 직원·고객 데이터가 아니며 출퇴근 인증, 휴가 결재 실행, 급여 자동 계산, 이체, 세무 신고, 로그인·서버·DB·API 연동은 구현되지 않았습니다. 공제 금액 및 근무일은 검산을 위한 가상 값입니다.",
+        "en": "An independent static front-end UI demo rendered as four Desktop WebP images and one Mobile WebP image using HTML, CSS, and SVG. No live employee or client data is included. Clock-in authentication, actionable leave approval, automatic payroll calculation, bank transfers, tax filings, login, servers, databases, and API integration were not implemented. All payroll figures and schedules are fictional examples for visual reconciliation.",
+        "ja": "HTML/CSS/SVGで静的にレンダリングした管理者向けデスクトップWebP画像4点とモバイルWebP画像1点からなる独立UIデモです。実在の従業員・顧客データは使用していません。実際の打刻認証、休暇承認処理、給与自動計算、振込、税務申告、ログイン、サーバー、DB、API連携は実装していません。金額や勤務日数は検算用の架空データです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "근태와 휴가를 별도 원장으로 관리하면서도 월말 대조 결과와 직원의 확인 경험을 하나의 일관된 UI로 보여줍니다.",
+        "en": "Five complementary screens illustrate how separate attendance and leave records can feed a consistent month-end review and employee experience.",
+        "ja": "勤怠と休暇の台帳を別々に保ちながら、月末の照合と従業員による確認を一貫したUIとして表現しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "hr-attendance-ledger",
+      "file": "hr-attendance-ledger.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "직원 8명의 2026년 11월 근태와 박서연 EMP-042의 출근 19일 및 승인휴가 1일을 대조하는 근태 원장",
+        "en": "Monthly attendance ledger for eight fictitious employees, reconciling EMP-042’s 19 worked days and one approved paid leave day",
+        "ja": "架空の従業員8名の11月勤怠と、EMP-042の出勤19日・承認済み有給休暇1日を照合する勤怠台帳"
+      },
+      "caption": {
+        "ko": "11월 소정근무 20일을 출근 19일과 승인휴가 1일로 대조하고, 직원 2명의 정정 대기 항목을 분리했습니다.",
+        "en": "The 20 scheduled days reconcile to 19 days worked and one approved leave day; two other employees have separate correction items.",
+        "ja": "11月の所定勤務20日を出勤19日と承認済み有給休暇1日に照合し、別の従業員2名の修正待ちを区別しています。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "hr-leave-approval",
+      "file": "hr-leave-approval.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "김지훈의 12월 3~4일 연차 2일 신청과 잔여 7.5일에서 승인 후 5.5일로 변하는 예상 잔액을 보여주는 승인함",
+        "en": "Leave approval inbox showing a December 3–4 two-day request and a projected reduction from 7.5 to 5.5 days of remaining leave",
+        "ja": "12月3〜4日の2日間の休暇申請と、承認後に残日数が7.5日から5.5日になる見込みを示す承認一覧"
+      },
+      "caption": {
+        "ko": "LV-1174의 연차 2일 신청을 검토하며 잔여일수 7.5→5.5일과 팀 업무 인계 담당자를 함께 확인합니다.",
+        "en": "Review request LV-1174 for two days, the projected balance of 7.5 to 5.5 days, and the designated coverage colleague.",
+        "ja": "申請LV-1174の2日間を確認し、残日数の7.5→5.5日と業務引き継ぎ担当者を併せて表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "hr-payroll-review",
+      "file": "hr-payroll-review.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "박서연 EMP-042의 지급 총액 320만원, 공제 38만5천원, 실지급 예정액 281만5천원과 근태 검산을 보여주는 급여 검토 원장",
+        "en": "Payroll review ledger reconciling EMP-042’s ₩3.2 million gross pay, ₩385,000 deductions, and ₩2,815,000 estimated net pay",
+        "ja": "EMP-042の総支給額320万ウォン、控除38万5千ウォン、差引支給予定281万5千ウォンを検算する給与確認台帳"
+      },
+      "caption": {
+        "ko": "지급 ₩3,200,000에서 가상 공제 ₩385,000을 차감해 실지급 예정 ₩2,815,000을 확인합니다. 실제 세법 계산값은 아닙니다.",
+        "en": "The fictional gross of ₩3,200,000 minus ₩385,000 in example deductions yields ₩2,815,000 net; these are not tax-calculated figures.",
+        "ja": "架空の支給額3,200,000ウォンから控除385,000ウォンを差し引き、予定額2,815,000ウォンを確認します。実税額の計算ではありません。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "hr-employee-profile",
+      "file": "hr-employee-profile.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "가상 직원 EMP-042의 기본 정보, 입사와 부서 이동 이력, 11월 근태 및 급여 원장 연결을 보여주는 직원 프로필 화면",
+        "en": "Employee record screen with de-identified EMP-042 profile, fictional contract and assignment history, and attendance/payroll links",
+        "ja": "架空の社員EMP-042の基本情報、配属履歴、11月の勤怠・給与台帳への関連情報を示す従業員プロフィール画面"
+      },
+      "caption": {
+        "ko": "비식별 직원 정보와 3건의 가상 배정 이력을 근태·휴가·급여 원장 검토 상태와 연결했습니다.",
+        "en": "A de-identified employee record and three fictional assignment events are linked to attendance, leave, and payroll review statuses.",
+        "ja": "匿名化した社員情報と架空の配属履歴3件を勤怠・休暇・給与の確認状況に結び付けました。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "hr-employee-mobile",
+      "file": "hr-employee-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "직원 박서연의 11월 출근 19일, 승인휴가 1일, 잔여 연차 8일, 실지급 예정액 281만5천원을 나타낸 모바일 근무 현황",
+        "en": "Mobile employee screen with 19 work days, one approved leave day, eight days of remaining leave, and ₩2,815,000 expected pay",
+        "ja": "出勤19日、承認済み有給休暇1日、残休暇8日、支給予定額2,815,000ウォンを示す従業員向けモバイル画面"
+      },
+      "caption": {
+        "ko": "직원 전용 세로 화면에서 근태 달력, 잔여 연차 8일, 가상 급여 예정액 ₩2,815,000을 함께 확인합니다.",
+        "en": "A purpose-built mobile screen combines the attendance calendar, eight remaining leave days, and fictional ₩2,815,000 expected net pay.",
+        "ja": "スマートフォン向けに最適化した画面で、勤怠カレンダー、残休暇8日、架空の支給予定額2,815,000ウォンを確認できます。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

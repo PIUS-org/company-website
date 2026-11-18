@@ -1,0 +1,352 @@
+{
+  "id": "fintech-product-landing",
+  "slug": "fintech-product-landing",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 570,
+  "includeInPdf": true,
+  "title": {
+    "ko": "플로우핀",
+    "en": "FlowFin",
+    "ja": "フローフィン"
+  },
+  "subtitle": {
+    "ko": "거래를 이해하고 분류하는 금융 업무 프론트",
+    "en": "A clear front end for reviewing and categorizing transactions",
+    "ja": "取引の確認と分類をわかりやすくする金融サービスUI"
+  },
+  "summary": {
+    "ko": "제품 UI와 사용 흐름, 요금 비교, 가입 전환을 연결합니다.",
+    "en": "Connects real product-like screens to workflows, pricing and signup.",
+    "ja": "製品画面、利用フロー、料金比較、登録導線を一体化。"
+  },
+  "overview": {
+    "ko": "거래 검토, 분류, 요약 리포트를 설명하는 제품 인터페이스를 랜딩과 이용 흐름 속에서 직접 보여주는 핀테크 콘셉트입니다.",
+    "en": "A fintech interface concept that makes transaction review, categorization and report previews visible throughout its landing page and product walkthrough.",
+    "ja": "取引確認・分類・レポートの流れを、ランディングページと利用シナリオの中で示すフィンテックUIコンセプトです。"
+  },
+  "industry": {
+    "ko": "핀테크",
+    "en": "Fintech",
+    "ja": "フィンテック"
+  },
+  "categories": [
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#1F4E4F",
+    "accentInk": "#143333",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "fintech-product-landing-01"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / B실 claude-integration-prompt.txt. 이미지 5장은 b-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "제품 UI와 사용 흐름, 요금 비교, 가입 전환을 연결합니다.",
+        "en": "Connects real product-like screens to workflows, pricing and signup.",
+        "ja": "製品画面、利用フロー、料金比較、登録導線を一体化。"
+      },
+      "images": [
+        "fintech-product-landing-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "추상적인 금융 혜택보다 거래를 어떻게 확인하고 분류하는지 실제 제품 사용 화면을 먼저 이해하도록 구성했습니다.",
+        "en": "The product is explained through concrete transaction review and categorisation rather than unsupported financial promises.",
+        "ja": "抽象的な金融メリットより、取引をどう確認・分類するかを製品画面から理解できる構成です。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "제품 UI 히어로",
+          "en": "Product-first hero",
+          "ja": "製品画面を見せるトップ"
+        },
+        {
+          "ko": "거래 목록과 분류",
+          "en": "Transaction list and categories",
+          "ja": "取引一覧と分類"
+        },
+        {
+          "ko": "세 단계 사용 흐름",
+          "en": "Three-step workflow",
+          "ja": "3段階フロー"
+        },
+        {
+          "ko": "요금제 비교",
+          "en": "Pricing comparison",
+          "ja": "料金比較"
+        },
+        {
+          "ko": "모바일 계정 가입",
+          "en": "Mobile signup",
+          "ja": "モバイル登録"
+        }
+      ],
+      "images": [
+        "fintech-product-landing-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "제품 소개",
+            "en": "Product landing",
+            "ja": "製品紹介"
+          }
+        },
+        {
+          "title": {
+            "ko": "거래 검토",
+            "en": "Transaction review",
+            "ja": "取引確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "분류·리포트",
+            "en": "Categorize and report",
+            "ja": "分類・レポート"
+          }
+        },
+        {
+          "title": {
+            "ko": "플랜 선택",
+            "en": "Choose plan",
+            "ja": "プラン選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일 가입",
+            "en": "Mobile signup",
+            "ja": "モバイル登録"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "fintech-product-landing-03",
+        "fintech-product-landing-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "fintech-product-landing-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "가상 거래 데이터로 제작한 정적 UI 5장. 금융계좌 연결·실거래·실제 보안 인증·과금·가입 처리는 없습니다.",
+        "en": "Five static UI images with fictional transactions. No bank connections, live trading, security certification, billing or account registration.",
+        "ja": "架空の取引データによる静的UI画像5点。銀行連携、実取引、セキュリティ認証、課金、会員登録は未実装です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "실제 사용할 화면을 먼저 보여주는 명료한 제품 커뮤니케이션.",
+        "en": "Product communication grounded in the interface users would actually see.",
+        "ja": "利用者が実際に目にする画面から伝える、明快な製品紹介。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "fintech-product-landing-01",
+      "file": "fintech-product-landing-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "플로우핀 제품 랜딩 정적 UI 화면",
+        "en": "Static UI screenshot of FlowFin: Product landing",
+        "ja": "フローフィンの「製品トップ」静的UI画面"
+      },
+      "caption": {
+        "ko": "제품 랜딩",
+        "en": "Product landing",
+        "ja": "製品トップ"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "fintech-product-landing-02",
+      "file": "fintech-product-landing-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "플로우핀 핵심 기능 정적 UI 화면",
+        "en": "Static UI screenshot of FlowFin: Transaction tools",
+        "ja": "フローフィンの「取引管理機能」静的UI画面"
+      },
+      "caption": {
+        "ko": "거래 관리 기능",
+        "en": "Transaction tools",
+        "ja": "取引管理機能"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "fintech-product-landing-03",
+      "file": "fintech-product-landing-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "플로우핀 이용 시나리오 정적 UI 화면",
+        "en": "Static UI screenshot of FlowFin: Usage workflow",
+        "ja": "フローフィンの「利用フロー」静的UI画面"
+      },
+      "caption": {
+        "ko": "이용 시나리오",
+        "en": "Usage workflow",
+        "ja": "利用フロー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "fintech-product-landing-04",
+      "file": "fintech-product-landing-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "플로우핀 요금제 비교 정적 UI 화면",
+        "en": "Static UI screenshot of FlowFin: Pricing comparison",
+        "ja": "フローフィンの「料金比較」静的UI画面"
+      },
+      "caption": {
+        "ko": "요금제 비교",
+        "en": "Pricing comparison",
+        "ja": "料金比較"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "fintech-product-landing-05",
+      "file": "fintech-product-landing-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "플로우핀 모바일 가입 정적 UI 화면",
+        "en": "Static UI screenshot of FlowFin: Mobile signup",
+        "ja": "フローフィンの「モバイル登録」静的UI画面"
+      },
+      "caption": {
+        "ko": "모바일 가입",
+        "en": "Mobile signup",
+        "ja": "モバイル登録"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

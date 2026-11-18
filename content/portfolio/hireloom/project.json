@@ -22,9 +22,9 @@
     "ja": "応募者管理、履歴書確認、面接評価、採用判断をつなぐHR SaaSのUI構想。"
   },
   "overview": {
-    "ko": "채용 담당자와 면접관이 공고·서류·일정·평가를 연결해 협업하고, 지원자는 모바일에서 자신의 지원 및 면접 정보를 확인하는 구조를 제안합니다. 지원자 정보를 다루는 화면과 내부 평가 화면의 권한을 분리한 자체 UI 데모입니다.",
-    "en": "This independent UI concept connects job openings, applications, interview scheduling, scorecards, and offer reviews for recruiting teams. Candidate-facing mobile pages are kept separate from internal hiring feedback.",
-    "ja": "求人、応募書類、面接日程、評価シート、オファー検討を採用チームで共有する自主制作UIデモです。応募者向けの画面と社内評価画面を権限で分離します。"
+    "ko": "채용 담당자와 면접관이 공고·서류·일정·평가를 연결해 협업하고, 지원자는 모바일에서 자신의 지원 및 면접 정보를 확인하는 구조를 제안합니다. 지원자 정보를 다루는 화면과 내부 평가 화면의 권한을 분리한 자체 UI 데모입니다. 전체 지원자 12명은 서류 5·전화 3·실무 2·오퍼 1·채용 완료 1명으로 구분합니다. 대표 지원자 최하윤의 면접관 3명 평가 합계는 44/48이며, 최종 판단은 자동 점수가 아닌 담당자의 검토로 표현합니다.",
+    "en": "This independent UI concept connects job openings, applications, interview scheduling, scorecards, and offer reviews for recruiting teams. Candidate-facing mobile pages are kept separate from internal hiring feedback. Across openings, 12 applicants are grouped into screening 5, phone interview 3, panel interview 2, offer 1, and hired 1. Three interviewers score candidate Ha-yoon Choi 44/48 in total; decisions remain human-led.",
+    "ja": "求人、応募書類、面接日程、評価シート、オファー検討を採用チームで共有する自主制作UIデモです。応募者向けの画面と社内評価画面を権限で分離します。 全求人の応募者12名は書類5・電話面接3・実務面接2・オファー1・採用済み1に分かれます。代表応募者チェ・ハユンの面接評価は3名合計44/48で、最終判断は人が行います。"
   },
   "industry": {
     "ko": "HR Tech·채용 관리 SaaS",
@@ -36,6 +36,7 @@
     "web",
     "mobile"
   ],
+  "mainCategory": "mobile",
   "platforms": [
     {
       "type": "admin",
@@ -196,9 +197,9 @@
         "ja": "架空企業NORTHSTAR DIGITALのProduct Designer採用を例に、書類確認、面接調整、構造化評価、社内オファー承認を連携します。"
       },
       "body": {
-        "ko": "전체 지원자 12명은 서류 5·전화 3·실무 2·오퍼 1·채용 완료 1명으로 구분합니다. 대표 지원자 최하윤의 면접관 3명 평가 합계는 44/48이며, 최종 판단은 자동 점수가 아닌 담당자의 검토로 표현합니다.",
-        "en": "Across openings, 12 applicants are grouped into screening 5, phone interview 3, panel interview 2, offer 1, and hired 1. Three interviewers score candidate Ha-yoon Choi 44/48 in total; decisions remain human-led.",
-        "ja": "全求人の応募者12名は書類5・電話面接3・実務面接2・オファー1・採用済み1に分かれます。代表応募者チェ・ハユンの面接評価は3名合計44/48で、最終判断は人が行います。"
+        "ko": "채용 단계별 메모와 면접 평가가 지원자 한 명의 기록으로 연결되지 않으면 의사결정 근거가 흐려집니다.",
+        "en": "Applicant progression, interview assessments, and hiring decisions need a traceable record for each candidate.",
+        "ja": "選考段階ごとのメモと面接評価が一人の応募者の記録につながらなければ、判断根拠が不明確になります。"
       },
       "goals": [
         {

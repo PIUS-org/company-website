@@ -1,0 +1,294 @@
+{
+  "id": "local-fitness-class-app",
+  "slug": "local-fitness-class-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 510,
+  "includeInPdf": true,
+  "title": {
+    "ko": "로컬 피트니스 클래스 앱",
+    "en": "Local Fitness Classes",
+    "ja": "地域フィットネス・クラスアプリ"
+  },
+  "subtitle": {
+    "ko": "동네에서 시작하는 나만의 운동 루틴",
+    "en": "Fitness that fits your neighborhood",
+    "ja": "近所から始まる自分らしい運動習慣"
+  },
+  "summary": {
+    "ko": "지역 클래스 탐색부터 결제 직전 확인, 예약 일정 관리까지 연결한 웰니스 모바일 UI 데모입니다.",
+    "en": "A wellness mobile UI concept connecting class discovery, booking review, and personal schedules.",
+    "ja": "地域のクラス探しから予約確認、スケジュール管理までをつなぐウェルネスアプリのUIデモです。"
+  },
+  "overview": {
+    "ko": "지역 클래스 탐색부터 결제 직전 확인, 예약 일정 관리까지 연결한 웰니스 모바일 UI 데모입니다.",
+    "en": "A wellness mobile UI concept connecting class discovery, booking review, and personal schedules.",
+    "ja": "地域のクラス探しから予約確認、スケジュール管理までをつなぐウェルネスアプリのUIデモです。"
+  },
+  "industry": {
+    "ko": "지역 피트니스 클래스",
+    "en": "Local fitness classes",
+    "ja": "地域フィットネスクラス"
+  },
+  "categories": [
+    "mobile"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#D2502B",
+    "accentInk": "#341B14",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "local-fitness-class-app-01",
+    "local-fitness-class-app-03"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / C실 claude-integration-prompt.txt. 이미지 5장은 c-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "동네 클래스를 찾고, 남은 자리를 확인하고, 내 일정으로 관리하기까지.",
+        "en": "Find a class nearby, check the places left and keep it in your schedule.",
+        "ja": "近くのクラスを探し、残席を確かめ、自分の予定として管理するまで。"
+      },
+      "images": [
+        "local-fitness-class-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "강사·종목·난이도·시간·가격을 선택하는 과정이 예약 확인의 동일한 수업 정보로 이어지도록 구성했습니다.",
+        "en": "Instructor, class type, level, time, and price need to match the final booking record.",
+        "ja": "講師・種目・難易度・日時・料金の選択が予約確認で同じ授業情報につながる構成です。"
+      },
+      "body": {
+        "ko": "운동 종목과 난이도 탐색, 스튜디오 및 강사 안내, 좌석 확인, 이용권 선택, 예약 현황 관리를 설계했습니다.",
+        "en": "Explore disciplines and levels, review studios and instructors, check seat availability, select a pass, and manage bookings.",
+        "ja": "種目と難易度、講師・スタジオ情報、空席、利用券選択、予約状況を設計しました。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "성수동에서 매트 필라테스 검색",
+            "en": "Find a mat Pilates class in Seongsu",
+            "ja": "聖水でマットピラティスを検索"
+          }
+        },
+        {
+          "title": {
+            "ko": "김서윤 강사의 11월 14일 10시 수업 확인",
+            "en": "Inspect Seoyun Kim’s November 14 10:00 session",
+            "ja": "キム・ソユン講師の11月14日10時の授業を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "28,000원 이용권 선택",
+            "en": "Select a ₩28,000 pass",
+            "ja": "28,000ウォンの利用券を選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "예약 일정 확인",
+            "en": "Check schedule",
+            "ja": "予約確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "focus",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "local-fitness-class-app-03",
+        "local-fitness-class-app-02",
+        "local-fitness-class-app-04",
+        "local-fitness-class-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "04",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "클래스 예약 및 일정 상태를 시각화한 정적 프론트 화면 5장입니다. 실제 결제·예약 API와 스튜디오 시스템은 연동되지 않았습니다.",
+        "en": "Five static frontend screens depict booking states; payments, booking APIs, and studio systems are not connected.",
+        "ja": "全5画面の静的フロントUIです。実際の決済・予約API・スタジオシステムとは連携していません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "05",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "내 주변의 운동 기회를 발견하고 나의 주간 루틴으로 이어지게 했습니다.",
+        "en": "From discovering nearby classes to building a routine that lasts.",
+        "ja": "身近な運動との出会いを継続的な習慣につなげます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "local-fitness-class-app-01",
+      "file": "local-fitness-class-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "로컬 피트니스 클래스 앱 — 추천 클래스와 다음 예약을 보여주는 홈 화면",
+        "en": "Local Fitness Classes — Recommended classes and upcoming booking mobile screen",
+        "ja": "地域フィットネスクラスアプリ — おすすめクラスと次回予約の画面"
+      },
+      "caption": {
+        "ko": "추천 클래스와 다음 예약을 보여주는 홈",
+        "en": "Recommended classes and upcoming booking",
+        "ja": "おすすめクラスと次回予約"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "local-fitness-class-app-02",
+      "file": "local-fitness-class-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "로컬 피트니스 클래스 앱 — 필터와 지도형 주변 클래스 검색 화면",
+        "en": "Local Fitness Classes — Filtered nearby classes with map preview mobile screen",
+        "ja": "地域フィットネスクラスアプリ — フィルターと地図による周辺検索の画面"
+      },
+      "caption": {
+        "ko": "필터와 지도형 주변 클래스 검색",
+        "en": "Filtered nearby classes with map preview",
+        "ja": "フィルターと地図による周辺検索"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "local-fitness-class-app-03",
+      "file": "local-fitness-class-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "로컬 피트니스 클래스 앱 — 강사·장소·수업·잔여 좌석 상세 화면",
+        "en": "Local Fitness Classes — Instructor, venue, session and available seats mobile screen",
+        "ja": "地域フィットネスクラスアプリ — 講師・会場・残席の詳細の画面"
+      },
+      "caption": {
+        "ko": "강사·장소·수업·잔여 좌석 상세",
+        "en": "Instructor, venue, session and available seats",
+        "ja": "講師・会場・残席の詳細"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "local-fitness-class-app-04",
+      "file": "local-fitness-class-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "로컬 피트니스 클래스 앱 — 수업 시간과 이용권 결제 전 확인 화면",
+        "en": "Local Fitness Classes — Time and pass selection before payment mobile screen",
+        "ja": "地域フィットネスクラスアプリ — 受講時間と利用券の確認の画面"
+      },
+      "caption": {
+        "ko": "수업 시간과 이용권 결제 전 확인",
+        "en": "Time and pass selection before payment",
+        "ja": "受講時間と利用券の確認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "local-fitness-class-app-05",
+      "file": "local-fitness-class-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "로컬 피트니스 클래스 앱 — 예약 확정과 취소·변경 안내 화면",
+        "en": "Local Fitness Classes — Confirmed booking, cancellation and changes mobile screen",
+        "ja": "地域フィットネスクラスアプリ — 確定した予約と変更・キャンセル案内の画面"
+      },
+      "caption": {
+        "ko": "예약 확정과 취소·변경 안내",
+        "en": "Confirmed booking, cancellation and changes",
+        "ja": "確定した予約と変更・キャンセル案内"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

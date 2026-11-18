@@ -36,6 +36,7 @@
     "platform",
     "web"
   ],
+  "mainCategory": "commerce",
   "platforms": [
     {
       "type": "web",
@@ -191,9 +192,9 @@
         "ja": "プロジェクト概要"
       },
       "lead": {
-        "ko": "고정 가격으로 상품을 한 개씩 구매하는 일반 쇼핑몰과 달리, 거래처 계약 가격과 박스 단위 발주, 내부 승인 절차를 중심으로 설계했습니다.",
-        "en": "Unlike single-item retail checkout, the concept centers on contract pricing, case-pack orders, and internal purchasing approvals.",
-        "ja": "通常の小売購入とは異なり、取引先別の契約価格、ケース単位の発注、社内承認を中心に設計しています。"
+        "ko": "도매 발주는 상품 탐색보다 거래처별 단가와 발주 단위, 승인 순서를 먼저 확인해야 하는 구매 과정입니다.",
+        "en": "Wholesale ordering depends on account-specific prices, pack quantities, and internal approval rules, not just a consumer-style cart.",
+        "ja": "卸売発注では商品探しだけでなく、取引先別価格・発注単位・社内承認の順序が重要になります。"
       },
       "body": {
         "ko": "가상 구매사 COMMON CORNER가 세 가지 리빙 상품을 총 72개 발주하는 예시를 사용합니다. 공급가액 ₩640,800, 부가세 ₩64,080, 배송비 ₩0, 총액 ₩704,880으로 견적과 발주 정보를 일치시킵니다.",

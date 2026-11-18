@@ -1,0 +1,310 @@
+{
+  "id": "social-campaign-builder",
+  "slug": "social-campaign-builder",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 540,
+  "includeInPdf": true,
+  "title": {
+    "ko": "소셜 캠페인 빌더",
+    "en": "Social Campaign Builder",
+    "ja": "ソーシャル・キャンペーン・ビルダー"
+  },
+  "subtitle": {
+    "ko": "SNS 콘텐츠의 기획에서 게시 예정 검토까지 연결하는 시각적 편집 도구",
+    "en": "A visual workspace to plan, create, review, and schedule social campaigns.",
+    "ja": "SNSキャンペーンの企画から公開予定の確認までをつなぐビジュアル編集ツール"
+  },
+  "summary": {
+    "ko": "플로우 캔버스, 콘텐츠 캘린더, 소재 편집, 버전별 승인과 게시 예정 화면.",
+    "en": "A flow canvas, content calendar, asset editor, version approvals and scheduled posts.",
+    "ja": "フローキャンバス、投稿カレンダー、素材編集、版ごとの承認、公開予定の画面。"
+  },
+  "overview": {
+    "ko": "채널별 콘텐츠와 제작 단계가 분리되지 않도록 플로우 캔버스, 일정, 소재 편집, 버전 검수를 연결했습니다.",
+    "en": "A static interface concept unifying channel content and production stages with a flow canvas, publishing calendar, editor, and review.",
+    "ja": "チャネルごとの素材と制作段階をフローキャンバス、カレンダー、編集画面、版のレビューで一元的に示します。"
+  },
+  "industry": {
+    "ko": "마케팅·광고",
+    "en": "Marketing and advertising",
+    "ja": "マーケティング・広告"
+  },
+  "categories": [
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#C2673D",
+    "accentInk": "#341E14",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "social-campaign-builder-02"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / E실 claude-integration-prompt.txt. 이미지 5장은 e-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "플로우 캔버스와 캘린더 위에서 소재를 편집하고 버전별로 검수합니다.",
+        "en": "Edit assets on a flow canvas and a calendar, and review them version by version.",
+        "ja": "フローキャンバスとカレンダーの上で素材を編集し、版ごとに確認します。"
+      },
+      "images": [
+        "social-campaign-builder-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "캠페인 플로우·게시 일정·소재 버전·승인 상태를 연결하되 승인되지 않은 콘텐츠를 게시 확정처럼 보이지 않게 했습니다.",
+        "en": "Campaign flows, schedules, creative versions, and approvals must stay connected without treating drafts as published posts.",
+        "ja": "キャンペーンの流れ、投稿日程、素材の版、承認状態を結び、未承認素材を公開確定と誤認させない構成です。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "캠페인 설계",
+            "en": "Map campaign",
+            "ja": "企画"
+          }
+        },
+        {
+          "title": {
+            "ko": "일정 배치",
+            "en": "Plan calendar",
+            "ja": "日程設定"
+          }
+        },
+        {
+          "title": {
+            "ko": "소재 제작",
+            "en": "Edit creative",
+            "ja": "素材編集"
+          }
+        },
+        {
+          "title": {
+            "ko": "검수",
+            "en": "Review version",
+            "ja": "レビュー"
+          }
+        },
+        {
+          "title": {
+            "ko": "게시 예정 확인",
+            "en": "Check scheduled posts",
+            "ja": "公開予定確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "social-campaign-builder-02",
+        "social-campaign-builder-03",
+        "social-campaign-builder-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "social-campaign-builder-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "프론트엔드 정적 UI 시각화 5화면(데스크톱 4, 모바일 1). 서버, 로그인, 저장, 실시간 협업, 외부 연동 미구현. 화면의 데이터는 모두 데모용 가상 데이터입니다.",
+        "en": "Five static front-end interface visuals (four desktop, one mobile). No backend, authentication, persistence, live collaboration, or external integrations. All displayed data is fictional demo data.",
+        "ja": "デスクトップ4画面、モバイル1画面の静的UIビジュアル。サーバー、認証、保存、リアルタイム協業、外部連携は未実装。表示データはデモ用の架空データです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "채널별 소재가 캘린더와 플로우 위에 놓여, 무엇이 언제 어떤 상태로 나가는지 한눈에 따라갈 수 있습니다.",
+        "en": "Each channel’s assets sit on the calendar and the flow, so you can follow what goes out, when, and in what state.",
+        "ja": "チャネルごとの素材がカレンダーとフローの上に並び、何がいつどの状態で出るのかを一目で追えます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "social-campaign-builder-01",
+      "file": "social-campaign-builder-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "소셜 캠페인 빌더의 캠페인 플로우 캔버스 정적 화면. WINTER EDIT 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static campaign flow canvas screen in Social Campaign Builder, showing the demo project “Winter Edit Campaign”.",
+        "ja": "ソーシャルキャンペーンビルダーのキャンペーンフローを示す静的UI画面。デモ案件「ウィンター・エディット・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "캠페인 플로우 캔버스",
+        "en": "Campaign flow canvas",
+        "ja": "キャンペーンフロー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "social-campaign-builder-02",
+      "file": "social-campaign-builder-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "소셜 캠페인 빌더의 콘텐츠 캘린더 정적 화면. WINTER EDIT 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static content publishing calendar screen in Social Campaign Builder, showing the demo project “Winter Edit Campaign”.",
+        "ja": "ソーシャルキャンペーンビルダーの投稿カレンダーを示す静的UI画面。デモ案件「ウィンター・エディット・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "콘텐츠 캘린더",
+        "en": "Content publishing calendar",
+        "ja": "投稿カレンダー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "social-campaign-builder-03",
+      "file": "social-campaign-builder-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "소셜 캠페인 빌더의 캠페인 소재 편집 정적 화면. WINTER EDIT 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static creative asset editor screen in Social Campaign Builder, showing the demo project “Winter Edit Campaign”.",
+        "ja": "ソーシャルキャンペーンビルダーの素材編集画面を示す静的UI画面。デモ案件「ウィンター・エディット・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "캠페인 소재 편집",
+        "en": "Creative asset editor",
+        "ja": "素材編集画面"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "social-campaign-builder-04",
+      "file": "social-campaign-builder-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "소셜 캠페인 빌더의 버전별 승인 검수 정적 화면. WINTER EDIT 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static version approval review screen in Social Campaign Builder, showing the demo project “Winter Edit Campaign”.",
+        "ja": "ソーシャルキャンペーンビルダーのバージョン承認を示す静的UI画面。デモ案件「ウィンター・エディット・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "버전별 승인 검수",
+        "en": "Version approval review",
+        "ja": "バージョン承認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "social-campaign-builder-05",
+      "file": "social-campaign-builder-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "소셜 캠페인 빌더의 게시 예정 콘텐츠 정적 화면. WINTER EDIT 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static scheduled post preview screen in Social Campaign Builder, showing the demo project “Winter Edit Campaign”.",
+        "ja": "ソーシャルキャンペーンビルダーの公開予定の確認を示す静的UI画面。デモ案件「ウィンター・エディット・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "게시 예정 콘텐츠",
+        "en": "Scheduled post preview",
+        "ja": "公開予定の確認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

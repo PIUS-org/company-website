@@ -1,0 +1,5 @@
+$ npm ci --no-audit --no-fund
+# 2026-11-16T20:36:31+09:00 · commit 4955438
+
+added 34 packages in 19s
+# exit=0

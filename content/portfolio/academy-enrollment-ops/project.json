@@ -1,0 +1,363 @@
+{
+  "id": "academy-enrollment-ops",
+  "slug": "academy-enrollment-ops",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 250,
+  "includeInPdf": true,
+  "title": {
+    "ko": "SOMO 학원 수강·출결·수납 관리",
+    "en": "SOMO Academy Enrollment, Attendance & Billing",
+    "ja": "SOMO 学習塾の受講・出欠・月謝管理"
+  },
+  "subtitle": {
+    "ko": "반 편성부터 보호자 확인까지 연결되는 학원 운영 화면",
+    "en": "Connected workflows from class scheduling to parent updates",
+    "ja": "クラス編成から保護者の確認までつながる運営画面"
+  },
+  "summary": {
+    "ko": "반별 시간표, 수강생 18명의 출결, 월 수강료 수납, 보호자 조회와 상담 후속 조치를 하나의 데이터로 연결한 WEB·APP 정적 UI 데모.",
+    "en": "A static WEB/APP demo linking a weekly timetable, attendance for 18 students, monthly tuition collection, guardian access, and counseling follow-ups using shared sample records.",
+    "ja": "週間時間割、18名の出欠管理、月謝の入金確認、保護者アプリ、学習相談のフォローアップを同じサンプルデータで結んだWEB・APPの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "SOMO는 가상 학원의 일상 운영 업무를 정리한 WEB·APP 인터페이스입니다. 운영자는 반과 강의실 시간표를 편성하고, 강사는 출결을 확인하며, 수납 담당자는 월 청구와 미납 내역을 대조합니다. 보호자는 앱에서 자녀의 수업·출결·수강료를 조회합니다.",
+    "en": "SOMO is a fictional academy operations interface spanning web and mobile. Coordinators assign classes and rooms, instructors review attendance, billing staff reconcile monthly tuition, and guardians view their child’s timetable, attendance, and payment status through the app.",
+    "ja": "SOMOは、架空の学習塾の日常業務を想定したWeb・モバイルUIです。運営担当者はクラスと教室の時間割を組み、講師は出欠を確認し、経理担当者は月謝の請求・未入金を照合します。保護者はアプリで子どもの授業予定、出欠、月謝の状態を確認できます。"
+  },
+  "industry": {
+    "ko": "교육기관·학원 운영 관리",
+    "en": "Private education and academy operations",
+    "ja": "学習塾・教育機関の運営管理"
+  },
+  "categories": [
+    "erp",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "erp",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#5E7599",
+    "accentInk": "#1F2733",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "academy-class-calendar",
+    "academy-parent-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 C실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "반별 시간표, 수강생 18명의 출결, 월 수강료 수납, 보호자 조회와 상담 후속 조치를 하나의 데이터로 연결한 WEB·APP 정적 UI 데모.",
+        "en": "A static WEB/APP demo linking a weekly timetable, attendance for 18 students, monthly tuition collection, guardian access, and counseling follow-ups using shared sample records.",
+        "ja": "週間時間割、18名の出欠管理、月謝の入金確認、保護者アプリ、学習相談のフォローアップを同じサンプルデータで結んだWEB・APPの静的UIデモです。"
+      },
+      "images": [
+        "academy-class-calendar"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "반별 시간표, 학생 출결, 월 수납 내역과 보호자 안내가 개별 화면에 흩어지면 동일 학생의 상태를 교차 확인하기 어렵습니다. 수업일·납부월·상담 후속 일정처럼 기준 시점이 다른 데이터를 일관되게 보여줄 필요가 있습니다.",
+        "en": "When class schedules, attendance logs, monthly invoices, and guardian messages live in disconnected views, staff must manually cross-check student records. The interface needs to distinguish a completed class session from a billing month and a future counseling action without confusing their status dates.",
+        "ja": "時間割、出欠記録、月謝の請求情報、保護者への案内が分かれていると、同じ生徒に関する状態の照合に手間がかかります。授業実施日、請求対象月、相談後の対応予定日を混同せず、統一したデータで把握できる表示が必要です。"
+      },
+      "body": {
+        "ko": "반별 출결과 월 수납, 보호자 알림을 같은 시점의 데이터로 오인하지 않도록 수업일과 청구월을 명확히 구분했습니다.",
+        "en": "Class attendance, monthly tuition, and guardian updates need different reference dates while remaining linked to the same student.",
+        "ja": "授業ごとの出欠、月次の受講料、保護者向け案内は基準時点を区別しながら同じ生徒に結びます。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "운영자 시간표: 11월 9–14일 주간 수업·강의실 배정 및 CLASS-018 선택 상세",
+          "en": "Operator timetable: week of November 9–14, room allocation, and selected class CLASS-018",
+          "ja": "運営者の時間割：11月9～14日の授業・教室割り当てとCLASS-018の詳細確認"
+        },
+        {
+          "ko": "강사·운영자 출결: 11월 11일 중등 영어 심화 A의 18명 명부와 출석 16명·결석 2명 확인",
+          "en": "Attendance roster: 18 students in Intermediate English Advanced A, with 16 present and two absent on November 11",
+          "ja": "出欠名簿：11月11日の中等英語応用Aクラス18名について、出席16名・欠席2名を確認"
+        },
+        {
+          "ko": "수납 관리: 11월 수강료 18건 총 ₩6,300,000 중 수납 16건 ₩5,600,000, 미납 2건 ₩700,000 대조",
+          "en": "Tuition operations: 18 invoices totaling KRW 6,300,000; 16 paid totaling KRW 5,600,000; two outstanding totaling KRW 700,000",
+          "ja": "月謝管理：請求総額6,300,000ウォン、入金16件5,600,000ウォン、未入金2件700,000ウォンを照合"
+        },
+        {
+          "ko": "보호자 앱: 가상 학생 STD-015의 수업 일정, 결석 확정 상태와 미납 청구 ₩350,000 조회",
+          "en": "Guardian app: sample student STD-015’s schedule, confirmed absence, and outstanding KRW 350,000 invoice",
+          "ja": "保護者アプリ：サンプル生徒STD-015の授業予定、確定済みの欠席、未入金月謝350,000ウォンを確認"
+        },
+        {
+          "ko": "상담 이력: 해당 학생의 결석 이후 학습 보완 메모와 11월 13일 후속 조치 예정 항목 정리",
+          "en": "Counseling log: a fictional learning-recovery note and follow-up actions scheduled for November 13",
+          "ja": "学習相談：欠席後の学習補完メモと11月13日のフォローアップ予定を整理"
+        }
+      ],
+      "images": [
+        "academy-parent-mobile"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "학원 운영자가 강사·강의실·반별 수업을 주간 시간표에 배정",
+            "en": "An operator allocates classes, instructors, and rooms on the weekly schedule",
+            "ja": "運営担当者が週間時間割に講師・教室・クラスを割り当てる"
+          }
+        },
+        {
+          "title": {
+            "ko": "11월 11일 CLASS-018 수업 종료 후 18명 출결을 확정",
+            "en": "The November 11 session of CLASS-018 closes with 18 attendance records confirmed",
+            "ja": "11月11日のCLASS-018授業後、18名の出欠を確定する"
+          }
+        },
+        {
+          "title": {
+            "ko": "11월 수강료를 학생별로 청구하고 납부 16건과 미납 2건을 구분",
+            "en": "November tuition is billed and 16 payments are reconciled while two remain unpaid",
+            "ja": "11月の月謝を生徒ごとに請求し、入金16件と未入金2件を区別する"
+          }
+        },
+        {
+          "title": {
+            "ko": "보호자가 앱에서 익명 처리된 자녀의 출결·수강료·다음 수업을 조회",
+            "en": "A guardian reviews their anonymized child’s attendance, tuition, and next session in the app",
+            "ja": "保護者がアプリで匿名化された子どもの出欠、月謝、次回授業を確認する"
+          }
+        },
+        {
+          "title": {
+            "ko": "담당자가 상담 메모를 남기고 11월 13일 학습 보완 후속 항목을 관리",
+            "en": "An instructor drafts a counseling note and plans academic follow-up for November 13",
+            "ja": "講師が相談メモを作成し、11月13日の学習支援項目を予定として管理する"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "academy-attendance-roster",
+        "academy-tuition-billing"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "academy-counseling-history"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "PIUS가 자체 제작한 가상 교육 운영 시스템의 정적 화면 포트폴리오입니다. HTML/CSS/SVG로 웹 4장과 모바일 1장을 디자인·렌더링했습니다. 실제 출결 수정·청구·수납·알림 발송·상담 저장·사용자 인증·서버·DB는 구현하지 않았습니다. 학교, 수강생, 금액과 상담 이력은 전부 가상 예시입니다.",
+        "en": "A fictional, independently produced static UI portfolio demo by PIUS. Four web screenshots and one mobile screenshot were designed and rendered with HTML, CSS, and SVG. No live attendance editing, billing, payments, notification delivery, counseling persistence, authentication, server, or database were implemented. Academy records, students, amounts, and notes are illustrative.",
+        "ja": "PIUSが独自に制作した架空の教育運営システムの静的UIポートフォリオです。HTML・CSS・SVGでWeb画面4枚とモバイル画面1枚を設計・レンダリングしました。実際の出欠変更、請求、入金、通知配信、相談記録の保存、認証、サーバー、データベースは実装していません。学校・生徒・金額・相談履歴はすべてサンプルです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "시간표·출결·수납·보호자 조회·상담을 동일한 반과 학생의 데이터로 연결해 학원 운영 흐름을 화면에서 이해할 수 있도록 구성했습니다.",
+        "en": "One consistent class and student dataset ties scheduling, attendance, billing, guardian access, and counseling into a comprehensible academy workflow.",
+        "ja": "同一のクラス・生徒データを用いて、時間割、出欠、月謝、保護者向け表示、学習相談の運営フローを分かりやすく表現しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "academy-class-calendar",
+      "file": "academy-class-calendar.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "2026년 11월 9–14일 주간 수업과 A-203 강의실을 관리하는 SOMO 학원 관리자 시간표 화면",
+        "en": "SOMO academy weekly schedule for November 9–14 showing classes and classroom A-203 allocation",
+        "ja": "11月9～14日の週間授業とA-203教室の割り当てを表示するSOMO学習塾の時間割画面"
+      },
+      "caption": {
+        "ko": "CLASS-018 중등 영어 심화 A의 월·수·금 17시 수업과 담당 강사·강의실을 주간 일정에서 확인합니다.",
+        "en": "View Monday, Wednesday, and Friday 5:00 p.m. sessions for class CLASS-018 with its instructor and assigned room.",
+        "ja": "CLASS-018の月・水・金17時の授業、担当講師、教室を週間表で確認できます。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "academy-attendance-roster",
+      "file": "academy-attendance-roster.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "CLASS-018 수강생 18명 중 출석 16명·결석 2명의 11월 11일 확정 내역을 보여주는 SOMO 출결 명부",
+        "en": "SOMO attendance roster for class CLASS-018 on November 11 showing 16 present and two absent among 18 students",
+        "ja": "11月11日のCLASS-018で18名中出席16名・欠席2名を表示するSOMOの出欠名簿"
+      },
+      "caption": {
+        "ko": "학생별 출결 상태와 확인 시각, 결석자 변경 이력을 표시하고 16/18 출석을 검산합니다.",
+        "en": "Per-student attendance, confirmation times, and absence-change history reconcile to 16 of 18 present.",
+        "ja": "生徒ごとの出欠状態、確認時刻、欠席記録の変更履歴を照合し、出席16/18名を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "academy-tuition-billing",
+      "file": "academy-tuition-billing.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "18명 청구액 630만원과 수납 560만원·미납 70만원을 비교하는 SOMO 11월 수강료 수납 화면",
+        "en": "SOMO tuition billing ledger showing KRW 6.3 million invoiced, KRW 5.6 million received, and KRW 700,000 outstanding",
+        "ja": "請求額630万ウォンと入金560万ウォン・未入金70万ウォンを照合するSOMOの月謝管理画面"
+      },
+      "caption": {
+        "ko": "1인당 35만원의 11월 청구 18건을 수납 16건과 미납 2건으로 구분해 관리합니다.",
+        "en": "Eighteen KRW 350,000 invoices are separated into 16 paid accounts and two outstanding accounts.",
+        "ja": "1名35万ウォンの月謝請求18件を入金16件と未入金2件に分けて管理します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "academy-parent-mobile",
+      "file": "academy-parent-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "가상 학생 STD-015의 11월 11일 결석과 월 수강료 35만원 미납을 확인하는 SOMO 보호자 모바일 화면",
+        "en": "SOMO guardian app for fictional student STD-015 showing a confirmed absence and a KRW 350,000 unpaid tuition invoice",
+        "ja": "サンプル生徒STD-015の11月11日の欠席と未入金月謝35万ウォンを示すSOMO保護者アプリ"
+      },
+      "caption": {
+        "ko": "보호자는 다음 수업 일정과 지난 수업 출결, 11월 수강료 미납 상태를 하나의 앱 화면에서 확인합니다.",
+        "en": "Guardians review the next class, most recent attendance, and November tuition status in one mobile view.",
+        "ja": "保護者が次回授業、前回の出欠、11月分の月謝の状態を同じ画面で確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "academy-counseling-history",
+      "file": "academy-counseling-history.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "가상 수강생 STD-015의 결석 이후 학습 보완 기록과 11월 13일 후속 조치를 보여주는 SOMO 상담 업무 화면",
+        "en": "SOMO counseling workbench with a fictional learning-recovery note and November 13 follow-up tasks for student STD-015",
+        "ja": "サンプル生徒STD-015の欠席後の学習支援メモと11月13日の対応予定を示すSOMO相談管理画面"
+      },
+      "caption": {
+        "ko": "상담 메모와 강사 담당 후속 항목을 기록하되, 실제 알림 발송이나 상담 데이터 저장은 시연하지 않습니다.",
+        "en": "Internal counseling notes and planned instructor tasks are shown as static examples, with no messaging or data persistence.",
+        "ja": "内部相談メモと講師の対応予定を静的画面で示しており、実際の通知送信や記録保存は行いません。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

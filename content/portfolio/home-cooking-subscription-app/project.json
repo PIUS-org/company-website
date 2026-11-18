@@ -1,0 +1,302 @@
+{
+  "id": "home-cooking-subscription-app",
+  "slug": "home-cooking-subscription-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 560,
+  "includeInPdf": true,
+  "title": {
+    "ko": "홈쿠킹 구독 앱",
+    "en": "Home Cooking Subscription",
+    "ja": "ミールキット定期便アプリ"
+  },
+  "subtitle": {
+    "ko": "매주 식탁에 도착하는 균형 잡힌 한 끼",
+    "en": "Better meals delivered each week",
+    "ja": "毎週の食卓に届くバランスのよい一皿"
+  },
+  "summary": {
+    "ko": "음식 사진을 중심으로 식단 탐색, 메뉴 정보, 주간 구독 구성과 배송 일정을 연결한 소비자 커머스 UI 데모입니다.",
+    "en": "A photo-led meal-kit commerce UI spanning menu discovery, nutritional information, weekly subscriptions, and deliveries.",
+    "ja": "料理写真を中心に、メニュー探索から定期購入・配送予定までをまとめたコマースUIデモです。"
+  },
+  "overview": {
+    "ko": "음식 사진을 중심으로 식단 탐색, 메뉴 정보, 주간 구독 구성과 배송 일정을 연결한 소비자 커머스 UI 데모입니다.",
+    "en": "A photo-led meal-kit commerce UI spanning menu discovery, nutritional information, weekly subscriptions, and deliveries.",
+    "ja": "料理写真を中心に、メニュー探索から定期購入・配送予定までをまとめたコマースUIデモです。"
+  },
+  "industry": {
+    "ko": "밀키트 정기 구독",
+    "en": "Meal-kit subscription",
+    "ja": "ミールキット定期便"
+  },
+  "categories": [
+    "commerce",
+    "mobile"
+  ],
+  "mainCategory": "commerce",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#4C7A3C",
+    "accentInk": "#1E3018",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "home-cooking-subscription-app-01",
+    "home-cooking-subscription-app-04"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / C실 claude-integration-prompt.txt. 이미지 5장은 c-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "메뉴를 고르면 인분·횟수·배송일까지 한 번에 정리되는 구독.",
+        "en": "Pick the dishes, and servings, frequency and delivery day fall into place.",
+        "ja": "メニューを選べば、人数・回数・配送日まで一度に整う定期便。"
+      },
+      "images": [
+        "home-cooking-subscription-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "음식 이미지와 메뉴 재료·알레르기 정보, 구독 횟수·배송 일정을 같은 선택 기준으로 보여줍니다.",
+        "en": "Food imagery, ingredients, allergens, plan frequency, and delivery dates need to match the same selected meals.",
+        "ja": "料理写真、材料・アレルギー情報、定期便の回数と配送日を同じ選択条件で表示します。"
+      },
+      "body": {
+        "ko": "메뉴 필터, 조리시간·재료·알레르기 정보, 인분과 식사 횟수 선택, 할인 요약, 배송 캘린더를 설계했습니다.",
+        "en": "Filter meals, inspect preparation time and ingredients, select portions and frequency, review discounts, and manage delivery dates.",
+        "ja": "料理の絞り込み、調理時間・材料・アレルギー表示、人数と食数の選択、割引計算、配送カレンダーを設計しました。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "허브 치킨 그레인볼 탐색",
+            "en": "Explore herb chicken grain bowl",
+            "ja": "ハーブチキングレインボウルを探す"
+          }
+        },
+        {
+          "title": {
+            "ko": "재료 확인",
+            "en": "Review ingredients",
+            "ja": "材料確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "2인분·주 3끼 선택",
+            "en": "Choose two portions and three meals per week",
+            "ja": "2人分・週3食を選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "기본 77,400원에서 10% 할인된 69,660원 확인",
+            "en": "Review ₩69,660 after a 10% discount from ₩77,400",
+            "ja": "77,400ウォンから10%割引した69,660ウォンを確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "화요일 배송 관리",
+            "en": "Manage Tuesday delivery",
+            "ja": "火曜日の配送管理"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "focus",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "home-cooking-subscription-app-04",
+        "home-cooking-subscription-app-02",
+        "home-cooking-subscription-app-03",
+        "home-cooking-subscription-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "04",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "식재료·영양 수치와 결제 금액은 예시 데이터입니다. 5장의 정적 UI이며 실제 구독 결제·배송 조회 기능은 없습니다.",
+        "en": "Nutrition and pricing are sample data. Five static screens are provided without live subscription payments or shipment tracking.",
+        "ja": "栄養値と料金はサンプルデータです。全5画面の静的UIで、実際の定期決済・配送追跡はありません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "05",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "식단 선택부터 배송 관리까지 일상적인 결정을 쉽고 즐겁게 만듭니다.",
+        "en": "Make everyday meal decisions simpler, from discovery to delivery.",
+        "ja": "メニュー選びから配送管理まで、日々の選択を気軽にします。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "home-cooking-subscription-app-01",
+      "file": "home-cooking-subscription-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "홈쿠킹 구독 앱 — 오늘의 메뉴와 다음 배송 안내 화면",
+        "en": "Home Cooking Subscription — Featured meal and next delivery mobile screen",
+        "ja": "ミールキット定期便アプリ — 本日の料理と次回配送の画面"
+      },
+      "caption": {
+        "ko": "오늘의 메뉴와 다음 배송 안내",
+        "en": "Featured meal and next delivery",
+        "ja": "本日の料理と次回配送"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "home-cooking-subscription-app-02",
+      "file": "home-cooking-subscription-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "홈쿠킹 구독 앱 — 조리 시간·요리 유형별 메뉴 탐색 화면",
+        "en": "Home Cooking Subscription — Browse meals by preparation time and type mobile screen",
+        "ja": "ミールキット定期便アプリ — 調理時間と料理別の検索の画面"
+      },
+      "caption": {
+        "ko": "조리 시간·요리 유형별 메뉴 탐색",
+        "en": "Browse meals by preparation time and type",
+        "ja": "調理時間と料理別の検索"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "home-cooking-subscription-app-03",
+      "file": "home-cooking-subscription-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "홈쿠킹 구독 앱 — 재료·알레르기·가격을 담은 메뉴 상세 화면",
+        "en": "Home Cooking Subscription — Ingredients, allergens and meal pricing mobile screen",
+        "ja": "ミールキット定期便アプリ — 材料・アレルゲン・価格の詳細の画面"
+      },
+      "caption": {
+        "ko": "재료·알레르기·가격을 담은 메뉴 상세",
+        "en": "Ingredients, allergens and meal pricing",
+        "ja": "材料・アレルゲン・価格の詳細"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "home-cooking-subscription-app-04",
+      "file": "home-cooking-subscription-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "홈쿠킹 구독 앱 — 2인분·주 3끼·10% 할인 구독 요약 화면",
+        "en": "Home Cooking Subscription — Two portions, three meals weekly, 10% off mobile screen",
+        "ja": "ミールキット定期便アプリ — 2人分・週3食・10%割引の概要の画面"
+      },
+      "caption": {
+        "ko": "2인분·주 3끼·10% 할인 구독 요약",
+        "en": "Two portions, three meals weekly, 10% off",
+        "ja": "2人分・週3食・10%割引の概要"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "home-cooking-subscription-app-05",
+      "file": "home-cooking-subscription-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "홈쿠킹 구독 앱 — 화요일 배송 캘린더와 메뉴 변경 화면",
+        "en": "Home Cooking Subscription — Tuesday delivery calendar and menu changes mobile screen",
+        "ja": "ミールキット定期便アプリ — 火曜日の配送予定とメニュー変更の画面"
+      },
+      "caption": {
+        "ko": "화요일 배송 캘린더와 메뉴 변경",
+        "en": "Tuesday delivery calendar and menu changes",
+        "ja": "火曜日の配送予定とメニュー変更"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

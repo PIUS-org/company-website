@@ -17,20 +17,22 @@ function DesktopPhones({ imgs, lang }: { imgs: ImageAsset[]; lang: Lang }) {
   );
 }
 /** F · one key screen large + supporting screens */
-function Focus({ imgs, lang }: { imgs: ImageAsset[]; lang: Lang }) {
+function Focus({ imgs, lang, caps }: { imgs: ImageAsset[]; lang: Lang; caps?: boolean }) {
   const [main, ...rest] = imgs;
   return (
     <div className={s.focus} data-kind={main?.kind} data-reveal="">
-      {main && <Screen img={main} lang={lang} className={s.focus__main} sizes="(max-width: 899px) 100vw, 60vw" />}
-      <div className={s.focus__side}>{rest.slice(0, 3).map(im => <Screen key={im.id} img={im} lang={lang} className={s.focus__sub} sizes="24vw" />)}</div>
+      {main && <Screen img={main} lang={lang} className={s.focus__main} sizes="(max-width: 899px) 100vw, 60vw" showCaption={caps} />}
+      <div className={s.focus__side}>{rest.slice(0, 3).map(im => <Screen key={im.id} img={im} lang={lang} className={s.focus__sub} sizes="(max-width: 560px) 90vw, 24vw" showCaption={caps} />)}</div>
     </div>
   );
 }
 /** D · 2–4 phones in a row with a gentle stagger */
 function Phones({ imgs, lang }: { imgs: ImageAsset[]; lang: Lang }) {
+  /* four equal phones in a row leave each one too small to read: the first becomes the key screen */
+  if (imgs.length >= 4) return <Focus imgs={imgs} lang={lang} caps />;
   return (
     <div className={s.phones} data-n={Math.min(imgs.length, 4)}>
-      {imgs.slice(0, 4).map((im, i) => <div key={im.id} className={s.phones__it} data-reveal="" style={{ transitionDelay: `${i * 90}ms` }}><Screen img={im} lang={lang} sizes="(max-width: 899px) 44vw, 20vw" /></div>)}
+      {imgs.slice(0, 4).map((im, i) => <div key={im.id} className={s.phones__it} data-reveal="" style={{ transitionDelay: `${i * 90}ms` }}><Screen img={im} lang={lang} sizes="(max-width: 560px) 90vw, (max-width: 899px) 44vw, 24vw" showCaption /></div>)}
     </div>
   );
 }
@@ -38,7 +40,7 @@ function Phones({ imgs, lang }: { imgs: ImageAsset[]; lang: Lang }) {
 function Tablets({ imgs, lang }: { imgs: ImageAsset[]; lang: Lang }) {
   return (
     <div className={s.tabs} data-n={Math.min(imgs.length, 2)}>
-      {imgs.slice(0, 2).map((im, i) => <div key={im.id} className={s.tabs__it} data-reveal="" style={{ transitionDelay: `${i * 90}ms` }}><Screen img={im} lang={lang} sizes="(max-width: 899px) 100vw, 45vw" /></div>)}
+      {imgs.slice(0, 2).map((im, i) => <div key={im.id} className={s.tabs__it} data-reveal="" style={{ transitionDelay: `${i * 90}ms` }}><Screen img={im} lang={lang} sizes="(max-width: 899px) 100vw, 45vw" showCaption /></div>)}
     </div>
   );
 }
@@ -47,7 +49,7 @@ function Full({ imgs, lang }: { imgs: ImageAsset[]; lang: Lang }) {
   const [main, ...rest] = imgs;
   return (
     <div className={s.full}>
-      {main && <div data-reveal=""><Screen img={main} lang={lang} className={s.full__main} sizes="100vw" /></div>}
+      {main && <div data-reveal=""><Screen img={main} lang={lang} className={s.full__main} sizes="100vw" showCaption /></div>}
       {!!rest.length && <div className={s.full__row} data-n={rest.length}>{rest.map(im => <div key={im.id} data-reveal=""><Screen img={im} lang={lang} sizes="50vw" /></div>)}</div>}
     </div>
   );
@@ -114,9 +116,9 @@ export function ScreenShowcase({ b, p, lang }: BlockProps<ScreenShowcaseBlock>) 
         <SecHead b={b} heading={b.heading} intro={b.body} lang={lang} />
         {b.layout === 'phones' && <Phones imgs={imgs} lang={lang} />}
         {b.layout === 'tablets' && <Tablets imgs={imgs} lang={lang} />}
-        {b.layout === 'desktop' && <div className={s.stack}>{imgs.map(im => <div key={im.id} data-reveal=""><Screen img={im} lang={lang} sizes="100vw" /></div>)}</div>}
+        {b.layout === 'desktop' && <div className={s.stack}>{imgs.map(im => <div key={im.id} data-reveal=""><Screen img={im} lang={lang} sizes="100vw" showCaption /></div>)}</div>}
         {b.layout === 'desktopPhones' && <DesktopPhones imgs={imgs} lang={lang} />}
-        {b.layout === 'focus' && <Focus imgs={imgs} lang={lang} />}
+        {b.layout === 'focus' && <Focus imgs={imgs} lang={lang} caps />}
       </div>
     </section>
   );
@@ -124,11 +126,13 @@ export function ScreenShowcase({ b, p, lang }: BlockProps<ScreenShowcaseBlock>) 
 
 export function ImageGallery({ b, p, lang }: BlockProps<ImageGalleryBlock>) {
   const imgs = imagesOf(p, b.images);
+  /* desktop screens hold dense UI: at most two per row (one on narrow screens, see CSS) */
+  const desk = imgs.some(i => i.kind === 'desktop');
   return (
     <section className={`${s.sec} ${s.gal}`}>
       <div className="wrap">
         <SecHead b={b} heading={b.heading} lang={lang} />
-        <div className={s.gal__cols} style={{ ['--cols' as string]: b.columns || 3 }}>
+        <div className={s.gal__cols} data-n={imgs.length} data-desk={desk ? '' : undefined} style={{ ['--cols' as string]: Math.min(b.columns || 3, desk ? 2 : 3, Math.max(imgs.length, 1)) }}>
           {imgs.map(im => <div key={im.id} className={s.gal__it} data-reveal=""><Screen img={im} lang={lang} showCaption /></div>)}
         </div>
       </div>

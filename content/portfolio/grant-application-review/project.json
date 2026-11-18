@@ -1,0 +1,358 @@
+{
+  "id": "grant-application-review",
+  "slug": "grant-application-review",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 330,
+  "includeInPdf": true,
+  "title": {
+    "ko": "공모·지원사업 신청 및 심사 관리",
+    "en": "Grant Application & Review Management",
+    "ja": "公募・助成事業の申請・審査管理"
+  },
+  "subtitle": {
+    "ko": "지원서 접수부터 평가위원 채점과 결과 통지 준비까지",
+    "en": "From document submission to committee scoring and notice preparation",
+    "ja": "書類提出から委員別採点、結果通知の準備まで"
+  },
+  "summary": {
+    "ko": "신청자·운영자·평가위원의 업무를 하나의 공모 심사 흐름으로 연결한 정적 UI 데모입니다.",
+    "en": "A static UI demonstration linking applicant, operations, and reviewer workflows in one grant review process.",
+    "ja": "申請者・運営担当者・審査委員の業務を一連の審査フローでつなぐ、静的UIデモです。"
+  },
+  "overview": {
+    "ko": "공모 운영 과정은 신청서 제출, 증빙 확인, 적격성 검토, 위원별 평가, 의견 조정, 결과 안내로 이어집니다. 이 포트폴리오는 각 단계에 필요한 실제 업무형 웹 인터페이스를 5개의 화면으로 재구성했습니다.",
+    "en": "A grant program moves through application submission, document checks, eligibility screening, reviewer scoring, score comparison, and applicant notification. This portfolio presents five distinct web interfaces for those operational stages.",
+    "ja": "公募の運営では、申請書提出、証憑の確認、適格性審査、委員別採点、評価差の確認、結果通知という工程が続きます。本ポートフォリオでは、各担当者の実務に対応する5種類のWeb画面を制作しました。"
+  },
+  "industry": {
+    "ko": "공공·민간 공모 및 지원사업 운영",
+    "en": "Public and private grant and program administration",
+    "ja": "公的・民間の公募および助成事業運営"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#7B8F88",
+    "accentInk": "#2C3331",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "grants-01"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 D실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "신청자·운영자·평가위원의 업무를 하나의 공모 심사 흐름으로 연결한 정적 UI 데모입니다.",
+        "en": "A static UI demonstration linking applicant, operations, and reviewer workflows in one grant review process.",
+        "ja": "申請者・運営担当者・審査委員の業務を一連の審査フローでつなぐ、静的UIデモです。"
+      },
+      "images": [
+        "grants-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "서류 미비를 뒤늦게 발견하거나, 평가 근거가 신청서와 분리되거나, 선정 결과가 확정되기 전에 안내문이 발송되는 위험을 줄이도록 업무 단계와 권한을 분리했습니다.",
+        "en": "The design separates roles and review states to make missing documents visible, keep assessment rationale tied to submissions, and prevent the appearance of notifying applicants before decisions are final.",
+        "ja": "添付漏れの見落とし、申請書と採点根拠の分断、選定結果の確定前に通知してしまうリスクを想定し、役割と処理状態を明確に分離しています。"
+      },
+      "body": {
+        "ko": "신청서 접수, 자격 검토, 평가 점수, 이의 검토를 같은 승인 단계로 취급하지 않도록 심사 기록을 구분했습니다.",
+        "en": "Eligibility checks, scoring, decisions, and review requests need distinct evidence and approval stages.",
+        "ja": "申請受付、資格審査、評価点、再検討を同じ承認段階として扱わないよう、審査記録を分けました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "필수 첨부 여부와 제출 가능 상태를 명확히 구분하는 신청자 서류 화면",
+          "en": "Applicant document upload with required-file and submission readiness states",
+          "ja": "必須書類の添付状況と提出可否を明示する申請画面"
+        },
+        {
+          "ko": "12건의 접수 상태를 적격 8건·보완 4건으로 관리하는 운영 검토 화면",
+          "en": "Operations queue covering 12 submissions: 8 eligible and 4 requiring additional documents",
+          "ja": "申請12件を適格8件・追加書類必要4件として扱う運営者の確認画面"
+        },
+        {
+          "ko": "100점 배점표와 항목별 평가 근거를 기록하는 위원 채점 화면",
+          "en": "100-point evaluation rubric with score-by-criterion reasoning",
+          "ja": "100点満点の評価基準と項目別根拠を記録する採点画面"
+        },
+        {
+          "ko": "위원 4명의 점수 분포와 항목별 편차·의견 차이를 비교하는 관리 화면",
+          "en": "Side-by-side comparison of four reviewers, score spread, and differing assessments",
+          "ja": "4人の審査委員による点数分布・項目別の差・意見を比較する画面"
+        },
+        {
+          "ko": "최종 선정 확정·문안 승인 전 발송을 제한하는 결과 통지 편집 화면",
+          "en": "Notice editor with release restrictions until selection decisions and copy approvals are complete",
+          "ja": "選定結果と文面の承認前は送信できない結果通知エディター"
+        }
+      ],
+      "images": [
+        "grants-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "신청 정보 입력과 필수 서류 첨부",
+            "en": "Enter application information and attach required documents",
+            "ja": "申請情報の入力と必須書類の添付"
+          }
+        },
+        {
+          "title": {
+            "ko": "운영자 적격성 검토 및 보완 요청",
+            "en": "Screen eligibility and request supplementary evidence",
+            "ja": "運営担当者による適格性の確認・追加提出依頼"
+          }
+        },
+        {
+          "title": {
+            "ko": "평가위원 항목별 채점과 근거 기록",
+            "en": "Score criteria and record reviewer justification",
+            "ja": "審査委員による項目別採点と根拠記録"
+          }
+        },
+        {
+          "title": {
+            "ko": "평가관리자 점수 편차 및 의견 검토",
+            "en": "Compare committee scores and review disagreements",
+            "ja": "管理者による採点差と意見の確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "심사 종료 이후 결과 통지 준비",
+            "en": "Prepare notifications for use after the review concludes",
+            "ja": "審査終了後の結果通知準備"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "grants-03"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "grants-04",
+        "grants-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "가상 공고 GR-026과 가상 신청서·평가 데이터에 기반해 WEB 정적 UI 이미지 5종을 제작했습니다. 서버, 신청 접수, 승인, 알림 발송, 실제 평가 및 선발 기능은 구현하지 않았습니다.",
+        "en": "Five static web UI images were designed using fictional grant GR-026 and fabricated applications and reviewer data. No back-end, actual submissions, approvals, outgoing notifications, evaluation engine, or selection process was implemented.",
+        "ja": "架空の公募GR-026と架空の申請・審査データを使い、Web向けの静的UI画像5点を制作しました。サーバー、申請受付、承認、通知送信、実際の採点・選考機能は実装していません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "절차별 상태와 근거가 연결되는 공모 심사 업무 화면을 설계했습니다.",
+        "en": "A grant-review workspace designed to keep every decision state and its supporting rationale visible.",
+        "ja": "処理状況と判断根拠を一貫して確認できる公募審査UIを設計しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "grants-01",
+      "file": "grants-application-portal.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "필수 서류 4건 중 3건이 첨부된 공모 신청서 제출 화면",
+        "en": "Grant application portal showing three of four required attachments",
+        "ja": "必須書類4件のうち3件を添付した公募申請画面"
+      },
+      "caption": {
+        "ko": "신청자가 필수 첨부 상태를 확인하고, 누락된 동의서를 보완하기 전에는 최종 제출할 수 없도록 구성했습니다.",
+        "en": "Applicants see attachment readiness clearly, while final submission remains unavailable until the missing consent form is uploaded.",
+        "ja": "添付状況を確認でき、同意書が未提出の状態では最終送信できない構成です。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "grants-02",
+      "file": "grants-eligibility-check.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "신청 12건의 적격·보완 상태와 개별 보완 요청 초안을 확인하는 운영자 화면",
+        "en": "Operations eligibility queue showing 12 submissions and a supplementary document request draft",
+        "ja": "申請12件の適格・追加提出状態と依頼文案を表示する運営者画面"
+      },
+      "caption": {
+        "ko": "운영자가 접수 12건을 적격 8건·보완 필요 4건으로 검토하고 재무제표 누락 건의 요청 사유를 기록합니다.",
+        "en": "Operators classify eight submissions as eligible and four as needing supplementation, then document why financial statements are missing.",
+        "ja": "12件を適格8件・追加書類必要4件に分類し、財務諸表の不足理由を記録します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "grants-03",
+      "file": "grants-scoring-workbench.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "이음로보틱스 신청서를 평가 항목별로 채점해 총점 82점을 기록한 위원 화면",
+        "en": "Reviewer rubric for the fictional I-eum Robotics application totaling 82 points",
+        "ja": "架空のイウムロボティクス申請を5項目で採点し合計82点とした審査画面"
+      },
+      "caption": {
+        "ko": "평가위원이 5개 항목의 배점과 근거를 입력합니다. 82점은 최종 제출 전의 개인 평가 화면입니다.",
+        "en": "A reviewer records scores and rationale across five criteria; the 82-point worksheet is shown before final submission.",
+        "ja": "審査委員が配点と根拠を入力します。82点は最終提出前の個別採点画面です。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "grants-04",
+      "file": "grants-panel-calibration.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "평가위원 4명의 점수와 항목별 최대 편차를 비교한 심사 관리자 화면",
+        "en": "Committee score matrix comparing four reviewer submissions and criterion-level discrepancies",
+        "ja": "審査委員4人の点数と項目別の最大差を比較する管理画面"
+      },
+      "caption": {
+        "ko": "평가 점수 82·76·87·79점의 평균은 81점이며, 지역 기여도 7점 차이에 대한 평가 근거를 비교합니다.",
+        "en": "Four scores of 82, 76, 87 and 79 average 81; the workspace highlights a seven-point difference in local contribution.",
+        "ja": "82・76・87・79点の平均は81点。地域貢献度で生じた7点差の評価根拠を比較します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "grants-05",
+      "file": "grants-award-notice.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "최종 선정 미확정 상태에서 결과 통지문을 편집하고 발송을 제한하는 관리자 화면",
+        "en": "Draft applicant notice editor with delivery blocked while grant selections remain unconfirmed",
+        "ja": "選定結果が未確定の段階で通知文を編集し、送信を制限する管理画面"
+      },
+      "caption": {
+        "ko": "적격 신청 8건을 대상으로 결과 안내문을 준비하되, 접수 마감·선정 승인·문안 결재 전에는 발송을 차단합니다.",
+        "en": "The team prepares notices for eight eligible submissions but cannot send them before applications close, selections are approved, and notice copy is cleared.",
+        "ja": "適格申請8件の通知を準備しながら、受付終了・選定承認・文面決裁が済むまでは送信を制限します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

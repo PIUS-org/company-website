@@ -1,0 +1,310 @@
+{
+  "id": "online-course-studio",
+  "slug": "online-course-studio",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 640,
+  "includeInPdf": true,
+  "title": {
+    "ko": "온라인 강의 제작 스튜디오",
+    "en": "Online Course Studio",
+    "ja": "オンライン講座制作スタジオ"
+  },
+  "subtitle": {
+    "ko": "커리큘럼과 레슨을 구성하고 학습자 화면까지 확인하는 콘텐츠 저작 도구",
+    "en": "A course authoring workspace with curriculum editing and learner previews.",
+    "ja": "カリキュラム編集から受講者画面のプレビューまでを扱う講座制作ツール"
+  },
+  "summary": {
+    "ko": "커리큘럼·레슨·퀴즈 편집과 수강생 미리보기, 모바일 수강 화면.",
+    "en": "Curriculum, lesson and quiz editing with a learner preview and a mobile lesson view.",
+    "ja": "カリキュラム・レッスン・クイズの編集と、受講者プレビュー、モバイル受講画面。"
+  },
+  "overview": {
+    "ko": "강사가 콘텐츠를 편집하는 화면과 학습자가 수강하는 화면을 연결해 구조와 미리보기를 일관되게 설계했습니다.",
+    "en": "A UI concept connecting instructor authoring with learner-facing video, outline, progress, and quiz views.",
+    "ja": "講師の編集画面と受講者の学習体験を結び、構成・動画・進捗・クイズを一貫して設計しました。"
+  },
+  "industry": {
+    "ko": "에듀테크",
+    "en": "Edtech",
+    "ja": "エドテック"
+  },
+  "categories": [
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#4C63A8",
+    "accentInk": "#161D31",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "online-course-studio-04"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / E실 claude-integration-prompt.txt. 이미지 5장은 e-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "커리큘럼을 짜고, 레슨과 퀴즈를 편집하고, 수강생 화면으로 미리 봅니다.",
+        "en": "Build the curriculum, edit lessons and quizzes, and preview them as a learner.",
+        "ja": "カリキュラムを組み、レッスンとクイズを編集し、受講者の画面で確かめます。"
+      },
+      "images": [
+        "online-course-studio-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "강의 저작자가 편집한 레슨·퀴즈와 학습자가 보는 목차·진도가 서로 일치하는지 확인할 수 있도록 구성했습니다.",
+        "en": "The course editor and learner preview must refer to the same lessons, quizzes, and progression rules.",
+        "ja": "制作者が編集したレッスン・クイズと受講者側の目次・進捗を照合できる構成です。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "커리큘럼 구성",
+            "en": "Organize lessons",
+            "ja": "構成"
+          }
+        },
+        {
+          "title": {
+            "ko": "레슨 편집",
+            "en": "Edit material",
+            "ja": "教材編集"
+          }
+        },
+        {
+          "title": {
+            "ko": "학습자 미리보기",
+            "en": "Preview learner view",
+            "ja": "プレビュー"
+          }
+        },
+        {
+          "title": {
+            "ko": "퀴즈 제작",
+            "en": "Build quiz",
+            "ja": "クイズ作成"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일 학습",
+            "en": "Learn on mobile",
+            "ja": "モバイル学習"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "online-course-studio-02",
+        "online-course-studio-03",
+        "online-course-studio-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "online-course-studio-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "프론트엔드 정적 UI 시각화 5화면(데스크톱 4, 모바일 1). 서버, 로그인, 저장, 실시간 협업, 외부 연동 미구현. 화면의 데이터는 모두 데모용 가상 데이터입니다.",
+        "en": "Five static front-end interface visuals (four desktop, one mobile). No backend, authentication, persistence, live collaboration, or external integrations. All displayed data is fictional demo data.",
+        "ja": "デスクトップ4画面、モバイル1画面の静的UIビジュアル。サーバー、認証、保存、リアルタイム協業、外部連携は未実装。表示データはデモ用の架空データです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "강사가 편집하는 레슨과 퀴즈를 수강생이 보게 될 화면 그대로 바로 확인할 수 있습니다.",
+        "en": "Instructors can check the lessons and quizzes they edit exactly as learners will see them.",
+        "ja": "講師が編集するレッスンとクイズを、受講者が見る画面のまま確かめられます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "online-course-studio-01",
+      "file": "online-course-studio-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "온라인 강의 제작 스튜디오의 커리큘럼 편집 정적 화면. 컬러가 전달하는 인상(DESIGN FUNDAMENTALS) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static curriculum builder screen in Online Course Studio, showing the demo project “The Impression Color Gives (Design Fundamentals)”.",
+        "ja": "オンライン講座制作スタジオのカリキュラム編集を示す静的UI画面。デモ案件「色が伝える印象（DESIGN FUNDAMENTALS）」の表示です。"
+      },
+      "caption": {
+        "ko": "커리큘럼 편집",
+        "en": "Curriculum builder",
+        "ja": "カリキュラム編集"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "online-course-studio-02",
+      "file": "online-course-studio-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "온라인 강의 제작 스튜디오의 레슨 콘텐츠 편집 정적 화면. 컬러가 전달하는 인상(DESIGN FUNDAMENTALS) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static lesson editor screen in Online Course Studio, showing the demo project “The Impression Color Gives (Design Fundamentals)”.",
+        "ja": "オンライン講座制作スタジオのレッスン編集を示す静的UI画面。デモ案件「色が伝える印象（DESIGN FUNDAMENTALS）」の表示です。"
+      },
+      "caption": {
+        "ko": "레슨 콘텐츠 편집",
+        "en": "Lesson editor",
+        "ja": "レッスン編集"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "online-course-studio-03",
+      "file": "online-course-studio-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "온라인 강의 제작 스튜디오의 수강생 화면 미리보기 정적 화면. 컬러가 전달하는 인상(DESIGN FUNDAMENTALS) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static learner course preview screen in Online Course Studio, showing the demo project “The Impression Color Gives (Design Fundamentals)”.",
+        "ja": "オンライン講座制作スタジオの受講者プレビューを示す静的UI画面。デモ案件「色が伝える印象（DESIGN FUNDAMENTALS）」の表示です。"
+      },
+      "caption": {
+        "ko": "수강생 화면 미리보기",
+        "en": "Learner course preview",
+        "ja": "受講者プレビュー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "online-course-studio-04",
+      "file": "online-course-studio-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "온라인 강의 제작 스튜디오의 퀴즈 및 해설 편집 정적 화면. 컬러가 전달하는 인상(DESIGN FUNDAMENTALS) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static quiz question editor screen in Online Course Studio, showing the demo project “The Impression Color Gives (Design Fundamentals)”.",
+        "ja": "オンライン講座制作スタジオのクイズ編集を示す静的UI画面。デモ案件「色が伝える印象（DESIGN FUNDAMENTALS）」の表示です。"
+      },
+      "caption": {
+        "ko": "퀴즈 및 해설 편집",
+        "en": "Quiz question editor",
+        "ja": "クイズ編集"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "online-course-studio-05",
+      "file": "online-course-studio-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "온라인 강의 제작 스튜디오의 모바일 수강 화면 정적 화면. 컬러가 전달하는 인상(DESIGN FUNDAMENTALS) 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static mobile lesson player screen in Online Course Studio, showing the demo project “The Impression Color Gives (Design Fundamentals)”.",
+        "ja": "オンライン講座制作スタジオのモバイル受講を示す静的UI画面。デモ案件「色が伝える印象（DESIGN FUNDAMENTALS）」の表示です。"
+      },
+      "caption": {
+        "ko": "모바일 수강 화면",
+        "en": "Mobile lesson player",
+        "ja": "モバイル受講"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

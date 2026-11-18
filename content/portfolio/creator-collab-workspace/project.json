@@ -1,0 +1,310 @@
+{
+  "id": "creator-collab-workspace",
+  "slug": "creator-collab-workspace",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 490,
+  "includeInPdf": true,
+  "title": {
+    "ko": "크리에이터 협업 워크스페이스",
+    "en": "Creator Collaboration Workspace",
+    "ja": "クリエイター協業ワークスペース"
+  },
+  "subtitle": {
+    "ko": "브랜드와 크리에이터의 브리프, 시안, 피드백을 연결하는 협업 작업 공간",
+    "en": "A shared workspace connecting creative briefs, revisions, feedback, and approvals.",
+    "ja": "ブランドとクリエイターの制作要件・成果物・フィードバック・承認をつなぐワークスペース"
+  },
+  "summary": {
+    "ko": "콘텐츠 브리프 편집, 산출물 리뷰, 핀 코멘트 검토와 모바일 최종 승인 화면.",
+    "en": "Brief editing, deliverable review, pinned-comment review and final approval on mobile.",
+    "ja": "ブリーフ編集、成果物レビュー、ピン留めコメント確認、モバイルでの最終承認の画面。"
+  },
+  "overview": {
+    "ko": "콘텐츠 제작 과정에서 분리되기 쉬운 브리프, 파일 버전, 승인 의견을 한 흐름으로 확인할 수 있도록 설계했습니다.",
+    "en": "An interface concept that brings scattered briefs, asset versions, and approval conversations into one review workflow.",
+    "ja": "制作過程で分散しがちなブリーフ、ファイルの版、承認コメントを一つの流れで確認できるUIです。"
+  },
+  "industry": {
+    "ko": "크리에이터·브랜드 콘텐츠",
+    "en": "Creator and brand content",
+    "ja": "クリエイター・ブランドコンテンツ"
+  },
+  "categories": [
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#3F6E66",
+    "accentInk": "#1A2D2A",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "creator-collab-workspace-04"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / E실 claude-integration-prompt.txt. 이미지 5장은 e-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "브리프에서 핀 코멘트, 모바일 승인까지 하나의 작업 공간에서.",
+        "en": "From the brief to pinned comments and mobile approval, in one workspace.",
+        "ja": "ブリーフからピン留めコメント、モバイル承認まで一つのワークスペースで。"
+      },
+      "images": [
+        "creator-collab-workspace-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "브리프에 적힌 요구사항과 업로드된 산출물의 수정 요청·승인 의견이 다른 파일 버전을 가리키지 않게 설계했습니다.",
+        "en": "Brief requirements, asset versions, pin comments, and approvals must refer to the same deliverable.",
+        "ja": "ブリーフの要件と提出物の修正依頼・承認意見が異なるファイル版を指さないよう設計しました。"
+      }
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "02",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "프로젝트 확인",
+            "en": "Open project",
+            "ja": "案件確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "브리프 편집",
+            "en": "Edit brief",
+            "ja": "ブリーフ編集"
+          }
+        },
+        {
+          "title": {
+            "ko": "시안 제출",
+            "en": "Submit asset",
+            "ja": "成果物提出"
+          }
+        },
+        {
+          "title": {
+            "ko": "위치별 피드백",
+            "en": "Review pinned feedback",
+            "ja": "コメント確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "최종 승인",
+            "en": "Approve",
+            "ja": "承認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "03",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "creator-collab-workspace-02",
+        "creator-collab-workspace-03",
+        "creator-collab-workspace-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "creator-collab-workspace-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "프론트엔드 정적 UI 시각화 5화면(데스크톱 4, 모바일 1). 서버, 로그인, 저장, 실시간 협업, 외부 연동 미구현. 화면의 데이터는 모두 데모용 가상 데이터입니다.",
+        "en": "Five static front-end interface visuals (four desktop, one mobile). No backend, authentication, persistence, live collaboration, or external integrations. All displayed data is fictional demo data.",
+        "ja": "デスクトップ4画面、モバイル1画面の静的UIビジュアル。サーバー、認証、保存、リアルタイム協業、外部連携は未実装。表示データはデモ用の架空データです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "브리프와 시안, 핀으로 남긴 의견과 승인이 한 화면에 모여 누가 무엇을 결정했는지 바로 보이도록 했습니다.",
+        "en": "Briefs, drafts, pinned comments and approvals sit on one screen, so it is always clear who decided what.",
+        "ja": "ブリーフ、案、ピン留めのコメント、承認が一つの画面に集まり、誰が何を決めたかがすぐに分かります。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "creator-collab-workspace-01",
+      "file": "creator-collab-workspace-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "크리에이터 협업 워크스페이스의 프로젝트 작업 허브 정적 화면. SOFT GLOW 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static project workspace screen in Creator Collaboration Workspace, showing the demo project “Soft Glow Campaign”.",
+        "ja": "クリエイター協業ワークスペースの案件ワークスペースを示す静的UI画面。デモ案件「ソフトグロウ・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "프로젝트 작업 허브",
+        "en": "Project workspace",
+        "ja": "案件ワークスペース"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "creator-collab-workspace-02",
+      "file": "creator-collab-workspace-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "크리에이터 협업 워크스페이스의 콘텐츠 브리프 편집 정적 화면. SOFT GLOW 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static creative brief editor screen in Creator Collaboration Workspace, showing the demo project “Soft Glow Campaign”.",
+        "ja": "クリエイター協業ワークスペースの制作ブリーフ編集を示す静的UI画面。デモ案件「ソフトグロウ・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "콘텐츠 브리프 편집",
+        "en": "Creative brief editor",
+        "ja": "制作ブリーフ編集"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "creator-collab-workspace-03",
+      "file": "creator-collab-workspace-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "크리에이터 협업 워크스페이스의 산출물 리뷰 정적 화면. SOFT GLOW 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static asset review canvas screen in Creator Collaboration Workspace, showing the demo project “Soft Glow Campaign”.",
+        "ja": "クリエイター協業ワークスペースの成果物レビューを示す静的UI画面。デモ案件「ソフトグロウ・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "산출물 리뷰",
+        "en": "Asset review canvas",
+        "ja": "成果物レビュー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "creator-collab-workspace-04",
+      "file": "creator-collab-workspace-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "크리에이터 협업 워크스페이스의 핀 코멘트 검토 정적 화면. SOFT GLOW 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static pinned feedback threads screen in Creator Collaboration Workspace, showing the demo project “Soft Glow Campaign”.",
+        "ja": "クリエイター協業ワークスペースの位置指定コメントを示す静的UI画面。デモ案件「ソフトグロウ・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "핀 코멘트 검토",
+        "en": "Pinned feedback threads",
+        "ja": "位置指定コメント"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "creator-collab-workspace-05",
+      "file": "creator-collab-workspace-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "크리에이터 협업 워크스페이스의 모바일 최종 승인 정적 화면. SOFT GLOW 캠페인 프로젝트의 협업 상태와 화면 요소를 보여줍니다.",
+        "en": "Static mobile approval screen in Creator Collaboration Workspace, showing the demo project “Soft Glow Campaign”.",
+        "ja": "クリエイター協業ワークスペースのモバイル承認を示す静的UI画面。デモ案件「ソフトグロウ・キャンペーン」の表示です。"
+      },
+      "caption": {
+        "ko": "모바일 최종 승인",
+        "en": "Mobile approval",
+        "ja": "モバイル承認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

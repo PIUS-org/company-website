@@ -1,0 +1,7 @@
+$ 사전 검증: R3-REPLACEMENT-MANIFEST.csv vs 수정본 zip vs v35 작업본 (commit 98b2c38)
+rows 100 by room {'A': 24, 'B': 21, 'C': 30, 'D': 3, 'E': 22}
+zip files 100 all webp True
+manifest filenames == zip files: True · duplicate targets: 0
+per-file checks (11 each): problems 0
+replaced per project: {'architecture-client-portal': 4, 'art-fair-ticketing': 4, 'boutique-hotel-booking': 4, 'creator-collab-workspace': 3, 'creator-membership-platform': 4, 'custom-furniture-configurator': 3, 'design-conference-portal': 4, 'dog-walking-booking-app': 5, 'fintech-product-landing': 3, 'home-cooking-subscription-app': 5, 'language-speaking-challenge-app': 1, 'local-fitness-class-app': 5, 'luxury-real-estate-showcase': 3, 'nonprofit-donation-platform': 4, 'online-course-studio': 3, 'parenting-care-record-app': 5, 'podcast-production-hub': 4, 'premium-interior-studio': 4, 'private-clinic-brand-site': 4, 'second-home-cleaning-app': 2, 'skincare-brand-experience': 4, 'social-campaign-builder': 4, 'travel-itinerary-companion': 5, 'used-fashion-market-app': 5, 'wedding-planning-portal': 4, 'wellness-retreat-program': 4}
+3차 projects with 0 replaced: ['beauty-appointment-app', 'concert-fan-companion-app', 'mindful-journal-app', 'neighborhood-community-app']

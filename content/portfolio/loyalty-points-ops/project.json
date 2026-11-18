@@ -1,0 +1,362 @@
+{
+  "id": "loyalty-points-ops",
+  "slug": "loyalty-points-ops",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 290,
+  "includeInPdf": true,
+  "title": {
+    "ko": "MORROW 멤버십·포인트 운영",
+    "en": "MORROW Membership & Points Operations",
+    "ja": "MORROW 会員・ポイント運用管理"
+  },
+  "subtitle": {
+    "ko": "회원 혜택과 운영 정책을 하나의 거래 흐름으로",
+    "en": "Connecting member rewards with back-office point controls",
+    "ja": "会員向け特典と運用ルールを一連の取引フローに"
+  },
+  "summary": {
+    "ko": "회원의 포인트 사용 경험부터 관리자 거래 검증, 등급 정책, 조정 승인과 타깃 캠페인까지 연결한 WEB·APP 정적 UI 데모.",
+    "en": "A static WEB and APP interface demo spanning the member wallet, transaction reconciliation, tier policies, adjustment review, and targeted campaign preparation.",
+    "ja": "会員アプリでのポイント確認から、取引照合、会員ランク設定、調整申請の承認確認、対象者別キャンペーン準備までを表現したWEB・APPの静的UIデモです。"
+  },
+  "overview": {
+    "ko": "MORROW는 가상의 라이프스타일 리테일 브랜드를 위한 멤버십 운영 인터페이스입니다. 회원은 앱에서 보유 포인트와 등급·거래 내역을 확인하고, 운영자는 웹에서 거래 잔액을 추적하고 운영 기준과 조정 요청을 검토합니다.",
+    "en": "MORROW is a fictional membership operations interface for a lifestyle retailer. Members review their available points, tier, and transaction history in the mobile app. Operators use the web workspace to reconcile balances, inspect policy drafts, and review manual point adjustment requests.",
+    "ja": "MORROWは、架空のライフスタイル小売ブランドを想定した会員管理インターフェースです。会員はアプリで利用可能ポイント、会員ランク、取引履歴を確認できます。運用担当者はWeb画面でポイント残高を照合し、運用ポリシーの下書きや手動調整申請を確認します。"
+  },
+  "industry": {
+    "ko": "리테일 멤버십·고객 운영",
+    "en": "Retail loyalty and customer operations",
+    "ja": "小売業の会員管理・顧客運用"
+  },
+  "categories": [
+    "platform",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#306B5A",
+    "accentInk": "#1A332C",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "loyalty-member-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 C실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "회원의 포인트 사용 경험부터 관리자 거래 검증, 등급 정책, 조정 승인과 타깃 캠페인까지 연결한 WEB·APP 정적 UI 데모.",
+        "en": "A static WEB and APP interface demo spanning the member wallet, transaction reconciliation, tier policies, adjustment review, and targeted campaign preparation.",
+        "ja": "会員アプリでのポイント確認から、取引照合、会員ランク設定、調整申請の承認確認、対象者別キャンペーン準備までを表現したWEB・APPの静的UIデモです。"
+      },
+      "images": [
+        "loyalty-member-mobile"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "회원 화면의 포인트 잔액과 운영 원장, 등급 산정 기준, 수동 조정 상태가 혼재하면 포인트 사용 가능 여부와 처리 책임을 판단하기 어렵습니다. 혜택 안내 대상도 포인트 보유 조건 및 발송 준비 상태에 따라 분리할 필요가 있습니다.",
+        "en": "When a member balance, the transaction ledger, tier eligibility, and pending manual adjustments are mixed together, operators cannot easily tell which points are spendable or which changes have taken effect. Benefit messages also require distinct eligibility rules and pre-send controls.",
+        "ja": "利用可能残高、取引台帳、ランク判定基準、未承認の調整申請を区別できないと、ポイントが実際に利用可能か、どの変更が反映済みかを判断しにくくなります。特典案内にも、対象条件と配信前の確認状態を分ける必要があります。"
+      },
+      "body": {
+        "ko": "회원에게 보이는 포인트 잔액과 관리자 조정 승인 상태가 달라질 수 있어 원장 기준과 표시 기준을 분리했습니다.",
+        "en": "Member balances, ledger adjustments, and tier eligibility need clearly distinguished calculation and approval states.",
+        "ja": "会員に表示する残高と管理者の調整承認は異なるため、台帳基準と表示基準を分けます。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "회원 앱: SILVER 등급, 사용 가능 13,000P 및 11월 적립·사용 내역 확인",
+          "en": "Member app: SILVER status, 13,000 spendable points, and November activity",
+          "ja": "会員アプリ：SILVERランク、利用可能な13,000P、11月の獲得・利用履歴を表示"
+        },
+        {
+          "ko": "운영자 웹: 기초 12,000P, 적립 3,000P, 사용 2,000P의 거래별 잔액 검산",
+          "en": "Operator workspace: reconcile 12,000 opening points + 3,000 earned − 2,000 redeemed",
+          "ja": "管理Web：繰越12,000P＋獲得3,000P−利用2,000Pの残高を取引ごとに照合"
+        },
+        {
+          "ko": "정책 편집: 누적 적립 기준 등급표와 사용 가능 잔액을 구분하여 초안 관리",
+          "en": "Policy editor: maintain tier criteria separately from the spendable balance",
+          "ja": "ポリシー編集：会員ランクの判定条件を利用可能残高と分けて下書き管理"
+        },
+        {
+          "ko": "조정 승인: M-042의 +500P 요청을 원장 미반영 상태로 검토",
+          "en": "Adjustment review: inspect an unapproved +500-point request for M-042 without changing the ledger",
+          "ja": "調整申請：会員M-042への+500Pの申請を台帳未反映のまま確認"
+        },
+        {
+          "ko": "캠페인: 15% 쿠폰 교환 목표까지 남은 포인트 기준으로 대상 조건을 구성하고 발송 전 초안 확인",
+          "en": "Campaign builder: configure audience rules around a 15% coupon redemption target and preview a message before sending",
+          "ja": "キャンペーン：15％割引クーポンの交換に必要な残ポイントに応じて対象条件を設定し、配信前の案内をプレビュー"
+        }
+      ],
+      "images": [
+        "loyalty-tier-rule-editor"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "회원이 멤버십 앱에서 등급·잔액을 확인",
+            "en": "Members view their tier and available points in the app",
+            "ja": "会員がアプリでランクと保有ポイントを確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "구매 적립 및 포인트 사용 거래를 원장에 기록",
+            "en": "Purchase rewards and redemptions are recorded in the ledger",
+            "ja": "購入による付与と利用による減算を台帳に記録"
+          }
+        },
+        {
+          "title": {
+            "ko": "운영자가 거래별 잔액과 등급·포인트 정책 초안을 확인",
+            "en": "Operators reconcile balances and review tier and points-policy drafts",
+            "ja": "担当者が残高と会員ランク・ポイント設定の下書きを確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "필요한 수동 조정을 요청하고 승인 전 상태를 분리",
+            "en": "Manual adjustments remain separate until reviewed and approved",
+            "ja": "手動調整を申請し、承認前の状態を分離して管理"
+          }
+        },
+        {
+          "title": {
+            "ko": "세그먼트 조건을 검토하고 혜택 안내 발송 초안을 준비",
+            "en": "Audience conditions and benefit-message drafts are prepared for future review",
+            "ja": "対象者条件を確認して特典案内の配信前下書きを作成"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "loyalty-transaction-ledger"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "loyalty-adjustment-review",
+        "loyalty-campaign-audience"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "자체 제작한 가상 서비스의 정적 UI 포트폴리오입니다. HTML/CSS/SVG로 WEB·APP 화면 5장을 디자인·렌더링했으며, 계정 인증, 결제, 메시지 발송, 데이터베이스, 실제 승인 처리 등 서버 기능은 구현하지 않았습니다. 모든 회원 ID와 운영 수치는 예시 데이터입니다.",
+        "en": "An independently designed, fictional static UI portfolio demo. Five WEB/APP screens were designed and rendered using HTML, CSS, and SVG. No live account authentication, payment, message delivery, database, or approval workflow was implemented. All member IDs and metrics are illustrative.",
+        "ja": "架空のサービスを題材に自社制作した静的UIポートフォリオです。HTML・CSS・SVGを用いてWEB・APPの5画面をデザイン・レンダリングしました。実際の認証、決済、メッセージ配信、データベース、承認処理などのサーバー機能は実装していません。会員IDと数値はすべてサンプルです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "고객이 보는 혜택부터 운영자가 검증하는 거래까지, 같은 포인트 데이터를 일관된 인터페이스로 표현했습니다.",
+        "en": "A consistent point balance connects what members see with the transactions operators verify.",
+        "ja": "会員が確認する特典と運用担当者が検証する取引を、同じポイントデータで一貫して表現しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "loyalty-member-mobile",
+      "file": "loyalty-member-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "SILVER 회원 M-042가 13,000P 잔액과 11월 적립·사용 거래를 확인하는 MORROW 모바일 멤버십 화면",
+        "en": "MORROW mobile membership wallet for SILVER member M-042 showing 13,000 points and November point activity",
+        "ja": "SILVER会員M-042の残高13,000Pと11月の付与・利用履歴を表示するMORROWのモバイル会員画面"
+      },
+      "caption": {
+        "ko": "회원 앱에서 등급, 사용 가능한 13,000P, 적립 3,000P와 사용 2,000P를 함께 확인합니다.",
+        "en": "The member app presents tier status, 13,000 available points, 3,000 earned points, and 2,000 redeemed points.",
+        "ja": "会員アプリでランク、利用可能な13,000P、獲得3,000P、利用2,000Pを確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "loyalty-transaction-ledger",
+      "file": "loyalty-transaction-ledger.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "기초 잔액 12,000P에서 현재 잔액 13,000P까지 거래별 이동을 검산하는 MORROW 운영자 포인트 원장",
+        "en": "MORROW operator ledger reconciling transaction balances from 12,000 opening points to 13,000 available points",
+        "ja": "繰越12,000Pから残高13,000Pまでの取引履歴を照合するMORROWのポイント台帳画面"
+      },
+      "caption": {
+        "ko": "각 거래 후 잔액 10,000 → 11,200 → 13,000P를 추적하고 M-042의 원장을 검증합니다.",
+        "en": "Operators review transaction-level balances of 10,000, 11,200, and 13,000 points for member M-042.",
+        "ja": "会員M-042の各取引後残高10,000P、11,200P、13,000Pを追跡・照合します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "loyalty-tier-rule-editor",
+      "file": "loyalty-tier-rule-editor.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "BASIC SILVER GOLD 등급별 승급 기준과 적립 배수를 수정하는 MORROW 운영 정책 편집 화면",
+        "en": "MORROW tier policy editor showing BASIC SILVER and GOLD thresholds and reward multipliers",
+        "ja": "BASIC SILVER GOLDの昇格条件と付与倍率を編集するMORROWの会員ランク設定画面"
+      },
+      "caption": {
+        "ko": "등급 판정에 쓰는 최근 12개월 적립 누계와 사용 가능한 포인트 잔액을 분리해 정책 초안을 편집합니다.",
+        "en": "Draft tier rules use a 12-month accumulation metric rather than the current spendable point balance.",
+        "ja": "直近12か月の累積獲得ポイントをランク判定に用い、利用可能残高と区別して下書きを管理します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "loyalty-adjustment-review",
+      "file": "loyalty-adjustment-review.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "회원 M-042의 500P 수동 적립 보정 요청을 승인 대기 상태로 검토하는 MORROW 관리자 화면",
+        "en": "MORROW admin review screen with a pending 500-point manual credit request for member M-042",
+        "ja": "会員M-042への500Pの手動付与申請を未承認として確認するMORROWの管理画面"
+      },
+      "caption": {
+        "ko": "+500P 조정 요청과 승인 시 예상 13,500P를 보여주되, 실제 원장 잔액 13,000P는 변경하지 않습니다.",
+        "en": "A proposed +500-point adjustment would raise the balance to 13,500 if approved; the ledger remains at 13,000.",
+        "ja": "承認後の想定残高13,500Pを示しますが、実際の台帳残高13,000Pは変更されていません。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "loyalty-campaign-audience",
+      "file": "loyalty-campaign-audience.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "회원 등급과 보유 잔액으로 284명 세그먼트를 구성하고 미발송 포인트 혜택 안내를 편집하는 MORROW 캠페인 화면",
+        "en": "MORROW segment builder selecting 284 members by tier and wallet balance with an unsent benefit message preview",
+        "ja": "ランクと残高で284人を抽出し、未配信の特典案内を編集するMORROWのキャンペーン画面"
+      },
+      "caption": {
+        "ko": "SILVER·포인트 조건을 결합해 대상자 284명을 미리보고, 쿠폰 목표까지 2,000P 남은 회원의 알림 초안을 작성합니다.",
+        "en": "Audience rules identify 284 sample members and preview an unsent message for a member 2,000 points away from a 15% coupon.",
+        "ja": "条件に一致するサンプル会員284人を確認し、15％割引クーポンまで残り2,000Pの会員向け案内文を下書きします。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

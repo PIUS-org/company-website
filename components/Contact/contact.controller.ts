@@ -1,7 +1,7 @@
 // @ts-nocheck — imperative animation logic ported verbatim from the original site (output must stay identical).
 //   The exported init() signature is typed; internals are candidates for incremental typing.
 /* Contact — headline lights up letter by letter; validated glass form (UI + optional API endpoint). */
-import { $, $$, adopter, Engine, E, FINE, PTR, RM, Scroller, clamp, lerp, mk, on, onceInView, range, scramble, svgEl, isMobile, toast, type SceneFn, type Styles } from '@/lib/core';
+import { $, $$, adopter, Engine, E, EV, FINE, PTR, RM, Scroller, clamp, lerp, mk, on, onceInView, range, scramble, svgEl, isMobile, toast, type SceneFn, type Styles } from '@/lib/core';
 import { T, L, getLang } from '@/lib/i18n';
 import { MARK, MARK_BOX } from '@/lib/logo';
 
@@ -21,6 +21,30 @@ export function initContact(host: HTMLElement, st: Styles): () => void {
   onceInView(t, () => chs.forEach((c, i) => setTimeout(() => c.classList.add('lit'), 60 * i)));
 
   const form = $('#form');
+  // Portfolio context: an editable draft, never a submitted inquiry.
+  // Use text inputs only; no HTML injection, no cross-origin data transfer.
+  const query = new URLSearchParams(window.location.search);
+  const refSlug = query.get('portfolio') || '';
+  const refName = query.get('case') || '';
+  if (/^[a-z0-9-]{1,90}$/.test(refSlug) && refName.length > 0 && refName.length < 180) {
+    const textarea = form.querySelector('[name=message]');
+    /* four lines so the draft fits the 4-row field; written in the page language, which is only known
+       after <LangProvider> restores it — so it is (re)written on each language event while untouched */
+    const draft = l => l === 'en'
+      ? `[Portfolio inquiry] Reference: ${refName} (${refSlug})\nI would like to discuss a similar project.\nRequirements: `
+      : l === 'ja'
+        ? `[ポートフォリオに関するお問い合わせ] 参考事例：${refName} (${refSlug})\n同様のシステムについて相談したいです。\n要件：`
+        : `[포트폴리오 관련 문의] 참고 프로젝트: ${refName} (${refSlug})\n유사한 시스템 개발을 상담하고 싶습니다.\n요청사항: `;
+    let written = '';
+    const fill = () => {
+      if (!textarea) return;
+      const v = textarea.value;
+      if (v.trim() && v !== written) return; /* the visitor has started writing: never overwrite */
+      written = draft(getLang()); textarea.value = written;
+    };
+    fill();
+    offs.push(on(EV.lang, fill));
+  }
   form.addEventListener('pointermove', e => { const r = form.getBoundingClientRect(); form.style.setProperty('--fx', (e.clientX - r.left) + 'px'); form.style.setProperty('--fy', (e.clientY - r.top) + 'px'); });
   const rules = {
     name: v => v.trim().length > 0,
@@ -44,7 +68,7 @@ export function initContact(host: HTMLElement, st: Styles): () => void {
     if (!agree.checked) { $('#agree').classList.add('invalid'); first = first || agree; }
     if (first) { first.focus(); return; }
     /* Submission. Set NEXT_PUBLIC_FORM_ENDPOINT (.env) to POST JSON to a real API.
-       Without an endpoint the form only simulates sending (UI preview). */
+       Without an endpoint nothing is sent and the failure toast is shown (no fake success).  */
     form.classList.add('is-sending');
     const cfg = { formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT || '' };
     const data = Object.fromEntries(new FormData(form).entries());
@@ -57,7 +81,7 @@ export function initContact(host: HTMLElement, st: Styles): () => void {
     if (cfg.formEndpoint) {
       fetch(cfg.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
         .then(r => finish(r.ok)).catch(() => finish(false));
-    } else setTimeout(() => finish(true), 1300);
+    } else finish(false); /* no endpoint: never simulate a successful inquiry */
   });
   $('#formReset').addEventListener('click', () => {
     form.reset(); $$(sel('.invalid'), form).forEach(x => x.classList.remove('invalid')); form.classList.remove('is-done');

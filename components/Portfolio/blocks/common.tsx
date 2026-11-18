@@ -44,6 +44,13 @@ function jaSegments(t: string): { s: string; w: boolean }[] {
     if (kata(cur) && cur.s.length <= 2 && kata(next)) { next.s = cur.s + next.s; continue; } /* "コ|マース" → "コマース" */
     if (kata(cur) && cur.s.length <= 2 && kata(last)) { last.s += cur.s; continue; } /* word-final piece: "ファクト|リー" */
     if (kata(cur) && kata(last) && last.s.length + cur.s.length <= 8) { last.s += cur.s; continue; }
+    /* a list separator stays at the end of the word before it, so the line can break after "・" but never before it,
+       and the title size (from the longest word) leaves room for it */
+    if (!cur.w && /^[・、]$/.test(cur.s) && last?.w) { last.s += cur.s; continue; }
+    /* a particle (の・と・や・を・に…) belongs to the word before it: "学習塾の" rather than a line starting with "の" */
+    if (cur.w && /^(の|と|や|を|に|が|で|へ|は|も|から|まで|より)$/.test(cur.s) && last?.w) { last.s += cur.s; continue; }
+    /* a lone kanji after a kanji word is a suffix the segmenter cut off ("従業|員", "担当|者"): keep it with that word */
+    if (cur.w && /^[\u4E00-\u9FFF]$/.test(cur.s) && last?.w && /[\u4E00-\u9FFF]$/.test(last.s)) { last.s += cur.s; continue; }
     out.push(cur);
   }
   return out;
@@ -55,6 +62,8 @@ export function jaBreakable(t: string) {
   jaSegments(t).forEach((x, i) => {
     if (x.w && prevWord) out.push(<wbr key={'w' + i} />);
     out.push(x.s); prevWord = x.w;
+    /* a line may break after a list separator ("・", "、", "/"), so "サービス・保証" never needs an emergency break before "・" */
+    if (!x.w && /^[・、/／]$/.test(x.s.trim())) out.push(<wbr key={'p' + i} />);
   });
   return out;
 }

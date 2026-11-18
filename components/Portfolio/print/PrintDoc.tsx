@@ -153,7 +153,8 @@ function Body({ pg, p, lang }: { pg: PrintPage; p: Project; lang: Lang }) {
             {/* the showcase description (web shows it under the heading) — first page of the block only */}
             {pg.part === 0 && pg.b.type === 'screenShowcase' && pg.b.body && <p className={s.scr__txt}>{tx(pg.b.body, lang)}</p>}
           </div>
-          <div className={s.scr__row} data-n={pg.images.length}>{pg.images.map(im => <Fit key={im.id} img={im} lang={lang} />)}</div>
+          {/* one wide screen on its own page: use the page height (dense UI prints larger) */}
+          <div className={s.scr__row} data-n={pg.images.length}>{pg.images.map(im => <Fit key={im.id} img={im} lang={lang} h={pg.images.length === 1 && im.kind !== 'mobile' ? (pg.part === 0 && pg.b.type === 'screenShowcase' && pg.b.body ? 'var(--scrH1t)' : 'var(--scrH1)') : undefined} />)}</div>
         </div>
       );
     case 'grid':

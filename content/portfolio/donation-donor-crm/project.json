@@ -1,0 +1,359 @@
+{
+  "id": "donation-donor-crm",
+  "slug": "donation-donor-crm",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 440,
+  "includeInPdf": true,
+  "title": {
+    "ko": "MORA 비영리단체 후원·기부 운영",
+    "en": "MORA Nonprofit Donations & Donor Operations",
+    "ja": "MORA 非営利団体の寄付・支援者管理"
+  },
+  "subtitle": {
+    "ko": "후원자 관리부터 기부 수납·영수증·안내 대상 선정까지 연결하는 운영 워크스페이스",
+    "en": "A unified workspace for donor relations, gift reconciliation, receipts, and outreach audiences",
+    "ja": "支援者情報、入金照合、領収書、案内対象の選定をつなぐ業務ワークスペース"
+  },
+  "summary": {
+    "ko": "120건의 가상 기부를 바탕으로 후원 관계 원장, 캠페인 관리, 영수증 처리, 수납 대사, 수신 동의 기반 세그먼트를 표현한 WEB 정적 UI 데모.",
+    "en": "A static web UI demo covering donor ledgers, campaign targets, receipt queues, payment reconciliation, and consent-aware segments, using 120 fictional donations.",
+    "ja": "架空の寄付120件を基に、支援者台帳、キャンペーン目標、領収書処理、入金照合、同意条件付きセグメントを表現したWeb向け静的UIデモ。"
+  },
+  "overview": {
+    "ko": "MORA는 가상 비영리재단의 후원 운영자를 위한 정적 웹 인터페이스입니다. 2026년 11월의 정기·일시 기부를 하나의 거래 원본으로 관리하고, 캠페인 목표 편집과 영수증 발급 검토, 가상 입금자료 대사, 수신 동의에 따른 후원자 그룹 구성 업무를 화면으로 표현합니다. 후원자는 익명 별칭과 가상 거래번호로 표시됩니다.",
+    "en": "MORA is a static web interface designed for operators at a fictional nonprofit foundation. A single set of November 2026 recurring and one-time gifts connects donor histories, campaign goal drafts, pre-issuance receipt review, simulated deposit reconciliation, and consent-based audience rules. All donors are represented by anonymous labels and invented transaction identifiers.",
+    "ja": "MORAは架空の非営利財団向けに制作した静的な業務UIです。2026年11月の継続寄付と単発寄付を共通データとして使用し、支援履歴、キャンペーン目標の変更案、領収書発行前の確認、模擬入金データとの照合、受信同意に基づく案内対象の抽出を画面で表現しています。支援者は匿名の識別名と架空の取引IDで表示します。"
+  },
+  "industry": {
+    "ko": "비영리단체 후원자 관계 및 기부금 운영",
+    "en": "Nonprofit donor relations and donation operations",
+    "ja": "非営利団体の支援者関係・寄付金運用"
+  },
+  "categories": [
+    "platform",
+    "web"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#425E6B",
+    "accentInk": "#1F2D33",
+    "cover": "light",
+    "layout": "editorial"
+  },
+  "thumbnail": [
+    "donation-campaign-tracker"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 C실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출).",
+    "표지 배치: stage 레이아웃은 1024px 이상에서 데스크톱 표지 위아래를 약 2% 잘라 하단 상태 표시줄 글자가 잘려서, 자르지 않는 editorial 레이아웃으로 지정."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "120건의 가상 기부를 바탕으로 후원 관계 원장, 캠페인 관리, 영수증 처리, 수납 대사, 수신 동의 기반 세그먼트를 표현한 WEB 정적 UI 데모.",
+        "en": "A static web UI demo covering donor ledgers, campaign targets, receipt queues, payment reconciliation, and consent-aware segments, using 120 fictional donations.",
+        "ja": "架空の寄付120件を基に、支援者台帳、キャンペーン目標、領収書処理、入金照合、同意条件付きセグメントを表現したWeb向け静的UIデモ。"
+      },
+      "images": [
+        "donor-engagement-ledger"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "후원자 관계, 캠페인별 모금 실적, 영수증 발급 상태, 입금 대사 결과를 서로 다른 자료로 관리하면 거래 건수와 금액, 발급 가능 여부를 일관되게 판단하기 어렵습니다. 또한 소통 대상자 선별에서는 수신 동의를 별도의 필수 조건으로 확인해야 합니다.",
+        "en": "Separating donor relationships, campaign performance, receipt issuance, and deposit reconciliation across disconnected records makes it harder to validate totals and distinguish operational states. Audience selection must also independently verify outreach consent rather than assuming every donor can be contacted.",
+        "ja": "支援者情報、キャンペーン別集計、領収書発行状態、入金照合結果を別々に管理すると、金額や件数の一致、手続きの進行状態を把握しにくくなります。また、案内対象の抽出には寄付条件とは別に受信同意を確認する必要があります。"
+      },
+      "body": {
+        "ko": "후원 원장·입금 확인·영수증 발급·홍보 수신 동의를 하나의 숫자로 합치지 않고 각각의 근거를 추적합니다.",
+        "en": "Donation records, bank matching, receipt eligibility, and communication consent require their own evidence trails.",
+        "ja": "寄付台帳、入金照合、領収書発行、案内の受信同意はそれぞれ異なる根拠で管理します。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "후원자 관계·기부 원장: 총 120건 중 정기 80건, 일시 40건과 전체 4,800,000원의 기부를 조회",
+          "en": "Donor ledger: Review 120 fictional gifts totaling KRW 4,800,000, including 80 recurring and 40 one-time gifts",
+          "ja": "支援者・寄付台帳：架空の寄付120件、継続80件・単発40件、合計4,800,000ウォンを確認"
+        },
+        {
+          "ko": "캠페인 운영: 이웃의 겨울 41건·1,620,000원을 포함한 3개 캠페인의 모금 목표와 변경 초안 검토",
+          "en": "Campaign tracker: Compare three campaign goals, including 41 donations and KRW 1,620,000 for Winter Neighbors",
+          "ja": "キャンペーン管理：「「冬の隣人」」の41件・1,620,000ウォンを含む3事業の目標と変更案を比較"
+        },
+        {
+          "ko": "영수증 처리: 106건 발급 완료와 14건 발급 대기를 분리하고 후원자 024의 30,000원 발급 전 확인",
+          "en": "Receipt queue: Keep 106 issued receipts separate from 14 pending receipts and review a KRW 30,000 gift for Donor 024",
+          "ja": "領収書処理：発行済み106件と発行待ち14件を区別し、支援者024の30,000ウォンを確認"
+        },
+        {
+          "ko": "수납 대사: 가상 입금자료 120행과 후원 원장을 비교해 119건 일치·1건 표시명 확인 필요로 구분",
+          "en": "Reconciliation: Compare a simulated 120-row deposit file with the donation ledger, flagging 119 matched transactions and one memo discrepancy",
+          "ja": "入金照合：模擬入金データ120行と台帳を照合し、119件一致・表示名の確認が必要な1件を分類"
+        },
+        {
+          "ko": "후원자 그룹: 정기 × 이웃의 겨울 × 이메일 동의 조건을 결합해 28명 중 23명만 대상으로 미리보기",
+          "en": "Audience builder: Apply recurring + Winter Neighbors + email-consent rules, narrowing 28 eligible donors to 23 approved contacts",
+          "ja": "支援者セグメント：継続寄付×冬のキャンペーン×メール受信同意から28人を23人に絞り込み"
+        }
+      ],
+      "images": [
+        "donation-campaign-tracker"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "후원 운영자가 익명 후원자별 기부 이력과 거래별 영수증 상태를 조회",
+            "en": "An operations user reviews anonymous donors, contribution records, and receipt statuses in the transaction ledger",
+            "ja": "運営担当者が匿名の支援者別寄付履歴と領収書状態を台帳で確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "캠페인 담당자가 3개 사업의 모금액과 진행률을 비교하며 목표 변경 초안을 작성",
+            "en": "A campaign manager compares three fundraising totals and drafts a goal change without saving it",
+            "ja": "キャンペーン担当者が3事業の集計と達成率を比較し、未保存の目標変更案を作成"
+          }
+        },
+        {
+          "title": {
+            "ko": "영수증 담당자가 발급 대기 14건을 검토하고 미확인 발급 정보를 구분",
+            "en": "A receipt operator reviews 14 pending items and separates missing pre-issuance information from issued receipts",
+            "ja": "領収書担当者が発行待ち14件を確認し、発行前の確認項目を整理"
+          }
+        },
+        {
+          "title": {
+            "ko": "정산 담당자가 120건의 기부 원장과 가상 입금내역을 대사하며 표시명 차이 1건을 보류",
+            "en": "A finance operator reconciles 120 transactions against simulated deposit entries and holds one mismatched display name for review",
+            "ja": "会計担当者が架空の入金120行と寄付台帳を照合し、表示名の差異がある1件を保留"
+          }
+        },
+        {
+          "title": {
+            "ko": "소통 담당자가 후원 유형·캠페인·이메일 동의 조건으로 대상 23명을 미리보고 저장 전 상태를 확인",
+            "en": "An engagement operator previews 23 donors who meet contribution and consent rules before saving an audience",
+            "ja": "支援者対応担当者が寄付条件とメール受信同意に基づく23人の対象グループをプレビュー"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "donation-receipt-queue"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "donation-reconciliation",
+        "donor-segment-builder"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "PIUS가 자체 제작한 가상의 비영리단체 후원 운영 정적 UI 데모입니다. HTML/CSS/SVG와 로컬 브라우저 정적 렌더링을 사용해 데스크톱 이미지 5장을 제작했습니다. 기부금 수납, 금융기관 연계, 실제 영수증 발급·발송, 메시지 전송, 사용자 인증, 서버·DB·API 등 실제 운영 기능은 구현하지 않았습니다. 후원자·거래·캠페인·입금내역·수신 동의는 모두 시연용 가상 자료이며 공개된 성과 자료가 아닙니다.",
+        "en": "This is a self-produced, fictional static UI portfolio demo by PIUS. Five desktop screens were rendered using HTML/CSS/SVG and a local browser. No live donations, banking connections, receipt issuance or delivery, outbound messaging, authentication, server, database, or API functionality was implemented. Donors, transactions, campaigns, deposits, and contact consents are entirely simulated and are not client results.",
+        "ja": "PIUSが独自に制作した、架空の非営利団体向け静的UIポートフォリオです。HTML/CSS/SVGとローカルブラウザーによる静的描画でデスクトップ画面5枚を制作しました。実際の寄付金受領、金融機関連携、領収書の発行・送付、メッセージ送信、認証、サーバー、データベース、APIは実装していません。支援者・取引・キャンペーン・入金・受信同意の情報はすべてデモ用の架空データであり、実績を示すものではありません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "기부 거래라는 하나의 데이터 기준을 다섯 종류의 운영 업무로 연결해, 상태와 수치가 일치하는 업무용 인터페이스를 보여줍니다.",
+        "en": "A common donation dataset anchors five distinct operational tasks, with explicit status boundaries and arithmetically consistent UI.",
+        "ja": "一つの寄付取引データを五つの業務画面に展開し、金額と処理状態の整合性を重視したUIです。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "donor-engagement-ledger",
+      "file": "donor-engagement-ledger.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "MORA 후원자 거래 원장에서 11월 기부 120건과 정기 80건·일시 40건, 영수증 106건 발급·14건 대기 상태를 보여주는 화면",
+        "en": "MORA donor transaction ledger showing 120 November gifts, 80 recurring and 40 one-time gifts, 106 issued receipts and 14 pending receipts",
+        "ja": "MORAの支援者台帳で11月の寄付120件、継続80件・単発40件、領収書発行済み106件・待ち14件を表示"
+      },
+      "caption": {
+        "ko": "가상 후원자 024의 누적 기부와 거래·영수증·소통 이력을 운영 원장과 함께 확인합니다.",
+        "en": "Review anonymous Donor 024, cumulative giving, transaction status, receipts, and activity history beside the main ledger.",
+        "ja": "匿名の支援者024について累計寄付、取引履歴、領収書状態、対応履歴を台帳と並べて確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "donation-campaign-tracker",
+      "file": "donation-campaign-tracker.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "MORA 캠페인 편집 화면에서 이웃의 겨울 캠페인 목표 240만원 대비 모금 162만원과 다른 두 캠페인을 함께 비교하는 화면",
+        "en": "MORA campaign goal editor comparing Winter Neighbors at KRW 1.62 million against a KRW 2.4 million goal alongside two other campaigns",
+        "ja": "冬のキャンペーンの寄付1,620,000ウォンと目標2,400,000ウォンを他の2事業と比較するMORAの管理画面"
+      },
+      "caption": {
+        "ko": "현재 목표 대비 67.5% 달성률과 270만원으로 변경하는 미저장 초안을 명확하게 분리합니다.",
+        "en": "The current attainment rate of 67.5% remains separate from an unsaved KRW 2.7 million goal draft.",
+        "ja": "現在の達成率67.5%と、2,700,000ウォンへの未保存の目標変更案を区別します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "donation-receipt-queue",
+      "file": "donation-receipt-queue.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "MORA 영수증 발급 작업함에서 발급 완료 106건, 발급 대기 14건과 후원자 024의 3만원 영수증을 검토하는 화면",
+        "en": "MORA receipt work queue showing 106 issued, 14 pending, and a KRW 30,000 gift for Donor 024 awaiting verification",
+        "ja": "領収書発行済み106件・待ち14件と支援者024の30,000ウォンを確認するMORAの発行待ち一覧"
+      },
+      "caption": {
+        "ko": "발급 전 확인사항과 처리 이력을 보여주되, 대상 거래는 발급 대기 상태로 유지합니다.",
+        "en": "A pre-issuance checklist and event history are visible while the selected receipt remains pending.",
+        "ja": "発行前のチェック項目と処理履歴を表示し、選択中の領収書は発行待ちのままです。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "donation-reconciliation",
+      "file": "donation-reconciliation.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "기부 120건 총 480만원과 가상 입금내역을 비교해 119건 일치·1건 표시명 확인 필요를 구분한 MORA 수납 대사 화면",
+        "en": "MORA reconciliation workspace comparing 120 gifts worth KRW 4.8 million with simulated deposits, with 119 matched and one memo requiring review",
+        "ja": "寄付120件・計4,800,000ウォンと模擬入金データを照合し、119件一致・1件確認待ちを示すMORAの画面"
+      },
+      "caption": {
+        "ko": "원장액과 입금액이 같아 차액은 0원이지만 후원자 024의 입금자 메모 차이를 검토 대상으로 분리합니다.",
+        "en": "A matching amount and date yield zero monetary difference, but Donor 024’s payer memo discrepancy remains unresolved.",
+        "ja": "金額と日付は一致して差額は0ウォンですが、支援者024の入金者メモの差異は未解決です。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "donor-segment-builder",
+      "file": "donor-segment-builder.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "정기 후원·이웃의 겨울 캠페인·이메일 수신 동의 조건으로 28명 중 23명을 고르는 MORA 후원자 세그먼트 편집 화면",
+        "en": "MORA audience rule builder narrowing 28 recurring Winter Neighbors donors to 23 with simulated email consent",
+        "ja": "継続寄付・冬のキャンペーン・メール受信同意の条件で28人から23人を抽出するMORAの支援者グループ編集画面"
+      },
+      "caption": {
+        "ko": "수신 미동의 5명을 제외한 23명의 익명 후원자를 미리보고, 그룹 저장·안내 발송 전 상태를 유지합니다.",
+        "en": "Five donors without consent are excluded; the resulting 23-person audience remains a preview, not a sent campaign.",
+        "ja": "同意のない5人を除き、23人の匿名支援者をプレビューします。グループ保存とメール送信は未実施です。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

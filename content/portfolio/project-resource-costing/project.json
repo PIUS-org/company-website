@@ -1,0 +1,353 @@
+{
+  "id": "project-resource-costing",
+  "slug": "project-resource-costing",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 420,
+  "includeInPdf": true,
+  "title": {
+    "ko": "기업 프로젝트·인력·원가 관리",
+    "en": "Project Resource & Cost Management",
+    "ja": "企業向けプロジェクト・リソース・原価管理"
+  },
+  "subtitle": {
+    "ko": "리소스 배정부터 투입시간 승인과 원가 검토까지 연결하는 프로젝트 운영 워크스페이스",
+    "en": "A project operations workspace linking staffing, timesheets, budgets, and approvals",
+    "ja": "人員配置、稼働時間、予算、検収をつなぐプロジェクト運営ワークスペース"
+  },
+  "summary": {
+    "ko": "인력 주차별 배정, 기준 예산, 타임시트 승인, 원가 차이, 마일스톤 검수를 하나의 가상 프로젝트로 연결한 기업형 ERP UI 데모.",
+    "en": "An enterprise ERP UI demo connecting weekly resource allocation, budget baselines, timesheet review, cost variance, and milestone approvals.",
+    "ja": "週別の人員割当、基準予算、タイムシート承認、原価差異、マイルストーン検収を一つの架空案件で示すERPのUIデモです。"
+  },
+  "overview": {
+    "ko": "프로젝트 관리자는 업무별 담당자와 주차별 배정을 설계하고, 원가 담당자는 계획 예산과 투입시간을 비교하며 변경·검수 상태를 확인합니다. PRJ-2026-018 프로젝트의 계획 예산 7,200만 원과 누적 집행 5,160만 원을 공유하는 5개 독립 화면으로 업무를 시각화했습니다.",
+    "en": "Project leads allocate staff across workstreams and weeks, while cost owners compare baselines with time entries and review deliverable approvals. Five static screens share fictional project PRJ-2026-018, with a ₩72 million budget and ₩51.6 million of recorded spend.",
+    "ja": "プロジェクト責任者は業務ごとの担当者と週別の配置を計画し、原価担当者は予算と稼働実績を比較して検収・変更の状況を確認します。架空案件PRJ-2026-018の予算7,200万ウォン、累計執行5,160万ウォンを共通データとして5つの静的画面で表現しました。"
+  },
+  "industry": {
+    "ko": "기업 프로젝트 운영·인력 배정·원가 관리 (시연용 가상 데이터)",
+    "en": "Enterprise project operations, resource planning, and cost control (fictional data)",
+    "ja": "企業のプロジェクト運営・人員計画・原価管理（架空データ）"
+  },
+  "categories": [
+    "erp",
+    "web"
+  ],
+  "mainCategory": "erp",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#30476B",
+    "accentInk": "#1A2433",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "prj-resource-allocator"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 A실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "인력 주차별 배정, 기준 예산, 타임시트 승인, 원가 차이, 마일스톤 검수를 하나의 가상 프로젝트로 연결한 기업형 ERP UI 데모.",
+        "en": "An enterprise ERP UI demo connecting weekly resource allocation, budget baselines, timesheet review, cost variance, and milestone approvals.",
+        "ja": "週別の人員割当、基準予算、タイムシート承認、原価差異、マイルストーン検収を一つの架空案件で示すERPのUIデモです。"
+      },
+      "images": [
+        "prj-resource-allocator"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "투입 예정 인력과 승인된 타임시트, 실제 원가를 분리하지 않으면 예산 대비 집행액을 잘못 판단하기 쉽습니다.",
+        "en": "Planned staffing, approved timesheets, and actual costs must remain distinct in project budget comparisons.",
+        "ja": "予定人員、承認済み工数、実原価を分けないと、予算対実績を誤って判断しやすくなります。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "주차별 인력 배정 그리드와 동일 기간 중복 투입 표시",
+          "en": "Weekly staff allocation grid with overlapping assignment warnings",
+          "ja": "週別リソース割当表と重複配置の警告"
+        },
+        {
+          "ko": "인건비·외주비·운영비 기준 예산 항목 편집과 검토",
+          "en": "Editable budget baseline for labor, external services, and overhead",
+          "ja": "人件費・外注費・運営費の基準予算編集"
+        },
+        {
+          "ko": "담당자별 타임시트 제출·승인 대기 내역 확인",
+          "en": "Team timesheet review with submitted and approved hours separated",
+          "ja": "提出済み・承認済みを分けた稼働時間レビュー"
+        },
+        {
+          "ko": "원가 그룹별 예산·집행·잔액 및 집행률 비교",
+          "en": "Cost-group comparisons across budget, actual spend, and balance",
+          "ja": "原価グループ別の予算・執行額・残額比較"
+        },
+        {
+          "ko": "마일스톤 산출물 검수 기준과 변경 요청 승인 상태",
+          "en": "Milestone acceptance checklist and change-request approval status",
+          "ja": "成果物の検収基準と変更申請の承認状況"
+        }
+      ],
+      "images": [
+        "prj-budget-baseline"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "프로젝트 업무와 담당 인력의 주차별 배정 계획 작성",
+            "en": "Build a weekly staffing plan for project workstreams",
+            "ja": "業務別担当者と週別の割当計画を作成"
+          }
+        },
+        {
+          "title": {
+            "ko": "원가 그룹 및 항목별 기준 예산 구성",
+            "en": "Set budget baselines by cost group and line item",
+            "ja": "原価区分と項目ごとの基準予算を設定"
+          }
+        },
+        {
+          "title": {
+            "ko": "투입시간 제출 내역을 검토하고 승인 상태 분리",
+            "en": "Review timesheet submissions and approval status",
+            "ja": "タイムシート提出分と承認状況を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "누적 집행액을 기준 예산과 비교하여 차이 확인",
+            "en": "Compare accumulated cost with the approved budget",
+            "ja": "累計執行額と予算の差異を検証"
+          }
+        },
+        {
+          "title": {
+            "ko": "산출물 검수·변경 요청을 확인하고 다음 작업 판단",
+            "en": "Review milestone deliverables and pending changes",
+            "ja": "マイルストーンの検収と変更申請を確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "prj-timesheet-review"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "prj-cost-variance",
+        "prj-milestone-approvals"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "정적 HTML/CSS/SVG를 렌더링한 프론트 UI 이미지 5장입니다. 실제 고객사 구축 사례나 운영 ERP가 아니며 계정·권한·서버·DB·실시간 인력 배정·자동 원가 집계·워크플로 승인 기능을 구현하지 않았습니다. 조직·인력·비용·일정은 가상 시연 데이터입니다.",
+        "en": "Five front-end UI images rendered with static HTML, CSS, and SVG. This is not a client implementation or a functioning ERP. Authentication, servers, databases, live resource scheduling, automated cost accounting, and approval services were not implemented. All organizations, staffing data, prices, and dates are fictional.",
+        "ja": "静的HTML/CSS/SVGでレンダリングしたフロントエンドUI画像5点です。実顧客向けの導入実績や稼働中のERPではありません。認証、サーバー、DB、リアルタイム配置、原価の自動集計、承認処理は実装していません。組織、要員、金額、日程は架空データです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "배정, 예산, 투입, 차이, 검수를 서로 다른 핵심 작업 화면으로 구성해 기업 프로젝트 관리의 업무 흐름을 표현했습니다.",
+        "en": "Five distinct workspaces illustrate how planning, allocation, time capture, cost review, and milestone acceptance fit into a single project workflow.",
+        "ja": "計画、割当、稼働、原価差異、検収をそれぞれ異なる作業画面として設計し、企業プロジェクト管理の一連の流れを示しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "prj-resource-allocator",
+      "file": "prj-resource-allocator.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "6명의 담당자와 6주간 업무별 투입시간, 주간 가용 40시간 대비 2시간 초과 배정 경고를 표시하는 프로젝트 인력 배정표",
+        "en": "A weekly project resource grid showing six team members, workstream allocations, and a two-hour overcapacity warning against a 40-hour week",
+        "ja": "担当者6名の6週間の配置表と、週40時間の上限に対する2時間の超過警告を示す画面"
+      },
+      "caption": {
+        "ko": "주차별 배정 그리드에서 업무 담당자와 가용 시간을 비교하고, 중복 배정을 검토합니다.",
+        "en": "Review staff availability and overlapping weekly allocations in a six-week resource planner.",
+        "ja": "週別の担当業務と稼働可能時間を比較し、重複配置を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "prj-budget-baseline",
+      "file": "prj-budget-baseline.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "PRJ-2026-018의 인건비·외주비·운영비 9개 예산 항목을 편집하고 계획 예산 7,200만 원을 검토하는 화면",
+        "en": "A project budget editor covering nine labor, external-services, and overhead line items within a ₩72 million baseline",
+        "ja": "案件PRJ-2026-018の人件費・外注費・運営費の予算9項目と、総予算7,200万ウォンを確認する編集画面"
+      },
+      "caption": {
+        "ko": "9개 기준 예산 항목의 계획·집행·잔액을 검토하고 변경안을 확인합니다.",
+        "en": "Review planned, spent, and remaining amounts across nine budget line items and inspect proposed revisions.",
+        "ja": "9項目の計画・執行・残額を比較し、予算の変更案を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "prj-timesheet-review",
+      "file": "prj-timesheet-review.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "계획 1,200시간과 실투입 860시간을 구분하고 승인 820시간·대기 40시간을 검토하는 타임시트 화면",
+        "en": "A timesheet review workspace separating 1,200 planned hours from 860 recorded hours, of which 820 are approved and 40 pending",
+        "ja": "計画1,200時間、実績860時間、承認済み820時間、承認待ち40時間を区別したタイムシート画面"
+      },
+      "caption": {
+        "ko": "제출된 투입시간을 담당자·기간별로 확인하고 승인 완료와 대기 시간을 구분합니다.",
+        "en": "Inspect team time entries and keep approved hours separate from pending submissions.",
+        "ja": "担当者別の稼働記録を確認し、承認済みと承認待ちの時間を分けて表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "prj-cost-variance",
+      "file": "prj-cost-variance.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "인건비 3,480만 원·외주비 1,200만 원·운영비 480만 원의 누적 집행과 2,040만 원 잔액을 비교하는 원가 차이 화면",
+        "en": "A cost variance view comparing ₩34.8 million labor, ₩12 million external services, and ₩4.8 million overhead spend with the remaining ₩20.4 million budget",
+        "ja": "人件費3,480万ウォン、外注費1,200万ウォン、運営費480万ウォンの累計執行額と残額2,040万ウォンの比較画面"
+      },
+      "caption": {
+        "ko": "3개 원가 그룹의 계획·집행액과 집행률을 비교해 잔여 예산을 확인합니다.",
+        "en": "Compare spend, remaining balances, and utilization rates by cost group.",
+        "ja": "原価3区分ごとの予算、執行額、執行率を比較し、残予算を確認します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "prj-milestone-approvals",
+      "file": "prj-milestone-approvals.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "6개 마일스톤의 승인 2건·검토 1건·예정 3건과 선택 산출물의 검수 기준 4개를 보여주는 승인 화면",
+        "en": "A milestone approval workspace with two accepted, one under review, and three planned milestones, plus a four-point deliverable checklist",
+        "ja": "マイルストーン6件の承認済み2件・レビュー中1件・予定3件と、成果物の確認項目4件を示す画面"
+      },
+      "caption": {
+        "ko": "마일스톤별 검수 상태와 변경 요청을 분리하고 선택 산출물의 확인 항목을 검토합니다.",
+        "en": "Review acceptance criteria, pending change requests, and each milestone’s status.",
+        "ja": "検収状況と変更申請を分け、選択した成果物の確認項目を審査します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

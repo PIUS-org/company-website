@@ -35,6 +35,7 @@
     "erp",
     "web"
   ],
+  "mainCategory": "erp",
   "platforms": [
     {
       "type": "admin",
@@ -287,6 +288,11 @@
         "ko": "수기 확인 과정의 입고 수량 차이, 복잡한 보관 위치 검색, 분산된 피킹 업무, 출고 후 재고 반영 누락, 재고 실사 차이의 승인 상태를 연결된 업무 데이터로 관리하는 과정을 시각화합니다.",
         "en": "The experience addresses receiving discrepancies, difficult SKU location lookup, fragmented picking assignments, missed inventory deductions after shipping, and unclear cycle-count approval states through a connected workflow.",
         "ja": "入荷数量の不一致、SKUの保管場所を探す負担、分散したピッキング指示、出荷後の在庫反映漏れ、棚卸調整の承認状況の不明確さを、連携した業務画面で可視化します。"
+      },
+      "body": {
+        "ko": "입고·적치·피킹·출고가 각각 끝난 것으로 보이더라도 재고 원장이 일치하지 않으면 운영자는 다음 작업을 판단할 수 없습니다.",
+        "en": "Receiving, put-away, picking, and dispatch must reconcile against one inventory ledger before the next operation can be trusted.",
+        "ja": "入荷・格納・ピッキング・出荷がそれぞれ完了していても、在庫台帳が一致しなければ次の作業を判断できません。"
       }
     },
     {

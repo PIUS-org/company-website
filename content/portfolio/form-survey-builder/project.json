@@ -1,0 +1,370 @@
+{
+  "id": "form-survey-builder",
+  "slug": "form-survey-builder",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 370,
+  "includeInPdf": true,
+  "title": {
+    "ko": "조건부 온라인 설문·신청서 빌더",
+    "en": "Conditional Forms & Survey Builder",
+    "ja": "条件分岐型オンラインフォーム・アンケートビルダー"
+  },
+  "subtitle": {
+    "ko": "문항 구성부터 분기 검증·모바일 응답·제출 분석까지",
+    "en": "From question design to branching validation, mobile responses and submission analytics",
+    "ja": "設問編集から分岐検証・モバイル回答・提出分析まで"
+  },
+  "summary": {
+    "ko": "12개 문항과 조건부 노출 규칙을 편집하고 모바일 응답, 제출 검토, 분기 테스트와 결과 분석을 연결한 WEB·APP 정적 UI 데모입니다.",
+    "en": "A static WEB and mobile UI demo linking a 12-question form editor, conditional display rules, mobile response flow, submission review, path testing and analytics.",
+    "ja": "12問の設問編集、条件表示、モバイル回答、提出状況の確認、分岐テスト、回答分析をつなぐWEB・モバイル向け静的UIデモです。"
+  },
+  "overview": {
+    "ko": "설문 운영자는 문항을 작성하는 것뿐 아니라 답변에 따른 다음 문항의 노출, 모바일 응답 경험, 제출 누락과 수집 데이터를 한 흐름으로 점검해야 합니다. 플로우노트는 설문 작성, 모바일 미리보기, 응답 관리, 분기 시나리오 비교, 완료 응답 분석의 다섯 핵심 업무 화면으로 이 과정을 표현했습니다.",
+    "en": "Running a conditional survey involves more than writing questions. Teams need to check which fields appear for each answer, how respondents progress on mobile, whether submissions are complete, and what the collected data means. FLOWNOTE visualizes that workflow across five distinct screens: form builder, mobile preview, response queue, branch testing and analytics.",
+    "ja": "条件分岐があるアンケートでは、設問の作成だけでなく、回答値による表示の切り替え、モバイルでの回答体験、提出漏れ、集計対象の整合性を確認する必要があります。FLOWNOTEでは、フォーム編集、モバイルプレビュー、回答一覧、分岐シナリオ比較、回答分析という5つの業務画面で一連の流れを表現しました。"
+  },
+  "industry": {
+    "ko": "디지털 설문·신청서 운영",
+    "en": "Online forms and survey operations",
+    "ja": "オンラインフォーム・アンケート運用"
+  },
+  "categories": [
+    "platform",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "platform",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#46446B",
+    "accentInk": "#212133",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "forms-01",
+    "forms-02"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 D실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "12개 문항과 조건부 노출 규칙을 편집하고 모바일 응답, 제출 검토, 분기 테스트와 결과 분석을 연결한 WEB·APP 정적 UI 데모입니다.",
+        "en": "A static WEB and mobile UI demo linking a 12-question form editor, conditional display rules, mobile response flow, submission review, path testing and analytics.",
+        "ja": "12問の設問編集、条件表示、モバイル回答、提出状況の確認、分岐テスト、回答分析をつなぐWEB・モバイル向け静的UIデモです。"
+      },
+      "images": [
+        "forms-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "조건부 문항이 있는 설문은 작성자 화면과 응답자 화면의 로직이 다르면 불필요한 문항이 나타나거나 필수 답변이 잘못 요구될 수 있습니다. FRM-022에서 Q04가 예일 때만 Q07을 노출하는 규칙을 다섯 화면에 일관되게 적용했습니다.",
+        "en": "When the authoring rule and respondent experience do not agree, conditional surveys may show irrelevant questions or require answers to hidden fields. The five screens consistently use the FRM-022 rule: show Q07 only when Q04 is answered “Yes.”",
+        "ja": "編集画面で設定した条件と回答者画面の挙動が一致しないと、不要な設問が表示されたり、非表示の項目が必須扱いになったりします。FRM-022では、Q04に「はい」と答えた場合のみQ07を表示するルールを5画面で統一しました。"
+      },
+      "body": {
+        "ko": "조건부 문항은 작성자가 설정한 분기와 응답자가 실제로 보는 화면이 같아야 잘못된 필수 응답을 막을 수 있습니다.",
+        "en": "Conditional forms must render the same branching rules for editors and respondents to avoid invalid required fields.",
+        "ja": "条件付き設問では編集者の設定と回答者の表示が一致しないと、誤った必須回答が生じます。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "12개 문항 편집과 Q04=예 → Q07 표시 / 아니오 → Q07 숨김 조건 설정",
+          "en": "Edit 12 questions and set Q04=Yes → show Q07; Q04=No → hide Q07",
+          "ja": "全12問の編集と、Q04=はいの場合Q07を表示／いいえの場合は非表示にする条件設定"
+        },
+        {
+          "ko": "1179×2556 응답자 전용 모바일 화면에서 Q07 입력과 단계 이동 시연",
+          "en": "Preview the respondent-facing Q07 field and step navigation in a 1179×2556 mobile layout",
+          "ja": "1179×2556の回答者向けモバイルUIでQ07入力と画面遷移を表現"
+        },
+        {
+          "ko": "128건 중 제출 완료 112건·미완료 16건을 구분하는 응답 목록과 상세 패널",
+          "en": "Review 128 records split into 112 completed and 16 incomplete responses",
+          "ja": "全128件を提出完了112件・未完了16件に分類した回答一覧と詳細パネル"
+        },
+        {
+          "ko": "예/아니오의 두 분기 경로가 Q08에 합류하는 예상 결과 비교",
+          "en": "Compare the expected Yes/No paths and their common transition to Q08",
+          "ja": "はい／いいえの2つの経路がQ08で合流する想定結果の比較"
+        },
+        {
+          "ko": "완료 응답 112건 기준 Q04 예 68건·아니오 44건의 Q07 노출 모수 검증",
+          "en": "Validate Q07 eligibility against 68 Yes and 44 No responses among 112 completed records",
+          "ja": "完了112件のうちQ04=はい68件・いいえ44件を基準にQ07の表示対象を検証"
+        }
+      ],
+      "images": [
+        "forms-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "2026 파트너 협업 신청서(FRM-022) 및 12개 문항 구성",
+            "en": "Configure the 12 questions of the 2026 Partner Collaboration Application (FRM-022)",
+            "ja": "2026年パートナー協業申請書（FRM-022）の全12問を構成"
+          }
+        },
+        {
+          "title": {
+            "ko": "Q04의 협업 경험 답변에 따른 Q07 표시 조건 설정",
+            "en": "Set the Q04-based display rule for Q07",
+            "ja": "Q04の回答によるQ07の表示条件を設定"
+          }
+        },
+        {
+          "title": {
+            "ko": "응답자 모바일에서 Q04=예 경로의 Q07 작성 미리보기",
+            "en": "Preview Q07 on mobile along the Q04=Yes path",
+            "ja": "Q04=はいの経路でモバイル版Q07入力を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "수집된 제출 완료 112건과 미완료 16건 목록 검토",
+            "en": "Review 112 submitted and 16 incomplete records",
+            "ja": "提出完了112件と未完了16件を一覧で確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "예/아니오 두 경로의 Q07 노출 테스트와 Q08 합류 확인",
+            "en": "Compare Q07 visibility in both branches and their transition to Q08",
+            "ja": "2つの分岐経路でQ07の表示とQ08への合流を比較"
+          }
+        },
+        {
+          "title": {
+            "ko": "완료 응답 112건을 기준으로 일별 제출·Q04 응답·Q07 노출 통계 확인",
+            "en": "Inspect daily submissions and Q04/Q07 counts for the 112 completed responses",
+            "ja": "完了112件を母数として日別提出数とQ04・Q07の集計を確認"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "forms-03"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "forms-04",
+        "forms-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "FLOWNOTE의 가상 설문 FRM-022, 12개 문항, 응답 128건(완료 112·미완료 16)을 기준으로 데스크톱 UI 4장과 모바일 UI 1장의 정적 이미지를 제작했습니다. 실제 설문 서버, 데이터 수집·저장, 조건식 실행 엔진, 인증, CSV 다운로드, 통계 API는 구현하지 않았습니다. 모든 응답과 분포는 예시 데이터입니다.",
+        "en": "Five static UI images were created for the fictional FLOWNOTE survey FRM-022: four desktop screens and one mobile screen. The dataset includes 12 questions and 128 response records (112 complete, 16 incomplete). No live survey backend, data collection or storage, expression execution engine, authentication, CSV export or analytics API was developed. All records and distributions are illustrative.",
+        "ja": "架空のFLOWNOTEアンケートFRM-022（12問、回答128件＝完了112件・未完了16件）を用い、デスクトップ4画面とモバイル1画面の静的UI画像を制作しました。実際のフォームサーバー、回答収集・保存、条件式実行エンジン、認証、CSV出力、分析APIは実装していません。回答内容と数値はすべてサンプルです。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "문항 작성부터 응답자의 조건부 경험과 데이터 검증까지 하나의 명료한 설문 워크플로로 연결했습니다.",
+        "en": "A coherent survey workflow from question authoring to conditional respondent experience and data validation.",
+        "ja": "設問作成から条件付き回答体験、データ検証までを一貫した運用フローとして表現しました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "forms-01",
+      "file": "forms-conditional-builder.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "Q07 편집 속성 패널과 Q04 조건 분기 노드가 있는 플로우노트 설문 빌더",
+        "en": "FLOWNOTE survey editor showing Q07 properties and the Q04 conditional branch",
+        "ja": "Q07の属性設定とQ04の条件分岐ノードを表示したFLOWNOTEのフォーム編集画面"
+      },
+      "caption": {
+        "ko": "Q04가 ‘예’일 때 Q07을 표시하고 ‘아니오’일 때 숨기는 조건을 설정합니다.",
+        "en": "Sets Q07 to appear for Q04=Yes and remain hidden for Q04=No.",
+        "ja": "Q04が「はい」の場合はQ07を表示し、「いいえ」の場合は非表示にします。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "forms-02",
+      "file": "forms-live-preview-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "Q04에 예라고 답한 응답자를 위한 Q07 모바일 입력 미리보기",
+        "en": "Mobile preview of Q07 for respondents who answered Yes to Q04",
+        "ja": "Q04で「はい」を選んだ回答者向けのQ07モバイルプレビュー"
+      },
+      "caption": {
+        "ko": "조건을 만족하는 응답자에게 Q07 장문 입력 필드와 7/12 진행 단계를 표시합니다.",
+        "en": "Shows the Q07 long-text field and step 7 of 12 for the eligible respondent path.",
+        "ja": "条件を満たす回答者にQ07の長文入力欄と12問中7問目の進行状況を表示します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "forms-03",
+      "file": "forms-response-queue.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "완료 112건과 미완료 16건을 구분하는 응답 관리 목록과 선택 상세",
+        "en": "Response queue separating 112 completed from 16 incomplete records with details pane",
+        "ja": "提出完了112件と未完了16件を分類した回答一覧と詳細パネル"
+      },
+      "caption": {
+        "ko": "128건의 수집 응답을 상태별로 확인하고 RES-0128의 조건부 Q07 답변을 검토합니다.",
+        "en": "Reviews 128 records by status and inspects the conditional Q07 answer in RES-0128.",
+        "ja": "全128件を状態別に確認し、RES-0128の条件付きQ07回答を確認します。"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "forms-04",
+      "file": "forms-branch-test.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "Q04의 예·아니오에 따라 Q07 노출 여부를 비교하는 조건 분기 테스트",
+        "en": "Branch testing screen comparing Q07 visibility for Q04 Yes and No",
+        "ja": "Q04の「はい」「いいえ」によるQ07表示を比較する分岐テスト画面"
+      },
+      "caption": {
+        "ko": "경로 A는 Q07 표시, 경로 B는 Q07 건너뛰기이며 모두 Q08로 합류하는 예상 결과를 검증합니다.",
+        "en": "Compares expected paths: show Q07 for Yes, skip it for No, then continue to Q08.",
+        "ja": "「はい」はQ07を表示、「いいえ」はスキップし、両方ともQ08へ進む想定結果を比較します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "forms-05",
+      "file": "forms-response-analytics.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "완료 응답 112건의 일별 추이와 Q04·Q07 조건부 분석 대시보드",
+        "en": "Analytics of 112 completed submissions with daily trend and conditional Q04/Q07 breakdown",
+        "ja": "完了112件の日別推移とQ04・Q07の条件別分析画面"
+      },
+      "caption": {
+        "ko": "전체 128건 중 완료 112건, 미완료 16건이며 Q04 예 68건만 Q07 노출 대상으로 집계합니다.",
+        "en": "Of 128 responses, 112 are complete and 16 incomplete; only 68 Q04=Yes records are eligible for Q07.",
+        "ja": "全128件のうち完了112件・未完了16件。Q04で「はい」を選んだ68件のみQ07の表示対象として集計します。"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

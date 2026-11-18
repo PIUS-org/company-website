@@ -22,9 +22,9 @@
     "ja": "商業物件の区画状況・賃貸契約・月次請求・更新をつなぐ運営UI構想。"
   },
   "overview": {
-    "ko": "상업용 건물 운영자가 호실별 입주 현황과 계약 조건을 확인하고, 임대료 청구 및 갱신 일정을 관리하는 워크스페이스를 구상했습니다. 인테리어 쇼룸이나 숙박 예약이 아니라 장기 임대차 계약과 월별 원장을 중심으로 합니다.",
-    "en": "This independent concept lets property operators track unit occupancy, lease terms, invoices, and renewals. It focuses on longer-term commercial leases and billing ledgers, not interior showrooms or hotel bookings.",
-    "ja": "商業物件の運営者が区画別の入居状況、契約条件、請求、更新予定を管理する自主制作UI構想です。インテリア展示や宿泊予約ではなく、長期賃貸契約と月次請求台帳を中心とします。"
+    "ko": "상업용 건물 운영자가 호실별 입주 현황과 계약 조건을 확인하고, 임대료 청구 및 갱신 일정을 관리하는 워크스페이스를 구상했습니다. 인테리어 쇼룸이나 숙박 예약이 아니라 장기 임대차 계약과 월별 원장을 중심으로 합니다. 호실 12개는 임대 중 9·갱신 검토 중 1·공실 2로 분류합니다. 402호 월 청구는 임대료 ₩2,200,000 + 관리비 ₩300,000 + 부가세 ₩250,000 = 합계 ₩2,750,000입니다. 2026-11-09에는 납기 전 미수납(Pending)이며 납기일은 11월 10일입니다. 계약 종료 예정일은 2026-12-31이고 갱신은 미확정입니다.",
+    "en": "This independent concept lets property operators track unit occupancy, lease terms, invoices, and renewals. It focuses on longer-term commercial leases and billing ledgers, not interior showrooms or hotel bookings. The 12 units comprise nine active leases, one lease under renewal review, and two vacant units. Unit 402 monthly charges total ₩2,750,000: ₩2,200,000 rent, ₩300,000 management fees, and ₩250,000 VAT. On Nov 9, 2026 the invoice is pending but not overdue; its due date is Nov 10. The lease is set to end Dec 31, 2026, and renewal is undecided.",
+    "ja": "商業物件の運営者が区画別の入居状況、契約条件、請求、更新予定を管理する自主制作UI構想です。インテリア展示や宿泊予約ではなく、長期賃貸契約と月次請求台帳を中心とします。 12区画の内訳は通常契約中9・更新検討中1・空室2です。402号室の月額請求は賃料₩2,200,000＋管理費₩300,000＋付加価値税₩250,000＝合計₩2,750,000です。2026年11月9日時点では支払期限前の未入金で、期限は11月10日。契約終了予定日は2026年12月31日で、更新は未決定です。"
   },
   "industry": {
     "ko": "상업용 부동산·임대 운영",
@@ -36,6 +36,7 @@
     "platform",
     "web"
   ],
+  "mainCategory": "erp",
   "platforms": [
     {
       "type": "web",
@@ -165,9 +166,9 @@
         "ja": "架空オフィスビルMAPLE TOWERの12区画を管理し、402号室のテナントLOOM OFFICEの月次請求と契約満了予定を代表事例とします。"
       },
       "body": {
-        "ko": "호실 12개는 임대 중 9·갱신 검토 중 1·공실 2로 분류합니다. 402호 월 청구는 임대료 ₩2,200,000 + 관리비 ₩300,000 + 부가세 ₩250,000 = 합계 ₩2,750,000입니다. 2026-11-09에는 납기 전 미수납(Pending)이며 납기일은 11월 10일입니다. 계약 종료 예정일은 2026-12-31이고 갱신은 미확정입니다.",
-        "en": "The 12 units comprise nine active leases, one lease under renewal review, and two vacant units. Unit 402 monthly charges total ₩2,750,000: ₩2,200,000 rent, ₩300,000 management fees, and ₩250,000 VAT. On Nov 9, 2026 the invoice is pending but not overdue; its due date is Nov 10. The lease is set to end Dec 31, 2026, and renewal is undecided.",
-        "ja": "12区画の内訳は通常契約中9・更新検討中1・空室2です。402号室の月額請求は賃料₩2,200,000＋管理費₩300,000＋付加価値税₩250,000＝合計₩2,750,000です。2026年11月9日時点では支払期限前の未入金で、期限は11月10日。契約終了予定日は2026年12月31日で、更新は未決定です。"
+        "ko": "호실 계약 조건과 월별 청구, 만료 예정일이 흩어지면 임대 운영자가 수납·갱신 판단을 놓치기 쉽습니다.",
+        "en": "Unit-level lease terms, monthly invoices, and expiry dates need to be connected to support billing and renewal decisions.",
+        "ja": "区画ごとの契約条件、月次請求、満了予定日を結び、入金と更新の判断につなげます。"
       },
       "goals": [
         {

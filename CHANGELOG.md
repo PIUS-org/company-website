@@ -2,19 +2,60 @@
 
 개발자에게 전달된 버전 단위로 기록합니다. 각 전달 zip의 `CHANGES.md`에는 해당 버전의 변경 파일 목록이 들어 있습니다.
 
-## [작업 중]
+## [작업 중] 2026-11-13
+- **포트폴리오 필터 탭 = 메인 화면 숫자:** /portfolio 탭을 `categories`(복수) 대신 `mainCategory` 기준으로 배치. 프로젝트마다 탭 1곳에만 들어가, 메인 타일 숫자와 탭 숫자가 같고 탭 합계가 전체 수와 같다(검토 84 = 14+21+15+21+10+3, 공개 6 = 1×6, KO·EN·JA 실측). 카드·상세의 분류 태그는 그대로 `categories`.
+- **v39 — 84건 개요 문단 + 웹 전용 상담 CTA**(작업본 반입, 검증 보고서 `docs/portfolio-v39/V39-RELEASE-VALIDATION-REPORT.md`):
+  - **개요 문단(KO·EN·JA):** 84건 수정. 이미지·상태·구조는 그대로. 의미 중복 4건은 다듬음.
+  - **상담 CTA:** 상세 하단 → `/?portfolio=<slug>&case=<제목>#contact` → 문의 초안(편집 가능). PDF에는 없음.
+  - **초안 결함 수정:** 페이지 언어로 작성, 보이지 않는 문자 제거, 4줄.
+  - **문의 폼:** `NEXT_PUBLIC_FORM_ENDPOINT`가 없으면 전송하지 않고 실패 안내(가짜 성공 없음). 실제 수신은 미검증.
+- **v38 — 최종 원본 5장 + 포트폴리오 이미지 가독성**(보고서 `docs/portfolio-v38/V38-READABILITY-AND-5-IMAGES-REPORT.md`):
+  - **이미지:** 5장 교체, 461장 해시 유지.
+  - **폰:** 4장은 핵심 1장 + 보조 화면, 390~560px에서 1열(최대 380px), 태블릿 폭에서 확대.
+  - **데스크톱:** 본문 옆 화면은 본문 위 전체 폭으로, 갤러리·기능 카드도 데스크톱 화면은 1열.
+  - **캡션:** 쇼케이스 화면에 표시.
+  - **화면 크게 보기(ScreenZoom, 웹 상세 전용):** 원본 그대로 1:1 확대.
+  - **PDF:** 데스크톱 화면 1장 페이지의 화면 높이를 118mm에서 140mm로.
+- **v37 — 3차 최종 수정 이미지 22장 통합**(보고서 `docs/portfolio-batch-3/v37/R3-V37-MERGE-REPORT.md`):
+  - **이미지:** A2·B8·C4·E8을 교체. 22/22 해시 일치, 나머지 444/444 해시 유지.
+  - **B실 5건 제목·alt 브랜드명:** 루멘 클리닉·베레아 레지던스·플로우핀·크레아다·굿핸즈. slug는 그대로.
+  - **E실 교체 8장 alt:** 화면에 보이는 데모 이름으로 맞춤.
+  - **브랜드 혼재 P0 11건 해소.** 남은 P1 5건(인테리어 02 면적, 클리닉 05 날짜, 피트니스 03·05 글자, 팟캐스트 02 테마)은 작업실 재제작.
+- **v36 — 3차 수정 이미지 100장 통합**(보고서 `docs/portfolio-batch-3/v36/R3-V36-MERGE-REPORT.md`):
+  - **이미지:** A24·B21·C30·D3·E22를 매니페스트 target_path에 덮어씀. 교체 100/100 해시 일치, 나머지 366/366 유지.
+  - **문구 27곳(KO·EN·JA):** E실 교체 화면 alt를 화면에 보이는 데모 이름으로, 청소 앱 05(11월 19일 이용 완료), 말하기 앱 개요(영어 학습자).
+  - **바꾸지 않은 것:** 렌더러·CSS·1·2차·상태·썸네일·블록 구조.
+  - **남은 문제:** P0 11건(B·E 교체본과 보존본의 브랜드 혼재)과 P1 4건 → 작업실 재제작.
+- **v35 — 3차 통합 결과 수정**(보고서 `docs/portfolio-batch-3/v35/R3-QUALITY-FIX-REPORT.md`, 변경 `R3-CHANGELOG.csv`):
+  - **작업 원본 zip에 이미지 466장을 실제 파일로 포함하고 `.git`은 뺌**(`work-zip.mjs`): 참조 이미지가 없으면 zip을 만들지 않음. `workspace-init.mjs`는 .git이 없으면 새 저장소와 handoff 태그를 만듦.
+  - **3차 카드 화면 26건 교체**: 기존 이미지만 사용.
+  - **C실 6건 배치 변경**: 폰 4대 → 핵심 화면 focus.
+  - **문장 정리**: D·E 마무리 문장 12건, C·E 표지 문구 12건, E 카드 요약 6건, B·E 캡션 60건(반복 꼬리말 제거). KO·EN·JA 모두 수정.
+  - **공통 CSS**: 폰 한 대 쇼케이스 1440 25%·모바일 66%(1·2차 포함 24건), 모바일 focus 주 화면 72%.
+  - **미리보기 빌드**: 카드 이미지를 인라인하지 않도록 수정.
+  - **원본 이미지 재작업 3건**(보고만): 산책 02·03 워커 사진, 쿠킹 01 브랜드명, 컨퍼런스 02 연사 사진.
+- **3차 포트폴리오 30건·이미지 150장 등록**(batch-3, 전부 `review`, 보고서 `docs/portfolio-batch-3/R3-INTEGRATION-REPORT.md`): A~E 작업실 원문 ko/en/ja·alt/caption을 실제 스키마로 매핑, 원본 WebP 그대로(SHA-256 150/150). 원문 보정 129곳(영문·일문 속 한국어 조각 120, 국문 마침표 6, 거래처 금지어 1, 일본어 제목 2). batch-2 닫음. 공통: 일본어 제목 조사 결합 조건 1줄. 미리보기 빌드: 파일 512개 상한 대응(한 페이지 전용 이미지 data URI, 미리보기 전용).
+- **2차 포트폴리오 24건 품질 검수**(보고서 `docs/portfolio-batch-2/r2-quality-review/`): 혼합 서비스 8건 카드를 데스크톱+모바일로, 역할 화면이 여럿인 2건은 폰 2~3대로, 3건은 더 특징적인 화면으로. 단일 폰 stage 표지 3건 → split·rail. mobile 분류 4건을 실제 성격(erp·platform)으로. 2차 목록 순서 재배치. 공통: stage 변형 textImage 글 열 0px 붕괴 수정(1차 stage 5건 포함), 보조 화면 1장 갤러리 폭, 일본어 표지 제목이 「・」·조사·한자 접미사로 시작하지 않게. 일본어 마침표 12곳·영문 caption 2곳·국문 개요 1곳. 이미지 원본·1차 데이터·공개 상태 변경 없음.
+- **포트폴리오 목록 — 필터 바 고정**: 스크롤해도 분류 탭이 헤더 바로 아래 붙어 있음(붙은 상태에서는 반투명 검정 배경·밑줄). 아래쪽에서 탭을 바꾸면 목록 맨 위로 부드럽게 이동. 모바일 가로 스크롤 탭은 양 끝 페이드 + 선택한 탭이 가운데로 이동.
+- **포트폴리오 목록 — "더 보기"**: 새로 붙는 카드의 이미지를 바로 불러오고(지연 로딩 해제), 카드가 화면에 들어오기 조금 전에 차례로(70ms 간격) 나타나게 변경. 이미지가 오기 전에는 회색 빈 칸 대신 짧은 반짝임(3회) 표시. `useReveal`에 margin·stagger 옵션 추가(상세 페이지는 기존 동작 그대로).
+- **상세 페이지 글자 크기 정리**(`Project.module.css`만, 모든 프로젝트 공통): 섹션 제목 최대 3.3→2.6rem, 표지 부제 2→1.42rem·설명 1.7→1.12rem(본문 굵기), 개요 리드 2→1.36rem(줄 길이 34em), 마무리 문장 5.4→2.6rem(줄 길이 24em·균형 줄바꿈), 다음 프로젝트 제목 5.4→3.2rem, 성과 수치 5.4→3.6rem, 제작 범위 항목 2→1.22rem, 서비스 구조 열 제목·표지 화면 목록 축소. stage·editorial 변형의 개요 리드·마무리 문장도 같은 비율로 축소. 전역 글자 변수·메인 화면·PDF는 변경 없음.
+
+## [v3] 2026-11-12 (전달 파일명 v31)
+- **2차 포트폴리오 24건 등록(batch-2)**: R2 A~D실 최종 인계본(이미지 120장, 한·영·일 원고). 전부 PIUS 자체 정적 UI 데모·`review`. 이미지는 원본 그대로(SHA-256 MANIFEST 일치). 블록: cover → overview(업무 문제+개요) → textImage(대표 기능 bullets) → userFlow → screenShowcase(핵심 화면) → imageGallery(보조 화면) → scope(제작 범위) → statement. D실 이미지 id는 스키마 규칙(소문자)에 맞춰 소문자로. mainCategory는 balance 추천대로. 기존 30건·공통 렌더러·BI는 변경 없음.
+- **메인 Portfolio 숫자 타일 중복 카운트 제거**: 프로젝트마다 `mainCategory`(categories 중 하나)를 두고 그것만 센다. 타일 합계 = 공개 프로젝트 수. 공개 6건은 분류마다 1건씩(표준편차 0), review 30건은 erp 6 · platform 6 · mobile 5 · web 5 · commerce 5 · integration 3(표준편차 1.00, 지금 데이터로 가능한 최소). 목록 필터는 그대로 categories 기준.
+- **1차·2차 묶음 분리**: `content/portfolio/_batches.json`(batch-1 닫힘 30건, batch-2 열림). check가 묶음 누락·중복을 막고, `portfolio.mjs new`가 열린 묶음에 자동 추가, `portfolio.mjs balance`가 새 프로젝트 메인 카테고리를 추천. 1차 보고서 10개를 `docs/portfolio-batch-1/`로 옮김.
 - **정리(화면 변화 없음)**: 쓰이지 않는 코드 제거 — export 6개(`IS_PREVIEW`, `liveImages`, `hasScreens`, `pendingScreens`, `IMAGE_TIERS`, `PAGE_LAYOUTS`), 문구 키 5개×3언어(`pf.pending`, `pf.review*`, `pf.flow`), CSS 규칙 4개(`plat__sky`, `card__planT`, `rv__t`, `morph__arrow`). OG 이미지 2장 무손실 재압축(픽셀 동일, 2.4MB→2.2MB).
 - **작업 원본 zip 용량**: git 이력을 v28 시점 한 커밋으로 정리(이전 이력은 비공개 백업), work zip에서 이미지 중복 제거(`scripts/work-zip.mjs`·`scripts/workspace-init.mjs`, Claude 작업용 — 개발자 전달본에는 안 들어감).
 
 ## [v2] 2026-11-11 (전달 파일명 v28)
-- **v28 최종 일괄 수정**: stackflow-wms `wms-inbound`·`wms-location-map`을 남색 사이드바 셸로, subscripta `subscripta-billing-operations`를 상단 탭 셸로 재렌더링(작업 영역·수치 그대로). civera layer-explorer caption에 2D/3D 구분(한·영·일). reviewNotes 정리, IMPRINT LAB 사진 권리 확인 필요 기록, PDF 캡처 가이드 갱신. 운송 ERP 3장·NODERA 2장은 보류 유지. 보고: `docs/PORTFOLIO_V28_FINAL_REPORT.md`
+- **v28 최종 일괄 수정**: stackflow-wms `wms-inbound`·`wms-location-map`을 남색 사이드바 셸로, subscripta `subscripta-billing-operations`를 상단 탭 셸로 재렌더링(작업 영역·수치 그대로). civera layer-explorer caption에 2D/3D 구분(한·영·일). reviewNotes 정리, IMPRINT LAB 사진 권리 확인 필요 기록, PDF 캡처 가이드 갱신. 운송 ERP 3장·NODERA 2장은 보류 유지. 보고: `docs/portfolio-batch-1/PORTFOLIO_V28_FINAL_REPORT.md`
 - **사용자 확정: 대표 화면 3장 재구성 UI로 교체** — 통근버스 shuttle-dashboard·shuttle-driver-app(B실), 전세버스 dispatch-calendar(C실). id·파일명·kind·표지·썸네일·블록 유지. alt·caption 한·영·일을 '재구성 UI'로 명시, 두 프로젝트 개요 블록 본문에 재구성 화면 안내 1문장, 통근버스 기사 앱 섹션 본문을 새 화면 내용에 맞게 보완. 실제 수행 범위·상태·분류 무변경
 - **C실 재제작 이미지 13장 교체**(civicdesk c04, farm admin-catalog, metaverse 2장, sitelog s02, MES 3장, WMS 2장, subscripta billing-operations, velora 2장): 파일과 alt·caption 한·영·일만 갱신. charter-bus-dispatch `dispatch-calendar`는 approved 실제 프로젝트 대표 화면이라 보류(사용자 결정 대기)
-- **D·E실**: caption 없던 26장(전세버스·통근버스·커머스·메타버스·운송 ERP·FITY 19장)에 한·영·일 caption 추가(메타데이터만). NODERA 도메인 정합성 확인. review/public 빌드·540개 반응형·다국어 검사·목록 필터/더보기 검사. PDF 캡처 선별 가이드 작성. 보고: `docs/PORTFOLIO_DE_VERIFICATION_REPORT.md`, `docs/PORTFOLIO_PDF_CAPTURE_GUIDE.md`
+- **D·E실**: caption 없던 26장(전세버스·통근버스·커머스·메타버스·운송 ERP·FITY 19장)에 한·영·일 caption 추가(메타데이터만). NODERA 도메인 정합성 확인. review/public 빌드·540개 반응형·다국어 검사·목록 필터/더보기 검사. PDF 캡처 선별 가이드 작성. 보고: `docs/portfolio-batch-1/PORTFOLIO_DE_VERIFICATION_REPORT.md`, `docs/portfolio-batch-1/PORTFOLIO_PDF_CAPTURE_GUIDE.md`
 - **B실 재디자인 반영(부분)**: nodera-flow — visual-builder·request-intake 교체, 사례를 WF-014 시설 구매 승인(REQ-092 ₩2,800,000)으로 한·영·일 원고 교체, 이전 사례(₩480,000)의 approval-inbox·run-history는 숨김(교체본 대기). civera-twin — layer-explorer만 교체·노출(레이어 탐색 textImage). 보존: civera command-center(날짜 2026.11.10≠기존 2027.07.15, 기존 3D 대표가 디자인 계열 일치), civera flood-timeline(T+00·T+30 수치가 사건 리포트 24·71동과 불일치), 통근버스 2장(승인된 실제 수행 프로젝트 — 사용자 결정 대기)
 - **이미지 오류 수정본 2장 교체(A)**: helio-desk `helio-desk-sla-operations`(차트 자리 `{svg}` 글자 → 실제 차트), secondloop `secondloop-transaction-tracking`(하단 템플릿 문구 → View transaction 버튼, 상품가 ₩218,000·배송비 ₩4,000 표시). 파일만 교체, id·kind·alt·caption·블록·상태 그대로. 운송 ERP 신규 3장은 계속 보류
-- **자체 데모 UI 이미지 3차(20장)·4차(16장)**: nodera-flow·fieldnest·contracta·leasegrid·subscripta 각 4장, penova-class·civicdesk·sitelog·stayport-pms 각 4장 + 4차 4개 프로젝트 문구 전체 교체(한·영·일). 30개 모두 실제 화면 연결(자리표시자 0), 이미지 160 → 196장. PDF 마무리 쪽에 scope note 표시. 상세: `docs/PORTFOLIO_BATCH03_04_IMAGES_REPORT.md`
-- **자체 데모 UI 이미지 2차(24장)**: hireloom·bulkbridge·imprint-lab·tavora-os·helio-desk에 화면 5·5·5·5·4장. 표지·썸네일 교체(자리표시자 제거), textImage·screenShowcase(phones·focus 태블릿) 블록, External 대표 장면은 presentation.external. 모두 review 유지. 이미지 136 → 160장. 상세: `docs/PORTFOLIO_BATCH02_IMAGES_REPORT.md`
+- **자체 데모 UI 이미지 3차(20장)·4차(16장)**: nodera-flow·fieldnest·contracta·leasegrid·subscripta 각 4장, penova-class·civicdesk·sitelog·stayport-pms 각 4장 + 4차 4개 프로젝트 문구 전체 교체(한·영·일). 30개 모두 실제 화면 연결(자리표시자 0), 이미지 160 → 196장. PDF 마무리 쪽에 scope note 표시. 상세: `docs/portfolio-batch-1/PORTFOLIO_BATCH03_04_IMAGES_REPORT.md`
+- **자체 데모 UI 이미지 2차(24장)**: hireloom·bulkbridge·imprint-lab·tavora-os·helio-desk에 화면 5·5·5·5·4장. 표지·썸네일 교체(자리표시자 제거), textImage·screenShowcase(phones·focus 태블릿) 블록, External 대표 장면은 presentation.external. 모두 review 유지. 이미지 136 → 160장. 상세: `docs/portfolio-batch-1/PORTFOLIO_BATCH02_IMAGES_REPORT.md`
 - **도식 툴 구조도 제거**: farm-commerce-backend `commerce-architecture`, charter-bus-dispatch `dispatch-architecture`(ARCHITECTURE 섹션 블록·이미지 항목·파일 삭제), 섹션 번호 재정렬. 앞으로 Mermaid·draw.io류 구조도는 쓰지 않는다는 규칙을 CLAUDE.md·등록 지침에 추가. 이미지 138 → 136장
 - **승인 프로젝트 UI 이미지 추가(batch01, 12장 반영 · 3장 보류)**: farm-commerce-backend 4장(screenShowcase desktop 1 + imageGallery 2열 3장), commute-shuttle-platform 2장(screenShowcase desktop 2개), charter-bus-dispatch 3장(screenShowcase 1 + imageGallery 2장), metaverse-live-app 3장(screenShowcase phones). alt·caption 한·영·일은 전달본 그대로, 시연 UI임을 밝히는 본문 포함. 섹션 번호 재정렬, 상태·slug·순서·표지·기존 이미지·블록 그대로. transport-erp-monitoring 3장은 화면 안에 공개 금지 거래처 이름이 보여 반영하지 않음(교체본 대기). 이미지 126 → 138장, 기존 126장 SHA256 동일
 - **STEP 0 이미지 노출 정책(11개 · 117장, C67/S27/H23/E55)**: `images[].presentation`(tier·external) 정식 스키마 추가 — 검증·manifest·웹·Full/External PDF·문서 연동. hidden은 어디에도 연결 불가·public 복사 제외, support는 보조 블록 전용, External은 E 화면만(표지 반복 제외). 11개 블록 재배치, 숨긴 화면 관련 문구 최소 수정(한·영·일). `screenShowcase` `tablets` 레이아웃(MES). 왼쪽 화면 textImage가 좁은 칸에 들어가던 공통 CSS 수정. export report에 쪽별 화면 id. 원본 126장 SHA256 동일
@@ -24,7 +65,7 @@
   - PDF: External 판본(`--mode external|both`, 최대 7쪽, 서로 다른 섹션의 대표 기능 2쪽), 흐름 균등 분할, 화면 붙은 기능 카드 페이지, 화면 대기 표지 = 흐름 패널, 텍스트 페이지 글자 확대, `exports/report.json`(쪽수·크기·잘림·외부 제출 준비 여부, 실행마다 병합), PDF 안 화면을 JPEG 사본으로 넣어 용량 약 1/5(FITY 16MB → 3.3MB, 원본 불변, `--raw`로 해제)
   - 줄바꿈: 한국어 조사가 %·닫는 따옴표·괄호 뒤에서 떨어지지 않게, '입니다(' 앞에서 끊기지 않게
   - 콘텐츠(한·영·일): 신규 14개 — '1차 등록' 내부 표기 제거, 내부 제작 메모가 공개 문구로 나가던 기능 소개 문장 교체, 데모 사례(사용자→단계→상태→결과) 소개, 유형별 블록 순서, STAYPORT 퇴실 단계 추가. 이미지 10개 프로젝트 — 핵심 화면은 크게, 보조 화면은 화면+설명 카드로 묶음(VELORA·NOCTAVE·CIVERA·REELSHIFT·THREADFORM·ROAMFRAME·MORROW), MORROW 화면 설명 재작성, SECONDLOOP 거래 시점별 흐름, MES 업무 영역별 역할, REELSHIFT EDIT/REVIEW 구획. 승인 5개 — 개요에 '문제→처리' 항목(기존 기재 사실만)
-  - 문서: `docs/PORTFOLIO_IMAGE_PLAN.md`(30개 이미지 계획·126장 평가), `docs/PORTFOLIO_QUALITY_REPORT.md`, 스키마·운영 가이드의 목록·PDF 설명 갱신(이미지 10장 고정 규칙 폐지)
+  - 문서: `docs/portfolio-batch-1/PORTFOLIO_IMAGE_PLAN.md`(30개 이미지 계획·126장 평가), `docs/portfolio-batch-1/PORTFOLIO_QUALITY_REPORT.md`, 스키마·운영 가이드의 목록·PDF 설명 갱신(이미지 10장 고정 규칙 폐지)
 - 포트폴리오 3차 배치(텍스트 중심) 4건 추가: civicdesk(170)·subscripta(180)·sitelog(190)·stayport-pms(200). 전달 JSON 원문 그대로, 모두 status review, 대표 화면 `file: null` 대기. 전체 30건(approved 6·review 24) — 30건 등록 구조 완성
 - 포트폴리오 2차 배치(텍스트 중심) 5건 추가: nodera-flow(120)·fieldnest(130)·contracta(140)·helio-desk(150)·leasegrid(160). 전달 JSON 원문 그대로, 모두 status review, 대표 화면 `file: null` 대기. 전체 26건(approved 6·review 20)
 - 포트폴리오 1차 배치(텍스트 중심) 5건 추가: bulkbridge(70)·imprint-lab(80)·hireloom(90)·tavora-os(100)·penova-class(110). 전달 JSON 원문 그대로, 모두 status review, 대표 화면은 `file: null` 대기(빈 화면 틀 표시)

@@ -1,0 +1,10 @@
+/* Screen viewer (web detail page only). Neutral dark overlay — the PIUS palette is untouched. */
+.ov{ position:fixed; inset:0; z-index:300; display:grid; grid-template-rows:minmax(0,1fr) auto; background:rgba(8,10,14,.92); color:#fff; }
+.pan{ overflow:auto; display:grid; place-items:center; padding:56px 16px 12px; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
+.pan[data-panned]{ place-items:start; }
+.img{ display:block; max-width:none; height:auto; border-radius:6px; box-shadow:0 30px 80px -30px rgba(0,0,0,.8); background:#fff; }
+.img[data-kind="mobile"]{ border-radius:18px; }
+.x{ position:absolute; top:10px; right:12px; z-index:1; width:44px; height:44px; border-radius:50%; border:1px solid rgba(255,255,255,.25); background:rgba(20,22,28,.8); color:#fff; font-size:26px; line-height:1; cursor:pointer; }
+.x:focus-visible{ outline:2px solid #fff; outline-offset:2px; }
+.cap{ margin:0; padding:10px 20px calc(14px + env(safe-area-inset-bottom)); text-align:center; font-size:var(--t-xs, .8rem); color:rgba(255,255,255,.82); display:grid; gap:4px; }
+.cap small{ color:rgba(255,255,255,.55); }

@@ -22,9 +22,9 @@
     "ja": "手作業だった配車業務をシステム化し、乗務員・車両のマッチング、路線カレンダー、運行履歴の照会、管理者ダッシュボードを一つのシステムにまとめました。"
   },
   "overview": {
-    "ko": "수작업 배차의 시간과 오류를 줄이기 위해 기사·차량·노선 정보를 통합한 풀스택 시스템입니다. 빠르게 MVP를 내기 위해 서버 렌더링 구조로 시작했습니다.",
-    "en": "A full-stack system that brings driver, vehicle and route information together to cut the time and errors of manual dispatch. It started with a server-rendered architecture to ship an MVP quickly.",
-    "ja": "手作業の配車にかかる時間とミスを減らすため、乗務員・車両・路線の情報を統合したフルスタックシステムです。MVPを素早く出すため、サーバーレンダリング構造で始めました。"
+    "ko": "수작업 배차의 시간과 오류를 줄이기 위해 기사·차량·노선 정보를 통합한 풀스택 시스템입니다. 빠르게 MVP를 내기 위해 서버 렌더링 구조로 시작했습니다. 대표 이미지의 배차 캘린더는 운영정보 보호를 위해 실제 배차 운영 흐름을 기준으로 재구성한 UI입니다.",
+    "en": "A full-stack system that brings driver, vehicle and route information together to cut the time and errors of manual dispatch. It started with a server-rendered architecture to ship an MVP quickly. The dispatch calendar shown as the lead image is a reconstructed UI based on the actual dispatch process, with operational information anonymized.",
+    "ja": "手作業の配車にかかる時間とミスを減らすため、乗務員・車両・路線の情報を統合したフルスタックシステムです。MVPを素早く出すため、サーバーレンダリング構造で始めました。 メイン画像の配車カレンダーは、運営情報を保護するため実際の配車業務フローを基に再構成したUIです。"
   },
   "industry": {
     "ko": "전세버스 운송",
@@ -35,6 +35,7 @@
     "erp",
     "web"
   ],
+  "mainCategory": "web",
   "platforms": [
     {
       "type": "web",
@@ -220,9 +221,9 @@
         }
       ],
       "body": {
-        "ko": "대표 이미지의 배차 캘린더는 운영정보 보호를 위해 실제 배차 운영 흐름을 기준으로 재구성한 UI입니다.",
-        "en": "The dispatch calendar shown as the lead image is a reconstructed UI based on the actual dispatch process, with operational information anonymized.",
-        "ja": "メイン画像の配車カレンダーは、運営情報を保護するため実際の配車業務フローを基に再構成したUIです。"
+        "ko": "일정 변경이 차량과 기사 배정 모두에 영향을 주기 때문에, 배차표뿐 아니라 운행 이력과 자원 상태의 연결이 중요합니다.",
+        "en": "A schedule change affects both vehicle and driver availability; the dispatch calendar needs to stay tied to assignments and trip history.",
+        "ja": "予定変更は車両と乗務員の両方に影響するため、配車表だけでなく運行履歴とリソース状況のつながりが重要です。"
       }
     },
     {

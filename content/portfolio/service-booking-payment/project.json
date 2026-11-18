@@ -1,0 +1,362 @@
+{
+  "id": "service-booking-payment",
+  "slug": "service-booking-payment",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 230,
+  "includeInPdf": true,
+  "title": {
+    "ko": "서비스 예약·선결제 운영",
+    "en": "Service Booking & Deposit Operations",
+    "ja": "サービス予約・事前決済管理"
+  },
+  "subtitle": {
+    "ko": "예약 선택부터 직원 배정, 예약금과 잔금 관리까지",
+    "en": "From appointment selection to staff assignment and payment tracking",
+    "ja": "予約の選択からスタッフ配置、予約金と残金の管理まで"
+  },
+  "summary": {
+    "ko": "고객용 예약 화면과 지점 운영자의 예약·결제 관리 작업대를 연결해 보여주는 정적 UI 데모입니다.",
+    "en": "A static UI demonstration connecting the customer booking experience with the branch team's scheduling and payment workbench.",
+    "ja": "顧客向け予約画面と店舗運営者向けの予約・決済管理画面をつなぐ静的UIデモです。"
+  },
+  "overview": {
+    "ko": "고객은 서비스, 방문 날짜와 시간을 선택하고 예약금 납부 전 최종 내용을 확인합니다. 지점 운영자는 같은 예약번호를 기준으로 직원별 충돌을 확인하고 예약금·잔금 상태를 점검합니다. 일정 변경·취소와 공간 배정도 운영자가 검토하는 화면으로 구성했습니다.",
+    "en": "Customers choose a service, date, and time, then review the details before paying a deposit. Branch staff use the same booking reference to check scheduling conflicts and track deposit and balance statuses. The concept also includes review screens for rescheduling, cancellations, and room allocation.",
+    "ja": "顧客はサービス・来店日・時間を選び、予約金の支払い前に内容を確認します。店舗運営者は同じ予約番号を基にスタッフの予定重複を調べ、予約金と残金の状態を確認します。日程変更・キャンセル、施術スペースの割り当ても、運営上の確認画面として構成しました。"
+  },
+  "industry": {
+    "ko": "예약 기반 생활·뷰티 서비스",
+    "en": "Appointment-based beauty and local services",
+    "ja": "予約制の美容・生活サービス"
+  },
+  "categories": [
+    "platform",
+    "mobile",
+    "web"
+  ],
+  "mainCategory": "web",
+  "platforms": [
+    {
+      "type": "web"
+    },
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#306B5C",
+    "accentInk": "#1A332D",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "booking-customer-mobile"
+  ],
+  "reviewNotes": [
+    "PIUS 2차(batch-2) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 이름·금액·수치는 가상 데이터.",
+    "출처: R2 B실 최종 인계(pius-r2-a-to-d-claude-integration-handoff-20261112). 이미지 5장 원본 그대로(SHA-256 MANIFEST 일치).",
+    "스키마 매핑: 대표 기능 → textImage bullets(services 블록은 열마다 플랫폼·대상이 필수라 사용하지 않음), 보조(support) 화면 → imageGallery(보조 화면은 보조 블록에만 둘 수 있음), 표지 화면은 본문에서 반복하지 않음, overview 블록 lead = 해결하려는 업무 문제(렌더러가 lead 아래 프로젝트 overview를 함께 표시하므로 웹·PDF 모두 문제→개요 순으로 둘 다 노출)."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "고객용 예약 화면과 지점 운영자의 예약·결제 관리 작업대를 연결해 보여주는 정적 UI 데모입니다.",
+        "en": "A static UI demonstration connecting the customer booking experience with the branch team's scheduling and payment workbench.",
+        "ja": "顧客向け予約画面と店舗運営者向けの予約・決済管理画面をつなぐ静的UIデモです。"
+      },
+      "images": [
+        "booking-customer-mobile"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "시간대별 직원 및 시술 공간의 가용성이 분리되고 예약금 수납 상태가 누락되면, 미확정 예약을 확정 일정으로 오인하거나 이중 배정하기 쉽습니다. 예약 변경과 환불 예상액도 실제 결제 내역과 구분되어야 합니다.",
+        "en": "When staff and treatment-room availability are tracked separately from deposit status, an unconfirmed request may be mistaken for a confirmed booking or assigned twice. Estimated refunds also need to remain distinct from actual payment transactions.",
+        "ja": "スタッフと施術スペースの空き状況が予約金の入金状態と別々に管理されると、未確定の予約を確定済みと誤認したり、重複して割り当てたりするおそれがあります。返金の見込額と実際の入出金履歴も区別する必要があります。"
+      },
+      "body": {
+        "ko": "예약 가능 슬롯과 선결제 상태를 혼동하면 아직 확정되지 않은 고객을 확정 일정에 배정할 위험이 있습니다.",
+        "en": "Availability, deposits, and confirmed bookings need separate states to avoid allocating staff or rooms prematurely.",
+        "ja": "空き枠、事前決済、予約確定を別の状態として扱わないと、未確定の予定を確定として割り当てる恐れがあります。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "고객: 서비스·방문일·시간 선택과 예약금 결제 전 확인",
+          "en": "Customer: service, date and time selection with pre-payment review",
+          "ja": "顧客：サービス・来店日・時間の選択と決済前の確認"
+        },
+        {
+          "ko": "운영자: 직원별 예약 시간표, 충돌 탐지 및 배정 후보 확인",
+          "en": "Operator: staff schedule, conflict detection, and assignment preview",
+          "ja": "運営者：スタッフ別スケジュール、重複検知、割り当て候補の確認"
+        },
+        {
+          "ko": "운영자: 예약금·잔금 항목별 수납 전 상태와 정산 단계 조회",
+          "en": "Operator: deposit and remaining-balance ledger with unpaid states",
+          "ja": "運営者：予約金・残金の項目別未入金状態と精算段階の確認"
+        },
+        {
+          "ko": "운영자: 변경·취소 및 가상 환불 규정 비교",
+          "en": "Operator: rescheduling, cancellation, and illustrative refund comparison",
+          "ja": "運営者：日程変更・キャンセルと仮定の返金規定の比較"
+        },
+        {
+          "ko": "운영자: 직원과 시술 공간의 동시 가용성 검토",
+          "en": "Operator: combined staff and treatment-room availability review",
+          "ja": "運営者：スタッフと施術スペースの同時空き状況の確認"
+        }
+      ],
+      "images": [
+        "booking-payment-detail"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "업무 흐름",
+        "en": "Workflow",
+        "ja": "業務フロー"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "서비스와 일정 선택",
+            "en": "Select service and time",
+            "ja": "サービスと日時を選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "예약금 결제 전 확인",
+            "en": "Review before deposit payment",
+            "ja": "予約金の決済前に内容を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "직원·공간 후보 점검",
+            "en": "Check staff and room candidates",
+            "ja": "スタッフ・スペース候補を確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "예약 확정 단계 검토",
+            "en": "Review booking confirmation",
+            "ja": "予約確定の段階を検討"
+          }
+        },
+        {
+          "title": {
+            "ko": "방문 및 잔금 정산 단계 안내",
+            "en": "Outline service completion and balance settlement",
+            "ja": "施術完了後の残金精算の流れを案内"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "booking-timeslot-admin"
+      ]
+    },
+    {
+      "type": "imageGallery",
+      "section": {
+        "index": "05",
+        "label": "MORE SCREENS"
+      },
+      "columns": 2,
+      "heading": {
+        "ko": "보조 화면",
+        "en": "Supporting screens",
+        "ja": "補助画面"
+      },
+      "images": [
+        "booking-change-refund",
+        "booking-staff-calendar"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "고객 모바일 1개 화면과 운영 관리자 데스크톱 4개 화면을 정적 HTML/CSS/SVG 기반 이미지로 제작했습니다. 예약·결제·환불·자원 배정·알림은 시각적 시뮬레이션이며 API, 서버, 실제 데이터 처리 기능은 구현하지 않았습니다.",
+        "en": "One customer mobile screen and four operator desktop screens were produced as static HTML/CSS/SVG-rendered images. Booking, payments, refunds, assignment, and notifications are visual simulations only; no APIs, backend, or live transactions were implemented.",
+        "ja": "顧客向けモバイル画面1点、運営管理者向けデスクトップ画面4点を、HTML/CSS/SVGによる静的画像として制作しました。予約・決済・返金・割り当て・通知は画面上の模擬表現であり、API、サーバー、実取引処理は実装していません。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "예약의 선택·배정·금액·변경 정책을 하나의 운영 맥락으로 연결한 UI 설계 사례입니다.",
+        "en": "A UI design study connecting appointment selection, resource assignment, payment status, and change policies in one operational workflow.",
+        "ja": "予約選択、割り当て、金額管理、変更規定を一連の運営業務としてつなぐUIデザイン事例です。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "booking-customer-mobile",
+      "file": "booking-customer-mobile.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "고객이 디자인 커트 서비스를 선택하고 11월 18일 오후 3시 30분 예약금 3만 원을 확인하는 모바일 예약 화면",
+        "en": "Mobile booking screen with a haircut service selected for November 18 at 3:30 p.m. and a ₩30,000 deposit preview",
+        "ja": "11月18日15時30分のカットサービスを選び、予約金3万ウォンを確認する顧客向けモバイル予約画面"
+      },
+      "caption": {
+        "ko": "고객 예약 · 서비스·시간 선택과 결제 전 최종 확인",
+        "en": "Customer booking — choose a service and time before payment",
+        "ja": "顧客予約 — サービスと時間の選択、決済前の最終確認"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "booking-timeslot-admin",
+      "file": "booking-timeslot-admin.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "직원 4명의 시간그리드에서 요청한 15시 30분부터 17시까지의 예약 충돌과 서진의 배정 가능 상태를 표시한 관리자 화면",
+        "en": "Operator time grid showing conflicts across four staff members and Seojin's availability for the requested 3:30–5:00 p.m. slot",
+        "ja": "スタッフ4人の時間表で15時30分から17時までの重複と、ソジンの割り当て可能状態を示す管理画面"
+      },
+      "caption": {
+        "ko": "예약 충돌 검토 · 직원별 시간그리드와 미확정 배정 후보",
+        "en": "Scheduling conflicts — staff time grid and unconfirmed candidate",
+        "ja": "予約の重複確認 — スタッフ別時間表と未確定の配置候補"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "booking-payment-detail",
+      "file": "booking-payment-detail.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "예약번호 BK-261112-021의 예약금 3만 원과 현장 잔금 9만 원을 수납 전 상태로 표시하는 결제 원장",
+        "en": "Unpaid payment ledger for booking BK-261112-021, separating the ₩30,000 deposit from the ₩90,000 on-site balance",
+        "ja": "予約番号BK-261112-021の予約金3万ウォンと来店時残金9万ウォンを未入金として分けた決済台帳"
+      },
+      "caption": {
+        "ko": "금액 관리 · 예약금과 잔금의 항목별 상태 및 처리 순서",
+        "en": "Payment tracking — deposit, balance, and process stages",
+        "ja": "金額管理 — 予約金と残金の状態および処理順序"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "booking-change-refund",
+      "file": "booking-change-refund.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "예약금 미결제 원본을 유지하면서 결제 후 취소를 가정해 100퍼센트·50퍼센트·0퍼센트의 가상 환불액을 비교하는 관리자 화면",
+        "en": "Cancellation policy simulator comparing hypothetical 100%, 50%, and 0% deposit refunds while preserving the original unpaid booking",
+        "ja": "予約金未入金の元データを維持し、決済後の取消を仮定して100％・50％・0％の返金額を比較する管理画面"
+      },
+      "caption": {
+        "ko": "변경·환불 · 실제 수납과 가상 환불 계산을 분리한 검토 작업대",
+        "en": "Change and refund review — hypothetical calculations kept separate from actual receipts",
+        "ja": "変更・返金 — 実際の入金と仮定の返金計算を分けた確認画面"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    },
+    {
+      "id": "booking-staff-calendar",
+      "file": "booking-staff-calendar.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "직원 4명과 시술룸 3개의 자원 배치표에서 15시 30분부터 17시까지 서진과 스타일링 룸 C만 사용 가능한 상태를 보여주는 화면",
+        "en": "Resource board showing only Seojin and Styling Room C available for 3:30–5:00 p.m. among four staff and three rooms",
+        "ja": "スタッフ4人と施術室3室の稼働表で15時30分から17時までソジンとスタイリングルームCだけが利用可能な状態を示す画面"
+      },
+      "caption": {
+        "ko": "자원 배정 · 직원과 시술룸의 동시 가용성 검토",
+        "en": "Resource assignment — checking staff and room availability together",
+        "ja": "リソース配置 — スタッフと施術室の空き状況を同時確認"
+      },
+      "presentation": {
+        "tier": "support"
+      }
+    }
+  ]
+}

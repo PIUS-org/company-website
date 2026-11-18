@@ -1,0 +1,338 @@
+{
+  "id": "second-home-cleaning-app",
+  "slug": "second-home-cleaning-app",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 530,
+  "includeInPdf": true,
+  "title": {
+    "ko": "하루 클린",
+    "en": "Haru Clean",
+    "ja": "ハル・クリーン"
+  },
+  "subtitle": {
+    "ko": "집 청소 옵션부터 방문 상태와 후기까지",
+    "en": "From cleaning options to visit tracking and reviews",
+    "ja": "清掃オプションから訪問状況・レビューまで"
+  },
+  "summary": {
+    "ko": "청소 서비스 탐색, 옵션 선택, 날짜 예약, 담당자 배정과 후기의 전체 여정.",
+    "en": "An end-to-end home-cleaning flow from discovery and options to booking, assignment and review.",
+    "ja": "清掃サービスの検索、オプション、予約、担当者割当、レビューをつなぐ利用体験。"
+  },
+  "overview": {
+    "ko": "20~29평 일반 홈클리닝 65,000원에 추가 옵션 25,000원을 더한 90,000원 예약을 설계했습니다. 11월 19일 오전 11시 방문 예약이 담당자 배정을 거쳐 이용 완료와 후기까지 이어집니다.",
+    "en": "The UI shows a KRW 90,000 booking: KRW 65,000 for standard cleaning plus KRW 25,000 in extras. The November 19, 11 AM visit carries through cleaner assignment to completion and a review.",
+    "ja": "標準清掃65,000ウォンと追加25,000ウォンの合計90,000ウォンの予約を表現。11月19日11時の訪問予約が担当者割当を経て、利用完了とレビューまでつながります。"
+  },
+  "industry": {
+    "ko": "생활 서비스",
+    "en": "Home services",
+    "ja": "生活サービス"
+  },
+  "categories": [
+    "mobile"
+  ],
+  "mainCategory": "mobile",
+  "platforms": [
+    {
+      "type": "app"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#2A7A6E",
+    "accentInk": "#14342F",
+    "cover": "light",
+    "layout": "split"
+  },
+  "thumbnail": [
+    "second-home-cleaning-app-01",
+    "second-home-cleaning-app-02"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / D실 claude-integration-prompt.txt. 이미지 5장은 d-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "청소 서비스 탐색, 옵션 선택, 날짜 예약, 담당자 배정과 후기의 전체 여정.",
+        "en": "An end-to-end home-cleaning flow from discovery and options to booking, assignment and review.",
+        "ja": "清掃サービスの検索、オプション、予約、担当者割当、レビューをつなぐ利用体験。"
+      },
+      "images": [
+        "second-home-cleaning-app-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "청소 유형과 공간 규모, 추가 서비스가 최종 견적·방문 일정에 어떻게 반영되는지 쉽게 확인하도록 구성했습니다.",
+        "en": "Cleaning type, property size, and extras should be reflected clearly in the quoted price and visit appointment.",
+        "ja": "清掃の種類、住居の広さ、追加サービスが見積額と訪問予定にどう反映されるか確認できます。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "imageRight",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "청소 서비스 홈과 생활 공간 사진",
+          "en": "Cleaning service home with interior photography",
+          "ja": "住居写真を含む清掃サービスのホーム"
+        },
+        {
+          "ko": "20~29평 청소 옵션 및 90,000원 견적",
+          "en": "20–29 pyeong options and KRW 90,000 estimate",
+          "ja": "20～29坪のオプションと90,000ウォンの見積"
+        },
+        {
+          "ko": "방문 주소·11월 19일 오전 11시 예약",
+          "en": "Address and November 19, 11 AM booking",
+          "ja": "住所と11月19日11時の訪問予約"
+        },
+        {
+          "ko": "김하린 담당자 배정과 방문 타임라인",
+          "en": "Cleaner assignment and visit timeline",
+          "ja": "担当者キム・ハリンと訪問進捗"
+        },
+        {
+          "ko": "11월 19일 이용 완료와 후기",
+          "en": "Completed November 19 visit and review",
+          "ja": "11月19日の利用完了とレビュー"
+        }
+      ],
+      "images": [
+        "second-home-cleaning-app-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "서비스 홈",
+            "en": "Service discovery",
+            "ja": "サービス一覧"
+          }
+        },
+        {
+          "title": {
+            "ko": "20~29평 및 옵션 선택",
+            "en": "Size and extras",
+            "ja": "面積・追加オプション選択"
+          }
+        },
+        {
+          "title": {
+            "ko": "11월 19일 오전 11시 예약",
+            "en": "November 19, 11 AM booking",
+            "ja": "11月19日11時予約"
+          }
+        },
+        {
+          "title": {
+            "ko": "방문 상태 확인",
+            "en": "Visit tracking",
+            "ja": "訪問状況"
+          }
+        },
+        {
+          "title": {
+            "ko": "과거 내역 후기",
+            "en": "Past-service review",
+            "ja": "過去利用レビュー"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "phones",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "second-home-cleaning-app-03",
+        "second-home-cleaning-app-04",
+        "second-home-cleaning-app-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "05",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "화면별 기능이 명확히 구분되는 소비자 모바일 UI 5장, 실제 텍스트·사진·SVG 그래픽 제작. 동작하는 앱·로그인·서버·AI·결제·실시간 상태 기능 미구현.",
+        "en": "Five distinct static mobile UI screenshots with real typography, photos and vector elements. No working app, login, server, AI, payments or live status.",
+        "ja": "機能ごとに異なる静的モバイルUI5画面。実際の文字・写真・SVGを使用。動作するアプリ、ログイン、サーバー、AI、決済、リアルタイム機能は未実装。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "06",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "평수와 옵션을 고르는 순간부터 금액이 보이고, 예약 뒤에는 담당자와 방문 단계를 한 화면에서 확인하도록 했습니다.",
+        "en": "The price shows from the moment you pick the home size and options, and after booking the assigned cleaner and visit stages stay on one screen.",
+        "ja": "広さとオプションを選んだ時点から金額が見え、予約後は担当者と訪問の進み具合を一つの画面で確認できるようにしました。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "second-home-cleaning-app-01",
+      "file": "second-home-cleaning-app-01.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "하루 클린 — 청소 서비스 홈과 생활 공간 사진",
+        "en": "Haru Clean — Cleaning service home with interior photography",
+        "ja": "ハル・クリーン — 住居写真を含む清掃サービスのホーム"
+      },
+      "caption": {
+        "ko": "청소 서비스 홈과 생활 공간 사진",
+        "en": "Cleaning service home with interior photography",
+        "ja": "住居写真を含む清掃サービスのホーム"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "second-home-cleaning-app-02",
+      "file": "second-home-cleaning-app-02.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "하루 클린 — 20~29평 청소 옵션 및 90,000원 견적",
+        "en": "Haru Clean — 20–29 pyeong options and KRW 90,000 estimate",
+        "ja": "ハル・クリーン — 20～29坪のオプションと90,000ウォンの見積"
+      },
+      "caption": {
+        "ko": "20~29평 청소 옵션 및 90,000원 견적",
+        "en": "20–29 pyeong options and KRW 90,000 estimate",
+        "ja": "20～29坪のオプションと90,000ウォンの見積"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "second-home-cleaning-app-03",
+      "file": "second-home-cleaning-app-03.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "하루 클린 — 방문 주소·11월 19일 오전 11시 예약",
+        "en": "Haru Clean — Address and November 19, 11 AM booking",
+        "ja": "ハル・クリーン — 住所と11月19日11時の訪問予約"
+      },
+      "caption": {
+        "ko": "방문 주소·11월 19일 오전 11시 예약",
+        "en": "Address and November 19, 11 AM booking",
+        "ja": "住所と11月19日11時の訪問予約"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "second-home-cleaning-app-04",
+      "file": "second-home-cleaning-app-04.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "하루 클린 — 김하린 담당자 배정과 방문 타임라인",
+        "en": "Haru Clean — Cleaner assignment and visit timeline",
+        "ja": "ハル・クリーン — 担当者キム・ハリンと訪問進捗"
+      },
+      "caption": {
+        "ko": "김하린 담당자 배정과 방문 타임라인",
+        "en": "Cleaner assignment and visit timeline",
+        "ja": "担当者キム・ハリンと訪問進捗"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "second-home-cleaning-app-05",
+      "file": "second-home-cleaning-app-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "하루 클린 — 11월 19일 이용 완료와 후기",
+        "en": "Haru Clean — Completed November 19 visit and review",
+        "ja": "ハル・クリーン — 11月19日の利用完了とレビュー"
+      },
+      "caption": {
+        "ko": "11월 19일 이용 완료와 후기",
+        "en": "Completed November 19 visit and review",
+        "ja": "11月19日の利用完了とレビュー"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

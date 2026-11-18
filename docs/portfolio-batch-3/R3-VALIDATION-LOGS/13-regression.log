@@ -1,0 +1,10 @@
+$ regression: baseline content sha256 (R3 이전 1·2차 content 371개 → 현재)
+1·2차 content 파일 371개 SHA-256 동일
+
+$ git diff --stat ecf9583..HEAD -- . ':!content/portfolio/*/' 
+ components/Portfolio/blocks/common.tsx |  2 +-
+ scripts/preview-build.mjs              | 24 ++++++++++++++++++++++++
+ 2 files changed, 25 insertions(+), 1 deletion(-)
+
+$ new image sha vs MANIFEST
+150/150 registered WebP match MANIFEST sha256

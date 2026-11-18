@@ -1,0 +1,353 @@
+{
+  "id": "custom-furniture-configurator",
+  "slug": "custom-furniture-configurator",
+  "status": "approved",
+  "visible": true,
+  "featured": false,
+  "order": 720,
+  "includeInPdf": true,
+  "title": {
+    "ko": "리바노",
+    "en": "Livano",
+    "ja": "リバノ"
+  },
+  "subtitle": {
+    "ko": "소재와 크기를 직접 선택하는 커스텀 가구 웹",
+    "en": "A customizable furniture storefront with clear options",
+    "ja": "サイズと素材を選べるカスタム家具サイト"
+  },
+  "summary": {
+    "ko": "제품 탐색에서 옵션 구성, 견적 확인, 저장까지.",
+    "en": "Explore products, configure materials and dimensions, review and save estimates.",
+    "ja": "製品探しからオプション設定、見積確認、保存まで。"
+  },
+  "overview": {
+    "ko": "모듈 소파의 크기와 형태, 색상, 소재와 다리 옵션을 선택하고 합산 견적을 확인하는 소비자용 구성 UI입니다.",
+    "en": "A consumer configurator concept for selecting modular sofa size, layout, color, upholstery and legs with a transparent estimated total.",
+    "ja": "モジュールソファの寸法・形状・カラー・張地・脚を選び、合計見積を確認する消費者向けUIです。"
+  },
+  "industry": {
+    "ko": "가구",
+    "en": "Furniture",
+    "ja": "家具"
+  },
+  "categories": [
+    "commerce",
+    "web"
+  ],
+  "mainCategory": "commerce",
+  "platforms": [
+    {
+      "type": "web"
+    }
+  ],
+  "scope": [
+    {
+      "key": "ui"
+    },
+    {
+      "key": "frontend",
+      "label": {
+        "ko": "정적 프론트엔드 화면",
+        "en": "Static front-end screens",
+        "ja": "静的フロントエンド画面"
+      }
+    }
+  ],
+  "theme": {
+    "accent": "#3B4A3F",
+    "accentInk": "#202822",
+    "cover": "light",
+    "layout": "rail"
+  },
+  "thumbnail": [
+    "custom-furniture-configurator-02"
+  ],
+  "reviewNotes": [
+    "PIUS 3차(batch-3) 자체 정적 UI 데모 — 실제 고객 수행 실적·운영 서비스·기능 구현 실적이 아님. 화면 속 인물·장소·금액·일정은 가상 데이터.",
+    "출처: PIUS_R3_A-E_CLAUDE_MASTER_HANDOFF_20261113 / B실 claude-integration-prompt.txt. 이미지 5장은 b-final-images.zip 원본 그대로(SHA-256 MANIFEST·QA CSV 일치).",
+    "표지(01)는 본문에서 다시 쓰지 않음(같은 화면 중복 노출 방지). services 블록은 열마다 플랫폼·대상이 필수라 쓰지 않고 기능 목록은 textImage bullets로 둠."
+  ],
+  "blocks": [
+    {
+      "type": "cover",
+      "eyebrow": {
+        "ko": "PIUS 자체 UI 데모",
+        "en": "PIUS UI concept demo",
+        "ja": "PIUS自主UIデモ"
+      },
+      "headline": {
+        "ko": "제품 탐색에서 옵션 구성, 견적 확인, 저장까지.",
+        "en": "Explore products, configure materials and dimensions, review and save estimates.",
+        "ja": "製品探しからオプション設定、見積確認、保存まで。"
+      },
+      "images": [
+        "custom-furniture-configurator-01"
+      ]
+    },
+    {
+      "type": "overview",
+      "section": {
+        "index": "01",
+        "label": "OVERVIEW"
+      },
+      "heading": {
+        "ko": "프로젝트 개요",
+        "en": "Project overview",
+        "ja": "プロジェクト概要"
+      },
+      "lead": {
+        "ko": "소재·크기·색상 옵션을 바꿀 때 제품 미리보기와 견적 합계가 같은 구성에 대응하도록 설계했습니다.",
+        "en": "Material, size, and colour selections should produce a matching preview and a consistent price breakdown.",
+        "ja": "素材・サイズ・色を変更したとき、製品プレビューと見積合計が同じ構成に対応するようにしました。"
+      }
+    },
+    {
+      "type": "textImage",
+      "section": {
+        "index": "02",
+        "label": "FEATURES"
+      },
+      "layout": "full",
+      "heading": {
+        "ko": "대표 기능",
+        "en": "Key features",
+        "ja": "主な機能"
+      },
+      "bullets": [
+        {
+          "ko": "가구 컬렉션",
+          "en": "Furniture collection",
+          "ja": "家具コレクション"
+        },
+        {
+          "ko": "소파 옵션 편집",
+          "en": "Sofa configurator",
+          "ja": "ソファ設定"
+        },
+        {
+          "ko": "소재·색상 비교",
+          "en": "Material comparison",
+          "ja": "素材比較"
+        },
+        {
+          "ko": "옵션별 견적 계산",
+          "en": "Itemized estimates",
+          "ja": "項目別見積"
+        },
+        {
+          "ko": "모바일 구성 저장 확인",
+          "en": "Mobile saved configuration",
+          "ja": "モバイル保存構成"
+        }
+      ],
+      "images": [
+        "custom-furniture-configurator-02"
+      ]
+    },
+    {
+      "type": "userFlow",
+      "section": {
+        "index": "03",
+        "label": "USER FLOW"
+      },
+      "heading": {
+        "ko": "이용 흐름",
+        "en": "User flow",
+        "ja": "利用の流れ"
+      },
+      "steps": [
+        {
+          "title": {
+            "ko": "컬렉션",
+            "en": "Collection",
+            "ja": "コレクション"
+          }
+        },
+        {
+          "title": {
+            "ko": "구성 편집",
+            "en": "Configure",
+            "ja": "オプション設定"
+          }
+        },
+        {
+          "title": {
+            "ko": "소재 비교",
+            "en": "Compare materials",
+            "ja": "素材比較"
+          }
+        },
+        {
+          "title": {
+            "ko": "견적 확인",
+            "en": "Review estimate",
+            "ja": "見積確認"
+          }
+        },
+        {
+          "title": {
+            "ko": "모바일 저장 구성",
+            "en": "Mobile saved configuration",
+            "ja": "モバイル保存"
+          }
+        }
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "04",
+        "label": "SCREENS"
+      },
+      "layout": "desktop",
+      "surface": "light",
+      "heading": {
+        "ko": "주요 화면",
+        "en": "Key screens",
+        "ja": "主要画面"
+      },
+      "images": [
+        "custom-furniture-configurator-03",
+        "custom-furniture-configurator-04"
+      ]
+    },
+    {
+      "type": "screenShowcase",
+      "section": {
+        "index": "05",
+        "label": "MOBILE"
+      },
+      "layout": "phones",
+      "heading": {
+        "ko": "모바일 화면",
+        "en": "Mobile screens",
+        "ja": "モバイル画面"
+      },
+      "images": [
+        "custom-furniture-configurator-05"
+      ]
+    },
+    {
+      "type": "scope",
+      "section": {
+        "index": "06",
+        "label": "DEMO SCOPE"
+      },
+      "heading": {
+        "ko": "제작 범위",
+        "en": "Demo scope",
+        "ja": "制作範囲"
+      },
+      "note": {
+        "ko": "사진과 2D 옵션으로 제작한 정적 UI 5장. 실시간 3D, 제조·재고, 주문·결제·배송 연동은 없습니다.",
+        "en": "Five static UI images using photography and 2D options. No live 3D, manufacturing, inventory, checkout or delivery integration.",
+        "ja": "写真と2Dオプションによる静的UI画像5点。リアルタイム3D、製造、在庫、注文、決済、配送連携は未実装です。"
+      }
+    },
+    {
+      "type": "statement",
+      "section": {
+        "index": "07",
+        "label": "STATEMENT"
+      },
+      "text": {
+        "ko": "상상한 공간을 구체적인 선택과 명료한 가격으로 연결합니다.",
+        "en": "Turning a room idea into clear choices and a transparent price.",
+        "ja": "空間のイメージを具体的な選択肢と明瞭な価格につなぎます。"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "custom-furniture-configurator-01",
+      "file": "custom-furniture-configurator-01.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "리바노 가구 컬렉션 정적 UI 화면",
+        "en": "Static UI screenshot of Livano: Furniture collection",
+        "ja": "リバノの「家具コレクション」静的UI画面"
+      },
+      "caption": {
+        "ko": "가구 컬렉션",
+        "en": "Furniture collection",
+        "ja": "家具コレクション"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "custom-furniture-configurator-02",
+      "file": "custom-furniture-configurator-02.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "리바노 구성 옵션 편집 정적 UI 화면",
+        "en": "Static UI screenshot of Livano: Configuration editor",
+        "ja": "リバノの「オプション設定」静的UI画面"
+      },
+      "caption": {
+        "ko": "구성 옵션 편집",
+        "en": "Configuration editor",
+        "ja": "オプション設定"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "custom-furniture-configurator-03",
+      "file": "custom-furniture-configurator-03.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "리바노 소재·색상 비교 정적 UI 화면",
+        "en": "Static UI screenshot of Livano: Material comparison",
+        "ja": "リバノの「素材比較」静的UI画面"
+      },
+      "caption": {
+        "ko": "소재·색상 비교",
+        "en": "Material comparison",
+        "ja": "素材比較"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "custom-furniture-configurator-04",
+      "file": "custom-furniture-configurator-04.webp",
+      "kind": "desktop",
+      "alt": {
+        "ko": "리바노 견적 요약 정적 UI 화면",
+        "en": "Static UI screenshot of Livano: Estimate summary",
+        "ja": "リバノの「見積概要」静的UI画面"
+      },
+      "caption": {
+        "ko": "견적 요약",
+        "en": "Estimate summary",
+        "ja": "見積概要"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    },
+    {
+      "id": "custom-furniture-configurator-05",
+      "file": "custom-furniture-configurator-05.webp",
+      "kind": "mobile",
+      "alt": {
+        "ko": "리바노 저장 구성 정적 UI 화면",
+        "en": "Static UI screenshot of Livano: Saved configuration",
+        "ja": "リバノの「保存済み構成」静的UI画面"
+      },
+      "caption": {
+        "ko": "저장 구성",
+        "en": "Saved configuration",
+        "ja": "保存済み構成"
+      },
+      "presentation": {
+        "tier": "core"
+      }
+    }
+  ]
+}

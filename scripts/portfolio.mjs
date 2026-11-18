@@ -124,6 +124,9 @@ function validate(dir) {
   if (p.industry !== undefined) checkL(p.industry, 'industry');
   if (!Array.isArray(p.categories) || !p.categories.length) err('categories', '카테고리를 하나 이상 지정하세요');
   else p.categories.forEach((c, i) => { if (!CATEGORIES.includes(c)) err(`categories[${i}]`, `${CATEGORIES.join(' | ')} 중 하나`); });
+  /* 메인 카테고리: 메인 화면 카운트는 이것만 센다(프로젝트당 1회). categories 중 하나여야 한다. */
+  if (!p.mainCategory) err('mainCategory', 'categories 중 하나를 메인으로 지정하세요 (메인 화면 카운트 기준) — `node scripts/portfolio.mjs balance`가 추천합니다');
+  else if (!Array.isArray(p.categories) || !p.categories.includes(p.mainCategory)) err('mainCategory', `categories(${(p.categories || []).join(', ')}) 안에 있어야 합니다`);
   if (!Array.isArray(p.platforms) || !p.platforms.length) err('platforms', '플랫폼을 하나 이상 지정하세요');
   else p.platforms.forEach((x, i) => { if (!PLATFORMS.includes(x?.type)) err(`platforms[${i}].type`, `${PLATFORMS.join(' | ')} 중 하나`); if (x?.label) checkL(x.label, `platforms[${i}].label`); });
   if (p.projectState != null && !STATES.includes(p.projectState)) err('projectState', `${STATES.join(' | ')} 중 하나 (모르면 빼 두세요)`);
@@ -271,8 +274,28 @@ function loadAll() {
   const projects = all.map((r) => r.project).filter(Boolean);
   const seen = new Map();
   for (const p of projects) { if (seen.has(p.id)) errors.push(`${p.slug}: id "${p.id}"가 ${seen.get(p.id)}와 중복됩니다`); seen.set(p.id, p.slug); }
-  return { projects, errors, warnings };
+  /* 묶음(배치): 모든 프로젝트는 _batches.json의 묶음 하나에만 속한다 */
+  const batches = readBatches();
+  const owner = new Map();
+  for (const b of batches) for (const s of b.slugs) {
+    if (owner.has(s)) errors.push(`_batches.json: ${s}가 ${owner.get(s)}와 ${b.id}에 모두 들어 있습니다`);
+    owner.set(s, b.id);
+    if (!dirs.includes(s)) warnings.push(`_batches.json: ${b.id}의 ${s} 폴더가 없습니다`);
+  }
+  for (const d of dirs) if (!owner.has(d)) errors.push(`${d}: 어느 묶음에도 없습니다 — content/portfolio/_batches.json의 열린 묶음에 추가하세요`);
+  return { projects, errors, warnings, batches, owner };
 }
+
+const BATCHES = path.join(CONTENT, '_batches.json');
+function readBatches() {
+  if (!fs.existsSync(BATCHES)) return [];
+  return JSON.parse(fs.readFileSync(BATCHES, 'utf8')).batches;
+}
+
+/* 메인 카테고리 분포 (메인 화면 타일과 같은 계산: 프로젝트당 1회) */
+const mainCounts = (list) => Object.fromEntries(CATEGORIES.map((c) => [c, list.filter((p) => p.mainCategory === c).length]));
+const sd = (o) => { const v = Object.values(o), m = v.reduce((a, b) => a + b, 0) / v.length; return Math.sqrt(v.reduce((a, b) => a + (b - m) ** 2, 0) / v.length); };
+const fmt = (o) => CATEGORIES.map((c) => `${c} ${o[c]}`).join(' · ') + ` (표준편차 ${sd(o).toFixed(2)})`;
 
 const inStage = (p, stage) => stage === 'all' ? true : p.visible && (p.status === 'approved' || (stage === 'review' && p.status === 'review'));
 
@@ -290,6 +313,8 @@ if (cmd === 'check') {
   const r = loadAll(); report(r);
   const byStatus = Object.fromEntries(STATUS.map((s) => [s, r.projects.filter((p) => p.status === s).length]));
   console.log(`포트폴리오 ${r.projects.length}건 검사 통과 · ${STATUS.map((s) => `${s} ${byStatus[s]}`).join(' · ')}`);
+  for (const b of r.batches) console.log(`  묶음 ${b.id}${b.closed ? ' (닫힘)' : ' (열림)'} ${b.label}: ${b.slugs.length}건`);
+  for (const st of ['public', 'review']) console.log(`  메인 카테고리 [${st}] ${fmt(mainCounts(r.projects.filter((p) => inStage(p, st))))}`);
 } else if (cmd === 'sync') {
   const stage = opt('stage') || process.env.PORTFOLIO_STAGE || 'public';
   if (!['public', 'review', 'all'].includes(stage)) { console.error('stage는 public | review | all'); process.exit(1); }
@@ -316,7 +341,30 @@ if (cmd === 'check') {
   const tpl = fs.readFileSync(path.join(CONTENT, '_template', 'project.json'), 'utf8').replaceAll('__SLUG__', slug);
   fs.writeFileSync(path.join(dest, 'project.json'), tpl);
   fs.writeFileSync(path.join(dest, 'images', '.gitkeep'), '');
+  if (fs.existsSync(BATCHES)) {
+    const all = JSON.parse(fs.readFileSync(BATCHES, 'utf8'));
+    const open = all.batches.filter((b) => !b.closed).at(-1);
+    if (!open) { console.error('_batches.json에 열린 묶음이 없습니다. 새 묶음을 추가한 뒤 다시 실행하세요.'); process.exit(1); }
+    open.slugs.push(slug); fs.writeFileSync(BATCHES, JSON.stringify(all, null, 1) + '\n');
+    console.log(`묶음 ${open.id}에 추가했습니다.`);
+  }
   console.log(`만들었습니다: content/portfolio/${slug}/project.json (status: draft). 사진은 images/ 폴더에 넣으세요.`);
+} else if (cmd === 'balance') {
+  /* 열린 묶음 프로젝트의 메인 카테고리를 추천한다. 닫힌 묶음은 그대로 두고, review 전체의 표준편차가
+     가장 작아지는 쪽을 고른다(같으면 categories 앞쪽). 파일은 고치지 않고 추천만 출력한다. */
+  const r = loadAll();
+  const open = new Set(r.batches.filter((b) => !b.closed).flatMap((b) => b.slugs));
+  const fixed = r.projects.filter((p) => !open.has(p.slug) && inStage(p, 'review'));
+  const todo = r.projects.filter((p) => open.has(p.slug)).sort((a, b) => a.categories.length - b.categories.length || a.slug.localeCompare(b.slug));
+  const placed = fixed.map((p) => ({ mainCategory: p.mainCategory }));
+  console.log(`닫힌 묶음 기준 ${fmt(mainCounts(placed))}`);
+  for (const p of todo) {
+    let best;
+    for (const c of p.categories) { const s = sd(mainCounts([...placed, { mainCategory: c }])); if (!best || s < best.s - 1e-9) best = { c, s }; }
+    placed.push({ mainCategory: best.c });
+    console.log(`  ${p.slug}: 추천 ${best.c}${p.mainCategory && p.mainCategory !== best.c ? ` (지금 ${p.mainCategory})` : ''}`);
+  }
+  console.log(`추천대로 하면 ${fmt(mainCounts(placed))}`);
 } else {
-  console.error('사용: node scripts/portfolio.mjs check | sync [--stage public|review|all] | new <slug>'); process.exit(1);
+  console.error('사용: node scripts/portfolio.mjs check | sync [--stage public|review|all] | new <slug> | balance'); process.exit(1);
 }

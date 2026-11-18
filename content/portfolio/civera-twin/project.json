@@ -35,6 +35,7 @@
     "platform",
     "web"
   ],
+  "mainCategory": "platform",
   "platforms": [
     {
       "type": "web",
@@ -286,6 +287,11 @@
         "ko": "CIVERA TWIN은 가상 도시 Aurora City의 리버프런트 지구를 배경으로, 집중호우 상황에서 운영자가 도시 공간·영향 범위·대응 과업을 함께 파악하도록 설계한 Desktop·Mobile WEB UI 콘셉트 데모입니다. 지도와 시간축, 현장 화면을 하나의 시각 체계로 연결했습니다. 정적 화면 디자인 사례이며, 화면 속 도시·사건·인물·수치는 모두 가상입니다.",
         "en": "CIVERA TWIN is a desktop and mobile web UI concept demo set in the Riverfront District of the fictional Aurora City. It is designed to help operators read city space, impact scope and response tasks together during heavy rainfall, connecting the map, the timeline and field screens in one visual system. It is a static design case; the city, incidents, people and figures shown are all fictional.",
         "ja": "CIVERA TWINは、架空都市Aurora Cityのリバーフロント地区を舞台に、集中豪雨の際に運用者が都市空間・影響範囲・対応タスクをあわせて把握できるよう設計したデスクトップ・モバイルWeb UIコンセプトデモです。マップ、時間軸、現場画面を一つのビジュアル体系でつなぎました。静的な画面デザイン事例であり、画面内の都市・事案・人物・数値はすべて架空です。"
+      },
+      "body": {
+        "ko": "가상 침수 상황에서 지도상 영향 범위, 시간별 변화, 대응 과업을 서로 다른 시점으로 혼동하지 않도록 정보 계층을 나눴습니다.",
+        "en": "In the simulated flood scenario, map impact, timeline changes, and response tasks must remain distinguishable by time and status.",
+        "ja": "架空の浸水シナリオで、地図上の影響範囲、時間ごとの変化、対応タスクを別の時点と混同しない情報階層を設けました。"
       }
     },
     {
