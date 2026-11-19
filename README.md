@@ -25,7 +25,8 @@ npm run portfolio:check        # 포트폴리오 콘텐츠 검사
 | 변수 | 용도 |
 |---|---|
 | `NEXT_PUBLIC_SITE_URL` | 실제 사이트 주소입니다. OG 이미지 같은 공유 미리보기의 절대경로에 쓰입니다. |
-| `NEXT_PUBLIC_FORM_ENDPOINT` | 문의 폼 접수 API입니다. 비워두면 전송하지 않고 실패 안내를 띄웁니다(가짜 접수 성공 없음). 운영 배포 전 반드시 설정·수신 확인. |
+| `NEXT_PUBLIC_EMAILJS_SERVICE_ID`, `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`, `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY` | 문의 메일 발송(EmailJS)입니다. 세 값이 모두 있으면 문의 내용을 메일로 보냅니다. |
+| `NEXT_PUBLIC_FORM_ENDPOINT` | (선택) EmailJS 대신 쓰는 자체 접수 API입니다. EmailJS도 이 값도 없으면 전송하지 않고 실패 안내를 띄웁니다(가짜 접수 성공 없음). |
 
 폼은 `POST` + `application/json`으로 아래 값을 보냅니다.
 - 보내는 필드: `name, company, phone, email, message, agree, lang, sentAt`
@@ -143,7 +144,7 @@ scripts/portfolio-capture.mjs  데모 화면 캡처 → content/portfolio/<slug>
 
 - **배포**: Vercel(Framework Preset: Next.js, Root Directory: 저장소 루트). main에 머지하면 운영에 자동 배포됩니다.
 - **도메인**: 대표 주소는 `https://pius.co.kr`입니다. `www.pius.co.kr`은 Vercel에서 대표 주소로 리다이렉트합니다. 대표 도메인을 바꾸면 `NEXT_PUBLIC_SITE_URL`도 같이 바꿔 주세요.
-- **환경변수**(Vercel → Settings → Environment Variables): `NEXT_PUBLIC_SITE_URL=https://pius.co.kr`, `NEXT_PUBLIC_FORM_ENDPOINT`
+- **환경변수**(Vercel → Settings → Environment Variables): `NEXT_PUBLIC_SITE_URL=https://pius.co.kr`, `NEXT_PUBLIC_EMAILJS_SERVICE_ID`, `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`, `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
 - **검색엔진 등록**
   - 구글: `public/google4fcd0ab38f628a81.html` 파일로 소유 확인합니다. 지우면 확인이 풀립니다.
   - 네이버: `app/layout.tsx`의 `verification` 메타 태그로 소유 확인합니다. 지우면 확인이 풀립니다.
@@ -155,7 +156,7 @@ scripts/portfolio-capture.mjs  데모 화면 캡처 → content/portfolio/<slug>
 
 ## 7. 운영 전 체크리스트
 
-- [ ] `.env.local`에 `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_FORM_ENDPOINT` 설정
+- [ ] Vercel에 `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_EMAILJS_*` 3개 설정 후 실제 문의 메일 수신 확인
 - [ ] 대표자 영문·일문 표기 확인: 현재 "Si-on Choi" / 「チェ・シオン（최시온）」(`lib/i18n.ts`)
 - [ ] 영문·일문 주소 확인
 - [ ] 영어·일본어 번역 원어민 검수: `lib/i18n.ts`와 각 controller 안의 목업 문구

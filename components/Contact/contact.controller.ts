@@ -67,10 +67,16 @@ export function initContact(host: HTMLElement, st: Styles): () => void {
     $$('input:not([type=checkbox]), textarea', form).forEach(el => { if (!check(el) && !first) first = el; });
     if (!agree.checked) { $('#agree').classList.add('invalid'); first = first || agree; }
     if (first) { first.focus(); return; }
-    /* Submission. Set NEXT_PUBLIC_FORM_ENDPOINT (.env) to POST JSON to a real API.
-       Without an endpoint nothing is sent and the failure toast is shown (no fake success).  */
+    /* Submission. EmailJS (NEXT_PUBLIC_EMAILJS_*) mails the inquiry; otherwise NEXT_PUBLIC_FORM_ENDPOINT
+       receives the JSON. With neither, nothing is sent and the failure toast is shown (no fake success). */
+    if (form.classList.contains('is-sending')) return;
     form.classList.add('is-sending');
-    const cfg = { formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT || '' };
+    const ejs = {
+      service_id: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+      template_id: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+      user_id: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '',
+    };
+    const formEndpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT || '';
     const data = Object.fromEntries(new FormData(form).entries());
     data.agree = agree.checked; data.lang = getLang(); data.sentAt = new Date().toISOString();
     const finish = ok => {
@@ -78,10 +84,20 @@ export function initContact(host: HTMLElement, st: Styles): () => void {
       if (ok) form.classList.add('is-done');
       else toast(T('f.fail'));
     };
-    if (cfg.formEndpoint) {
-      fetch(cfg.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
-        .then(r => finish(r.ok)).catch(() => finish(false));
-    } else finish(false); /* no endpoint: never simulate a successful inquiry */
+    const post = (url, body) => fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+      .then(r => finish(r.ok)).catch(() => finish(false));
+    if (ejs.service_id && ejs.template_id && ejs.user_id) {
+      post('https://api.emailjs.com/api/v1.0/email/send', {
+        ...ejs,
+        template_params: {
+          name: data.name, company: data.company || '-', phone: data.phone, email: data.email,
+          message: data.message, lang: data.lang,
+          sent_at: new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' }),
+          page: window.location.href,
+        },
+      });
+    } else if (formEndpoint) post(formEndpoint, data);
+    else finish(false); /* no endpoint: never simulate a successful inquiry */
   });
   $('#formReset').addEventListener('click', () => {
     form.reset(); $$(sel('.invalid'), form).forEach(x => x.classList.remove('invalid')); form.classList.remove('is-done');
