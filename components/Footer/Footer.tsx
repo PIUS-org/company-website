@@ -23,6 +23,7 @@ export default function Footer() {
         <div><dt>{t('ft.ceo')}</dt><dd>{t('ft.ceo.v')}</dd></div>
         <div><dt>{t('ft.founded')}</dt><dd><time dateTime="2023-01-30">{t('ft.founded.v')}</time></dd></div>
         <div><dt>{t('ft.addr')}</dt><dd>{t('ft.addr.v')}</dd></div>
+        <div><dt>{t('ft.tel')}</dt><dd><a href="tel:+82-70-8065-2553">070-8065-2553</a></dd></div>
         <div><dt>{t('ft.reg')}</dt><dd>690-04-02624</dd></div>
       </dl>
     </div>
