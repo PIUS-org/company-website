@@ -2,9 +2,11 @@
 .ftr{ position:relative; padding-top:clamp(40px,8svh,80px); overflow:hidden; border-top:1px solid var(--line); }
 .ftr__top{ display:flex; justify-content:space-between; align-items:flex-start; gap:24px; flex-wrap:wrap; }
 .ftr__logo svg{ height:44px; width:auto; fill:#fff; }
-.ftr__info{ display:grid; grid-template-columns:repeat(4,auto); gap:10px clamp(20px,3vw,48px); font-size:var(--t-sm); }
+.ftr__info{ display:grid; grid-template-columns:repeat(5,auto); gap:10px clamp(20px,3vw,48px); font-size:var(--t-sm); }
 .ftr__info dt{ color:var(--ink-3); font-size:var(--t-xs); }
 .ftr__info dd{ margin:2px 0 0; color:var(--ink-2); }
+.ftr__info dd a{ transition:color .3s; }
+.ftr__info dd a:hover{ color:var(--ink); }
 .ftr__big{ position:relative; margin-top:clamp(40px,8svh,90px); }
 .ftr__big svg{ width:100%; height:auto; overflow:visible; }
 .ftr__big .face{ fill:url(#ftrFace); }

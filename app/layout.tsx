@@ -42,6 +42,7 @@ const JSON_LD = {
       description: DESCRIPTION,
       foundingDate: '2023-01-30',
       founder: { '@type': 'Person', name: '최시온' },
+      telephone: '+82-70-8065-2553',
       address: {
         '@type': 'PostalAddress',
         streetAddress: '강남서로 9, 703호',

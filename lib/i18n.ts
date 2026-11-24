@@ -43,7 +43,7 @@ ko: {
   'f.agree': '문의 응대를 위한 개인정보 수집 및 이용에 동의합니다.', 'f.send': '문의 보내기',
   'f.done': '문의가 접수되었습니다.', 'f.done2': '검토 후 남겨주신 연락처로 회신드리겠습니다.', 'f.reset': '새 문의 작성', 'f.fail': '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.',
   'ft.ceo': '대표자', 'ft.ceo.v': '최시온', 'ft.founded': '설립일', 'ft.founded.v': '2023년 1월 30일',
-  'ft.addr': '주소', 'ft.addr.v': '경기도 용인시 강남서로 9, 703호', 'ft.reg': '사업자등록번호',
+  'ft.addr': '주소', 'ft.addr.v': '경기도 용인시 강남서로 9, 703호', 'ft.reg': '사업자등록번호', 'ft.tel': '전화',
   /* portfolio */
   'pf.more': "프로젝트 더 보기",
   'works.lead': "업무를 이해한 설계가 실제로 돌아가는 서비스가 되기까지. 분야를 고르면 그 프로젝트들로 바로 이어집니다.",
@@ -138,7 +138,7 @@ en: {
   'f.agree': 'I agree to the collection and use of my personal information to respond to this inquiry.', 'f.send': 'Send inquiry',
   'f.done': 'Your inquiry has been received.', 'f.done2': 'We’ll review it and reply using the contact details you provided.', 'f.reset': 'Write another inquiry', 'f.fail': 'Sending failed. Please try again shortly.',
   'ft.ceo': 'CEO', 'ft.ceo.v': 'Si-on Choi', 'ft.founded': 'Founded', 'ft.founded.v': 'January 30, 2023',
-  'ft.addr': 'Address', 'ft.addr.v': '#703, 9 Gangnamseo-ro, Yongin-si, Gyeonggi-do, Korea', 'ft.reg': 'Business reg. no.',
+  'ft.addr': 'Address', 'ft.addr.v': '#703, 9 Gangnamseo-ro, Yongin-si, Gyeonggi-do, Korea', 'ft.reg': 'Business reg. no.', 'ft.tel': 'Tel',
   /* portfolio */
   'pf.more': "More projects",
   'works.lead': "From understanding the work to a service that actually runs. Pick a field to jump straight to its projects.",
@@ -233,7 +233,7 @@ ja: {
   'f.agree': 'お問い合わせ対応のための個人情報の収集・利用に同意します。', 'f.send': '送信する',
   'f.done': 'お問い合わせを受け付けました。', 'f.done2': '内容を確認のうえ、ご入力の連絡先へご返信いたします。', 'f.reset': '新しいお問い合わせ', 'f.fail': '送信に失敗しました。しばらくしてから再度お試しください。',
   'ft.ceo': '代表者', 'ft.ceo.v': 'チェ・シオン（최시온）', 'ft.founded': '設立日', 'ft.founded.v': '2023年1月30日',
-  'ft.addr': '所在地', 'ft.addr.v': '韓国 京畿道 龍仁市 江南西路9, 703号', 'ft.reg': '事業者登録番号',
+  'ft.addr': '所在地', 'ft.addr.v': '韓国 京畿道 龍仁市 江南西路9, 703号', 'ft.reg': '事業者登録番号', 'ft.tel': '電話',
   /* portfolio */
   'pf.more': "もっと見る",
   'works.lead': "業務を理解した設計が、実際に動くサービスになるまで。分野を選ぶと、そのプロジェクトへそのまま移動します。",
