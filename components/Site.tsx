@@ -98,7 +98,7 @@ function Boot({ splash }: { splash: React.RefObject<SplashHandle | null> }) {
   return null;
 }
 
-export default function Site({ projects = [] }: { projects?: Project[] }) {
+export default function Site({ projects = [] }: { projects?: Pick<Project, 'mainCategory'>[] }) {
   const works = projects.length > 0;
   const splash = useRef<SplashHandle>(null);
   return (
