@@ -30,7 +30,8 @@ export function LangProvider({ children, meta }: { children: ReactNode; meta?: P
       mo = new MutationObserver(() => { if (document.title !== m.title) document.title = m.title; });
       mo.observe(document.head, { subtree: true, childList: true, characterData: true });
     }
-    document.querySelector('meta[name="description"]')?.setAttribute('content', m?.desc ?? T('meta.desc', lang));
+    /* T() adds invisible word joiners for line breaking: not wanted in the meta tag */
+    document.querySelector('meta[name="description"]')?.setAttribute('content', (m?.desc ?? T('meta.desc', lang)).replace(/⁠/g, ''));
     try { localStorage.setItem('pius-lang', lang); } catch { /* storage unavailable */ }
     emit(EV.lang);
     const id = setTimeout(() => emit(EV.resize), 60);

@@ -8,10 +8,10 @@ export const LANGS: Lang[] = ['ko', 'en', 'ja'];
 export type Tri = { ko: string; en?: string; ja?: string };
 export const I18N: Record<Lang, Record<string, string>> = {
 ko: {
-  'meta.title': 'PIUS — Build Your Growth',
-  'meta.desc': 'PIUS는 기업의 업무를 이해하고, 그 업무에 맞는 시스템을 기획하고 개발하는 SI 회사입니다.',
+  'meta.title': 'PIUS(피우스) — Build Your Growth',
+  'meta.desc': '피우스(PIUS)는 기업의 업무를 이해하고, 그 업무에 맞는 시스템을 기획하고 개발하는 SI 회사입니다.',
   'skip': '본문으로 건너뛰기', 'nav.cta': '문의하기', 'menu.open': '메뉴 열기', 'menu.close': '메뉴 닫기',
-  'cta.project': '프로젝트 문의하기', 'hero.sub': 'PIUS는 기업의 업무를 이해하고, 그 업무에 맞는 시스템을 기획하고 개발하는 SI 회사입니다.', 'hero.more': 'PIUS 알아보기',
+  'cta.project': '프로젝트 문의하기', 'hero.sub': 'PIUS(피우스)는 기업의 업무를 이해하고, 그 업무에 맞는 시스템을 기획하고 개발하는 SI 회사입니다.', 'hero.more': 'PIUS 알아보기',
   'about.p1': '같은 업종이라도 회사마다 조직과 업무 방식, 운영 환경은 다릅니다.',
   'about.p2': 'PIUS는 정해진 시스템에 업무를 맞추기보다, 실제 업무를 이해하고 필요한 시스템을 설계합니다.',
   'pl.env': '운영 환경', 'pl.legacy': '기존 시스템', 'pl.process': '업무 프로세스', 'pl.way': '업무 방식', 'pl.org': '조직',
@@ -52,7 +52,7 @@ ko: {
   'pf.eyebrow': "SELECTED WORKS",
   'pf.lead': "업무를 이해한 설계가 실제 서비스가 되기까지. PIUS가 기획하고 만든 프로젝트를 소개합니다.",
   'pf.meta.title': "Portfolio — PIUS",
-  'pf.meta.desc': "PIUS가 기획하고 개발한 ERP·플랫폼·모바일 앱·웹 시스템 프로젝트",
+  'pf.meta.desc': "피우스(PIUS)가 기획하고 개발한 ERP·플랫폼·모바일 앱·웹 시스템 프로젝트",
   'pf.count': "프로젝트",
   'pf.filter': "프로젝트 분류",
   'pf.cat.all': "전체",
