@@ -29,7 +29,7 @@ const ICON: Record<Category, ReactNode> = {
   integration: <><rect x="5" y="22" width="20" height="20" rx="5" /><rect x="39" y="22" width="20" height="20" rx="5" /><path d="M25 28h14M33 24l6 4-6 4" /><path d="M39 37H25M31 33l-6 4 6 4" /></>,
 };
 
-export function worksTiles(projects: Project[]) {
+export function worksTiles(projects: Pick<Project, 'mainCategory'>[]) {
   return ORDER.filter(c => (CATEGORIES as readonly string[]).includes(c))
     .map(c => ({ cat: c, value: projects.filter(p => p.mainCategory === c).length }))
     .filter(x => x.value > 0);
@@ -47,7 +47,7 @@ function countUp(el: HTMLElement, to: number, delay: number) {
   requestAnimationFrame(tick);
 }
 
-export default function Works({ projects }: { projects: Project[] }) {
+export default function Works({ projects }: { projects: Pick<Project, 'mainCategory'>[] }) {
   const { t, lang } = useLang();
   const root = useRef<HTMLElement>(null);
   const tiles = worksTiles(projects);
