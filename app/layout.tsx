@@ -24,6 +24,17 @@ export const metadata: Metadata = {
   /* Search engine ownership. Google is verified by public/google4fcd0ab38f628a81.html (do not delete).
      Naver is verified by this meta tag (Search Advisor "HTML 태그"; do not remove). */
   verification: { other: { 'naver-site-verification': '3263912a3ed55ef315838bad0d49f6ae54818532' } },
+  /* Favicons (public/). The mark is transparent: black for light browser UI, white for dark tabs.
+     /favicon.ico (16/32/48, black) is still served for crawlers such as Naver that request it directly.
+     The apple icon is the white mark on black, because iOS fills transparency with black. */
+  icons: {
+    icon: [
+      { url: '/icon.png', type: 'image/png', sizes: '512x512', media: '(prefers-color-scheme: light)' },
+      { url: '/icon-dark.png', type: 'image/png', sizes: '512x512', media: '(prefers-color-scheme: dark)' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: { url: '/apple-icon.png', sizes: '180x180' },
+  },
 };
 
 export const viewport: Viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover', themeColor: '#000000' };
